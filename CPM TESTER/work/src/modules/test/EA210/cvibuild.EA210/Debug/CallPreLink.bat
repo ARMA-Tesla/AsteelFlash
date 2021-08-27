@@ -1,4 +1,4 @@
-@"c:\program files (x86)\national instruments\cvi2020\bin\cviprelink.exe" -cmd prelink_options.txt > PreLink.out 2>&1
+@"c:\program files (x86)\national instruments\cvi2019\bin\cviprelink.exe" -cmd prelink_options.txt > PreLink.out 2>&1
 @if errorlevel 0 goto err0
 @if errorlevel -1 goto err1
 @if errorlevel -2 goto err2

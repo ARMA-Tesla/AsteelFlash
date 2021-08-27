@@ -41,100 +41,100 @@ SourceLocation="c:\work\src\modules\automat\automat.c:527:1"
 [Init_Alim_keysight]
 Class="Function"
 Prototype="struct _SElException *Init_Alim_keysight();"
-SourceLocation="c:\work\src\modules\automat\automat.c:585:1"
+SourceLocation="c:\work\src\modules\automat\automat.c:600:1"
 
 [DisplayClignotant]
 Class="Function"
 Prototype="struct _SElException *DisplayClignotant(char *message);"
-SourceLocation="c:\work\src\modules\automat\automat.c:655:1"
+SourceLocation="c:\work\src\modules\automat\automat.c:670:1"
 
 [ReadMasterInformations]
 Class="Function"
 Prototype="struct _SElException *ReadMasterInformations(const char *pfile_xml, char *description, char *name, char *station);"
-SourceLocation="c:\work\src\modules\automat\automat.c:935:1"
+SourceLocation="c:\work\src\modules\automat\automat.c:950:1"
 
 [GetFieldDataFromName]
 Class="Function"
 Prototype="void GetFieldDataFromName(int count, char FieldName[20][128], char FieldData[20][128], char *SerachedNameField, char *FoundDataField);"
-SourceLocation="c:\work\src\modules\automat\automat.c:1365:1"
+SourceLocation="c:\work\src\modules\automat\automat.c:1380:1"
 
 [sledge_new]
 Class="Function"
 Prototype="struct _SElException *sledge_new(struct _SSledge **pSledge);"
-SourceLocation="c:\work\src\modules\automat\automat.c:2141:1"
+SourceLocation="c:\work\src\modules\automat\automat.c:2156:1"
 
 [sledge_delete]
 Class="Function"
 Prototype="struct _SElException *sledge_delete(struct _SSledge **pSledge);"
-SourceLocation="c:\work\src\modules\automat\automat.c:2163:1"
+SourceLocation="c:\work\src\modules\automat\automat.c:2178:1"
 
 [Pushed_Start_Skip_Palett]
 Class="Function"
 Prototype="int Pushed_Start_Skip_Palett(int timeout);"
-SourceLocation="c:\work\src\modules\automat\automat.c:2383:1"
+SourceLocation="c:\work\src\modules\automat\automat.c:2398:1"
 
 [Pushed_Start_Without_Palett]
 Class="Function"
 Prototype="int Pushed_Start_Without_Palett();"
-SourceLocation="c:\work\src\modules\automat\automat.c:2415:1"
+SourceLocation="c:\work\src\modules\automat\automat.c:2430:1"
 
 [JigPanelLabel]
 Class="Function"
 Prototype="struct _SElException *JigPanelLabel(struct _SSledge *me, int *pError);"
-SourceLocation="c:\work\src\modules\automat\automat.c:2625:1"
+SourceLocation="c:\work\src\modules\automat\automat.c:2640:1"
 
 [JigPanelLabelFail]
 Class="Function"
 Prototype="struct _SElException *JigPanelLabelFail(struct _SSledge *me, int *pError);"
-SourceLocation="c:\work\src\modules\automat\automat.c:2651:1"
+SourceLocation="c:\work\src\modules\automat\automat.c:2666:1"
 
 [GetNewSerial]
 Class="Function"
 Prototype="struct _SElException *GetNewSerial(int *counter, int *pError);"
-SourceLocation="c:\work\src\modules\automat\automat.c:2776:1"
+SourceLocation="c:\work\src\modules\automat\automat.c:2791:1"
 
 [DiscardUIObjectsForDLL]
 Class="Function"
 Prototype="void DiscardUIObjectsForDLL();"
-SourceLocation="c:\work\src\modules\automat\automat.c:3914:1"
+SourceLocation="c:\work\src\modules\automat\automat.c:3929:1"
 
 [DllMain]
 Class="Function"
 Prototype="int DllMain(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
-SourceLocation="c:\work\src\modules\automat\automat.c:3919:1"
+SourceLocation="c:\work\src\modules\automat\automat.c:3934:1"
 
 [DllEntryPoint]
 Class="Function"
 Prototype="int DllEntryPoint(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
-SourceLocation="c:\work\src\modules\automat\automat.c:3949:1"
+SourceLocation="c:\work\src\modules\automat\automat.c:3964:1"
 
 [pluginInitialize]
 Class="Function"
 Prototype="struct _SElException *pluginInitialize(struct _SPluginArgs *a_pPluginArgs) __declspec(dllexport);"
-SourceLocation="c:\work\src\modules\automat\automat.c:3962:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+SourceLocation="c:\work\src\modules\automat\automat.c:3977:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
 
 [pluginRun]
 Class="Function"
 Prototype="struct _SElException *pluginRun(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
-SourceLocation="c:\work\src\modules\automat\automat.c:4038:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+SourceLocation="c:\work\src\modules\automat\automat.c:4053:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
 
 [pluginLeave]
 Class="Function"
 Prototype="struct _SElException *pluginLeave(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
-SourceLocation="c:\work\src\modules\automat\automat.c:4123:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+SourceLocation="c:\work\src\modules\automat\automat.c:4138:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
 
 [PLUGIN_SHUTDOWN_NAME_CODE]
 Class="Function"
 Prototype="struct _SElException *PLUGIN_SHUTDOWN_NAME_CODE(struct _SPluginArgs *a_pPluginArgs) __declspec(dllexport);"
-SourceLocation="c:\work\src\modules\automat\automat.c:4139:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+SourceLocation="c:\work\src\modules\automat\automat.c:4154:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
 
 [pluginGetInfo]
 Class="Function"
 Prototype="struct _SElException *pluginGetInfo(struct _SPluginInfo **a_pInfo) __declspec(dllexport);"
-SourceLocation="c:\work\src\modules\automat\automat.c:4160:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+SourceLocation="c:\work\src\modules\automat\automat.c:4175:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
 
 [pluginGetAttribute]
 Class="Function"
 Prototype="struct _SElException *pluginGetAttribute(unsigned int attrID, unsigned int size, void *value) __declspec(dllexport);"
-SourceLocation="c:\work\src\modules\automat\automat.c:4172:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+SourceLocation="c:\work\src\modules\automat\automat.c:4187:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
 

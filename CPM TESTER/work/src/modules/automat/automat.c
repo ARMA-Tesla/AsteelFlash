@@ -14,7 +14,7 @@
 #include "automat.h"
 #include "automat_fnc.h"
 #include "automat_plugin.h" 
-//#include "hpe364xa.h"
+#include "hpe364xa.h"
 #include "bp98xx.h"
 #include "asynctmr.h"
 #include <rs232.h>
@@ -379,11 +379,9 @@ static SElExceptionPtr GetPalettID(int *palettID)
 		received  = GetInQLen (COM_BARCODE_PALETT);
 		if (received == 2)
 		{
-			//printf ("received = %d \r\n", received);
 			ComRd (COM_BARCODE_PALETT, buffer, received);
 			sscanf (buffer, "P%d", &pallet);
 			*palettID = pallet;
-			//printf ("*palettID = %d \r\n", *palettID);
 		}
 
 	if (pallet == 0)
@@ -511,11 +509,11 @@ SElExceptionPtr Init_PWM_Generator (void)
 	
     TEST_USE(GENERATOR);
     INITIALIZE_GENERATOR (0);
-	pgenerator->Connect(pgenerator);
-	pgenerator->SystemError(pgenerator, sys_error);	
-	pgenerator->ClearError(pgenerator);
-	pgenerator->SetFonction(pgenerator,50.0,2.5,1.25,50.0);	
-	pgenerator->SetOutput(pgenerator,1);
+	EXCCHECK( pgenerator->Connect(pgenerator));
+	EXCCHECK( pgenerator->SystemError(pgenerator, sys_error));	
+	EXCCHECK( pgenerator->ClearError(pgenerator));
+	EXCCHECK( pgenerator->SetFonction(pgenerator,50.0,2.5,1.25,50.0));	
+	EXCCHECK( pgenerator->SetOutput(pgenerator,1));
 	
 Error:
 	EXCRETHROW( pexception);
@@ -526,6 +524,10 @@ Error:
 #define __FUNC__ "{Automat Plugin}::Init_BK_PRECISION_WS40_WS50"
 SElExceptionPtr Init_BK_PRECISION_WS40_WS50 (void)
 {
+	ViReal64 POWER;
+	ViReal64 CURRENT;
+	ViReal64 VOLTAGE;
+	ViReal64 FREQ;
 	ViSession vi_BK;
 	SElExceptionPtr	pexception = NULL;
 	char sys_error[128];
@@ -535,7 +537,7 @@ SElExceptionPtr Init_BK_PRECISION_WS40_WS50 (void)
 	ViRsrc BKresourceName    = "ASRL4::INSTR";
 	ViInt32 Readsize;
 	
-	 ErrorBK = bp98xx_Initialize (BKresourceName, VI_TRUE, VI_TRUE, BAUDRATE_VAL6_19200, &vi_BK);
+	 ErrorBK = bp98xx_Initialize (BKresourceName, VI_TRUE, VI_TRUE, BAUDRATE_VAL5_9600, &vi_BK);
 		 if (ErrorBK < VI_SUCCESS)
 		 {
 			
@@ -545,9 +547,13 @@ SElExceptionPtr Init_BK_PRECISION_WS40_WS50 (void)
 			 sprintf(msg, "Function Error : bp98xx_Initialize \r\n  message error : %s\n", ErrorMessage);
 			 EXCTHROW( -1, msg);
 		 }
-		 ErrorBK =bp98xx_Reset (vi_BK);
+		 ErrorBK = bp98xx_Reset (vi_BK);
 		 Sleep(50);
-		 ErrorBK = bp98xx_ConfigureCurrentProtectionLimits (vi_BK, 1.0, 1.3, CURRENTPROTECTIONDELAY_VAL0_DELAY, PEAKCURRENTPROTECTIONDELAY_VAL0_DELAY);
+
+
+
+		 Sleep(50);
+		 ErrorBK = bp98xx_ConfigureCurrentProtectionLimits (vi_BK, 1.3, 2, CURRENTPROTECTIONDELAY_VAL0_DELAY, PEAKCURRENTPROTECTIONDELAY_VAL0_DELAY);
 		 if (ErrorBK < VI_SUCCESS)
 		 {
 			 bp98xx_GetLastErrorMsg (vi_BK, 255, ErrorMessage, &Readsize);
@@ -571,6 +577,13 @@ SElExceptionPtr Init_BK_PRECISION_WS40_WS50 (void)
 			 sprintf(msg, "Function Error : bp98xx_EnableOutput \r\n  message error : %s\n", ErrorMessage);
 			 EXCTHROW( -1, msg);
 		 }
+		 		 Sleep(1000);
+		 ErrorBK = bp98xx_MeasureOutput (vi_BK, &FREQ, &VOLTAGE, &CURRENT, &POWER);
+		 if(VOLTAGE < 225 || VOLTAGE > 235 )
+		 {
+			 sprintf(msg, "Function Error : bp98xx_MeasureOutput 230 VAC ");
+			 EXCTHROW( -1, msg);
+		 }
 		 Sleep(100);
 	
    
@@ -585,7 +598,7 @@ Error:
 SElExceptionPtr Init_Alim_keysight (void)
 {
 ViSession vi_E3642A;
-ViRsrc    E3642AresourceName   = "ASRL17::INSTR";
+ViRsrc    E3642AresourceName   = "ASRL3::INSTR";
 SElExceptionPtr	pexception = NULL;
 ViInt32   ErrorE3642A,
 		  ErrorCode;;
@@ -804,7 +817,7 @@ static SElExceptionPtr ProcessEventGuiResetProduct(void)
 {
 	SElExceptionPtr	pexception = NULL;
 	int32_t			error = 0;
-	char			test_form_xml[MAX_PATHNAME_LEN]; 
+	char			test_form_xml[MAX_PATHNAME_LEN];
 	int32_t			is_Error = 0;
 	int             i;
 	int32_t			insert,
@@ -814,59 +827,72 @@ static SElExceptionPtr ProcessEventGuiResetProduct(void)
 	int 	status;
 	int status_micro_cam, barrier;
 	double Currentposition;
-	int32_t			position_0;  
-	
-	
+	int32_t			position_0;
+
+
 	//EXCCHECK( gs_pTester->GetSensor(gs_pTester, "SENSOR_PRESENCE_PRODUCT_STATION_10", &insert));
 	EXCCHECK( gs_pTester->GetSensor(gs_pTester, "SENSOR_1_PRESENCE_PRODUCT_STATION_10", &insert1));
 	EXCCHECK( gs_pTester->GetSensor(gs_pTester, "SENSOR_2_PRESENCE_PRODUCT_STATION_10", &insert2));
 	EXCCHECK( gs_pTester->GetSensor(gs_pTester, "SENSOR_3_PRESENCE_PRODUCT_STATION_10", &insert3));
-    insert=insert1||insert2 ||insert3;
-	EXCCHECK( ResetStations());
-
+	PANEL_MSG( AUTOMAT_HELP2, _("Waiting RESET All Stations ..."));
+	if (
+			StatusStations[STATION_20] == NOT_BUSY &&
+			StatusStations[STATION_30] == NOT_BUSY &&
+			StatusStations[STATION_40] == NOT_BUSY &&
+			StatusStations[STATION_50] == NOT_BUSY //&&
+			//StatusStations[STATION_60] == NOT_BUSY 
+		)
+	{
+		EXCCHECK( ResetStations());
+	}
+	else
+	{
+		PANEL_MSG( AUTOMAT_HELP2, _("Stations are busy please wait"));
+		goto Error;
+	}
 	if(gs_Automat.shift_id==0)
-		{
-		PANEL_MSG( AUTOMAT_HELP2, _("Selectionner Une Equipe"));  
+	{
+		PANEL_MSG( AUTOMAT_HELP2, _("Selectionner Une Equipe"));
 		PANEL_MSG( AUTOMAT_HELP1, "");
-		}
-	
+	}
+
 	else if(gs_Automat.masterpart)
-		{
+	{
 		PANEL_MSG( AUTOMAT_HELP2, _("Insérer une piéce type"));
-		}
-	
-	else 
+	}
+
+	else
 	{
 
-			if (gs_Automat.EmtyTable == TRUE) //mode vidage 
-				{
-				if (gs_Automat.ChangeVersion == FALSE) //End Version
-						PANEL_MSG( AUTOMAT_HELP1, _("MODE VIDAGE PLATEAU"));
+		if (gs_Automat.EmtyTable == TRUE) //mode vidage
+		{
+			if (gs_Automat.ChangeVersion == FALSE) //End Version
+				PANEL_MSG( AUTOMAT_HELP1, _("MODE VIDAGE PLATEAU"));
 
-				else if (gs_Automat.ChangeVersion == TRUE) //Change Version
-					PANEL_MSG( AUTOMAT_HELP1, _("Changement de Référence (Vidage Plateau)")); 
+			else if (gs_Automat.ChangeVersion == TRUE) //Change Version
+				PANEL_MSG( AUTOMAT_HELP1, _("Changement de Référence (Vidage Plateau)"));
 
-				if (insert1 ||insert2 ||insert3 )
-					PANEL_MSG( AUTOMAT_HELP2, _("Enlever Le produit"));
-				
-				else if (!insert1 && !insert2 && !insert3 )
-					PANEL_MSG( AUTOMAT_HELP2, _("Appuer Sur Start Cycle"));
-				}
-		
-			else 	  //mode production normal
-				{
-					
-				PANEL_MSG( AUTOMAT_HELP1, _("MODE PRODUCTION"));
-		
-				if (!insert1 && !insert2 && !insert3)
-					PANEL_MSG( AUTOMAT_HELP2, _("Insérer Un Produit"));
-				else if (insert1 && insert2 && insert3 )
-					PANEL_MSG( AUTOMAT_HELP2, _("Appuyer Sur Start Cycle"));
-				}
+			if (insert1 ||insert2 ||insert3 )
+				PANEL_MSG( AUTOMAT_HELP2, _("Enlever Le produit"));
+
+			else if (!insert1 && !insert2 && !insert3 )
+				PANEL_MSG( AUTOMAT_HELP2, _("Appuer Sur Start Cycle"));
+		}
+
+		else 	  //mode production normal
+		{
+
+			PANEL_MSG( AUTOMAT_HELP1, _("MODE PRODUCTION"));
+
+			if (!insert1 && !insert2 && !insert3)
+				PANEL_MSG( AUTOMAT_HELP2, _("Insérer Un Produit"));
+			else if (insert1 && insert2 && insert3 )
+				PANEL_MSG( AUTOMAT_HELP2, _("Appuyer Sur Start Cycle"));
+		}
 	}
 
 Error:
-	EXCRETHROW( pexception);  
+	EXCRETHROW( pexception);
 }
 
 /*---------------------------------------------------------------------------*/
@@ -1138,7 +1164,7 @@ static SElExceptionPtr ProcessEventGuiProduction(void)
 
 		//PANEL_SET_REFERENCES(gs_Automat.pTestSeq->ProductPartNumber, gs_Automat.pTestSeq->PSA_FPN);
 		
-	   if(gs_Automat.Mode==AUTOMAT_PRODUCTION)
+	   if(gs_Automat.TestSeqMode == TESTSEQ_PRODUCTION )
 		{
 			if (gs_pTester)
 			{
@@ -1405,7 +1431,11 @@ static SElExceptionPtr JigPanelBarcode(struct _SSledge* me, int32_t* pError)
 	char			msg[512] = "";
 	int   			result_SMM;
 	char 			Num_Serie_SMM[29+1];
-
+	char 			num_serie_pfin[20+1] = "";
+	char 			num_produit[9+1] = "";
+	bool_t 			ok;	
+	int 			H_PANEL;
+	
 	
 		EXCCHECK( gs_pTracas->GetTracaByIndex(gs_pTracas, 0, &ptraca));   //  traca
 					
@@ -1447,8 +1477,9 @@ static SElExceptionPtr JigPanelBarcode(struct _SSledge* me, int32_t* pError)
 		CopyBytes(BoardVer_sFin, 0 , buffer, 0, 7);
 		CopyBytes(me->Serial_Board_Ver_sFin, 0 , buffer, 7, 9);//YYWW12345
 
-
-		/* verifier si board_ver_sFin est active */
+		PANEL_MSG( AUTOMAT_HELP2, _("Connecting to AsteelFlash DataBase... "));
+		// verifier si board_ver_sFin est active //
+		
 		EXCCHECK( ptraca->Get_BoardVer_sFin_Valide(ptraca, BoardVer_sFin, &id_Board_sFin, &valide));
 		if(!valide)
 			{
@@ -1509,87 +1540,36 @@ static SElExceptionPtr JigPanelBarcode(struct _SSledge* me, int32_t* pError)
 			
 		PANEL_MSG( AUTOMAT_HELP2, _("('Last Mouvement OK')"));
 		
-		/* extraire Field Label datas */
-	/*	EXCCHECK( ptraca->Get_FieldLabel(ptraca, id_Board_pFin, &count, FieldName, FieldData));
-		me->pFieldLabel = calloc(1, sizeof(SFieldLabel));
-		EXCCHECKALLOC(me->pFieldLabel);
-		GetFieldDataFromName (count, FieldName,FieldData, "SAPMN", me->pFieldLabel->SAPMN);
-		if (strlen (me->pFieldLabel->SAPMN) == 0)
-		{
-			sprintf(msg, "Field data non trouvé '(Label %s)'", "SAPMN");
-			PANEL_MSG( AUTOMAT_HELP2, msg);
-			if(pError) *pError = -1;
-			CHECK_ERR( *pError);		
-		}
-		GetFieldDataFromName (count, FieldName,FieldData, "HW-ID", me->pFieldLabel->HWID);
-		if (strlen (me->pFieldLabel->HWID) == 0)
-		{
-			sprintf(msg, "Field data non trouvé '(Label %s)'", "HW-ID");
-			PANEL_MSG( AUTOMAT_HELP2, msg);
-			if(pError) *pError = -1;
-			CHECK_ERR( *pError);		
-		}
-		GetFieldDataFromName (count, FieldName,FieldData, "SAP supplier", me->pFieldLabel->SAP_Supplier);
-		if (strlen (me->pFieldLabel->SAP_Supplier) == 0)
-		{
-			sprintf(msg, "Field data non trouvé '(Label %s)'", "SAP supplier");
-			PANEL_MSG( AUTOMAT_HELP2, msg);
-			if(pError) *pError = -1;
-			CHECK_ERR( *pError);		
-		}
-		GetFieldDataFromName (count, FieldName,FieldData, "Suppliers series No", me->pFieldLabel->Supplier_Series);
-		if (strlen (me->pFieldLabel->Supplier_Series) == 0)
-		{
-			sprintf(msg, "Field data non trouvé '(Label %s)'", "Suppliers series No");
-			PANEL_MSG( AUTOMAT_HELP2, msg);
-			if(pError) *pError = -1;
-			CHECK_ERR( *pError);		
-		}
-		GetFieldDataFromName (count, FieldName,FieldData, "VDE", me->pFieldLabel->VDE_Version);
-		if (strlen (me->pFieldLabel->VDE_Version) == 0)
-		{
-			sprintf(msg, "Field data non trouvé '(Label %s)'", "VDE");
-			PANEL_MSG( AUTOMAT_HELP2, msg);
-			if(pError) *pError = -1;
-			CHECK_ERR( *pError);		
-		}
-		GetFieldDataFromName (count, FieldName,FieldData, "temperature", me->pFieldLabel->Temperature);
-		if (strlen (me->pFieldLabel->Temperature) == 0)
-		{
-			sprintf(msg, "Field data non trouvé '(Label %s)'", "temperature");
-			PANEL_MSG( AUTOMAT_HELP2, msg);
-			if(pError) *pError = -1;
-			CHECK_ERR( *pError);		
-		}
-		GetFieldDataFromName (count, FieldName,FieldData, "Voltage", me->pFieldLabel->Nominal_Voltage);
-		if (strlen (me->pFieldLabel->Nominal_Voltage) == 0)
-		{
-			sprintf(msg, "Field data non trouvé '(Label %s)'", "Voltage");
-			PANEL_MSG( AUTOMAT_HELP2, msg);
-			if(pError) *pError = -1;
-			CHECK_ERR( *pError);		
-		}
-		GetFieldDataFromName (count, FieldName,FieldData, "Nominal power", me->pFieldLabel->Nominal_Power);
-		if (strlen (me->pFieldLabel->Nominal_Power) == 0)
-		{
-			sprintf(msg, "Field data non trouvé '(Label %s)'", "Nominal power");
-			PANEL_MSG( AUTOMAT_HELP2, msg);
-			if(pError) *pError = -1;
-			CHECK_ERR( *pError);		
-		}
-*/
+		/* piece doublant */
+/*		CopyBytes(num_produit, 0 , barcode, 11, 9);
+		sprintf(num_serie_pfin,"SKR_%s%s",BoardVer_pFin,num_produit);
+		printf("%s",num_serie_pfin);
+		EXCCHECK( ptraca->Get_Last_Mouvement(ptraca, num_serie_pfin, "FCT", &result));
+		me->pFieldLabel->reponse= 0;
 		
-		/* Extraire data SMM */
-			/*strncpy(barcode_SMM, barcode,20);
-			EXCCHECK( ptraca->Test_SMM(ptraca, BoardVer_pFin, &result_SMM));
-			if(result_SMM==0)
-				sprintf (me->SMM, "00000000000000000000000000000");
-			else if(result_SMM==1)
+		if(result)
+			{
+				sprintf(msg, "Produit déjà Testé Bonne FCT !");
+				PANEL_MSG( AUTOMAT_HELP2, msg);
+				//reponse = ConfirmPopup ("Piece Doublant", "Produit déjà Testé Bonne FCT-2 ! \n Voulez-vous tester à nouveau ?");
+				
+				H_PANEL = LoadPanel (0, "c:\\application\\plugins\\P_BOUTON.UIR", 1);
+				InstallPopup(H_PANEL);
+				gs_pTester->OkNokCheck(gs_pTester, 90000,&ok); 
+				DiscardPanel(H_PANEL);				
+				printf("%d",ok);
+				if(ok==0)
 				{
-					EXCCHECK( ptraca->Get_SMM_SN(ptraca, barcode_SMM, Num_Serie_SMM));
-					sprintf (me->SMM,Num_Serie_SMM);
-				}*/
-
+					if(pError) *pError = -1;
+					CHECK_ERR( *pError);
+				}
+				if(ok==1)
+				{
+					me->pFieldLabel->reponse;
+					printf("%d",ok);
+				}
+			}*/		
+	
 		PANEL_MSG( AUTOMAT_HELP2, _("('Lecture data base des données OK')"));
 Error:
 	EXCRETHROW( pexception);  
@@ -2187,7 +2167,6 @@ static SElExceptionPtr Activate(struct _SSledge* me)
 	int32_t			error = 0;
 	int32_t			status;
 
-	//printf("Activate\r\n");
 	/* start thread */
 	EXCCHECK( ThreadStart(Thread_Sledge, me, &me->_hThread, NULL));  
 
@@ -2396,7 +2375,6 @@ int Pushed_Start_Skip_Palett (int timeout)
 		gs_pTester->GetSensor(gs_pTester, "BUTTON_START", &status);//BUTTON_START
 		if (status == 0)
 			break;
-		//printf("status BUTTON_NOK %d \n",status);
 		time = (double)(clock()-_start_test_clock);
 		
 		if (time >= (timeout - 1000))	
@@ -2458,7 +2436,6 @@ static SElExceptionPtr ProcessJig(void)
 					{
 					Autorisation_Thread = 0;
 				  	EXCCHECK( sledge_new(&pSledge)); //creation de nouvelle structure pSledge
-
 				  	EXCCHECK( pSledge->Activate(pSledge)); //lancement d'un nouveau thread de pSledge 
 					}
 							
@@ -2543,7 +2520,6 @@ static DWORD WINAPI Thread_Automat(LPVOID param)
 				EXCDISPLAY( ProcessEventGuiResetProduct());
 				break;
 			case WAIT_OBJECT_0 + EVNT_GUI_PRODUCTION:
-			//	printf("WAIT_OBJECT_0 + EVNT_GUI_PRODUCTION\r\n");
 				EXCDISPLAY( ProcessEventGuiProduction());
 				break;
 			case WAIT_OBJECT_0 + EVNT_GUI_QUALITY_RETEST:
@@ -2559,7 +2535,6 @@ static DWORD WINAPI Thread_Automat(LPVOID param)
 				EXCDISPLAY( ProcessEventGuiExpertiseSequenceCreated());
 				break;
 			case WAIT_OBJECT_0 + EVNT_JIG_CYCLE_START_:
-			//	printf("WAIT_OBJECT_0 + EVNT_JIG_CYCLE_START_\r\n");
 				EXCDISPLAY( ProcessJig());
 			break;
 			case WAIT_OBJECT_0 + EVNT_STOP_THREAD:
@@ -2600,7 +2575,6 @@ static DWORD WINAPI Thread_Sledge(LPVOID param)
 	SSledgePtr		pSledge = (SSledgePtr) param;
 	SSledgePtr		me = (SSledgePtr) param;//Added
 
-	//printf("Thread_Sledge\r\n");	
 	EXCDISPLAY( ProcessEventJigItemCycleStarted(pSledge)); 
 	
 	/* free pointer pSledge */
@@ -2888,7 +2862,7 @@ static SElExceptionPtr PanelWaitForRemove(void)
 {
 	SElExceptionPtr		pexception = NULL;
 	int32_t				error = 0;
-    bool_t              insert1,insert2, status_barrier;
+    bool_t              insert1,insert2,insert3, status_barrier;
     bool_t              plug, unplug;
 	
 	
@@ -2897,7 +2871,6 @@ static SElExceptionPtr PanelWaitForRemove(void)
 		StatusStations[STATION_10] = BUSY;
 		
 		EXCCHECK( gs_pTester->GetSensor(gs_pTester, "INFRARED_BARRIER_OUT", &status_barrier));
-		//printf("PanelWaitForRemove : status_barrier = %d\r\n", status_barrier);
 		if (status_barrier)
 			break;
 	
@@ -2911,10 +2884,10 @@ static SElExceptionPtr PanelWaitForRemove(void)
 	do{
 		StatusStations[STATION_10] = BUSY;
 
-		EXCCHECK( gs_pTester->GetSensor(gs_pTester, "SENSOR__1_PRESENCE_PRODUCT_STATION_10", &insert1));
-		EXCCHECK( gs_pTester->GetSensor(gs_pTester, "SENSOR__2_PRESENCE_PRODUCT_STATION_10", &insert2));
-		//printf("PanelWaitForRemove : insert = %d\r\n", insert);
-		if (insert1 == FALSE && insert2 == FALSE )
+		EXCCHECK( gs_pTester->GetSensor(gs_pTester, "SENSOR_1_PRESENCE_PRODUCT_STATION_10", &insert1));
+		EXCCHECK( gs_pTester->GetSensor(gs_pTester, "SENSOR_2_PRESENCE_PRODUCT_STATION_10", &insert2));
+		EXCCHECK( gs_pTester->GetSensor(gs_pTester, "SENSOR_3_PRESENCE_PRODUCT_STATION_10", &insert3));
+		if (insert1 == FALSE && insert2 == FALSE && insert3 == FALSE  )
 			break;
 		
 	}while (TRUE);
@@ -3077,6 +3050,7 @@ static SElExceptionPtr JigPanelRelease(struct _SSledge* me, bool_t fault)
 
 	else 						   
 	{	
+
 			StatusStations[STATION_10] = BUSY;
 			PANEL_RESULT("OK");
 			PANEL_STATION_STATUS(STATION_10, OK);
@@ -3595,7 +3569,6 @@ static SElExceptionPtr EventFunctionPluginCallback( const char* eventName, void*
 			gs_RnR_Repeat = strtol(pdata2, NULL, 10);
 			
 		}
-
 	}
 	
 Error:   
@@ -4083,6 +4056,7 @@ PLUGIN_API SElExceptionPtr PLUGIN_RUN_NAME_CODE( SPluginArgsPtr a_pPluginArgs, c
 	EXCCHECK( Init_BK_PRECISION_WS40_WS50());
 	EXCCHECK( Init_Alim_keysight());
 	EXCCHECK( Init_PWM_Generator());
+	
 	/* Connecter à la base Traca */
 	if (gs_pTracas)
 	{

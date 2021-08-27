@@ -1,5 +1,5 @@
-@"c:\program files (x86)\national instruments\cvi2020\bin\cvilink.exe" -cmd:link_options.txt -flags:0 -expiry:0 > Link.out 2>&1
-@if %errorlevel% neq 0 goto err
+@"c:\program files (x86)\national instruments\cvi2019\bin\cvilink.exe" -cmd:link_options.txt -flags:0 -expiry:0 > Link.out 2>&1
+@if errorlevel 1 goto err
 @echo Link success
 @echo Link complete
 @exit 0
@@ -7,5 +7,3 @@
 @echo Link complete
 @echo Link failed
 @exit 1
-:RaiseError
-@exit /b 1

@@ -17,7 +17,7 @@ ViInt32   ErrorDMM,
 		  ErrorE3642A,
 		  ErrorBK;
 ViRsrc    BKresourceName       = "ASRL1::INSTR";
-ViRsrc    E3642AresourceName   = "ASRL17::INSTR";
+//ViRsrc    E3642AresourceName   = "ASRL17::INSTR";
 ViRsrc    AG34450AresourceName = "USB0::0x2A8D::0xB318::MY59320036::INSTR";
 ViChar    channel[50];
 ViSession vi_DMM 		   = 0;
@@ -73,7 +73,7 @@ DEFINE_GLOBAL_VARIABLE();
 STestListItem gs_TestList_Station_30[] = {
 
 	/* STATION 30 */
-	ADD_TI( "30.0.0",  EA210, 30_0_0),		/* TESTER : Disconnect Product */
+	ADD_TI( "30.0.0",  EA210, 30_0_0),		/* TESTER : connect Product */
 	ADD_TI( "30.0.1",  EA210, 30_0_1),		/* TESTER : Disconnect Product */
 	ADD_TI( "30.0.2",  EA210, 30_0_2),		/* TESTER : HW TEST MODE DBUS */
 
@@ -146,7 +146,7 @@ ViSession vi_E3642A;
 SElExceptionPtr Init_Alim_keysight (void)
 {
 
-ViRsrc    E3642AresourceName   = "ASRL17::INSTR";
+ViRsrc    E3642AresourceName   = "ASRL3::INSTR";
 SElExceptionPtr	pexception = NULL;
 ViInt32   ErrorE3642A,
 		  ErrorCode;;
@@ -247,7 +247,7 @@ FCE_TESTSEQUENCE_INIT(STATION_30)
 	TEST_USE(TESTER);
 	TESTER_DISCONNECT_ALL_STATION_30();
 	SetCtrlAttribute (gs_TestPanel, PANEL_TIMER_WS30,ATTR_ENABLED, TRUE);
-	
+		//printf("init WS30 \n\r ");	
 Error:
 	if (pexception) 	SetCtrlAttribute (gs_TestPanel, PANEL_TIMER_WS30,ATTR_ENABLED, FALSE);
 	TESTSEQUENCEINIT_END();
@@ -261,17 +261,20 @@ FCE_TESTSEQUENCE_CLEANUP(STATION_30)
 	bp98xx_Close(vi_BK);
 	Close_Alim_keysight();
 	TESTSEQUENCECLEANUP_BEGIN(); 
-	SetCtrlAttribute (gs_TestPanel, PANEL_TIMER_WS30, ATTR_ENABLED, FALSE);
 	TEST_USE(TESTER);
 	TESTER_DISCONNECT_ALL_STATION_30();
 	TESTER_VERTICAL_UNPLUG_PANEL_STATION_30(3000);
 	TESTER_UNPLUG_PANEL_STATION_30(5000);//TIMEOUT_DEFAULT
 	//TESTER_INIT ();
-	DISPLAY_TESTSEQ_RESULT ();
 
-	
-Error:
+    Ag34450_reset (vi_DMM);
+			//printf("cleanup WS30 \n\r ");
+Error:			
+	SetCtrlAttribute (gs_TestPanel, PANEL_TIMER_WS30, ATTR_ENABLED, FALSE);	
+	DISPLAY_TESTSEQ_RESULT ();	
 	TESTSEQUENCECLEANUP_END();
+
+
 }
 
 /*********************************************************************************
@@ -337,6 +340,8 @@ FCE_TEST(EA210, 30_0_0)
 	EXCCHECK( Init_Alim_keysight());
 	CONNECT_UDA_RELAY();
 	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_3M", TRUE));       //step 6.5
+	
+	
 	/*--Initiate the keysight and create a session */
 	ErrorDMM = Ag34450_init (AG34450AresourceName, VI_FALSE, VI_FALSE, &vi_DMM);
 	if (ErrorDMM < VI_SUCCESS)
@@ -469,7 +474,7 @@ FCE_TEST(EA210, 30_0_2)
 			break;
 
 	}
-	while (cnt<40);
+	while (cnt<10);
 
 
 	if (strcmp(MessageID, "7100"))
@@ -559,7 +564,7 @@ FCE_TEST(EA210, 30_1_1)
 		if (MessageID_OK)
 			break;
 		
-		if (cnt==40) 
+		if (cnt==10) 
 			break; 
 		
 	}while (TRUE);
@@ -654,7 +659,7 @@ FCE_TEST(EA210, 30_1_2)
 		if (MessageID_OK)
 			break;
 		
-		if (cnt ==40) 
+		if (cnt ==10) 
 			break; 
 		
 	}while (TRUE);
@@ -667,17 +672,17 @@ FCE_TEST(EA210, 30_1_2)
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
 	
-	/* Offset Correction value	*/
-	CopyString (byte1,0,MessageData,0,4);
-	sscanf(byte1, "%04X", &valeur);
-	//LIMIT_CHECK(INT32, valeur);	
+	
 	
 	/* Check result of Set Line Offset Correction value */
 	CopyString (byte,0,MessageData,4,2);
 	sscanf(byte, "%02X", &valeur);
 	LIMIT_CHECK(INT32, valeur);
 	
-
+	/* Offset Correction value	*/
+	CopyString (byte1,0,MessageData,0,4);
+	sscanf(byte1, "%04X", &valeur);
+	LIMIT_CHECK(INT32, valeur);	
 	//KEYSIGHT : Power off electronic
 	
 	
@@ -945,12 +950,12 @@ FCE_TEST(EA210, 30_2_3)
 		//printf ("30_2_3 : ActualCurrent = %f\r\n", ActualCurrent);
 		LIMIT_CHECK_EXT(REAL64, ActualCurrent, pexception);
 		
-		if (pexception && cnt==40)
+		if (pexception && cnt==10)
 			{
 				EXCCHECK(pexception);
 			}
 	//printf ("30_2_3 : cnt = %d\r\n", cnt);
-	}while(pexception && cnt<40);
+	}while(pexception && cnt<10);
 
 
 
@@ -1318,7 +1323,7 @@ FCE_TEST(EA210, 30_3_1)
 		if (MessageID_OK)
 			break;
 		
-		if (cnt == 40) 
+		if (cnt == 10) 
 			break; 
 		
 	}while (TRUE);
@@ -1414,7 +1419,7 @@ FCE_TEST(EA210, 30_3_2)
 		if (MessageID_OK)
 			break;
 		
-		if (cnt == 40) 
+		if (cnt == 10) 
 			break; 
 		
 	}while (TRUE);
@@ -1674,6 +1679,8 @@ Error:
 
 FCE_TEST(EA210, 30_4_1)
 {
+	char charHexValue[10];
+	char HexValue[10];
 	char voltchar[10];
 	char outputchar[50];
 	char value[10];
@@ -1706,18 +1713,26 @@ FCE_TEST(EA210, 30_4_1)
 	}
 	 EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_30));
 	 Sleep(100);
-#if 0    /* formerly excluded lines */
-     /*bp98xx_MeasureOutput (vi_BK, &Freq, &ActualVoltage, &ActualCurrent, &ActualPower);
-	 sprintf(value, "%5f\n", ActualVoltage*100);
+
+   /*  bp98xx_MeasureOutput (vi_BK, &Freq, &ActualVoltage, &ActualCurrent, &ActualPower);
+	 sprintf(value, "%5f", ActualVoltage*100);
 	 CopyString(voltchar,0,value,0,5);
 	 val=atoi(voltchar);
-	 sprintf(value, "%5x\n", val);*/
-#endif   /* formerly excluded lines */
+	 sprintf(HexValue,"%5X", val);
+	 sprintf(charHexValue,"%s", HexValue);*/
+	 
+     bp98xx_MeasureOutput (vi_BK, &Freq, &ActualVoltage, &ActualCurrent, &ActualPower);
+	 if ((ActualVoltage < 229) || (ActualVoltage > 231))
+	{		
 
+		sprintf(msg, "Function Error : output 230 vac failed : %s\n", ErrorMessage);
+		EXCTHROW( -1, msg);
+	}
+	
 	do{
 		cnt++;
 		
-		pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_30, 0x1B, "7073","59D8" );//
+		pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_30, 0x1B, "7073","59D8" );//"59D8"
 		Sleep(300);
 		pexception = pdbus->ReadLowLevel(pdbus, UDA_NAME_STATION_30, 0xC0, MessageID, MessageData);
 		
@@ -1819,13 +1834,13 @@ FCE_TEST(EA210, 30_4_2)
 		
 		//----------------------------------
 		//if (!strcmp(MessageID, "7174"))
-			if (valeur==1)
-			      MessageID_OK = 1;
+			//if (valeur==1)
+			//      MessageID_OK = 1;
 	
-		if (MessageID_OK)
+		if (MessageID==7174)
 			break;
 		
-		if (cnt == 40) 
+		if (cnt == 10) 
 			break; 
 		
 	}while (TRUE);
@@ -1838,16 +1853,17 @@ FCE_TEST(EA210, 30_4_2)
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
 	
-	//Correction factor	
-	CopyString (byte1,0,MessageData,0,4);
-	sscanf(byte1, "%04X", &valeur);
-	//LIMIT_CHECK(INT32, valeur);	
 	
-	//Check result of Set Line Circuit Linear Factor value	
+	
+	//Check result of Set Line Circuit Linear Factor value
 	CopyString (byte,0,MessageData,4,2);
 	sscanf(byte, "%02X", &valeur);
 	LIMIT_CHECK(INT32, valeur );
-	  
+
+	//Correction factor
+	CopyString (byte1,0,MessageData,0,4);
+	sscanf(byte1, "%04X", &valeur);
+	LIMIT_CHECK(INT32, valeur);
 
 Error:
 	SetTestValue(pTID, ((STestParamPtr)pTID)->process, ((STestParamPtr)pTID)->step, "Log", pdbus->GetCache(pdbus, UDA_NAME_STATION_30));
@@ -2013,6 +2029,7 @@ FCE_TEST(EA210, 30_4_5)
 	char   msg[512];
 
 	//BK : Power on electronic with 230VAC
+	
 		ErrorBK = bp98xx_ConfigureOutput (vi_BK, 230.0, 50.0);
 	if (ErrorBK < VI_SUCCESS)
 	{		
@@ -2221,7 +2238,8 @@ FCE_TEST(EA210, 30_5_1)
 	
 	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_3Q_3Q2", TRUE));	
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_30));
-		Sleep(500);			
+	Sleep(500);
+	
 	do{
 		cnt++;
 		
@@ -2278,13 +2296,11 @@ FCE_TEST(EA210, 30_5_1)
 	sscanf(byte, "%04X", &valeur);
 	LIMIT_CHECK(INT32, valeur );	
 	  
-	
 	//Analog Input Ambient temperature sensor
 	CopyString (byte,0,MessageData,16,4);
 	sscanf(byte, "%04X", &valeur);
 	LIMIT_CHECK(INT32, valeur );
 	  	
-	
 	
 Error:
 	SetTestValue(pTID, ((STestParamPtr)pTID)->process, ((STestParamPtr)pTID)->step, "Log", pdbus->GetCache(pdbus, UDA_NAME_STATION_30));
@@ -2721,7 +2737,7 @@ FCE_TEST(EA210, 30_6_4)
 		if (MessageID_OK)
 			break;
 		
-		if (cnt == 40) 
+		if (cnt == 10) 
 			break; 
 		
 	}while (TRUE);

@@ -161,45 +161,45 @@ SourceLocation="c:\work\src\modules\test\test_panel.c:906:1"
 [OnDisplay]
 Class="Function"
 Prototype="int OnDisplay(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
-SourceLocation="c:\work\src\modules\test\test_panel.c:1003:1"
+SourceLocation="c:\work\src\modules\test\test_panel.c:1000:1"
 
 [OnHidePanel]
 Class="Function"
 Prototype="int OnHidePanel(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
-SourceLocation="c:\work\src\modules\test\test_panel.c:1031:1"
+SourceLocation="c:\work\src\modules\test\test_panel.c:1028:1"
 
 [OnTest]
 Class="Function"
 Prototype="int OnTest(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
-SourceLocation="c:\work\src\modules\test\test_panel.c:1051:1"
+SourceLocation="c:\work\src\modules\test\test_panel.c:1048:1"
 
 [OnFnc10]
 Class="Function"
 Prototype="int OnFnc10(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
-SourceLocation="c:\work\src\modules\test\test_panel.c:1090:1"
+SourceLocation="c:\work\src\modules\test\test_panel.c:1087:1"
 
 [OnFnc20]
 Class="Function"
 Prototype="int OnFnc20(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
-SourceLocation="c:\work\src\modules\test\test_panel.c:1112:1"
+SourceLocation="c:\work\src\modules\test\test_panel.c:1109:1"
 
 [OnFnc30]
 Class="Function"
 Prototype="int OnFnc30(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
-SourceLocation="c:\work\src\modules\test\test_panel.c:1176:1"
+SourceLocation="c:\work\src\modules\test\test_panel.c:1173:1"
 
 [OnFnc40]
 Class="Function"
 Prototype="int OnFnc40(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
-SourceLocation="c:\work\src\modules\test\test_panel.c:1234:1"
+SourceLocation="c:\work\src\modules\test\test_panel.c:1231:1"
 
 [OnFnc50]
 Class="Function"
 Prototype="int OnFnc50(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
-SourceLocation="c:\work\src\modules\test\test_panel.c:1292:1"
+SourceLocation="c:\work\src\modules\test\test_panel.c:1289:1"
 
 [OnFnc60]
 Class="Function"
 Prototype="int OnFnc60(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
-SourceLocation="c:\work\src\modules\test\test_panel.c:1323:1"
+SourceLocation="c:\work\src\modules\test\test_panel.c:1320:1"
 

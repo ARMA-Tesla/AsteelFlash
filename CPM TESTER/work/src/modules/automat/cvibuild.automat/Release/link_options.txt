@@ -1,36 +1,36 @@
 -nologo
--out:c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\automat.dll
--def:c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\automat.dll.defs
--implib:c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\automat.lib
+-out:c:\work\src\modules\automat\cvibuild.automat\Release\automat.dll
+-def:c:\work\src\modules\automat\cvibuild.automat\Release\automat.dll.defs
+-implib:c:\work\src\modules\automat\cvibuild.automat\Release\automat.lib
 -ignoreexports
--dependenciesMapFile:c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\dependencies.lnk.in
+-dependenciesMapFile:c:\work\src\modules\automat\cvibuild.automat\Release\dependencies.lnk.in
 -arch:x86
 -timestamp
--res:c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\resources.res
+-res:c:\work\src\modules\automat\cvibuild.automat\Release\resources.res
 -entry:_CVIDllMainStartupCode@12
 -base:0x10000000
--linked:c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\linkersummary.txt
--dlldeps:c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\dlldependencies.txt
--licensing:c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\linkerlicensing.txt
--browsedeps:c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\moduledependencies.txt
+-linked:c:\work\src\modules\automat\cvibuild.automat\Release\linkersummary.txt
+-dlldeps:c:\work\src\modules\automat\cvibuild.automat\Release\dlldependencies.txt
+-licensing:c:\work\src\modules\automat\cvibuild.automat\Release\linkerlicensing.txt
+-browsedeps:c:\work\src\modules\automat\cvibuild.automat\Release\moduledependencies.txt
 -stackreserve:1310720
 -stackcommit:4096
--in:c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\automat.obj
--in:c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\automat_fnc.obj
--in:c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\eleventdata.obj
--in:c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\elstring.obj
--in:c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\eltest.obj
--in:c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\Exception.obj
--in:c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\language.obj
--in:c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\Log_Asteel.obj
--in:c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\multithread.obj
--in:c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\testseq.obj
+-in:c:\work\src\modules\automat\cvibuild.automat\Release\automat.obj
+-in:c:\work\src\modules\automat\cvibuild.automat\Release\automat_fnc.obj
+-in:c:\work\src\modules\automat\cvibuild.automat\Release\eleventdata.obj
+-in:c:\work\src\modules\automat\cvibuild.automat\Release\elstring.obj
+-in:c:\work\src\modules\automat\cvibuild.automat\Release\eltest.obj
+-in:c:\work\src\modules\automat\cvibuild.automat\Release\Exception.obj
+-in:c:\work\src\modules\automat\cvibuild.automat\Release\language.obj
+-in:c:\work\src\modules\automat\cvibuild.automat\Release\Log_Asteel.obj
+-in:c:\work\src\modules\automat\cvibuild.automat\Release\multithread.obj
+-in:c:\work\src\modules\automat\cvibuild.automat\Release\testseq.obj
 -more:c:\program files (x86)\national instruments\cvi2020\bin\msvc\cvistart.lib
 -more:c:\program files (x86)\national instruments\cvi2020\bin\msvc\cvi.lib
 -more:c:\Program Files (x86)\National Instruments\CVI2020\bin\msvc\advanlys.lib
 -more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\advapi32.lib
 -more:c:\Program Files (x86)\National Instruments\CVI2020\toolslib\toolbox\msvc\asynctmr.obj
--more:c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\bp98xx.obj
+-more:c:\Program Files (x86)\IVI Foundation\IVI\Drivers\bp98xx\msvc\bp98xx.lib
 -more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\bufferoverflowu.lib
 -more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\cvi_db.lib
 -more:c:\Program Files (x86)\National Instruments\CVI2020\bin\msvc\cviauto.lib
@@ -39,27 +39,17 @@
 -more:c:\Program Files (x86)\National Instruments\CVI2020\bin\msvc\cvinetv.lib
 -more:c:\Program Files (x86)\National Instruments\CVI2020\bin\msvc\cvintwrk.lib
 -more:c:\Program Files (x86)\National Instruments\CVI2020\bin\msvc\cvitdms.lib
--more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\FlexMotn.lib
 -more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\gdi32.lib
 -more:c:\Program Files (x86)\National Instruments\CVI2020\bin\msvc\gpib.lib
--more:c:\Program Files (x86)\National Instruments\Shared\CVI\toolslib\custctrl\msvc\ImageControl.obj
--more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\imaqio.lib
+-more:c:\Program Files (x86)\IVI Foundation\IVI\Lib\msc\hpe364xa.lib
 -more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\ivi.lib
 -more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\kernel32.lib
--more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\Modt.lib
 -more:c:\Program Files (x86)\National Instruments\CVI2020\toolslib\toolbox\msvc\msxmldom.obj
 -more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\NIDAQmx.lib
--more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\NIDiagCS.lib
--more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\niimaq.lib
--more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\niimaqdx.lib
 -more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nisyscfg.lib
--more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nivision.lib
 -more:c:\Program Files (x86)\National Instruments\CVI2020\bin\msvc\nivxi.lib
--more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nixnet.lib
 -more:c:\Program Files (x86)\National Instruments\CVI2020\bin\msvc\omp.lib
 -more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\pid.lib
--more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\smt.lib
--more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\SPT.lib
 -more:c:\Program Files (x86)\National Instruments\CVI2020\toolslib\toolbox\msvc\toolbox.obj
 -more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\user32.lib
 -more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\uuid.lib

@@ -11,6 +11,7 @@
 
 
 double time_station_60;
+char   Barcode_Sent[512]= "";
 
 #define TESTER_CONVOYER(status) \
 	EXCCHECK( ptester->SetSensor(ptester, "CMD_CONVEYOR", status? 1:0)) \
@@ -464,7 +465,7 @@ FCE_TEST(EA210, 60_20)
 	char				Error[128] = "";
 	char				sAmmount[128] = "";
 	char            	Buffer[512]= "";
-	char   barcode[512];	
+	char  				 barcode[512];	
 	char 				buffer[2048] = "";
 	char   Date_Debut[32+1];
 	int    Year, Month, Day, Hour, Minute, Second;
@@ -487,8 +488,8 @@ FCE_TEST(EA210, 60_20)
 
 	    sprintf(((STestParamPtr)pTID)->half_Num_Serie_pFin, "SKR_%s", ((STestParamPtr)pTID)->Board_Ver_pFin);
 		sprintf(Buffer, "%s%s", ((STestParamPtr)pTID)->half_Num_Serie_pFin,((STestParamPtr)pTID)->Serial_Board_Ver_sFin);
-
-
+		sprintf(Barcode_Sent, "%s",Buffer );
+		//printf("Barcode_Sent %s",Barcode_Sent);
 		EXCCHECK(pData->SetStringPtr(pData, Buffer));
 		EXCCHECK( gs_EventFactory->PulseEvent(gs_EventFactory, "EVNT_TESTER_BUTTON_PRESSED_LABEL", pData));
 		
@@ -582,7 +583,7 @@ FCE_TEST(EA210, 60_30)
 	TEST_USE(TESTER);
    
 	/* pick & place to print */
-	EXCCHECK(ptester->PickPrintPanelStation60(ptester, 10000));
+	EXCCHECK(ptester->PickPrintPanelStation60(ptester, 12000));
 	
 	
 Error:
@@ -745,11 +746,17 @@ FCE_TEST(EA210, 60_60)
 
     TEST_BEGIN();
 	TEST_USE(TESTER);
+	TEST_USE(TRACA);
+	
     char barcode[512];
     char buffer[512];
-	char msg[255];
+	char msg[512];
 	int i;
-
+	bool_t 	mouvment;
+	
+	
+	INITIALIZE_TRACA(0);
+	
 	/* read barcode */
 	memset (buffer, 0x00, 512);
 	memset (barcode, 0x00, 512);
@@ -773,7 +780,33 @@ FCE_TEST(EA210, 60_60)
 		EXCTHROW( -1, msg);
 	}
 	
+	if (strcmp(barcode,Barcode_Sent)!=0)
+	{
+
+		sprintf (msg, "erreur barcode =  %s  Expected Barcode = %s  ",barcode,Barcode_Sent);
+		EXCTHROW( -1, msg);
+	}
 	
+	
+			/******************************** Vérification piece doublant  *************************************/
+			
+			//if(		!(((STestParamPtr)pTID)->pFieldLabel->reponse)		) //Piece déjà passée bonne FCT,  
+			//{			
+			//	pexception = ptraca->Get_Last_Mouvement(ptraca,barcode,"FCT", &mouvment);
+			//	if (pexception)
+			//	{
+			//		((STestParamPtr)pTID)->pexception = pexception;
+			//		EXCTHROW (-1, "erreur Get Last Mouvement !");
+			//	}
+			//	if (mouvment)
+			//	{
+			//		((STestParamPtr)pTID)->pexception = pexception;
+			//		EXCTHROW (-1, "Produit déjà Testé Bonne FCT !");
+			//	}
+			//}
+			
+			
+			
 Error:
 	TEST_END();
 }

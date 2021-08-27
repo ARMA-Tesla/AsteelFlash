@@ -13,7 +13,7 @@ double time_station_50;
 
 ViInt32   ErrorAG34450;
 ViRsrc    AG34450AresourceNameWS50 = "USB0::0x2A8D::0xB318::MY59300128::INSTR";
-ViSession vi_Ag34450=0;
+ViSession vi_Ag34450_WS50=0;
 ViStatus  ErrorCode ;
 int ErrorPVS=1;
 ViChar    ErrorMessage[512];
@@ -39,13 +39,13 @@ DEFINE_GLOBAL_VARIABLE();
 	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5D",                FALSE)) \ 
 	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5E",                FALSE)) \
 	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5F",                FALSE)) \
-	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5I",              	 FALSE)) \
-	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5L",              	 FALSE)) \
-	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5M",                FALSE)) \
-	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5N",                FALSE)) \
-	EXCCHECK( ptester->SetSensor(ptester, "CMD_DBUS_Relay_5H",           FALSE)) \ 
-	EXCCHECK( ptester->SetSensor(ptester, "CMD_PowerSupply_Relay_5G",    FALSE)) \
-    EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4T",                FALSE));
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5I",              	 FALSE)) \  
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5L",              	 FALSE)) \  
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5M",                FALSE)) \  
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5N",                FALSE)) \  
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_DBUS_Relay_5H",           FALSE)) \  
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_PowerSupply_Relay_5G",    FALSE)) \  
+    EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4T",                FALSE)); //MOVED FROM WS40 TO WS 5O REALY TRIAC ACTIVATION
 
 STestListItem gs_TestList_Station_50[] = {
 
@@ -107,10 +107,9 @@ FCE_TESTSEQUENCE_INIT(STATION_50)
 	    TEST_USE(TESTER);
 	    PANEL_INI();
 		TESTER_DISCONNECT_ALL_STATION_50();
-		EXCCHECK( ptester->SetSensor(ptester, "CMD_DBUS_Relay_5H",       TRUE));//DBUS
+		//EXCCHECK( ptester->SetSensor(ptester, "CMD_DBUS_Relay_5H",       FALSE));//DBUS
 		
-		
-		
+	
 			ErrorPVS = OpenComConfig (6, "COM6",57600, 0, 8, 1, 512, 512);
 			if (ErrorPVS < 0)
 			{
@@ -148,7 +147,7 @@ FCE_TESTSEQUENCE_INIT(STATION_50)
 				sprintf(msg, "Function Error : PVS set Over Current Protection FAIL!! \r\n");
 				EXCTHROW( -1, msg);
 			}
-			sprintf (command,"OISET 4\n");
+			sprintf (command,"OISET 2\n");
 			ErrorPVS = ComWrt (6,command , strlen (command));
 			if (ErrorPVS < 0)
 			{
@@ -175,33 +174,32 @@ FCE_TESTSEQUENCE_INIT(STATION_50)
 			ErrorPVS = ComWrt (6,command , strlen (command));
 			ErrorPVS = ComRd (6, BufferRead, 10);
 #endif   /* formerly excluded lines */
-
-		
      
 		// Initiate the keysight and create a session ---------------------------//
-		//if(vi_Ag34450 ==0)
+		//if(vi_Ag34450_WS50 ==0)
 		//{
-		ErrorAG34450 = Ag34450_init (AG34450AresourceNameWS50, 1, 1, &vi_Ag34450);
+		ErrorAG34450 = Ag34450_init (AG34450AresourceNameWS50, 0, 1, &vi_Ag34450_WS50);
+		//printf("agilent init1 \n");
 		if (ErrorAG34450 < VI_SUCCESS)
 		{
-			ErrorAG34450 = Ag34450_init (AG34450AresourceNameWS50, 1, 1, &vi_Ag34450);
+			ErrorAG34450 = Ag34450_init (AG34450AresourceNameWS50, 0, 1, &vi_Ag34450_WS50);
+			//printf("agilent init2 \n");
 			if (ErrorAG34450 < VI_SUCCESS)
 			{
-				Ag34450_GetError(vi_Ag34450, &ErrorCode, 255, ErrorMessage);
+				Ag34450_GetError(vi_Ag34450_WS50, &ErrorCode, 255, ErrorMessage);
 				sprintf(msg, "Function Error : Ag34450_init \r\n Error: %d, message error : %s\n", ErrorCode, ErrorMessage);
 				EXCTHROW( -1, msg);
 			}
 		}
-			//Ag34450_ACVoltageConfigure (vi_Ag34450, 100, AG34450_VAL_RESOLUTION_HIGH);
-			Sleep(100);
-			/*EXCCHECK( ptester->SetSensor(ptester, "CMD_PowerSupply_Relay_5G",TRUE));//POWER SUPPLY
-			EXCCHECK( ptester->SetSensor(ptester, "CMD_DBUS_Relay_5H",       TRUE));//DBUS
-			EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4T",            TRUE));//CONNECT RESISTANCES*/
+		Ag34450_ClearError(vi_Ag34450_WS50);
+		Sleep(100);
+			
 		//}
-		
+		//printf("init WS50 \n\r ");
 
 Error:
-	if (pexception) 	SetCtrlAttribute (gs_TestPanel, PANEL_TIMER_WS50,ATTR_ENABLED, FALSE);
+	if (pexception) 	
+	SetCtrlAttribute (gs_TestPanel, PANEL_TIMER_WS50,ATTR_ENABLED, FALSE);
 	TESTSEQUENCEINIT_END();
 }
 
@@ -210,18 +208,29 @@ Error:
  *********************************************************************************/
 FCE_TESTSEQUENCE_CLEANUP(STATION_50)
 {
+	
 		TESTSEQUENCECLEANUP_BEGIN();
 		TEST_USE(TESTER);
-		SetCtrlAttribute (gs_TestPanel, PANEL_TIMER_WS50, ATTR_ENABLED, FALSE);		
-        Ag34450_reset (vi_Ag34450);
+		
+        Ag34450_reset (vi_Ag34450_WS50);
+		Ag34450_close (vi_Ag34450_WS50);
 		TESTER_DISCONNECT_ALL_STATION_50();
 	    TESTER_UNPLUG_PANEL_STATION_50(5000);
-		TESTER_INIT ();
-		DISPLAY_TESTSEQ_RESULT ();
-
-	
+		//TESTER_INIT ();
+		//printf("agilent init1 \n");
+		ErrorPVS = CloseCom (6);
+			if (ErrorPVS < 0)
+			{
+				sprintf(msg, "Function Error : Close COM6 PVS FAIL!! \r\n");
+				EXCTHROW( -1, msg);
+			}
+		
+		//printf("cleanup WS50 \n\r ");	
 Error:
+	SetCtrlAttribute (gs_TestPanel, PANEL_TIMER_WS50, ATTR_ENABLED, FALSE);
+	DISPLAY_TESTSEQ_RESULT ();
 	TESTSEQUENCECLEANUP_END();
+
 }
 
 /*********************************************************************************
@@ -242,7 +251,8 @@ Error:
 
 //
 /*********************************************************************************
- * Function 50_0_0
+ * Function 
+50_0_0
 *********************************************************************************/
 
 FCE_HELP(EA210, 50_0_0)
@@ -284,8 +294,7 @@ FCE_TEST(EA210, 50_0_0)
 	{
 		TESTER_PLUG_PANEL_STATION_50(5000);
 	}
-	EXCCHECK( ptester->SetSensor(ptester, "CMD_PowerSupply_Relay_5G",TRUE));//POWER SUPPLY
-
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_PowerSupply_Relay_5G",FALSE));//POWER SUPPLY
 	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4T",            TRUE));//CONNECT RESISTANCES
 	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5I",            TRUE));
 
@@ -381,7 +390,8 @@ FCE_INIT(EA210, 50_0_2)
 {
     TESTINIT_BEGIN();	
 	TEST_USE(TESTER);
-
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_PowerSupply_Relay_5G",TRUE));//POWER SUPPLY
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_DBUS_Relay_5H",       TRUE));//DBUS
 Error:    
     TESTINIT_END();
 }
@@ -501,10 +511,10 @@ FCE_TEST(EA210, 50_10_1)
 			EXCTHROW( -1, msg);
 		}
 		/*CONFIG DMM DC MEASUREMENT */
-		ErrorAG34450 = Ag34450_DCVoltageConfigure(vi_Ag34450, 100, AG34450_VAL_RESOLUTION_HIGH);
+		ErrorAG34450 = Ag34450_DCVoltageConfigure(vi_Ag34450_WS50, 100, AG34450_VAL_RESOLUTION_MEDIUM);
 		if (ErrorAG34450 < VI_SUCCESS)
 		{
-			Ag34450_GetError(vi_Ag34450, &ErrorCode, 255, ErrorMessage);
+			Ag34450_GetError(vi_Ag34450_WS50, &ErrorCode, 255, ErrorMessage);
 			sprintf(msg, "Function Error : Ag34450_DCVoltageConfigure \r\n Error: %d, message error : %s\n", ErrorCode, ErrorMessage);
 			EXCTHROW( -1, msg);
 		}
@@ -515,15 +525,15 @@ FCE_TEST(EA210, 50_10_1)
 		{
 			cnt++;
 			EXCDELETE(pexc_first);
-			ErrorAG34450 = Ag34450_Read (vi_Ag34450, 8000, &voltage);
+			ErrorAG34450 = Ag34450_Read (vi_Ag34450_WS50, 8000, &voltage);
 			if (ErrorAG34450 < VI_SUCCESS)
 			{
-				Ag34450_GetError(vi_Ag34450, &ErrorCode, 255, ErrorMessage);
+				Ag34450_GetError(vi_Ag34450_WS50, &ErrorCode, 255, ErrorMessage);
 				sprintf(msg, "Function Error : Ag34450_Read \r\n Error: %d, message error : %s\n", ErrorCode, ErrorMessage);
 				EXCTHROW( -1, msg);
 			}
 	
-			LIMIT_CHECK_EXT(REAL64, voltage/0.06, pexception);//20.4VDC correspond à 340 VDC 
+			LIMIT_CHECK_EXT(REAL64, (float)voltage/0.06, pexception);//20.4VDC correspond à 340 VDC 
 			if(!pexc_first) 
 			pexc_first = pexception;
 			if(pexc_first)
@@ -611,15 +621,15 @@ FCE_TEST(EA210, 50_10_2)
 		{
 			cnt++;
 			EXCDELETE(pexc_first);
-			ErrorAG34450 = Ag34450_Read (vi_Ag34450, 8000, &voltage);
+			ErrorAG34450 = Ag34450_Read (vi_Ag34450_WS50, 8000, &voltage);
 			if (ErrorAG34450 < VI_SUCCESS)
 			{
-				Ag34450_GetError(vi_Ag34450, &ErrorCode, 255, ErrorMessage);
+				Ag34450_GetError(vi_Ag34450_WS50, &ErrorCode, 255, ErrorMessage);
 				sprintf(msg, "Function Error : Ag34450_Read \r\n Error: %d, message error : %s\n", ErrorCode, ErrorMessage);
 				EXCTHROW( -1, msg);
 			}
 	       //voltage=2;
-			LIMIT_CHECK_EXT(REAL64, (voltage/0.06), pexception);
+			LIMIT_CHECK_EXT(REAL64, ((float)voltage/0.06), pexception);
 			if(!pexc_first) 
 			pexc_first = pexception;
 			if(pexc_first)
@@ -785,10 +795,10 @@ FCE_TEST(EA210, 50_10_3)
 		Sleep(500);
 		
 			/*CONFIG DMM DC MEASUREMENT */
-		ErrorAG34450 = Ag34450_DCVoltageConfigure(vi_Ag34450, 100, AG34450_VAL_RESOLUTION_HIGH);
+		ErrorAG34450 = Ag34450_DCVoltageConfigure(vi_Ag34450_WS50, 100, AG34450_VAL_RESOLUTION_MEDIUM);
 		if (ErrorAG34450 < VI_SUCCESS)
 		{
-			Ag34450_GetError(vi_Ag34450, &ErrorCode, 255, ErrorMessage);
+			Ag34450_GetError(vi_Ag34450_WS50, &ErrorCode, 255, ErrorMessage);
 			sprintf(msg, "Function Error : Ag34450_DCVoltageConfigure \r\n Error: %d, message error : %s\n", ErrorCode, ErrorMessage);
 			EXCTHROW( -1, msg);
 		}
@@ -799,15 +809,15 @@ FCE_TEST(EA210, 50_10_3)
 		{
 			cnt++;
 			EXCDELETE(pexc_first);
-			ErrorAG34450 = Ag34450_Read (vi_Ag34450, 5000, &voltage);
+			ErrorAG34450 = Ag34450_Read (vi_Ag34450_WS50, 5000, &voltage);
 			if (ErrorAG34450 < VI_SUCCESS)
 			{
-				Ag34450_GetError(vi_Ag34450, &ErrorCode, 255, ErrorMessage);
+				Ag34450_GetError(vi_Ag34450_WS50, &ErrorCode, 255, ErrorMessage);
 				sprintf(msg, "Function Error : Ag34450_Read \r\n Error: %d, message error : %s\n", ErrorCode, ErrorMessage);
 				EXCTHROW( -1, msg);
 			}
 	
-			LIMIT_CHECK_EXT(REAL64, -voltage/0.06, pexception);
+			LIMIT_CHECK_EXT(REAL64, -(float)voltage/0.06, pexception);
 			if(!pexc_first) 
 			pexc_first = pexception;
 			if(pexc_first)
@@ -821,14 +831,14 @@ Error:
 	/*EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5C", FALSE)); 
 	  EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5D", FALSE));	
 	  EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5E", FALSE));*/
-	//Ag34450_close (vi_Ag34450);
+	//Ag34450_close (vi_Ag34450_WS50);
 	
 }
 
 FCE_CLEANUP(EA210, 50_10_3)
 {
     TESTCLEANUP_BEGIN(); 
-	//Ag34450_close (vi_Ag34450);
+	//Ag34450_close (vi_Ag34450_WS50);
     
 Error:    
     TESTCLEANUP_END();
@@ -901,15 +911,15 @@ FCE_TEST(EA210, 50_10_4)
 		{
 			cnt++;
 			EXCDELETE(pexc_first);
-			ErrorAG34450 = Ag34450_Read (vi_Ag34450, 5000, &voltage);
+			ErrorAG34450 = Ag34450_Read (vi_Ag34450_WS50, 5000, &voltage);
 			if (ErrorAG34450 < VI_SUCCESS)
 			{
-				Ag34450_GetError(vi_Ag34450, &ErrorCode, 255, ErrorMessage);
+				Ag34450_GetError(vi_Ag34450_WS50, &ErrorCode, 255, ErrorMessage);
 				sprintf(msg, "Function Error : Ag34450_Read \r\n Error: %d, message error : %s\n", ErrorCode, ErrorMessage);
 				EXCTHROW( -1, msg);
 			}
 	
-			LIMIT_CHECK_EXT(REAL64, -voltage/0.06, pexception);
+			LIMIT_CHECK_EXT(REAL64, -(float)voltage/0.06, pexception);
 			if(!pexc_first) 
 			pexc_first = pexception;
 			if(pexc_first)
@@ -926,10 +936,10 @@ FCE_TEST(EA210, 50_10_4)
 		EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5F", FALSE));
 		EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5D", FALSE));
 		EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5C", FALSE));
-		Sleep(400);	
+		Sleep(300);	
 		//Discharge the PCB
 		EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5E", TRUE)); 	
-		Sleep(500);
+		Sleep(300);
 		EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5E", FALSE)); 			
 		
 Error:
@@ -982,7 +992,7 @@ FCE_INIT(EA210, 50_8_7)
 	EXCCHECK( ptester->SetSensor(ptester, "CMD_DBUS_Relay_5H",       TRUE));//DBUS
 	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5M",            FALSE));
 	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5I",            TRUE));//TRIAC X3.2 MOD1 P0.5
-	Sleep(500);
+	Sleep(300);//500
 	
 Error:    
     TESTINIT_END();
@@ -1038,16 +1048,16 @@ FCE_TEST(EA210, 50_8_7)
 	}
 	
 	if (strcmp(MessageData, "0003"))
-		Sleep(400);
+		Sleep(200);//400
 
-	ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450, 750,AG34450_VAL_RESOLUTION_MEDIUM , &voltageRead);
+	ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450_WS50, 750,AG34450_VAL_RESOLUTION_MEDIUM , &voltageRead);
 	if (ErrorAG34450 < VI_SUCCESS)
-	{		Sleep(400);
-		Ag34450_reset (vi_Ag34450);
-		ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450, 750,AG34450_VAL_RESOLUTION_HIGH , &voltageRead);
+	{		Sleep(200);//400
+		Ag34450_reset (vi_Ag34450_WS50);
+		ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450_WS50, 750,AG34450_VAL_RESOLUTION_MEDIUM , &voltageRead);
 		if (ErrorAG34450 < VI_SUCCESS)
 		{
-			Ag34450_GetError (vi_Ag34450, &error_WS50, 255, ErrorMessage);
+			Ag34450_GetError (vi_Ag34450_WS50, &error_WS50, 255, ErrorMessage);
 			sprintf(msg, "Function Error : Ag34450_ACVoltageMeasure \r\n Error: %d, message error : %s\n", error_WS50, ErrorMessage);
 			EXCTHROW( -1, msg);
 		}
@@ -1103,8 +1113,9 @@ FCE_INIT(EA210, 50_8_8)
 	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5M", FALSE));
 	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5N", FALSE));
 	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5L", FALSE));
-	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5I", TRUE));
-	Sleep(500);
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5I", TRUE)); //X3.2
+	Sleep(500);//500
+	//printf("TEST : Check triac output X3.2 off status init \n");
 Error:    
     TESTINIT_END();
 }
@@ -1131,9 +1142,8 @@ FCE_TEST(EA210, 50_8_8)
 	int size=0;
 	char BufferRead[128];
 	STRING(byte1, 17+1);
-	clock_t TIME0,TIME1,TIME2;
-  
- 	TIME0=clock();
+
+ 
 	//	TEST : Check triac output X3.2 off status
 	
 		EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_50));
@@ -1171,17 +1181,17 @@ FCE_TEST(EA210, 50_8_8)
 	}
 #endif   /* formerly excluded lines */
 	
-	/*Ag34450_ACVoltageConfigure (vi_Ag34450, 100, AG34450_VAL_RESOLUTION_HIGH);
+	Ag34450_ACVoltageConfigure (vi_Ag34450_WS50, 100, AG34450_VAL_RESOLUTION_MEDIUM);
 	Sleep(200);
-	ErrorAG34450 = Ag34450_Read (vi_Ag34450, 8000, &voltageRead);*/
-	ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450, 100,AG34450_VAL_RESOLUTION_MEDIUM , &voltageRead);
+	//ErrorAG34450 = Ag34450_Read (vi_Ag34450_WS50, 8000, &voltageRead);
+	ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450_WS50, 100,AG34450_VAL_RESOLUTION_MEDIUM , &voltageRead);
 	if (ErrorAG34450 < VI_SUCCESS)
 	{   
-		 //Ag34450_ClearError (vi_Ag34450);
-	     ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450, 100,AG34450_VAL_RESOLUTION_HIGH  , &voltageRead);
+		Ag34450_ClearError (vi_Ag34450_WS50);
+	    ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450_WS50, 100,AG34450_VAL_RESOLUTION_MEDIUM  , &voltageRead);
 		if (ErrorAG34450 < VI_SUCCESS)
 		{
-			Ag34450_GetError (vi_Ag34450, &error_WS50, 255, ErrorMessage);
+			Ag34450_GetError (vi_Ag34450_WS50, &error_WS50, 255, ErrorMessage);
 			sprintf(msg, "Function Error : Ag34450_Read \r\n Error: %d, message error : %s\n", error_WS50, ErrorMessage);
 			EXCTHROW( -1, msg);
 		}
@@ -1201,7 +1211,7 @@ FCE_CLEANUP(EA210, 50_8_8)
     TESTCLEANUP_BEGIN();
 	TEST_USE(TESTER);
     EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5I", FALSE));
-    
+    //printf("TEST : Check triac output X3.2 off status cleanup \n");
 Error:    
     TESTCLEANUP_END();
 }
@@ -1287,20 +1297,26 @@ FCE_TEST(EA210, 50_8_9)
 	{
 		LIMIT_CREATE("71B0", "MessageID");
 		LIMIT_SET(STRING, MessageID);
-		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
+		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "WRONG MessageID");
 	}
 	
 	if (strcmp(MessageData, "0103"))
-		Sleep(300);
+	{
+		LIMIT_CREATE("0103", "MessageData");
+		LIMIT_SET(STRING, MessageID);
+		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "WRONG MessageData");
+		
+	}		
+	Sleep(300);
 
-	ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450, 750,AG34450_VAL_RESOLUTION_MEDIUM , &voltageRead);
+	ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450_WS50, 750,AG34450_VAL_RESOLUTION_MEDIUM , &voltageRead);
 	if (ErrorAG34450 < VI_SUCCESS)
 	{
-		Ag34450_ClearError (vi_Ag34450);
-		ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450, 750,AG34450_VAL_RESOLUTION_HIGH , &voltageRead);
+		Ag34450_ClearError (vi_Ag34450_WS50);
+		ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450_WS50, 750,AG34450_VAL_RESOLUTION_MEDIUM , &voltageRead);
 		if (ErrorAG34450 < VI_SUCCESS)
 		{
-			Ag34450_GetError (vi_Ag34450, &error_WS50, 255, ErrorMessage);
+			Ag34450_GetError (vi_Ag34450_WS50, &error_WS50, 255, ErrorMessage);
 			sprintf(msg, "Function Error : Ag34450_ACVoltageMeasure \r\n Error: %d, message error : %s\n", error_WS50, ErrorMessage);
 			EXCTHROW( -1, msg);
 		}
@@ -1353,8 +1369,8 @@ FCE_INIT(EA210, 50_8_10)
 	TEST_USE(TESTER);
 	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5I", FALSE));
     EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5L", TRUE));
-	Sleep(400);
-	
+	Sleep(400);//400
+	//printf("TEST : Check triac output X3.3 off status init \n");
 Error:    
     TESTINIT_END();
 }
@@ -1419,15 +1435,16 @@ FCE_TEST(EA210, 50_8_10)
 	}
 	
 #endif   /* formerly excluded lines */
-	//ErrorAG34450 = Ag34450_SystemWaitForOperationComplete (vi_Ag34450, 3000);
-	//ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450, 10,AG34450_VAL_RESOLUTION_MEDIUM , &voltageRead);
-	ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450, 100,AG34450_VAL_RESOLUTION_MEDIUM , &voltageRead);
+	//ErrorAG34450 = Ag34450_SystemWaitForOperationComplete (vi_Ag34450_WS50, 3000);
+	//ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450_WS50, 10,AG34450_VAL_RESOLUTION_MEDIUM , &voltageRead);
+	ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450_WS50, 100,AG34450_VAL_RESOLUTION_MEDIUM , &voltageRead);
 	if (ErrorAG34450 < VI_SUCCESS)
-	{
-		ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450, 100,AG34450_VAL_RESOLUTION_HIGH , &voltageRead);
+	{	
+		Ag34450_ClearError (vi_Ag34450_WS50);
+		ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450_WS50, 100,AG34450_VAL_RESOLUTION_MEDIUM , &voltageRead);
 		if (ErrorAG34450 < VI_SUCCESS)
 		{
-			Ag34450_GetError (vi_Ag34450, &error_WS50, 255, ErrorMessage);
+			Ag34450_GetError (vi_Ag34450_WS50, &error_WS50, 255, ErrorMessage);
 			sprintf(msg, "Function Error : Ag34450_Read \r\n Error: %d, message error : %s\n", error_WS50, ErrorMessage);
 			EXCTHROW( -1, msg);
 		}
@@ -1445,7 +1462,7 @@ FCE_CLEANUP(EA210, 50_8_10)
     TESTCLEANUP_BEGIN();
 	TEST_USE(TESTER);
     EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5L", FALSE));
-    
+    //printf("TEST : Check triac output X3.3 off status cleanup \n");
 Error:    
     TESTCLEANUP_END();
 }
@@ -1478,8 +1495,9 @@ FCE_INIT(EA210, 50_8_11)
 {
     TESTINIT_BEGIN();
 	TEST_USE(TESTER);
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5L", FALSE));
     EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5M", TRUE));
-    Sleep(400);
+    Sleep(200);//400
 	
 Error:    
     TESTINIT_END();
@@ -1535,14 +1553,14 @@ FCE_TEST(EA210, 50_8_11)
 	if (strcmp(MessageData, "0203"))
 		Sleep(200);
 	
-	ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450, 750,AG34450_VAL_RESOLUTION_MEDIUM , &voltageRead);
+	ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450_WS50, 750,AG34450_VAL_RESOLUTION_MEDIUM , &voltageRead);
 	if (ErrorAG34450 < VI_SUCCESS)
 	{   
-		Ag34450_ClearError (vi_Ag34450);
-		ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450, 750,AG34450_VAL_RESOLUTION_HIGH , &voltageRead);
+		Ag34450_ClearError (vi_Ag34450_WS50);
+		ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450_WS50, 750,AG34450_VAL_RESOLUTION_MEDIUM , &voltageRead);
 		if (ErrorAG34450 < VI_SUCCESS)
 		{  
-			Ag34450_GetError (vi_Ag34450, &error_WS50, 255, ErrorMessage);
+			Ag34450_GetError (vi_Ag34450_WS50, &error_WS50, 255, ErrorMessage);
 			sprintf(msg, "Function Error : Ag34450_ACVoltageMeasure \r\n Error: %d, message error : %s\n", error_WS50, ErrorMessage);
 			EXCTHROW( -1, msg);
 		}
@@ -1595,7 +1613,8 @@ FCE_INIT(EA210, 50_8_12)
 	TEST_USE(TESTER);
 	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5L", FALSE));
     EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5M", TRUE));
-	Sleep(300);
+	Sleep(300);//300
+	//printf("TEST : Check triac output X3.4 off status init \n");
 Error:    
     TESTINIT_END();
 }
@@ -1661,21 +1680,21 @@ FCE_TEST(EA210, 50_8_12)
 #endif   /* formerly excluded lines */
 	
 	
-	ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450, 100,AG34450_VAL_RESOLUTION_MEDIUM , &voltageRead);
+	ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450_WS50, 100,AG34450_VAL_RESOLUTION_MEDIUM , &voltageRead);
 	if (ErrorAG34450 < VI_SUCCESS)
 	{	
-		ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450, 100,AG34450_VAL_RESOLUTION_HIGH , &voltageRead);
-	if (ErrorAG34450 < VI_SUCCESS)
-	{
-		Ag34450_GetError (vi_Ag34450, &error_WS50, 255, ErrorMessage);
-		sprintf(msg, "Function Error : Ag34450_Read \r\n Error: %d, message error : %s\n", error_WS50, ErrorMessage);
-		EXCTHROW( -1, msg);
-	}
+		Ag34450_ClearError (vi_Ag34450_WS50);
+		ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450_WS50, 100,AG34450_VAL_RESOLUTION_MEDIUM , &voltageRead);
+		if (ErrorAG34450 < VI_SUCCESS)
+		{
+			Ag34450_GetError (vi_Ag34450_WS50, &error_WS50, 255, ErrorMessage);
+			sprintf(msg, "Function Error : Ag34450_Read \r\n Error: %d, message error : %s\n", error_WS50, ErrorMessage);
+			EXCTHROW( -1, msg);
+		}
 	}
 	
 	LIMIT_CHECK(REAL64, voltageRead);
-	//printf("X3.4 OFF %f\n",voltageRead);
-    //EXCDELETE(pexception);
+
 	
 Error:
 	SetTestValue(pTID, ((STestParamPtr)pTID)->process, ((STestParamPtr)pTID)->step, "Log", pdbus->GetCache(pdbus, UDA_NAME_STATION_50));
@@ -1687,7 +1706,7 @@ FCE_CLEANUP(EA210, 50_8_12)
     TESTCLEANUP_BEGIN();
 	TEST_USE(TESTER);
     EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5M", FALSE));
-
+	//printf("TEST : Check triac output X3.4 off status cleanup \n");
     
 Error:    
     TESTCLEANUP_END();
@@ -1721,7 +1740,7 @@ FCE_INIT(EA210, 50_8_13)
     TESTINIT_BEGIN();
 	TEST_USE(TESTER);
     EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5N", TRUE));
-	Sleep(300);
+	Sleep(200);//300
 Error:    
     TESTINIT_END();
 }
@@ -1778,14 +1797,14 @@ FCE_TEST(EA210, 50_8_13)
 	if (strcmp(MessageData, "0303"))
 		Sleep(200);
 	
-	ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450, 750,AG34450_VAL_RESOLUTION_MEDIUM , &voltageRead);
+	ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450_WS50, 750,AG34450_VAL_RESOLUTION_MEDIUM , &voltageRead);
 	if (ErrorAG34450 < VI_SUCCESS)
 	{
-		Ag34450_ClearError (vi_Ag34450);
-		ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450, 750,AG34450_VAL_RESOLUTION_MEDIUM , &voltageRead);
+		Ag34450_ClearError (vi_Ag34450_WS50);
+		ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450_WS50, 750,AG34450_VAL_RESOLUTION_MEDIUM , &voltageRead);
 		if (ErrorAG34450 < VI_SUCCESS)
 		{
-			Ag34450_GetError (vi_Ag34450, &error_WS50, 255, ErrorMessage);
+			Ag34450_GetError (vi_Ag34450_WS50, &error_WS50, 255, ErrorMessage);
 			sprintf(msg, "Function Error : Ag34450_ACVoltageMeasure \r\n Error: %d, message error : %s\n", error_WS50, ErrorMessage);
 			EXCTHROW( -1, msg);
 		}
@@ -1840,8 +1859,8 @@ FCE_INIT(EA210, 50_8_14)
 	TEST_USE(TESTER);
 	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5M", FALSE));
     EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5N", TRUE));
-	Sleep(300);
-	
+	Sleep(500);//300
+	//printf("TEST : Check triac output X3.5 off status init \n");
 Error:    
     TESTINIT_END();
 }
@@ -1904,12 +1923,19 @@ FCE_TEST(EA210, 50_8_14)
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
 #endif   /* formerly excluded lines */
-	ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450, 100,AG34450_VAL_RESOLUTION_MEDIUM , &voltageRead);
+	
+
+	ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450_WS50, 100,AG34450_VAL_RESOLUTION_MEDIUM , &voltageRead);
 	if (ErrorAG34450 < VI_SUCCESS)
-	{
-		Ag34450_GetError (vi_Ag34450, &error_WS50, 255, ErrorMessage);
-		sprintf(msg, "Function Error : Ag34450_Read \r\n Error: %d, message error : %s\n", error_WS50, ErrorMessage);
-		EXCTHROW( -1, msg);
+	{   
+		Ag34450_ClearError (vi_Ag34450_WS50);
+	    ErrorAG34450 = Ag34450_ACVoltageMeasure (vi_Ag34450_WS50, 100,AG34450_VAL_RESOLUTION_MEDIUM  , &voltageRead);
+		if (ErrorAG34450 < VI_SUCCESS)
+		{
+			Ag34450_GetError (vi_Ag34450_WS50, &error_WS50, 255, ErrorMessage);
+			sprintf(msg, "Function Error : Ag34450_Read \r\n Error: %d, message error : %s\n", error_WS50, ErrorMessage);
+			EXCTHROW( -1, msg);
+		}
 	}
 	
 	LIMIT_CHECK(REAL64, voltageRead);
@@ -1924,7 +1950,8 @@ FCE_CLEANUP(EA210, 50_8_14)
     TESTCLEANUP_BEGIN();
 	TEST_USE(TESTER);
     EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_5N", FALSE));
-    
+    //printf("TEST : Check triac output X3.5 off status CLEANUP \n");
 Error:    
     TESTCLEANUP_END();
 }
+

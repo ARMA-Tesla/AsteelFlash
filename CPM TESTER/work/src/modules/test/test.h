@@ -37,7 +37,7 @@
 #define  PANEL_STATE_STATION_20           22      /* control type: pictRing, callback function: OnDisplay */
 #define  PANEL_STATE_STATION_30           23      /* control type: pictRing, callback function: OnDisplay */
 #define  PANEL_STATE_STATION_50           24      /* control type: pictRing, callback function: OnDisplay */
-#define  PANEL_STATE_STATION_10           25      /* control type: pictRing, callback function: OnDisplay */
+#define  PANEL_STATE_STATION_10           25      /* control type: pictRing, callback function: (none) */
 #define  PANEL_STATE_STATION_60           26      /* control type: pictRing, callback function: OnDisplay */
 #define  PANEL_STATE_STATION_40           27      /* control type: pictRing, callback function: OnDisplay */
 #define  PANEL_CHECK_P6                   28      /* control type: textButton, callback function: (none) */
@@ -112,7 +112,7 @@
 #define  TEST_10_RETEST_PASS              17      /* control type: textMsg, callback function: (none) */
 #define  TEST_10_RETEST_TOTAL             18      /* control type: textMsg, callback function: (none) */
 #define  TEST_10_RETEST                   19      /* control type: numeric, callback function: (none) */
-#define  TEST_10_STOP_FAIL                20      /* control type: binary, callback function: (none) */
+#define  TEST_10_GO_FAIL                  20      /* control type: binary, callback function: (none) */
 #define  TEST_10_ACTIVE                   21      /* control type: binary, callback function: (none) */
 
 #define  TEST_20                          3
@@ -140,7 +140,7 @@
 #define  TEST_20_RETEST_PASS              23      /* control type: textMsg, callback function: (none) */
 #define  TEST_20_RETEST_TOTAL             24      /* control type: textMsg, callback function: (none) */
 #define  TEST_20_RETEST                   25      /* control type: numeric, callback function: (none) */
-#define  TEST_20_STOP_FAIL                26      /* control type: binary, callback function: (none) */
+#define  TEST_20_GO_FAIL                  26      /* control type: binary, callback function: (none) */
 #define  TEST_20_TEXTBOX                  27      /* control type: textBox, callback function: (none) */
 #define  TEST_20_ACTIVE                   28      /* control type: binary, callback function: (none) */
 #define  TEST_20_VIEW_MORE_20             29      /* control type: command, callback function: OnFnc20 */
@@ -164,7 +164,7 @@
 #define  TEST_30_RETEST_PASS              17      /* control type: textMsg, callback function: (none) */
 #define  TEST_30_RETEST_TOTAL             18      /* control type: textMsg, callback function: (none) */
 #define  TEST_30_RETEST                   19      /* control type: numeric, callback function: (none) */
-#define  TEST_30_STOP_FAIL                20      /* control type: binary, callback function: (none) */
+#define  TEST_30_GO_FAIL                  20      /* control type: binary, callback function: (none) */
 #define  TEST_30_TEXTBOX                  21      /* control type: textBox, callback function: (none) */
 #define  TEST_30_ACTIVE                   22      /* control type: binary, callback function: (none) */
 #define  TEST_30_VIEW_MORE_30             23      /* control type: command, callback function: OnFnc30 */
@@ -189,7 +189,7 @@
 #define  TEST_40_RETEST_PASS              18      /* control type: textMsg, callback function: (none) */
 #define  TEST_40_RETEST_TOTAL             19      /* control type: textMsg, callback function: (none) */
 #define  TEST_40_RETEST                   20      /* control type: numeric, callback function: (none) */
-#define  TEST_40_STOP_FAIL                21      /* control type: binary, callback function: (none) */
+#define  TEST_40_GO_FAIL                  21      /* control type: binary, callback function: (none) */
 #define  TEST_40_TEXTBOX                  22      /* control type: textBox, callback function: (none) */
 #define  TEST_40_ACTIVE                   23      /* control type: binary, callback function: (none) */
 #define  TEST_40_PRODUCT_RIGHT            24      /* control type: picture, callback function: (none) */
@@ -214,7 +214,7 @@
 #define  TEST_50_RETEST_PASS              18      /* control type: textMsg, callback function: (none) */
 #define  TEST_50_RETEST_TOTAL             19      /* control type: textMsg, callback function: (none) */
 #define  TEST_50_RETEST                   20      /* control type: numeric, callback function: (none) */
-#define  TEST_50_STOP_FAIL                21      /* control type: binary, callback function: (none) */
+#define  TEST_50_GO_FAIL                  21      /* control type: binary, callback function: (none) */
 #define  TEST_50_ACTIVE                   22      /* control type: binary, callback function: (none) */
 
 #define  TEST_60                          7
@@ -236,7 +236,7 @@
 #define  TEST_60_RETEST_PASS              17      /* control type: textMsg, callback function: (none) */
 #define  TEST_60_RETEST_TOTAL             18      /* control type: textMsg, callback function: (none) */
 #define  TEST_60_RETEST                   19      /* control type: numeric, callback function: (none) */
-#define  TEST_60_STOP_FAIL                20      /* control type: binary, callback function: (none) */
+#define  TEST_60_GO_FAIL                  20      /* control type: binary, callback function: (none) */
 #define  TEST_60_ACTIVE                   21      /* control type: binary, callback function: (none) */
 
 

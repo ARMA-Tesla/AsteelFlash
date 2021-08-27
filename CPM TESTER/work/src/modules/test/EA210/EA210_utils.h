@@ -7,7 +7,7 @@
 #include <utility.h>
 #include "c:\work\src\shared\cvi\include\NIIMAQdx.h"
 #include <stdlib.h>
-#include <nidaqmx.h>
+//#include <nidaqmx.h>
 
 #ifdef __cplusplus
     extern "C" {

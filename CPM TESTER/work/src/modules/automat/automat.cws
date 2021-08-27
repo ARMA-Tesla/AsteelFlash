@@ -1,9 +1,10 @@
 [Workspace Header]
-Version = 2000
-Pathname = "/c/work/src/modules/automat/automat.cws"
-CVI Dir = "/c/program files (x86)/national instruments/cvi2020"
+Version = 1900
+Pathname Line0001 = "/e/ARMA, WAEL/PROJETS ASTEELFLASH EA210 FCT12/Backup Soft/Backup FCT12 CPM 2021."
+Pathname Line0002 = "08.16/work/src/modules/automat/automat.cws"
+CVI Dir = "/c/program files (x86)/national instruments/cvi2019"
 CVI Shared Dir = "/C/Program Files (x86)/National Instruments/Shared/CVI"
-CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2020"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2019"
 CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
 IVI Standard Root Dir = "/C/Program Files (x86)/IVI Foundation/IVI"
 IVI Standard Root 64-bit Dir = "/C/Program Files/IVI Foundation/IVI"
@@ -12,11 +13,11 @@ VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
 Number of Projects = 1
 Active Project = 1
 Project 0001 = "automat.prj"
-Drag Bar Left = 290
-Window Top = 75
-Window Left = 26
-Window Bottom = 140
-Window Right = 800
+Drag Bar Left = 168
+Window Top = 84
+Window Left = 461
+Window Bottom = 876
+Window Right = 1227
 Maximized = True
 Maximized Children = True
 Max32 Number Of Errors = 20
@@ -30,14 +31,14 @@ Save Changes Before Compiling = "Always"
 Hide Windows = False
 Break At First Statement = False
 Sort Type = "File Name"
-Number of Opened Files = 4
+Number of Opened Files = 1
 Window Confinement Region Enabled = True
-MainColumnWidth = 273
+MainColumnWidth = 151
 FileDateColumnWidth = 70
 FileSizeColumnWidth = 70
 
 [Project Header 0001]
-Version = 2000
+Version = 1900
 Don't Update DistKit = False
 Platform Code = 4
 Build Configuration = "Release"
@@ -46,48 +47,58 @@ Batch Build Release = False
 Batch Build Debug = False
 
 [File 0001]
-Path = "/c/Program Files (x86)/National Instruments/CVI2020/toolslib/toolbox/asynctmr.fp"
+Path = "/c/Program Files (x86)/National Instruments/CVI2019/toolslib/toolbox/asynctmr.fp"
 File Type = "Function Panel"
-Disk Date = 3635410458
+Disk Date = 3635406858
 In Projects = "1,"
 
 [File 0002]
-Path = "/c/Program Files/IVI Foundation/IVI/Drivers/BK 9801/bp98xx.fp"
+Path = "/c/Program Files (x86)/IVI Foundation/IVI/Drivers/bp98xx/bp98xx.fp"
 File Type = "Function Panel"
-Disk Date = 3538473752
+Disk Date = 0
 In Projects = "1,"
 
 [File 0003]
 Path = "/c/Program Files/IVI Foundation/IVI/Drivers/hpe364xa/hpe364xa.fp"
 File Type = "Function Panel"
-Disk Date = 3643665634
+Disk Date = 0
 In Projects = "1,"
 
 [File 0004]
-Path = "/c/Program Files (x86)/National Instruments/CVI2020/toolslib/toolbox/msxmldom.fp"
+Path = "/c/Program Files (x86)/National Instruments/CVI2019/toolslib/toolbox/msxmldom.fp"
 File Type = "Function Panel"
-Disk Date = 3635237814
+Disk Date = 3635234214
 In Projects = "1,"
 
 [File 0005]
-Path = "/c/work/src/shared/test/testseq.c"
+Path Line0001 = "/e/ARMA, WAEL/PROJETS ASTEELFLASH EA210 FCT12/Backup Soft/Backup FCT12 CPM 2021."
+Path Line0002 = "08.16/work/src/modules/automat/automat.c"
 File Type = "CSource"
-Disk Date = 3696313315
+Disk Date = 3711525888
 In Projects = "1,"
-Source Window State = "1,1546,1546,1546,31,31,31,0,0,0,0,0,0,0,0,0,1538,0,1546,31,401,630,1,0,"
-Breakpoint 0001 = "1593,0,enabled,"
-Tracepoint 0001 = "0,0,1594,1,"
-Breakpoint 0002 = "1600,0,enabled,"
-Tracepoint 0002 = "0,0,1601,1,"
-Window Top = 62
-Window Left = 26
+Source Window State = "1,4076,4076,4076,5,5,5,0,0,0,0,0,0,0,0,0,4041,0,4076,5,221,490,1,0,"
+Breakpoint 0001 = "540,0,enabled,"
+Tracepoint 0001 = "0,0,539,1,"
+Breakpoint 0002 = "550,0,enabled,"
+Tracepoint 0002 = "0,0,553,1,"
+Breakpoint 0003 = "553,0,enabled,"
+Tracepoint 0003 = "0,0,556,1,"
+Breakpoint 0004 = "581,0,enabled,"
+Tracepoint 0004 = "0,0,580,1,"
+Breakpoint 0005 = "854,0,enabled,"
+Tracepoint 0005 = "0,0,613,1,"
+Breakpoint 0006 = "3039,0,enabled,"
+Tracepoint 0006 = "0,0,2824,1,"
+Line Tags = "1414,1581,1814,2024,"
+Window Top = 31
 
 [File 0006]
-Path = "/c/work/src/modules/automat/Log_Asteel.c"
+Path Line0001 = "/e/ARMA, WAEL/PROJETS ASTEELFLASH EA210 FCT12/Backup Soft/Backup FCT12 CPM 2021."
+Path Line0002 = "08.16/work/src/modules/automat/Log_Asteel.c"
 File Type = "CSource"
 Disk Date = 3695662851
 In Projects = "1,"
-Source Window State = "1,618,618,618,18,18,18,0,0,0,0,169,0,181,12,0,592,0,618,18,401,630,1,0,"
+Source Window State = "1,217,217,217,4,27,4,0,3,0,0,169,0,181,12,0,192,0,217,27,401,630,1,0,"
 Breakpoint 0001 = "254,0,enabled,"
 Tracepoint 0001 = "0,0,257,1,"
 Breakpoint 0002 = "263,0,enabled,"
@@ -104,106 +115,66 @@ Window Top = 32
 Window Left = 10
 
 [File 0007]
-Path = "/c/work/src/modules/automat/automat.c"
+Path Line0001 = "/e/ARMA, WAEL/PROJETS ASTEELFLASH EA210 FCT12/Backup Soft/Backup FCT12 CPM 2021."
+Path Line0002 = "08.16/work/src/modules/automat/automat_fnc.c"
 File Type = "CSource"
-Disk Date = 3702030477
+Disk Date = 3709123622
 In Projects = "1,"
-Source Window State = "1,827,827,827,9,9,9,0,0,0,0,0,0,0,0,0,791,0,827,9,221,490,1,0,"
-Breakpoint 0001 = "827,0,enabled,"
-Tracepoint 0001 = "0,0,613,1,"
-Breakpoint 0002 = "3065,0,enabled,"
-Tracepoint 0002 = "0,0,2824,1,"
-Line Tags = "1387,1600,1833,2043,"
+Source Window State = "1,1361,1361,1361,14,27,14,0,3,0,0,0,0,0,0,0,1345,0,1361,27,386,742,1,0,"
+Breakpoint 0001 = "1238,0,enabled,"
+Tracepoint 0001 = "0,0,1252,1,"
+Breakpoint 0002 = "1239,0,enabled,"
+Tracepoint 0002 = "0,0,1253,1,"
+Breakpoint 0003 = "1256,0,enabled,"
+Tracepoint 0003 = "0,0,1270,1,"
+Breakpoint 0004 = "1257,0,enabled,"
+Tracepoint 0004 = "0,0,1271,1,"
+Line Tags = "1268,"
 Window Top = 31
 Window Z-Order = 1
 
 [File 0008]
-Path = "/c/work/src/modules/automat/automat_fnc.c"
+Path Line0001 = "/e/ARMA, WAEL/PROJETS ASTEELFLASH EA210 FCT12/Backup Soft/Backup FCT12 CPM 2021."
+Path Line0002 = "08.16/work/src/modules/dbs/dbs_module.c"
 File Type = "CSource"
-Disk Date = 3695640216
-In Projects = "1,"
-Source Window State = "1,1322,1322,1322,47,47,47,0,0,0,0,0,0,0,0,0,1313,0,1322,47,386,742,1,0,"
-Breakpoint 0001 = "1250,0,enabled,"
-Tracepoint 0001 = "0,0,1252,1,"
-Breakpoint 0002 = "1251,0,enabled,"
-Tracepoint 0002 = "0,0,1253,1,"
-Breakpoint 0003 = "1268,0,enabled,"
-Tracepoint 0003 = "0,0,1270,1,"
-Breakpoint 0004 = "1269,0,enabled,"
-Tracepoint 0004 = "0,0,1271,1,"
-Line Tags = "1280,"
-Window Top = 30
-
-[File 0009]
-Path = "/c/work/src/shared/test/eltest.c"
-File Type = "CSource"
-Disk Date = 3683894453
-In Projects = "1,"
-Source Window State = "1,20,20,20,21,21,21,0,0,0,0,0,0,0,0,0,0,0,20,21,401,714,1,0,"
-Breakpoint 0001 = "2032,0,enabled,"
-Tracepoint 0001 = "0,0,2033,1,"
-Window Top = 30
-
-[File 0010]
-Path = "/c/work/src/modules/dbs/dbs_module.c"
-File Type = "CSource"
-Disk Date = 3631001176
+Disk Date = 3697192506
 In Projects = ""
-Source Window State = "1,477,477,477,38,38,38,0,0,0,0,0,0,0,0,0,468,0,477,38,311,630,1,0,"
+Source Window State = "1,484,484,484,64,80,64,0,3,0,0,0,0,0,0,0,462,0,484,80,311,630,1,0,"
 Line Tags = "478,"
 Window Top = 32
 Window Left = 10
 
-[File 0011]
-Path = "/c/Program Files (x86)/National Instruments/Shared/CVI/include/cvi_db.h"
-File Type = "Include"
-Disk Date = 3635932246
-In Projects = ""
-Source Window State = "1,516,516,516,12,12,12,0,0,0,0,0,0,0,0,0,501,0,516,12,401,735,1,0,"
-Window Top = 152
-Window Left = 74
-Window Z-Order = 3
-
-[File 0012]
-Path = "/c/Program Files/IVI Foundation/IVI/Drivers/bp98xx/bp98xx.c"
-File Type = "CSource"
-Disk Date = 3538473774
-In Projects = ""
-Source Window State = "1,9,9,9,19,19,19,0,0,0,0,0,0,0,0,0,0,0,9,19,401,714,1,0,"
-Window Top = 33
-Window Left = 10
-Window Z-Order = 4
-
-[File 0013]
-Path = "/c/work/src/modules/automat/automat.uir"
+[File 0009]
+Path Line0001 = "/e/ARMA, WAEL/PROJETS ASTEELFLASH EA210 FCT12/Backup Soft/Backup FCT12 CPM 2021."
+Path Line0002 = "08.16/work/src/modules/automat/automat.uir"
 File Type = "User Interface Resource"
 Disk Date = 3685773109
 In Projects = "1,"
-Window Top = 126
-Window Left = 50
-Window Height = 401
-Window Width = 714
-Window Z-Order = 2
+Window Top = 299
+Window Left = 487
+Window Height = 221
+Window Width = 490
+Window Released = True
 
-[File 0014]
-Path = "/c/work/src/modules/automat/automat_fnc.h"
+[File 0010]
+Path Line0001 = "/e/ARMA, WAEL/PROJETS ASTEELFLASH EA210 FCT12/Backup Soft/Backup FCT12 CPM 2021."
+Path Line0002 = "08.16/work/src/modules/automat/automat_fnc.h"
 File Type = "Include"
 Disk Date = 3687166585
 In Projects = "1,"
-Source Window State = "1,26,26,26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,26,0,349,747,1,0,"
-Window Top = 30
+Source Window State = "1,96,96,96,4,18,4,0,3,0,0,0,0,0,0,0,74,0,96,18,349,747,1,0,"
+Window Top = 31
 
-[File 0015]
+[File 0011]
 Path = "/c/work/src/shared/language/language.c"
 File Type = "CSource"
 Disk Date = 3464156986
 In Projects = "1,"
-Source Window State = "1,47,47,47,12,28,12,0,3,0,0,0,0,0,0,0,35,0,47,28,266,630,1,0,"
-Window Top = 32
-Window Left = 10
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
-[File 0016]
-Path = "/c/work/src/modules/automat/automat.h"
+[File 0012]
+Path Line0001 = "/e/ARMA, WAEL/PROJETS ASTEELFLASH EA210 FCT12/Backup Soft/Backup FCT12 CPM 2021."
+Path Line0002 = "08.16/work/src/modules/automat/automat.h"
 File Type = "Include"
 Disk Date = 3695379002
 In Projects = "1,"
@@ -211,47 +182,46 @@ Source Window State = "1,13,13,13,31,31,31,0,0,0,0,0,0,0,0,0,0,0,13,31,401,742,1
 Window Top = 157
 Window Left = 74
 
-[File 0017]
-Path = "/c/work/src/modules/automat/automat_plugin.h"
+[File 0013]
+Path Line0001 = "/e/ARMA, WAEL/PROJETS ASTEELFLASH EA210 FCT12/Backup Soft/Backup FCT12 CPM 2021."
+Path Line0002 = "08.16/work/src/modules/automat/automat_plugin.h"
 File Type = "Include"
-Disk Date = 3570369592
+Disk Date = 3570365992
 In Projects = "1,"
 Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
-[File 0018]
+[File 0014]
 Path = "/c/work/src/shared/eventfactory/eleventdata.c"
 File Type = "CSource"
-Disk Date = 3309320854
+Disk Date = 3309317254
 In Projects = "1,"
-Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,401,630,0,0,"
-Window Top = 32
-Window Left = 10
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
-[File 0019]
+[File 0015]
 Path = "/c/work/src/shared/exception/Exception.c"
 File Type = "CSource"
 Disk Date = 3652346447
 In Projects = "1,"
-Source Window State = "1,259,259,259,7,7,7,0,0,0,0,0,0,0,0,0,233,0,259,7,401,714,1,0,"
-Window Top = 30
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
-[File 0020]
+[File 0016]
 Path = "/c/work/src/shared/exception/Exception.h"
 File Type = "Include"
-Disk Date = 3679615340
+Disk Date = 3675768600
 In Projects = "1,"
-Source Window State = "1,85,85,85,23,23,23,0,0,0,0,0,0,0,0,0,72,0,85,23,349,747,1,0,"
-Window Top = 38
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
-[File 0021]
-Path = "/c/work/src/modules/automat/local.h"
+[File 0017]
+Path Line0001 = "/e/ARMA, WAEL/PROJETS ASTEELFLASH EA210 FCT12/Backup Soft/Backup FCT12 CPM 2021."
+Path Line0002 = "08.16/work/src/modules/automat/local.h"
 File Type = "Include"
 Disk Date = 0
 In Projects = "1,"
 Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
-[File 0022]
-Path = "/c/work/src/modules/automat/Log_Asteel.h"
+[File 0018]
+Path Line0001 = "/e/ARMA, WAEL/PROJETS ASTEELFLASH EA210 FCT12/Backup Soft/Backup FCT12 CPM 2021."
+Path Line0002 = "08.16/work/src/modules/automat/Log_Asteel.h"
 File Type = "Include"
 Disk Date = 3695297658
 In Projects = "1,"
@@ -259,40 +229,49 @@ Source Window State = "1,9,9,9,18,18,18,0,0,0,0,0,0,0,0,0,0,0,9,18,401,630,1,0,"
 Window Top = 32
 Window Left = 10
 
-[File 0023]
+[File 0019]
+Path = "/c/work/src/shared/test/testseq.c"
+File Type = "CSource"
+Disk Date = 3709120725
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0020]
 Path = "/c/work/src/shared/test/testseq.h"
 File Type = "Include"
-Disk Date = 3695636767
+Disk Date = 3697174989
 In Projects = "1,"
-Source Window State = "1,19,19,19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,19,0,401,630,1,0,"
-Window Top = 62
-Window Left = 26
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
-[File 0024]
+[File 0021]
 Path = "/c/work/src/shared/string/elstring.c"
 File Type = "CSource"
 Disk Date = 3613571278
 In Projects = "1,"
-Source Window State = "1,857,857,857,70,76,76,0,3,0,0,0,0,0,0,0,817,0,857,70,349,715,1,0,"
-Window Top = 31
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
-[File 0025]
-Path = "/c/work/src/shared/test/eltest.h"
-File Type = "Include"
-Disk Date = 3687262516
-In Projects = "1,"
-Source Window State = "1,100,100,100,38,38,38,0,0,0,0,0,0,0,0,0,66,0,100,38,401,630,1,0,"
-Window Top = 32
-Window Left = 10
-
-[File 0026]
-Path = "/c/work/src/shared/multithread/multithread.c"
+[File 0022]
+Path = "/c/work/src/shared/test/eltest.c"
 File Type = "CSource"
-Disk Date = 3309320858
+Disk Date = 3697176759
 In Projects = "1,"
 Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
-[File 0027]
+[File 0023]
+Path = "/c/work/src/shared/test/eltest.h"
+File Type = "Include"
+Disk Date = 3708422911
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0024]
+Path = "/c/work/src/shared/multithread/multithread.c"
+File Type = "CSource"
+Disk Date = 3309317258
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0025]
 Path = "/c/work/src/shared/multithread/multithread.h"
 File Type = "Include"
 Disk Date = 3666885792
@@ -300,10 +279,8 @@ In Projects = "1,"
 Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
 
 [Tab Order]
-Tab 0001 = "/c/Program Files (x86)/National Instruments/Shared/CVI/include/cvi_db.h"
-Tab 0002 = "/c/Program Files/IVI Foundation/IVI/Drivers/bp98xx/bp98xx.c"
-Tab 0003 = "/c/work/src/modules/automat/automat.c"
-Tab 0004 = "/c/work/src/modules/automat/automat.uir"
+Tab 0001 Line0001 = "/e/ARMA, WAEL/PROJETS ASTEELFLASH EA210 FCT12/Backup Soft/Backup FCT12 CPM 2021."
+Tab 0001 Line0002 = "08.16/work/src/modules/automat/automat_fnc.c"
 
 [Default Build Config 0001 Debug]
 Generate Browse Info = True

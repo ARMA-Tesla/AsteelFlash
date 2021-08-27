@@ -1096,7 +1096,6 @@ SElExceptionPtr RunTestSequence(
 		case AUTOMAT_PRODUCTION:
 		{	
 			sprintf(result_dir, PATH_PRODUCTION, project_dir, st.wYear, st.wMonth, st.wDay);
-			//printf("case AUTOMAT_PRODUCTION \r\n");
 		}	
 			break;
 		case AUTOMAT_QUALITY_MASTER:
@@ -1185,27 +1184,16 @@ SElExceptionPtr RunTestSequence(
 		case AUTOMAT_QUALITY_RETEST:
 		case AUTOMAT_EXPERTISE_RNR_STUDY:
 			
-			
 			if (pAutomat->Mode == AUTOMAT_QUALITY_RETEST)
 				me->pTestParam->Autorisation_retest = TRUE;
 
 			sprintf(me->pTestParam->Production_Serial, "");
-
-
 			
 			/* copy test options to pTestParam */
 			copyTestOption(me);
 			
 			if (me->pTestParam->Skip_All_Test == FALSE)
 			{
-#if 0    /* formerly excluded lines */
-			/* copy field datas to pTestParam */
-			//me->pTestParam->pFieldLabel = calloc(1, sizeof(SFieldLabel));
-			//EXCCHECKALLOC(me->pTestParam->pFieldLabel);
-			//copyFieldData(me);
-#endif   /* formerly excluded lines */
-			
-			//EXCCHECK( GetNewSerial (&serial, &error));
 			sprintf(me->pTestParam->Board_Ver_pFin, me->Board_Ver_pFin);
 			sprintf(me->pTestParam->Serial_Board_Ver_sFin, me->Serial_Board_Ver_sFin);
 			sprintf(me->pTestParam->Num_Serie_sFin, me->Num_Serie_sFin);
@@ -1247,7 +1235,7 @@ SElExceptionPtr RunTestSequence(
 			}
 			SaveXmlResultFile(me->pTestParam, 0);
 			Delay(0.7);
-			LogAsteelFile(me->pTestParam, 0); /* fichier type .000*/
+			//LogAsteelFile(me->pTestParam, 0); /* fichier type .000*/
 			InsertionMesures_DB(me->pTestParam, 0);
 			}
 		
@@ -1265,7 +1253,7 @@ SElExceptionPtr RunTestSequence(
 			}
 			SaveXmlResultFile(me->pTestParam, 1);
 			Delay(0.7);
-			LogAsteelFile(me->pTestParam, 1); /* fichier type .000*/
+			//LogAsteelFile(me->pTestParam, 1); /* fichier type .000*/
 			InsertionMesures_DB(me->pTestParam, 1);
 			
 			}
@@ -1318,17 +1306,50 @@ SElExceptionPtr RunTestSequence(
 			
 		case AUTOMAT_EXPERTISE_GO_MODE:
 		
-			me->pTestSeq->LockTest = me->_Lock;
 			me->pTestParam->fault_continue = TRUE;
+			
+			if (pAutomat->Mode == AUTOMAT_QUALITY_RETEST)
+				me->pTestParam->Autorisation_retest = TRUE;
+
+			sprintf(me->pTestParam->Production_Serial, "");
+			
+			/* copy test options to pTestParam */
+			copyTestOption(me);
+			
+			if (me->pTestParam->Skip_All_Test == FALSE)
+			{
+			sprintf(me->pTestParam->Board_Ver_pFin, me->Board_Ver_pFin);
+			sprintf(me->pTestParam->Serial_Board_Ver_sFin, me->Serial_Board_Ver_sFin);
+			sprintf(me->pTestParam->Num_Serie_sFin, me->Num_Serie_sFin);
+	        me->pTestParam->id_Board_pFin = me->id_Board_pFin;
+	
+			sprintf(me->pTestParam->Production_Serial, "%s", me->Serial_Board_Ver_sFin);
+			sprintf(me->pTestParam->Date_BSH, "%02d%02d%02d",  st.wDay, st.wMonth, st.wYear - 2000);
+			sprintf(me->pTestParam->Time_BSH, "%02d%02d",  st.wHour, st.wMinute);
+			}
+		
+			me->pTestSeq->_GetTestSeqActive(UsedSeq);
+			for(station=0; station<NB_OF_STATIONS; station++)
+				me->pTestSeq->_TestSeqUsed[station] = UsedSeq[station];
+			
+			me->pTestSeq->_GetTestSeqStopFail(StopFailSeq);
+			for(station=0; station<NB_OF_STATIONS; station++)
+				me->pTestSeq->_TestSeqStopFail[station] = StopFailSeq[station];
+			
 			ptest_exception = me->pTestSeq->RunAll(me->pTestSeq, me->pTestParam, TRUE);
-			StatusStations[STATION_10] = FALSE;
+			//ptest_exception = elexception_new( -1, "Error", __FILE__, __LINE__);
+
+			StatusStations[STATION_10] = BUSY; 
+			
+			if (me->pTestParam->Skip_All_Test == FALSE)
+			{
+			sprintf(me->barcode, "%s\0", "");
 			
 			/* Event Label Print OK and save XML report with barode */ 
-			if (ptest_exception==NULL)
+			if (ptest_exception==NULL )
 			{
-			sprintf(me->pTestParam->Barcode, "%s\0", me->barcode);
-			
-			/* Barcode save XML */
+			sprintf (me->barcode, me->pTestParam->Num_Serie_pFin);
+			/* Barcodes save XML */
 			EXCCHECKMSXML( MSXML_IXMLDOMDocumentselectSingleNode( pxml, NULL, "/testseq/product/barcode", &pnode));
 			if(pnode)
 			{
@@ -1337,11 +1358,15 @@ SElExceptionPtr RunTestSequence(
 			pnode = 0;
 			}
 			SaveXmlResultFile(me->pTestParam, 0);
+			Delay(0.7);
+			//LogAsteelFile(me->pTestParam, 0); /* fichier type .000*/
+			InsertionMesures_DB(me->pTestParam, 0);
 			}
-			
+		
 			/* Get new serial number and save XML report with serial number */ 
-			if (ptest_exception)
+			else
 			{
+			sprintf(me->barcode, me->pTestParam->Num_Serie_pFin);
 			/* Barcode save XML */
 			EXCCHECKMSXML( MSXML_IXMLDOMDocumentselectSingleNode( pxml, NULL, "/testseq/product/barcode", &pnode));
 			if(pnode)
@@ -1351,14 +1376,21 @@ SElExceptionPtr RunTestSequence(
 			pnode = 0;
 			}
 			SaveXmlResultFile(me->pTestParam, 1);
+			Delay(0.7);
+			//LogAsteelFile(me->pTestParam, 1); /* fichier type .000*/
+			InsertionMesures_DB(me->pTestParam, 1);
+			
 			}
-		
+			
 			/* path XML for dtatabase */ 
 			sprintf(buffer, "%s;%s;%s", AutomatModeStr[AutomatMode], me->pTestParam->TicketFilePath, (ptest_exception==NULL)? "OK":"FAULT");
 			EXCCHECK( me->pData->SetStringPtr(me->pData, buffer));
 
-			/* Save failed status in datatbase and print Fail Label if Fail */ 
+			/* Save good status in datatbase  |||| this function will be called later for Label Fail */ 
 			EXCCHECK( pEventFactory->PulseEvent(pEventFactory, "EVNT_TEST_SEQUENCE_END", me->pData));
+			}
+			RemovePopup (1);//anwar
+			
 			break;
 			
 		case AUTOMAT_EXPERTISE_STEP_MODE:

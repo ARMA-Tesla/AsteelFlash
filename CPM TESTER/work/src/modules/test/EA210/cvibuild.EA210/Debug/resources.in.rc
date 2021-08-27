@@ -1,4 +1,3 @@
-#pragma code_page(65001)
 #include "C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\winver.h"
 
 
@@ -27,7 +26,7 @@ BEGIN
             VALUE "FileDescription", "EA210 (Debug x86)\0"
             VALUE "FileVersion", "1.0\0"
             VALUE "InternalName", "EA210\0"
-            VALUE "LegalCopyright", "Copyright Â©  2021\0"
+            VALUE "LegalCopyright", "Copyright ©  2021\0"
             VALUE "OriginalFilename", "EA210.dll\0"
             VALUE "ProductName", " EA210\0"
             VALUE "ProductVersion", "1.0\0"

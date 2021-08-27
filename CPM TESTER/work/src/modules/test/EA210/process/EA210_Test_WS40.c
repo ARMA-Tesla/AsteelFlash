@@ -11,13 +11,15 @@
 #include "test_panel.h"
 #include "EA210_Test_WS40.h"
 
+
+
 double time_station_40;
 
 ViInt32   ErrorDMM,
 		  ErrorE3642A,
 		  ErrorBK;
 ViRsrc    BKresourceNameWs40    ="ASRL4::INSTR";
-ViRsrc    AG34470AresourceName  ="ASRL5::INSTR";
+ViRsrc    AG34470AresourceName  ="ASRL2::INSTR";
 ViChar    channel[50];
 ViSession vi_AG34470A ;
 ViSession vi_BK_WS40;
@@ -31,6 +33,7 @@ ViInt32   ErrorDMM;
 
 #define UDA_NAME_STATION_40 	"UDA (USB-SN: UDA-04)"
 
+#define CHECK_ANSWER_UDA  1 	
 
 DEFINE_GLOBAL_VARIABLE();
 
@@ -52,13 +55,13 @@ DEFINE_GLOBAL_VARIABLE();
 	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4A",                FALSE)) \
 	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4B",                FALSE)) \ 
 	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4S",                FALSE)) \
-	//EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4T",                FALSE)) \
 	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4U",                FALSE)) \
 	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4V_4V2",            FALSE)) \ 
 	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4Z",                FALSE)) \
 	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4W",                FALSE)) \
 	EXCCHECK( ptester->SetSensor(ptester, "CMD_DBUS_Relay_4R",           FALSE)) \
-	EXCCHECK( ptester->SetSensor(ptester, "CMD_PowerSupply_Relay_4H",    FALSE)) 
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_PowerSupply_Relay_4H",    FALSE)) ;
+	//EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4T",                FALSE)) \ // MOVED TO WS 50 
 
 STestListItem gs_TestList_Station_40[] = {
 
@@ -150,11 +153,11 @@ FCE_TESTSEQUENCE_INIT(STATION_40)
 	PANEL_INI();
 	TESTER_DISCONNECT_ALL_STATION_40();
 	Sleep(100);
-	EXCCHECK( ptester->SetSensor(ptester, "CMD_PowerSupply_Relay_4H",    TRUE)) 
-	EXCCHECK( ptester->SetSensor(ptester, "CMD_DBUS_Relay_4R", TRUE))
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_PowerSupply_Relay_4H",    TRUE)); 
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_DBUS_Relay_4R", TRUE));
 	
 	
-
+		//printf("init WS40 \n\r ");
 
 Error:
 	if (pexception) 	SetCtrlAttribute (gs_TestPanel, PANEL_TIMER_WS40,ATTR_ENABLED, FALSE);
@@ -169,16 +172,18 @@ FCE_TESTSEQUENCE_CLEANUP(STATION_40)
 {
 	TESTSEQUENCECLEANUP_BEGIN(); 
 	TEST_USE(TESTER);
-	SetCtrlAttribute (gs_TestPanel, PANEL_TIMER_WS40, ATTR_ENABLED, FALSE);
 	
 	TESTER_DISCONNECT_ALL_STATION_40();
 	TESTER_UNPLUG_PANEL_STATION_40(5000);
 	Ag34970_ClearError (vi_AG34470A);
-	DISPLAY_TESTSEQ_RESULT ();
+	Ag34970_reset(vi_AG34470A);
 
-	
+
+			//printf("cleanup WS40 \n\r ");
 Error:
-	TESTSEQUENCECLEANUP_END();
+	SetCtrlAttribute (gs_TestPanel, PANEL_TIMER_WS40, ATTR_ENABLED, FALSE);
+	DISPLAY_TESTSEQ_RESULT ();	
+	TESTSEQUENCECLEANUP_END();	
 }
 
 /*********************************************************************************
@@ -237,8 +242,9 @@ FCE_TEST(EA210, 40_0_0)
 	{
 		TESTER_PLUG_PANEL_STATION_40(5000);
 	}
-	EXCCHECK( ptester->SetSensor(ptester, "CMD_PowerSupply_Relay_4H",    TRUE)) ;
-	ErrorDMM=Ag34970_init (AG34470AresourceName, VI_TRUE, VI_TRUE,&vi_AG34470A );
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_PowerSupply_Relay_4H",    FALSE)) ;
+
+	ErrorDMM = Ag34970_init (AG34470AresourceName, VI_FALSE, VI_TRUE,&vi_AG34470A );
 	if (ErrorDMM < VI_SUCCESS)
 	{
 		Ag34970_GetError (vi_AG34470A, &error_WS40, 255, ErrorMessage);
@@ -337,8 +343,8 @@ FCE_INIT(EA210, 40_0_2)
 {
     TESTINIT_BEGIN();	
 	TEST_USE(TESTER);
-	EXCCHECK( ptester->SetSensor(ptester, "CMD_DBUS_Relay_4R", TRUE))
-	EXCCHECK( ptester->SetSensor(ptester, "CMD_PowerSupply_Relay_4H",    TRUE)) 
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_DBUS_Relay_4R", TRUE));
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_PowerSupply_Relay_4H",    TRUE)) ;
 Error:    
     TESTINIT_END();
 }
@@ -446,9 +452,12 @@ FCE_TEST(EA210, 40_7_1)
 
 
  	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
+	
 	// Test of DC Switch output X8.8 on status
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
-	//pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7010", "01");
+	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7010", "01");
+	Sleep(200);
+	
 	cnt = 0;
 	do{
 		cnt++;
@@ -561,13 +570,16 @@ FCE_TEST(EA210, 40_7_2)
 	char msg[255]  ;
  	
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
+	
 	// Test of DC Switch output X8.8 off status
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7080", "001388");//step 7.27 
 	Sleep(70);
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7010", "00");	
+	Sleep(100);
 	
+#if CHECK_ANSWER_UDA
 	do{
 		cnt++;
 		Sleep(70);
@@ -598,6 +610,7 @@ FCE_TEST(EA210, 40_7_2)
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
+#endif   /* formerly excluded lines */
 
 	  ErrorDMM= Ag34970_MeasureDCVoltMeasure (vi_AG34470A, ChannelName, 100, 0.1, 1, &voltageRead, &buffersize);
 	 
@@ -680,7 +693,10 @@ FCE_TEST(EA210, 40_7_3)
  
 	// Test of DC Switch output X8.9 on status
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
-	//pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7010", "02");
+	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7010", "02");
+	Sleep(100);
+	
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7010", "02");
@@ -712,6 +728,7 @@ FCE_TEST(EA210, 40_7_3)
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
+#endif   /* formerly excluded lines */
 	
 	 ErrorDMM= Ag34970_MeasureDCVoltMeasure (vi_AG34470A, ChannelName, 100, 0.1, 1, &voltageRead, &buffersize);
 	 
@@ -736,7 +753,10 @@ Error:
 FCE_CLEANUP(EA210, 40_7_3)
 {
     TESTCLEANUP_BEGIN();
-    
+	TEST_USE(TESTER);
+    EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4B", TRUE))//step 7.19 
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4Z", TRUE))//step7.11
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4U", TRUE))//step 7.26 7.27 7.28    
 Error:    
     TESTCLEANUP_END();
 }
@@ -795,7 +815,9 @@ FCE_TEST(EA210, 40_7_4)
 	// Test of DC Switch output X8.9 off status
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7010", "00");
-	
+	Sleep(100);
+
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(70);
@@ -826,6 +848,7 @@ FCE_TEST(EA210, 40_7_4)
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
+#endif   /* formerly excluded lines */
 
 	 ErrorDMM= Ag34970_MeasureDCVoltMeasure (vi_AG34470A, ChannelName, 100, 0.1, 1, &voltageRead, &buffersize);
 	 
@@ -909,6 +932,8 @@ FCE_TEST(EA210, 40_7_5)
 	// Test of Switch FAN Outputs X8.3 on status
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7024", "01");
+	Sleep(100);
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	
 	do{
 		cnt++;
@@ -940,7 +965,9 @@ FCE_TEST(EA210, 40_7_5)
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
-	 ErrorDMM= Ag34970_MeasureDCVoltMeasure (vi_AG34470A, ChannelName, 100, 0.1, 1, &voltageRead, &buffersize);
+#endif   /* formerly excluded lines */
+	 
+	ErrorDMM= Ag34970_MeasureDCVoltMeasure (vi_AG34470A, ChannelName, 100, 0.1, 1, &voltageRead, &buffersize);
 	 
 	  if (ErrorDMM < VI_SUCCESS)
 	  {
@@ -962,7 +989,10 @@ Error:
 FCE_CLEANUP(EA210, 40_7_5)
 {
     TESTCLEANUP_BEGIN();
-    
+	TEST_USE(TESTER);
+    EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4B", TRUE))//step 7.19 
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4Z", TRUE))//step7.11
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4U", TRUE))//step 7.26 7.27 7.28     
 Error:    
     TESTCLEANUP_END();
 }
@@ -1032,6 +1062,9 @@ FCE_TEST(EA210, 40_7_6)
 	
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7024", "00");
+	Sleep(100);
+	
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(100);
@@ -1062,6 +1095,8 @@ FCE_TEST(EA210, 40_7_6)
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
+#endif   /* formerly excluded lines */
+	
 	 ErrorDMM= Ag34970_MeasureDCVoltMeasure (vi_AG34470A, ChannelName, 100, 0.1, 1, &voltageRead, &buffersize);
 	 
 	 if (ErrorDMM < VI_SUCCESS)
@@ -1150,7 +1185,9 @@ FCE_TEST(EA210, 40_7_7)
 	// Test of Switch FAN Outputs X8.6 on status
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7024", "02");
+	Sleep(100);
 	
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(70);
@@ -1181,7 +1218,9 @@ FCE_TEST(EA210, 40_7_7)
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
-	  ErrorDMM= Ag34970_MeasureDCVoltMeasure (vi_AG34470A, ChannelName, 10.0, 0.1, 1, &voltageRead, &buffersize);
+#endif   /* formerly excluded lines */
+	
+    ErrorDMM= Ag34970_MeasureDCVoltMeasure (vi_AG34470A, ChannelName, 10.0, 0.1, 1, &voltageRead, &buffersize);
 	   if (ErrorDMM < VI_SUCCESS)
 		{
 			Ag34970_GetError (vi_AG34470A, &error_WS40, 255, ErrorMessage);
@@ -1199,7 +1238,10 @@ Error:
 FCE_CLEANUP(EA210, 40_7_7)
 {
     TESTCLEANUP_BEGIN();
-    
+    	TEST_USE(TESTER);
+    EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4B", TRUE))//step 7.19 
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4Z", TRUE))//step7.11
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4U", TRUE))//step 7.26 7.27 7.28  
 Error:    
     TESTCLEANUP_END();
 }
@@ -1259,7 +1301,9 @@ FCE_TEST(EA210, 40_7_8)
 	// Test of Switch FAN Outputs X8.6 off status
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7024", "00");
-	
+	Sleep(100);
+
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(70);
@@ -1290,7 +1334,9 @@ FCE_TEST(EA210, 40_7_8)
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
-	  ErrorDMM= Ag34970_MeasureDCVoltMeasure (vi_AG34470A, ChannelName, 100, 0.1, 1, &voltageRead, &buffersize);
+#endif   /* formerly excluded lines */
+	
+	ErrorDMM= Ag34970_MeasureDCVoltMeasure (vi_AG34470A, ChannelName, 100, 0.1, 1, &voltageRead, &buffersize);
 	   if (ErrorDMM < VI_SUCCESS)
 		{
 			Ag34970_GetError (vi_AG34470A, &error_WS40, 255, ErrorMessage);
@@ -1369,7 +1415,9 @@ FCE_TEST(EA210, 40_7_9)
 	// Test of Switch FAN Outputs X9.3 on status
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7024", "04");
+	Sleep(100);
 	
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(70);
@@ -1400,7 +1448,9 @@ FCE_TEST(EA210, 40_7_9)
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
-	  ErrorDMM= Ag34970_MeasureDCVoltMeasure (vi_AG34470A, ChannelName, 100, 0.0001, 1, &voltageRead, &buffersize);
+#endif   /* formerly excluded lines */
+	 
+ 	ErrorDMM= Ag34970_MeasureDCVoltMeasure (vi_AG34470A, ChannelName, 100, 0.0001, 1, &voltageRead, &buffersize);
 	   if (ErrorDMM < VI_SUCCESS)
 		{
 			Ag34970_GetError (vi_AG34470A, &error_WS40, 255, ErrorMessage);
@@ -1420,7 +1470,10 @@ Error:
 FCE_CLEANUP(EA210, 40_7_9)
 {
     TESTCLEANUP_BEGIN();
-    
+   	TEST_USE(TESTER);
+    EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4B", TRUE))//step 7.19 
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4Z", TRUE))//step7.11
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4U", TRUE))//step 7.26 7.27 7.28   
 Error:    
     TESTCLEANUP_END();
 }
@@ -1483,7 +1536,9 @@ FCE_TEST(EA210, 40_7_10)
 	// Test of Switch FAN Outputs X9.3 off status
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7024", "00");
-	
+	Sleep(100);
+
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(70);
@@ -1514,7 +1569,9 @@ FCE_TEST(EA210, 40_7_10)
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
-	  ErrorDMM= Ag34970_MeasureDCVoltMeasure (vi_AG34470A, ChannelName, 100.0, 0.1, 1, &voltageRead, &buffersize);
+#endif   /* formerly excluded lines */
+	  
+	ErrorDMM= Ag34970_MeasureDCVoltMeasure (vi_AG34470A, ChannelName, 100.0, 0.1, 1, &voltageRead, &buffersize);
 	   if (ErrorDMM < VI_SUCCESS)
 		{
 			Ag34970_GetError (vi_AG34470A, &error_WS40, 255, ErrorMessage);
@@ -1713,7 +1770,9 @@ FCE_TEST(EA210, 40_7_12)
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	//Sleep(100);//TEST 
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7020", "0064");//32
-	
+	Sleep(100);
+
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(70);
@@ -1737,6 +1796,8 @@ FCE_TEST(EA210, 40_7_12)
 		LIMIT_SET(STRING, MessageID);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
+#endif   /* formerly excluded lines */
+	
 	cnt=0;
 	do
 	{
@@ -1943,7 +2004,9 @@ FCE_TEST(EA210, 40_7_14)
 	// Test of PWM FAN outputs X8.5 off status
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7020", "0164");
+	Sleep(100);
 	
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(200);
@@ -1959,6 +2022,7 @@ FCE_TEST(EA210, 40_7_14)
 			break; 
 		
 	}while (TRUE);
+#endif   /* formerly excluded lines */
 	
 
 	/*if (strcmp(MessageID, "7121"))
@@ -2177,6 +2241,9 @@ FCE_TEST(EA210, 40_7_16)
 	// Test of PWM FAN outputs X9.2 off status
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7021", "02");
+	Sleep(100);
+		
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(70);
@@ -2206,6 +2273,7 @@ FCE_TEST(EA210, 40_7_16)
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
+#endif   /* formerly excluded lines */
     
 	//measure output VOLTAGE 
 	 	Sleep(100);
@@ -2398,6 +2466,9 @@ FCE_TEST(EA210, 40_7_18)
 	// Test of PWM FAN outputs X8.7 off status
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7020", "0364");
+	Sleep(100);
+		
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(70);
@@ -2417,6 +2488,7 @@ FCE_TEST(EA210, 40_7_18)
 			break; 
 		
 	}while (TRUE);
+#endif   /* formerly excluded lines */
 	
 
 	/*if (strcmp(MessageID, "7120"))//
@@ -2527,6 +2599,9 @@ FCE_TEST(EA210, 40_7_19)
 	// TEST : Test of constant current LED outputs status on
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7042", "64");//32
+	Sleep(100);
+		
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(70);
@@ -2557,6 +2632,7 @@ FCE_TEST(EA210, 40_7_19)
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
+#endif   /* formerly excluded lines */
 
 	//measure output signal at connector
 	/*  ErrorDMM= Ag34970_VoltageDCVoltageConfigure (vi_AG34470A, "213,214", 100.0, 0.00008);
@@ -2653,7 +2729,9 @@ FCE_TEST(EA210, 40_7_20)
 	// TEST : Test of constant current LED outputs status off
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7043", "");
-	
+	Sleep(100);
+		
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(70);
@@ -2677,6 +2755,7 @@ FCE_TEST(EA210, 40_7_20)
 		LIMIT_SET(STRING, MessageID);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
+#endif   /* formerly excluded lines */
 
 
 	//measure output signal at connector
@@ -2792,7 +2871,9 @@ FCE_TEST(EA210, 40_7_21)
 	//pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7080", "000000");//STEP 7.28 0 RPM
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7033", "010000");
-	
+	Sleep(100);
+		
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(70);
@@ -2823,6 +2904,7 @@ FCE_TEST(EA210, 40_7_21)
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
+#endif   /* formerly excluded lines */
 	
     Sleep(200);//100
 	//Measure output signal at connector X10.4 and X9.1
@@ -2982,7 +3064,9 @@ FCE_TEST(EA210, 40_7_22)
 	//	TEST : Test of Stepper Driver Output
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7033", "010100");
-	
+	Sleep(100);
+		
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(100);
@@ -3013,6 +3097,7 @@ FCE_TEST(EA210, 40_7_22)
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
+#endif   /* formerly excluded lines */
 
     Sleep(300);
 	
@@ -3181,7 +3266,9 @@ FCE_TEST(EA210, 40_7_23)
 	//	TEST : Test of Stepper Driver Output
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7033", "010001");
-	
+	Sleep(100);
+		
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(200);
@@ -3212,6 +3299,7 @@ FCE_TEST(EA210, 40_7_23)
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
+#endif   /* formerly excluded lines */
 
     Sleep(200);
 	
@@ -3315,7 +3403,9 @@ FCE_TEST(EA210, 40_7_24)
 	//	TEST : Test of Stepper Driver Output
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7033", "011000");
-			
+	Sleep(100);		
+		
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(300);
@@ -3346,6 +3436,7 @@ FCE_TEST(EA210, 40_7_24)
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
+#endif   /* formerly excluded lines */
 
     Sleep(200);
 	
@@ -3448,7 +3539,9 @@ FCE_TEST(EA210, 40_7_25)
 	//	TEST : Test of Stepper Driver Output
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7033", "010010");
-	
+	Sleep(100);
+		
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(200);
@@ -3479,6 +3572,7 @@ FCE_TEST(EA210, 40_7_25)
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
+#endif   /* formerly excluded lines */
 
     Sleep(200);
 	ErrorDMM= Ag34970_MeasureDCVoltMeasure (vi_AG34470A, "212,210,201,211", 100.0, 0.01, 4, voltageReadList, &buffersize);
@@ -3572,7 +3666,9 @@ FCE_TEST(EA210, 40_7_26)
 	//	TEST : Test of PFM Output
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7080", "0001F4");	
-	
+	Sleep(100);
+		
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(70);
@@ -3603,6 +3699,7 @@ FCE_TEST(EA210, 40_7_26)
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
+#endif   /* formerly excluded lines */
 
 	//Switch Relays X4.2 and X4.3
 	//Sleep(100);
@@ -3681,7 +3778,8 @@ Error:
 FCE_INIT(EA210, 40_7_27)									
 {
     TESTINIT_BEGIN();
-	
+	TEST_USE(TESTER);
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4U", TRUE))	
 Error:    
     TESTINIT_END();
 }
@@ -3692,7 +3790,7 @@ FCE_TEST(EA210, 40_7_27)
 	TEST_BEGIN();
 	TEST_USE(DBUS);
 	TEST_USE(TESTER);
-	
+
 	ViInt32 buffersize;
 	ViReal64 voltageRead;
 	ViChar ErrorMessage[255];
@@ -3708,6 +3806,8 @@ FCE_TEST(EA210, 40_7_27)
  
 	//	TEST : Test of PFM Output
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
+	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7080", "001388");
+	Sleep(70);
 #if 0    /* formerly excluded lines */
 	do{
 		cnt++;
@@ -3962,7 +4062,10 @@ FCE_TEST(EA210, 40_8_1)
  
 	//	TEST : Test of relay output X2.1 on status
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
-    pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7090", "0000");
+    pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7090", "0001");
+	Sleep(200);
+	
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	
 	do{
 		cnt++;
@@ -3988,15 +4091,16 @@ FCE_TEST(EA210, 40_8_1)
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
 	
-	if (strcmp(MessageData, "0000"))
+	if (strcmp(MessageData, "0001"))
 	{
-		LIMIT_CREATE( "0000", "MessageData");
+		LIMIT_CREATE( "0001", "MessageData");
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
+#endif   /* formerly excluded lines */
 
-	//Sleep(50);
-	
+	//Sleep(300); //OLD
+	Sleep(1000); //ARAIBIA
 	//Measure output signal at connector X2.1 Ag34970_VoltageACVoltageSetBandwidth (vi_AG34470A,101,20);
 
 	ErrorDMM= Ag34970_MeasureACVoltMeasure (vi_AG34470A, "101", 300, 0.1, 1, &voltageRead, &buffersize);
@@ -4092,8 +4196,10 @@ FCE_TEST(EA210, 40_8_2)
  
 	//	TEST : Test of relay output X2.1 off status
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
-	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7090", "0001");
+	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7090", "0000");
+	Sleep(100);
 	
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(70);
@@ -4118,14 +4224,17 @@ FCE_TEST(EA210, 40_8_2)
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
 	
-	if (strcmp(MessageData, "0001"))
+	if (strcmp(MessageData, "0000"))
 	{
-		LIMIT_CREATE( "0001", "MessageData");
+		LIMIT_CREATE( "0000", "MessageData");
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
+#endif   /* formerly excluded lines */
 	
-	ErrorDMM= Ag34970_MeasureACVoltMeasure (vi_AG34470A, "101", 300, 0.1, 1, &voltageRead, &buffersize);//300.0, 0.001
+
+	
+		ErrorDMM= Ag34970_MeasureACVoltMeasure (vi_AG34470A, "101", 300, 0.001, 1, &voltageRead, &buffersize);//300.0, 0.001
 	//ErrorDMM = Ag34970_ScanRead (vi_AG34470A, 15, voltage);
 	if (ErrorDMM < VI_SUCCESS)
 	{
@@ -4134,6 +4243,10 @@ FCE_TEST(EA210, 40_8_2)
 		EXCTHROW( -1, msg);
 	}
 	//voltageRead=atof(voltage);
+	
+	//offset
+	voltageRead=voltageRead+3;
+	//limite check
 	LIMIT_CHECK(REAL64, voltageRead);
 		
 	
@@ -4177,7 +4290,11 @@ FCE_INIT(EA210, 40_8_3)
 {
     TESTINIT_BEGIN();
 	TEST_USE(TESTER);
-
+	//EXCCHECK( ptester->SetSensor(ptester, "CMD_DBUS_Relay_4R",           TRUE));
+	//EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4S", FALSE));
+	//Sleep(200);
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4S", TRUE));
+	//EXCCHECK( ptester->SetSensor(ptester, "CMD_PowerSupply_Relay_4H",    TRUE)) ;
 Error:    
     TESTINIT_END();
 }
@@ -4207,8 +4324,10 @@ FCE_TEST(EA210, 40_8_3)
 	//	TEST : Test of relay output X2.2 on status
 
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
-	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7090", "0100");
-	
+	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7090", "0101");
+	Sleep(100);
+
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(70);
@@ -4233,12 +4352,14 @@ FCE_TEST(EA210, 40_8_3)
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
 	
-	if (strcmp(MessageData, "0100"))
+	if (strcmp(MessageData, "0101"))
 	{
-		LIMIT_CREATE( "0100", "MessageData");
+		LIMIT_CREATE( "0101", "MessageData");
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
+#endif   /* formerly excluded lines */
+	
 	ErrorDMM= Ag34970_MeasureACVoltMeasure (vi_AG34470A, "102", 300, 0.001,1, &voltageRead, &buffersize);
 	if (ErrorDMM < VI_SUCCESS)
 	{
@@ -4291,7 +4412,11 @@ FCE_INIT(EA210, 40_8_4)
 {
     TESTINIT_BEGIN();
 	TEST_USE(TESTER);
-	
+	//	EXCCHECK( ptester->SetSensor(ptester, "CMD_DBUS_Relay_4R",           TRUE));
+	//EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4S", FALSE));
+	//Sleep(200);
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4S", TRUE));
+	//EXCCHECK( ptester->SetSensor(ptester, "CMD_PowerSupply_Relay_4H",    TRUE)) ;
 Error:    
     TESTINIT_END();
 }
@@ -4321,8 +4446,10 @@ FCE_TEST(EA210, 40_8_4)
  
 	//	TEST : Test of relay output X2.2 off status
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
-	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7090", "0101");
+	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7090", "0100");
+	Sleep(100);
 
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do
 	{
 		cnt++;
@@ -4341,7 +4468,7 @@ FCE_TEST(EA210, 40_8_4)
 	}
 	while (TRUE);
 
-	if (strcmp(MessageData, "0101"))
+	if (strcmp(MessageData, "0100"))
 		Sleep(200);
 
 
@@ -4352,12 +4479,13 @@ FCE_TEST(EA210, 40_8_4)
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
 	
-	/*if (strcmp(MessageData, "0101"))
+	if (strcmp(MessageData, "0100"))
 	{
-		LIMIT_CREATE( "0101", "MessageData");
+		LIMIT_CREATE( "0100", "MessageData");
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
-	}*/
+	}
+#endif   /* formerly excluded lines */
 
     //Sleep(100);
 	ErrorDMM= Ag34970_MeasureACVoltMeasure (vi_AG34470A, "102", 300, 0.001, 1, &voltageRead, &buffersize);
@@ -4367,7 +4495,9 @@ FCE_TEST(EA210, 40_8_4)
 		sprintf(msg, "Function Error : Ag34970_MeasureACVoltMeasure \r\n Error: %d, message error : %s\n", error_WS40, ErrorMessage);
 		EXCTHROW( -1, msg);
 	}
-
+	//offset
+	voltageRead=voltageRead+3;
+	//limite check
 	LIMIT_CHECK(REAL64, voltageRead);
 		
 	
@@ -4411,6 +4541,11 @@ FCE_INIT(EA210, 40_8_5)
 {
     TESTINIT_BEGIN();
 	TEST_USE(TESTER);
+	//EXCCHECK( ptester->SetSensor(ptester, "CMD_DBUS_Relay_4R",           TRUE));
+	//EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4S", FALSE));
+	//Sleep(200);
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4S", TRUE));
+	//EXCCHECK( ptester->SetSensor(ptester, "CMD_PowerSupply_Relay_4H",    TRUE)) ;
 Error:    
     TESTINIT_END();
 }
@@ -4440,7 +4575,10 @@ FCE_TEST(EA210, 40_8_5)
 	//	TEST : Test of relay output X2.3 on status
     
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
-	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7090", "0200");
+	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7090", "0201");
+	Sleep(100);
+
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(70);
@@ -4465,13 +4603,17 @@ FCE_TEST(EA210, 40_8_5)
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
 	
-	if (strcmp(MessageData, "0200"))
+	if (strcmp(MessageData, "0201"))
 	{
-		LIMIT_CREATE( "0200", "MessageData");
+		LIMIT_CREATE( "0201", "MessageData");
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
-	ErrorDMM= Ag34970_MeasureACVoltMeasure (vi_AG34470A, "103", 300, 0.01, 1, &voltageRead, &buffersize);
+#endif   /* formerly excluded lines */
+		Sleep(1000);
+	//ErrorDMM= Ag34970_MeasureACVoltMeasure (vi_AG34470A, "103", 300, 0.001, 1, &voltageRead, &buffersize);
+	//Sleep(200);
+	ErrorDMM= Ag34970_MeasureACVoltMeasure (vi_AG34470A, "103", 300, 0.001, 1, &voltageRead, &buffersize);
 	if (ErrorDMM < VI_SUCCESS)
 	{
 		Ag34970_GetError (vi_AG34470A, &error_WS40, 255, ErrorMessage);
@@ -4523,6 +4665,11 @@ FCE_INIT(EA210, 40_8_6)
     TESTINIT_BEGIN();
 	TEST_USE(TESTER);
 	char command[128];
+	//EXCCHECK( ptester->SetSensor(ptester, "CMD_DBUS_Relay_4R",           TRUE));
+	//EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4S", FALSE));
+	//Sleep(200);
+	EXCCHECK( ptester->SetSensor(ptester, "CMD_Relay_4S", TRUE));
+	//EXCCHECK( ptester->SetSensor(ptester, "CMD_PowerSupply_Relay_4H",    TRUE)) ;
 Error:    
     TESTINIT_END();
 }
@@ -4551,8 +4698,10 @@ FCE_TEST(EA210, 40_8_6)
  
 	//	TEST : Test of relay output X2.3 off status
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
-	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7090", "0201");//0x7090 0x02 0x01
+	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "7090", "0200");//0x7090 0x02 0x01
+	Sleep(100);
 	
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(70);
@@ -4578,13 +4727,16 @@ FCE_TEST(EA210, 40_8_6)
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
 	
-	if (strcmp(MessageData, "0201"))
+	if (strcmp(MessageData, "0200"))
 	{
-		LIMIT_CREATE( "0201", "MessageData");
+		LIMIT_CREATE( "0200", "MessageData");
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
-
+#endif   /* formerly excluded lines */
+	
+	//Sleep(2000); //OLD 
+	Sleep(500); //OLD ARAIBIA
 	ErrorDMM= Ag34970_MeasureACVoltMeasure (vi_AG34470A, "103", 300, 0.001, 1, &voltageRead, &buffersize);
 	if (ErrorDMM < VI_SUCCESS)
 	{
@@ -4593,8 +4745,10 @@ FCE_TEST(EA210, 40_8_6)
 		EXCTHROW( -1, msg);
 	}
 	
-	LIMIT_CHECK_EXT(REAL64, voltageRead,pexception);
-	EXCDELETE(pexception);	
+	//offset demande par nizar
+	voltageRead=voltageRead+3;
+	//limite check	
+	LIMIT_CHECK(REAL64, voltageRead);
 	
 Error:
 	SetTestValue(pTID, ((STestParamPtr)pTID)->process, ((STestParamPtr)pTID)->step, "Log", pdbus->GetCache(pdbus, UDA_NAME_STATION_40));
@@ -4671,7 +4825,9 @@ FCE_TEST(EA210, 40_8_7)
 	//	TEST : Check triac output X3.2 on status
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "70B0", "0003");
-	
+	Sleep(100);
+
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(70);
@@ -4702,6 +4858,7 @@ FCE_TEST(EA210, 40_8_7)
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
+#endif   /* formerly excluded lines */
 
 	ErrorDMM= Ag34970_MeasureACVoltMeasure (vi_AG34470A, "104", 300, 0.001, 1, &voltageRead, &buffersize);
 	if (ErrorDMM < VI_SUCCESS)
@@ -4788,7 +4945,9 @@ FCE_TEST(EA210, 40_8_8)
 	//	TEST : Check triac output X3.2 off status
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "70B0", "0004");
+	Sleep(100);
 	
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(70);
@@ -4818,6 +4977,7 @@ FCE_TEST(EA210, 40_8_8)
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
+#endif   /* formerly excluded lines */
 	
 	cnt=0;
 
@@ -4931,7 +5091,9 @@ FCE_TEST(EA210, 40_8_9)
 	//	TEST : Check triac output X3.3 on status
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "70B0", "0103");
+	Sleep(100);
 	
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(70);
@@ -4962,6 +5124,8 @@ FCE_TEST(EA210, 40_8_9)
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
+#endif   /* formerly excluded lines */
+	
 	ErrorDMM= Ag34970_MeasureACVoltMeasure (vi_AG34470A, "105", 300, 0.001, 1, &voltageRead, &buffersize);
 	if (ErrorDMM < VI_SUCCESS)
 	{
@@ -5042,7 +5206,9 @@ FCE_TEST(EA210, 40_8_10)
 	//	TEST : Check triac output X3.3 off status
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "70B0", "0104");
+	Sleep(100);
 	
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(70);
@@ -5073,6 +5239,7 @@ FCE_TEST(EA210, 40_8_10)
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
+#endif   /* formerly excluded lines */
 #if 0    /* formerly excluded lines */
 	
 #endif   /* formerly excluded lines */
@@ -5169,7 +5336,9 @@ FCE_TEST(EA210, 40_8_11)
 	//	TEST : Check triac output X3.4 on status
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "70B0", "0203");
+	Sleep(100);
 	
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(70);
@@ -5200,6 +5369,7 @@ FCE_TEST(EA210, 40_8_11)
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
+#endif   /* formerly excluded lines */
 
 	ErrorDMM= Ag34970_MeasureACVoltMeasure (vi_AG34470A, "106", 300, 0.001, 1, &voltageRead, &buffersize);
 	if (ErrorDMM < VI_SUCCESS)
@@ -5282,7 +5452,9 @@ FCE_TEST(EA210, 40_8_12)
 	//	TEST : Check triac output X3.4 off status
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "70B0", "0204");
-	
+	Sleep(100);
+
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(70);
@@ -5313,6 +5485,7 @@ FCE_TEST(EA210, 40_8_12)
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
+#endif   /* formerly excluded lines */
 
 	cnt=0;
 	do
@@ -5405,6 +5578,9 @@ FCE_TEST(EA210, 40_8_13)
 	//	TEST : Check triac output X3.5 on status
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
     pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "70B0", "0303");
+	Sleep(100);
+		
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(70);
@@ -5435,6 +5611,7 @@ FCE_TEST(EA210, 40_8_13)
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
+#endif   /* formerly excluded lines */
 
 	ErrorDMM= Ag34970_MeasureACVoltMeasure (vi_AG34470A, "107", 300, 0.001, 1, &voltageRead, &buffersize);
 	if (ErrorDMM < VI_SUCCESS)
@@ -5518,7 +5695,9 @@ FCE_TEST(EA210, 40_8_14)
 	//	TEST : Check triac output X3.5 off status
 	EXCCHECK( pdbus->ClearCache(pdbus, UDA_NAME_STATION_40));
 	pexception = pdbus->WriteLowLevel(pdbus, UDA_NAME_STATION_40, 0x1B, "70B0", "0304");
-	
+	Sleep(100);
+
+#if CHECK_ANSWER_UDA    /* formerly excluded lines */
 	do{
 		cnt++;
 		Sleep(70);
@@ -5549,6 +5728,7 @@ FCE_TEST(EA210, 40_8_14)
 		LIMIT_SET(STRING, MessageData);
 		EXCTHROW(TEST_ERR_VALUE_OUT_OF_LIMIT, "TEST_ERR_VALUE_OUT_OF_LIMIT");
 	}
+#endif   /* formerly excluded lines */
 
 	cnt=0;
 	do

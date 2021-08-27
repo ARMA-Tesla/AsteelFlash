@@ -84,8 +84,11 @@ FCE_TESTSEQUENCE_INIT(STATION_20)
 {
 	TESTSEQUENCEINIT_BEGIN();
 	TEST_USE(TESTER);
-	
+	TEST_USE(DIELECTRIMETER);	
 	time_station_20 = 0.0;
+	
+	/* Open connection */
+	//pdielectrimeter->Connect(pdielectrimeter);
 	
 	SetCtrlAttribute (gs_TestPanel, PANEL_TIMER_WS20, ATTR_ENABLED, TRUE);
 
@@ -93,7 +96,7 @@ FCE_TESTSEQUENCE_INIT(STATION_20)
 	
 	TESTER_DISCONNECT_ALL();
 	Sleep(1000);
-	
+	//printf("init WS20 \n\r ");	
 	
 Error:
 	if (pexception) SetCtrlAttribute (gs_TestPanel, PANEL_TIMER_WS20,ATTR_ENABLED, FALSE);
@@ -105,15 +108,23 @@ Error:
  *********************************************************************************/
 FCE_TESTSEQUENCE_CLEANUP(STATION_20)
 {
+	
 	TESTSEQUENCECLEANUP_BEGIN(); 
 	TEST_USE(TESTER);
 	TESTER_INIT ();
+	TEST_USE(DIELECTRIMETER);
 	TESTER_DISCONNECT_ALL()
-	DISPLAY_TESTSEQ_RESULT ();
-	SetCtrlAttribute (gs_TestPanel, PANEL_TIMER_WS20, ATTR_ENABLED, FALSE);
-	
+
+	/* Close connection */ 
+	//pdielectrimeter->Disconnect(pdielectrimeter);
+	//printf("cleanup WS20 \n\r ");
 Error:
+	
+	SetCtrlAttribute (gs_TestPanel, PANEL_TIMER_WS20, ATTR_ENABLED, FALSE);
+	DISPLAY_TESTSEQ_RESULT ();
 	TESTSEQUENCECLEANUP_END();
+
+	
 }
 
 /*********************************************************************************
@@ -315,7 +326,7 @@ FCE_TEST(EA210, 20_1_1)
 Error:
 	
 	/* Close connection */ 
-	//pdielectrimeter->Disconnect(pdielectrimeter);
+	pdielectrimeter->Disconnect(pdielectrimeter);
     TEST_END();
 }
 
@@ -375,16 +386,16 @@ FCE_TEST(EA210, 20_1_2)
 	
 	INITIALIZE_DIELECTRIMETER (0);
 	/* Open connection */
-	//pdielectrimeter->Connect(pdielectrimeter);
+	pdielectrimeter->Connect(pdielectrimeter);
 	
 	/* Read Errors */
-	//pdielectrimeter->SystemError(pdielectrimeter, sys_error);
+	pdielectrimeter->SystemError(pdielectrimeter, sys_error);
 	
 	/* Rest Errors */
-	//pdielectrimeter->ClearError(pdielectrimeter);
+	pdielectrimeter->ClearError(pdielectrimeter);
 	
 	/* Mode Manu */
-	//pdielectrimeter->SetModeManual(pdielectrimeter);
+	pdielectrimeter->SetModeManual(pdielectrimeter);
 	
 	/* Select Step */
 	pdielectrimeter->SetStep(pdielectrimeter,3);
@@ -403,7 +414,7 @@ FCE_TEST(EA210, 20_1_2)
 Error:
 	
 	/* Close connection */ 
-	//pdielectrimeter->Disconnect(pdielectrimeter);
+	pdielectrimeter->Disconnect(pdielectrimeter);
     TEST_END();
 }
 
@@ -464,16 +475,16 @@ FCE_TEST(EA210, 20_1_3)
 	INITIALIZE_DIELECTRIMETER (0);
 	
 	/* Open connection */
-	//pdielectrimeter->Connect(pdielectrimeter);
+	pdielectrimeter->Connect(pdielectrimeter);
 	
 	/* Read Errors */
-	//pdielectrimeter->SystemError(pdielectrimeter, sys_error);
+	pdielectrimeter->SystemError(pdielectrimeter, sys_error);
 	
 	/* Rest Errors */
-	//pdielectrimeter->ClearError(pdielectrimeter);
+	pdielectrimeter->ClearError(pdielectrimeter);
 	
 	/* Mode Manu */
-	//pdielectrimeter->SetModeManual(pdielectrimeter);
+	pdielectrimeter->SetModeManual(pdielectrimeter);
 	
 	/* Select Step */
 	pdielectrimeter->SetStep(pdielectrimeter,5);
@@ -491,7 +502,7 @@ FCE_TEST(EA210, 20_1_3)
 Error:
 	
 	/* Close connection */ 
-	//pdielectrimeter->Disconnect(pdielectrimeter);
+	pdielectrimeter->Disconnect(pdielectrimeter);
     TEST_END();
 }
 

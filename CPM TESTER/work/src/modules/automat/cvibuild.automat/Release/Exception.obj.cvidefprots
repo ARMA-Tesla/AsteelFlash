@@ -1,25 +1,25 @@
 [elexception_new]
 Class="Function"
 Prototype="struct _SElException *elexception_new(int errorCode, const char *messsage, const char *file, long line);"
-SourceLocation="c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\shared\exception\Exception.c:66:17"
+SourceLocation="c:\work\src\shared\exception\Exception.c:66:17"
 
 [elexception_delete]
 Class="Function"
 Prototype="void elexception_delete(struct _SElException **pException);"
-SourceLocation="c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\shared\exception\Exception.c:104:6"
+SourceLocation="c:\work\src\shared\exception\Exception.c:104:6"
 
 [elexception_log_set]
 Class="Function"
 Prototype="void elexception_log_set(void (*fn_log)(struct _SElException *));"
-SourceLocation="c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\shared\exception\Exception.c:126:6"
+SourceLocation="c:\work\src\shared\exception\Exception.c:126:6"
 
 [excdispstr]
 Class="Function"
 Prototype="void excdispstr(struct _SElException *pException, char *str, int str_size);"
-SourceLocation="c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\shared\exception\Exception.c:133:6"
+SourceLocation="c:\work\src\shared\exception\Exception.c:133:6"
 
 [excdisplay]
 Class="Function"
 Prototype="void excdisplay(struct _SElException *pException);"
-SourceLocation="c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\shared\exception\Exception.c:168:6"
+SourceLocation="c:\work\src\shared\exception\Exception.c:168:6"
 

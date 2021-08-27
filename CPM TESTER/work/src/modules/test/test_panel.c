@@ -422,7 +422,7 @@ SElExceptionPtr _FUNCC GetTestSeqStopFail(int* SeqStopFail)
 	for (station=0; station<STATION_MAX; station++)
 	{
 		
-		EXCCHECKCVI( GetCtrlVal( gs_Panel[station], panelSeqStopFail[station], &StopFail));
+		EXCCHECKCVI( GetCtrlVal( gs_Panel[station], panelSeqGoFail[station], &StopFail));
 		SeqStopFail[station] = StopFail;
 	}
 
@@ -915,8 +915,8 @@ DWORD WINAPI Thread_Test(LPVOID param)
 	int							StopRetest = 0;
 	char                        msg[128];
 	int                         pass, fail;
-	int                         StopFail;
-	
+	int                         fault_ignore;
+
 	
 	if (gs_Autorisation == 0)
 	{	
@@ -928,7 +928,7 @@ DWORD WINAPI Thread_Test(LPVOID param)
 
 		EXCCHECK( gs_PluginArgs->GetArg(gs_PluginArgs, "TestSequence", ARG_PTR, &gs_TestSequence));
 		
-	
+		GetCtrlVal(gs_Panel[station], ControlReTest[station], &fault_ignore);
 		GetCtrlVal(gs_Panel[station], ControlReTest[station], &Retest);
 
 		pass = 0;
@@ -944,7 +944,7 @@ DWORD WINAPI Thread_Test(LPVOID param)
 			sprintf (msg, "%d / %d", i+1, Retest);
 			SetCtrlVal(gs_Panel[station], ControlReTestTotal[station], msg);
 		
-			GetCtrlVal( gs_Panel[station], panelSeqStopFail[station], &StopFail);
+			GetCtrlVal( gs_Panel[station], panelSeqGoFail[station], &fault_ignore);
 
 			if(gs_TestSequence)
 				EXCCHECK( GetTestParameters(gs_Modules, gs_TestSequence, pTestParam));
@@ -955,7 +955,7 @@ DWORD WINAPI Thread_Test(LPVOID param)
 							
 			if(gs_TestSequence && pTestParam)
 			{				
-				pexception = gs_TestSequence->RunSelectedStation(gs_TestSequence, pTestParam, FALSE, station);
+				pexception = gs_TestSequence->RunSelectedStation(gs_TestSequence, pTestParam, fault_ignore, station);
 				if (pexception == NULL)	
 				{
 					pass = pass + 1;
@@ -969,9 +969,6 @@ DWORD WINAPI Thread_Test(LPVOID param)
 					sprintf (msg, "%d", fail);
 					SetCtrlVal(gs_Panel[station], ControlReTestFAIL[station], msg);
 					SaveXmlResultFile_Manual(pTestParam, station, 1);
-					if (StopFail)
-						MessagePopup("TEST FAIL", "Appyer pour continuer...");
-						
 				}
 			}
 			

@@ -1,16 +1,15 @@
--inrc c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\resources.in.rc
--outrc c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\resources.out.rc
--inhdef c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\automat_plugin.h.hdefs
--outdef c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\automat.dll.defs
--indefprot c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\automat.obj.cvidefprots
--indefprot c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\automat_fnc.obj.cvidefprots
--indefprot c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\eleventdata.obj.cvidefprots
--indefprot c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\elstring.obj.cvidefprots
--indefprot c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\eltest.obj.cvidefprots
--indefprot c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\Exception.obj.cvidefprots
--indefprot c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\language.obj.cvidefprots
--indefprot c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\Log_Asteel.obj.cvidefprots
--indefprot c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\multithread.obj.cvidefprots
--indefprot c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\testseq.obj.cvidefprots
--indefprot c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\cvibuild.automat\Release\bp98xx.obj.cvidefprots
+-inrc c:\work\src\modules\automat\cvibuild.automat\Release\resources.in.rc
+-outrc c:\work\src\modules\automat\cvibuild.automat\Release\resources.out.rc
+-inhdef c:\work\src\modules\automat\cvibuild.automat\Release\automat_plugin.h.hdefs
+-outdef c:\work\src\modules\automat\cvibuild.automat\Release\automat.dll.defs
+-indefprot c:\work\src\modules\automat\cvibuild.automat\Release\automat.obj.cvidefprots
+-indefprot c:\work\src\modules\automat\cvibuild.automat\Release\automat_fnc.obj.cvidefprots
+-indefprot c:\work\src\modules\automat\cvibuild.automat\Release\eleventdata.obj.cvidefprots
+-indefprot c:\work\src\modules\automat\cvibuild.automat\Release\elstring.obj.cvidefprots
+-indefprot c:\work\src\modules\automat\cvibuild.automat\Release\eltest.obj.cvidefprots
+-indefprot c:\work\src\modules\automat\cvibuild.automat\Release\Exception.obj.cvidefprots
+-indefprot c:\work\src\modules\automat\cvibuild.automat\Release\language.obj.cvidefprots
+-indefprot c:\work\src\modules\automat\cvibuild.automat\Release\Log_Asteel.obj.cvidefprots
+-indefprot c:\work\src\modules\automat\cvibuild.automat\Release\multithread.obj.cvidefprots
+-indefprot c:\work\src\modules\automat\cvibuild.automat\Release\testseq.obj.cvidefprots
 -dllName automat.dll

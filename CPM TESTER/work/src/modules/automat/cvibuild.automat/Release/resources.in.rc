@@ -2,7 +2,7 @@
 #include "C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\winver.h"
 
 
-2 24 "c:\\Users\\Anwar\\Desktop\\FCT12 BACKUP\\17 02 2021\\17 02 2021\\work\\src\\modules\\automat\\cvibuild.automat\\Release\\manifest.xml"
+2 24 "c:\\work\\src\\modules\\automat\\cvibuild.automat\\Release\\manifest.xml"
 
 
 STRINGTABLE DISCARDABLE
@@ -39,4 +39,4 @@ BEGIN
     END
 END
 
-automat.uir UIRFileType "c:\\Users\\Anwar\\Desktop\\FCT12 BACKUP\\17 02 2021\\17 02 2021\\work\\src\\modules\\automat\\automat.uir"
+automat.uir UIRFileType "c:\\work\\src\\modules\\automat\\automat.uir"

@@ -3,8 +3,7 @@ HDRS = 	"c:\\work\\src\\modules"
 	"c:\\work\\include"
 	"c:\\work\\src\\modules\\test\\EA210"
 	"c:\\work\\src\\modules\\automat"
-	"C:\\Users\\Public\\Documents\\National Instruments\\TestStand 2016 (32-bit)\\AdapterSupport\\CVI"
-	"C:\\Program Files (x86)\\National Instruments\\TestStand 2016\\API\\DLLInterfaces"
+	"C:\\Program Files\\IVI Foundation\\IVI\\Include"
 	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\word"
 	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\excel"
 	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl"
@@ -27,18 +26,18 @@ HDRS = 	"c:\\work\\src\\modules"
 	"C:\\ProgramData\\National Instruments\\CVI\\include"
 	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\ansi"
 	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\clang\\3.3"
-	"c:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
 	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
 	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
-	"c:\\Program Files\\IVI Foundation\\IVI\\Drivers\\Ag34450"
-	"c:\\Program Files (x86)\\IVI Foundation\\IVI\\Drivers\\Ag34970"
-	"c:\\Program Files\\IVI Foundation\\IVI\\Drivers\\BK 9801"
-	"c:\\Program Files\\IVI Foundation\\IVI\\Drivers\\hpe364xa"
+	"C:\\Program Files\\IVI Foundation\\IVI\\Drivers\\Ag34450"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Drivers\\Ag34970"
+	"C:\\Program Files\\IVI Foundation\\IVI\\Drivers\\bp98xx"
+	"C:\\Program Files\\IVI Foundation\\IVI\\Drivers\\hpe364xa"
 	"c:\\Program Files (x86)\\National Instruments\\CVI2019\\bin"
 	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
 	;
 include Jamfile_instr ;
-LOCATE on "Ag34970.h" = "c:\\Program Files (x86)\\IVI Foundation\\IVI\\Include" ;
+LOCATE on "Ag34970.h" = "C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include" ;
 LOCATE on "EA210.c" = "c:\\work\\src\\modules\\test\\EA210" ;
 LOCATE on "EA210.h" = "c:\\work\\src\\modules\\test\\EA210" ;
 LOCATE on "EA210_Test_WS10.c" = "c:\\work\\src\\modules\\test\\EA210\\process" ;

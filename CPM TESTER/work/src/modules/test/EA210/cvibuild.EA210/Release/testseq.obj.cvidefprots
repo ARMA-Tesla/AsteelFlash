@@ -16,15 +16,15 @@ SourceLocation="c:\work\src\shared\test\testseq.c:245:1"
 [SaveXmlResultFile]
 Class="Function"
 Prototype="void SaveXmlResultFile(struct _STestParam *pTestParam, int failed);"
-SourceLocation="c:\work\src\shared\test\testseq.c:1510:1"
+SourceLocation="c:\work\src\shared\test\testseq.c:1509:1"
 
 [LogAsteelFile]
 Class="Function"
 Prototype="void LogAsteelFile(struct _STestParam *pTestParam, int failed);"
-SourceLocation="c:\work\src\shared\test\testseq.c:1540:1"
+SourceLocation="c:\work\src\shared\test\testseq.c:1539:1"
 
 [InsertionMesures_DB]
 Class="Function"
 Prototype="void InsertionMesures_DB(struct _STestParam *pTestParam, int failed);"
-SourceLocation="c:\work\src\shared\test\testseq.c:1579:1"
+SourceLocation="c:\work\src\shared\test\testseq.c:1578:1"
 

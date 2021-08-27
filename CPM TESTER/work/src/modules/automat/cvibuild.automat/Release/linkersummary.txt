@@ -1,0 +1,29 @@
+automat.obj
+automat_fnc.obj
+eleventdata.obj
+elstring.obj
+eltest.obj
+Exception.obj
+language.obj
+Log_Asteel.obj
+multithread.obj
+testseq.obj
+cvistart.lib
+cvi.lib
+asynctmr.obj
+bp98xx.lib
+cvi_db.lib
+cviauto.lib
+hpe364xa.lib
+kernel32.lib
+msxmldom.obj
+toolbox.obj
+advapi32.lib
+gdi32.lib
+user32.lib
+uuid.lib
+CVI_UP_Product_Dependencies_Private_Object
+CVI_PKG_Product_Dependencies_Private_Object
+EXE Symbol Module
+Exports Module
+Resource Module

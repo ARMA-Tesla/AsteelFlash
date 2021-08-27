@@ -1,0 +1,140 @@
+[GetPalettNumber]
+Class="Function"
+Prototype="int GetPalettNumber();"
+SourceLocation="c:\work\src\modules\automat\automat.c:262:5"
+
+[LED_Operator]
+Class="Function"
+Prototype="struct _SElException *LED_Operator(int color);"
+SourceLocation="c:\work\src\modules\automat\automat.c:277:17"
+
+[CheckAxisPosition]
+Class="Function"
+Prototype="struct _SElException *CheckAxisPosition(struct _axis *paxis, int axis, double position, double timeout);"
+SourceLocation="c:\work\src\modules\automat\automat.c:327:17"
+
+[DisplayWait]
+Class="Function"
+Prototype="struct _SElException *DisplayWait();"
+SourceLocation="c:\work\src\modules\automat\automat.c:434:17"
+
+[Timer_Wait]
+Class="Function"
+Prototype="int Timer_Wait(int reserved, int theTimerId, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\modules\automat\automat.c:469:17"
+
+[Wait_To_Empty_Convoyer]
+Class="Function"
+Prototype="int Wait_To_Empty_Convoyer();"
+SourceLocation="c:\work\src\modules\automat\automat.c:489:17"
+
+[Init_PWM_Generator]
+Class="Function"
+Prototype="struct _SElException *Init_PWM_Generator();"
+SourceLocation="c:\work\src\modules\automat\automat.c:505:17"
+
+[Init_BK_PRECISION_WS40_WS50]
+Class="Function"
+Prototype="struct _SElException *Init_BK_PRECISION_WS40_WS50();"
+SourceLocation="c:\work\src\modules\automat\automat.c:525:17"
+
+[Init_Alim_keysight]
+Class="Function"
+Prototype="struct _SElException *Init_Alim_keysight();"
+SourceLocation="c:\work\src\modules\automat\automat.c:598:17"
+
+[DisplayClignotant]
+Class="Function"
+Prototype="struct _SElException *DisplayClignotant(char *message);"
+SourceLocation="c:\work\src\modules\automat\automat.c:668:17"
+
+[ReadMasterInformations]
+Class="Function"
+Prototype="struct _SElException *ReadMasterInformations(const char *pfile_xml, char *description, char *name, char *station);"
+SourceLocation="c:\work\src\modules\automat\automat.c:961:17"
+
+[GetFieldDataFromName]
+Class="Function"
+Prototype="void GetFieldDataFromName(int count, char FieldName[20][128], char FieldData[20][128], char *SerachedNameField, char *FoundDataField);"
+SourceLocation="c:\work\src\modules\automat\automat.c:1391:6"
+
+[sledge_new]
+Class="Function"
+Prototype="struct _SElException *sledge_new(struct _SSledge **pSledge);"
+SourceLocation="c:\work\src\modules\automat\automat.c:2121:17"
+
+[sledge_delete]
+Class="Function"
+Prototype="struct _SElException *sledge_delete(struct _SSledge **pSledge);"
+SourceLocation="c:\work\src\modules\automat\automat.c:2143:17"
+
+[Pushed_Start_Skip_Palett]
+Class="Function"
+Prototype="int Pushed_Start_Skip_Palett(int timeout);"
+SourceLocation="c:\work\src\modules\automat\automat.c:2362:5"
+
+[Pushed_Start_Without_Palett]
+Class="Function"
+Prototype="int Pushed_Start_Without_Palett();"
+SourceLocation="c:\work\src\modules\automat\automat.c:2393:5"
+
+[JigPanelLabel]
+Class="Function"
+Prototype="struct _SElException *JigPanelLabel(struct _SSledge *me, int *pError);"
+SourceLocation="c:\work\src\modules\automat\automat.c:2599:17"
+
+[JigPanelLabelFail]
+Class="Function"
+Prototype="struct _SElException *JigPanelLabelFail(struct _SSledge *me, int *pError);"
+SourceLocation="c:\work\src\modules\automat\automat.c:2625:17"
+
+[GetNewSerial]
+Class="Function"
+Prototype="struct _SElException *GetNewSerial(int *counter, int *pError);"
+SourceLocation="c:\work\src\modules\automat\automat.c:2750:17"
+
+[DiscardUIObjectsForDLL]
+Class="Function"
+Prototype="void DiscardUIObjectsForDLL();"
+SourceLocation="c:\work\src\modules\automat\automat.c:3887:6"
+
+[DllMain]
+Class="Function"
+Prototype="int DllMain(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+SourceLocation="c:\work\src\modules\automat\automat.c:3892:15"
+
+[DllEntryPoint]
+Class="Function"
+Prototype="int DllEntryPoint(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+SourceLocation="c:\work\src\modules\automat\automat.c:3922:15"
+
+[pluginInitialize]
+Class="Function"
+Prototype="struct _SElException *pluginInitialize(struct _SPluginArgs *a_pPluginArgs) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\automat\automat.c:3935:28"
+
+[pluginRun]
+Class="Function"
+Prototype="struct _SElException *pluginRun(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\automat\automat.c:4011:28"
+
+[pluginLeave]
+Class="Function"
+Prototype="struct _SElException *pluginLeave(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\automat\automat.c:4097:28"
+
+[PLUGIN_SHUTDOWN_NAME_CODE]
+Class="Function"
+Prototype="struct _SElException *PLUGIN_SHUTDOWN_NAME_CODE(struct _SPluginArgs *a_pPluginArgs) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\automat\automat.c:4113:28"
+
+[pluginGetInfo]
+Class="Function"
+Prototype="struct _SElException *pluginGetInfo(struct _SPluginInfo **a_pInfo) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\automat\automat.c:4134:28"
+
+[pluginGetAttribute]
+Class="Function"
+Prototype="struct _SElException *pluginGetAttribute(unsigned int attrID, unsigned int size, void *value) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\automat\automat.c:4146:28"
+

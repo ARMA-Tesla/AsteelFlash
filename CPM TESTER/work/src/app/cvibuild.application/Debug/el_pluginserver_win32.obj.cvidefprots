@@ -1,0 +1,10 @@
+[PluginServer_new]
+Class="Function"
+Prototype="struct _SElException *PluginServer_new(struct _SPluginServer **pPluginServer);"
+SourceLocation="c:\work\src\shared\plugins\el_pluginserver_win32.c:119:1"
+
+[PluginServer_delete]
+Class="Function"
+Prototype="struct _SElException *PluginServer_delete(struct _SPluginServer **pServer);"
+SourceLocation="c:\work\src\shared\plugins\el_pluginserver_win32.c:157:1"
+

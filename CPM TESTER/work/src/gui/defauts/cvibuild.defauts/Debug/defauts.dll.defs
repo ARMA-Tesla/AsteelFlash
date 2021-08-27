@@ -1,0 +1,12 @@
+LIBRARY defauts
+
+EXPORTS
+InitializeCal
+OnMonthChange
+OnCalDisplay
+gs_InfoData
+pluginGetAttribute
+pluginGetInfo
+pluginLeave
+pluginRun
+pluginInitialize

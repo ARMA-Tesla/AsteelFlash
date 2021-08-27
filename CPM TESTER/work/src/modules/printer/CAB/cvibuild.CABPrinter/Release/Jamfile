@@ -1,0 +1,66 @@
+HDRS = 	"c:\\work\\src\\modules"
+	"c:\\work\\src\\shared"
+	"c:\\work\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\clang\\3.3"
+	"c:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2019\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "CABPrinter.c" = "c:\\work\\src\\modules\\printer\\CAB" ;
+LOCATE on "CABPrinter.h" = "c:\\work\\src\\modules\\printer\\CAB" ;
+LOCATE on "eltypes.h" = "c:\\work\\include" ;
+LOCATE on "Exception.c" = "c:\\work\\src\\shared\\exception" ;
+LOCATE on "Exception.h" = "c:\\work\\src\\shared\\exception" ;
+LOCATE on "printers.h" = "c:\\work\\src\\modules\\printer\\class" ;
+Object "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\CABPrinter.obj" : "c:\\work\\src\\modules\\printer\\CAB\\CABPrinter.c" ;
+FILENUM on "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\CABPrinter.obj" = 1 ;
+DEFPROTS on "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\CABPrinter.obj" = "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\CABPrinter.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\CABPrinter.obj" = "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\CABPrinter.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\CABPrinter.obj" ;
+Object "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\Exception.obj" : "c:\\work\\src\\shared\\exception\\Exception.c" ;
+FILENUM on "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\Exception.obj" = 2 ;
+DEFPROTS on "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\Exception.obj" = "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\Exception.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\Exception.obj" = "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\Exception.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\Exception.obj" ;
+Object "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\CABPrinter.h.hdefs" : "c:\\work\\src\\modules\\printer\\CAB\\CABPrinter.h" ;
+FILENUM on "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\CABPrinter.h.hdefs" = 3 ;
+OUTFILE on "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\CABPrinter.h.hdefs" = "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\CABPrinter.h.hdefs.out" ;
+PreLinkInputs += "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\resources.in.rc" ;
+PreLinkInputs += $(PrjObjects) $(InstrObjects) ;
+PreLinkOutputs += "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\resources.out.rc" ;
+PreLinkOutputs += "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\CAB.dll.defs" ;
+PreLink $(PreLinkOutputs) : $(PreLinkInputs) ;
+Depends "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\CAB.dll" : "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\CAB.dll.defs" ;
+Object "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\resources.res" : "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\resources.out.rc" ;
+Depends "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\resources.res" : $(PreLinkOutputs) ;
+Depends "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\resources.res" "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\resources.out.rc" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\resources.res" : "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\manifest.xml" ;
+MainFromObjects "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\CAB.dll" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\CAB.dll" : "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\link_options.txt" ;
+Depends "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\CAB.dll" : "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\dependencies.lnk.in" ;
+Depends "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\CAB.dll" : "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\resources.res" ;
+Depends all : "c:\\work\\src\\modules\\printer\\CAB\\cvibuild.CABPrinter\\Release\\CAB.dll" ;

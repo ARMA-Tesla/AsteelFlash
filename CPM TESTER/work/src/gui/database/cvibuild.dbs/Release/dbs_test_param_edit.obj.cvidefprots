@@ -1,0 +1,15 @@
+[EditParameterDialog2]
+Class="Function"
+Prototype="struct _SElException *EditParameterDialog2(struct _STestParameter parameter);"
+SourceLocation="c:\work\src\gui\database\dbs_test_param_edit.c:23:1"
+
+[InsertParameterDialog2]
+Class="Function"
+Prototype="struct _SElException *InsertParameterDialog2(struct _STestParameter parameter);"
+SourceLocation="c:\work\src\gui\database\dbs_test_param_edit.c:84:1"
+
+[DelParameterDialog2]
+Class="Function"
+Prototype="struct _SElException *DelParameterDialog2(struct _STestParameter parameter, const char *keyNode, const char *keyCol);"
+SourceLocation="c:\work\src\gui\database\dbs_test_param_edit.c:126:1"
+

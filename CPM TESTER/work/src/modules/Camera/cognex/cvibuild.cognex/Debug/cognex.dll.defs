@@ -1,0 +1,15 @@
+LIBRARY cognex
+
+EXPORTS
+Cognex_set_parameters
+Cognex_set_number_boutton
+Cognex_set_param
+Cognex_Job
+Cognex_act_job
+Cognex_Offline
+Cognex_Online
+Cognex_Read
+Cognex_Trigger
+Cognex_disconnect
+Cognex_login
+openTCPserver

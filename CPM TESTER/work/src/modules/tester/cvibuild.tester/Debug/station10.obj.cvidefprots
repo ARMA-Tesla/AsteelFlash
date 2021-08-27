@@ -1,0 +1,10 @@
+[LockPanelStation10]
+Class="Function"
+Prototype="struct _SElException *LockPanelStation10(struct _STester *me, int timeout);"
+SourceLocation="c:\work\src\modules\tester\station10.c:12:1"
+
+[UnlockPanelStation10]
+Class="Function"
+Prototype="struct _SElException *UnlockPanelStation10(struct _STester *me, int timeout);"
+SourceLocation="c:\work\src\modules\tester\station10.c:47:1"
+

@@ -1,0 +1,102 @@
+-nologo
+-out:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs.dll
+-def:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs.dll.defs
+-implib:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs.lib
+-ignoreexports
+-dependenciesMapFile:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dependencies.lnk.in
+-embedSourceInfo
+-indefprot:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs.obj.cvidefprots
+-indefprot:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_export.obj.cvidefprots
+-indefprot:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_kosu.obj.cvidefprots
+-indefprot:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_lineexport.obj.cvidefprots
+-indefprot:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_lineparam.obj.cvidefprots
+-indefprot:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_lineprocess.obj.cvidefprots
+-indefprot:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_linestep.obj.cvidefprots
+-indefprot:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_masterlist.obj.cvidefprots
+-indefprot:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_module.obj.cvidefprots
+-indefprot:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_paramlist.obj.cvidefprots
+-indefprot:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_productlist.obj.cvidefprots
+-indefprot:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_storage.obj.cvidefprots
+-indefprot:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_testerlist.obj.cvidefprots
+-indefprot:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_testlist.obj.cvidefprots
+-indefprot:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_testparamlist.obj.cvidefprots
+-indefprot:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_userlist.obj.cvidefprots
+-indefprot:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\eleventdata.obj.cvidefprots
+-indefprot:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\elodbc.obj.cvidefprots
+-indefprot:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\elstring.obj.cvidefprots
+-indefprot:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\Exception.obj.cvidefprots
+-indefprot:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\interval.obj.cvidefprots
+-indefprot:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\multithread.obj.cvidefprots
+-indefprot:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\objlist.obj.cvidefprots
+-arch:x86
+-timestamp
+-debug:2
+-project:c:\work\src\modules\dbs\dbs_module.prj
+-res:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\resources.res
+-entry:_CVIDllMainStartupCodeForDebugging@12
+-base:0x400000
+-linked:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\linkersummary.txt
+-dlldeps:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dlldependencies.txt
+-licensing:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\linkerlicensing.txt
+-browsedeps:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\moduledependencies.txt
+-stackreserve:131072
+-stackcommit:4096
+-in:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs.obj
+-in:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_export.obj
+-in:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_kosu.obj
+-in:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_lineexport.obj
+-in:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_lineparam.obj
+-in:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_lineprocess.obj
+-in:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_linestep.obj
+-in:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_masterlist.obj
+-in:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_module.obj
+-in:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_paramlist.obj
+-in:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_productlist.obj
+-in:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_storage.obj
+-in:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_testerlist.obj
+-in:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_testlist.obj
+-in:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_testparamlist.obj
+-in:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\dbs_userlist.obj
+-in:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\eleventdata.obj
+-in:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\elodbc.obj
+-in:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\elstring.obj
+-in:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\Exception.obj
+-in:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\interval.obj
+-in:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\multithread.obj
+-in:c:\work\src\modules\dbs\cvibuild.dbs_module\Debug\objlist.obj
+-more:c:\program files (x86)\national instruments\cvi2019\bin\msvc\cvistart.lib
+-more:c:\program files (x86)\national instruments\cvi2019\bin\msvc\cvi.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\advanlys.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\advapi32.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\toolslib\toolbox\msvc\asynctmr.obj
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\bufferoverflowu.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\cvi_db.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\cviauto.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\cvidotnet.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\cvinetstreams.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\cvinetv.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\cvintwrk.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\cvitdms.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\gdi32.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\gpib.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\toolslib\custctrl\msvc\ImageControl.obj
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\ivi.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\kernel32.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\toolslib\toolbox\msvc\msxmldom.obj
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\NIDAQmx.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\niimaq.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\niimaqdx.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nise.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\niseCfg.obj
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nisyscfg.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nivision.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\nivxi.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nixnet.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\odbc32.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\omp.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\pid.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\toolslib\toolbox\msvc\toolbox.obj
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\user32.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\uuid.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\visa.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\winmm.lib

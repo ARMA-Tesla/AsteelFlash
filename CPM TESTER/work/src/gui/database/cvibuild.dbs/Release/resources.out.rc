@@ -1,0 +1,2644 @@
+#include "C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\winver.h"
+
+
+2 24 "c:\\work\\src\\gui\\database\\cvibuild.dbs\\Release\\manifest.xml"
+
+
+STRINGTABLE DISCARDABLE
+BEGIN
+  65535  ""
+END
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+ FILEFLAGS 0L
+ FILEOS VOS__WINDOWS32
+ FILETYPE VFT_DLL
+ FILESUBTYPE VFT_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "database (Release x86)\0"
+            VALUE "FileVersion", "1.0\0"
+            VALUE "InternalName", "database\0"
+            VALUE "LegalCopyright", "Copyright ©  2020\0"
+            VALUE "OriginalFilename", "database.dll\0"
+            VALUE "ProductName", " database\0"
+            VALUE "ProductVersion", "1.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 0x4b0
+    END
+END
+
+database.uir UIRFileType "c:\\work\\src\\gui\\database\\database.uir"
+
+CVIDLLexports CVIDLLprototypes
+{
+   "struct _SElException *ActiveUserSet(struct _SUserList *puserlist);"
+   "\n",
+   "long BKLib2_New_DBKGrid(int panel, const char *label, int top, int left, int *controlID, int *UILError);"
+   "\n",
+   "long BKLib2_New_DBKTree(int panel, const char *label, int top, int left, int *controlID, int *UILError);"
+   "\n",
+   "long BKLib2_Open_DBKGrid(const char *fileName, int panel, const char *label, int top, int left, int *controlID, int *UILError);"
+   "\n",
+   "long BKLib2_Open_DBKTree(const char *fileName, int panel, const char *label, int top, int left, int *controlID, int *UILError);"
+   "\n",
+   "long BKLib2__DBKGridAboutBox(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long BKLib2__DBKGridRefresh(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long BKLib2__DBKTreeAboutBox(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long BKLib2__DBKTreeAddColumn(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyCol, const char *name, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeAddNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyParent, const char *keyNode, const char *text, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeCollapse(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeEnsureVisible(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode);"
+   "\n",
+   "long BKLib2__DBKTreeEventsRegOnCollapse(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long BKLib2__DBKTreeEventsRegOnDragDrop(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long BKLib2__DBKTreeEventsRegOnDragOver(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *, short, short), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long BKLib2__DBKTreeEventsRegOnExpand(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long BKLib2__DBKTreeEventsRegOnModify(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *, char *, long), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long BKLib2__DBKTreeEventsRegOnMouseOverCell(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long BKLib2__DBKTreeEventsRegOnNodeClick(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long BKLib2__DBKTreeEventsRegOnPopupMenuCommand(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *, char *, long), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long BKLib2__DBKTreeEventsRegOnPrePopupMenuCallback(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *, char *, char **), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long BKLib2__DBKTreeExpand(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeExpandLevel(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long nLevel, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeFromArray(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *vArray, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeFromString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *strString, const char *chSeparator, const char *chLine, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeFromXML(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *strXML, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetAutoImages(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetBackTextColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetColumnCount(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetColumnHeadFontStyle(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyCol, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetColumnHeadFormat(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyCol, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetColumnHeadingVisible(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetColumnName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyCol, char **returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetColumnNext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyCol, char **returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetColumnResizing(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetColumnWidth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyCol, long *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetDragIcon(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetDragMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetEditable(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetEnableDragAndDrop(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetEnableEventModify(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetEnableEventMouseOverCell(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetEnableFocusCell(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetEnableSelection(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetEnableTreeKeyDirection(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetFont(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetForeTextColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetFrameBorder(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pStyle, long *pStyleEx);"
+   "\n",
+   "long BKLib2__DBKTreeGetGridLineColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetGridLines(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetImageList(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetListMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetNodeData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, long *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetNodeFontStyle(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetNodeHasChildren(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetNodeItemBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, unsigned long *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetNodeItemData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, long *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetNodeItemEditable(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetNodeItemFontStyle(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetNodeItemFormat(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetNodeItemImage(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetNodeItemText(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, char **returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetNodeItemTextColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, unsigned long *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetNodeItemTextEx(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, char **returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetNodeItemTipTextEnable(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetNodeNext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, short position, char **returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetParentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, char **returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetScrollBarVisible(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short nBar, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetSelectedItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetTreeLineColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetTreeLines(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeGetVersion(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeIsExpanded(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeIsNodeExist(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeMoveNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyTargetNode, short nPosition, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeRefresh(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long BKLib2__DBKTreeRemoveColumn(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyCol, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeRemoveNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeRenameNodeKey(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyNew, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeResetContent(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetAutoImages(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetBackTextColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetByRefAutoImages(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetByRefBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetByRefBackTextColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetByRefColumnHeadingVisible(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetByRefColumnResizing(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetByRefDragIcon(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetByRefDragMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetByRefEditable(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetByRefEnableDragAndDrop(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetByRefEnableEventModify(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetByRefEnableEventMouseOverCell(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetByRefEnableFocusCell(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetByRefEnableSelection(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetByRefEnableTreeKeyDirection(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetByRefFont(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetByRefForeTextColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetByRefGridLineColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetByRefGridLines(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetByRefImageList(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetByRefListMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetByRefSelectedItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetByRefTreeLineColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetByRefTreeLines(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetColumnHeadFontStyle(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyCol, short headStyle);"
+   "\n",
+   "long BKLib2__DBKTreeSetColumnHeadFormat(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyCol, short headFormat);"
+   "\n",
+   "long BKLib2__DBKTreeSetColumnHeadingVisible(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetColumnName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyCol, const char *name, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetColumnResizing(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetColumnWidth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyCol, long nWidth, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetDragIcon(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetDragMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetEditable(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetEnableDragAndDrop(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetEnableEventModify(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetEnableEventMouseOverCell(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetEnableFocusCell(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetEnableSelection(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetEnableTreeKeyDirection(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetFont(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetForeTextColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetFrameBorder(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long nNewStyle, long nNewStyleEx);"
+   "\n",
+   "long BKLib2__DBKTreeSetGridLineColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetGridLines(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetImageList(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetListMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetNodeData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, long lData);"
+   "\n",
+   "long BKLib2__DBKTreeSetNodeFontStyle(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, short nodeStyle);"
+   "\n",
+   "long BKLib2__DBKTreeSetNodeItemBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, unsigned long nNewValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetNodeItemData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, long lData);"
+   "\n",
+   "long BKLib2__DBKTreeSetNodeItemEditable(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, short bEditable);"
+   "\n",
+   "long BKLib2__DBKTreeSetNodeItemFontStyle(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, short nodeStyle);"
+   "\n",
+   "long BKLib2__DBKTreeSetNodeItemFormat(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, short nodeFormat);"
+   "\n",
+   "long BKLib2__DBKTreeSetNodeItemImage(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, short nImage);"
+   "\n",
+   "long BKLib2__DBKTreeSetNodeItemText(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, const char *text, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetNodeItemTextColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, unsigned long nNewValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetNodeItemTextEx(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, const char *text, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetNodeItemTipTextEnable(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, short bEnable);"
+   "\n",
+   "long BKLib2__DBKTreeSetPopupMenu(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *menuItems, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetRedraw(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short bRedraw, short *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetScrollBarVisible(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short nBar, short nNewValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetSelectedItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetTreeLineColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long newValue);"
+   "\n",
+   "long BKLib2__DBKTreeSetTreeLines(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+   "\n",
+   "long BKLib2__DBKTreeToArray(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeToString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *chSeparator, const char *chLine, char **returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeToString2(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *chSeparator, const char *chLine, char **returnValue);"
+   "\n",
+   "long BKLib2__DBKTreeToXML(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **returnValue);"
+   "\n",
+   "struct _SElException *BkTreeParametersModify(char *keyNode, char *keyCol, long modifyType);"
+   "\n",
+   "struct _SElException *BkTreeParametersNodeClick(char *keyNode);"
+   "\n",
+   "struct _SElException *BkTreeParametersPopupMenuCommand(char *keyNode, char *keyCol, long menuItem);"
+   "\n",
+   "struct _SElException *BkTreeProcessModify(char *keyNode, char *keyCol, long modifyType);"
+   "\n",
+   "struct _SElException *BkTreeProcessNodeClick(char *keyNode);"
+   "\n",
+   "struct _SElException *BkTreeProcessPopupMenuCommand(char *keyNode, char *keyCol, long menuItem);"
+   "\n",
+   "struct _SElException *BkTreeProductNodeClick(char *keyNode);"
+   "\n",
+   "struct _SElException *BkTreeProductParamModify(char *keyNode, char *keyCol, long modifyType);"
+   "\n",
+   "struct _SElException *BkTreeProductParamNodeClick(char *keyNode);"
+   "\n",
+   "struct _SElException *BkTreeProductParamPopupMenuCommand(char *keyNode, char *keyCol, long menuItem);"
+   "\n",
+   "struct _SElException *BkTreeProductPopupMenuCommand(char *keyNode, char *keyCol, long menuItem);"
+   "\n",
+   "struct _SElException *BkTreeStepMove(int key_id, int *activated);"
+   "\n",
+   "struct _SElException *BkTreeStepsInsert();"
+   "\n",
+   "struct _SElException *BkTreeStepsNodeClick(char *keyNode);"
+   "\n",
+   "struct _SElException *BkTreeStepsPopupMenuCommand(char *keyNode, char *keyCol, long menuItem);"
+   "\n",
+   "struct _SElException *BkTreeUserNodeClick(char *keyNode);"
+   "\n",
+   "struct _SElException *BkTreeUserPopupMenuCommand(char *keyNode, char *keyCol, long menuItem);"
+   "\n",
+   "int Cb_ChangeTab(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "struct _SElException *ChangeMode(int mode);"
+   "\n",
+   "struct _SElException *Clear(struct _SPluginInfo *me);"
+   "\n",
+   "struct _SElException *ClosePanel();"
+   "\n",
+   "struct _SElException *CopyProductDialog(struct _SProductTypes product);"
+   "\n",
+   "long DDTPickerChangeCallback(CAObjHandle caServerObjHandle, void *caCallbackData);"
+   "\n",
+   "char *DbsRightsToString(int rights);"
+   "\n",
+   "struct _SElException *DelParameterDialog(struct _STestParameter parameter, int editable);"
+   "\n",
+   "struct _SElException *DelParameterDialog2(struct _STestParameter parameter, const char *keyNode, const char *keyCol);"
+   "\n",
+   "struct _SElException *DelProductDialog(struct _SProductTypes product);"
+   "\n",
+   "struct _SElException *DelProductMasterDialog(struct _SProductMaster master, const char *keyNode, const char *keyCol);"
+   "\n",
+   "struct _SElException *DelProductParamDialog(struct _SProductParameter parameter, const char *keyNode, const char *keyCol);"
+   "\n",
+   "struct _SElException *DelTestDialog(struct _STestStep test, int editable);"
+   "\n",
+   "struct _SElException *DelUserDialog(struct _SDBSUser user);"
+   "\n",
+   "struct _SElException *DelUserRightsDialog(struct _SDBSUser user, int value);"
+   "\n",
+   "void DiscardUIObjectsForDLL();"
+   "\n",
+   "int DllEntryPoint(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+   "\n",
+   "int DllMain(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+   "\n",
+   "struct _SElException *EditParameterDialog(struct _STestParameter parameter, char *pname, int editable);"
+   "\n",
+   "struct _SElException *EditParameterDialog2(struct _STestParameter parameter);"
+   "\n",
+   "struct _SElException *EditProductDialog(struct _SProductTypes product);"
+   "\n",
+   "struct _SElException *EditProductParamDialog(struct _SProductParameter parameter);"
+   "\n",
+   "struct _SElException *EditTestDialog(struct _STestStep test, char *sname);"
+   "\n",
+   "struct _SElException *EditUserDialog(struct _SDBSUser user);"
+   "\n",
+   "struct _SElException *EditUserRightsDialog(struct _SDBSUser user, int value);"
+   "\n",
+   "struct _SElException *GetArgCount(struct _SPluginInfo *me, int *a_enuFunc);"
+   "\n",
+   "struct _SElException *GetArgDescription(struct _SPluginInfo *me, int a_enuFunc, const long a_lIndex, char *buffer, int bufferSize);"
+   "\n",
+   "struct _SElException *GetArgName(struct _SPluginInfo *me, int a_enuFunc, const long a_lIndex, char *buffer, int bufferSize);"
+   "\n",
+   "struct _SElException *GetBuildDateTime(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+   "\n",
+   "struct _SElException *GetBuildVersion(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+   "\n",
+   "struct _SElException *GetDescription(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+   "\n",
+   "struct _SElException *GetEmail(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+   "\n",
+   "struct _SElException *GetHomepage(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+   "\n",
+   "struct _SElException *GetInfo(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+   "\n",
+   "struct _SElException *GetMajorVersion(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+   "\n",
+   "struct _SElException *GetMinorVersion(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+   "\n",
+   "struct _SElException *GetName(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+   "\n",
+   "struct _SElException *GetTarget(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+   "\n",
+   "struct _SElException *GetUUID(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+   "\n",
+   "struct _SElException *GetVendor(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+   "\n",
+   "struct _SElException *GetVersion(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+   "\n",
+   "struct _SElException *HasPublicArgs(struct _SPluginInfo *me, int *hasArg);"
+   "\n",
+   "struct _SElException *HistoryClear();"
+   "\n",
+   "struct _SElException *HistoryFilterSetCurrentTime();"
+   "\n",
+   "struct _SElException *InfoHide();"
+   "\n",
+   "struct _SElException *InfoShow();"
+   "\n",
+   "struct _SElException *InsertParameterDialog2(struct _STestParameter parameter);"
+   "\n",
+   "struct _SElException *InsertProductParamDialog(struct _SProductParameter parameter);"
+   "\n",
+   "struct _SElException *InsertTestDialog(struct _STestStep test, char *sname);"
+   "\n",
+   "struct _SElException *LoadPanelExWithLanguage(int parentPanel, const char *path, int panelResourceId, struct _SLanguageItem table[], int *pPanelHandle);"
+   "\n",
+   "struct _SElException *LoadPanelWithLanguage(int parentPanel, const char *path, int panelResourceId, struct _SLanguageItem table[], int *pPanelHandle);"
+   "\n",
+   "long MSComCtl2_DAnimationEventsRegOnClick(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DAnimationEventsRegOnDblClick(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DAnimationEventsRegOnMouseDown(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DAnimationEventsRegOnMouseMove(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DAnimationEventsRegOnMouseUp(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DAnimationEventsRegOnOLECompleteDrag(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DAnimationEventsRegOnOLEDragDrop(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, long *, short *, short *, float *, float *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DAnimationEventsRegOnOLEDragOver(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, long *, short *, short *, float *, float *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DAnimationEventsRegOnOLEGiveFeedback(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DAnimationEventsRegOnOLESetData(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DAnimationEventsRegOnOLEStartDrag(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DDTPickerEventsRegOnCallbackKeyDown(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, char *, double *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DDTPickerEventsRegOnChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DDTPickerEventsRegOnClick(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DDTPickerEventsRegOnCloseUp(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DDTPickerEventsRegOnDblClick(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DDTPickerEventsRegOnDropDown(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DDTPickerEventsRegOnFormat(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *, char **), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DDTPickerEventsRegOnFormatSize(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DDTPickerEventsRegOnKeyDown(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DDTPickerEventsRegOnKeyPress(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DDTPickerEventsRegOnKeyUp(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DDTPickerEventsRegOnMouseDown(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DDTPickerEventsRegOnMouseMove(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DDTPickerEventsRegOnMouseUp(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DDTPickerEventsRegOnOLECompleteDrag(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DDTPickerEventsRegOnOLEDragDrop(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, long *, short *, short *, float *, float *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DDTPickerEventsRegOnOLEDragOver(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, long *, short *, short *, float *, float *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DDTPickerEventsRegOnOLEGiveFeedback(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DDTPickerEventsRegOnOLESetData(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DDTPickerEventsRegOnOLEStartDrag(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DFlatSBEventsRegOnChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DFlatSBEventsRegOnScroll(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DMonthViewEventsRegOnClick(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DMonthViewEventsRegOnDateClick(CAObjHandle serverObject, long (*callbackFunction)(int, void *, double), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DMonthViewEventsRegOnDateDblClick(CAObjHandle serverObject, long (*callbackFunction)(int, void *, double), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DMonthViewEventsRegOnDblClick(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DMonthViewEventsRegOnGetDayBold(CAObjHandle serverObject, long (*callbackFunction)(int, void *, double, short, struct tagSAFEARRAY **), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DMonthViewEventsRegOnKeyDown(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DMonthViewEventsRegOnKeyPress(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DMonthViewEventsRegOnKeyUp(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DMonthViewEventsRegOnMouseDown(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DMonthViewEventsRegOnMouseMove(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DMonthViewEventsRegOnMouseUp(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DMonthViewEventsRegOnOLECompleteDrag(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DMonthViewEventsRegOnOLEDragDrop(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, long *, short *, short *, float *, float *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DMonthViewEventsRegOnOLEDragOver(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, long *, short *, short *, float *, float *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DMonthViewEventsRegOnOLEGiveFeedback(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DMonthViewEventsRegOnOLESetData(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DMonthViewEventsRegOnOLEStartDrag(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DMonthViewEventsRegOnSelChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, double, double, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DUpDownEventsRegOnChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DUpDownEventsRegOnDownClick(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DUpDownEventsRegOnMouseDown(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DUpDownEventsRegOnMouseMove(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DUpDownEventsRegOnMouseUp(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DUpDownEventsRegOnOLECompleteDrag(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DUpDownEventsRegOnOLEDragDrop(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, long *, short *, short *, float *, float *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DUpDownEventsRegOnOLEDragOver(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, long *, short *, short *, float *, float *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DUpDownEventsRegOnOLEGiveFeedback(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DUpDownEventsRegOnOLESetData(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DUpDownEventsRegOnOLEStartDrag(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_DUpDownEventsRegOnUpClick(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSComCtl2_IAnimationAboutBox(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSComCtl2_IAnimationClose(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSComCtl2_IAnimationGetAutoPlay(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pfAutoPlay);"
+   "\n",
+   "long MSComCtl2_IAnimationGetBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *pocBackColor);"
+   "\n",
+   "long MSComCtl2_IAnimationGetBackStyle(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_BackStyleConstants *penumBackStyle);"
+   "\n",
+   "long MSComCtl2_IAnimationGetCenter(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pfCenter);"
+   "\n",
+   "long MSComCtl2_IAnimationGetEnabled(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pfEnable);"
+   "\n",
+   "long MSComCtl2_IAnimationGetOLEDropMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_OLEDropConstants *psOLEDropMode);"
+   "\n",
+   "long MSComCtl2_IAnimationGethWnd(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *phWnd);"
+   "\n",
+   "long MSComCtl2_IAnimationOLEDrag(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSComCtl2_IAnimationOpen(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *bstrFilename);"
+   "\n",
+   "long MSComCtl2_IAnimationPlay(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT varRepeatCount, struct tagVARIANT varStartFrame, struct tagVARIANT varEndFrame);"
+   "\n",
+   "long MSComCtl2_IAnimationSetAutoPlay(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pfAutoPlay);"
+   "\n",
+   "long MSComCtl2_IAnimationSetBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long pocBackColor);"
+   "\n",
+   "long MSComCtl2_IAnimationSetBackStyle(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_BackStyleConstants penumBackStyle);"
+   "\n",
+   "long MSComCtl2_IAnimationSetCenter(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pfCenter);"
+   "\n",
+   "long MSComCtl2_IAnimationSetEnabled(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pfEnable);"
+   "\n",
+   "long MSComCtl2_IAnimationSetOLEDropMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_OLEDropConstants psOLEDropMode);"
+   "\n",
+   "long MSComCtl2_IAnimationStop(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSComCtl2_IDTPickerAboutBox(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSComCtl2_IDTPickerGetCalendarBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *pclrCalendarBackColor);"
+   "\n",
+   "long MSComCtl2_IDTPickerGetCalendarForeColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *pclrCalendarForeColor);"
+   "\n",
+   "long MSComCtl2_IDTPickerGetCalendarTitleBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *pclrTitleBackColor);"
+   "\n",
+   "long MSComCtl2_IDTPickerGetCalendarTitleForeColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *pclrTitleForeColor);"
+   "\n",
+   "long MSComCtl2_IDTPickerGetCalendarTrailingForeColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *pclrTrailingForeColor);"
+   "\n",
+   "long MSComCtl2_IDTPickerGetCheckBox(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbEnabled);"
+   "\n",
+   "long MSComCtl2_IDTPickerGetCustomFormat(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **pbstrCustomFormat);"
+   "\n",
+   "long MSComCtl2_IDTPickerGetDay(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvDay);"
+   "\n",
+   "long MSComCtl2_IDTPickerGetDayOfWeek(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvDayOfWeek);"
+   "\n",
+   "long MSComCtl2_IDTPickerGetEnabled(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbEnabled);"
+   "\n",
+   "long MSComCtl2_IDTPickerGetFont(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppFont);"
+   "\n",
+   "long MSComCtl2_IDTPickerGetFormat(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_FormatConstants *penumFormat);"
+   "\n",
+   "long MSComCtl2_IDTPickerGetHour(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvHour);"
+   "\n",
+   "long MSComCtl2_IDTPickerGetMaxDate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double *pdateMaxDate);"
+   "\n",
+   "long MSComCtl2_IDTPickerGetMinDate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double *pdateMinDate);"
+   "\n",
+   "long MSComCtl2_IDTPickerGetMinute(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvMinute);"
+   "\n",
+   "long MSComCtl2_IDTPickerGetMonth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvMonth);"
+   "\n",
+   "long MSComCtl2_IDTPickerGetMouseIcon(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppMouseIcon);"
+   "\n",
+   "long MSComCtl2_IDTPickerGetMousePointer(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_MousePointerConstants *psMousePointer);"
+   "\n",
+   "long MSComCtl2_IDTPickerGetOLEDropMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_OLEDropConstants *psOLEDropMode);"
+   "\n",
+   "long MSComCtl2_IDTPickerGetSecond(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvSecond);"
+   "\n",
+   "long MSComCtl2_IDTPickerGetUpDown(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbUpDown);"
+   "\n",
+   "long MSComCtl2_IDTPickerGetValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvdateValue);"
+   "\n",
+   "long MSComCtl2_IDTPickerGetYear(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvYear);"
+   "\n",
+   "long MSComCtl2_IDTPickerGet_Value(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvdateValue);"
+   "\n",
+   "long MSComCtl2_IDTPickerGethWnd(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *phWnd);"
+   "\n",
+   "long MSComCtl2_IDTPickerOLEDrag(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSComCtl2_IDTPickerRefresh(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetByRefFont(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle ppFont);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetByRefMouseIcon(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle ppMouseIcon);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetCalendarBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long pclrCalendarBackColor);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetCalendarForeColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long pclrCalendarForeColor);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetCalendarTitleBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long pclrTitleBackColor);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetCalendarTitleForeColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long pclrTitleForeColor);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetCalendarTrailingForeColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long pclrTrailingForeColor);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetCheckBox(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbEnabled);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetCustomFormat(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *pbstrCustomFormat);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetDay(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvDay);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetDayOfWeek(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvDayOfWeek);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetEnabled(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbEnabled);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetFont(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle ppFont);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetFormat(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_FormatConstants penumFormat);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetHour(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvHour);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetMaxDate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double pdateMaxDate);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetMinDate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double pdateMinDate);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetMinute(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvMinute);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetMonth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvMonth);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetMouseIcon(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle ppMouseIcon);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetMousePointer(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_MousePointerConstants psMousePointer);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetOLEDropMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_OLEDropConstants psOLEDropMode);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetSecond(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvSecond);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetUpDown(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbUpDown);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvdateValue);"
+   "\n",
+   "long MSComCtl2_IDTPickerSetYear(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvYear);"
+   "\n",
+   "long MSComCtl2_IDTPickerSet_Value(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvdateValue);"
+   "\n",
+   "long MSComCtl2_IDTPickerSethWnd(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long phWnd);"
+   "\n",
+   "long MSComCtl2_IFlatSBAboutBox(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSComCtl2_IFlatSBGetAppearance(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_FlatScrollBarAppearanceConstants *penumAppearance);"
+   "\n",
+   "long MSComCtl2_IFlatSBGetArrows(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_ArrowsConstants *penumArrows);"
+   "\n",
+   "long MSComCtl2_IFlatSBGetEnabled(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbEnabled);"
+   "\n",
+   "long MSComCtl2_IFlatSBGetLargeChange(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psLargeChange);"
+   "\n",
+   "long MSComCtl2_IFlatSBGetMax(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psMax);"
+   "\n",
+   "long MSComCtl2_IFlatSBGetMin(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psMin);"
+   "\n",
+   "long MSComCtl2_IFlatSBGetMouseIcon(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppMouseIcon);"
+   "\n",
+   "long MSComCtl2_IFlatSBGetMousePointer(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_MousePointerConstants *psMousePointer);"
+   "\n",
+   "long MSComCtl2_IFlatSBGetOrientation(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_OrientationConstants *penumOrientation);"
+   "\n",
+   "long MSComCtl2_IFlatSBGetSmallChange(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psSmallChange);"
+   "\n",
+   "long MSComCtl2_IFlatSBGetValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psValue);"
+   "\n",
+   "long MSComCtl2_IFlatSBGet_Value(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psValue);"
+   "\n",
+   "long MSComCtl2_IFlatSBGethWnd(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *phWnd);"
+   "\n",
+   "long MSComCtl2_IFlatSBRefresh(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSComCtl2_IFlatSBSetAppearance(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_FlatScrollBarAppearanceConstants penumAppearance);"
+   "\n",
+   "long MSComCtl2_IFlatSBSetArrows(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_ArrowsConstants penumArrows);"
+   "\n",
+   "long MSComCtl2_IFlatSBSetByRefMouseIcon(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle ppMouseIcon);"
+   "\n",
+   "long MSComCtl2_IFlatSBSetEnabled(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbEnabled);"
+   "\n",
+   "long MSComCtl2_IFlatSBSetLargeChange(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psLargeChange);"
+   "\n",
+   "long MSComCtl2_IFlatSBSetMax(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psMax);"
+   "\n",
+   "long MSComCtl2_IFlatSBSetMin(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psMin);"
+   "\n",
+   "long MSComCtl2_IFlatSBSetMouseIcon(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle ppMouseIcon);"
+   "\n",
+   "long MSComCtl2_IFlatSBSetMousePointer(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_MousePointerConstants psMousePointer);"
+   "\n",
+   "long MSComCtl2_IFlatSBSetOrientation(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_OrientationConstants penumOrientation);"
+   "\n",
+   "long MSComCtl2_IFlatSBSetSmallChange(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psSmallChange);"
+   "\n",
+   "long MSComCtl2_IFlatSBSetValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psValue);"
+   "\n",
+   "long MSComCtl2_IFlatSBSet_Value(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psValue);"
+   "\n",
+   "long MSComCtl2_IFlatSBSethWnd(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long phWnd);"
+   "\n",
+   "long MSComCtl2_IMonthViewAboutBox(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSComCtl2_IMonthViewComputeControlSize(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short rows, short columns, float *width, float *height);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetAppearance(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_AppearanceConstants *penumAppearances);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *pclrBackColor);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetBorderStyle(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_BorderStyleConstants *psBorderStyle);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetDay(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psDay);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetDayBold(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double dateIndex, short *pbDayBold);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetDayOfWeek(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_DayConstants *penumDayOfWeek);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetEnabled(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbEnabled);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetFont(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppFont);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetForeColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *pclrForeColor);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetMaxDate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double *pdateMaxDate);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetMaxSelCount(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psMaxSelCount);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetMinDate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double *pdateMinDate);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetMonth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_MonthConstants *psMonth);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetMonthBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *pclrMonthBackColor);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetMonthColumns(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psMonthColumns);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetMonthRows(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psMonthRows);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetMouseIcon(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppMouseIcon);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetMousePointer(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_MousePointerConstants *psMousePointer);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetMultiSelect(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbMultiSelect);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetOLEDropMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_OLEDropConstants *psOLEDropMode);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetScrollRate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psScrollRate);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetSelEnd(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double *pdateSelEnd);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetSelStart(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double *pdateSelStart);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetShowToday(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbShowToday);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetShowWeekNumbers(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbShowWeekNumbers);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetStartOfWeek(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_DayConstants *penumStartOfWeek);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetTitleBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *pclrTitleBackColor);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetTitleForeColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *pclrTitleForeColor);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetTrailingForeColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *pclrTrailingForeColor);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double *pdateValue);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetVisibleDays(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short sIndex, double *pdateVisibleDays);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetWeek(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psWeek);"
+   "\n",
+   "long MSComCtl2_IMonthViewGetYear(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psYear);"
+   "\n",
+   "long MSComCtl2_IMonthViewGet_Value(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double *pdateValue);"
+   "\n",
+   "long MSComCtl2_IMonthViewGethWnd(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *phWnd);"
+   "\n",
+   "long MSComCtl2_IMonthViewHitTest(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long x, long y, double *date, enum MSComCtl2Enum_MonthViewHitTestAreas *enumHitTestArea);"
+   "\n",
+   "long MSComCtl2_IMonthViewOLEDrag(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSComCtl2_IMonthViewRefresh(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetAppearance(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_AppearanceConstants penumAppearances);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long pclrBackColor);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetBorderStyle(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_BorderStyleConstants psBorderStyle);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetByRefFont(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle ppFont);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetByRefMouseIcon(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle ppMouseIcon);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetDay(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psDay);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetDayBold(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double dateIndex, short pbDayBold);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetDayOfWeek(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_DayConstants penumDayOfWeek);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetEnabled(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbEnabled);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetFont(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle ppFont);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetForeColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long pclrForeColor);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetMaxDate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double pdateMaxDate);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetMaxSelCount(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psMaxSelCount);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetMinDate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double pdateMinDate);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetMonth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_MonthConstants psMonth);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetMonthBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long pclrMonthBackColor);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetMonthColumns(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psMonthColumns);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetMonthRows(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psMonthRows);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetMouseIcon(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle ppMouseIcon);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetMousePointer(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_MousePointerConstants psMousePointer);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetMultiSelect(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbMultiSelect);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetOLEDropMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_OLEDropConstants psOLEDropMode);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetScrollRate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psScrollRate);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetSelEnd(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double pdateSelEnd);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetSelStart(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double pdateSelStart);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetShowToday(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbShowToday);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetShowWeekNumbers(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbShowWeekNumbers);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetStartOfWeek(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_DayConstants penumStartOfWeek);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetTitleBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long pclrTitleBackColor);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetTitleForeColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long pclrTitleForeColor);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetTrailingForeColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long pclrTrailingForeColor);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double pdateValue);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetVisibleDays(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short sIndex, double pdateVisibleDays);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetWeek(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psWeek);"
+   "\n",
+   "long MSComCtl2_IMonthViewSetYear(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psYear);"
+   "\n",
+   "long MSComCtl2_IMonthViewSet_Value(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double pdateValue);"
+   "\n",
+   "long MSComCtl2_IMonthViewSethWnd(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long phWnd);"
+   "\n",
+   "long MSComCtl2_IUpDownAboutBox(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSComCtl2_IUpDownGetAcceleration(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psAcceleration);"
+   "\n",
+   "long MSComCtl2_IUpDownGetAlignment(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_AlignmentConstants *penumAlignment);"
+   "\n",
+   "long MSComCtl2_IUpDownGetAutoBuddy(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pfAutoBuddy);"
+   "\n",
+   "long MSComCtl2_IUpDownGetBuddyControl(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvarBuddyCtl);"
+   "\n",
+   "long MSComCtl2_IUpDownGetBuddyProperty(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvarDispidBuddyProperty);"
+   "\n",
+   "long MSComCtl2_IUpDownGetEnabled(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pfEnable);"
+   "\n",
+   "long MSComCtl2_IUpDownGetIncrement(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *plIncrement);"
+   "\n",
+   "long MSComCtl2_IUpDownGetMax(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *plMax);"
+   "\n",
+   "long MSComCtl2_IUpDownGetMin(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *plMin);"
+   "\n",
+   "long MSComCtl2_IUpDownGetOLEDropMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_OLEDropConstants *psOLEDropMode);"
+   "\n",
+   "long MSComCtl2_IUpDownGetOrientation(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_OrientationConstants *penumOrientation);"
+   "\n",
+   "long MSComCtl2_IUpDownGetSyncBuddy(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pfSyncBuddy);"
+   "\n",
+   "long MSComCtl2_IUpDownGetValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *plValue);"
+   "\n",
+   "long MSComCtl2_IUpDownGetWrap(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pfWrap);"
+   "\n",
+   "long MSComCtl2_IUpDownGethWnd(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *phWnd);"
+   "\n",
+   "long MSComCtl2_IUpDownOLEDrag(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSComCtl2_IUpDownSetAcceleration(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psAcceleration);"
+   "\n",
+   "long MSComCtl2_IUpDownSetAlignment(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_AlignmentConstants penumAlignment);"
+   "\n",
+   "long MSComCtl2_IUpDownSetAutoBuddy(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pfAutoBuddy);"
+   "\n",
+   "long MSComCtl2_IUpDownSetBuddyControl(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvarBuddyCtl);"
+   "\n",
+   "long MSComCtl2_IUpDownSetBuddyProperty(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvarDispidBuddyProperty);"
+   "\n",
+   "long MSComCtl2_IUpDownSetByRefBuddyControl(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvarBuddyCtl);"
+   "\n",
+   "long MSComCtl2_IUpDownSetEnabled(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pfEnable);"
+   "\n",
+   "long MSComCtl2_IUpDownSetIncrement(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long plIncrement);"
+   "\n",
+   "long MSComCtl2_IUpDownSetMax(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long plMax);"
+   "\n",
+   "long MSComCtl2_IUpDownSetMin(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long plMin);"
+   "\n",
+   "long MSComCtl2_IUpDownSetOLEDropMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_OLEDropConstants psOLEDropMode);"
+   "\n",
+   "long MSComCtl2_IUpDownSetOrientation(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_OrientationConstants penumOrientation);"
+   "\n",
+   "long MSComCtl2_IUpDownSetSyncBuddy(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pfSyncBuddy);"
+   "\n",
+   "long MSComCtl2_IUpDownSetValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long plValue);"
+   "\n",
+   "long MSComCtl2_IUpDownSetWrap(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pfWrap);"
+   "\n",
+   "long MSComCtl2_IVBDataObjectClear(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSComCtl2_IVBDataObjectFilesAdd(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *bstrFilename, struct tagVARIANT vIndex);"
+   "\n",
+   "long MSComCtl2_IVBDataObjectFilesClear(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSComCtl2_IVBDataObjectFilesGetCount(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *plCount);"
+   "\n",
+   "long MSComCtl2_IVBDataObjectFilesGetItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long lIndex, char **bstrItem);"
+   "\n",
+   "long MSComCtl2_IVBDataObjectFilesRemove(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT vIndex);"
+   "\n",
+   "long MSComCtl2_IVBDataObjectFiles_NewEnum(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct IUnknown **ppUnk);"
+   "\n",
+   "long MSComCtl2_IVBDataObjectGetData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short sFormat, struct tagVARIANT *pvData);"
+   "\n",
+   "long MSComCtl2_IVBDataObjectGetFiles(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *pFiles);"
+   "\n",
+   "long MSComCtl2_IVBDataObjectGetFormat(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short sFormat, short *pbFormatSupported);"
+   "\n",
+   "long MSComCtl2_IVBDataObjectSetData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT vValue, struct tagVARIANT vFormat);"
+   "\n",
+   "long MSComCtl2_NewIAnimation(int panel, const char *label, int top, int left, int *controlID, int *UILError);"
+   "\n",
+   "long MSComCtl2_NewIDTPicker(int panel, const char *label, int top, int left, int *controlID, int *UILError);"
+   "\n",
+   "long MSComCtl2_NewIFlatSB(int panel, const char *label, int top, int left, int *controlID, int *UILError);"
+   "\n",
+   "long MSComCtl2_NewIMonthView(int panel, const char *label, int top, int left, int *controlID, int *UILError);"
+   "\n",
+   "long MSComCtl2_NewIUpDown(int panel, const char *label, int top, int left, int *controlID, int *UILError);"
+   "\n",
+   "long MSXML_ActiveDOMDocumentIXMLDOMDocument(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_ActiveDOMFreeThreadedDocumentIXMLDOMDocument(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_ActiveIXMLDSOControl(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_ActiveIXMLDocument2(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_ActiveIXMLHttpRequest(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetname(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **attributeName);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetvalue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *attributeValue);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeSetvalue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT attributeValue);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMAttributecloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMAttributehasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMAttributereplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMAttributetransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMAttributetransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **data);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetlength(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *dataLength);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionSetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionappendData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectioncloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectiondeleteData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionhasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectioninsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectioninsertData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionreplaceData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionsplitText(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, CAObjHandle *rightHandTextNode);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionsubstringData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count, char **data);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectiontransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectiontransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **data);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetlength(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *dataLength);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataSetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataappendData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDatacloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDatadeleteData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDatahasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDatainsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDatainsertData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDatareplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDatareplaceData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDatasubstringData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count, char **data);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDatatransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDatatransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **data);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetlength(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *dataLength);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMCommentSetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMCommentSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMCommentSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMCommentSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMCommentSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMCommentappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMCommentappendData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMCommentcloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMCommentdeleteData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count);"
+   "\n",
+   "long MSXML_IXMLDOMCommenthasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMCommentinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMCommentinsertData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMCommentremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMCommentreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMCommentreplaceData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMCommentselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMCommentselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMCommentsubstringData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count, char **data);"
+   "\n",
+   "long MSXML_IXMLDOMCommenttransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMCommenttransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentcloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmenthasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmenttransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmenttransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetasync(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isAsync);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetdoctype(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *documentType);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetdocumentElement(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMElement);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetimplementation(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *impl);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetparseError(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *errorObj);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetpreserveWhiteSpace(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isPreserving);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetreadyState(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *value);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetresolveExternals(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isResolving);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGeturl(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **urlString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetvalidateOnParse(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isValidating);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentSetByRefdocumentElement(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle DOMElement);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentSetasync(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short isAsync);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentSetondataavailable(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT newValue);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentSetonreadystatechange(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT newValue);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentSetontransformnode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT newValue);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentSetpreserveWhiteSpace(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short isPreserving);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentSetresolveExternals(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short isResolving);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentSetvalidateOnParse(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short isValidating);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetentities(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *entityMap);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetname(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **rootName);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetnotations(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *notationMap);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypecloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypehasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTyperemoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypereplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypetransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypetransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentabort(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentcloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentcreateAttribute(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *name, CAObjHandle *attribute);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentcreateCDATASection(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data, CAObjHandle *cdata);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentcreateComment(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data, CAObjHandle *comment);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentcreateDocumentFragment(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *docFrag);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentcreateElement(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *tagName, CAObjHandle *element);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentcreateEntityReference(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *name, CAObjHandle *entityRef);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentcreateNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT type, const char *name, const char *namespaceURI, CAObjHandle *node);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentcreateProcessingInstruction(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *target, const char *data, CAObjHandle *pi);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentcreateTextNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data, CAObjHandle *text);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentgetElementsByTagName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *tagName, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMDocumenthasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentload(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT xmlSource, short *isSuccessful);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentloadXML(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *bstrXML, short *isSuccessful);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentnodeFromID(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *idString, CAObjHandle *node);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentsave(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT destination);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMDocumenttransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumenttransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMElementGettagName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **tagName);"
+   "\n",
+   "long MSXML_IXMLDOMElementGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMElementSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMElementSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMElementSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMElementSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMElementappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMElementcloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMElementgetAttribute(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *name, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMElementgetAttributeNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *name, CAObjHandle *attributeNode);"
+   "\n",
+   "long MSXML_IXMLDOMElementgetElementsByTagName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *tagName, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMElementhasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMElementinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMElementnormalize(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSXML_IXMLDOMElementremoveAttribute(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *name);"
+   "\n",
+   "long MSXML_IXMLDOMElementremoveAttributeNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle DOMAttribute, CAObjHandle *attributeNode);"
+   "\n",
+   "long MSXML_IXMLDOMElementremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMElementreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMElementselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMElementselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMElementsetAttribute(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *name, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMElementsetAttributeNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle DOMAttribute, CAObjHandle *attributeNode);"
+   "\n",
+   "long MSXML_IXMLDOMElementtransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMElementtransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetnotationName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetpublicId(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *publicId);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetsystemId(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *systemId);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferencecloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferencehasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferencereplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferencetransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferencetransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMEntitySetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMEntitySetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMEntitySetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMEntitySettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMEntityappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntitycloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMEntityhasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMEntityselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMEntitytransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMEntitytransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMImplementationhasFeature(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *feature, const char *version, short *hasFeature);"
+   "\n",
+   "long MSXML_IXMLDOMNamedNodeMapGet_newEnum(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct IUnknown **ppUnk);"
+   "\n",
+   "long MSXML_IXMLDOMNamedNodeMapGetitem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long index, CAObjHandle *listItem);"
+   "\n",
+   "long MSXML_IXMLDOMNamedNodeMapGetlength(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *listLength);"
+   "\n",
+   "long MSXML_IXMLDOMNamedNodeMapgetNamedItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *name, CAObjHandle *namedItem);"
+   "\n",
+   "long MSXML_IXMLDOMNamedNodeMapgetQualifiedItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *baseName, const char *namespaceURI, CAObjHandle *qualifiedItem);"
+   "\n",
+   "long MSXML_IXMLDOMNamedNodeMapnextNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextItem);"
+   "\n",
+   "long MSXML_IXMLDOMNamedNodeMapremoveNamedItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *name, CAObjHandle *namedItem);"
+   "\n",
+   "long MSXML_IXMLDOMNamedNodeMapremoveQualifiedItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *baseName, const char *namespaceURI, CAObjHandle *qualifiedItem);"
+   "\n",
+   "long MSXML_IXMLDOMNamedNodeMapreset(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSXML_IXMLDOMNamedNodeMapsetNamedItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newItem, CAObjHandle *nameItem);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMNodeListGet_newEnum(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct IUnknown **ppUnk);"
+   "\n",
+   "long MSXML_IXMLDOMNodeListGetitem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long index, CAObjHandle *listItem);"
+   "\n",
+   "long MSXML_IXMLDOMNodeListGetlength(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *listLength);"
+   "\n",
+   "long MSXML_IXMLDOMNodeListnextNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextItem);"
+   "\n",
+   "long MSXML_IXMLDOMNodeListreset(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSXML_IXMLDOMNodeSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMNodeSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMNodeSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMNodeSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMNodeappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMNodecloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMNodehasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMNodeinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMNoderemoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMNodereplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMNodeselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMNodeselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMNodetransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMNodetransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetpublicId(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *publicId);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetsystemId(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *systemId);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMNotationSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMNotationSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMNotationSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMNotationSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMNotationappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMNotationcloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMNotationhasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMNotationinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMNotationremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMNotationreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMNotationselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMNotationselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMNotationtransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMNotationtransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMParseErrorGeterrorCode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *errorCode);"
+   "\n",
+   "long MSXML_IXMLDOMParseErrorGetfilepos(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *filePosition);"
+   "\n",
+   "long MSXML_IXMLDOMParseErrorGetline(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *lineNumber);"
+   "\n",
+   "long MSXML_IXMLDOMParseErrorGetlinepos(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *linePosition);"
+   "\n",
+   "long MSXML_IXMLDOMParseErrorGetreason(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **reasonString);"
+   "\n",
+   "long MSXML_IXMLDOMParseErrorGetsrcText(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **sourceString);"
+   "\n",
+   "long MSXML_IXMLDOMParseErrorGeturl(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **urlString);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **value);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGettarget(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionSetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *value);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructioncloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionhasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructioninsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructiontransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructiontransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **data);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetlength(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *dataLength);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMTextGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMTextSetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMTextSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMTextSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMTextSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMTextSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMTextappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMTextappendData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMTextcloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMTextdeleteData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count);"
+   "\n",
+   "long MSXML_IXMLDOMTexthasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMTextinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMTextinsertData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMTextremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMTextreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMTextreplaceData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMTextselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMTextselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMTextsplitText(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, CAObjHandle *rightHandTextNode);"
+   "\n",
+   "long MSXML_IXMLDOMTextsubstringData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count, char **data);"
+   "\n",
+   "long MSXML_IXMLDOMTexttransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMTexttransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDSOControlGetJavaDSOCompatible(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *fJavaDSOCompatible);"
+   "\n",
+   "long MSXML_IXMLDSOControlGetXMLDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppDoc);"
+   "\n",
+   "long MSXML_IXMLDSOControlGetreadyState(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *state);"
+   "\n",
+   "long MSXML_IXMLDSOControlSetJavaDSOCompatible(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long fJavaDSOCompatible);"
+   "\n",
+   "long MSXML_IXMLDSOControlSetXMLDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle ppDoc);"
+   "\n",
+   "long MSXML_IXMLDocument2Getasync(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pf);"
+   "\n",
+   "long MSXML_IXMLDocument2Getcharset(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+   "\n",
+   "long MSXML_IXMLDocument2Getdoctype(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+   "\n",
+   "long MSXML_IXMLDocument2GetdtdURL(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+   "\n",
+   "long MSXML_IXMLDocument2GetfileModifiedDate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+   "\n",
+   "long MSXML_IXMLDocument2GetfileSize(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+   "\n",
+   "long MSXML_IXMLDocument2GetfileUpdatedDate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+   "\n",
+   "long MSXML_IXMLDocument2GetmimeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+   "\n",
+   "long MSXML_IXMLDocument2GetreadyState(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pl);"
+   "\n",
+   "long MSXML_IXMLDocument2Getroot(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *p);"
+   "\n",
+   "long MSXML_IXMLDocument2Geturl(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+   "\n",
+   "long MSXML_IXMLDocument2Getversion(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+   "\n",
+   "long MSXML_IXMLDocument2Setasync(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pf);"
+   "\n",
+   "long MSXML_IXMLDocument2Setcharset(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *p);"
+   "\n",
+   "long MSXML_IXMLDocument2Seturl(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *p);"
+   "\n",
+   "long MSXML_IXMLDocument2createElement(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT vType, struct tagVARIANT var1, CAObjHandle *ppElem);"
+   "\n",
+   "long MSXML_IXMLHttpRequestGetreadyState(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *plState);"
+   "\n",
+   "long MSXML_IXMLHttpRequestGetresponseBody(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvarBody);"
+   "\n",
+   "long MSXML_IXMLHttpRequestGetresponseStream(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvarBody);"
+   "\n",
+   "long MSXML_IXMLHttpRequestGetresponseText(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **pbstrBody);"
+   "\n",
+   "long MSXML_IXMLHttpRequestGetresponseXML(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppBody);"
+   "\n",
+   "long MSXML_IXMLHttpRequestGetstatus(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *plStatus);"
+   "\n",
+   "long MSXML_IXMLHttpRequestGetstatusText(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **pbstrStatus);"
+   "\n",
+   "long MSXML_IXMLHttpRequestSetonreadystatechange(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newValue);"
+   "\n",
+   "long MSXML_IXMLHttpRequestabort(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSXML_IXMLHttpRequestgetAllResponseHeaders(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **pbstrHeaders);"
+   "\n",
+   "long MSXML_IXMLHttpRequestgetResponseHeader(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *bstrHeader, char **pbstrValue);"
+   "\n",
+   "long MSXML_IXMLHttpRequestopen(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *bstrMethod, const char *bstrUrl, struct tagVARIANT varAsync, struct tagVARIANT bstrUser, struct tagVARIANT bstrPassword);"
+   "\n",
+   "long MSXML_IXMLHttpRequestsend(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT varBody);"
+   "\n",
+   "long MSXML_IXMLHttpRequestsetRequestHeader(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *bstrHeader, const char *bstrValue);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXTLRuntimeGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXTLRuntimeSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXTLRuntimeSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXTLRuntimeSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXTLRuntimeSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXTLRuntimeabsoluteChildNumber(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle pNode, long *pNumber);"
+   "\n",
+   "long MSXML_IXTLRuntimeancestorChildNumber(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *bstrNodeName, CAObjHandle pNode, long *pNumber);"
+   "\n",
+   "long MSXML_IXTLRuntimeappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXTLRuntimechildNumber(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle pNode, long *pNumber);"
+   "\n",
+   "long MSXML_IXTLRuntimecloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXTLRuntimedepth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle pNode, long *pDepth);"
+   "\n",
+   "long MSXML_IXTLRuntimeformatDate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT varDate, const char *bstrFormat, struct tagVARIANT varDestLocale, char **pbstrFormattedString);"
+   "\n",
+   "long MSXML_IXTLRuntimeformatIndex(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long lIndex, const char *bstrFormat, char **pbstrFormattedString);"
+   "\n",
+   "long MSXML_IXTLRuntimeformatNumber(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double dblNumber, const char *bstrFormat, char **pbstrFormattedString);"
+   "\n",
+   "long MSXML_IXTLRuntimeformatTime(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT varTime, const char *bstrFormat, struct tagVARIANT varDestLocale, char **pbstrFormattedString);"
+   "\n",
+   "long MSXML_IXTLRuntimehasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXTLRuntimeinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXTLRuntimeremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXTLRuntimereplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXTLRuntimeselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXTLRuntimeselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXTLRuntimetransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXTLRuntimetransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXTLRuntimeuniqueID(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle pNode, long *pID);"
+   "\n",
+   "long MSXML_NewDOMDocumentIXMLDOMDocument(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_NewDOMFreeThreadedDocumentIXMLDOMDocument(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_NewIXMLDSOControl(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_NewIXMLDocument2(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_NewIXMLHttpRequest(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_OpenDOMDocumentIXMLDOMDocument(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_OpenDOMFreeThreadedDocumentIXMLDOMDocument(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_OpenIXMLDSOControl(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_OpenIXMLDocument2(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_OpenIXMLHttpRequest(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_XMLDOMDocumentEventsRegOnondataavailable(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSXML_XMLDOMDocumentEventsRegOnonreadystatechange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "struct _SElException *MoveTestMode(struct _STestStep test, int editable, const char *keyNode);"
+   "\n",
+   "struct _SElException *NewParameterDialog(struct _STestStep test, char *sname);"
+   "\n",
+   "struct _SElException *NewProductDialog(struct _SProductTypes product);"
+   "\n",
+   "struct _SElException *NewProductMasterDialog(struct _SProductMaster master);"
+   "\n",
+   "struct _SElException *NewUserDialog(struct _SDBSUser user);"
+   "\n",
+   "struct _SElException *NewUserRightsDialog(struct _SDBSUser user);"
+   "\n",
+   "int OnBKTREE(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnCP(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnCopySourceSelect(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnDbDeleteHist(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnDbInsert(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnDbRead(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnGroup(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnHisFillter(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnHisMerge(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnHistList(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnImportCsvFile(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnIniLimits(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnOpenCsvFile(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnRightsSelection(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnTimer(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnVtype(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "struct _SElException *PLUGIN_SHUTDOWN_NAME_CODE(struct _SPluginArgs *a_pPluginArgs) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *PluginInfo_delete(struct _SPluginInfo **pPluginInfo);"
+   "\n",
+   "struct _SElException *PluginInfo_new(struct _SPluginInfoData *pData, struct _SPluginInfo **pInfo);"
+   "\n",
+   "void PostDeferredDisplayHistory(void *callbackData);"
+   "\n",
+   "void PostDeferredDisplayInfo(void *callbackData);"
+   "\n",
+   "void PostDeferredHideHistory(void *callbackData);"
+   "\n",
+   "void PostDeferredHideInfo(void *callbackData);"
+   "\n",
+   "struct _SElException *RemoveSkipTestDialog(struct _STestStep test, int editable);"
+   "\n",
+   "struct _SElException *RingGroupAttribute(int mode);"
+   "\n",
+   "struct _SElException *RingGroupIni();"
+   "\n",
+   "struct _SElException *RingGroupProcessSet(int control, int value);"
+   "\n",
+   "struct _SElException *RingGroupProductSet(int control, int value);"
+   "\n",
+   "struct _SElException *RingGroupStepSet(int control, int value);"
+   "\n",
+   "struct _SElException *SetInfoData(struct _SPluginInfo *me, struct _SPluginInfoData *pInfo);"
+   "\n",
+   "struct _SElException *ShowPanel();"
+   "\n",
+   "struct _SElException *SkipTestDialog(struct _STestStep test, int editable);"
+   "\n",
+   "char *TesterRightsToString(int rights);"
+   "\n",
+   "struct _SElException *TreeHistoryClose();"
+   "\n",
+   "struct _SElException *TreeHistoryIni();"
+   "\n",
+   "struct _SElException *TreeParametersClose();"
+   "\n",
+   "struct _SElException *TreeParametersIni();"
+   "\n",
+   "struct _SElException *TreeParametersSet(int mode);"
+   "\n",
+   "struct _SElException *TreeProcessClose();"
+   "\n",
+   "struct _SElException *TreeProcessIni();"
+   "\n",
+   "struct _SElException *TreeProductClose();"
+   "\n",
+   "struct _SElException *TreeProductIni();"
+   "\n",
+   "struct _SElException *TreeProductParamClose();"
+   "\n",
+   "struct _SElException *TreeProductParamIni();"
+   "\n",
+   "struct _SElException *TreeProductParamSet(int mode);"
+   "\n",
+   "struct _SElException *TreeStepsClose();"
+   "\n",
+   "struct _SElException *TreeStepsIni();"
+   "\n",
+   "struct _SElException *TreeUserClose();"
+   "\n",
+   "struct _SElException *TreeUserIni();"
+   "\n",
+   "struct _SElException *UserReload();"
+   "\n",
+   "int compare_history(const void *a, const void *b);"
+   "\n",
+   "int compare_pid(const void *a, const void *b);"
+   "\n",
+   "void elexception_delete(struct _SElException **pException);"
+   "\n",
+   "void elexception_log_set(void (*fn_log)(struct _SElException *));"
+   "\n",
+   "struct _SElException *elexception_new(int errorCode, const char *messsage, const char *file, long line);"
+   "\n",
+   "struct _SElException *elstring_delete(struct _SELString **pString);"
+   "\n",
+   "struct _SElException *elstring_new(const char *pStr, struct _SELString **pString);"
+   "\n",
+   "void excdisplay(struct _SElException *pException);"
+   "\n",
+   "void excdispstr(struct _SElException *pException, char *str, int str_size);"
+   "\n",
+   "struct _SElException *iButtonReceivedCallback(struct _SIButton *me, const char *ibutton);"
+   "\n",
+   "struct _SElException *pluginGetAttribute(unsigned int attrID, unsigned int size, void *value) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *pluginGetInfo(struct _SPluginInfo **a_pInfo) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *pluginInitialize(struct _SPluginArgs *a_pPluginArgs) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *pluginLeave(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *pluginRun(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *timer_delete(struct _STimer **pTimer);"
+   "\n",
+   "struct _SElException *timer_new(struct _STimer **pTimer);"
+   "\n",
+   "\0"
+}

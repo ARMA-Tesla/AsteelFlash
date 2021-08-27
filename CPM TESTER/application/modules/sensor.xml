@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="windows-1250" ?> 
+<configuration>
+<modules>
+	<module id="{A65AEFCA-1600-4be0-AD11-7CA998CE5584}">
+		<name>Sensor plugin</name> 
+		<parameters>
+			<!--  State of the simulation 'true' | 'false' --> 
+			<parameter name="simulation">false</parameter>
+			<tasks>
+			<task name="PLC_MOD1_P0_DO" type="DO">
+					<line name="PLC_DO_00" physical="MOD1/P0.0" />
+					<line name="PLC_DO_01" physical="MOD1/P0.1" />
+					<line name="PLC_DO_02" physical="MOD1/P0.2" />
+					<line name="PLC_DO_03" physical="MOD1/P0.3" />
+					<line name="PLC_DO_04" physical="MOD1/P0.4" />
+					<line name="PLC_DO_05" physical="MOD1/P0.5" />
+					<line name="PLC_DO_06" physical="MOD1/P0.6" />
+					<line name="PLC_DO_07" physical="MOD1/P0.7" />
+				</task>
+				<task name="PLC_MOD1_P1_DO" type="DO">
+					<line name="PLC_DO_10" physical="MOD1/P1.0" />
+					<line name="PLC_DO_11" physical="MOD1/P1.1" />
+					<line name="PLC_DO_12" physical="MOD1/P1.2" />
+					<line name="PLC_DO_13" physical="MOD1/P1.3" />
+					<line name="PLC_DO_14" physical="MOD1/P1.4" />
+					<line name="PLC_DO_15" physical="MOD1/P1.5" />
+					<line name="PLC_DO_16" physical="MOD1/P1.6" />
+					<line name="PLC_DO_17" physical="MOD1/P1.7" />
+				</task>
+				<task name="PLC_MOD1_P2_DO" type="DO">
+					<line name="PLC_DO_20" physical="MOD1/P2.0" />
+					<line name="PLC_DO_21" physical="MOD1/P2.1" />
+					<line name="PLC_DO_22" physical="MOD1/P2.2" />
+					<line name="PLC_DO_23" physical="MOD1/P2.3" />
+					<line name="PLC_DO_24" physical="MOD1/P2.4" />
+					<line name="PLC_DO_25" physical="MOD1/P2.5" />
+					<line name="PLC_DO_26" physical="MOD1/P2.6" />
+					<line name="PLC_DO_27" physical="MOD1/P2.7" />
+				</task>
+				<task name="PLC_MOD1_P3_DO" type="DO">
+					<line name="PLC_DO_30" physical="MOD1/P3.0" />
+					<line name="PLC_DO_31" physical="MOD1/P3.1" />
+					<line name="PLC_DO_32" physical="MOD1/P3.2" />
+					<line name="PLC_DO_33" physical="MOD1/P3.3" />
+					<line name="PLC_DO_34" physical="MOD1/P3.4" />
+					<line name="PLC_DO_35" physical="MOD1/P3.5" />
+					<line name="PLC_DO_36" physical="MOD1/P3.6" />
+					<line name="PLC_DO_37" physical="MOD1/P3.7" />
+				</task>
+				<task name="PLC_MOD2_P0_DO" type="DO">
+					<line name="PLC_DO_40" physical="MOD2/P0.0" />
+					<line name="PLC_DO_41" physical="MOD2/P0.1" />
+					<line name="PLC_DO_42" physical="MOD2/P0.2" />
+					<line name="PLC_DO_43" physical="MOD2/P0.3" />
+					<line name="PLC_DO_44" physical="MOD2/P0.4" />
+					<line name="PLC_DO_45" physical="MOD2/P0.5" />
+					<line name="PLC_DO_46" physical="MOD2/P0.6" />
+					<line name="PLC_DO_47" physical="MOD2/P0.7" />
+				</task>
+				<task name="PLC_MOD2_P1_DO" type="DO">
+					<line name="PLC_DO_50" physical="MOD2/P1.0" />
+					<line name="PLC_DO_51" physical="MOD2/P1.1" />
+					<line name="PLC_DO_52" physical="MOD2/P1.2" />
+					<line name="PLC_DO_53" physical="MOD2/P1.3" />
+					<line name="PLC_DO_54" physical="MOD2/P1.4" />
+					<line name="PLC_DO_55" physical="MOD2/P1.5" />
+					<line name="PLC_DO_56" physical="MOD2/P1.6" />
+					<line name="PLC_DO_57" physical="MOD2/P1.7" />
+				</task>
+				<task name="PLC_MOD2_P2_DO" type="DO">
+					<line name="PLC_DO_60" physical="MOD2/P2.0" />
+					<line name="PLC_DO_61" physical="MOD2/P2.1" />
+					<line name="PLC_DO_62" physical="MOD2/P2.2" />
+					<line name="PLC_DO_63" physical="MOD2/P2.3" />
+					<line name="PLC_DO_64" physical="MOD2/P2.4" />
+					<line name="PLC_DO_65" physical="MOD2/P2.5" />
+					<line name="PLC_DO_66" physical="MOD2/P2.6" />
+					<line name="PLC_DO_67" physical="MOD2/P2.7" />
+				</task>
+				<task name="PLC_MOD2_P3_DO" type="DO">
+					<line name="PLC_DO_70" physical="MOD2/P3.0" />
+					<line name="PLC_DO_71" physical="MOD2/P3.1" />
+					<line name="PLC_DO_72" physical="MOD2/P3.2" />
+					<line name="PLC_DO_73" physical="MOD2/P3.3" />
+					<line name="PLC_DO_74" physical="MOD2/P3.4" />
+					<line name="PLC_DO_75" physical="MOD2/P3.5" />
+					<line name="PLC_DO_76" physical="MOD2/P3.6" />
+					<line name="PLC_DO_77" physical="MOD2/P3.7" />
+				</task>
+				<task name="PLC_MOD3_P0_DI" type="DI">
+					<line name="PLC_DI_40" physical="MOD3/P0.0" />
+					<line name="PLC_DI_41" physical="MOD3/P0.1" />
+					<line name="PLC_DI_42" physical="MOD3/P0.2" />
+					<line name="PLC_DI_43" physical="MOD3/P0.3" />
+					<line name="PLC_DI_44" physical="MOD3/P0.4" />
+					<line name="PLC_DI_45" physical="MOD3/P0.5" />
+					<line name="PLC_DI_46" physical="MOD3/P0.6" />
+					<line name="PLC_DI_47" physical="MOD3/P0.7" />
+				</task>
+				<task name="PLC_MOD3_P1_DI" type="DI">
+					<line name="PLC_DI_50" physical="MOD3/P1.0" />
+					<line name="PLC_DI_51" physical="MOD3/P1.1" />
+					<line name="PLC_DI_52" physical="MOD3/P1.2" />
+					<line name="PLC_DI_53" physical="MOD3/P1.3" />
+					<line name="PLC_DI_54" physical="MOD3/P1.4" />
+					<line name="PLC_DI_55" physical="MOD3/P1.5" />
+					<line name="PLC_DI_56" physical="MOD3/P1.6" />
+					<line name="PLC_DI_57" physical="MOD3/P1.7" />
+				</task>
+				<task name="PLC_MOD3_P2_DI" type="DI">
+					<line name="PLC_DI_60" physical="MOD3/P2.0" />
+					<line name="PLC_DI_61" physical="MOD3/P2.1" />
+					<line name="PLC_DI_62" physical="MOD3/P2.2" />
+					<line name="PLC_DI_63" physical="MOD3/P2.3" />
+					<line name="PLC_DI_64" physical="MOD3/P2.4" />
+					<line name="PLC_DI_65" physical="MOD3/P2.5" />
+					<line name="PLC_DI_66" physical="MOD3/P2.6" />
+					<line name="PLC_DI_67" physical="MOD3/P2.7" />
+				</task>
+				<task name="PLC_MOD3_P3_DI" type="DI">
+					<line name="PLC_DI_70" physical="MOD3/P3.0" />
+					<line name="PLC_DI_71" physical="MOD3/P3.1" />
+					<line name="PLC_DI_72" physical="MOD3/P3.2" />
+					<line name="PLC_DI_73" physical="MOD3/P3.3" />
+					<line name="PLC_DI_74" physical="MOD3/P3.4" />
+					<line name="PLC_DI_75" physical="MOD3/P3.5" />
+					<line name="PLC_DI_76" physical="MOD3/P3.6" />
+					<line name="PLC_DI_77" physical="MOD3/P3.7" />
+				</task>
+				<task name="PLC_MOD4_P0_DI" type="DI">
+					<line name="PLC_DI_80" physical="MOD4/P0.0" />
+					<line name="PLC_DI_81" physical="MOD4/P0.1" />
+					<line name="PLC_DI_82" physical="MOD4/P0.2" />
+					<line name="PLC_DI_83" physical="MOD4/P0.3" />
+					<line name="PLC_DI_84" physical="MOD4/P0.4" />
+					<line name="PLC_DI_85" physical="MOD4/P0.5" />
+					<line name="PLC_DI_86" physical="MOD4/P0.6" />
+					<line name="PLC_DI_87" physical="MOD4/P0.7" />
+				</task>
+				
+				<task name="PLC_MOD4_P1_DI" type="DI">
+					<line name="PLC_DI_90" physical="MOD4/P1.0" />
+					<line name="PLC_DI_91" physical="MOD4/P1.1" />
+					<line name="PLC_DI_92" physical="MOD4/P1.2" />
+					<line name="PLC_DI_93" physical="MOD4/P1.3" />
+					<line name="PLC_DI_94" physical="MOD4/P1.4" />
+					<line name="PLC_DI_95" physical="MOD4/P1.5" />
+					<line name="PLC_DI_96" physical="MOD4/P1.6" />
+					<line name="PLC_DI_97" physical="MOD4/P1.7" />
+				</task>
+				
+				<task name="PLC_MOD4_P2_DI" type="DI">
+					<line name="PLC_DI_100" physical="MOD4/P2.0" />
+					<line name="PLC_DI_101" physical="MOD4/P2.1" />
+					<line name="PLC_DI_102" physical="MOD4/P2.2" />
+					<line name="PLC_DI_103" physical="MOD4/P2.3" />
+					<line name="PLC_DI_104" physical="MOD4/P2.4" />
+					<line name="PLC_DI_105" physical="MOD4/P2.5" />
+					<line name="PLC_DI_106" physical="MOD4/P2.6" />
+					<line name="PLC_DI_107" physical="MOD4/P2.7" />
+				</task>
+				
+				<task name="PLC_MOD4_P3_DI" type="DI">
+					<line name="PLC_DI_110" physical="MOD4/P3.0" />
+					<line name="PLC_DI_111" physical="MOD4/P3.1" />
+					<line name="PLC_DI_112" physical="MOD4/P3.2" />
+					<line name="PLC_DI_113" physical="MOD4/P3.3" />
+					<line name="PLC_DI_114" physical="MOD4/P3.4" />
+					<line name="PLC_DI_115" physical="MOD4/P3.5" />
+					<line name="PLC_DI_116" physical="MOD4/P3.6" />
+					<line name="PLC_DI_117" physical="MOD4/P3.7" />
+				</task>
+				
+				<task name="PLC_MOD5_P0_AI" type="AI">
+					<line name="PLC_AI_120" physical="MOD5/P0.0" />
+					<line name="PLC_AI_121" physical="MOD5/P0.1" />
+					<line name="PLC_AI_122" physical="MOD5/P0.2" />
+					<line name="PLC_AI_123" physical="MOD5/P0.3" />
+					<line name="PLC_AI_124" physical="MOD5/P0.4" />
+					<line name="PLC_AI_125" physical="MOD5/P0.5" />
+					<line name="PLC_AI_126" physical="MOD5/P0.6" />
+					<line name="PLC_AI_127" physical="MOD5/P0.7" />
+				</task>
+
+				<task name="PV1_MOD1_P1_DO" type="PV1">
+					<line name="PV1_00" physical="EV1.A" />
+					<line name="PV1_01" physical="EV1.B" />
+					<line name="PV1_02" physical="EV2.A" />
+					<line name="PV1_03" physical="EV2.B" />
+					<line name="PV1_04" physical="EV3.A" />
+					<line name="PV1_05" physical="EV3.B" />
+					<line name="PV1_06" physical="EV4.A" />
+					<line name="PV1_07" physical="EV4.B" />
+				</task>		
+				<task name="PV1_MOD1_P2_DO" type="PV1">
+					<line name="PV1_10" physical="EV5.A" />
+					<line name="PV1_11" physical="EV5.B" />
+					<line name="PV1_12" physical="EV6.A" />
+					<line name="PV1_13" physical="EV6.B" />
+					<line name="PV1_14" physical="EV7.A" />
+					<line name="PV1_15" physical="EV7.B" />
+					<line name="PV1_16" physical="EV8.A" />
+					<line name="PV1_17" physical="EV8.B" />
+				</task>					
+				 <task name="PV1_MOD1_P3_DO" type="PV1">
+					<line name="PV1_20" physical="EV9.A" />
+					<line name="PV1_21" physical="EV9.B" />
+					
+				</task>			
+				<!--<task name="CPV_MOD1_P4_DO" type="CPV">
+					<line name="CPV_30" physical="EV13.A" />
+					<line name="CPV_31" physical="EV13.B" />
+					<line name="CPV_32" physical="EV14.A" />
+					<line name="CPV_33" physical="EV14.B" />
+					<line name="CPV_34" physical="EV15.A" />
+					<line name="CPV_35" physical="EV15.B" />
+					<line name="CPV_36" physical="EV16.A" />
+					<line name="CPV_37" physical="EV16.B" />
+				</task>					
+				<task name="CPV_MOD1_P5_DO" type="CPV">
+					<line name="CPV_40" physical="EV17.A" />
+					<line name="CPV_41" physical="EV17.B" />
+					<line name="CPV_42" physical="EV18.A" />
+					<line name="CPV_43" physical="EV18.B" />
+					<line name="CPV_44" physical="EV19.A" />
+					<line name="CPV_45" physical="EV19.B" />
+					<line name="CPV_46" physical="EV20.A" />
+					<line name="CPV_47" physical="EV20.B" />
+				</task>
+				<task name="CPV_MOD1_P6_DO" type="CPV">
+					<line name="CPV_50" physical="EV21.A" />
+					<line name="CPV_51" physical="EV21.B" />
+					<line name="CPV_52" physical="EV22.A" />
+					<line name="CPV_53" physical="EV22.B" />
+					<line name="CPV_54" physical="EV23.A" />
+					<line name="CPV_55" physical="EV23.B" />
+					<line name="CPV_56" physical="EV24.A" />
+					<line name="CPV_57" physical="EV24.B" />
+				</task> -->
+
+					
+			</tasks>
+	  	</parameters>
+	</module>
+</modules>
+</configuration>

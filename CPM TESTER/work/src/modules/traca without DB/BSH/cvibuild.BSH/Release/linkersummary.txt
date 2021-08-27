@@ -1,0 +1,12 @@
+BSH.obj
+Exception.obj
+cvistart.lib
+cvi.lib
+cvi_db.lib
+kernel32.lib
+user32.lib
+CVI_UP_Product_Dependencies_Private_Object
+CVI_PKG_Product_Dependencies_Private_Object
+EXE Symbol Module
+Exports Module
+Resource Module

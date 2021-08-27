@@ -1,0 +1,20 @@
+[CalendarCallback]
+Class="Function"
+Prototype="struct _SElException *CalendarCallback(int panel, int day, int month, int year);"
+SourceLocation="c:\work\src\gui\defauts\report_measurement.c:46:1"
+
+[IniReportPanel]
+Class="Function"
+Prototype="struct _SElException *IniReportPanel(int panelHandle);"
+SourceLocation="c:\work\src\gui\defauts\report_measurement.c:65:1"
+
+[OnLMBack]
+Class="Function"
+Prototype="int OnLMBack(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\defauts\report_measurement.c:85:1"
+
+[ExtractXMLData]
+Class="Function"
+Prototype="struct _SElException *ExtractXMLData(const char *pfile_xml, int *id, char *name, char *step, char *mesure);"
+SourceLocation="c:\work\src\gui\defauts\report_measurement.c:112:1"
+

@@ -1,0 +1,75 @@
+#pragma code_page(65001)
+#include "C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\winver.h"
+
+
+2 24 "c:\\work\\src\\modules\\dielectrimeter\\RSPRO\\cvibuild.RSPRO\\Release\\manifest.xml"
+
+
+STRINGTABLE DISCARDABLE
+BEGIN
+  65535  ""
+END
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+ FILEFLAGS 0L
+ FILEOS VOS__WINDOWS32
+ FILETYPE VFT_DLL
+ FILESUBTYPE VFT_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "RSPRO (Release x86)\0"
+            VALUE "FileVersion", "1.0\0"
+            VALUE "InternalName", "RSPRO\0"
+            VALUE "LegalCopyright", "Copyright ©  2021\0"
+            VALUE "OriginalFilename", "RSPRO.dll\0"
+            VALUE "ProductName", " RSPRO\0"
+            VALUE "ProductVersion", "1.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 0x4b0
+    END
+END
+
+CVIDLLexports CVIDLLprototypes
+{
+   "struct _SElException *ClearError(struct _Dielectrimeter *me) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *Connect(struct _Dielectrimeter *me) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *Disconnect(struct _Dielectrimeter *me) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *Read(struct _Dielectrimeter *me, const char *read) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *SetModeManual(struct _Dielectrimeter *me) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *SetOutput(struct _Dielectrimeter *me, int output) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *SetStep(struct _Dielectrimeter *me, int step) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *SystemError(struct _Dielectrimeter *me, char *error) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *TestResult(struct _Dielectrimeter *me, int *result, double *voltage_kv, double *current_mA) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *Write(struct _Dielectrimeter *me, const char *command) __declspec(dllexport);"
+   "\n",
+   "void elexception_delete(struct _SElException **pException);"
+   "\n",
+   "void elexception_log_set(void (*fn_log)(struct _SElException *));"
+   "\n",
+   "struct _SElException *elexception_new(int errorCode, const char *messsage, const char *file, long line);"
+   "\n",
+   "void excdisplay(struct _SElException *pException);"
+   "\n",
+   "void excdispstr(struct _SElException *pException, char *str, int str_size);"
+   "\n",
+   "\0"
+}

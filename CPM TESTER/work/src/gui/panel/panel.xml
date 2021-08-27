@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<configuration>
+	<plugins>
+		<plugin id="{32A783CF-D82C-4734-9112-2F61E92FC17B}">
+			<name>Panel Plugin</name>
+			<shortcut>
+				<item position="1" default="1">
+					<name>Production</name>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_LEAVE"/>
+					<event id="EVNT_GUI_PANEL" data="panel;2"/>
+					<event id="EVNT_GUI_PRODUCTION"/>
+				</item>
+				<item position="2" default="2">
+					<name>Expertise</name>
+					<rights id="RIGHTS_EXPERTISE"/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_LEAVE"/>
+					<event id="EVNT_GUI_PANEL" data="expertise;1"/>
+					<event id="EVNT_GUI_EXPERTISE_STEP_MODE"/>
+				</item>
+				<item position="3" default="3">
+					<name>Quality</name>
+					<rights id="RIGHTS_QUALITY"/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_LEAVE"/>
+					<event id="EVNT_GUI_PANEL" data="quality;1"/>
+					<event id="EVNT_GUI_QUALITY_MASTER"/>
+				</item>
+				<item position="4" default="4">
+					<name>Go Mode</name>
+					<rights id="RIGHTS_EXPERTISE"/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_LEAVE"/>
+					<event id="EVNT_GUI_PANEL" data="expertise;3"/>
+					<event id="EVNT_GUI_EXPERTISE_GO_MODE"/>
+				</item>
+				<item position="6" default="6">
+					<name>Test Report</name>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_LEAVE"/>
+					<event id="EVNT_PLUGIN_RUN" data="{3399A11A-2A03-4170-B69C-356F4F49C568}"/>
+					<event id="EVNT_GUI_PANEL" data="report"/>
+				</item>
+				<item position="7" default="7">
+					<name>Reset</name>
+					<event id="EVNT_RESET"/>
+				</item>
+				<item position="8" default="8">
+					<name>Kosu</name>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_LEAVE"/>
+					<event id="EVNT_PLUGIN_RUN" data="{E9EE2D2E-D45D-4e3a-95F2-D8E7B40B70C3}"/>
+					<event id="EVNT_GUI_PANEL" data="statistic;1"/>
+				</item>
+				<item position="10" default="10">
+					<name>Maintenance</name>
+					<rights id="RIGHTS_MAINTENANCE"/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_LEAVE"/>
+					<event id="EVNT_PLUGIN_RUN" data="{4FDAB846-56F7-405d-BF13-EEB8EF8D96FA}"/>
+					<event id="EVNT_GUI_PANEL" data="maintenance;-1"/>
+				</item>
+				<item position="12" default="12">
+					<name>Quit</name>
+					<event id="EVNT_PLUGIN_LEAVE"/>
+					<event id="EVNT_GUI_QUIT"/>
+				</item>
+			</shortcut>
+			<panel>
+				<item position="1">
+					<name>Menu</name>
+					<event id="EVNT_GUI_MENU" data="menu"/>
+				</item>
+				<item position="2">
+					<name>Production</name>
+					<save_position/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_GUI_PRODUCTION"/>
+				</item>
+				<item position="3">
+					<name>Quality</name>
+					<save_position/>
+					<rights id="RIGHTS_QUALITY"/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_GUI_QUALITY_MASTER"/>
+					<event id="EVNT_GUI_PANEL" data="quality;1"/>
+				</item>
+				<item position="4">
+					<name>Expertise</name>
+					<save_position/>
+					<rights id="RIGHTS_EXPERTISE"/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_GUI_EXPERTISE_STEP_MODE"/>
+					<event id="EVNT_GUI_PANEL" data="expertise;1"/>
+				</item>
+				<item position="5">
+					<name>Maintenance</name>
+					<rights id="RIGHTS_MAINTENANCE"/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_RUN" data="{4FDAB846-56F7-405d-BF13-EEB8EF8D96FA}"/>
+					<event id="EVNT_GUI_PANEL" data="maintenance;-1"/>
+				</item>
+				<item position="6">
+					<name>Test Report</name>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_RUN" data="{3399A11A-2A03-4170-B69C-356F4F49C568}"/>
+					<event id="EVNT_GUI_PANEL" data="report"/>
+				</item>
+				<item position="7">
+					<name>Reset</name>
+					<event id="EVNT_RESET"/>
+					<event id="EVNT_GUI_PANEL" data="panel"/>
+				</item>
+			</panel>
+			<menu>
+				<item position="1">
+					<name>Shift Change</name>
+					<pict>03</pict>
+					<event id="EVNT_GUI_SUBMENU" data="shift"/>
+				</item>
+				<item position="2">
+					<name>Product Selection</name>
+					<pict>04</pict>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_RUN" data="{5954031C-CEA1-4c16-8128-38B661811261}"/>
+					<event id="EVNT_GUI_PANEL" data="product"/>
+				</item>
+				<item position="3">
+					<name>Statistic</name>
+					<pict>02</pict>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_RUN" data="{E9EE2D2E-D45D-4e3a-95F2-D8E7B40B70C3}"/>
+					<event id="EVNT_GUI_PANEL" data="statistic;1"/>
+				</item>
+				<item position="8">
+					<name>Login User</name>
+					<pict>06</pict>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_RUN" data="{AE2FAC8A-ABAC-4b1c-AA84-669809AB76EB}"/>
+					<event id="EVNT_GUI_PANEL" data="panel;2"/>
+				</item>
+				<item position="9">
+					<name>Quit</name>
+					<pict>05</pict>
+					<event id="EVNT_GUI_QUIT"/>
+				</item>
+			</menu>
+			<shift>
+				<item position="1">
+					<name>Shift 1</name>
+					<save_position/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_GUI_SHIFT" data="1"/>
+					<event id="EVNT_GUI_PANEL" data="panel;2"/>
+				</item>
+				<item position="2">
+					<name>Shift 2</name>
+					<save_position/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_GUI_SHIFT" data="2"/>
+					<event id="EVNT_GUI_PANEL" data="panel;2"/>
+				</item>
+				<item position="3">
+					<name>Shift 3</name>
+					<save_position/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_GUI_SHIFT" data="3"/>
+					<event id="EVNT_GUI_PANEL" data="panel;2"/>
+				</item>
+				<item position="4">
+					<name>Shift Close</name>
+					<save_position/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_GUI_SHIFT" data="0"/>
+					<event id="EVNT_GUI_PANEL" data="panel;2"/>
+				</item>
+			</shift>
+			<product>
+				<item position="8">
+					<name>Back</name>
+					<event id="EVNT_PLUGIN_LEAVE" data="{5954031C-CEA1-4c16-8128-38B661811261}"/>
+					<event id="EVNT_GUI_PANEL" data="panel;2"/>
+					<event id="EVNT_GUI_PRODUCTION"/>
+				</item>
+			</product>
+			<report>
+				<item position="8">
+					<name>Back</name>
+					<event id="EVNT_PLUGIN_LEAVE" data="{3399A11A-2A03-4170-B69C-356F4F49C568}"/>
+					<event id="EVNT_GUI_PANEL" data="panel;2"/>
+					<event id="EVNT_GUI_PRODUCTION"/>
+				</item>
+			</report>
+			<quality>
+				<item position="1">
+					<name>Master</name>
+					<save_position/>
+					<event id="EVNT_GUI_QUALITY_MASTER"/>
+				</item>
+				<item position="2">
+					<name>Retest</name>
+					<save_position/>
+					<event id="EVNT_GUI_QUALITY_RETEST"/>
+				</item>
+				<item position="3">
+					<name>Release</name>
+					<event id="EVNT_GUI_QUALITY_RELEASE"/>
+					<event id="EVNT_GUI_PANEL" data="quality"/>
+				</item>
+				<item position="4">
+					<name>Editor</name>
+					<event id="EVNT_PLUGIN_RUN" data="{DEB0EF77-99ED-44eb-A30A-CFE6E2602C07}"/>
+					<event id="EVNT_GUI_PANEL" data="quality"/>
+					
+				</item>
+				<item position="8">
+					<name>Back</name>
+					<event id="EVNT_GUI_PANEL" data="panel;2"/>
+					<event id="EVNT_GUI_PRODUCTION"/>
+				</item>
+			</quality>
+			<expertise>
+				<item position="1">
+					<name>Step</name>
+					<save_position/>
+					<event id="EVNT_GUI_EXPERTISE_STEP_MODE"/>
+					<event id="EVNT_PLUGIN_LEAVE" data="{FE5E7448-131D-4f61-B67E-E530714458E3}"/>
+				</item>
+				<item position="2">
+					<name>Sequence</name>
+					<save_position/>
+					<event id="EVNT_PLUGIN_RUN" data="{0B89335B-D063-4678-AD25-3BB3123D2C2F}"/>
+					<event id="EVNT_GUI_PANEL" data="sequence"/>
+				</item>
+				<item position="3">
+					<name>Go Mode</name>
+					<save_position/>
+					<event id="EVNT_GUI_EXPERTISE_GO_MODE"/>
+					<event id="EVNT_PLUGIN_LEAVE" data="{FE5E7448-131D-4f61-B67E-E530714458E3}"/>
+				</item>
+				<item position="4">
+					<name>RnR Study</name>
+					<save_position/>
+					<event id="EVNT_GUI_EXPERTISE_RNR"/>
+					<event id="EVNT_PLUGIN_RUN" data="{FE5E7448-131D-4f61-B67E-E530714458E3}"/>
+				</item>
+				<item position="8">
+					<name>Back</name>
+					<event id="EVNT_PLUGIN_LEAVE" data="{FE5E7448-131D-4f61-B67E-E530714458E3}"/>
+					<event id="EVNT_GUI_PANEL" data="panel;2"/>
+					<event id="EVNT_GUI_PRODUCTION"/>
+				</item>
+			</expertise>
+			<sequence>
+				<item position="1">
+					<name>Create</name>
+					<event id="EVNT_GUI_EXPERTISE_SEQUENCE_NEW"/>
+					<event id="EVNT_GUI_PANEL" data="expertise;2"/>
+				</item>
+				<item position="8">
+					<name>Back</name>
+					<event id="EVNT_PLUGIN_LEAVE" data="{0B89335B-D063-4678-AD25-3BB3123D2C2F}"/>
+					<event id="EVNT_GUI_PANEL" data="panel;2"/>
+					<event id="EVNT_GUI_PRODUCTION"/>
+				</item>
+			</sequence>
+			<statistic>
+				<item position="1">
+					<name>Kosu</name>
+					<event id="EVNT_GUI_STATISTIC_KOSU"/>
+				</item>
+				<item position="2">
+					<name>Test</name>
+					<event id="EVNT_GUI_STATISTIC_TEST"/>
+				</item>
+				<item position="8">
+					<name>Back</name>
+					<event id="EVNT_PLUGIN_LEAVE" data="{E9EE2D2E-D45D-4e3a-95F2-D8E7B40B70C3}"/>
+					<event id="EVNT_GUI_PANEL" data="panel;2"/>
+					<event id="EVNT_GUI_PRODUCTION"/>
+				</item>
+			</statistic>
+			<!-- Maintenance section -->
+			<maintenance>
+				<item position="1">
+					<name>Menu</name>
+					<event id="EVNT_GUI_MENU" data="menu_maintenance;-1"/>
+				</item>
+			</maintenance>
+			<menu_maintenance>
+				<item position="1">
+					<name>Database</name>
+					<pict>07</pict>
+					<save_position/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_RUN" data="{0CBEF382-AEDE-40a3-92EF-2B24D432A4CD}"/>
+					<event id="EVNT_GUI_PANEL" data="database;2"/>
+				</item>
+				<item position="2">
+					<name>Vision</name>
+					<pict>10</pict>
+					<save_position/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_RUN" data="{80F1285B-E843-4a9b-94D2-B419544672C8}"/>
+					<event id="EVNT_GUI_PANEL" data="visionconfig"/>
+				</item>
+				<item position="3">
+					<name>Tester</name>
+					<pict>12</pict>
+					<save_position/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_RUN" data="{44941DAC-D5D1-4a7d-9825-5EF6EDC5921B}"/>
+					<event id="EVNT_GUI_PANEL" data="tester;2"/>
+				</item>
+				<item position="4">
+					<name>Cards</name>
+					<pict>13</pict>
+					<save_position/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_RUN" data="{28E36F9B-656B-4acd-97EF-9010E3898EC1}"/>
+					<event id="EVNT_GUI_PANEL" data="card;2"/>
+				</item>
+				<item position="9">
+					<name>Back</name>
+					<pict>08</pict>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_LEAVE" data="{4FDAB846-56F7-405d-BF13-EEB8EF8D96FA}"/>
+					<event id="EVNT_GUI_PANEL" data="panel;2"/>
+					<event id="EVNT_GUI_PRODUCTION"/>
+				</item>
+			</menu_maintenance>
+			<visionconfig>
+				<item position="1">
+					<name>Menu</name>
+					<event id="EVNT_GUI_MENU" data="menu_maintenance"/>
+				</item>
+			</visionconfig>
+			<database>
+				<item position="1">
+					<name>Menu</name>
+					<event id="EVNT_GUI_MENU" data="menu_maintenance"/>
+				</item>
+				<item position="2">
+					<name>Products</name>
+					<save_position/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_GUI_DATABASE_PRODUCT"/>
+				</item>
+				<item position="3">
+					<name>Users</name>
+					<save_position/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_GUI_DATABASE_USER"/>
+				</item>
+				<item position="4">
+					<name>History</name>
+					<save_position/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_GUI_DATABASE_HISTORY"/>
+				</item>
+				<item position="5">
+					<name>Info</name>
+					<save_position/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_GUI_DATABASE_INFO"/>
+				</item>
+			</database>
+			<tester>
+				<item position="1">
+					<name>Menu</name>
+					<event id="EVNT_GUI_MENU" data="menu_maintenance"/>
+				</item>
+				<item position="2">
+					<name>Tester</name>
+					<save_position/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_GUI_TESTER"/>
+				</item>
+				<item position="3">
+					<name>JIG</name>
+					<save_position/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_GUI_TESTER_JIG"/>
+				</item>
+				<item position="4">
+					<name>Panel</name>
+					<save_position/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_GUI_TESTER_PANEL"/>
+				</item>
+			</tester>
+			<card>
+				<item position="1">
+					<name>Menu</name>
+					<event id="EVNT_GUI_MENU" data="menu_maintenance"/>
+				</item>
+				<item position="2">
+					<name>Sensors</name>
+					<save_position/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_RUN" data="{374B887B-7EF6-4593-B83E-0E07DDB38C99}"/>
+				</item>
+				<item position="3">
+					<name>Switch</name>
+					<save_position/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_RUN" data="{772C6DD0-941D-4d1d-A243-B20A726256EB}"/>
+				</item>
+				<item position="4">
+					<name>DAQ</name>
+					<save_position/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_RUN" data="{10158510-6A10-4afc-BEAC-762D8BF1B77A}"/>
+				</item>
+				<item position="5">
+					<name>Printer</name>
+					<save_position/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_RUN" data="{bc86c222-d5d2-4276-894c-c0a0e8d258d4}"/>
+				</item>
+				<item position="6">
+					<name>Calibration</name>
+					<save_position/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_RUN" data="{2887B238-7C9C-11DC-BF8B-A7C856D89593}"/>
+				</item>
+				<item position="7">
+					<name>CAN</name>
+					<save_position/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_RUN" data="{E87E3CB8-8543-4F55-B847-12E4C6165E6E}"/>
+				</item>
+			</card>
+		</plugin>
+	</plugins>
+</configuration>

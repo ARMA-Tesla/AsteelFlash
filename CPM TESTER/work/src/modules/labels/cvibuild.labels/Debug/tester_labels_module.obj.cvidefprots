@@ -1,0 +1,30 @@
+[DllMain]
+Class="Function"
+Prototype="int DllMain(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+SourceLocation="c:\work\src\modules\labels\tester_labels_module.c:43:1"
+
+[GetModuleAttribute]
+Class="Function"
+Prototype="struct _SElException *GetModuleAttribute(unsigned int attrID, unsigned int size, void *value) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\labels\tester_labels_module.c:65:1"
+
+[LoadElcomModule]
+Class="Function"
+Prototype="struct _SElException *LoadElcomModule(const char *configuration, void **pInstance, struct _SPluginArgs *pParam) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\labels\tester_labels_module.c:94:1"
+
+[InitializeElcomModule]
+Class="Function"
+Prototype="struct _SElException *InitializeElcomModule(void *pInstance, const char *configuration, struct _SPluginArgs *pParam) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\labels\tester_labels_module.c:117:1"
+
+[UnloadElcomModule]
+Class="Function"
+Prototype="struct _SElException *UnloadElcomModule(void *pInstance) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\labels\tester_labels_module.c:147:1"
+
+[_FindString]
+Class="Function"
+Prototype="int _FindString(char *Buffer, char *DebutTAG, char *FinTAG, char *StrVal, char *Message);"
+SourceLocation="c:\work\src\modules\labels\tester_labels_module.c:393:1"
+

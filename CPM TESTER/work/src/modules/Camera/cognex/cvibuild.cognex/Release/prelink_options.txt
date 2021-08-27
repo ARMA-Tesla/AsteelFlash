@@ -1,0 +1,7 @@
+-inrc c:\work\src\modules\Camera\cognex\cvibuild.cognex\Release\resources.in.rc
+-outrc c:\work\src\modules\Camera\cognex\cvibuild.cognex\Release\resources.out.rc
+-inhdef c:\work\src\modules\Camera\cognex\cvibuild.cognex\Release\Cognex.h.hdefs
+-outdef c:\work\src\modules\Camera\cognex\cvibuild.cognex\Release\cognex.dll.defs
+-indefprot c:\work\src\modules\Camera\cognex\cvibuild.cognex\Release\Cognex.obj.cvidefprots
+-indefprot c:\work\src\modules\Camera\cognex\cvibuild.cognex\Release\Exception.obj.cvidefprots
+-dllName cognex.dll

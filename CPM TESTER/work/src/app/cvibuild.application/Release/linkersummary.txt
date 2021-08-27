@@ -1,0 +1,21 @@
+application.obj
+el_pluginargs.obj
+el_plugininfo.obj
+el_pluginserver_win32.obj
+eleventdata.obj
+elmodule.obj
+elstring.obj
+EventFactory.obj
+Exception.obj
+objlist.obj
+cvistart.lib
+cvi.lib
+bklib2.obj
+cviauto.lib
+kernel32.lib
+msxmldom.obj
+user32.lib
+uuid.lib
+EXE Symbol Module
+Exports Module
+Resource Module

@@ -1,0 +1,10 @@
+-inrc c:\work\src\gui\info\cvibuild.info\Release\resources.in.rc
+-outrc c:\work\src\gui\info\cvibuild.info\Release\resources.out.rc
+-inhdef c:\work\src\gui\info\cvibuild.info\Release\info_plugin.h.hdefs
+-outdef c:\work\src\gui\info\cvibuild.info\Release\info.dll.defs
+-indefprot c:\work\src\gui\info\cvibuild.info\Release\eleventdata.obj.cvidefprots
+-indefprot c:\work\src\gui\info\cvibuild.info\Release\elstring.obj.cvidefprots
+-indefprot c:\work\src\gui\info\cvibuild.info\Release\Exception.obj.cvidefprots
+-indefprot c:\work\src\gui\info\cvibuild.info\Release\info.obj.cvidefprots
+-indefprot c:\work\src\gui\info\cvibuild.info\Release\language.obj.cvidefprots
+-dllName info.dll

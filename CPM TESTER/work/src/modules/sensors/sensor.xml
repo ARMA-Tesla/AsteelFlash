@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="windows-1250" ?> 
+<configuration>
+<modules>
+	<module id="{A65AEFCA-1600-4be0-AD11-7CA998CE5584}">
+		<name>Sensor plugin</name> 
+		<parameters>
+			<!--  State of the simulation 'true' | 'false' --> 
+			<parameter name="simulation">false</parameter>
+
+			<tasks>
+				<task name="TESTER_DI" type="DI">
+					<line name="TESTER_00" physical="TESTER/port0/line0" />
+					<line name="TESTER_01" physical="TESTER/port0/line1" />
+					<line name="TESTER_02" physical="TESTER/port0/line2" />
+					<line name="TESTER_03" physical="TESTER/port0/line3" />
+					<line name="TESTER_04" physical="TESTER/port0/line4" />
+					<line name="TESTER_05" physical="TESTER/port0/line5" />
+					<line name="TESTER_06" physical="TESTER/port0/line6" />
+					<line name="TESTER_07" physical="TESTER/port0/line7" />
+					
+					<line name="TESTER_10" physical="TESTER/port1/line0" />
+					<line name="TESTER_11" physical="TESTER/port1/line1" />
+					<line name="TESTER_12" physical="TESTER/port1/line2" />
+					<line name="TESTER_13" physical="TESTER/port1/line3" />
+					<line name="TESTER_14" physical="TESTER/port1/line4" />
+					<line name="TESTER_15" physical="TESTER/port1/line5" />
+					<line name="TESTER_16" physical="TESTER/port1/line6" />
+					<line name="TESTER_17" physical="TESTER/port1/line7" />
+
+					<line name="TESTER_20" physical="TESTER/port2/line0" />
+					<line name="TESTER_21" physical="TESTER/port2/line1" />
+					<line name="TESTER_22" physical="TESTER/port2/line2" />
+					<line name="TESTER_23" physical="TESTER/port2/line3" />
+					<line name="TESTER_24" physical="TESTER/port2/line4" />
+					<line name="TESTER_25" physical="TESTER/port2/line5" />
+					<line name="TESTER_26" physical="TESTER/port2/line6" />
+					<line name="TESTER_27" physical="TESTER/port2/line7" />
+
+					<line name="TESTER_30" physical="TESTER/port3/line0" />
+					<line name="TESTER_31" physical="TESTER/port3/line1" />
+					<line name="TESTER_32" physical="TESTER/port3/line2" />
+					<line name="TESTER_33" physical="TESTER/port3/line3" />
+					<line name="TESTER_34" physical="TESTER/port3/line4" />
+					<line name="TESTER_35" physical="TESTER/port3/line5" />
+					<line name="TESTER_36" physical="TESTER/port3/line6" />
+					<line name="TESTER_37" physical="TESTER/port3/line7" />
+				</task>
+				<task name="TESTER_DO" type="DO">
+					<line name="TESTER_40" physical="TESTER/port4/line0" />
+					<line name="TESTER_41" physical="TESTER/port4/line1" />
+					<line name="TESTER_42" physical="TESTER/port4/line2" />
+					<line name="TESTER_43" physical="TESTER/port4/line3" />
+					<line name="TESTER_44" physical="TESTER/port4/line4" />
+					<line name="TESTER_45" physical="TESTER/port4/line5" />
+					<line name="TESTER_46" physical="TESTER/port4/line6" />
+					<line name="TESTER_47" physical="TESTER/port4/line7" />
+
+					<line name="TESTER_50" physical="TESTER/port5/line0" />
+					<line name="TESTER_51" physical="TESTER/port5/line1" />
+					<line name="TESTER_52" physical="TESTER/port5/line2" />
+					<line name="TESTER_53" physical="TESTER/port5/line3" />
+					<line name="TESTER_54" physical="TESTER/port5/line4" />
+					<line name="TESTER_55" physical="TESTER/port5/line5" />
+					<line name="TESTER_56" physical="TESTER/port5/line6" />
+					<line name="TESTER_57" physical="TESTER/port5/line7" />
+
+					<line name="TESTER_60" physical="TESTER/port6/line0" />
+					<line name="TESTER_61" physical="TESTER/port6/line1" />
+					<line name="TESTER_62" physical="TESTER/port6/line2" />
+					<line name="TESTER_63" physical="TESTER/port6/line3" />
+					<line name="TESTER_64" physical="TESTER/port6/line4" />
+					<line name="TESTER_65" physical="TESTER/port6/line5" />
+					<line name="TESTER_66" physical="TESTER/port6/line6" />
+					<line name="TESTER_67" physical="TESTER/port6/line7" />
+
+					<line name="TESTER_70" physical="TESTER/port7/line0" />
+					<line name="TESTER_71" physical="TESTER/port7/line1" />
+					<line name="TESTER_72" physical="TESTER/port7/line2" />
+					<line name="TESTER_73" physical="TESTER/port7/line3" />
+					<line name="TESTER_74" physical="TESTER/port7/line4" />
+					<line name="TESTER_75" physical="TESTER/port7/line5" />
+					<line name="TESTER_76" physical="TESTER/port7/line6" />
+					<line name="TESTER_77" physical="TESTER/port7/line7" />
+				</task>
+				<task name="JIG_DI" type="DI">
+					<line name="JIG_00" physical="JIG/port0/line0" />
+					<line name="JIG_01" physical="JIG/port0/line1" />
+					<line name="JIG_02" physical="JIG/port0/line2" />
+					<line name="JIG_03" physical="JIG/port0/line3" />
+					<line name="JIG_04" physical="JIG/port0/line4" />
+					<line name="JIG_05" physical="JIG/port0/line5" />
+					<line name="JIG_06" physical="JIG/port0/line6" />
+					<line name="JIG_07" physical="JIG/port0/line7" />
+					
+					<line name="JIG_10" physical="JIG/port1/line0" />
+					<line name="JIG_11" physical="JIG/port1/line1" />
+					<line name="JIG_12" physical="JIG/port1/line2" />
+					<line name="JIG_13" physical="JIG/port1/line3" />
+					<line name="JIG_14" physical="JIG/port1/line4" />
+					<line name="JIG_15" physical="JIG/port1/line5" />
+					<line name="JIG_16" physical="JIG/port1/line6" />
+					<line name="JIG_17" physical="JIG/port1/line7" />
+
+					<line name="JIG_20" physical="JIG/port2/line0" />
+					<line name="JIG_21" physical="JIG/port2/line1" />
+					<line name="JIG_22" physical="JIG/port2/line2" />
+					<line name="JIG_23" physical="JIG/port2/line3" />
+					<line name="JIG_24" physical="JIG/port2/line4" />
+					<line name="JIG_25" physical="JIG/port2/line5" />
+					<line name="JIG_26" physical="JIG/port2/line6" />
+					<line name="JIG_27" physical="JIG/port2/line7" />
+
+					<line name="JIG_30" physical="JIG/port3/line0" />
+					<line name="JIG_31" physical="JIG/port3/line1" />
+					<line name="JIG_32" physical="JIG/port3/line2" />
+					<line name="JIG_33" physical="JIG/port3/line3" />
+					<line name="JIG_34" physical="JIG/port3/line4" />
+					<line name="JIG_35" physical="JIG/port3/line5" />
+					<line name="JIG_36" physical="JIG/port3/line6" />
+					<line name="JIG_37" physical="JIG/port3/line7" />
+				</task>
+				<task name="JIG_DO" type="DO">
+					<line name="JIG_40" physical="JIG/port4/line0" />
+					<line name="JIG_41" physical="JIG/port4/line1" />
+					<line name="JIG_42" physical="JIG/port4/line2" />
+					<line name="JIG_43" physical="JIG/port4/line3" />
+					<line name="JIG_44" physical="JIG/port4/line4" />
+					<line name="JIG_45" physical="JIG/port4/line5" />
+					<line name="JIG_46" physical="JIG/port4/line6" />
+					<line name="JIG_47" physical="JIG/port4/line7" />
+
+					<line name="JIG_50" physical="JIG/port5/line0" />
+					<line name="JIG_51" physical="JIG/port5/line1" />
+					<line name="JIG_52" physical="JIG/port5/line2" />
+					<line name="JIG_53" physical="JIG/port5/line3" />
+					<line name="JIG_54" physical="JIG/port5/line4" />
+					<line name="JIG_55" physical="JIG/port5/line5" />
+					<line name="JIG_56" physical="JIG/port5/line6" />
+					<line name="JIG_57" physical="JIG/port5/line7" />
+
+					<line name="JIG_60" physical="JIG/port6/line0" />
+					<line name="JIG_61" physical="JIG/port6/line1" />
+					<line name="JIG_62" physical="JIG/port6/line2" />
+					<line name="JIG_63" physical="JIG/port6/line3" />
+					<line name="JIG_64" physical="JIG/port6/line4" />
+					<line name="JIG_65" physical="JIG/port6/line5" />
+					<line name="JIG_66" physical="JIG/port6/line6" />
+					<line name="JIG_67" physical="JIG/port6/line7" />
+
+					<line name="JIG_70" physical="JIG/port7/line0" />
+					<line name="JIG_71" physical="JIG/port7/line1" />
+					<line name="JIG_72" physical="JIG/port7/line2" />
+					<line name="JIG_73" physical="JIG/port7/line3" />
+					<line name="JIG_74" physical="JIG/port7/line4" />
+					<line name="JIG_75" physical="JIG/port7/line5" />
+					<line name="JIG_76" physical="JIG/port7/line6" />
+					<line name="JIG_77" physical="JIG/port7/line7" />
+				</task>
+				<task name="JIGINSERTED" type="DI">
+					<line name="JIGINSERTED_00" physical="TESTER/port1/line4" />
+				</task>
+				<task name="JIGCODE" type="DI">
+					<line name="JIGCODE_00" physical="PXI1Slot4/port0/line3" />
+					<line name="JIGCODE_01" physical="PXI1Slot4/port0/line7" />
+					<line name="JIGCODE_02" physical="PXI1Slot4/port0/line2" />
+					<line name="JIGCODE_03" physical="PXI1Slot4/port0/line6" />
+					<line name="JIGCODE_04" physical="PXI1Slot4/port0/line1" />
+					<line name="JIGCODE_05" physical="PXI1Slot4/port0/line5" />
+					<line name="JIGCODE_06" physical="PXI1Slot4/port0/line0" />
+					<line name="JIGCODE_07" physical="PXI1Slot4/port0/line4" />
+				</task>
+			</tasks>
+	  	</parameters>
+	</module>
+</modules>
+</configuration>

@@ -1,0 +1,40 @@
+[TreeUserIni]
+Class="Function"
+Prototype="struct _SElException *TreeUserIni();"
+SourceLocation="c:\work\src\gui\database\dbs_user.c:30:1"
+
+[TreeUserClose]
+Class="Function"
+Prototype="struct _SElException *TreeUserClose();"
+SourceLocation="c:\work\src\gui\database\dbs_user.c:57:1"
+
+[UserReload]
+Class="Function"
+Prototype="struct _SElException *UserReload();"
+SourceLocation="c:\work\src\gui\database\dbs_user.c:69:1"
+
+[BkTreeUserNodeClick]
+Class="Function"
+Prototype="struct _SElException *BkTreeUserNodeClick(char *keyNode);"
+SourceLocation="c:\work\src\gui\database\dbs_user.c:88:1"
+
+[BkTreeUserPopupMenuCommand]
+Class="Function"
+Prototype="struct _SElException *BkTreeUserPopupMenuCommand(char *keyNode, char *keyCol, long menuItem);"
+SourceLocation="c:\work\src\gui\database\dbs_user.c:118:1"
+
+[ActiveUserSet]
+Class="Function"
+Prototype="struct _SElException *ActiveUserSet(struct _SUserList *puserlist);"
+SourceLocation="c:\work\src\gui\database\dbs_user.c:227:1"
+
+[DbsRightsToString]
+Class="Function"
+Prototype="char *DbsRightsToString(int rights);"
+SourceLocation="c:\work\src\gui\database\dbs_user.c:343:1"
+
+[TesterRightsToString]
+Class="Function"
+Prototype="char *TesterRightsToString(int rights);"
+SourceLocation="c:\work\src\gui\database\dbs_user.c:386:1"
+

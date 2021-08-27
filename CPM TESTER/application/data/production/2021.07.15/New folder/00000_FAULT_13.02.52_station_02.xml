@@ -1,0 +1,1783 @@
+<testseq>
+	<product>
+		<id>15</id>
+		<branch_id>1</branch_id>
+		<name>BSH800122726800FP</name>
+		<description></description>
+		<mode>Manual</mode>
+		<date_time>2021.07.14 13.02.52</date_time>
+		<PalettID></PalettID>
+		<barcode></barcode>
+		<duration>18.12</duration>
+		<failed>1</failed>
+	</product>
+	<global>
+		<parameter>
+			<id>0</id>
+			<name>Code_AsteelFlash</name>
+			<description></description>
+			<value type="string">BSH800122726800FP</value>
+		</parameter>
+		<parameter>
+			<id>0</id>
+			<name>Label:OK</name>
+			<description></description>
+			<value type="string">C:/application/Labels/OK.txt</value>
+		</parameter>
+		<parameter>
+			<id>0</id>
+			<name>ProductTestFile</name>
+			<description></description>
+			<value type="string">EA210.dll</value>
+		</parameter>
+		<parameter>
+			<id>0</id>
+			<name>SMB</name>
+			<description></description>
+			<value type="string">NO</value>
+		</parameter>
+	</global>
+	<process stage="1">
+		<name>WS20</name>
+		<description>High Voltage test</description>
+		<init>
+			<failed>0</failed>
+			<duration></duration>
+		</init>
+		<test step="1">
+			<id>611</id>
+			<name>20.0.0</name>
+			<description>TESTER : Plug product</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+		</test>
+		<test step="2">
+			<id>15</id>
+			<name>20.1.0</name>
+			<description>Safety Tester : PCB isolation voltage test</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+			<measure step="1">
+				<config>Leakage current 3750VDC</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>293</id>
+					<name>Limit01</name>
+					<value1>0.5</value1>
+					<value2>5</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="3">
+			<id>23</id>
+			<name>20.1.1</name>
+			<description>Safety Tester : High voltage test FE  NL</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+			<measure step="1">
+				<config>Leakage current 1750 VDC</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>4</id>
+					<name>Limit01</name>
+					<value1>0</value1>
+					<value2>1</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="4">
+			<id>24</id>
+			<name>20.1.2</name>
+			<description>Safety Tester : High voltage test FE  SELV</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+			<measure step="1">
+				<config>Leakage current 750VDC</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>5</id>
+					<name>Limit01</name>
+					<value1>0</value1>
+					<value2>1</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="5">
+			<id>618</id>
+			<name>20.0.1</name>
+			<description>TESTER : Unplug Product </description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+		</test>
+		<cleanup>
+			<failed>0</failed>
+			<duration></duration>
+		</cleanup>
+	</process>
+	<process stage="2">
+		<name>WS30</name>
+		<description>Test Inputs</description>
+		<init>
+			<failed>0</failed>
+			<duration></duration>
+		</init>
+		<test step="1">
+			<id>642</id>
+			<name>30.0.0</name>
+			<description>Plug Product And Init Instruments</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+		</test>
+		<test step="2">
+			<id>649</id>
+			<name>30.0.2</name>
+			<description>Enter HW TEST MODE 12VDC</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+		</test>
+		<test step="3">
+			<id>60</id>
+			<name>30.1.1</name>
+			<description>OFFSET Error correction</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+		</test>
+		<test step="4">
+			<id>61</id>
+			<name>30.1.2</name>
+			<description>Get offset correction value</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+			<measure step="1">
+				<config>SET VALUE </config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>118</id>
+					<name>Limit01</name>
+					<value1>1</value1>
+					<value2>1</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>Correction Value </config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>538</id>
+					<name>Limit02</name>
+					<value1>2100</value1>
+					<value2>2250</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="5">
+			<id>138</id>
+			<name>30.2.1</name>
+			<description>Init VAC supply voltage and switch Relay ON</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+		</test>
+		<test step="6">
+			<id>139</id>
+			<name>30.2.2</name>
+			<description>Check current consumption SMPS 90VAC</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+			<measure step="1">
+				<config>Current meas at 90VAC</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>272</id>
+					<name>Limit01</name>
+					<value1>6,75</value1>
+					<value2>10</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="7">
+			<id>67</id>
+			<name>30.2.3</name>
+			<description>Check current consumption SMPS 260VAC</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+			<measure step="1">
+				<config>Current meas at 260VAC </config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>274</id>
+					<name>Limit01</name>
+					<value1>16,5</value1>
+					<value2>27</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="8">
+			<id>108</id>
+			<name>30.2.4</name>
+			<description>Measurement of output voltage 12 VDC</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+			<measure step="1">
+				<config>Voltage meas no load</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>289</id>
+					<name>Limit01</name>
+					<value1>11.5</value1>
+					<value2>12.8</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>Voltage meas load 12 ohm</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>290</id>
+					<name>Limit02</name>
+					<value1>11.5</value1>
+					<value2>12.8</value2>
+				</limit>
+			</measure>
+			<measure step="3">
+				<config>Voltage meas load 100 ohm</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>291</id>
+					<name>Limit03</name>
+					<value1>11.5</value1>
+					<value2>12.8</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="9">
+			<id>110</id>
+			<name>30.2.5</name>
+			<description>Measurement of output voltage 5 VDC</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+			<measure step="1">
+				<config>voltage meas no load </config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>16</id>
+					<name>Limit01</name>
+					<value1>4.8</value1>
+					<value2>5.2</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>Voltage meas load 250 ohm</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>17</id>
+					<name>Limit02</name>
+					<value1>4.8</value1>
+					<value2>5.2</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="10">
+			<id>650</id>
+			<name>30.3.1</name>
+			<description>Enter to HW TEST MODE 230 VAC</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+		</test>
+		<test step="11">
+			<id>387</id>
+			<name>30.4.1</name>
+			<description>Calibrate line voltage measurement 230VAC</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+		</test>
+		<test step="12">
+			<id>388</id>
+			<name>30.4.2</name>
+			<description>Check correction factor230VAC</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+			<measure step="1">
+				<config>SET VALUE</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>570</id>
+					<name>Limit01</name>
+					<value1>00</value1>
+					<value2>01</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>Correction value</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>296</id>
+					<name>Limit02</name>
+					<value1>100</value1>
+					<value2>300</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="13">
+			<id>389</id>
+			<name>30.4.3</name>
+			<description>Check corrected line voltage</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+			<measure step="1">
+				<config>voltage correction </config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>599</id>
+					<name>Limit01</name>
+					<value1>200</value1>
+					<value2>235</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>Correction FREQ</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>183</id>
+					<name>Limit02</name>
+					<value1>50</value1>
+					<value2>50</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="14">
+			<id>100</id>
+			<name>30.5.1</name>
+			<description>Check external temperature sensor inputs</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+			<measure step="1">
+				<config>Analog Input X11.1</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>18</id>
+					<name>Limit01</name>
+					<value1>10566</value1>
+					<value2>11367</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>Simulation of X11.2</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>173</id>
+					<name>Limit02</name>
+					<value1>45021</value1>
+					<value2>46655</value2>
+				</limit>
+			</measure>
+			<measure step="3">
+				<config>simulation of X11.3</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>20</id>
+					<name>Limit03</name>
+					<value1>25161</value1>
+					<value2>26763</value2>
+				</limit>
+			</measure>
+			<measure step="4">
+				<config>Simulation of X11.4</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>21</id>
+					<name>Limit04</name>
+					<value1>38068</value1>
+					<value2>39847</value2>
+				</limit>
+			</measure>
+			<measure step="5">
+				<config>simulation of X11.5</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>600</id>
+					<name>Limit05</name>
+					<value1>0</value1>
+					<value2>20028</value2>
+				</limit>
+			</measure>
+			<measure step="6">
+				<config>Ambient temperature sensor</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>601</id>
+					<name>Limit06</name>
+					<value1>0</value1>
+					<value2>13128</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="15">
+			<id>450</id>
+			<name>30.6.1</name>
+			<description>Check digital input X10 2</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+			<measure step="1">
+				<config>Digital input X10.2 Status</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>216</id>
+					<name>Limit01</name>
+					<value1>05</value1>
+					<value2>05</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="16">
+			<id>641</id>
+			<name>30.0.1</name>
+			<description>Unplug Product</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+		</test>
+		<cleanup>
+			<failed>0</failed>
+			<duration></duration>
+		</cleanup>
+	</process>
+	<process stage="3">
+		<name>WS40</name>
+		<description>Test Outputs</description>
+		<init>
+			<failed>0</failed>
+			<duration></duration>
+		</init>
+		<test step="1">
+			<id>643</id>
+			<name>40.0.0</name>
+			<description>Plug Product AND Init instrument</description>
+			<failed>0</failed>
+			<duration>1.94</duration>
+			<used>1</used>
+		</test>
+		<test step="2">
+			<id>645</id>
+			<name>40.0.2</name>
+			<description>Enter in HW Test Mode dbus</description>
+			<failed>0</failed>
+			<duration>0.38</duration>
+			<used>1</used>
+			<Log>[56.862 ms] TX UDA (USB-SN: UDA-04)::1b::7000::23C0
+[57.190 ms] RX UDA (USB-SN: UDA-04)::c0::7100::23C01500
+</Log></test>
+		<test step="3">
+			<id>406</id>
+			<name>40.7.1</name>
+			<description>Test of DC Switch output X8 8 on status ACTIVE</description>
+			<failed>0</failed>
+			<duration>0.93</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Output X8.8 ON </config>
+				<value type="real64">0.055500</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>51</id>
+					<name>Limit01</name>
+					<value1>-0.2</value1>
+					<value2>0.2</value2>
+				</limit>
+			</measure>
+			<Log>[57.448 ms] TX UDA (USB-SN: UDA-04)::1b::7010::01
+[57.668 ms] TX UDA (USB-SN: UDA-04)::1b::7010::01
+[57.998 ms] RX UDA (USB-SN: UDA-04)::c0::7110::01
+</Log></test>
+		<test step="4">
+			<id>407</id>
+			<name>40.7.2</name>
+			<description>Test of DC Switch output X8 8 off status INACTIVE</description>
+			<failed>0</failed>
+			<duration>0.65</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Output X8.8 OFF</config>
+				<value type="real64">12.593000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>52</id>
+					<name>Limit01</name>
+					<value1>11.4</value1>
+					<value2>13.2</value2>
+				</limit>
+			</measure>
+			<Log>[58.487 ms] TX UDA (USB-SN: UDA-04)::1b::7010::00
+[58.686 ms] RX UDA (USB-SN: UDA-04)::c0::7110::00
+</Log></test>
+		<test step="5">
+			<id>410</id>
+			<name>40.7.5</name>
+			<description>Test of DC Switch output X8 3 on status ACTIVE</description>
+			<failed>0</failed>
+			<duration>0.53</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Output X8.3 ON</config>
+				<value type="real64">0.048000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>55</id>
+					<name>Limit01</name>
+					<value1>-0.2</value1>
+					<value2>0.2</value2>
+				</limit>
+			</measure>
+			<Log>[59.022 ms] TX UDA (USB-SN: UDA-04)::1b::7024::01
+[59.219 ms] RX UDA (USB-SN: UDA-04)::c0::7124::01
+</Log></test>
+		<test step="6">
+			<id>607</id>
+			<name>40.7.6</name>
+			<description>Test of DC Switch output X8 3 off status INACTIVE</description>
+			<failed>0</failed>
+			<duration>0.91</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Output X8.3 Off</config>
+				<value type="real64">12.678000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>56</id>
+					<name>Limit01</name>
+					<value1>11.4</value1>
+					<value2>13.2</value2>
+				</limit>
+			</measure>
+			<Log>[59.873 ms] TX UDA (USB-SN: UDA-04)::1b::7024::00
+[60.119 ms] RX UDA (USB-SN: UDA-04)::c0::7124::00
+</Log></test>
+		<test step="7">
+			<id>933</id>
+			<name>40.7.7</name>
+			<description>Test of DC Switch output X8 6 on status ACTIVE</description>
+			<failed>0</failed>
+			<duration>0.53</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Output X8.6 ON</config>
+				<value type="real64">0.050200</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>57</id>
+					<name>Limit01</name>
+					<value1>-0.2</value1>
+					<value2>0.2</value2>
+				</limit>
+			</measure>
+			<Log>[60.463 ms] TX UDA (USB-SN: UDA-04)::1b::7024::02
+[60.662 ms] RX UDA (USB-SN: UDA-04)::c0::7124::02
+</Log></test>
+		<test step="8">
+			<id>413</id>
+			<name>40.7.8</name>
+			<description>Test of DC Switch output X8 6 off status INACTIVE</description>
+			<failed>0</failed>
+			<duration>0.54</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Output X8.6 Off</config>
+				<value type="real64">12.646000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>58</id>
+					<name>Limit01</name>
+					<value1>11.4</value1>
+					<value2>13.2</value2>
+				</limit>
+			</measure>
+			<Log>[60.995 ms] TX UDA (USB-SN: UDA-04)::1b::7024::00
+[61.195 ms] RX UDA (USB-SN: UDA-04)::c0::7124::00
+</Log></test>
+		<test step="9">
+			<id>580</id>
+			<name>40.7.11</name>
+			<description>Test of PWM FAN Outputs X8 2 on status FREQ</description>
+			<failed>0</failed>
+			<duration>0.52</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>freq X8.2 KH</config>
+				<value type="real64">25.000354</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>190</id>
+					<name>Limit01</name>
+					<value1>24.75</value1>
+					<value2>26.5</value2>
+				</limit>
+			</measure>
+			<Log>[60.995 ms] TX UDA (USB-SN: UDA-04)::1b::7024::00
+[61.195 ms] RX UDA (USB-SN: UDA-04)::c0::7124::00
+</Log></test>
+		<test step="10">
+			<id>572</id>
+			<name>40.7.12</name>
+			<description>Test of PWM FAN Outputs X8 2 off status VOLTAGE</description>
+			<failed>0</failed>
+			<duration>0.45</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Voltage X8.2</config>
+				<value type="real64">12.620000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>278</id>
+					<name>Limit01</name>
+					<value1>11.5</value1>
+					<value2>13</value2>
+				</limit>
+			</measure>
+			<Log>[61.869 ms] TX UDA (USB-SN: UDA-04)::1b::7020::0064
+[62.070 ms] RX UDA (USB-SN: UDA-04)::c0::7120::0064
+</Log></test>
+		<test step="11">
+			<id>581</id>
+			<name>40.7.13</name>
+			<description>Test of PWM FAN Outputs X8 5 on status FEQ</description>
+			<failed>0</failed>
+			<duration>0.42</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Freq X8.5 KH</config>
+				<value type="real64">25.000354</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>192</id>
+					<name>Limit01</name>
+					<value1>24.75</value1>
+					<value2>26.5</value2>
+				</limit>
+			</measure>
+			<Log>[61.869 ms] TX UDA (USB-SN: UDA-04)::1b::7020::0064
+[62.070 ms] RX UDA (USB-SN: UDA-04)::c0::7120::0064
+</Log></test>
+		<test step="12">
+			<id>573</id>
+			<name>40.7.14</name>
+			<description>Test of PWM FAN Outputs X8 5 off status VOLTAGE</description>
+			<failed>0</failed>
+			<duration>0.47</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Voltage X8.5</config>
+				<value type="real64">12.598000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>279</id>
+					<name>Limit01</name>
+					<value1>11.5</value1>
+					<value2>13</value2>
+				</limit>
+			</measure>
+			<Log>[62.737 ms] TX UDA (USB-SN: UDA-04)::1b::7020::0164
+[63.067 ms] RX UDA (USB-SN: UDA-04)::c0::7120::0164
+</Log></test>
+		<test step="13">
+			<id>582</id>
+			<name>40.7.15</name>
+			<description>Test of PWM FAN Outputs X9 2 on status FREQ</description>
+			<failed>0</failed>
+			<duration>0.92</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Freq X9.2 ( kHz)</config>
+				<value type="real64">25.197570</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>194</id>
+					<name>Limit01</name>
+					<value1>24.75</value1>
+					<value2>26.5</value2>
+				</limit>
+			</measure>
+			<Log>[62.737 ms] TX UDA (USB-SN: UDA-04)::1b::7020::0164
+[63.067 ms] RX UDA (USB-SN: UDA-04)::c0::7120::0164
+</Log></test>
+		<test step="14">
+			<id>181</id>
+			<name>40.7.19</name>
+			<description>Test of constant current LED Outputs on status</description>
+			<failed>0</failed>
+			<duration>0.60</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Voltage led duty 50 X9.5</config>
+				<value type="real64">5.505700</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>588</id>
+					<name>Limit01</name>
+					<value1>5.1</value1>
+					<value2>5.6</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>Voltage led duty 50 X9.7</config>
+				<value type="real64">0.020280</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>603</id>
+					<name>Limit02</name>
+					<value1>-5.6</value1>
+					<value2>5.6</value2>
+				</limit>
+			</measure>
+			<Log>[64.226 ms] TX UDA (USB-SN: UDA-04)::1b::7042::64
+[64.428 ms] RX UDA (USB-SN: UDA-04)::c0::7142::64
+</Log></test>
+		<test step="15">
+			<id>182</id>
+			<name>40.7.20</name>
+			<description>Test of constant current LED Outputs off status</description>
+			<failed>0</failed>
+			<duration>0.44</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>LED OFF voltage X9.5</config>
+				<value type="real64">0.000000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>198</id>
+					<name>Limit01</name>
+					<value1>0</value1>
+					<value2>0.1</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>LED OFF voltage X9.7</config>
+				<value type="real64">0.000000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>199</id>
+					<name>Limit02</name>
+					<value1>0</value1>
+					<value2>0.1</value2>
+				</limit>
+			</measure>
+			<Log>[64.729 ms] TX UDA (USB-SN: UDA-04)::1b::7043::
+[64.928 ms] RX UDA (USB-SN: UDA-04)::c0::7143::
+</Log></test>
+		<test step="16">
+			<id>590</id>
+			<name>40.7.27</name>
+			<description>Test of PFM Output 5000 rpm</description>
+			<failed>0</failed>
+			<duration>0.78</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>VOLTAGE 5000 rpm </config>
+				<value type="real64">9.655920</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>250</id>
+					<name>Limit01</name>
+					<value1>9</value1>
+					<value2>13</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>FREQ PFM 5000 rpm</config>
+				<value type="real64">165.786450</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>175</id>
+					<name>Limit02</name>
+					<value1>140</value1>
+					<value2>180</value2>
+				</limit>
+			</measure>
+			<Log>[65.167 ms] TX UDA (USB-SN: UDA-04)::1b::7080::001388
+</Log></test>
+		<test step="17">
+			<id>183</id>
+			<name>40.7.21</name>
+			<description>Test of Stepper Driver 4 Outputs STEP 1</description>
+			<failed>0</failed>
+			<duration>0.63</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>STEP 1 X9.1</config>
+				<value type="real64">6.155000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>544</id>
+					<name>Limit01</name>
+					<value1>4.5</value1>
+					<value2>7.5</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>STEP 1 X9.2</config>
+				<value type="real64">6.155000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>545</id>
+					<name>Limit02</name>
+					<value1>4.5</value1>
+					<value2>7.5</value2>
+				</limit>
+			</measure>
+			<measure step="3">
+				<config>STEP 1 X9.3</config>
+				<value type="real64">6.149000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>546</id>
+					<name>Limit03</name>
+					<value1>4.5</value1>
+					<value2>7.5</value2>
+				</limit>
+			</measure>
+			<measure step="4">
+				<config>STEP 1 X9.4</config>
+				<value type="real64">6.155000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>547</id>
+					<name>Limit04</name>
+					<value1>4.5</value1>
+					<value2>7.5</value2>
+				</limit>
+			</measure>
+			<Log>[65.956 ms] TX UDA (USB-SN: UDA-04)::1b::7033::010000
+[66.176 ms] RX UDA (USB-SN: UDA-04)::c0::7133::010000
+</Log></test>
+		<test step="18">
+			<id>185</id>
+			<name>40.7.22</name>
+			<description>Test of Stepper Driver 4 Outputs STEP 2</description>
+			<failed>0</failed>
+			<duration>0.71</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>STEP 2 X9.1</config>
+				<value type="real64">12.326000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>282</id>
+					<name>Limit01</name>
+					<value1>11,5</value1>
+					<value2>13</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>STEP 2 X9.2</config>
+				<value type="real64">0.059000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>83</id>
+					<name>Limit02</name>
+					<value1>-1</value1>
+					<value2>1</value2>
+				</limit>
+			</measure>
+			<measure step="3">
+				<config>STEP 2 X9.3</config>
+				<value type="real64">6.112000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>552</id>
+					<name>Limit03</name>
+					<value1>4.5</value1>
+					<value2>7.5</value2>
+				</limit>
+			</measure>
+			<measure step="4">
+				<config>STEP 2 X9.4</config>
+				<value type="real64">6.160000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>554</id>
+					<name>Limit04</name>
+					<value1>4.5</value1>
+					<value2>7.5</value2>
+				</limit>
+			</measure>
+			<Log>[66.581 ms] TX UDA (USB-SN: UDA-04)::1b::7033::010100
+[66.808 ms] RX UDA (USB-SN: UDA-04)::c0::7133::010100
+</Log></test>
+		<test step="19">
+			<id>186</id>
+			<name>40.7.23</name>
+			<description>Test of Stepper Driver 4 Outputs STEP 3</description>
+			<failed>0</failed>
+			<duration>0.73</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>STEP 3 X9.1</config>
+				<value type="real64">0.059000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>86</id>
+					<name>Limit01</name>
+					<value1>-1</value1>
+					<value2>1</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>STEP 3 X9.2</config>
+				<value type="real64">12.283000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>284</id>
+					<name>Limit02</name>
+					<value1>11,5</value1>
+					<value2>13</value2>
+				</limit>
+			</measure>
+			<measure step="3">
+				<config>STEP 3 X9.3</config>
+				<value type="real64">6.149000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>559</id>
+					<name>Limit03</name>
+					<value1>4.5</value1>
+					<value2>7.5</value2>
+				</limit>
+			</measure>
+			<measure step="4">
+				<config>STEP 3 X9.4</config>
+				<value type="real64">6.117000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>558</id>
+					<name>Limit04</name>
+					<value1>4.5</value1>
+					<value2>7.5</value2>
+				</limit>
+			</measure>
+			<Log>[67.295 ms] TX UDA (USB-SN: UDA-04)::1b::7033::010001
+[67.632 ms] RX UDA (USB-SN: UDA-04)::c0::7133::010001
+</Log></test>
+		<test step="20">
+			<id>187</id>
+			<name>40.7.24</name>
+			<description>Test of Stepper Driver 4 Outputs STEP 4</description>
+			<failed>0</failed>
+			<duration>0.81</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>STEP 4 X9.1</config>
+				<value type="real64">6.123000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>561</id>
+					<name>Limit01</name>
+					<value1>4.5</value1>
+					<value2>7.5</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>STEP 4 X9.2</config>
+				<value type="real64">6.123000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>562</id>
+					<name>Limit02</name>
+					<value1>4.5</value1>
+					<value2>7.5</value2>
+				</limit>
+			</measure>
+			<measure step="3">
+				<config>STEP 4 X9.3</config>
+				<value type="real64">12.331000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>285</id>
+					<name>Limit03</name>
+					<value1>11,5</value1>
+					<value2>13</value2>
+				</limit>
+			</measure>
+			<measure step="4">
+				<config>STEP 4 X9.4</config>
+				<value type="real64">0.064000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>93</id>
+					<name>Limit04</name>
+					<value1>-1</value1>
+					<value2>1</value2>
+				</limit>
+			</measure>
+			<Log>[68.022 ms] TX UDA (USB-SN: UDA-04)::1b::7033::011000
+[68.450 ms] RX UDA (USB-SN: UDA-04)::c0::7133::011000
+</Log></test>
+		<test step="21">
+			<id>188</id>
+			<name>40.7.25</name>
+			<description>Test of Stepper Driver 4 Outputs STEP 5</description>
+			<failed>0</failed>
+			<duration>0.73</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>STEP 5 X9.1</config>
+				<value type="real64">6.176000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>563</id>
+					<name>Limit01</name>
+					<value1>4.5</value1>
+					<value2>7.5</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>STEP 5 X9.2</config>
+				<value type="real64">6.139000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>564</id>
+					<name>Limit02</name>
+					<value1>4.5</value1>
+					<value2>7.5</value2>
+				</limit>
+			</measure>
+			<measure step="3">
+				<config>STEP 5 X9.3</config>
+				<value type="real64">0.053000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>96</id>
+					<name>Limit03</name>
+					<value1>-1</value1>
+					<value2>1</value2>
+				</limit>
+			</measure>
+			<measure step="4">
+				<config>STEP 5 X9.4</config>
+				<value type="real64">12.261000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>286</id>
+					<name>Limit04</name>
+					<value1>11,5</value1>
+					<value2>13</value2>
+				</limit>
+			</measure>
+			<Log>[68.851 ms] TX UDA (USB-SN: UDA-04)::1b::7033::010010
+[69.181 ms] RX UDA (USB-SN: UDA-04)::c0::7133::010010
+</Log></test>
+		<test step="22">
+			<id>589</id>
+			<name>40.7.28</name>
+			<description>Test of PFM Output 0 rpm</description>
+			<failed>0</failed>
+			<duration>0.74</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Voltage 0 rpm</config>
+				<value type="real64">12.315000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>229</id>
+					<name>Limit01</name>
+					<value1>11.4</value1>
+					<value2>13.2</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>FREQ PFM 0rpm</config>
+				<value type="real64">0.000000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>251</id>
+					<name>Limit02</name>
+					<value1>-0.25</value1>
+					<value2>0.25</value2>
+				</limit>
+			</measure>
+			<Log>[69.571 ms] TX UDA (USB-SN: UDA-04)::1b::7080::000000
+[69.668 ms] RX UDA (USB-SN: UDA-04)::c0::7180::000000
+</Log></test>
+		<test step="23">
+			<id>846</id>
+			<name>40.8.5</name>
+			<description>Test of relay output X2 3 on status</description>
+			<failed>1</failed>
+			<duration>1.51</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>X2.3 ON</config>
+				<value type="real64">2.813260</value>
+				<failed>1</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>420</id>
+					<name>Limit01</name>
+					<value1>0</value1>
+					<value2>2</value2>
+				</limit>
+			</measure>
+			<Log>[70.309 ms] TX UDA (USB-SN: UDA-04)::1b::7090::0201
+[70.511 ms] RX UDA (USB-SN: UDA-04)::c0::7190::0201
+</Log><Error><Code>-11114</Code><CallPath>CheckLimitREAL64</CallPath><Msg>TEST_ERR_VALUE_OUT_OF_LIMIT</Msg></Error></test>
+		<test step="24">
+			<id>847</id>
+			<name>40.8.6</name>
+			<description>Test of relay output X2 3 off status</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+			<measure step="1">
+				<config>X2.3 OFF</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>421</id>
+					<name>Limit01</name>
+					<value1>225</value1>
+					<value2>235</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="25">
+			<id>644</id>
+			<name>40.0.1</name>
+			<description>Unplug Product</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+		</test>
+		<cleanup>
+			<failed>0</failed>
+			<duration></duration>
+		</cleanup>
+	</process>
+	<process stage="4">
+		<name>WS50</name>
+		<description>Capacitor Discharge</description>
+		<init>
+			<failed>0</failed>
+			<duration></duration>
+		</init>
+		<test step="1">
+			<id>654</id>
+			<name>50.0.0</name>
+			<description>Plug Product</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+		</test>
+		<test step="2">
+			<id>656</id>
+			<name>50.0.2</name>
+			<description>Enter HW TEST MODE dbus</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+		</test>
+		<test step="3">
+			<id>438</id>
+			<name>50.10.1</name>
+			<description>X capacitor Discharge Control POSITIVE ON</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+			<measure step="1">
+				<config>Voltage Control + ON</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>168</id>
+					<name>Limit01</name>
+					<value1>336.6</value1>
+					<value2>343.4</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="4">
+			<id>440</id>
+			<name>50.10.2</name>
+			<description>X capacitor Discharge Control POSITIVE OFF</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+			<measure step="1">
+				<config>Voltage CONTROL + OFF</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>169</id>
+					<name>Limit01</name>
+					<value1>0</value1>
+					<value2>34</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="5">
+			<id>442</id>
+			<name>50.10.3</name>
+			<description>X capacitor Discharge Control Negative ON</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+			<measure step="1">
+				<config>Voltage CONTROL - ON</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>170</id>
+					<name>Limit01</name>
+					<value1>336.6</value1>
+					<value2>343.4</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="6">
+			<id>443</id>
+			<name>50.10.4</name>
+			<description>X capacitor Discharge Control NEGATIVE OFF</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+			<measure step="1">
+				<config>Voltage CONTROL - OFF</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>171</id>
+					<name>Limit01</name>
+					<value1>0</value1>
+					<value2>34</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="7">
+			<id>653</id>
+			<name>50.0.1</name>
+			<description>Unplug Product</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+		</test>
+		<cleanup>
+			<failed>0</failed>
+			<duration></duration>
+		</cleanup>
+	</process>
+	<process stage="5">
+		<name>WS60</name>
+		<description>Pick and Place (Printer)</description>
+		<init>
+			<failed>0</failed>
+			<duration></duration>
+		</init>
+		<test step="1">
+			<id>308</id>
+			<name>60.00</name>
+			<description>Reset Printer</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+		</test>
+		<test step="2">
+			<id>323</id>
+			<name>60.10</name>
+			<description>Init Printer</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+		</test>
+		<test step="3">
+			<id>324</id>
+			<name>60.20</name>
+			<description>Generate label</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+		</test>
+		<test step="4">
+			<id>657</id>
+			<name>60.30</name>
+			<description>Pick Product And Go to Printer</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+		</test>
+		<test step="5">
+			<id>658</id>
+			<name>60.40</name>
+			<description>Start Cycle Print</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+		</test>
+		<test step="6">
+			<id>660</id>
+			<name>60.50</name>
+			<description>X move AND place Product front DATAMAN</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+		</test>
+		<test step="7">
+			<id>661</id>
+			<name>60.60</name>
+			<description>Read barcode</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+		</test>
+		<test step="8">
+			<id>662</id>
+			<name>60.70</name>
+			<description>PLACE PRODUCT TO PANEL</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+		</test>
+		<cleanup>
+			<failed>0</failed>
+			<duration></duration>
+		</cleanup>
+	</process>
+	<version>
+		<item type="plugin">
+			<name>Automat</name>
+			<version>0.0.2</version>
+			<datetime>Jul  9 2021 16:59:35</datetime>
+			<uuid>{E73BFBD5-77AF-40c8-9ED6-25C1F6EFA259}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Messaging panel</name>
+			<version>1.10.1</version>
+			<datetime>May  7 2021 11:15:52</datetime>
+			<uuid>{15CCD00D-3983-41b3-BC6A-A10F684A1F61}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Panel</name>
+			<version>0.0.1</version>
+			<datetime>Nov 23 2020 14:21:19</datetime>
+			<uuid>{32A783CF-D82C-4734-9112-2F61E92FC17B}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Product</name>
+			<version>1.0.1</version>
+			<datetime>Jul  8 2020 19:57:20</datetime>
+			<uuid>{5954031C-CEA1-4c16-8128-38B661811261}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Maintenance</name>
+			<version>0.0.2</version>
+			<datetime>Aug 10 2020 15:39:34</datetime>
+			<uuid>{4FDAB846-56F7-405d-BF13-EEB8EF8D96FA}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Report</name>
+			<version>1.10.1</version>
+			<datetime>Jun  1 2021 18:12:08</datetime>
+			<uuid>{3399A11A-2A03-4170-B69C-356F4F49C568}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Kosu</name>
+			<version>1.0.1</version>
+			<datetime>Feb  8 2021 09:54:18</datetime>
+			<uuid>{B9DD83C0-F8CE-44a0-A0AF-9AD7F170871D}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Info</name>
+			<version>1.0.1</version>
+			<datetime>Nov 22 2020 20:45:30</datetime>
+			<uuid>{71F5C8CB-0C94-429e-8A6C-98AF5E58B248}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Login dialog</name>
+			<version>0.0.2</version>
+			<datetime>Apr 22 2020 11:49:00</datetime>
+			<uuid>{AE2FAC8A-ABAC-4b1c-AA84-669809AB76EB}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Report</name>
+			<version>1.10.1</version>
+			<datetime>Jul 22 2020 14:11:29</datetime>
+			<uuid>{3399A11A-2A03-4170-B69C-356F4F49C569}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Cards</name>
+			<version>1.0.1</version>
+			<datetime>Nov 20 2020 12:21:40</datetime>
+			<uuid>{28E36F9B-656B-4acd-97EF-9010E3898EC1}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Power</name>
+			<version>1.0.1</version>
+			<datetime>Sep 24 2020 18:38:16</datetime>
+			<uuid>{FFAA1236-f5d2-2076-104c-c0a0e8dFCFA0}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Printer</name>
+			<version>1.0.1</version>
+			<datetime>Sep 15 2020 12:01:45</datetime>
+			<uuid>{bc86c222-d5d2-4276-894c-c0a0e8d258d4}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Sensors</name>
+			<version>1.0.1</version>
+			<datetime>Aug 26 2020 20:21:08</datetime>
+			<uuid>{374B887B-7EF6-4593-B83E-0E07DDB38C99}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Generator</name>
+			<version>1.0.1</version>
+			<datetime>Sep 11 2020 14:51:09</datetime>
+			<uuid>{FFAA1236-f5d2-2076-104c-c0a0e8dcf001}</uuid>
+		</item>
+		<item type="plugin">
+			<name>DbusGUI</name>
+			<version>0.0.1</version>
+			<datetime>Nov 25 2020 13:35:08</datetime>
+			<uuid>{E87E3CB8-8543-4F55-B847-12E4C61FACE2}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Test Sequence</name>
+			<version>1.20.1</version>
+			<datetime>Jul  9 2021 17:00:55</datetime>
+			<uuid>{E66FADE5-021C-4335-886C-FCA567AFADC2}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Tester</name>
+			<version>1.0.1</version>
+			<datetime>Dec 16 2020 12:00:55</datetime>
+			<uuid>{44941DAC-D5D1-4a7d-9825-5EF6EDC5921B}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Database</name>
+			<version>0.0.2</version>
+			<datetime>Sep  7 2020 17:36:32</datetime>
+			<uuid>{0CBEF382-AEDE-40a3-92EF-2B24D432A4CD}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Dielectrimeter</name>
+			<version>1.0.1</version>
+			<datetime>Sep  8 2020 17:29:39</datetime>
+			<uuid>{FFAA1236-f5d2-2076-104c-c0a0e8dea64f}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Traca</name>
+			<version>1.0.1</version>
+			<datetime>Nov  3 2020 22:54:22</datetime>
+			<uuid>{E87E3CB8-8543-4F55-B847-12E4C61CF234}</uuid>
+		</item>
+		<item type="module">
+			<name>Log Module</name>
+			<version>1.0</version>
+			<datetime>Jan 30 2009 12:06:11</datetime>
+			<uuid>{DA88E676-2589-4fa2-A31B-2875D6F2CB8D}</uuid>
+		</item>
+		<item type="module">
+			<name>Powers Module</name>
+			<version>1.0</version>
+			<datetime>Sep 24 2020 18:45:04</datetime>
+			<uuid>{28040E54-784A-4f00-8CDF-A986AB7CAF71}</uuid>
+		</item>
+		<item type="module">
+			<name>Printers Module</name>
+			<version>1.0</version>
+			<datetime>Sep 15 2020 12:01:10</datetime>
+			<uuid>{28040E54-784A-4f00-8CDF-A986AB747298}</uuid>
+		</item>
+		<item type="module">
+			<name>Sensor Module</name>
+			<version>1.0</version>
+			<datetime>Dec 22 2020 15:21:28</datetime>
+			<uuid>{A65AEFCA-1600-4be0-AD11-7CA998CE5584}</uuid>
+		</item>
+		<item type="module">
+			<name>Tracas Module</name>
+			<version>1.0</version>
+			<datetime>Feb  5 2021 12:29:54</datetime>
+			<uuid>{76298370-062d-11dd-bd0b-0800200bf002}</uuid>
+		</item>
+		<item type="module">
+			<name>User login module</name>
+			<version>1.0</version>
+			<datetime>Jan 30 2009 12:07:17</datetime>
+			<uuid>{BFEA696D-4372-4c08-AFFA-A269369BA40E}</uuid>
+		</item>
+		<item type="module">
+			<name>Generators Module</name>
+			<version>1.0</version>
+			<datetime>Sep 11 2020 14:50:17</datetime>
+			<uuid>{28040E54-784A-4f00-8CDF-A986AB7BF001}</uuid>
+		</item>
+		<item type="module">
+			<name>DBUS Module</name>
+			<version>1.0</version>
+			<datetime>Oct 18 2020 12:32:35</datetime>
+			<uuid>{0209bd7a-473a-11dc-8314-0800200FA02B}</uuid>
+		</item>
+		<item type="module">
+			<name>Dielectrimeters Module</name>
+			<version>1.0</version>
+			<datetime>Sep  8 2020 11:59:40</datetime>
+			<uuid>{28040E54-784A-4f00-8CDF-A986AB7BA23C}</uuid>
+		</item>
+		<item type="module">
+			<name>Database module</name>
+			<version>2.1</version>
+			<datetime>Nov 24 2020 12:01:14</datetime>
+			<uuid>{913C9769-8D32-496f-9900-546814DDC355}</uuid>
+		</item>
+		<item type="module">
+			<name>Tester Module</name>
+			<version>1.0</version>
+			<datetime>Jun  4 2021 17:02:14</datetime>
+			<uuid>{F459741B-B526-4fb9-B65C-A4C983105321}</uuid>
+		</item>
+		<item type="module">
+			<name>Labels Module</name>
+			<version>1.3</version>
+			<datetime>Nov 24 2020 16:24:25</datetime>
+			<uuid>{626BFA10-D068-45ff-B497-E8F27B940EE9}</uuid>
+		</item>
+	</version></testseq>

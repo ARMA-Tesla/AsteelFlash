@@ -1,0 +1,256 @@
+[Workspace Header]
+Version = 1900
+Pathname = "/c/work/src/gui/info/info.cws"
+CVI Dir = "/c/program files (x86)/national instruments/cvi2019"
+CVI Shared Dir = "/C/Program Files (x86)/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2019"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/c/Program Files (x86)/IVI Foundation/IVI"
+IVI Standard Root 64-bit Dir = "/c/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files (x86)/IVI Foundation/VISA/winnt"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "info.prj"
+Drag Bar Left = 241
+Window Top = 66
+Window Left = 23
+Window Bottom = 454
+Window Right = 765
+Maximized = True
+Maximized Children = True
+Max32 Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win At Start = True
+Bring Up Err Win For Errors = False
+Save Changes Before Running = "Always"
+Save Changes Before Compiling = "Always"
+Hide Windows = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 5
+Window Confinement Region Enabled = True
+MainColumnWidth = 224
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+
+[Project Header 0001]
+Version = 1900
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Debug"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+
+[File 0001]
+Path = "/c/work/src/gui/info/info.c"
+File Type = "CSource"
+Disk Date = 3688919102
+In Projects = "1,"
+Source Window State = "1,49,49,49,84,84,84,0,0,0,0,0,0,0,0,0,25,0,49,84,401,714,1,0,"
+Breakpoint 0001 = "41,0,enabled,"
+Tracepoint 0001 = "0,0,42,1,"
+Breakpoint 0002 = "47,0,enabled,"
+Tracepoint 0002 = "0,0,48,1,"
+Window Top = 78
+Window Left = 31
+Window Z-Order = 1
+
+[File 0002]
+Path = "/c/work/src/gui/info/info.h"
+File Type = "Include"
+Disk Date = 3688715279
+In Projects = "1,"
+Source Window State = "1,9,9,9,18,18,18,0,0,0,0,0,0,0,0,0,0,0,9,18,401,714,1,0,"
+Window Top = 116
+Window Left = 51
+Window Z-Order = 5
+
+[File 0003]
+Path = "/c/work/src/shared/eventfactory/EventFactory.c"
+File Type = "CSource"
+Disk Date = 3581602296
+In Projects = ""
+Source Window State = "1,410,410,410,38,38,38,0,0,0,0,0,0,0,0,0,410,0,410,38,386,630,1,0,"
+Window Top = 32
+Window Left = 10
+Window Z-Order = 4
+
+[File 0004]
+Path = "/c/work/src/modules/automat/automat_fnc.c"
+File Type = "CSource"
+Disk Date = 3688918228
+In Projects = ""
+Source Window State = "1,802,802,802,92,97,92,0,3,0,0,0,0,0,0,0,788,0,802,97,400,600,1,0,"
+Window Top = 30
+Window Z-Order = 2
+
+[File 0005]
+Path = "/c/work/src/shared/eventfactory/eleventdata.c"
+File Type = "CSource"
+Disk Date = 3309320854
+In Projects = "1,"
+Source Window State = "1,65,65,65,55,55,55,0,0,0,0,0,0,0,0,0,40,0,65,55,401,630,1,0,"
+Window Top = 32
+Window Left = 10
+Window Z-Order = 3
+
+[File 0006]
+Path = "/c/work/src/shared/string/elstring.c"
+File Type = "CSource"
+Disk Date = 3613571278
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+Window Top = 299
+Window Left = 230
+
+[File 0007]
+Path = "/c/work/include/elstring.h"
+File Type = "Include"
+Disk Date = 3678686161
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0008]
+Path = "/c/work/src/shared/exception/Exception.c"
+File Type = "CSource"
+Disk Date = 3652346447
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0009]
+Path = "/c/work/src/gui/info/info.uir"
+File Type = "User Interface Resource"
+Disk Date = 3688715328
+In Projects = "1,"
+Window Top = 310
+Window Left = 122
+Window Height = 1041
+Window Width = 715
+Window Released = True
+
+[File 0010]
+Path = "/c/work/src/gui/info/info_plugin.h"
+File Type = "Include"
+Disk Date = 3309317288
+In Projects = "1,"
+Source Window State = "1,17,17,17,24,24,24,0,0,0,0,0,0,0,0,0,0,0,17,24,349,715,1,0,"
+Window Top = 38
+Window Left = 10
+
+[File 0011]
+Path = "/c/work/src/shared/language/language.c"
+File Type = "CSource"
+Disk Date = 3464156986
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,349,715,1,0,"
+Window Top = 212
+Window Left = 106
+
+[File 0012]
+Path = "/c/work/src/gui/info/trans_language.h"
+File Type = "Include"
+Disk Date = 3687509254
+In Projects = "1,"
+Source Window State = "1,13,13,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,0,193,715,1,0,"
+Window Top = 38
+Window Left = 10
+
+[Tab Order]
+Tab 0001 = "/c/work/src/gui/info/info.c"
+Tab 0002 = "/c/work/src/gui/info/info.h"
+Tab 0003 = "/c/work/src/shared/eventfactory/EventFactory.c"
+Tab 0004 = "/c/work/src/modules/automat/automat_fnc.c"
+Tab 0005 = "/c/work/src/shared/eventfactory/eleventdata.c"
+
+[Default Build Config 0001 Debug]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = "/c/application/application.exe"
+
+[Default Build Config 0001 Release]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Debug64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Build Dependencies 0001]
+Number of Dependencies = 0
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Profile = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[Execution Target 0001]
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[Command Line Args 0001]
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+

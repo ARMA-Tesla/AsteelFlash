@@ -1,0 +1,19 @@
+calendar.obj
+Exception.obj
+iso8601.obj
+lang_support.obj
+language.obj
+msxmldom.obj
+report.obj
+report_measurement.obj
+cvi.lib
+cviauto.lib
+cvistart.lib
+kernel32.lib
+uuid.lib
+user32.lib
+CVI_UP_Product_Dependencies_Private_Object
+CVI_PKG_Product_Dependencies_Private_Object
+EXE Symbol Module
+Exports Module
+Resource Module

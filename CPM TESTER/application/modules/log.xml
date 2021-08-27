@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="windows-1250" ?> 
+<configuration>
+<modules>
+	<module id="{DA88E676-2589-4fa2-A31B-2875D6F2CB8D}">
+		<name>Log module</name> 
+		<listener name='console01'>
+			<channel>ODBC</channel>
+			<enabled>TRUE</enabled>
+			<mask>1111111111</mask>
+			<output>CONSOLE</output>
+		</listener>
+	</module>
+</modules>
+</configuration>

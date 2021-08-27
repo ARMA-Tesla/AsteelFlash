@@ -1,0 +1,24 @@
+ #if !defined(__EA210_TEST_WS60_H__)
+#define __EA210_TEST_WS60_H__
+
+#include <test/test_panel.h>
+
+#if defined(__cplusplus)
+    extern "C" {
+#endif
+
+DEFINE_TESTSEQUENCE_FUNCTIONS(STATION_60);
+
+DEFINE_TEST_FUNCTIONS(EA210, 60_00);
+DEFINE_TEST_FUNCTIONS(EA210, 60_10);
+DEFINE_TEST_FUNCTIONS(EA210, 60_20);
+DEFINE_TEST_FUNCTIONS(EA210, 60_30);
+DEFINE_TEST_FUNCTIONS(EA210, 60_40);
+DEFINE_TEST_FUNCTIONS(EA210, 60_50);
+DEFINE_TEST_FUNCTIONS(EA210, 60_60);
+DEFINE_TEST_FUNCTIONS(EA210, 60_70);
+#if defined(__cplusplus)
+    } /* extern "C" */
+#endif
+
+#endif /* __EA210_TEST_WS50_H__ */

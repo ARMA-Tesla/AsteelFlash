@@ -1,0 +1,15 @@
+[NumeroJour]
+Class="Function"
+Prototype="int NumeroJour(int mois, int jours, int annee);"
+SourceLocation="c:\work\src\modules\labels\tester_labels.c:161:1"
+
+[labels_new]
+Class="Function"
+Prototype="struct _SElException *labels_new(struct _SLabelList **pLabel, const char *parameters);"
+SourceLocation="c:\work\src\modules\labels\tester_labels.c:192:1"
+
+[labels_delete]
+Class="Function"
+Prototype="struct _SElException *labels_delete(struct _SLabelList **pLabels);"
+SourceLocation="c:\work\src\modules\labels\tester_labels.c:210:1"
+

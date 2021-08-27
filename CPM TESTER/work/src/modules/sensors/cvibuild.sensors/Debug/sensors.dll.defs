@@ -1,0 +1,7 @@
+LIBRARY sensors
+
+EXPORTS
+UnloadElcomModule
+InitializeElcomModule
+LoadElcomModule
+GetModuleAttribute

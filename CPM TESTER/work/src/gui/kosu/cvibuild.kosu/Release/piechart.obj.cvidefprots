@@ -1,0 +1,10 @@
+[CreatePie]
+Class="Function"
+Prototype="int CreatePie(int hpanel, struct pieInfoStruct pieAttr, struct piePieceStruct piece, int legend);"
+SourceLocation="c:\work\src\gui\kosu\piechart.c:37:1"
+
+[GetArcPoints]
+Class="Function"
+Prototype="void GetArcPoints(struct Point *arcPoints);"
+SourceLocation="c:\work\src\gui\kosu\piechart.c:177:1"
+

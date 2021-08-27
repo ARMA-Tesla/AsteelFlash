@@ -1,0 +1,943 @@
+[Project Header]
+Version = 1000
+Pathname = "/c/work/src/modules/dbs/dbs_module.prj"
+Project Label = "module_dbs"
+CVI Dir = "/c/program files (x86)/national instruments/cvi2010"
+CVI Shared Dir = "/C/Program Files (x86)/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2010"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files (x86)/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files (x86)/IVI Foundation/VISA/winnt"
+IVI Standard Root 64-bit Dir = "/C/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Files = 46
+Target Type = "Dynamic Link Library"
+Flags = 16
+Copied From Locked InstrDrv Directory = False
+Copied from VXIPNP Directory = False
+Locked InstrDrv Name = ""
+Don't Display Deploy InstrDrv Dialog = False
+
+[File 0001]
+File Type = "CSource"
+Res Id = 1
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs.c"
+Path = "/c/work/src/modules/dbs/dbs.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0002]
+File Type = "Include"
+Res Id = 2
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs.h"
+Path = "/c/work/src/modules/dbs/dbs.h"
+Exclude = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0003]
+File Type = "Include"
+Res Id = 3
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_define.h"
+Path = "/c/work/src/modules/dbs/dbs_define.h"
+Exclude = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0004]
+File Type = "Include"
+Res Id = 4
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_define_local.h"
+Path = "/c/work/src/modules/dbs/dbs_define_local.h"
+Exclude = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0005]
+File Type = "CSource"
+Res Id = 5
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_export.c"
+Path = "/c/work/src/modules/dbs/dbs_export.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0006]
+File Type = "Include"
+Res Id = 6
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_export.h"
+Path = "/c/work/src/modules/dbs/dbs_export.h"
+Exclude = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0007]
+File Type = "CSource"
+Res Id = 7
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_kosu.c"
+Path = "/c/work/src/modules/dbs/dbs_kosu.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0008]
+File Type = "Include"
+Res Id = 8
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_kosu.h"
+Path = "/c/work/src/modules/dbs/dbs_kosu.h"
+Exclude = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0009]
+File Type = "CSource"
+Res Id = 9
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_lineexport.c"
+Path = "/c/work/src/modules/dbs/dbs_lineexport.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0010]
+File Type = "CSource"
+Res Id = 10
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_lineparam.c"
+Path = "/c/work/src/modules/dbs/dbs_lineparam.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0011]
+File Type = "CSource"
+Res Id = 11
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_lineprocess.c"
+Path = "/c/work/src/modules/dbs/dbs_lineprocess.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0012]
+File Type = "CSource"
+Res Id = 12
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_linestep.c"
+Path = "/c/work/src/modules/dbs/dbs_linestep.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0013]
+File Type = "CSource"
+Res Id = 13
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_masterlist.c"
+Path = "/c/work/src/modules/dbs/dbs_masterlist.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0014]
+File Type = "Include"
+Res Id = 14
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_masterlist.h"
+Path = "/c/work/src/modules/dbs/dbs_masterlist.h"
+Exclude = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0015]
+File Type = "CSource"
+Res Id = 15
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_module.c"
+Path = "/c/work/src/modules/dbs/dbs_module.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0016]
+File Type = "CSource"
+Res Id = 16
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_paramlist.c"
+Path = "/c/work/src/modules/dbs/dbs_paramlist.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0017]
+File Type = "Include"
+Res Id = 17
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_paramlist.h"
+Path = "/c/work/src/modules/dbs/dbs_paramlist.h"
+Exclude = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0018]
+File Type = "CSource"
+Res Id = 18
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_productlist.c"
+Path = "/c/work/src/modules/dbs/dbs_productlist.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0019]
+File Type = "Include"
+Res Id = 19
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_productlist.h"
+Path = "/c/work/src/modules/dbs/dbs_productlist.h"
+Exclude = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0020]
+File Type = "Include"
+Res Id = 20
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_schema.h"
+Path = "/c/work/src/modules/dbs/dbs_schema.h"
+Exclude = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0021]
+File Type = "CSource"
+Res Id = 21
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_storage.c"
+Path = "/c/work/src/modules/dbs/dbs_storage.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0022]
+File Type = "Include"
+Res Id = 22
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_storage.h"
+Path = "/c/work/src/modules/dbs/dbs_storage.h"
+Exclude = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0023]
+File Type = "CSource"
+Res Id = 23
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_testerlist.c"
+Path = "/c/work/src/modules/dbs/dbs_testerlist.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0024]
+File Type = "Include"
+Res Id = 24
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_testerlist.h"
+Path = "/c/work/src/modules/dbs/dbs_testerlist.h"
+Exclude = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0025]
+File Type = "CSource"
+Res Id = 25
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_testlist.c"
+Path = "/c/work/src/modules/dbs/dbs_testlist.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0026]
+File Type = "Include"
+Res Id = 26
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_testlist.h"
+Path = "/c/work/src/modules/dbs/dbs_testlist.h"
+Exclude = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0027]
+File Type = "CSource"
+Res Id = 27
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_testparamlist.c"
+Path = "/c/work/src/modules/dbs/dbs_testparamlist.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0028]
+File Type = "Include"
+Res Id = 28
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_testparamlist.h"
+Path = "/c/work/src/modules/dbs/dbs_testparamlist.h"
+Exclude = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0029]
+File Type = "CSource"
+Res Id = 29
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_userlist.c"
+Path = "/c/work/src/modules/dbs/dbs_userlist.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0030]
+File Type = "Include"
+Res Id = 30
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "dbs_userlist.h"
+Path = "/c/work/src/modules/dbs/dbs_userlist.h"
+Exclude = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0031]
+File Type = "CSource"
+Res Id = 31
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../../shared/eventfactory/eleventdata.c"
+Path = "/c/work/src/shared/eventfactory/eleventdata.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0032]
+File Type = "CSource"
+Res Id = 32
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../../shared/odbc/elodbc.c"
+Path = "/c/work/src/shared/odbc/elodbc.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0033]
+File Type = "CSource"
+Res Id = 33
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../../shared/string/elstring.c"
+Path = "/c/work/src/shared/string/elstring.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0034]
+File Type = "Library"
+Res Id = 34
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../../shared/odbc/eodbc.lib"
+Path = "/c/work/src/shared/odbc/eodbc.lib"
+Exclude = True
+Project Flags = 0
+Folder = "odbc"
+
+[File 0035]
+File Type = "CSource"
+Res Id = 35
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../../shared/exception/Exception.c"
+Path = "/c/work/src/shared/exception/Exception.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0036]
+File Type = "Include"
+Res Id = 36
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../../shared/exception/Exception.h"
+Path = "/c/work/src/shared/exception/Exception.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0037]
+File Type = "Include"
+Res Id = 37
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../../shared/guid.h"
+Path = "/c/work/src/shared/guid.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0038]
+File Type = "CSource"
+Res Id = 38
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "interval.c"
+Path = "/c/work/src/modules/dbs/interval.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0039]
+File Type = "Include"
+Res Id = 39
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "interval.h"
+Path = "/c/work/src/modules/dbs/interval.h"
+Exclude = False
+Project Flags = 0
+Folder = "dbs"
+
+[File 0040]
+File Type = "Include"
+Res Id = 40
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../../shared/modules/module.h"
+Path = "/c/work/src/shared/modules/module.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0041]
+File Type = "Include"
+Res Id = 41
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../../shared/msxml/MSXML2.h"
+Path = "/c/work/src/shared/msxml/MSXML2.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0042]
+File Type = "Function Panel"
+Res Id = 42
+Path Is Rel = True
+Path Rel To = "CVI"
+Path Rel To Override = "CVI"
+Path Rel Path = "toolslib/toolbox/msxmldom.fp"
+Path = "/c/program files (x86)/national instruments/cvi2010/toolslib/toolbox/msxmldom.fp"
+Exclude = False
+Project Flags = 0
+Folder = "Instrument Files"
+
+[File 0043]
+File Type = "Include"
+Res Id = 43
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../../shared/cvitool/msxmldom2.h"
+Path = "/c/work/src/shared/cvitool/msxmldom2.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0044]
+File Type = "CSource"
+Res Id = 44
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../../shared/multithread/multithread.c"
+Path = "/c/work/src/shared/multithread/multithread.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0045]
+File Type = "CSource"
+Res Id = 45
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../../shared/objlist/objlist.c"
+Path = "/c/work/src/shared/objlist/objlist.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0046]
+File Type = "Library"
+Res Id = 46
+Path Is Rel = True
+Path Rel To = "CVI"
+Path Rel To Override = "CVI"
+Path Rel Path = "sdk/lib/msvc/odbc32.lib"
+Path = "/c/program files (x86)/national instruments/cvi2010/sdk/lib/msvc/odbc32.lib"
+Exclude = False
+Project Flags = 0
+Folder = "odbc"
+
+[Folders]
+User Interface Files Folder Not Added Yet = True
+Folder 0 = "Source Files"
+Folder 1 = "Include Files"
+Folder 2 = "odbc"
+Folder 3 = "dbs"
+Folder 4 = "Instrument Files"
+
+[Custom Build Configs]
+Num Custom Build Configs = 0
+
+[Default Build Config Debug]
+Config Name = "Debug"
+Is 64-Bit = False
+Is Release = False
+Default Calling Convention = "cdecl"
+Uninitialized Locals Compile Warning = "Conservative"
+Require Prototypes = True
+Require Return Values = True
+Enable Pointer Mismatch Warning = False
+Enable Unreachable Code Warning = False
+Enable Unreferenced Identifiers Warning = False
+Enable Assignment In Conditional Warning = False
+Enable C99 Extensions = False
+Stack Size = 100000
+Image Base Address = 4194304
+Image Base Address x64 = 4194304
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+Sign = False
+Sign Store = ""
+Sign Certificate = ""
+Sign Timestamp URL = ""
+Sign URL = ""
+Manifest Embed = False
+Icon File Is Rel = False
+Icon File = ""
+Application Title = ""
+DLL Import Library Choice = "Gen Libs For All Compilers"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Generate Source Documentation = "None"
+Runtime Support = "Full Runtime Support"
+Embed Project .UIRs = False
+Generate Map File = False
+Create Console Application = False
+Using LoadExternalModule = False
+DLL Exports = "Include File Symbols"
+Export File1 = "guid.h"
+Export File2 = "module.h"
+Register ActiveX Server = False
+Numeric File Version = "2,1,0,0"
+Numeric Prod Version = "2,1,0,0"
+Comments = ""
+Comments Ex = ""
+Company Name = ""
+Company Name Ex = "%company"
+File Description = "dbs (Debug x86)"
+File Description Ex = "%application (%rel_dbg %arch)"
+File Version = "2.1"
+File Version Ex = "%f1.%f2"
+Internal Name = "dbs"
+Internal Name Ex = "%basename"
+Legal Copyright = "Copyright ©  2019"
+Legal Copyright Ex = "Copyright © %company %Y"
+Legal Trademarks = ""
+Legal Trademarks Ex = ""
+Original Filename = "dbs.dll"
+Original Filename Ex = "%filename"
+Private Build = ""
+Private Build Ex = ""
+Product Name = " dbs"
+Product Name Ex = "%company %application"
+Product Version = "2.1"
+Product Version Ex = "%p1.%p2"
+Special Build = ""
+Special Build Ex = ""
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+TLB Help Style = "HLP"
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+
+[Default Build Config Release]
+Config Name = "Release"
+Is 64-Bit = False
+Is Release = True
+Default Calling Convention = "cdecl"
+Uninitialized Locals Compile Warning = "Conservative"
+Require Prototypes = True
+Require Return Values = True
+Enable Pointer Mismatch Warning = False
+Enable Unreachable Code Warning = False
+Enable Unreferenced Identifiers Warning = False
+Enable Assignment In Conditional Warning = False
+Enable C99 Extensions = False
+Stack Size = 100000
+Image Base Address = 4194304
+Image Base Address x64 = 4194304
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+Sign = False
+Sign Store = ""
+Sign Certificate = ""
+Sign Timestamp URL = ""
+Sign URL = ""
+Manifest Embed = False
+Icon File Is Rel = False
+Icon File = ""
+Application Title = ""
+DLL Import Library Choice = "Gen Libs For All Compilers"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Generate Source Documentation = "None"
+Runtime Support = "Full Runtime Support"
+Embed Project .UIRs = False
+Generate Map File = False
+Create Console Application = False
+Using LoadExternalModule = False
+DLL Exports = "Include File Symbols"
+Export File1 = "guid.h"
+Export File2 = "module.h"
+Register ActiveX Server = False
+Numeric File Version = "1,0,0,0"
+Numeric Prod Version = "1,0,0,0"
+Comments = ""
+Comments Ex = ""
+Company Name = ""
+Company Name Ex = "%company"
+File Description = "dbs (Release x86)"
+File Description Ex = "%application (%rel_dbg %arch)"
+File Version = "1.0"
+File Version Ex = "%f1.%f2"
+Internal Name = "dbs"
+Internal Name Ex = "%basename"
+Legal Copyright = "Copyright ©  2019"
+Legal Copyright Ex = "Copyright © %company %Y"
+Legal Trademarks = ""
+Legal Trademarks Ex = ""
+Original Filename = "dbs.dll"
+Original Filename Ex = "%filename"
+Private Build = ""
+Private Build Ex = ""
+Product Name = " dbs"
+Product Name Ex = "%company %application"
+Product Version = "1.0"
+Product Version Ex = "%p1.%p2"
+Special Build = ""
+Special Build Ex = ""
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+TLB Help Style = "HLP"
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+
+[Default Build Config Debug64]
+Config Name = "Debug64"
+Is 64-Bit = True
+Is Release = False
+Default Calling Convention = "cdecl"
+Uninitialized Locals Compile Warning = "Conservative"
+Require Prototypes = True
+Require Return Values = True
+Enable Pointer Mismatch Warning = False
+Enable Unreachable Code Warning = False
+Enable Unreferenced Identifiers Warning = False
+Enable Assignment In Conditional Warning = False
+Enable C99 Extensions = False
+Stack Size = 100000
+Image Base Address = 4194304
+Image Base Address x64 = 4194304
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+Sign = False
+Sign Store = ""
+Sign Certificate = ""
+Sign Timestamp URL = ""
+Sign URL = ""
+Manifest Embed = False
+Icon File Is Rel = False
+Icon File = ""
+Application Title = ""
+DLL Import Library Choice = "Gen Libs For All Compilers"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Generate Source Documentation = "None"
+Runtime Support = "Full Runtime Support"
+Embed Project .UIRs = False
+Generate Map File = False
+Create Console Application = False
+Using LoadExternalModule = False
+DLL Exports = "Include File Symbols"
+Export File1 = "module.h"
+Register ActiveX Server = False
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+TLB Help Style = "HLP"
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+
+[Default Build Config Release64]
+Config Name = "Release64"
+Is 64-Bit = True
+Is Release = True
+Default Calling Convention = "cdecl"
+Uninitialized Locals Compile Warning = "Conservative"
+Require Prototypes = True
+Require Return Values = True
+Enable Pointer Mismatch Warning = False
+Enable Unreachable Code Warning = False
+Enable Unreferenced Identifiers Warning = False
+Enable Assignment In Conditional Warning = False
+Enable C99 Extensions = False
+Stack Size = 100000
+Image Base Address = 4194304
+Image Base Address x64 = 4194304
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+Sign = False
+Sign Store = ""
+Sign Certificate = ""
+Sign Timestamp URL = ""
+Sign URL = ""
+Manifest Embed = False
+Icon File Is Rel = False
+Icon File = ""
+Application Title = ""
+DLL Import Library Choice = "Gen Libs For All Compilers"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Generate Source Documentation = "None"
+Runtime Support = "Full Runtime Support"
+Embed Project .UIRs = False
+Generate Map File = False
+Create Console Application = False
+Using LoadExternalModule = False
+DLL Exports = "Include File Symbols"
+Export File1 = "module.h"
+Register ActiveX Server = False
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+TLB Help Style = "HLP"
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+
+[Compiler Options]
+Default Calling Convention = "cdecl"
+Require Prototypes = True
+Require Return Values = True
+Enable Pointer Mismatch Warning = False
+Enable Unreachable Code Warning = False
+Enable Unreferenced Identifiers Warning = False
+Enable Assignment In Conditional Warning = False
+O Option Compatible With 5.0 = False
+Enable C99 Extensions = False
+Uninitialized Locals Compile Warning = "Conservative"
+Precompile Prefix Header = False
+Prefix Header File = ""
+
+[Run Options]
+Stack Size = 100000
+Image Base Address = 4194304
+Image Base Address x64 = 4194304
+
+[Compiler Defines]
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+
+[Include Paths]
+Include Path 1 Is Rel = False
+Include Path 1 = "/c/work/src/modules"
+Include Path 2 Is Rel = False
+Include Path 2 = "/c/work/src/shared"
+Include Path 3 Is Rel = False
+Include Path 3 = "/c/work/include"
+Include Path 4 Is Rel = False
+Include Path 4 = "/c/work/src/shared/cvitool"
+
+[Create Executable]
+Executable File_Debug Is Rel = False
+Executable File_Debug = "/c/application/modules/dbs.dll"
+Executable File_Release Is Rel = False
+Executable File_Release = "/c/application/modules/dbs.dll"
+Executable File_Debug64 Is Rel = True
+Executable File_Debug64 Rel To = "Project"
+Executable File_Debug64 Rel Path = "dbs_module.dll"
+Executable File_Debug64 = "/c/work/src/modules/dbs/dbs_module.dll"
+Executable File_Release64 Is Rel = True
+Executable File_Release64 Rel To = "Project"
+Executable File_Release64 Rel Path = "dbs_module.dll"
+Executable File_Release64 = "/c/work/src/modules/dbs/dbs_module.dll"
+Icon File Is Rel = False
+Icon File = ""
+Application Title = ""
+Numeric File Version = "1,0,0,0"
+Numeric Prod Version = "1,0,0,0"
+Comments = ""
+Comments Ex = ""
+Company Name = ""
+Company Name Ex = "%company"
+File Description = "dbs (Release x86)"
+File Description Ex = "%application (%rel_dbg %arch)"
+File Version = "1.0"
+File Version Ex = "%f1.%f2"
+Internal Name = "dbs"
+Internal Name Ex = "%basename"
+Legal Copyright = "Copyright ©  2019"
+Legal Copyright Ex = "Copyright © %company %Y"
+Legal Trademarks = ""
+Legal Trademarks Ex = ""
+Original Filename = "dbs.dll"
+Original Filename Ex = "%filename"
+Private Build = ""
+Private Build Ex = ""
+Product Name = " dbs"
+Product Name Ex = "%company %application"
+Product Version = "1.0"
+Product Version Ex = "%p1.%p2"
+Special Build = ""
+Special Build Ex = ""
+DLL Exports = "Include File Symbols"
+Export File1 = "guid.h"
+Export File2 = "module.h"
+DLL Import Library Choice = "Gen Libs For All Compilers"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Generate Source Documentation = "None"
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+TLB Help Style = "HLP"
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+Type Lib Guid = ""
+Runtime Support = "Full Runtime Support"
+Instrument Driver Support Only = False
+Embed Project .UIRs = False
+Generate Map File = False
+
+[External Compiler Support]
+UIR Callbacks File Option = 0
+Using LoadExternalModule = False
+Create Project Symbols File = True
+UIR Callbacks Obj File Is Rel = False
+UIR Callbacks Obj File = ""
+Project Symbols H File Is Rel = False
+Project Symbols H File = ""
+Project Symbols Obj File Is Rel = False
+Project Symbols Obj File = ""
+
+[ActiveX Server Options]
+Specification File Is Rel = False
+Specification File = ""
+Source File Is Rel = False
+Source File = ""
+Include File Is Rel = False
+Include File = ""
+IDL File Is Rel = False
+IDL File = ""
+Register ActiveX Server = False
+
+[Signing Info]
+Sign = False
+Sign Debug Build = False
+Store = ""
+Certificate = ""
+Timestamp URL = ""
+URL = ""
+
+[Manifest Info]
+Embed = False
+
+[tpcSection]
+tpcEnabled = 0
+tpcOverrideEnvironment = 0
+tpcEnabled x64 = 0
+tpcOverrideEnvironment x64 = 0
+

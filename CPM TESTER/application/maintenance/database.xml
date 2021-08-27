@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<configuration>
+    <plugins>
+        <plugin id="{0CBEF382-AEDE-40a3-92EF-2B24D432A4CD}">
+          <name>Database Editor</name>
+          <io_file>/maintenance/VALEO_B2YY_IO.xml</io_file>
+          <!-- List of all existing line sequence steps -->
+          <!-- (serves as definition of new sequence steps) --> 
+          <steps>
+          	<!-- Leave the NOP operation as first element -->
+          	<step fn="tool" name="" desc=""/>
+          </steps>
+        </plugin>
+    </plugins>
+</configuration>

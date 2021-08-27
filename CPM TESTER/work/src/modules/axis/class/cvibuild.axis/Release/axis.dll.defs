@@ -1,0 +1,11 @@
+LIBRARY axis
+
+EXPORTS
+axis_delete
+axis_new
+axiss_delete
+axiss_new
+UnloadElcomModule
+InitializeElcomModule
+LoadElcomModule
+GetModuleAttribute

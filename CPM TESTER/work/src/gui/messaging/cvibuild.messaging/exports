@@ -1,0 +1,30 @@
+[_PLUGIN_SHUTDOWN_NAME_CODE]
+callConv = 102
+name = PLUGIN_SHUTDOWN_NAME_CODE
+paramSize = 4
+
+[_pluginGetAttribute]
+callConv = 102
+name = pluginGetAttribute
+paramSize = 12
+
+[_pluginGetInfo]
+callConv = 102
+name = pluginGetInfo
+paramSize = 4
+
+[_pluginInitialize]
+callConv = 102
+name = pluginInitialize
+paramSize = 4
+
+[_pluginLeave]
+callConv = 102
+name = pluginLeave
+paramSize = 8
+
+[_pluginRun]
+callConv = 102
+name = pluginRun
+paramSize = 8
+

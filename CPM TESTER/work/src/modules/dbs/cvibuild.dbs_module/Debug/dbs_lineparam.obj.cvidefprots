@@ -1,0 +1,15 @@
+[dbslineparamlist_new]
+Class="Function"
+Prototype="struct _SElException *dbslineparamlist_new(struct _SDBSLineParamList **pDBSLineParamListPtr, void *pDBS);"
+SourceLocation="c:\work\src\modules\dbs\dbs_lineparam.c:24:1"
+
+[dbslineparamlist_delete]
+Class="Function"
+Prototype="struct _SElException *dbslineparamlist_delete(struct _SDBSLineParamList **pDBSLineParamListPtr);"
+SourceLocation="c:\work\src\modules\dbs\dbs_lineparam.c:52:1"
+
+[compare_LineParam]
+Class="Function"
+Prototype="int compare_LineParam(const void *a, const void *b);"
+SourceLocation="c:\work\src\modules\dbs\dbs_lineparam.c:225:1"
+

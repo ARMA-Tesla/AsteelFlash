@@ -1,0 +1,77 @@
+-nologo
+-out:c:\work\src\modules\automat\cvibuild.automat\Debug\automat.dll
+-def:c:\work\src\modules\automat\cvibuild.automat\Debug\automat.dll.defs
+-implib:c:\work\src\modules\automat\cvibuild.automat\Debug\automat.lib
+-ignoreexports
+-dependenciesMapFile:c:\work\src\modules\automat\cvibuild.automat\Debug\dependencies.lnk.in
+-embedSourceInfo
+-indefprot:c:\work\src\modules\automat\cvibuild.automat\Debug\automat.obj.cvidefprots
+-indefprot:c:\work\src\modules\automat\cvibuild.automat\Debug\automat_fnc.obj.cvidefprots
+-indefprot:c:\work\src\modules\automat\cvibuild.automat\Debug\eleventdata.obj.cvidefprots
+-indefprot:c:\work\src\modules\automat\cvibuild.automat\Debug\elstring.obj.cvidefprots
+-indefprot:c:\work\src\modules\automat\cvibuild.automat\Debug\eltest.obj.cvidefprots
+-indefprot:c:\work\src\modules\automat\cvibuild.automat\Debug\Exception.obj.cvidefprots
+-indefprot:c:\work\src\modules\automat\cvibuild.automat\Debug\language.obj.cvidefprots
+-indefprot:c:\work\src\modules\automat\cvibuild.automat\Debug\Log_Asteel.obj.cvidefprots
+-indefprot:c:\work\src\modules\automat\cvibuild.automat\Debug\multithread.obj.cvidefprots
+-indefprot:c:\work\src\modules\automat\cvibuild.automat\Debug\testseq.obj.cvidefprots
+-arch:x86
+-timestamp
+-debug:1
+-project:c:\work\src\modules\automat\automat.prj
+-res:c:\work\src\modules\automat\cvibuild.automat\Debug\resources.res
+-entry:_CVIDllMainStartupCodeForDebugging@12
+-base:0x10000000
+-linked:c:\work\src\modules\automat\cvibuild.automat\Debug\linkersummary.txt
+-dlldeps:c:\work\src\modules\automat\cvibuild.automat\Debug\dlldependencies.txt
+-licensing:c:\work\src\modules\automat\cvibuild.automat\Debug\linkerlicensing.txt
+-browsedeps:c:\work\src\modules\automat\cvibuild.automat\Debug\moduledependencies.txt
+-stackreserve:231072
+-stackcommit:409600
+-in:c:\work\src\modules\automat\cvibuild.automat\Debug\automat.obj
+-in:c:\work\src\modules\automat\cvibuild.automat\Debug\automat_fnc.obj
+-in:c:\work\src\modules\automat\cvibuild.automat\Debug\eleventdata.obj
+-in:c:\work\src\modules\automat\cvibuild.automat\Debug\elstring.obj
+-in:c:\work\src\modules\automat\cvibuild.automat\Debug\eltest.obj
+-in:c:\work\src\modules\automat\cvibuild.automat\Debug\Exception.obj
+-in:c:\work\src\modules\automat\cvibuild.automat\Debug\language.obj
+-in:c:\work\src\modules\automat\cvibuild.automat\Debug\Log_Asteel.obj
+-in:c:\work\src\modules\automat\cvibuild.automat\Debug\multithread.obj
+-in:c:\work\src\modules\automat\cvibuild.automat\Debug\testseq.obj
+-more:c:\program files (x86)\national instruments\cvi2019\bin\msvc\cvistart.lib
+-more:c:\program files (x86)\national instruments\cvi2019\bin\msvc\cvi.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\advanlys.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\advapi32.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\toolslib\toolbox\msvc\asynctmr.obj
+-more:c:\Program Files\IVI Foundation\IVI\Drivers\BK 9801\msvc\bp98xx.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\bufferoverflowu.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\cvi_db.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\cviauto.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\cvidotnet.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\cvinetstreams.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\cvinetv.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\cvintwrk.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\cvitdms.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\gdi32.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\gpib.lib
+-more:c:\Program Files (x86)\IVI Foundation\IVI\Lib\msc\hpe364xa.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\toolslib\custctrl\msvc\ImageControl.obj
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\ivi.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\kernel32.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\toolslib\toolbox\msvc\msxmldom.obj
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\NIDAQmx.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\niimaq.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\niimaqdx.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nise.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\niseCfg.obj
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nisyscfg.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nivision.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\nivxi.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nixnet.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\omp.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\pid.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\toolslib\toolbox\msvc\toolbox.obj
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\user32.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\uuid.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\visa.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\winmm.lib

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<configuration>
+    <plugins>
+        <plugin id="{AE2FAC8A-ABAC-4b1c-AA84-669809AB76EB}">
+          <name>Login Plugin</name>
+          <parameters>
+             <parameter name="password_required">true</parameter>
+             <parameter name="user_required">false</parameter>
+          </parameters>
+        </plugin>
+    </plugins>
+</configuration>

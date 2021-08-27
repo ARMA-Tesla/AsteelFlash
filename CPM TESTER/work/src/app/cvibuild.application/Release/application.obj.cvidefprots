@@ -1,0 +1,35 @@
+[WinMain]
+Class="Function"
+Prototype="int WinMain(struct HINSTANCE__ *hInstance, struct HINSTANCE__ *hPrevInstance, char *lpszCmdLine, int nCmdShow);"
+SourceLocation="c:\work\src\app\application.c:37:1"
+
+[OnAppPanel]
+Class="Function"
+Prototype="int OnAppPanel(int panel, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\app\application.c:199:1"
+
+[QuitUserInterfaceCallback]
+Class="Function"
+Prototype="void QuitUserInterfaceCallback(void *callbackData);"
+SourceLocation="c:\work\src\app\application.c:322:1"
+
+[MenuQuitCallback]
+Class="Function"
+Prototype="struct _SElException *MenuQuitCallback(const char *eventName, void *pData);"
+SourceLocation="c:\work\src\app\application.c:340:1"
+
+[OnInfoExit]
+Class="Function"
+Prototype="int OnInfoExit(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\app\application.c:616:1"
+
+[PluginRunPostDeferred]
+Class="Function"
+Prototype="void PluginRunPostDeferred(void *callbackData);"
+SourceLocation="c:\work\src\app\application.c:674:1"
+
+[PluginLeavePostDeferred]
+Class="Function"
+Prototype="void PluginLeavePostDeferred(void *callbackData);"
+SourceLocation="c:\work\src\app\application.c:723:1"
+

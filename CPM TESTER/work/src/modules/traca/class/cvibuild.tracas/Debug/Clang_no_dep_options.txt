@@ -1,0 +1,1 @@
+-force-include-file "Exception.c";"c:\work\src\shared\exception\Exception.c" -force-include-file "module.h";"c:\work\src\shared\modules\module.h" -force-include-file "tracas.c";"c:\work\src\modules\traca\class\tracas.c" -force-include-file "tracas.h";"c:\work\src\modules\traca\class\tracas.h" -force-include-file "tracas_module.c";"c:\work\src\modules\traca\class\tracas_module.c" 

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<configuration>
+    <modules>
+        <module id="{38df6b01-a68e-4218-bc6c-85184c340cbc}">
+            <name>SAP Converter Module</name>
+	    <enabled>true</enabled>
+            <reader>
+		<protocol>RS232</protocol>
+                <port>COM2</port>
+            </reader>
+            <converter>
+                <port>COM9</port>
+            </converter>
+	      <barcode>
+                <!-- Pattern for box declaration
+			S102585718
+		  -->
+                <pattern>^S</pattern>
+                <conversion></conversion>
+            </barcode>      
+            <barcode>
+                <!-- Pattern for B2YY EATC
+			69890001200809110087
+			69890002200809110087
+		  -->
+                <pattern>^6989000[1|2]</pattern>
+                <conversion>P[0-7,14-19]</conversion>
+            </barcode>
+        </module>
+    </modules>
+</configuration>

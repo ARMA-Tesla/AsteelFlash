@@ -1,0 +1,1 @@
+msgfmt.exe -o panel.mo panel.pot

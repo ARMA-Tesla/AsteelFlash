@@ -1,0 +1,14 @@
+-inrc c:\work\src\gui\tester\cvibuild.tester_gui\Debug\resources.in.rc
+-outrc c:\work\src\gui\tester\cvibuild.tester_gui\Debug\resources.out.rc
+-inhdef c:\work\src\gui\tester\cvibuild.tester_gui\Debug\tester_gui.h.hdefs
+-inhdef c:\work\src\gui\tester\cvibuild.tester_gui\Debug\tester_gui_plugin.h.hdefs
+-outdef c:\work\src\gui\tester\cvibuild.tester_gui\Debug\tester_gui.dll.defs
+-indefprot c:\work\src\gui\tester\cvibuild.tester_gui\Debug\eleventdata.obj.cvidefprots
+-indefprot c:\work\src\gui\tester\cvibuild.tester_gui\Debug\elstring.obj.cvidefprots
+-indefprot c:\work\src\gui\tester\cvibuild.tester_gui\Debug\Exception.obj.cvidefprots
+-indefprot c:\work\src\gui\tester\cvibuild.tester_gui\Debug\language.obj.cvidefprots
+-indefprot c:\work\src\gui\tester\cvibuild.tester_gui\Debug\multithread.obj.cvidefprots
+-indefprot c:\work\src\gui\tester\cvibuild.tester_gui\Debug\tester_gui.obj.cvidefprots
+-indefprot c:\work\src\gui\tester\cvibuild.tester_gui\Debug\bklib2.obj.cvidefprots
+-dllName tester_gui.dll
+-addNITypeInfo 

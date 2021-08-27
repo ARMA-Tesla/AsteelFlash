@@ -1,0 +1,30 @@
+[SaveGraphPNG]
+Class="Function"
+Prototype="void SaveGraphPNG(int PanelHandle, int ControleHandle, char *PathNamePNG);"
+SourceLocation="c:\work\src\modules\test\EA210\EA210_utils.c:33:1"
+
+[GetNewSerial]
+Class="Function"
+Prototype="struct _SElException *GetNewSerial(struct _SDBS *pdbs, int *counter);"
+SourceLocation="c:\work\src\modules\test\EA210\EA210_utils.c:46:1"
+
+[Write_Traca_MMS_NOK]
+Class="Function"
+Prototype="int Write_Traca_MMS_NOK(int Station, struct _STestParam *pTestParam);"
+SourceLocation="c:\work\src\modules\test\EA210\EA210_utils.c:68:1"
+
+[CheckAxisPosition]
+Class="Function"
+Prototype="struct _SElException *CheckAxisPosition(struct _axis *paxis, int axis, double position, double timeout);"
+SourceLocation="c:\work\src\modules\test\EA210\EA210_utils.c:84:1"
+
+[MoveAxis]
+Class="Function"
+Prototype="struct _SElException *MoveAxis(struct _axis *paxis, int axis, double target_position, double speed);"
+SourceLocation="c:\work\src\modules\test\EA210\EA210_utils.c:109:1"
+
+[CheckDirectory]
+Class="Function"
+Prototype="struct _SElException *CheckDirectory(const char *directory);"
+SourceLocation="c:\work\src\modules\test\EA210\EA210_utils.c:146:1"
+

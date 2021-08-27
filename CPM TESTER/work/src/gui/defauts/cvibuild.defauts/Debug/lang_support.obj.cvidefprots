@@ -1,0 +1,30 @@
+[language_new]
+Class="Function"
+Prototype="struct _SElException *language_new(struct _SLanguage **pLanguage);"
+SourceLocation="c:\work\src\modules\language\lang_support.c:12:1"
+
+[language_delete]
+Class="Function"
+Prototype="struct _SElException *language_delete(struct _SLanguage **pLanguage);"
+SourceLocation="c:\work\src\modules\language\lang_support.c:51:1"
+
+[planguageGettext]
+Class="Function"
+Prototype="char *planguageGettext(struct _SLanguage *me, const char *msgid);"
+SourceLocation="c:\work\src\modules\language\lang_support.c:72:1"
+
+[planguageDgettext]
+Class="Function"
+Prototype="char *planguageDgettext(struct _SLanguage *me, const char *domainname, const char *msgid);"
+SourceLocation="c:\work\src\modules\language\lang_support.c:77:1"
+
+[planguageTextdomain]
+Class="Function"
+Prototype="char *planguageTextdomain(struct _SLanguage *me, const char *domainname);"
+SourceLocation="c:\work\src\modules\language\lang_support.c:83:1"
+
+[planguageBindtextdomain]
+Class="Function"
+Prototype="char *planguageBindtextdomain(struct _SLanguage *me, const char *domainname, const char *dirname);"
+SourceLocation="c:\work\src\modules\language\lang_support.c:88:1"
+

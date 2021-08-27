@@ -1,0 +1,91 @@
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Production"
+msgstr "Production"
+
+msgid "Quality"
+msgstr "Qualité"
+
+msgid "Expertise"
+msgstr "Expertise"
+
+msgid "Maintenance"
+msgstr "Maintenance"
+
+msgid "Documentation"
+msgstr "Documents"
+
+msgid "Statistic"
+msgstr "Statistiques"
+
+msgid "Shift Change"
+msgstr "Changement d'Equipe"
+
+msgid "Product Selection"
+msgstr "Sélection du Produit"
+
+msgid "Test Report"
+msgstr "Rapport du Test"
+
+msgid "LogIn/Out User"
+msgstr "Connexion/Déconnexion"
+
+msgid "Quit"
+msgstr "Quitter"
+
+msgid "Shift 1"
+msgstr "Equipe 1"
+
+msgid "Shift 2"
+msgstr "Equipe 2"
+
+msgid "Shift 3"
+msgstr "Equipe 3"
+
+msgid "Back"
+msgstr "Retour"
+
+msgid "Release"
+msgstr "Libérer"
+
+msgid "Retest"
+msgstr "Re-tester"
+
+msgid "Master"
+msgstr "Maître"
+
+msgid "Sequence"
+msgstr "Séquence"
+
+msgid "Step"
+msgstr "Etape"
+
+msgid "Go Mode"
+msgstr "Mode Go"
+
+msgid "RnR Study"
+msgstr "Etude RnR"
+
+msgid "Create"
+msgstr "Créer"
+
+msgid "Database"
+msgstr "Base de Données"
+
+msgid "Products"
+msgstr "Produits"
+
+msgid "Users"
+msgstr "Utilisateurs"
+
+msgid "History"
+msgstr "Historique"
+
+msgid "Panel"
+msgstr "Panneau de contrôle"
+
+
+msgid "Vision"
+msgstr "Image"
+

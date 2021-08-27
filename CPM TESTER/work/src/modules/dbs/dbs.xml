@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<configuration>
+    <modules>
+        <module id="{913C9769-8D32-496f-9900-546814DDC355}">
+            <name>Database Module</name>
+            <odbc>valeo_local</odbc>
+            <user>valeo</user>
+            <password>valeo</password>
+            <tester_id>1</tester_id>
+             
+            <kosu>
+                <pauses>
+                    <pause time="9:00" length="5"/> 
+                    <pause time="10:00" length="10"/>      
+                    <pause time="11:30" length="30"/>      
+                    <pause time="16:00" length="5"/>      
+                    <pause time="17:30" length="30"/>           
+                    <pause time="19:00" length="10"/>
+                </pauses>
+                <shifts>
+                    <end time="14:00" />
+                    <end time="22:00" />
+                    <end time="06:00" />
+                </shifts>
+                <operators>
+                   <operator count="1">
+                       <kosu time="60"/>
+                       <alarm1 time="70"/>
+                       <alarm2 time="80"/>
+                       <alarm3 time="90"/>
+                       <alarm4 time="100"/>
+                   </operator>
+                   <operator count="2">
+                       <kosu time="50"/>
+                       <alarm1 time="60"/>
+                       <alarm2 time="70"/>
+                       <alarm3 time="80"/>
+                       <alarm4 time="90"/>
+                   </operator>
+                   <operator count="3">
+                       <kosu time="40"/>
+                       <alarm1 time="50"/>
+                       <alarm2 time="60"/>
+                       <alarm3 time="70"/>
+                       <alarm4 time="80"/>
+                   </operator>
+                </operators>
+            </kosu>
+              
+        </module>
+    </modules>
+</configuration>

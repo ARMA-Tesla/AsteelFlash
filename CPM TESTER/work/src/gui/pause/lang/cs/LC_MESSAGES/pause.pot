@@ -1,0 +1,17 @@
+msgid "Operators Pause"
+msgstr "Pauza operátorù"
+
+msgid "Pause"
+msgstr "Pauza"
+
+msgid "Planned Downtime"
+msgstr "Plánovaný prostoj"
+
+msgid "Quality"
+msgstr "Kvalita"
+
+msgid "Maintenance/Fault"
+msgstr "Údržba/porucha"
+
+msgid ""
+msgstr ""

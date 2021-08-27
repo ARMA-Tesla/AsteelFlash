@@ -1,0 +1,8 @@
+-inrc c:\work\src\gui\dbusGUI\cvibuild.dbus_GUI\Release\resources.in.rc
+-outrc c:\work\src\gui\dbusGUI\cvibuild.dbus_GUI\Release\resources.out.rc
+-inhdef c:\work\src\gui\dbusGUI\cvibuild.dbus_GUI\Release\dbusGUI_plugin.h.hdefs
+-outdef c:\work\src\gui\dbusGUI\cvibuild.dbus_GUI\Release\dbus_GUI.dll.defs
+-indefprot c:\work\src\gui\dbusGUI\cvibuild.dbus_GUI\Release\dbusGUI.obj.cvidefprots
+-indefprot c:\work\src\gui\dbusGUI\cvibuild.dbus_GUI\Release\Exception.obj.cvidefprots
+-indefprot c:\work\src\gui\dbusGUI\cvibuild.dbus_GUI\Release\language.obj.cvidefprots
+-dllName dbus_GUI.dll

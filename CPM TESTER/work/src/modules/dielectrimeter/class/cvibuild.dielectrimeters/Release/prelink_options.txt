@@ -1,0 +1,8 @@
+-inrc c:\work\src\modules\dielectrimeter\class\cvibuild.dielectrimeters\Release\resources.in.rc
+-outrc c:\work\src\modules\dielectrimeter\class\cvibuild.dielectrimeters\Release\resources.out.rc
+-inhdef c:\work\src\modules\dielectrimeter\class\cvibuild.dielectrimeters\Release\module.h.hdefs
+-outdef c:\work\src\modules\dielectrimeter\class\cvibuild.dielectrimeters\Release\dielectrimeters.dll.defs
+-indefprot c:\work\src\modules\dielectrimeter\class\cvibuild.dielectrimeters\Release\dielectrimeters.obj.cvidefprots
+-indefprot c:\work\src\modules\dielectrimeter\class\cvibuild.dielectrimeters\Release\dielectrimeters_module.obj.cvidefprots
+-indefprot c:\work\src\modules\dielectrimeter\class\cvibuild.dielectrimeters\Release\Exception.obj.cvidefprots
+-dllName dielectrimeters.dll

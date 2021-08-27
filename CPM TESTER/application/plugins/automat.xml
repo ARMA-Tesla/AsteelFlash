@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<configuration>
+    <plugins>
+        <plugin id="{E73BFBD5-77AF-40c8-9ED6-25C1F6EFA259}">
+            <name>Automat Plugin</name>
+        <settings>
+                <master_panel>FALSE</master_panel>
+                <retest_quality>FALSE</retest_quality>
+		<!--  Release panel: NOK;QUALITY;FALSE --> 
+		<Changer_Ref_Avec_Vidage>FALSE</Changer_Ref_Avec_Vidage> 
+		<box>FALSE</box>
+		<CIM>FALSE</CIM>
+		<LAST_MVT>ASS</LAST_MVT>
+		<PRINTER>FALSE</PRINTER>
+		<PICK_PLACE>FALSE</PICK_PLACE>
+        </settings>
+        </plugin>
+    </plugins>
+</configuration>

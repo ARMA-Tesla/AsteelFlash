@@ -1,0 +1,2958 @@
+<testseq>
+	<product>
+		<id>15</id>
+		<branch_id>1</branch_id>
+		<name>BSH800122726800FP</name>
+		<description></description>
+		<mode>expertise</mode>
+		<date_time>2021-06-28 17:40:56</date_time>
+		<PalettID>1</PalettID>
+		<barcode>SKR_CP26800212300003</barcode>
+		<duration>0.00</duration>
+		<failed>1</failed>
+	</product>
+	<global>
+		<parameter>
+			<id>0</id>
+			<name>Code_AsteelFlash</name>
+			<description></description>
+			<value type="string">BSH800122726800FP</value>
+		</parameter>
+		<parameter>
+			<id>0</id>
+			<name>Label:OK</name>
+			<description></description>
+			<value type="string">C:/application/Labels/OK.txt</value>
+		</parameter>
+		<parameter>
+			<id>0</id>
+			<name>ProductTestFile</name>
+			<description></description>
+			<value type="string">EA210.dll</value>
+		</parameter>
+		<parameter>
+			<id>0</id>
+			<name>SMB</name>
+			<description></description>
+			<value type="string">NO</value>
+		</parameter>
+	</global>
+	<process stage="1">
+		<name>WS20</name>
+		<description>High Voltage test</description>
+		<init>
+			<failed>0</failed>
+			<duration></duration>
+		</init>
+		<test step="1">
+			<id>611</id>
+			<name>20.0.0</name>
+			<description>TESTER : Plug product</description>
+			<failed>0</failed>
+			<duration>2.69</duration>
+			<used>1</used>
+		</test>
+		<test step="2">
+			<id>15</id>
+			<name>20.1.0</name>
+			<description>Safety Tester : PCB isolation voltage test</description>
+			<failed>0</failed>
+			<duration>7.25</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Leakage current 3750VDC</config>
+				<value type="real64">3.760000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>293</id>
+					<name>Limit01</name>
+					<value1>0.5</value1>
+					<value2>5</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="3">
+			<id>23</id>
+			<name>20.1.1</name>
+			<description>Safety Tester : High voltage test FE  NL</description>
+			<failed>0</failed>
+			<duration>4.71</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Leakage current 1750 VDC</config>
+				<value type="real64">0.000000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>4</id>
+					<name>Limit01</name>
+					<value1>0</value1>
+					<value2>1</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="4">
+			<id>24</id>
+			<name>20.1.2</name>
+			<description>Safety Tester : High voltage test FE  SELV</description>
+			<failed>0</failed>
+			<duration>4.71</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Leakage current 750VDC</config>
+				<value type="real64">0.000000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>5</id>
+					<name>Limit01</name>
+					<value1>0</value1>
+					<value2>1</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="5">
+			<id>618</id>
+			<name>20.0.1</name>
+			<description>TESTER : Unplug Product </description>
+			<failed>0</failed>
+			<duration>1.17</duration>
+			<used>1</used>
+		</test>
+		<cleanup>
+			<failed>0</failed>
+			<duration></duration>
+		</cleanup>
+	</process>
+	<process stage="2">
+		<name>WS30</name>
+		<description>Test Inputs</description>
+		<init>
+			<failed>0</failed>
+			<duration></duration>
+		</init>
+		<test step="1">
+			<id>642</id>
+			<name>30.0.0</name>
+			<description>Plug Product And Init Instruments</description>
+			<failed>0</failed>
+			<duration>3.70</duration>
+			<used>1</used>
+		</test>
+		<test step="2">
+			<id>649</id>
+			<name>30.0.2</name>
+			<description>Enter HW TEST MODE 12VDC</description>
+			<failed>0</failed>
+			<duration>0.38</duration>
+			<used>1</used>
+			<Log>[814.205 ms] TX UDA (USB-SN: UDA-04)::1b::7010::02
+[815.464 ms] RX UDA (USB-SN: UDA-03)::c0::7100::23C01500
+</Log></test>
+		<test step="3">
+			<id>60</id>
+			<name>30.1.1</name>
+			<description>OFFSET Error correction</description>
+			<failed>0</failed>
+			<duration>0.36</duration>
+			<used>1</used>
+			<Log>[815.508 ms] TX UDA (USB-SN: UDA-03)::1b::7071::
+[814.326 ms] TX UDA (USB-SN: UDA-04)::1b::7010::02
+[814.544 ms] RX UDA (USB-SN: UDA-04)::c0::7110::02
+[815.847 ms] RX UDA (USB-SN: UDA-03)::c0::7171::
+</Log></test>
+		<test step="4">
+			<id>61</id>
+			<name>30.1.2</name>
+			<description>Get offset correction value</description>
+			<failed>0</failed>
+			<duration>2.04</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>SET VALUE </config>
+				<value type="int32">1</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>118</id>
+					<name>Limit01</name>
+					<value1>1</value1>
+					<value2>1</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>Correction Value </config>
+				<value type="int32">2176</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>538</id>
+					<name>Limit02</name>
+					<value1>2100</value1>
+					<value2>2250</value2>
+				</limit>
+			</measure>
+			<Log>[817.881 ms] RX UDA (USB-SN: UDA-03)::c0::7172::088001
+</Log></test>
+		<test step="5">
+			<id>138</id>
+			<name>30.2.1</name>
+			<description>Init VAC supply voltage and switch Relay ON</description>
+			<failed>0</failed>
+			<duration>1.35</duration>
+			<used>1</used>
+		</test>
+		<test step="6">
+			<id>139</id>
+			<name>30.2.2</name>
+			<description>Check current consumption SMPS 90VAC</description>
+			<failed>0</failed>
+			<duration>0.28</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Current meas at 90VAC</config>
+				<value type="real64">7.477000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>272</id>
+					<name>Limit01</name>
+					<value1>6,75</value1>
+					<value2>10</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="7">
+			<id>67</id>
+			<name>30.2.3</name>
+			<description>Check current consumption SMPS 260VAC</description>
+			<failed>0</failed>
+			<duration>0.89</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Current meas at 260VAC </config>
+				<value type="real64">19.287000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>274</id>
+					<name>Limit01</name>
+					<value1>16,5</value1>
+					<value2>27</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="8">
+			<id>108</id>
+			<name>30.2.4</name>
+			<description>Measurement of output voltage 12 VDC</description>
+			<failed>0</failed>
+			<duration>2.93</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Voltage meas no load</config>
+				<value type="real64">12.562505</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>289</id>
+					<name>Limit01</name>
+					<value1>11.5</value1>
+					<value2>12.8</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>Voltage meas load 12 ohm</config>
+				<value type="real64">12.015957</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>290</id>
+					<name>Limit02</name>
+					<value1>11.5</value1>
+					<value2>12.8</value2>
+				</limit>
+			</measure>
+			<measure step="3">
+				<config>Voltage meas load 100 ohm</config>
+				<value type="real64">12.578321</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>291</id>
+					<name>Limit03</name>
+					<value1>11.5</value1>
+					<value2>12.8</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="9">
+			<id>110</id>
+			<name>30.2.5</name>
+			<description>Measurement of output voltage 5 VDC</description>
+			<failed>0</failed>
+			<duration>0.88</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>voltage meas no load </config>
+				<value type="real64">5.055630</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>16</id>
+					<name>Limit01</name>
+					<value1>4.8</value1>
+					<value2>5.2</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>Voltage meas load 250 ohm</config>
+				<value type="real64">5.054895</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>17</id>
+					<name>Limit02</name>
+					<value1>4.8</value1>
+					<value2>5.2</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="10">
+			<id>650</id>
+			<name>30.3.1</name>
+			<description>Enter to HW TEST MODE 230 VAC</description>
+			<failed>0</failed>
+			<duration>0.91</duration>
+			<used>1</used>
+			<Log>[825.143 ms] RX UDA (USB-SN: UDA-03)::c0::7100::23C00400
+</Log></test>
+		<test step="11">
+			<id>387</id>
+			<name>30.4.1</name>
+			<description>Calibrate line voltage measurement 230VAC</description>
+			<failed>0</failed>
+			<duration>0.71</duration>
+			<used>1</used>
+			<Log>[824.524 ms] TX UDA (USB-SN: UDA-04)::1b::7033::010000
+[825.758 ms] RX UDA (USB-SN: UDA-03)::c0::7173::59D8
+</Log></test>
+		<test step="12">
+			<id>388</id>
+			<name>30.4.2</name>
+			<description>Check correction factor230VAC</description>
+			<failed>1</failed>
+			<duration>15.18</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>SET VALUE</config>
+				<value type="int32">0</value>
+				<failed>1</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>295</id>
+					<name>Limit01</name>
+					<value1>01</value1>
+					<value2>01</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>Correction value</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>296</id>
+					<name>Limit02</name>
+					<value1>100</value1>
+					<value2>300</value2>
+				</limit>
+			</measure>
+			<Log>[839.735 ms] TX UDA (USB-SN: UDA-04)::a0::F50E::C0
+[841.017 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+</Log><Error><Code>-11114</Code><CallPath>CheckLimitINT32</CallPath><Msg>TEST_ERR_VALUE_OUT_OF_LIMIT</Msg></Error></test>
+		<test step="13">
+			<id>389</id>
+			<name>30.4.3</name>
+			<description>Check corrected line voltage</description>
+			<failed>1</failed>
+			<duration>0.39</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>voltage correction </config>
+				<value type="int32">207</value>
+				<failed>1</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>182</id>
+					<name>Limit01</name>
+					<value1>225</value1>
+					<value2>235</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>Correction FREQ</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>183</id>
+					<name>Limit02</name>
+					<value1>50</value1>
+					<value2>50</value2>
+				</limit>
+			</measure>
+			<Log>[841.089 ms] TX UDA (USB-SN: UDA-03)::1b::7070::
+[840.063 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[840.087 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[840.102 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[840.109 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[840.115 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[840.124 ms] TX UDA (USB-SN: UDA-04)::a0::F50E::C0
+[841.414 ms] RX UDA (USB-SN: UDA-03)::c0::7170::00CF32
+</Log><Error><Code>-11114</Code><CallPath>CheckLimitINT32</CallPath><Msg>TEST_ERR_VALUE_OUT_OF_LIMIT</Msg></Error></test>
+		<test step="14">
+			<id>100</id>
+			<name>30.5.1</name>
+			<description>Check external temperature sensor inputs</description>
+			<failed>1</failed>
+			<duration>0.87</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Analog Input X11.1</config>
+				<value type="int32">11040</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>18</id>
+					<name>Limit01</name>
+					<value1>10566</value1>
+					<value2>11367</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>Simulation of X11.2</config>
+				<value type="int32">45808</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>173</id>
+					<name>Limit02</name>
+					<value1>45021</value1>
+					<value2>46655</value2>
+				</limit>
+			</measure>
+			<measure step="3">
+				<config>simulation of X11.3</config>
+				<value type="int32">25952</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>20</id>
+					<name>Limit03</name>
+					<value1>25161</value1>
+					<value2>26763</value2>
+				</limit>
+			</measure>
+			<measure step="4">
+				<config>Simulation of X11.4</config>
+				<value type="int32">38688</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>21</id>
+					<name>Limit04</name>
+					<value1>38068</value1>
+					<value2>39847</value2>
+				</limit>
+			</measure>
+			<measure step="5">
+				<config>simulation of X11.5</config>
+				<value type="int32">0</value>
+				<failed>1</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>22</id>
+					<name>Limit05</name>
+					<value1>18712</value1>
+					<value2>20028</value2>
+				</limit>
+			</measure>
+			<measure step="6">
+				<config>Ambient temperature sensor</config>
+				<value type=""></value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>0</used>
+				<limit>
+					<id>539</id>
+					<name>Limit06</name>
+					<value1>10200</value1>
+					<value2>13128</value2>
+				</limit>
+			</measure>
+			<Log>[840.439 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[840.462 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[840.477 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[840.484 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[840.498 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[840.544 ms] TX UDA (USB-SN: UDA-04)::a0::F50E::C0
+[841.950 ms] TX UDA (USB-SN: UDA-03)::1b::7051::
+[840.874 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[840.905 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[840.919 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[840.925 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[840.932 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[840.968 ms] TX UDA (USB-SN: UDA-04)::a0::F50E::C0
+[842.281 ms] RX UDA (USB-SN: UDA-03)::c0::7151::2B20B2F065609720001000000000000000000000000000000000
+</Log><Error><Code>-11114</Code><CallPath>CheckLimitINT32</CallPath><Msg>TEST_ERR_VALUE_OUT_OF_LIMIT</Msg></Error></test>
+		<test step="15">
+			<id>450</id>
+			<name>30.6.1</name>
+			<description>Check digital input X10 2</description>
+			<failed>0</failed>
+			<duration>0.39</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Digital input X10.2 Status</config>
+				<value type="int32">5</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>216</id>
+					<name>Limit01</name>
+					<value1>05</value1>
+					<value2>05</value2>
+				</limit>
+			</measure>
+			<Log>[842.349 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[841.299 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[841.330 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[841.344 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[841.350 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[841.357 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[841.373 ms] TX UDA (USB-SN: UDA-04)::a0::F50E::C0
+[842.672 ms] RX UDA (USB-SN: UDA-03)::c0::7160::05
+</Log></test>
+		<test step="16">
+			<id>451</id>
+			<name>30.6.2</name>
+			<description>Check digital input X10 3</description>
+			<failed>1</failed>
+			<duration>7.42</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Digital input X10.3 Status</config>
+				<value type="int32">4</value>
+				<failed>1</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>217</id>
+					<name>Limit01</name>
+					<value1>06</value1>
+					<value2>06</value2>
+				</limit>
+			</measure>
+			<Log>[842.748 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[841.680 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[841.705 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[841.719 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[841.734 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[841.748 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[841.785 ms] TX UDA (USB-SN: UDA-04)::a0::F50E::C0
+[843.072 ms] RX UDA (USB-SN: UDA-03)::c0::7160::05
+[843.129 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[842.116 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[842.146 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[842.161 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[842.167 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[842.173 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[842.210 ms] TX UDA (USB-SN: UDA-04)::a0::F50E::C0
+[843.458 ms] RX UDA (USB-SN: UDA-03)::c0::7160::04
+[843.503 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[842.540 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[842.563 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[842.577 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[842.584 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[842.590 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[842.605 ms] TX UDA (USB-SN: UDA-04)::a0::F50E::C0
+[843.833 ms] RX UDA (USB-SN: UDA-03)::c0::7160::04
+[843.878 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[842.912 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[842.938 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[842.952 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[842.959 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[842.965 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[844.208 ms] RX UDA (USB-SN: UDA-03)::c0::7160::04
+[843.010 ms] TX UDA (USB-SN: UDA-04)::a0::F50E::C0
+[844.257 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[843.318 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[843.346 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[844.575 ms] RX UDA (USB-SN: UDA-03)::c0::7160::04
+[843.361 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[843.373 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[843.379 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[844.616 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[843.422 ms] TX UDA (USB-SN: UDA-04)::a0::F50E::C0
+[844.923 ms] RX UDA (USB-SN: UDA-03)::c0::7160::04
+[844.949 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[843.757 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[843.775 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[843.790 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[843.804 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[843.819 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[843.856 ms] TX UDA (USB-SN: UDA-04)::a0::F50E::C0
+[845.263 ms] RX UDA (USB-SN: UDA-03)::c0::7160::04
+[845.319 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[844.182 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[844.213 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[844.227 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[844.242 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[844.248 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[844.293 ms] TX UDA (USB-SN: UDA-04)::a0::F50E::C0
+[845.650 ms] RX UDA (USB-SN: UDA-03)::c0::7160::04
+[845.702 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[844.624 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[844.653 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[844.668 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[844.675 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[844.690 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[844.735 ms] TX UDA (USB-SN: UDA-04)::a0::F50E::C0
+[846.033 ms] RX UDA (USB-SN: UDA-03)::c0::7160::04
+[846.089 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[845.082 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[845.112 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[845.118 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[845.125 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[845.131 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[845.177 ms] TX UDA (USB-SN: UDA-04)::a0::F50E::C0
+[846.417 ms] RX UDA (USB-SN: UDA-03)::c0::7160::04
+[846.440 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[845.506 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[846.746 ms] RX UDA (USB-SN: UDA-03)::c0::7160::04
+[845.537 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[846.762 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[845.550 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[845.563 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[845.577 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[845.592 ms] TX UDA (USB-SN: UDA-04)::a0::F50E::C0
+[847.075 ms] RX UDA (USB-SN: UDA-03)::c0::7160::04
+[845.900 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[847.135 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[845.940 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[845.960 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[845.975 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[845.990 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[846.035 ms] TX UDA (USB-SN: UDA-04)::a0::F50E::C0
+[847.473 ms] RX UDA (USB-SN: UDA-03)::c0::7160::04
+[847.527 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[846.365 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[846.398 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[846.412 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[846.427 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[846.442 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[846.487 ms] TX UDA (USB-SN: UDA-04)::a0::F50E::C0
+[847.858 ms] RX UDA (USB-SN: UDA-03)::c0::7160::04
+[847.919 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[846.815 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[846.845 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[846.859 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[846.867 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[846.881 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[846.927 ms] TX UDA (USB-SN: UDA-04)::a0::F50E::C0
+[848.250 ms] RX UDA (USB-SN: UDA-03)::c0::7160::04
+[848.302 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[847.256 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[847.286 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[847.301 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[847.308 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[847.315 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[847.330 ms] TX UDA (USB-SN: UDA-04)::a0::F50E::C0
+[848.633 ms] RX UDA (USB-SN: UDA-03)::c0::7160::04
+[848.693 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[847.637 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[847.661 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[847.676 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[847.683 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[847.698 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[847.743 ms] TX UDA (USB-SN: UDA-04)::a0::F50E::C0
+[849.025 ms] RX UDA (USB-SN: UDA-03)::c0::7160::04
+[849.088 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[848.073 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[848.095 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[848.118 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[848.125 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[848.139 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[848.185 ms] TX UDA (USB-SN: UDA-04)::a0::F50E::C0
+[849.417 ms] RX UDA (USB-SN: UDA-03)::c0::7160::04
+[849.440 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[848.515 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[849.755 ms] RX UDA (USB-SN: UDA-03)::c0::7160::04
+[848.545 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[849.770 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[848.558 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[848.579 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[848.594 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[848.602 ms] TX UDA (USB-SN: UDA-04)::a0::F50E::C0
+[850.083 ms] RX UDA (USB-SN: UDA-03)::c0::7160::04
+</Log><Error><Code>-11114</Code><CallPath>CheckLimitINT32</CallPath><Msg>TEST_ERR_VALUE_OUT_OF_LIMIT</Msg></Error></test>
+		<test step="17">
+			<id>392</id>
+			<name>30.6.4</name>
+			<description>Check of status door closed sensor</description>
+			<failed>1</failed>
+			<duration>16.52</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Closed door Status</config>
+				<value type="int32">0</value>
+				<failed>1</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>185</id>
+					<name>Limit01</name>
+					<value1>03</value1>
+					<value2>03</value2>
+				</limit>
+			</measure>
+			<Log>[859.737 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[858.534 ms] TX UDA (USB-SN: UDA-04)::a0::600C::C0
+[858.632 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[858.661 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[858.675 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[858.682 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[858.689 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[858.765 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[858.794 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[858.808 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[858.816 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[858.822 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[860.074 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[858.907 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[860.137 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[858.939 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[858.951 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[858.957 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[858.964 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.040 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.069 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.083 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.091 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.105 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.190 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.219 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.233 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.241 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[860.463 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[859.247 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[860.502 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[859.330 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.372 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.386 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.401 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.416 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.501 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.534 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.541 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.547 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.561 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[860.832 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[859.638 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.654 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.669 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[860.896 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[859.683 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.712 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.798 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.821 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.835 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.850 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.856 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.933 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.954 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.969 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.983 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[859.998 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[861.217 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[861.276 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[861.615 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[861.661 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[861.998 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[862.082 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[862.412 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[862.438 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[862.761 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[862.818 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[863.156 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[863.209 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[863.548 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[863.580 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[863.895 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[863.951 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[864.290 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[864.342 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[864.681 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[864.730 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[865.065 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[865.117 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[865.448 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[865.501 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[865.832 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[865.884 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[866.216 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[866.275 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[866.606 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+</Log><Error><Code>-11114</Code><CallPath>CheckLimitINT32</CallPath><Msg>TEST_ERR_VALUE_OUT_OF_LIMIT</Msg></Error></test>
+		<test step="18">
+			<id>105</id>
+			<name>30.6.5</name>
+			<description>Test of PWM Feedback Input X8 4</description>
+			<failed>1</failed>
+			<duration>7.62</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>X8.4 input  value</config>
+				<value type="int32">0</value>
+				<failed>1</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>186</id>
+					<name>Limit01</name>
+					<value1>1490</value1>
+					<value2>1510</value2>
+				</limit>
+			</measure>
+			<Log>[866.778 ms] TX UDA (USB-SN: UDA-03)::1b::7025::00
+[867.104 ms] RX UDA (USB-SN: UDA-03)::c0::7125::0000
+[867.149 ms] TX UDA (USB-SN: UDA-03)::1b::7025::00
+[867.465 ms] RX UDA (USB-SN: UDA-03)::c0::7125::0000
+[867.527 ms] TX UDA (USB-SN: UDA-03)::1b::7025::00
+[867.856 ms] RX UDA (USB-SN: UDA-03)::c0::7125::0000
+[867.909 ms] TX UDA (USB-SN: UDA-03)::1b::7025::00
+[868.240 ms] RX UDA (USB-SN: UDA-03)::c0::7125::0000
+[868.293 ms] TX UDA (USB-SN: UDA-03)::1b::7025::00
+[868.623 ms] RX UDA (USB-SN: UDA-03)::c0::7125::0000
+[868.676 ms] TX UDA (USB-SN: UDA-03)::1b::7025::00
+[869.007 ms] RX UDA (USB-SN: UDA-03)::c0::7125::0000
+[869.035 ms] TX UDA (USB-SN: UDA-03)::1b::7025::00
+[869.352 ms] RX UDA (USB-SN: UDA-03)::c0::7125::0000
+[869.404 ms] TX UDA (USB-SN: UDA-03)::1b::7025::00
+[869.731 ms] RX UDA (USB-SN: UDA-03)::c0::7125::0000
+[869.784 ms] TX UDA (USB-SN: UDA-03)::1b::7025::00
+[870.115 ms] RX UDA (USB-SN: UDA-03)::c0::7125::0000
+[870.143 ms] TX UDA (USB-SN: UDA-03)::1b::7025::00
+[870.475 ms] RX UDA (USB-SN: UDA-03)::c0::7125::0000
+[870.518 ms] TX UDA (USB-SN: UDA-03)::1b::7025::00
+[870.857 ms] RX UDA (USB-SN: UDA-03)::c0::7125::0000
+[870.909 ms] TX UDA (USB-SN: UDA-03)::1b::7025::00
+[871.239 ms] RX UDA (USB-SN: UDA-03)::c0::7125::0000
+[871.291 ms] TX UDA (USB-SN: UDA-03)::1b::7025::00
+[871.623 ms] RX UDA (USB-SN: UDA-03)::c0::7125::0000
+[871.683 ms] TX UDA (USB-SN: UDA-03)::1b::7025::00
+[872.015 ms] RX UDA (USB-SN: UDA-03)::c0::7125::0000
+[872.038 ms] TX UDA (USB-SN: UDA-03)::1b::7025::00
+[872.345 ms] RX UDA (USB-SN: UDA-03)::c0::7125::0000
+[872.400 ms] TX UDA (USB-SN: UDA-03)::1b::7025::00
+[872.732 ms] RX UDA (USB-SN: UDA-03)::c0::7125::0000
+[872.783 ms] TX UDA (USB-SN: UDA-03)::1b::7025::00
+[873.114 ms] RX UDA (USB-SN: UDA-03)::c0::7125::0000
+[873.143 ms] TX UDA (USB-SN: UDA-03)::1b::7025::00
+[873.475 ms] RX UDA (USB-SN: UDA-03)::c0::7125::0000
+[873.525 ms] TX UDA (USB-SN: UDA-03)::1b::7025::00
+[873.856 ms] RX UDA (USB-SN: UDA-03)::c0::7125::0000
+[873.908 ms] TX UDA (USB-SN: UDA-03)::1b::7025::00
+[874.240 ms] RX UDA (USB-SN: UDA-03)::c0::7125::0000
+</Log><Error><Code>-11114</Code><CallPath>CheckLimitINT32</CallPath><Msg>TEST_ERR_VALUE_OUT_OF_LIMIT</Msg></Error></test>
+		<test step="19">
+			<id>106</id>
+			<name>30.6.6</name>
+			<description>Test of PWM Feedback Input X8 7</description>
+			<failed>0</failed>
+			<duration>0.59</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>X8.7 input value</config>
+				<value type="int32">0</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>187</id>
+					<name>Limit01</name>
+					<value1>1490</value1>
+					<value2>1510</value2>
+				</limit>
+			</measure>
+			<Log>[874.501 ms] TX UDA (USB-SN: UDA-03)::1b::7025::01
+[874.828 ms] RX UDA (USB-SN: UDA-03)::c0::7125::0000
+</Log></test>
+		<test step="20">
+			<id>107</id>
+			<name>30.6.7</name>
+			<description>Test of PWM Feedback Input X9 4</description>
+			<failed>0</failed>
+			<duration>0.38</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>X9.4 input value</config>
+				<value type="int32">0</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>188</id>
+					<name>Limit01</name>
+					<value1>1490</value1>
+					<value2>1510</value2>
+				</limit>
+			</measure>
+			<Log>[874.885 ms] TX UDA (USB-SN: UDA-03)::1b::7025::02
+[875.214 ms] RX UDA (USB-SN: UDA-03)::c0::7125::0000
+</Log></test>
+		<test step="21">
+			<id>641</id>
+			<name>30.0.1</name>
+			<description>Unplug Product</description>
+			<failed>0</failed>
+			<duration>1.80</duration>
+			<used>1</used>
+		</test>
+		<cleanup>
+			<failed>0</failed>
+			<duration></duration>
+		</cleanup>
+	</process>
+	<process stage="3">
+		<name>WS40</name>
+		<description>Test Outputs</description>
+		<init>
+			<failed>0</failed>
+			<duration></duration>
+		</init>
+		<test step="1">
+			<id>643</id>
+			<name>40.0.0</name>
+			<description>Plug Product AND Init instrument</description>
+			<failed>0</failed>
+			<duration>1.84</duration>
+			<used>1</used>
+		</test>
+		<test step="2">
+			<id>645</id>
+			<name>40.0.2</name>
+			<description>Enter in HW Test Mode dbus</description>
+			<failed>0</failed>
+			<duration>0.36</duration>
+			<used>1</used>
+			<Log>[879.641 ms] TX UDA (USB-SN: UDA-05)::1b::7000::23C0
+[880.860 ms] RX UDA (USB-SN: UDA-04)::c0::7100::23C014F0
+</Log></test>
+		<test step="3">
+			<id>406</id>
+			<name>40.7.1</name>
+			<description>Test of DC Switch output X8 8 on status ACTIVE</description>
+			<failed>0</failed>
+			<duration>1.00</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Output X8.8 ON </config>
+				<value type="real64">0.056570</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>51</id>
+					<name>Limit01</name>
+					<value1>-0.2</value1>
+					<value2>0.2</value2>
+				</limit>
+			</measure>
+			<Log>[881.098 ms] TX UDA (USB-SN: UDA-04)::1b::7010::01
+[880.181 ms] RX UDA (USB-SN: UDA-05)::c0::::
+[880.198 ms] RX UDA (USB-SN: UDA-05)::c0::::
+[880.213 ms] RX UDA (USB-SN: UDA-05)::c0::::
+[880.227 ms] RX UDA (USB-SN: UDA-05)::c0::::
+[880.242 ms] RX UDA (USB-SN: UDA-05)::c0::::
+[881.357 ms] TX UDA (USB-SN: UDA-04)::1b::7010::01
+[880.288 ms] TX UDA (USB-SN: UDA-05)::1b::7000::23C0
+[880.533 ms] RX UDA (USB-SN: UDA-05)::c0::::
+[880.548 ms] RX UDA (USB-SN: UDA-05)::c0::::
+[880.563 ms] RX UDA (USB-SN: UDA-05)::c0::::
+[880.577 ms] RX UDA (USB-SN: UDA-05)::c0::::
+[880.592 ms] RX UDA (USB-SN: UDA-05)::c0::::
+[881.695 ms] RX UDA (USB-SN: UDA-04)::c0::7110::01
+[880.637 ms] TX UDA (USB-SN: UDA-05)::1b::7000::23C0
+</Log></test>
+		<test step="4">
+			<id>407</id>
+			<name>40.7.2</name>
+			<description>Test of DC Switch output X8 8 off status INACTIVE</description>
+			<failed>0</failed>
+			<duration>0.64</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Output X8.8 OFF</config>
+				<value type="real64">12.630000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>52</id>
+					<name>Limit01</name>
+					<value1>11.4</value1>
+					<value2>13.2</value2>
+				</limit>
+			</measure>
+			<Log>[882.407 ms] RX UDA (USB-SN: UDA-04)::c0::7110::00
+</Log></test>
+		<test step="5">
+			<id>408</id>
+			<name>40.7.3</name>
+			<description>Test of DC Switch output X8 9 on status ACTIVE</description>
+			<failed>1</failed>
+			<duration>0.66</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Output X8.9 ON</config>
+				<value type="real64">12.625000</value>
+				<failed>1</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>53</id>
+					<name>Limit01</name>
+					<value1>-0.2</value1>
+					<value2>0.2</value2>
+				</limit>
+			</measure>
+			<Log>[882.732 ms] TX UDA (USB-SN: UDA-04)::1b::7010::02
+[882.854 ms] TX UDA (USB-SN: UDA-04)::1b::7010::02
+[883.069 ms] RX UDA (USB-SN: UDA-04)::c0::7110::02
+</Log><Error><Code>-11114</Code><CallPath>CheckLimitREAL64</CallPath><Msg>TEST_ERR_VALUE_OUT_OF_LIMIT</Msg></Error></test>
+		<test step="6">
+			<id>409</id>
+			<name>40.7.4</name>
+			<description>Test of DC Switch output X8 9 off status INACTIVE</description>
+			<failed>0</failed>
+			<duration>0.31</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Output X8.9 Off</config>
+				<value type="real64">12.620000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>54</id>
+					<name>Limit01</name>
+					<value1>11.4</value1>
+					<value2>13.2</value2>
+				</limit>
+			</measure>
+			<Log>[883.194 ms] TX UDA (USB-SN: UDA-04)::1b::7010::00
+[883.382 ms] RX UDA (USB-SN: UDA-04)::c0::7110::00
+</Log></test>
+		<test step="7">
+			<id>410</id>
+			<name>40.7.5</name>
+			<description>Test of DC Switch output X8 3 on status ACTIVE</description>
+			<failed>0</failed>
+			<duration>0.51</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Output X8.3 ON</config>
+				<value type="real64">0.043000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>55</id>
+					<name>Limit01</name>
+					<value1>-0.2</value1>
+					<value2>0.2</value2>
+				</limit>
+			</measure>
+			<Log>[883.705 ms] TX UDA (USB-SN: UDA-04)::1b::7024::01
+[883.890 ms] RX UDA (USB-SN: UDA-04)::c0::7124::01
+</Log></test>
+		<test step="8">
+			<id>607</id>
+			<name>40.7.6</name>
+			<description>Test of DC Switch output X8 3 off status INACTIVE</description>
+			<failed>0</failed>
+			<duration>0.81</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Output X8.3 Off</config>
+				<value type="real64">12.657000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>56</id>
+					<name>Limit01</name>
+					<value1>11.4</value1>
+					<value2>13.2</value2>
+				</limit>
+			</measure>
+			<Log>[884.483 ms] TX UDA (USB-SN: UDA-04)::1b::7024::00
+[884.703 ms] RX UDA (USB-SN: UDA-04)::c0::7124::00
+</Log></test>
+		<test step="9">
+			<id>933</id>
+			<name>40.7.7</name>
+			<description>Test of DC Switch output X8 6 on status ACTIVE</description>
+			<failed>0</failed>
+			<duration>0.51</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Output X8.6 ON</config>
+				<value type="real64">0.049100</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>57</id>
+					<name>Limit01</name>
+					<value1>-0.2</value1>
+					<value2>0.2</value2>
+				</limit>
+			</measure>
+			<Log>[885.022 ms] TX UDA (USB-SN: UDA-04)::1b::7024::02
+[885.207 ms] RX UDA (USB-SN: UDA-04)::c0::7124::02
+</Log></test>
+		<test step="10">
+			<id>413</id>
+			<name>40.7.8</name>
+			<description>Test of DC Switch output X8 6 off status INACTIVE</description>
+			<failed>0</failed>
+			<duration>0.52</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Output X8.6 Off</config>
+				<value type="real64">12.662000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>58</id>
+					<name>Limit01</name>
+					<value1>11.4</value1>
+					<value2>13.2</value2>
+				</limit>
+			</measure>
+			<Log>[885.534 ms] TX UDA (USB-SN: UDA-04)::1b::7024::00
+[885.732 ms] RX UDA (USB-SN: UDA-04)::c0::7124::00
+</Log></test>
+		<test step="11">
+			<id>414</id>
+			<name>40.7.9</name>
+			<description>Test of DC Switch output X9 3 on status ACTIVE</description>
+			<failed>0</failed>
+			<duration>0.72</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Output X9.3 ON</config>
+				<value type="real64">12.539531</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>189</id>
+					<name>Limit01</name>
+					<value1>-0.2</value1>
+					<value2>0.2</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="12">
+			<id>415</id>
+			<name>40.7.10</name>
+			<description>Test of DC Switch output X9 3 off status INACTIVE</description>
+			<failed>0</failed>
+			<duration>0.33</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Output X9.3 Off</config>
+				<value type="real64">12.545000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>60</id>
+					<name>Limit01</name>
+					<value1>11.4</value1>
+					<value2>13.2</value2>
+				</limit>
+			</measure>
+			<Log>[886.580 ms] TX UDA (USB-SN: UDA-04)::1b::7024::00
+[886.777 ms] RX UDA (USB-SN: UDA-04)::c0::7124::00
+</Log></test>
+		<test step="13">
+			<id>580</id>
+			<name>40.7.11</name>
+			<description>Test of PWM FAN Outputs X8 2 on status FREQ</description>
+			<failed>0</failed>
+			<duration>0.52</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>freq X8.2 KH</config>
+				<value type="real64">25.000354</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>190</id>
+					<name>Limit01</name>
+					<value1>24.75</value1>
+					<value2>26.5</value2>
+				</limit>
+			</measure>
+			<Log>[886.580 ms] TX UDA (USB-SN: UDA-04)::1b::7024::00
+[886.777 ms] RX UDA (USB-SN: UDA-04)::c0::7124::00
+</Log></test>
+		<test step="14">
+			<id>572</id>
+			<name>40.7.12</name>
+			<description>Test of PWM FAN Outputs X8 2 off status VOLTAGE</description>
+			<failed>0</failed>
+			<duration>0.44</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Voltage X8.2</config>
+				<value type="real64">12.625000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>278</id>
+					<name>Limit01</name>
+					<value1>11.5</value1>
+					<value2>13</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="15">
+			<id>581</id>
+			<name>40.7.13</name>
+			<description>Test of PWM FAN Outputs X8 5 on status FEQ</description>
+			<failed>0</failed>
+			<duration>0.42</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Freq X8.5 KH</config>
+				<value type="real64">25.000354</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>192</id>
+					<name>Limit01</name>
+					<value1>24.75</value1>
+					<value2>26.5</value2>
+				</limit>
+			</measure>
+			<Log>[889.142 ms] TX UDA (USB-SN: UDA-03)::1b::7071::
+[889.468 ms] RX UDA (USB-SN: UDA-03)::c0::7171::
+</Log></test>
+		<test step="16">
+			<id>573</id>
+			<name>40.7.14</name>
+			<description>Test of PWM FAN Outputs X8 5 off status VOLTAGE</description>
+			<failed>0</failed>
+			<duration>0.51</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Voltage X8.5</config>
+				<value type="real64">12.625000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>279</id>
+					<name>Limit01</name>
+					<value1>11.5</value1>
+					<value2>13</value2>
+				</limit>
+			</measure>
+			<Log>[888.323 ms] TX UDA (USB-SN: UDA-04)::1b::7020::0164
+[888.661 ms] RX UDA (USB-SN: UDA-04)::c0::7120::0164
+</Log></test>
+		<test step="17">
+			<id>582</id>
+			<name>40.7.15</name>
+			<description>Test of PWM FAN Outputs X9 2 on status FREQ</description>
+			<failed>0</failed>
+			<duration>0.92</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Freq X9.2 ( kHz)</config>
+				<value type="real64">24.987185</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>194</id>
+					<name>Limit01</name>
+					<value1>24.75</value1>
+					<value2>26.5</value2>
+				</limit>
+			</measure>
+			<Log>[890.419 ms] RX UDA (USB-SN: UDA-03)::c0::7172::088301
+</Log></test>
+		<test step="18">
+			<id>574</id>
+			<name>40.7.16</name>
+			<description>Test of PWM FAN Outputs X9 2 off status VOLTAGE</description>
+			<failed>0</failed>
+			<duration>0.47</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Voltage X9.2 (Volt)</config>
+				<value type="real64">8.080000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>280</id>
+					<name>Limit01</name>
+					<value1>11.5</value1>
+					<value2>13</value2>
+				</limit>
+			</measure>
+			<Log>[889.747 ms] TX UDA (USB-SN: UDA-04)::1b::7021::02
+[889.946 ms] RX UDA (USB-SN: UDA-04)::c0::7121::02
+</Log></test>
+		<test step="19">
+			<id>583</id>
+			<name>40.7.17</name>
+			<description>Test of PWM FAN Outputs X8 7 on status FREQ</description>
+			<failed>0</failed>
+			<duration>0.42</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Freq X8.7 (kHz)</config>
+				<value type="real64">25.000354</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>196</id>
+					<name>Limit01</name>
+					<value1>24.75</value1>
+					<value2>26.5</value2>
+				</limit>
+			</measure>
+			<Log>[889.385 ms] TX UDA (USB-SN: UDA-05)::1b::70B0::0003
+[889.513 ms] RX UDA (USB-SN: UDA-05)::c0::71B0::0003
+</Log></test>
+		<test step="20">
+			<id>575</id>
+			<name>40.7.18</name>
+			<description>Test of PWM FAN Outputs X8 7 off status VOLTAGE</description>
+			<failed>0</failed>
+			<duration>0.38</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Voltage X8.7 (Volt)</config>
+				<value type="real64">10.342000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>281</id>
+					<name>Limit01</name>
+					<value1>11.5</value1>
+					<value2>13</value2>
+				</limit>
+			</measure>
+			<Log>[890.648 ms] TX UDA (USB-SN: UDA-04)::1b::7020::0364
+[890.850 ms] RX UDA (USB-SN: UDA-04)::c0::7120::0364
+</Log></test>
+		<test step="21">
+			<id>181</id>
+			<name>40.7.19</name>
+			<description>Test of constant current LED Outputs on status</description>
+			<failed>1</failed>
+			<duration>0.59</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Voltage led duty 50 X9.5</config>
+				<value type="real64">5.504630</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>74</id>
+					<name>Limit01</name>
+					<value1>5.1</value1>
+					<value2>5.6</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>Voltage led duty 50 X9.7</config>
+				<value type="real64">0.196920</value>
+				<failed>1</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>75</id>
+					<name>Limit02</name>
+					<value1>5.1</value1>
+					<value2>5.6</value2>
+				</limit>
+			</measure>
+			<Log>[891.102 ms] TX UDA (USB-SN: UDA-04)::1b::7042::64
+[891.296 ms] RX UDA (USB-SN: UDA-04)::c0::7142::64
+</Log><Error><Code>-11114</Code><CallPath>CheckLimitREAL64</CallPath><Msg>TEST_ERR_VALUE_OUT_OF_LIMIT</Msg></Error></test>
+		<test step="22">
+			<id>182</id>
+			<name>40.7.20</name>
+			<description>Test of constant current LED Outputs off status</description>
+			<failed>0</failed>
+			<duration>0.45</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>LED OFF voltage X9.5</config>
+				<value type="real64">0.000000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>198</id>
+					<name>Limit01</name>
+					<value1>0</value1>
+					<value2>0.1</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>LED OFF voltage X9.7</config>
+				<value type="real64">0.000000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>199</id>
+					<name>Limit02</name>
+					<value1>0</value1>
+					<value2>0.1</value2>
+				</limit>
+			</measure>
+			<Log>[891.621 ms] TX UDA (USB-SN: UDA-04)::1b::7043::
+[891.821 ms] RX UDA (USB-SN: UDA-04)::c0::7143::
+</Log></test>
+		<test step="23">
+			<id>590</id>
+			<name>40.7.27</name>
+			<description>Test of PFM Output 5000 rpm</description>
+			<failed>0</failed>
+			<duration>0.72</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>VOLTAGE 5000 rpm </config>
+				<value type="real64">10.182100</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>250</id>
+					<name>Limit01</name>
+					<value1>9</value1>
+					<value2>13</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>FREQ PFM 5000 rpm</config>
+				<value type="real64">165.785910</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>175</id>
+					<name>Limit02</name>
+					<value1>140</value1>
+					<value2>180</value2>
+				</limit>
+			</measure>
+			<Log>[891.039 ms] TX UDA (USB-SN: UDA-05)::1b::70B0::0103
+[891.383 ms] RX UDA (USB-SN: UDA-05)::c0::71B0::0103
+</Log></test>
+		<test step="24">
+			<id>183</id>
+			<name>40.7.21</name>
+			<description>Test of Stepper Driver 4 Outputs STEP 1</description>
+			<failed>0</failed>
+			<duration>0.72</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>STEP 1 X9.1</config>
+				<value type="real64">6.144000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>78</id>
+					<name>Limit01</name>
+					<value1>-4.5</value1>
+					<value2>7.5</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>STEP 1 X9.2</config>
+				<value type="real64">6.149000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>79</id>
+					<name>Limit02</name>
+					<value1>-4.5</value1>
+					<value2>7.5</value2>
+				</limit>
+			</measure>
+			<measure step="3">
+				<config>STEP 1 X9.3</config>
+				<value type="real64">6.144000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>80</id>
+					<name>Limit03</name>
+					<value1>-4.5</value1>
+					<value2>7.5</value2>
+				</limit>
+			</measure>
+			<measure step="4">
+				<config>STEP 1 X9.4</config>
+				<value type="real64">6.144000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>81</id>
+					<name>Limit04</name>
+					<value1>-4.5</value1>
+					<value2>7.5</value2>
+				</limit>
+			</measure>
+			<Log>[892.885 ms] TX UDA (USB-SN: UDA-04)::1b::7033::010000
+[893.079 ms] RX UDA (USB-SN: UDA-04)::c0::7133::010000
+</Log></test>
+		<test step="25">
+			<id>185</id>
+			<name>40.7.22</name>
+			<description>Test of Stepper Driver 4 Outputs STEP 2</description>
+			<failed>0</failed>
+			<duration>0.74</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>STEP 2 X9.1</config>
+				<value type="real64">12.342000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>282</id>
+					<name>Limit01</name>
+					<value1>11,5</value1>
+					<value2>13</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>STEP 2 X9.2</config>
+				<value type="real64">0.070000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>83</id>
+					<name>Limit02</name>
+					<value1>-1</value1>
+					<value2>1</value2>
+				</limit>
+			</measure>
+			<measure step="3">
+				<config>STEP 2 X9.3</config>
+				<value type="real64">6.187000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>84</id>
+					<name>Limit03</name>
+					<value1>-4.5</value1>
+					<value2>7.5</value2>
+				</limit>
+			</measure>
+			<measure step="4">
+				<config>STEP 2 X9.4</config>
+				<value type="real64">6.155000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>85</id>
+					<name>Limit04</name>
+					<value1>-4.5</value1>
+					<value2>7.5</value2>
+				</limit>
+			</measure>
+			<Log>[893.486 ms] TX UDA (USB-SN: UDA-04)::1b::7033::010100
+[893.732 ms] RX UDA (USB-SN: UDA-04)::c0::7133::010100
+</Log></test>
+		<test step="26">
+			<id>186</id>
+			<name>40.7.23</name>
+			<description>Test of Stepper Driver 4 Outputs STEP 3</description>
+			<failed>0</failed>
+			<duration>0.75</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>STEP 3 X9.1</config>
+				<value type="real64">0.075000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>86</id>
+					<name>Limit01</name>
+					<value1>-1</value1>
+					<value2>1</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>STEP 3 X9.2</config>
+				<value type="real64">12.315000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>284</id>
+					<name>Limit02</name>
+					<value1>11,5</value1>
+					<value2>13</value2>
+				</limit>
+			</measure>
+			<measure step="3">
+				<config>STEP 3 X9.3</config>
+				<value type="real64">6.133000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>88</id>
+					<name>Limit03</name>
+					<value1>-4.5</value1>
+					<value2>7.5</value2>
+				</limit>
+			</measure>
+			<measure step="4">
+				<config>STEP 3 X9.4</config>
+				<value type="real64">6.144000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>89</id>
+					<name>Limit04</name>
+					<value1>-4.5</value1>
+					<value2>7.5</value2>
+				</limit>
+			</measure>
+			<Log>[894.250 ms] TX UDA (USB-SN: UDA-04)::1b::7033::010001
+[894.575 ms] RX UDA (USB-SN: UDA-04)::c0::7133::010001
+</Log></test>
+		<test step="27">
+			<id>187</id>
+			<name>40.7.24</name>
+			<description>Test of Stepper Driver 4 Outputs STEP 4</description>
+			<failed>0</failed>
+			<duration>0.82</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>STEP 4 X9.1</config>
+				<value type="real64">6.149000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>90</id>
+					<name>Limit01</name>
+					<value1>-4.5</value1>
+					<value2>7.5</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>STEP 4 X9.2</config>
+				<value type="real64">6.171000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>91</id>
+					<name>Limit02</name>
+					<value1>-4.5</value1>
+					<value2>7.5</value2>
+				</limit>
+			</measure>
+			<measure step="3">
+				<config>STEP 4 X9.3</config>
+				<value type="real64">12.374000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>285</id>
+					<name>Limit03</name>
+					<value1>11,5</value1>
+					<value2>13</value2>
+				</limit>
+			</measure>
+			<measure step="4">
+				<config>STEP 4 X9.4</config>
+				<value type="real64">0.070000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>93</id>
+					<name>Limit04</name>
+					<value1>-1</value1>
+					<value2>1</value2>
+				</limit>
+			</measure>
+			<Log>[894.454 ms] TX UDA (USB-SN: UDA-05)::1b::70B0::0203
+[894.573 ms] RX UDA (USB-SN: UDA-05)::c0::::
+[894.589 ms] RX UDA (USB-SN: UDA-05)::c0::::
+[894.603 ms] RX UDA (USB-SN: UDA-05)::c0::::
+[894.618 ms] RX UDA (USB-SN: UDA-05)::c0::::
+[894.633 ms] RX UDA (USB-SN: UDA-05)::c0::::
+</Log></test>
+		<test step="28">
+			<id>188</id>
+			<name>40.7.25</name>
+			<description>Test of Stepper Driver 4 Outputs STEP 5</description>
+			<failed>0</failed>
+			<duration>0.74</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>STEP 5 X9.1</config>
+				<value type="real64">6.160000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>94</id>
+					<name>Limit01</name>
+					<value1>-4.5</value1>
+					<value2>7.5</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>STEP 5 X9.2</config>
+				<value type="real64">6.171000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>95</id>
+					<name>Limit02</name>
+					<value1>-4.5</value1>
+					<value2>7.5</value2>
+				</limit>
+			</measure>
+			<measure step="3">
+				<config>STEP 5 X9.3</config>
+				<value type="real64">0.053000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>96</id>
+					<name>Limit03</name>
+					<value1>-1</value1>
+					<value2>1</value2>
+				</limit>
+			</measure>
+			<measure step="4">
+				<config>STEP 5 X9.4</config>
+				<value type="real64">12.374000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>286</id>
+					<name>Limit04</name>
+					<value1>11,5</value1>
+					<value2>13</value2>
+				</limit>
+			</measure>
+			<Log>[897.654 ms] TX UDA (USB-SN: UDA-03)::1b::7000::23C0
+</Log></test>
+		<test step="29">
+			<id>589</id>
+			<name>40.7.28</name>
+			<description>Test of PFM Output 0 rpm</description>
+			<failed>0</failed>
+			<duration>0.72</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Voltage 0 rpm</config>
+				<value type="real64">12.438000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>229</id>
+					<name>Limit01</name>
+					<value1>11.4</value1>
+					<value2>13.2</value2>
+				</limit>
+			</measure>
+			<measure step="2">
+				<config>FREQ PFM 0rpm</config>
+				<value type="real64">0.000000</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>251</id>
+					<name>Limit02</name>
+					<value1>-0.25</value1>
+					<value2>0.25</value2>
+				</limit>
+			</measure>
+			<Log>[898.429 ms] RX UDA (USB-SN: UDA-03)::c0::7100::23C00400
+</Log></test>
+		<test step="30">
+			<id>842</id>
+			<name>40.8.1</name>
+			<description>Test of relay output X2 1 on status</description>
+			<failed>1</failed>
+			<duration>2.66</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>X2.1 ON</config>
+				<value type="real64">224.944350</value>
+				<failed>1</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>413</id>
+					<name>Limit01</name>
+					<value1>0</value1>
+					<value2>2</value2>
+				</limit>
+			</measure>
+			<Log>[899.199 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+[899.526 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[899.552 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+[899.875 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[899.925 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+[900.263 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[900.323 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+[900.650 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[900.745 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+[901.069 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+</Log><Error><Code>-11114</Code><CallPath>CheckLimitREAL64</CallPath><Msg>TEST_ERR_VALUE_OUT_OF_LIMIT</Msg></Error></test>
+		<test step="31">
+			<id>843</id>
+			<name>40.8.2</name>
+			<description>Test of relay output X2 1 off status</description>
+			<failed>0</failed>
+			<duration>1.43</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>X2.1 OFF</config>
+				<value type="real64">227.946980</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>415</id>
+					<name>Limit01</name>
+					<value1>225</value1>
+					<value2>235</value2>
+				</limit>
+			</measure>
+			<Log>[901.123 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+[899.948 ms] TX UDA (USB-SN: UDA-04)::1b::7090::0000
+[900.160 ms] RX UDA (USB-SN: UDA-04)::c0::7190::0000
+[901.462 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[901.514 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+[901.854 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[901.904 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+[902.245 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[902.306 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+</Log></test>
+		<test step="32">
+			<id>844</id>
+			<name>40.8.3</name>
+			<description>Test of relay output X2 2 on status</description>
+			<failed>1</failed>
+			<duration>1.37</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>X2.2 ON</config>
+				<value type="real64">224.929640</value>
+				<failed>1</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>416</id>
+					<name>Limit01</name>
+					<value1>0</value1>
+					<value2>2</value2>
+				</limit>
+			</measure>
+			<Log>[901.349 ms] TX UDA (USB-SN: UDA-04)::1b::7090::0101
+[902.645 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[902.697 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+[901.545 ms] RX UDA (USB-SN: UDA-04)::c0::7190::0101
+[903.037 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[903.083 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+[903.421 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[903.475 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+[903.812 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[903.866 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+</Log><Error><Code>-11114</Code><CallPath>CheckLimitREAL64</CallPath><Msg>TEST_ERR_VALUE_OUT_OF_LIMIT</Msg></Error></test>
+		<test step="33">
+			<id>845</id>
+			<name>40.8.4</name>
+			<description>Test of relay output X2 2 off status</description>
+			<failed>0</failed>
+			<duration>1.37</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>X2.2 OFF</config>
+				<value type="real64">227.932490</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>418</id>
+					<name>Limit01</name>
+					<value1>225</value1>
+					<value2>235</value2>
+				</limit>
+			</measure>
+			<Log>[902.748 ms] TX UDA (USB-SN: UDA-04)::1b::7090::0100
+[902.939 ms] RX UDA (USB-SN: UDA-04)::c0::7190::0100
+[904.203 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[904.275 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+[904.612 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[904.666 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+[905.004 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[905.058 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+</Log></test>
+		<test step="34">
+			<id>846</id>
+			<name>40.8.5</name>
+			<description>Test of relay output X2 3 on status</description>
+			<failed>0</failed>
+			<duration>1.40</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>X2.3 ON</config>
+				<value type="real64">0.079560</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>420</id>
+					<name>Limit01</name>
+					<value1>0</value1>
+					<value2>2</value2>
+				</limit>
+			</measure>
+			<Log>[904.128 ms] TX UDA (USB-SN: UDA-04)::1b::7090::0201
+[905.395 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[905.467 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+[904.322 ms] RX UDA (USB-SN: UDA-04)::c0::7190::0201
+[905.803 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[905.849 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+[906.187 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[906.241 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+[906.579 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[906.633 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+</Log></test>
+		<test step="35">
+			<id>847</id>
+			<name>40.8.6</name>
+			<description>Test of relay output X2 3 off status</description>
+			<failed>0</failed>
+			<duration>1.86</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>X2.3 OFF</config>
+				<value type="real64">227.933810</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>421</id>
+					<name>Limit01</name>
+					<value1>225</value1>
+					<value2>235</value2>
+				</limit>
+			</measure>
+			<Log>[905.501 ms] TX UDA (USB-SN: UDA-04)::1b::7090::0200
+[905.694 ms] RX UDA (USB-SN: UDA-04)::c0::7190::0200
+[906.961 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[907.000 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+[907.330 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[907.359 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+[907.674 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[907.731 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+[905.488 ms] TX UDA (USB-SN: UDA-05)::1b::70B0::0004
+[905.613 ms] TX UDA (USB-SN: UDA-05)::1b::70B0::0104
+[905.632 ms] TX UDA (USB-SN: UDA-05)::1b::70B0::0204
+[905.648 ms] TX UDA (USB-SN: UDA-05)::1b::70B0::0304
+[908.062 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[908.122 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+[908.451 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[908.503 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+</Log></test>
+		<test step="36">
+			<id>536</id>
+			<name>40.3.2</name>
+			<description>Check HW Identifier of SMB</description>
+			<failed>1</failed>
+			<duration>17.74</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>MessageID</config>
+				<value type="string"></value>
+				<failed>1</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>0</id>
+					<name>Limit</name>
+					<value1>F50F</value1>
+					<value2></value2>
+				</limit>
+			</measure>
+			<Log>[925.138 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[924.075 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[924.099 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[924.114 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[924.128 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[924.143 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[924.158 ms] TX UDA (USB-SN: UDA-04)::a0::F50E::C0
+[925.459 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[925.506 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[924.466 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[924.482 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[924.497 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[924.611 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[924.618 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[924.655 ms] TX UDA (USB-SN: UDA-04)::a0::F50E::C0
+[925.947 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[926.099 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[924.993 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[925.050 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[925.057 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[925.072 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[925.086 ms] RX UDA (USB-SN: UDA-04)::c0::::
+</Log><Error><Code>-11114</Code><CallPath></CallPath><Msg>TEST_ERR_VALUE_OUT_OF_LIMIT</Msg></Error></test>
+		<test step="37">
+			<id>537</id>
+			<name>40.3.3</name>
+			<description>Check tracing ID of SMB</description>
+			<failed>1</failed>
+			<duration>1.71</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>MessageID</config>
+				<value type="string"></value>
+				<failed>1</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>0</id>
+					<name>Limit</name>
+					<value1>610D</value1>
+					<value2></value2>
+				</limit>
+			</measure>
+			<Log>[925.128 ms] TX UDA (USB-SN: UDA-04)::a0::600D::C0
+[926.430 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[925.237 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.481 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[925.278 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[925.299 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[925.314 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[925.328 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[925.404 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[925.424 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[925.438 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[925.453 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[925.468 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[925.544 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[925.566 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[925.580 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.811 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[925.595 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[925.616 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.850 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[925.700 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[925.716 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[925.730 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[925.745 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[925.759 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[925.844 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[925.872 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[925.886 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[925.901 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[925.915 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.165 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[926.001 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.240 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[926.036 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.052 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.067 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.081 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.158 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.180 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.186 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.194 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.208 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.294 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.322 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.336 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.344 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.565 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[926.350 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.605 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[926.433 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.467 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.481 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.496 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.502 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.588 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.614 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.628 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.635 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.642 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.936 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[926.727 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.754 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.760 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.775 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.997 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[926.790 ms] RX UDA (USB-SN: UDA-04)::c0::::
+</Log><Error><Code>-11114</Code><CallPath></CallPath><Msg>TEST_ERR_VALUE_OUT_OF_LIMIT</Msg></Error></test>
+		<test step="38">
+			<id>538</id>
+			<name>40.3.4</name>
+			<description>Standby Mode Activation of SMB</description>
+			<failed>1</failed>
+			<duration>1.63</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>MessageID</config>
+				<value type="string"></value>
+				<failed>1</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>0</id>
+					<name>Limit</name>
+					<value1>610C</value1>
+					<value2></value2>
+				</limit>
+			</measure>
+			<Log>[926.834 ms] TX UDA (USB-SN: UDA-04)::a0::600C::C0
+[926.937 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.963 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.986 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[926.994 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.000 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.076 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[928.314 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[927.106 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[928.340 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[927.127 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.148 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.162 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.239 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.265 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.279 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.285 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.300 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.385 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.415 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[928.652 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[927.440 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.470 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.476 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[928.704 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[927.561 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.600 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.607 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.622 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.636 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.721 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.740 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.755 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.769 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.784 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[929.024 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[927.869 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[929.107 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[927.916 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.930 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.944 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[927.951 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[928.036 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[928.057 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[928.072 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[928.086 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[928.101 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[928.186 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[928.207 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[928.222 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[929.443 ms] RX UDA (USB-SN: UDA-03)::c0::7160::00
+[928.236 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[928.265 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[929.500 ms] TX UDA (USB-SN: UDA-03)::1b::7060::
+[928.351 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[928.374 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[928.388 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[928.403 ms] RX UDA (USB-SN: UDA-04)::c0::::
+[928.417 ms] RX UDA (USB-SN: UDA-04)::c0::::
+</Log><Error><Code>-11114</Code><CallPath></CallPath><Msg>TEST_ERR_VALUE_OUT_OF_LIMIT</Msg></Error></test>
+		<test step="39">
+			<id>644</id>
+			<name>40.0.1</name>
+			<description>Unplug Product</description>
+			<failed>0</failed>
+			<duration>0.75</duration>
+			<used>1</used>
+		</test>
+		<cleanup>
+			<failed>0</failed>
+			<duration></duration>
+		</cleanup>
+	</process>
+	<process stage="4">
+		<name>WS50</name>
+		<description>Capacitor Discharge</description>
+		<init>
+			<failed>0</failed>
+			<duration></duration>
+		</init>
+		<test step="1">
+			<id>654</id>
+			<name>50.0.0</name>
+			<description>Plug Product</description>
+			<failed>0</failed>
+			<duration>0.85</duration>
+			<used>1</used>
+		</test>
+		<test step="2">
+			<id>656</id>
+			<name>50.0.2</name>
+			<description>Enter HW TEST MODE dbus</description>
+			<failed>0</failed>
+			<duration>1.16</duration>
+			<used>1</used>
+			<Log>[954.947 ms] TX UDA (USB-SN: UDA-04)::1b::7010::01
+[954.002 ms] RX UDA (USB-SN: UDA-05)::c0::::
+[954.032 ms] RX UDA (USB-SN: UDA-05)::c0::::
+[954.047 ms] RX UDA (USB-SN: UDA-05)::c0::::
+[954.053 ms] RX UDA (USB-SN: UDA-05)::c0::::
+[954.059 ms] RX UDA (USB-SN: UDA-05)::c0::::
+[954.075 ms] TX UDA (USB-SN: UDA-05)::1b::7000::23C0
+[955.171 ms] TX UDA (USB-SN: UDA-04)::1b::7010::01
+[954.298 ms] RX UDA (USB-SN: UDA-05)::c0::::
+[954.324 ms] RX UDA (USB-SN: UDA-05)::c0::::
+[954.338 ms] RX UDA (USB-SN: UDA-05)::c0::::
+[954.361 ms] RX UDA (USB-SN: UDA-05)::c0::::
+[954.376 ms] RX UDA (USB-SN: UDA-05)::c0::::
+[954.391 ms] TX UDA (USB-SN: UDA-05)::1b::7000::23C0
+[955.494 ms] RX UDA (USB-SN: UDA-04)::c0::7110::01
+[954.607 ms] RX UDA (USB-SN: UDA-05)::c0::7100::23C01500
+</Log></test>
+		<test step="3">
+			<id>562</id>
+			<name>50.8.8</name>
+			<description>Check triac output X3 2 off status</description>
+			<failed>0</failed>
+			<duration>4.16</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Meas X3.2 off</config>
+				<value type="real64">0.943341</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>218</id>
+					<name>Limit01</name>
+					<value1>0</value1>
+					<value2>2</value2>
+				</limit>
+			</measure>
+			<Log>[959.772 ms] TX UDA (USB-SN: UDA-04)::1b::7024::04
+</Log></test>
+		<test step="4">
+			<id>563</id>
+			<name>50.8.10</name>
+			<description>Check triac output X3 3 off status</description>
+			<failed>0</failed>
+			<duration>1.40</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Meas X3.3 off</config>
+				<value type="real64">1.043213</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>220</id>
+					<name>Limit01</name>
+					<value1>0</value1>
+					<value2>2</value2>
+				</limit>
+			</measure>
+			<Log>[960.700 ms] RX UDA (USB-SN: UDA-04)::c0::7124::00
+[962.339 ms] TX UDA (USB-SN: UDA-03)::1b::7072::
+</Log></test>
+		<test step="5">
+			<id>564</id>
+			<name>50.8.12</name>
+			<description>Check triac output X3.4 off status</description>
+			<failed>0</failed>
+			<duration>1.30</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Meas X3.4 off</config>
+				<value type="real64">1.071783</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>221</id>
+					<name>Limit01</name>
+					<value1>0</value1>
+					<value2>2</value2>
+				</limit>
+			</measure>
+			<Log>[962.224 ms] TX UDA (USB-SN: UDA-04)::1b::7020::0164
+</Log></test>
+		<test step="6">
+			<id>565</id>
+			<name>50.8.14</name>
+			<description>Check triac output X3.5 off status</description>
+			<failed>0</failed>
+			<duration>1.29</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Meas X3.5 off</config>
+				<value type="real64">1.040386</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>223</id>
+					<name>Limit01</name>
+					<value1>0</value1>
+					<value2>2</value2>
+				</limit>
+			</measure>
+			<Log>[963.641 ms] TX UDA (USB-SN: UDA-04)::1b::7021::02
+</Log></test>
+		<test step="7">
+			<id>566</id>
+			<name>50.8.7</name>
+			<description>Check triac output X3 2 on status</description>
+			<failed>1</failed>
+			<duration>1.55</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Meas X3.2 on</config>
+				<value type="real64">0.875599</value>
+				<failed>1</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>225</id>
+					<name>Limit01</name>
+					<value1>115</value1>
+					<value2>130</value2>
+				</limit>
+			</measure>
+			<Log>[964.950 ms] TX UDA (USB-SN: UDA-04)::1b::7042::64
+[965.149 ms] RX UDA (USB-SN: UDA-04)::c0::7142::64
+</Log><Error><Code>-11114</Code><CallPath>CheckLimitREAL64</CallPath><Msg>TEST_ERR_VALUE_OUT_OF_LIMIT</Msg></Error></test>
+		<test step="8">
+			<id>567</id>
+			<name>50.8.9</name>
+			<description>Check triac output X3 3 on status</description>
+			<failed>1</failed>
+			<duration>3.37</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Meas X3.3 on</config>
+				<value type="real64">0.956392</value>
+				<failed>1</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>540</id>
+					<name>Limit01</name>
+					<value1>75</value1>
+					<value2>170</value2>
+				</limit>
+			</measure>
+			<Log>[969.967 ms] TX UDA (USB-SN: UDA-03)::1b::7000::23C0
+</Log><Error><Code>-11114</Code><CallPath>CheckLimitREAL64</CallPath><Msg>TEST_ERR_VALUE_OUT_OF_LIMIT</Msg></Error></test>
+		<test step="9">
+			<id>568</id>
+			<name>50.8.11</name>
+			<description>Check triac output X3.4 on status</description>
+			<failed>1</failed>
+			<duration>1.51</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Meas X3.4 on</config>
+				<value type="real64">0.949276</value>
+				<failed>1</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>541</id>
+					<name>Limit01</name>
+					<value1>75</value1>
+					<value2>170</value2>
+				</limit>
+			</measure>
+			<Log>[970.192 ms] RX UDA (USB-SN: UDA-04)::c0::7180::000000
+[971.424 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+</Log><Error><Code>-11114</Code><CallPath>CheckLimitREAL64</CallPath><Msg>TEST_ERR_VALUE_OUT_OF_LIMIT</Msg></Error></test>
+		<test step="10">
+			<id>569</id>
+			<name>50.8.13</name>
+			<description>Check triac output X3.5 on status</description>
+			<failed>1</failed>
+			<duration>1.40</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Meas X3.5 on</config>
+				<value type="real64">0.807403</value>
+				<failed>1</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>542</id>
+					<name>Limit01</name>
+					<value1>75</value1>
+					<value2>170</value2>
+				</limit>
+			</measure>
+			<Log>[970.823 ms] TX UDA (USB-SN: UDA-04)::1b::7090::0001
+[972.113 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[972.131 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+[971.117 ms] RX UDA (USB-SN: UDA-04)::c0::7190::0001
+[972.453 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[972.473 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+[972.789 ms] RX UDA (USB-SN: UDA-03)::c0::7174::00DD00
+[972.806 ms] TX UDA (USB-SN: UDA-03)::1b::7074::
+</Log><Error><Code>-11114</Code><CallPath>CheckLimitREAL64</CallPath><Msg>TEST_ERR_VALUE_OUT_OF_LIMIT</Msg></Error></test>
+		<test step="11">
+			<id>438</id>
+			<name>50.10.1</name>
+			<description>X capacitor Discharge Control POSITIVE ON</description>
+			<failed>0</failed>
+			<duration>1.35</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Voltage Control + ON</config>
+				<value type="real64">338.310719</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>168</id>
+					<name>Limit01</name>
+					<value1>336.6</value1>
+					<value2>343.4</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="12">
+			<id>440</id>
+			<name>50.10.2</name>
+			<description>X capacitor Discharge Control POSITIVE OFF</description>
+			<failed>0</failed>
+			<duration>2.50</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Voltage CONTROL + OFF</config>
+				<value type="real64">0.753977</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>169</id>
+					<name>Limit01</name>
+					<value1>0</value1>
+					<value2>34</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="13">
+			<id>442</id>
+			<name>50.10.3</name>
+			<description>X capacitor Discharge Control Negative ON</description>
+			<failed>0</failed>
+			<duration>1.92</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Voltage CONTROL - ON</config>
+				<value type="real64">338.368352</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>170</id>
+					<name>Limit01</name>
+					<value1>336.6</value1>
+					<value2>343.4</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="14">
+			<id>443</id>
+			<name>50.10.4</name>
+			<description>X capacitor Discharge Control NEGATIVE OFF</description>
+			<failed>0</failed>
+			<duration>2.16</duration>
+			<used>1</used>
+			<measure step="1">
+				<config>Voltage CONTROL - OFF</config>
+				<value type="real64">0.227232</value>
+				<failed>0</failed>
+				<duration></duration>
+				<unit></unit>
+				<used>1</used>
+				<limit>
+					<id>171</id>
+					<name>Limit01</name>
+					<value1>0</value1>
+					<value2>34</value2>
+				</limit>
+			</measure>
+		</test>
+		<test step="15">
+			<id>653</id>
+			<name>50.0.1</name>
+			<description>Unplug Product</description>
+			<failed>0</failed>
+			<duration>0.96</duration>
+			<used>1</used>
+		</test>
+		<cleanup>
+			<failed>0</failed>
+			<duration></duration>
+		</cleanup>
+	</process>
+	<process stage="5">
+		<name>WS60</name>
+		<description>Pick and Place (Printer)</description>
+		<init>
+			<failed>0</failed>
+			<duration></duration>
+		</init>
+		<test step="1">
+			<id>308</id>
+			<name>60.00</name>
+			<description>Reset Printer</description>
+			<failed>0</failed>
+			<duration>1.41</duration>
+			<used>1</used>
+		</test>
+		<test step="2">
+			<id>323</id>
+			<name>60.10</name>
+			<description>Init Printer</description>
+			<failed>0</failed>
+			<duration>0.00</duration>
+			<used>1</used>
+		</test>
+		<test step="3">
+			<id>324</id>
+			<name>60.20</name>
+			<description>Generate label</description>
+			<failed>0</failed>
+			<duration>0.82</duration>
+			<used>1</used>
+		</test>
+		<test step="4">
+			<id>657</id>
+			<name>60.30</name>
+			<description>Pick Product And Go to Printer</description>
+			<failed>0</failed>
+			<duration>3.74</duration>
+			<used>1</used>
+		</test>
+		<test step="5">
+			<id>658</id>
+			<name>60.40</name>
+			<description>Start Cycle Print</description>
+			<failed>0</failed>
+			<duration>2.40</duration>
+			<used>1</used>
+		</test>
+		<test step="6">
+			<id>660</id>
+			<name>60.50</name>
+			<description>X move AND place Product front DATAMAN</description>
+			<failed>0</failed>
+			<duration>1.60</duration>
+			<used>1</used>
+		</test>
+		<test step="7">
+			<id>661</id>
+			<name>60.60</name>
+			<description>Read barcode</description>
+			<failed>0</failed>
+			<duration>0.92</duration>
+			<used>1</used>
+		</test>
+		<test step="8">
+			<id>662</id>
+			<name>60.70</name>
+			<description>PLACE PRODUCT TO PANEL</description>
+			<failed>0</failed>
+			<duration>4.66</duration>
+			<used>1</used>
+		</test>
+		<cleanup>
+			<failed>0</failed>
+			<duration></duration>
+		</cleanup>
+	</process>
+	<version>
+		<item type="plugin">
+			<name>Automat</name>
+			<version>0.0.2</version>
+			<datetime>Jun 14 2021 14:33:27</datetime>
+			<uuid>{E73BFBD5-77AF-40c8-9ED6-25C1F6EFA259}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Messaging panel</name>
+			<version>1.10.1</version>
+			<datetime>May  7 2021 11:15:52</datetime>
+			<uuid>{15CCD00D-3983-41b3-BC6A-A10F684A1F61}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Panel</name>
+			<version>0.0.1</version>
+			<datetime>Nov 23 2020 14:21:19</datetime>
+			<uuid>{32A783CF-D82C-4734-9112-2F61E92FC17B}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Product</name>
+			<version>1.0.1</version>
+			<datetime>Jul  8 2020 19:57:20</datetime>
+			<uuid>{5954031C-CEA1-4c16-8128-38B661811261}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Maintenance</name>
+			<version>0.0.2</version>
+			<datetime>Aug 10 2020 15:39:34</datetime>
+			<uuid>{4FDAB846-56F7-405d-BF13-EEB8EF8D96FA}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Report</name>
+			<version>1.10.1</version>
+			<datetime>Jun  1 2021 18:12:08</datetime>
+			<uuid>{3399A11A-2A03-4170-B69C-356F4F49C568}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Kosu</name>
+			<version>1.0.1</version>
+			<datetime>Feb  8 2021 09:54:18</datetime>
+			<uuid>{B9DD83C0-F8CE-44a0-A0AF-9AD7F170871D}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Info</name>
+			<version>1.0.1</version>
+			<datetime>Nov 22 2020 20:45:30</datetime>
+			<uuid>{71F5C8CB-0C94-429e-8A6C-98AF5E58B248}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Login dialog</name>
+			<version>0.0.2</version>
+			<datetime>Apr 22 2020 11:49:00</datetime>
+			<uuid>{AE2FAC8A-ABAC-4b1c-AA84-669809AB76EB}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Report</name>
+			<version>1.10.1</version>
+			<datetime>Jul 22 2020 14:11:29</datetime>
+			<uuid>{3399A11A-2A03-4170-B69C-356F4F49C569}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Cards</name>
+			<version>1.0.1</version>
+			<datetime>Nov 20 2020 12:21:40</datetime>
+			<uuid>{28E36F9B-656B-4acd-97EF-9010E3898EC1}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Power</name>
+			<version>1.0.1</version>
+			<datetime>Sep 24 2020 18:38:16</datetime>
+			<uuid>{FFAA1236-f5d2-2076-104c-c0a0e8dFCFA0}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Printer</name>
+			<version>1.0.1</version>
+			<datetime>Sep 15 2020 12:01:45</datetime>
+			<uuid>{bc86c222-d5d2-4276-894c-c0a0e8d258d4}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Sensors</name>
+			<version>1.0.1</version>
+			<datetime>Aug 26 2020 20:21:08</datetime>
+			<uuid>{374B887B-7EF6-4593-B83E-0E07DDB38C99}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Generator</name>
+			<version>1.0.1</version>
+			<datetime>Sep 11 2020 14:51:09</datetime>
+			<uuid>{FFAA1236-f5d2-2076-104c-c0a0e8dcf001}</uuid>
+		</item>
+		<item type="plugin">
+			<name>DbusGUI</name>
+			<version>0.0.1</version>
+			<datetime>Nov 25 2020 13:35:08</datetime>
+			<uuid>{E87E3CB8-8543-4F55-B847-12E4C61FACE2}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Test Sequence</name>
+			<version>1.20.1</version>
+			<datetime>Jun 14 2021 12:00:36</datetime>
+			<uuid>{E66FADE5-021C-4335-886C-FCA567AFADC2}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Tester</name>
+			<version>1.0.1</version>
+			<datetime>Dec 16 2020 12:00:55</datetime>
+			<uuid>{44941DAC-D5D1-4a7d-9825-5EF6EDC5921B}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Database</name>
+			<version>0.0.2</version>
+			<datetime>Sep  7 2020 17:36:32</datetime>
+			<uuid>{0CBEF382-AEDE-40a3-92EF-2B24D432A4CD}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Dielectrimeter</name>
+			<version>1.0.1</version>
+			<datetime>Sep  8 2020 17:29:39</datetime>
+			<uuid>{FFAA1236-f5d2-2076-104c-c0a0e8dea64f}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Traca</name>
+			<version>1.0.1</version>
+			<datetime>Nov  3 2020 22:54:22</datetime>
+			<uuid>{E87E3CB8-8543-4F55-B847-12E4C61CF234}</uuid>
+		</item>
+		<item type="module">
+			<name>Log Module</name>
+			<version>1.0</version>
+			<datetime>Jan 30 2009 12:06:11</datetime>
+			<uuid>{DA88E676-2589-4fa2-A31B-2875D6F2CB8D}</uuid>
+		</item>
+		<item type="module">
+			<name>Powers Module</name>
+			<version>1.0</version>
+			<datetime>Sep 24 2020 18:45:04</datetime>
+			<uuid>{28040E54-784A-4f00-8CDF-A986AB7CAF71}</uuid>
+		</item>
+		<item type="module">
+			<name>Printers Module</name>
+			<version>1.0</version>
+			<datetime>Sep 15 2020 12:01:10</datetime>
+			<uuid>{28040E54-784A-4f00-8CDF-A986AB747298}</uuid>
+		</item>
+		<item type="module">
+			<name>Sensor Module</name>
+			<version>1.0</version>
+			<datetime>Dec 22 2020 15:21:28</datetime>
+			<uuid>{A65AEFCA-1600-4be0-AD11-7CA998CE5584}</uuid>
+		</item>
+		<item type="module">
+			<name>Tracas Module</name>
+			<version>1.0</version>
+			<datetime>Feb  5 2021 12:29:54</datetime>
+			<uuid>{76298370-062d-11dd-bd0b-0800200bf002}</uuid>
+		</item>
+		<item type="module">
+			<name>User login module</name>
+			<version>1.0</version>
+			<datetime>Jan 30 2009 12:07:17</datetime>
+			<uuid>{BFEA696D-4372-4c08-AFFA-A269369BA40E}</uuid>
+		</item>
+		<item type="module">
+			<name>Generators Module</name>
+			<version>1.0</version>
+			<datetime>Sep 11 2020 14:50:17</datetime>
+			<uuid>{28040E54-784A-4f00-8CDF-A986AB7BF001}</uuid>
+		</item>
+		<item type="module">
+			<name>DBUS Module</name>
+			<version>1.0</version>
+			<datetime>Oct 18 2020 12:32:35</datetime>
+			<uuid>{0209bd7a-473a-11dc-8314-0800200FA02B}</uuid>
+		</item>
+		<item type="module">
+			<name>Dielectrimeters Module</name>
+			<version>1.0</version>
+			<datetime>Sep  8 2020 11:59:40</datetime>
+			<uuid>{28040E54-784A-4f00-8CDF-A986AB7BA23C}</uuid>
+		</item>
+		<item type="module">
+			<name>Database module</name>
+			<version>2.1</version>
+			<datetime>Nov 24 2020 12:01:14</datetime>
+			<uuid>{913C9769-8D32-496f-9900-546814DDC355}</uuid>
+		</item>
+		<item type="module">
+			<name>Tester Module</name>
+			<version>1.0</version>
+			<datetime>Jun  4 2021 17:02:14</datetime>
+			<uuid>{F459741B-B526-4fb9-B65C-A4C983105321}</uuid>
+		</item>
+		<item type="module">
+			<name>Labels Module</name>
+			<version>1.3</version>
+			<datetime>Nov 24 2020 16:24:25</datetime>
+			<uuid>{626BFA10-D068-45ff-B497-E8F27B940EE9}</uuid>
+		</item>
+	</version></testseq>

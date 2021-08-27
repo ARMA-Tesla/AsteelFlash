@@ -1,0 +1,1 @@
+msgfmt.exe -o test_b2yy_mcp2.mo test_b2yy_mcp2.pot

@@ -1,0 +1,9 @@
+-inrc c:\work\src\gui\traca\cvibuild.traca_gui\Debug\resources.in.rc
+-outrc c:\work\src\gui\traca\cvibuild.traca_gui\Debug\resources.out.rc
+-inhdef c:\work\src\gui\traca\cvibuild.traca_gui\Debug\traca_gui_plugin.h.hdefs
+-outdef c:\work\src\gui\traca\cvibuild.traca_gui\Debug\traca_gui.dll.defs
+-indefprot c:\work\src\gui\traca\cvibuild.traca_gui\Debug\elstring.obj.cvidefprots
+-indefprot c:\work\src\gui\traca\cvibuild.traca_gui\Debug\Exception.obj.cvidefprots
+-indefprot c:\work\src\gui\traca\cvibuild.traca_gui\Debug\traca_gui.obj.cvidefprots
+-dllName traca_gui.dll
+-addNITypeInfo 

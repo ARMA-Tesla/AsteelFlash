@@ -1,0 +1,7 @@
+LIBRARY tracas
+
+EXPORTS
+UnloadElcomModule
+InitializeElcomModule
+LoadElcomModule
+GetModuleAttribute

@@ -1,0 +1,10 @@
+[dbstesterlist_new]
+Class="Function"
+Prototype="struct _SElException *dbstesterlist_new(struct _SDBSTesterList **pDBSTesterListPtr, void *pDBS);"
+SourceLocation="c:\work\src\modules\dbs\dbs_testerlist.c:14:1"
+
+[dbstesterlist_delete]
+Class="Function"
+Prototype="struct _SElException *dbstesterlist_delete(struct _SDBSTesterList **pDBSTesterListPtr);"
+SourceLocation="c:\work\src\modules\dbs\dbs_testerlist.c:37:1"
+

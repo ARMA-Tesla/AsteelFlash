@@ -1,0 +1,9 @@
+LIBRARY database
+
+EXPORTS
+gs_InfoData
+pluginGetAttribute
+pluginGetInfo
+pluginLeave
+pluginRun
+pluginInitialize

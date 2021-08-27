@@ -1,0 +1,77 @@
+;===================================================================
+; GSD-File  for ET 200L-SC 16DI/16DO default (SC)  SIEMENS AG 
+; MlfB    : 6ES7 133-1BL11-0XB0
+;           6ES7 133-1BL10-0XB0
+;
+; Stand   : 12.10.00  V1.2  GW
+; File    : SIEM802C.GSD
+;====================================================================
+#Profibus_DP
+; <Prm-Text-Def-List>
+; <Ext-User-Prm-Data-Def-List>
+; <Unit-Definition-List>
+GSD_Revision=1
+Vendor_Name="SIEMENS"
+Model_Name="L-SC 16DI/DO/d.DP"
+Revision="V1.2"
+Ident_Number=0x802C
+Protocol_Ident=0
+Station_Type=0
+Hardware_Release="A1.0"
+Software_Release="Z1.0"
+9.6_supp=1
+19.2_supp=1
+93.75_supp=1
+187.5_supp=1
+500_supp=1
+1.5M_supp=1
+MaxTsdr_9.6=60
+MaxTsdr_19.2=60
+MaxTsdr_93.75=60
+MaxTsdr_187.5=60
+MaxTsdr_500=100
+MaxTsdr_1.5M=150
+Implementation_Type="SPC3"
+Bitmap_Device="ET200L_N"
+Bitmap_SF="ET200L_S"
+; Slave-Specification:
+OrderNumber="6ES7 133-1BL1*-0XB0"
+Periphery="ET200"
+S7HeaderCnf=3
+OnlySpecialModules=1
+OffsetFirstMPDBlock=0
+ETERDelay=0
+MaxResponseDelay=0
+Freeze_Mode_supp=1
+Sync_Mode_supp=1
+Auto_Baud_supp=1
+Fail_Safe=1
+Min_Slave_Intervall=10
+Max_Diag_Data_Len=9
+Modul_Offset=0
+Slave_Family=3@TdF@ET200L
+Modular_Station=1
+Max_Module=5
+Max_Input_Len=4
+Max_Output_Len=4
+Max_Data_Len=8
+; UserPrmData: Length and Preset:
+User_Prm_Data_Len=3
+User_Prm_Data=0x00,0x00,0x00
+Ext_User_Prm_Data_Const(0)=0x00,0x00,0x00
+; <Module-Definition-List>
+Module="Config for Slot0" 0x04,0x00,0x00,0xAD,0xC4
+Preset=1
+EndModule
+Module="Config for Slot1" 0x04,0x00,0x00,0x9B,0x40
+Preset=1
+EndModule
+Module="Config for Slot2" 0x04,0x00,0x00,0x8F,0xC0
+Preset=1
+EndModule
+Module="Config for Slot3" 0xC2,0x01,0x01,0xBF,0xD2
+Preset=1
+EndModule
+Module="Config for Slot4" 0xC2,0x01,0x01,0x42,0x45
+Preset=1
+EndModule

@@ -1,0 +1,30 @@
+[intervalresult_new]
+Class="Function"
+Prototype="struct _SElException *intervalresult_new(struct _SIntervalResult **pInterval);"
+SourceLocation="c:\work\src\modules\dbs\interval.c:30:1"
+
+[intervalresult_delete]
+Class="Function"
+Prototype="struct _SElException *intervalresult_delete(struct _SIntervalResult **pInterval);"
+SourceLocation="c:\work\src\modules\dbs\interval.c:53:1"
+
+[MergeIntervals]
+Class="Function"
+Prototype="struct _SElException *MergeIntervals(struct _SIntervalResult *pIntervals1, struct _SIntervalResult *pIntervals2, struct _SIntervalResult **pResult, unsigned int *interval_time);"
+SourceLocation="c:\work\src\modules\dbs\interval.c:68:1"
+
+[InverseIntervals]
+Class="Function"
+Prototype="struct _SElException *InverseIntervals(unsigned int t1, unsigned int t2, struct _SIntervalResult *pIntervals, struct _SIntervalResult **pResult, unsigned int *interval_time);"
+SourceLocation="c:\work\src\modules\dbs\interval.c:116:1"
+
+[userintervals_new]
+Class="Function"
+Prototype="struct _SElException *userintervals_new(struct _SUserIntervals **pUserIntervals);"
+SourceLocation="c:\work\src\modules\dbs\interval.c:354:1"
+
+[userintervals_delete]
+Class="Function"
+Prototype="struct _SElException *userintervals_delete(struct _SUserIntervals **pUserIntervals);"
+SourceLocation="c:\work\src\modules\dbs\interval.c:375:1"
+

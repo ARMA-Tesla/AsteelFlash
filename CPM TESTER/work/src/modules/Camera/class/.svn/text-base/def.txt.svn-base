@@ -1,0 +1,14 @@
+Open(resource, options)
+Close()
+Write(buffer, size)
+Read(buffer, size)
+GetStatus(state)
+
+
+Class:
+InitPrinters
+
+
+Labels:
+PrintLabel(labelId, data)
+SetActivePrinter(printer)

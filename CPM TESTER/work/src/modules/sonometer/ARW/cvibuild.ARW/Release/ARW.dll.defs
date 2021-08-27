@@ -1,0 +1,8 @@
+LIBRARY ARW
+
+EXPORTS
+SoundLevelMeter
+Read
+Write
+Disconnect
+Connect

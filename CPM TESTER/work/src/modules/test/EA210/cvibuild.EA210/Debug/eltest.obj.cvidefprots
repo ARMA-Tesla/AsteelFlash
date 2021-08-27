@@ -1,0 +1,195 @@
+[test_new]
+Class="Function"
+Prototype="struct _SElException *test_new(struct _STest **pTest);"
+SourceLocation="c:\work\src\shared\test\eltest.c:47:17"
+
+[test_delete]
+Class="Function"
+Prototype="struct _SElException *test_delete(struct _STest **pTest);"
+SourceLocation="c:\work\src\shared\test\eltest.c:72:17"
+
+[QueryParameterInt32]
+Class="Function"
+Prototype="struct _SElException *QueryParameterInt32(struct _STestParam *ppar, int process, int step, const char *name, int *pValue);"
+SourceLocation="c:\work\src\shared\test\eltest.c:265:17"
+
+[QueryParameterString]
+Class="Function"
+Prototype="struct _SElException *QueryParameterString(struct _STestParam *ppar, int process, int step, const char *name, char buffer[], int bufferSize);"
+SourceLocation="c:\work\src\shared\test\eltest.c:293:17"
+
+[QueryParameterUInt32]
+Class="Function"
+Prototype="struct _SElException *QueryParameterUInt32(struct _STestParam *ppar, int process, int step, const char *name, unsigned int *pValue);"
+SourceLocation="c:\work\src\shared\test\eltest.c:308:17"
+
+[QueryParameterReal64]
+Class="Function"
+Prototype="struct _SElException *QueryParameterReal64(struct _STestParam *ppar, int process, int step, const char *name, double *pValue);"
+SourceLocation="c:\work\src\shared\test\eltest.c:380:17"
+
+[SetParameterInt32]
+Class="Function"
+Prototype="struct _SElException *SetParameterInt32(struct _STestParam *ppar, int process, int step, const char *name, int value);"
+SourceLocation="c:\work\src\shared\test\eltest.c:408:17"
+
+[SetParameterUInt32]
+Class="Function"
+Prototype="struct _SElException *SetParameterUInt32(struct _STestParam *ppar, int process, int step, const char *name, unsigned int value);"
+SourceLocation="c:\work\src\shared\test\eltest.c:429:17"
+
+[SetParameterReal64]
+Class="Function"
+Prototype="struct _SElException *SetParameterReal64(struct _STestParam *ppar, int process, int step, const char *name, double value);"
+SourceLocation="c:\work\src\shared\test\eltest.c:449:17"
+
+[SetParameterString]
+Class="Function"
+Prototype="struct _SElException *SetParameterString(struct _STestParam *ppar, int process, int step, const char *name, const char *buffer);"
+SourceLocation="c:\work\src\shared\test\eltest.c:473:17"
+
+[CreateNewLimit]
+Class="Function"
+Prototype="struct _SElException *CreateNewLimit(struct _STestParam *ppar, int process, int step, int index, char *limit_str, const char *description);"
+SourceLocation="c:\work\src\shared\test\eltest.c:507:17"
+
+[CreateNewLimitEx]
+Class="Function"
+Prototype="struct _SElException *CreateNewLimitEx(struct _STestParam *ppar, int process, int step, int index, char *min, char *max, const char *description);"
+SourceLocation="c:\work\src\shared\test\eltest.c:565:17"
+
+[GetLimitConfiguration]
+Class="Function"
+Prototype="struct _SElException *GetLimitConfiguration(struct _STestParam *ppar, int process, int step, int index, char buffer[], int bufferSize);"
+SourceLocation="c:\work\src\shared\test\eltest.c:624:17"
+
+[LimitExist]
+Class="Function"
+Prototype="int LimitExist(struct _STestParam *ppar, int process, int step, int index);"
+SourceLocation="c:\work\src\shared\test\eltest.c:667:8"
+
+[CheckLimitSTRING]
+Class="Function"
+Prototype="struct _SElException *CheckLimitSTRING(struct _STestParam *ppar, int process, int step, int index, char *value);"
+SourceLocation="c:\work\src\shared\test\eltest.c:695:17"
+
+[CheckLimitINT32]
+Class="Function"
+Prototype="struct _SElException *CheckLimitINT32(struct _STestParam *ppar, int process, int step, int index, int value);"
+SourceLocation="c:\work\src\shared\test\eltest.c:769:17"
+
+[CheckLimitUINT32]
+Class="Function"
+Prototype="struct _SElException *CheckLimitUINT32(struct _STestParam *ppar, int process, int step, int index, unsigned int value);"
+SourceLocation="c:\work\src\shared\test\eltest.c:874:17"
+
+[CheckLimitREAL64]
+Class="Function"
+Prototype="struct _SElException *CheckLimitREAL64(struct _STestParam *ppar, int process, int step, int index, double value);"
+SourceLocation="c:\work\src\shared\test\eltest.c:991:17"
+
+[SetTestSequenceResult]
+Class="Function"
+Prototype="struct _SElException *SetTestSequenceResult(struct _STestParam *ppar, int mode, struct _SElException *pException);"
+SourceLocation="c:\work\src\shared\test\eltest.c:1093:17"
+
+[GetTestResult]
+Class="Function"
+Prototype="struct _SElException *GetTestResult(struct _STestParam *ppar, int *result);"
+SourceLocation="c:\work\src\shared\test\eltest.c:1212:17"
+
+[SetTestResult]
+Class="Function"
+Prototype="struct _SElException *SetTestResult(struct _STestParam *ppar, int process, int step, int index, struct _SElException *pException);"
+SourceLocation="c:\work\src\shared\test\eltest.c:1256:17"
+
+[SetTestUsed]
+Class="Function"
+Prototype="struct _SElException *SetTestUsed(struct _STestParam *ppar, int process, int step);"
+SourceLocation="c:\work\src\shared\test\eltest.c:1379:17"
+
+[SetTestDuration]
+Class="Function"
+Prototype="struct _SElException *SetTestDuration(struct _STestParam *ppar, int process, int step, double duration);"
+SourceLocation="c:\work\src\shared\test\eltest.c:1412:17"
+
+[SetSubTestDuration]
+Class="Function"
+Prototype="struct _SElException *SetSubTestDuration(struct _STestParam *ppar, int process, int step, int index, double duration);"
+SourceLocation="c:\work\src\shared\test\eltest.c:1448:17"
+
+[SetTestSequenceDuration]
+Class="Function"
+Prototype="struct _SElException *SetTestSequenceDuration(struct _STestParam *ppar, int mode, double duration);"
+SourceLocation="c:\work\src\shared\test\eltest.c:1482:17"
+
+[SetTestSequenceTime]
+Class="Function"
+Prototype="struct _SElException *SetTestSequenceTime(struct _STestParam *ppar, double duration);"
+SourceLocation="c:\work\src\shared\test\eltest.c:1520:17"
+
+[GetTestSequenceBarcode]
+Class="Function"
+Prototype="struct _SElException *GetTestSequenceBarcode(struct _STestParam *ppar, char *barcode, unsigned int barcode_size);"
+SourceLocation="c:\work\src\shared\test\eltest.c:1551:17"
+
+[GetSubTest]
+Class="Function"
+Prototype="struct _SElException *GetSubTest(struct _STestParam *ppar, int process, int step, char *subtest);"
+SourceLocation="c:\work\src\shared\test\eltest.c:1587:17"
+
+[GetTestDescription]
+Class="Function"
+Prototype="struct _SElException *GetTestDescription(struct _STestParam *ppar, int process, int step, char *name, char *desc);"
+SourceLocation="c:\work\src\shared\test\eltest.c:1633:17"
+
+[SetTestValue]
+Class="Function"
+Prototype="struct _SElException *SetTestValue(struct _STestParam *ppar, int process, int step, const char *name, const char *value);"
+SourceLocation="c:\work\src\shared\test\eltest.c:1695:17"
+
+[SetTestSequenceValue]
+Class="Function"
+Prototype="struct _SElException *SetTestSequenceValue(struct _STestParam *ppar, int mode, const char *name, const char *value);"
+SourceLocation="c:\work\src\shared\test\eltest.c:1760:17"
+
+[GetResultREAL64formXMLString]
+Class="Function"
+Prototype="struct _SElException *GetResultREAL64formXMLString(struct _SELString *result, const char *path, double *value);"
+SourceLocation="c:\work\src\shared\test\eltest.c:1832:17"
+
+[GetResultSTRINGformXMLString]
+Class="Function"
+Prototype="struct _SElException *GetResultSTRINGformXMLString(struct _SELString *result, const char *path, char *buffer);"
+SourceLocation="c:\work\src\shared\test\eltest.c:1854:17"
+
+[Debug]
+Class="Function"
+Prototype="void Debug(char *message);"
+SourceLocation="c:\work\src\shared\test\eltest.c:1891:6"
+
+[SaveXmlBarcode]
+Class="Function"
+Prototype="void SaveXmlBarcode(struct _STestParam *pTestParam);"
+SourceLocation="c:\work\src\shared\test\eltest.c:1907:6"
+
+[SaveXmlResultFileFail]
+Class="Function"
+Prototype="void SaveXmlResultFileFail(struct _STestParam *pTestParam);"
+SourceLocation="c:\work\src\shared\test\eltest.c:1935:6"
+
+[CameraGetdata]
+Class="Function"
+Prototype="struct _SElException *CameraGetdata(struct _STester *ptester, struct _Cameras *pcameras, int step, int timeout, char *data);"
+SourceLocation="c:\work\src\shared\test\eltest.c:1968:17"
+
+[CameraSetParam]
+Class="Function"
+Prototype="struct _SElException *CameraSetParam(struct _Cameras *pcameras, int step, int timeout);"
+SourceLocation="c:\work\src\shared\test\eltest.c:2016:17"
+
+[CameraSetRef]
+Class="Function"
+Prototype="struct _SElException *CameraSetRef(struct _Cameras *pcameras, int step, int timeout);"
+SourceLocation="c:\work\src\shared\test\eltest.c:2043:17"
+

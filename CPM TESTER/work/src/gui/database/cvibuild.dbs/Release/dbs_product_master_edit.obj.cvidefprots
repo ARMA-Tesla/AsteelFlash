@@ -1,0 +1,10 @@
+[NewProductMasterDialog]
+Class="Function"
+Prototype="struct _SElException *NewProductMasterDialog(struct _SProductMaster master);"
+SourceLocation="c:\work\src\gui\database\dbs_product_master_edit.c:20:1"
+
+[DelProductMasterDialog]
+Class="Function"
+Prototype="struct _SElException *DelProductMasterDialog(struct _SProductMaster master, const char *keyNode, const char *keyCol);"
+SourceLocation="c:\work\src\gui\database\dbs_product_master_edit.c:52:1"
+

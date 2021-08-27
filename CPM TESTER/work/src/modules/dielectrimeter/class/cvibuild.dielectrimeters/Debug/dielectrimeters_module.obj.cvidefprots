@@ -1,0 +1,25 @@
+[DllMain]
+Class="Function"
+Prototype="int DllMain(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+SourceLocation="c:\work\src\modules\dielectrimeter\class\dielectrimeters_module.c:9:15"
+
+[GetModuleAttribute]
+Class="Function"
+Prototype="struct _SElException *GetModuleAttribute(unsigned int attrID, unsigned int size, void *value) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\dielectrimeter\class\dielectrimeters_module.c:31:24"
+
+[LoadElcomModule]
+Class="Function"
+Prototype="struct _SElException *LoadElcomModule(const char *configuration, void **pInstance, struct _SPluginArgs *pParam) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\dielectrimeter\class\dielectrimeters_module.c:59:24"
+
+[InitializeElcomModule]
+Class="Function"
+Prototype="struct _SElException *InitializeElcomModule(void *pInstance, const char *configuration, struct _SPluginArgs *pParam) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\dielectrimeter\class\dielectrimeters_module.c:84:24"
+
+[UnloadElcomModule]
+Class="Function"
+Prototype="struct _SElException *UnloadElcomModule(void *pInstance) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\dielectrimeter\class\dielectrimeters_module.c:97:24"
+

@@ -1,0 +1,35 @@
+[TreeStepsIni]
+Class="Function"
+Prototype="struct _SElException *TreeStepsIni();"
+SourceLocation="c:\work\src\gui\database\dbs_test.c:118:1"
+
+[TreeStepsClose]
+Class="Function"
+Prototype="struct _SElException *TreeStepsClose();"
+SourceLocation="c:\work\src\gui\database\dbs_test.c:181:1"
+
+[BkTreeStepsNodeClick]
+Class="Function"
+Prototype="struct _SElException *BkTreeStepsNodeClick(char *keyNode);"
+SourceLocation="c:\work\src\gui\database\dbs_test.c:194:1"
+
+[MoveTestMode]
+Class="Function"
+Prototype="struct _SElException *MoveTestMode(struct _STestStep test, int editable, const char *keyNode);"
+SourceLocation="c:\work\src\gui\database\dbs_test.c:245:1"
+
+[BkTreeStepMove]
+Class="Function"
+Prototype="struct _SElException *BkTreeStepMove(int key_id, int *activated);"
+SourceLocation="c:\work\src\gui\database\dbs_test.c:363:1"
+
+[BkTreeStepsPopupMenuCommand]
+Class="Function"
+Prototype="struct _SElException *BkTreeStepsPopupMenuCommand(char *keyNode, char *keyCol, long menuItem);"
+SourceLocation="c:\work\src\gui\database\dbs_test.c:440:1"
+
+[BkTreeStepsInsert]
+Class="Function"
+Prototype="struct _SElException *BkTreeStepsInsert();"
+SourceLocation="c:\work\src\gui\database\dbs_test.c:568:1"
+

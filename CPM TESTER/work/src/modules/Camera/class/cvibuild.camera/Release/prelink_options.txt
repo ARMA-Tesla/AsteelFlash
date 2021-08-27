@@ -1,0 +1,8 @@
+-inrc c:\work\src\modules\Camera\class\cvibuild.camera\Release\resources.in.rc
+-outrc c:\work\src\modules\Camera\class\cvibuild.camera\Release\resources.out.rc
+-inhdef c:\work\src\modules\Camera\class\cvibuild.camera\Release\module.h.hdefs
+-outdef c:\work\src\modules\Camera\class\cvibuild.camera\Release\camera.dll.defs
+-indefprot c:\work\src\modules\Camera\class\cvibuild.camera\Release\cameras.obj.cvidefprots
+-indefprot c:\work\src\modules\Camera\class\cvibuild.camera\Release\cameras_module.obj.cvidefprots
+-indefprot c:\work\src\modules\Camera\class\cvibuild.camera\Release\Exception.obj.cvidefprots
+-dllName camera.dll

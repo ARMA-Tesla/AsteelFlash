@@ -1,0 +1,1 @@
+-force-include-file "cameras.h";"c:\work\src\modules\Camera\class\cameras.h" -force-include-file "Cognex.c";"c:\work\src\modules\Camera\cognex\Cognex.c" -force-include-file "Cognex.h";"c:\work\src\modules\Camera\cognex\Cognex.h" -force-include-file "Exception.c";"c:\work\src\shared\exception\Exception.c" 

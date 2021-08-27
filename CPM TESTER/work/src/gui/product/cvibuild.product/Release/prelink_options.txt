@@ -1,0 +1,10 @@
+-inrc c:\work\src\gui\product\cvibuild.product\Release\resources.in.rc
+-outrc c:\work\src\gui\product\cvibuild.product\Release\resources.out.rc
+-inhdef c:\work\src\gui\product\cvibuild.product\Release\product_plugin.h.hdefs
+-outdef c:\work\src\gui\product\cvibuild.product\Release\product.dll.defs
+-indefprot c:\work\src\gui\product\cvibuild.product\Release\eleventdata.obj.cvidefprots
+-indefprot c:\work\src\gui\product\cvibuild.product\Release\elstring.obj.cvidefprots
+-indefprot c:\work\src\gui\product\cvibuild.product\Release\Exception.obj.cvidefprots
+-indefprot c:\work\src\gui\product\cvibuild.product\Release\product.obj.cvidefprots
+-indefprot c:\work\src\gui\product\cvibuild.product\Release\product_fnc.obj.cvidefprots
+-dllName product.dll

@@ -1,0 +1,10 @@
+[elstring_new]
+Class="Function"
+Prototype="struct _SElException *elstring_new(const char *pStr, struct _SELString **pString);"
+SourceLocation="c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\shared\string\elstring.c:75:17"
+
+[elstring_delete]
+Class="Function"
+Prototype="struct _SElException *elstring_delete(struct _SELString **pString);"
+SourceLocation="c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\shared\string\elstring.c:139:17"
+

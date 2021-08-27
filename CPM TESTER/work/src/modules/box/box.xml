@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<configuration>
+    <modules>
+        <module id="{6007D405-667D-41f9-B98C-DF024A66CC0E}">
+            <name>Box Module</name>
+            <panel_nb>6</panel_nb>
+        </module>
+    </modules>
+</configuration>

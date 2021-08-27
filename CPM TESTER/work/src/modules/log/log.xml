@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="windows-1250" ?> 
+<configuration>
+<modules>
+	<module id="{DA88E676-2589-4fa2-A31B-2875D6F2CB8D}">
+		<name>Log module</name> 
+		<!--
+        0 EMERG   /*!< System is unusable */
+        1 ALERT	  /*!< Immediate action required */
+        2 CRIT    /*!< Critical conditions */
+        3 ERR     /*!< Error conditions, Exceptions */
+        4 WARNING /*!< Warning conditions */
+        5 NOTICE	/*!< Normal but significant */
+        6 INFO		/*!< Informational */
+        7 DEBUG		/*!< Debug-level messages */
+        8 COMMUNICATION /*!< Communication messages */
+        9 TRACE   /*!< Trace function messages */
+    -->
+		<listener name='console01'>
+			<channel>ODBC</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000000000</mask>
+			<output>CONSOLE</output>
+		</listener>
+		<listener name='console02'>
+			<channel>TOOL AIRPUMP</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>CONSOLE</output>
+		</listener>
+		<listener name='console03'>
+			<channel>TOOL BANNER</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>CONSOLE</output>
+		</listener>
+		<listener name='console04'>
+			<channel>TOOL BARCODE</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>CONSOLE</output>
+		</listener>
+		<listener name='console05'>
+			<channel>TOOL GREASE</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>CONSOLE</output>
+		</listener>
+		<listener name='console06'>
+			<channel>TOOL IONIZER</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>CONSOLE</output>
+		</listener>
+		<listener name='console07'>
+			<channel>TOOL LIFT</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>CONSOLE</output>
+		</listener>
+		<listener name='console08'>
+			<channel>TOOL MPD</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>CONSOLE</output>
+		</listener>
+		<listener name='console09'>
+			<channel>LINE CTRL</channel>
+			<enabled>TRUE</enabled>
+			<mask>1000001000</mask>
+			<output>CONSOLE</output>
+		</listener>
+		<listener name='console10'>
+			<channel>LINE IO</channel>
+			<enabled>TRUE</enabled>
+			<mask>1000001000</mask>
+			<output>CONSOLE</output>
+		</listener>
+		<listener name='console11'>
+			<channel>SLEDGE</channel>
+			<enabled>TRUE</enabled>
+			<mask>1000001000</mask>
+			<output>CONSOLE</output>
+		</listener>
+		<listener name='console12'>
+			<channel>TOOL WAIT</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>CONSOLE</output>
+		</listener>
+		<listener name='console13'>
+			<channel>TOOL BOXGROUP</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>CONSOLE</output>
+		</listener>
+		<listener name='console14'>
+			<channel>TOOL SCREWDRIVER</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>CONSOLE</output>
+		</listener>
+		<listener name='console15'>
+			<channel>TOOL DETECTION</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>CONSOLE</output>
+		</listener>
+		<listener name='console16'>
+			<channel>TOOL PCBPREPARE</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>CONSOLE</output>
+		</listener>
+		<listener name='console17'>
+			<channel>TOOL GREASE2</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>CONSOLE</output>
+		</listener>
+		
+		<listener name='file01'>
+			<channel>ODBC</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000000000</mask>
+			<output>FILE</output>
+			<config>D:\FlexiLine.new\log.txt</config>
+		</listener>
+		<listener name='file02'>
+			<channel>TOOL AIRPUMP</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>FILE</output>
+			<config>D:\FlexiLine.new\log.txt</config>
+		</listener>
+		<listener name='file03'>
+			<channel>TOOL BANNER</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>FILE</output>
+			<config>D:\FlexiLine.new\log.txt</config>
+		</listener>
+		<listener name='file04'>
+			<channel>TOOL BARCODE</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>FILE</output>
+			<config>D:\FlexiLine.new\log.txt</config>
+		</listener>
+		<listener name='file05'>
+			<channel>TOOL GREASE</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>FILE</output>
+			<config>D:\FlexiLine.new\log.txt</config>
+		</listener>
+		<listener name='file06'>
+			<channel>TOOL IONIZER</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>FILE</output>
+			<config>D:\FlexiLine.new\log.txt</config>
+		</listener>
+		<listener name='file07'>
+			<channel>TOOL LIFT</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>FILE</output>
+			<config>D:\FlexiLine.new\log.txt</config>
+		</listener>
+		<listener name='file08'>
+			<channel>TOOL MPD</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>FILE</output>
+			<config>D:\FlexiLine.new\log.txt</config>
+		</listener>
+		<listener name='file09'>
+			<channel>LINE CTRL</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>FILE</output>
+			<config>D:\FlexiLine.new\log.txt</config>
+		</listener>
+		<listener name='file10'>
+			<channel>LINE IO</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>FILE</output>
+			<config>D:\FlexiLine.new\log.txt</config>
+		</listener>
+		<listener name='file11'>
+			<channel>SLEDGE</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>FILE</output>
+			<config>D:\FlexiLine.new\log.txt</config>
+		</listener>
+		<listener name='file12'>
+			<channel>TOOL WAIT</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>FILE</output>
+			<config>D:\FlexiLine.new\log.txt</config>
+		</listener>
+		<listener name='file13'>
+			<channel>TOOL BOXGROUP</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>FILE</output>
+			<config>D:\FlexiLine.new\log.txt</config>
+		</listener>
+		<listener name='file14'>
+			<channel>TOOL SCREWDRIVER</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>FILE</output>
+			<config>D:\FlexiLine.new\log.txt</config>
+		</listener>
+    <listener name='file15'>
+			<channel>TOOL DETECTION</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>FILE</output>
+			<config>D:\FlexiLine.new\log.txt</config>
+		</listener>
+		<listener name='file16'>
+			<channel>TOOL PCBPREPARE</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>FILE</output>
+			<config>D:\FlexiLine.new\log.txt</config>
+		</listener>
+		<listener name='file17'>
+			<channel>TOOL GREASE2</channel>
+			<enabled>TRUE</enabled>
+			<mask>0000001000</mask>
+			<output>FILE</output>
+			<config>D:\FlexiLine.new\log.txt</config>
+		</listener>		
+	</module>
+</modules>
+</configuration>

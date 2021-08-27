@@ -1,0 +1,11 @@
+
+
+
+[bcr_new]
+Class="Function"
+Prototype="struct _SElException *bcr_new(struct _BarCodeReader **pBcr) __declspec(dllexport);"
+
+[bcr_delete]
+Class="Function"
+Prototype="struct _SElException *bcr_delete(struct _BarCodeReader **pBcr) __declspec(dllexport);"
+

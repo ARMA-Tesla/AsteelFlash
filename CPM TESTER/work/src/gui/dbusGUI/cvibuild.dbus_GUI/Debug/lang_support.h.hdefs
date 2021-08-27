@@ -1,0 +1,15 @@
+
+
+
+
+
+
+
+[language_new]
+Class="Function"
+Prototype="struct _SElException *language_new(struct _SLanguage **pLanguage);"
+
+[language_delete]
+Class="Function"
+Prototype="struct _SElException *language_delete(struct _SLanguage **pLanguage);"
+

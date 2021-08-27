@@ -1,0 +1,15 @@
+dielectrimeters.obj
+dielectrimeters_module.obj
+Exception.obj
+cvi.lib
+cviauto.lib
+cvistart.lib
+kernel32.lib
+msxmldom.obj
+user32.lib
+uuid.lib
+CVI_UP_Product_Dependencies_Private_Object
+CVI_PKG_Product_Dependencies_Private_Object
+EXE Symbol Module
+Exports Module
+Resource Module

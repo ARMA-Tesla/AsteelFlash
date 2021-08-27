@@ -1,0 +1,1 @@
+msgfmt.exe -o kosu.mo kosu.pot

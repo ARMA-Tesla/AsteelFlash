@@ -1,0 +1,16 @@
+-inrc c:\work\src\modules\automat\cvibuild.automat\Debug\resources.in.rc
+-outrc c:\work\src\modules\automat\cvibuild.automat\Debug\resources.out.rc
+-inhdef c:\work\src\modules\automat\cvibuild.automat\Debug\automat_plugin.h.hdefs
+-outdef c:\work\src\modules\automat\cvibuild.automat\Debug\automat.dll.defs
+-indefprot c:\work\src\modules\automat\cvibuild.automat\Debug\automat.obj.cvidefprots
+-indefprot c:\work\src\modules\automat\cvibuild.automat\Debug\automat_fnc.obj.cvidefprots
+-indefprot c:\work\src\modules\automat\cvibuild.automat\Debug\eleventdata.obj.cvidefprots
+-indefprot c:\work\src\modules\automat\cvibuild.automat\Debug\elstring.obj.cvidefprots
+-indefprot c:\work\src\modules\automat\cvibuild.automat\Debug\eltest.obj.cvidefprots
+-indefprot c:\work\src\modules\automat\cvibuild.automat\Debug\Exception.obj.cvidefprots
+-indefprot c:\work\src\modules\automat\cvibuild.automat\Debug\language.obj.cvidefprots
+-indefprot c:\work\src\modules\automat\cvibuild.automat\Debug\Log_Asteel.obj.cvidefprots
+-indefprot c:\work\src\modules\automat\cvibuild.automat\Debug\multithread.obj.cvidefprots
+-indefprot c:\work\src\modules\automat\cvibuild.automat\Debug\testseq.obj.cvidefprots
+-dllName automat.dll
+-addNITypeInfo 

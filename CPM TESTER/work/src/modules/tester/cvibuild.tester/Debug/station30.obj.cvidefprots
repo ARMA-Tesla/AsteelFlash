@@ -1,0 +1,20 @@
+[PlugPanelStation30]
+Class="Function"
+Prototype="struct _SElException *PlugPanelStation30(struct _STester *me, int timeout);"
+SourceLocation="c:\work\src\modules\tester\station30.c:11:1"
+
+[UnplugPanelStation30]
+Class="Function"
+Prototype="struct _SElException *UnplugPanelStation30(struct _STester *me, int timeout);"
+SourceLocation="c:\work\src\modules\tester\station30.c:50:1"
+
+[VerticalPlugStation30]
+Class="Function"
+Prototype="struct _SElException *VerticalPlugStation30(struct _STester *me, int timeout);"
+SourceLocation="c:\work\src\modules\tester\station30.c:84:1"
+
+[VerticalUnplugStation30]
+Class="Function"
+Prototype="struct _SElException *VerticalUnplugStation30(struct _STester *me, int timeout);"
+SourceLocation="c:\work\src\modules\tester\station30.c:123:1"
+

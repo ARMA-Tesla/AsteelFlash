@@ -1,0 +1,1 @@
+msgfmt.exe -o pause.mo pause.pot

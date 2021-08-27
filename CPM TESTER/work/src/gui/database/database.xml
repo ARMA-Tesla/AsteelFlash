@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<configuration>
+    <plugins>
+        <plugin id="{0CBEF382-AEDE-40a3-92EF-2B24D432A4CD}">
+          <name>Database Editor</name>
+          <steps>
+          	<step fn="tool" name="" desc=""/>
+          </steps>
+        </plugin>
+    </plugins>
+</configuration>

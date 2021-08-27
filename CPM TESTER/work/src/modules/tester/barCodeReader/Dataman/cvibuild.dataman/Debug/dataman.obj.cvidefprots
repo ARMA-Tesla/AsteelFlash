@@ -1,0 +1,15 @@
+[DllMain]
+Class="Function"
+Prototype="int DllMain(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+SourceLocation="c:\work\src\modules\tester\barCodeReader\Dataman\dataman.c:37:1"
+
+[bcr_new]
+Class="Function"
+Prototype="struct _SElException *bcr_new(struct _BarCodeReader **pBcr) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\tester\barCodeReader\Dataman\dataman.c:61:1"
+
+[bcr_delete]
+Class="Function"
+Prototype="struct _SElException *bcr_delete(struct _BarCodeReader **pBcr) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\tester\barCodeReader\Dataman\dataman.c:86:1"
+

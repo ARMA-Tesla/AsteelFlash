@@ -1,0 +1,8 @@
+-inrc c:\work\src\modules\printer\class\cvibuild.printers\Release\resources.in.rc
+-outrc c:\work\src\modules\printer\class\cvibuild.printers\Release\resources.out.rc
+-inhdef c:\work\src\modules\printer\class\cvibuild.printers\Release\module.h.hdefs
+-outdef c:\work\src\modules\printer\class\cvibuild.printers\Release\printers.dll.defs
+-indefprot c:\work\src\modules\printer\class\cvibuild.printers\Release\Exception.obj.cvidefprots
+-indefprot c:\work\src\modules\printer\class\cvibuild.printers\Release\printers.obj.cvidefprots
+-indefprot c:\work\src\modules\printer\class\cvibuild.printers\Release\printers_labels_module.obj.cvidefprots
+-dllName printers.dll

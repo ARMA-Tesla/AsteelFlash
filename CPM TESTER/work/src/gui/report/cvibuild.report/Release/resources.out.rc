@@ -1,0 +1,550 @@
+#include "C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\winver.h"
+
+
+2 24 "c:\\work\\src\\gui\\report\\cvibuild.report\\Release\\manifest.xml"
+
+
+STRINGTABLE DISCARDABLE
+BEGIN
+  65535  ""
+END
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+ FILEFLAGS 0L
+ FILEOS VOS__WINDOWS32
+ FILETYPE VFT_DLL
+ FILESUBTYPE VFT_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "report (Release x86)\0"
+            VALUE "FileVersion", "1.0\0"
+            VALUE "InternalName", "report\0"
+            VALUE "LegalCopyright", "Copyright ©  2021\0"
+            VALUE "OriginalFilename", "report.dll\0"
+            VALUE "ProductName", " report\0"
+            VALUE "ProductVersion", "1.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 0x4b0
+    END
+END
+
+report.uir UIRFileType "c:\\work\\src\\gui\\report\\report.uir"
+
+CVIDLLexports CVIDLLprototypes
+{
+   "struct _SElException *CalendarCallback(int panel, int day, int month, int year);"
+   "\n",
+   "void DiscardUIObjectsForDLL();"
+   "\n",
+   "int DllEntryPoint(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+   "\n",
+   "int DllMain(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+   "\n",
+   "struct _SElException *IniReportPanel(int panelHandle);"
+   "\n",
+   "struct _SElException *InitializeCal(int panel, int labelCtrl, int calCtrl, int monthNext, int monthPrev, int sMonth, int sYear);"
+   "\n",
+   "struct _SElException *LoadPanelExWithLanguage(int parentPanel, const char *path, int panelResourceId, struct _SLanguageItem table[], int *pPanelHandle);"
+   "\n",
+   "struct _SElException *LoadPanelWithLanguage(int parentPanel, const char *path, int panelResourceId, struct _SLanguageItem table[], int *pPanelHandle);"
+   "\n",
+   "int OnCalDisplay(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnFileList(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnLMBack(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnMode(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnMonthChange(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "struct _SElException *PLUGIN_SHUTDOWN_NAME_CODE(struct _SPluginArgs *a_pPluginArgs) __declspec(dllexport);"
+   "\n",
+   "long WebViewer_ActiveIShellNameSpace(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long WebViewer_ActiveIShellUIHelper(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long WebViewer_ActiveIShellWindows(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long WebViewer_ActiveIWebBrowser(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long WebViewer_ActiveInternetExplorerIWebBrowser2(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long WebViewer_DShellNameSpaceEventsRegOnDoubleClick(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DShellNameSpaceEventsRegOnFavoritesSelectionChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long, long, char *, char *, long, char *, long), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DShellNameSpaceEventsRegOnInitialized(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DShellNameSpaceEventsRegOnSelectionChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DShellWindowsEvntsRegOnWindowRegistered(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DShellWindowsEvntsRegOnWindowRevoked(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnBeforeNavigate2(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int, struct tagVARIANT *, struct tagVARIANT *, struct tagVARIANT *, struct tagVARIANT *, struct tagVARIANT *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnClientToHostWindow(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnCommandStateChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long, short), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnDocumentComplete(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int, struct tagVARIANT *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnDownloadBegin(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnDownloadComplete(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnFileDownload(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnNavigateComplete2(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int, struct tagVARIANT *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnNavigateError(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int, struct tagVARIANT *, struct tagVARIANT *, struct tagVARIANT *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnNewWindow2(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnNewWindow3(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, short *, long, char *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnOnFullScreen(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnOnMenuBar(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnOnQuit(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnOnStatusBar(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnOnTheaterMode(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnOnToolBar(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnOnVisible(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnPrintTemplateInstantiation(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnPrintTemplateTeardown(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnPrivacyImpactedStateChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnProgressChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnPropertyChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnSetSecureLockIcon(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnStatusTextChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnTitleChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnUpdatePageStatus(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int, struct tagVARIANT *, struct tagVARIANT *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnWindowClosing(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnWindowSetHeight(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnWindowSetLeft(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnWindowSetResizable(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnWindowSetTop(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvnts2RegOnWindowSetWidth(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvntsRegOnBeforeNavigate(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *, long, char *, struct tagVARIANT *, char *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvntsRegOnCommandStateChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long, short), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvntsRegOnDownloadBegin(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvntsRegOnDownloadComplete(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvntsRegOnFrameBeforeNavigate(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *, long, char *, struct tagVARIANT *, char *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvntsRegOnFrameNavigateComplete(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvntsRegOnFrameNewWindow(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *, long, char *, struct tagVARIANT *, char *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvntsRegOnNavigateComplete(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvntsRegOnNewWindow(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *, long, char *, struct tagVARIANT *, char *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvntsRegOnProgressChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvntsRegOnPropertyChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvntsRegOnQuit(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvntsRegOnStatusTextChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvntsRegOnTitleChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvntsRegOnWindowActivate(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvntsRegOnWindowMove(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_DWebBrwsrEvntsRegOnWindowResize(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long WebViewer_IShellNameSpaceCreateSubscriptionForSelection(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pBool);"
+   "\n",
+   "long WebViewer_IShellNameSpaceDeleteSubscriptionForSelection(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pBool);"
+   "\n",
+   "long WebViewer_IShellNameSpaceExpand(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT var, long iDepth);"
+   "\n",
+   "long WebViewer_IShellNameSpaceExport(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long WebViewer_IShellNameSpaceGetColumns(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **bstrColumns);"
+   "\n",
+   "long WebViewer_IShellNameSpaceGetCountViewTypes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *piTypes);"
+   "\n",
+   "long WebViewer_IShellNameSpaceGetDepth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *piDepth);"
+   "\n",
+   "long WebViewer_IShellNameSpaceGetEnumOptions(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pgrfEnumFlags);"
+   "\n",
+   "long WebViewer_IShellNameSpaceGetFlags(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pdwFlags);"
+   "\n",
+   "long WebViewer_IShellNameSpaceGetMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *puMode);"
+   "\n",
+   "long WebViewer_IShellNameSpaceGetRoot(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvar);"
+   "\n",
+   "long WebViewer_IShellNameSpaceGetSelectedItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *pItem);"
+   "\n",
+   "long WebViewer_IShellNameSpaceGetSubscriptionsEnabled(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pBool);"
+   "\n",
+   "long WebViewer_IShellNameSpaceGetTVFlags(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *dwFlags);"
+   "\n",
+   "long WebViewer_IShellNameSpaceImport(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long WebViewer_IShellNameSpaceInvokeContextMenuCommand(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *strCommand);"
+   "\n",
+   "long WebViewer_IShellNameSpaceMoveSelectionDown(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long WebViewer_IShellNameSpaceMoveSelectionTo(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long WebViewer_IShellNameSpaceMoveSelectionUp(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long WebViewer_IShellNameSpaceNewFolder(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long WebViewer_IShellNameSpaceResetSort(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long WebViewer_IShellNameSpaceSelectedItems(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppid);"
+   "\n",
+   "long WebViewer_IShellNameSpaceSetColumns(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *bstrColumns);"
+   "\n",
+   "long WebViewer_IShellNameSpaceSetDepth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long piDepth);"
+   "\n",
+   "long WebViewer_IShellNameSpaceSetEnumOptions(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long pgrfEnumFlags);"
+   "\n",
+   "long WebViewer_IShellNameSpaceSetFlags(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long pdwFlags);"
+   "\n",
+   "long WebViewer_IShellNameSpaceSetMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long puMode);"
+   "\n",
+   "long WebViewer_IShellNameSpaceSetRoot(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *bstrFullPath);"
+   "\n",
+   "long WebViewer_IShellNameSpaceSetRootProp(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvar);"
+   "\n",
+   "long WebViewer_IShellNameSpaceSetSelectedItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle pItem);"
+   "\n",
+   "long WebViewer_IShellNameSpaceSetTVFlags(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long dwFlags);"
+   "\n",
+   "long WebViewer_IShellNameSpaceSetViewType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long iType);"
+   "\n",
+   "long WebViewer_IShellNameSpaceSynchronize(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long WebViewer_IShellNameSpaceUnselectAll(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long WebViewer_IShellUIHelperAddChannel(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *URL);"
+   "\n",
+   "long WebViewer_IShellUIHelperAddDsktpComponent(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *URL, const char *type, struct tagVARIANT left, struct tagVARIANT top, struct tagVARIANT width, struct tagVARIANT height);"
+   "\n",
+   "long WebViewer_IShellUIHelperAddFavorite(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *URL, struct tagVARIANT title);"
+   "\n",
+   "long WebViewer_IShellUIHelperAutoCompleteAttach(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT reserved);"
+   "\n",
+   "long WebViewer_IShellUIHelperAutoCompleteSaveForm(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT form);"
+   "\n",
+   "long WebViewer_IShellUIHelperAutoScan(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *strSearch, const char *strFailureUrl, struct tagVARIANT pvarTargetFrame);"
+   "\n",
+   "long WebViewer_IShellUIHelperImportExportFavorites(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short fImport, const char *strImpExpPath);"
+   "\n",
+   "long WebViewer_IShellUIHelperIsSubscribed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *URL, short *pBool);"
+   "\n",
+   "long WebViewer_IShellUIHelperNavigateAndFind(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *URL, const char *strQuery, struct tagVARIANT varTargetFrame);"
+   "\n",
+   "long WebViewer_IShellUIHelperRefreshOfflnDsktp(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long WebViewer_IShellUIHelperResetFrstBootMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long WebViewer_IShellUIHelperResetSafeMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long WebViewer_IShellUIHelperShowBrowserUI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *bstrName, struct tagVARIANT pvarIn, struct tagVARIANT *pvarOut);"
+   "\n",
+   "long WebViewer_IShellWindowsFindWindowSW(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvarloc, struct tagVARIANT pvarlocRoot, long swClass, long *pHWND, long swfwOptions, CAObjHandle *ppdispOut);"
+   "\n",
+   "long WebViewer_IShellWindowsGetCount(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *count);"
+   "\n",
+   "long WebViewer_IShellWindowsItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT index, CAObjHandle *folder);"
+   "\n",
+   "long WebViewer_IShellWindowsOnActivated(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long lCookie, short fActive);"
+   "\n",
+   "long WebViewer_IShellWindowsOnCreated(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long lCookie, struct IUnknown *punk);"
+   "\n",
+   "long WebViewer_IShellWindowsOnNavigate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long lCookie, struct tagVARIANT pvarloc);"
+   "\n",
+   "long WebViewer_IShellWindowsProcessAttachDetch(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short fAttach);"
+   "\n",
+   "long WebViewer_IShellWindowsRegister(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle pid, long HWND, long swClass, long *plCookie);"
+   "\n",
+   "long WebViewer_IShellWindowsRegisterPending(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long lThreadId, struct tagVARIANT pvarloc, struct tagVARIANT pvarlocRoot, long swClass, long *plCookie);"
+   "\n",
+   "long WebViewer_IShellWindowsRevoke(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long lCookie);"
+   "\n",
+   "long WebViewer_IShellWindows_NewEnum(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct IUnknown **ppunk);"
+   "\n",
+   "long WebViewer_IWebBrowser2ClientToWindow(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pcx, long *pcy);"
+   "\n",
+   "long WebViewer_IWebBrowser2ExecWB(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum WebViewerEnum_OLECMDID cmdID, enum WebViewerEnum_OLECMDEXECOPT cmdexecopt, struct tagVARIANT pvaIn, struct tagVARIANT *pvaOut);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetAddressBar(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *value);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetApplication(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppDisp);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetBusy(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pBool);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetContainer(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppDisp);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppDisp);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetFullName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **fullName);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetFullScreen(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbFullScreen);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetHWND(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pHWND);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetHeight(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pl);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetLeft(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pl);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetLocationName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **locationName);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetLocationURL(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **locationURL);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetMenuBar(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *value);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetOffline(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbOffline);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetParent(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppDisp);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetPath(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **path);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetProperty(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *property, struct tagVARIANT *pvtValue);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetReadyState(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum WebViewerEnum_tagREADYSTATE *plReadyState);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetRegisterAsBrowser(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbRegister);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetRegisterAsDropTarget(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbRegister);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetResizable(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *value);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetSilent(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbSilent);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetStatusBar(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pBool);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetStatusText(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **statusText);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetTheaterMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbRegister);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetToolBar(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *value);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetTop(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pl);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetTopLevelContainer(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pBool);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **type);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetVisible(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pBool);"
+   "\n",
+   "long WebViewer_IWebBrowser2GetWidth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pl);"
+   "\n",
+   "long WebViewer_IWebBrowser2GoBack(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long WebViewer_IWebBrowser2GoForward(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long WebViewer_IWebBrowser2GoHome(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long WebViewer_IWebBrowser2GoSearch(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long WebViewer_IWebBrowser2Navigate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *URL, struct tagVARIANT flags, struct tagVARIANT targetFrameName, struct tagVARIANT postData, struct tagVARIANT headers);"
+   "\n",
+   "long WebViewer_IWebBrowser2Navigate2(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT URL, struct tagVARIANT flags, struct tagVARIANT targetFrameName, struct tagVARIANT postData, struct tagVARIANT headers);"
+   "\n",
+   "long WebViewer_IWebBrowser2PutProperty(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *property, struct tagVARIANT vtValue);"
+   "\n",
+   "long WebViewer_IWebBrowser2QueryStatusWB(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum WebViewerEnum_OLECMDID cmdID, enum WebViewerEnum_OLECMDF *pcmdf);"
+   "\n",
+   "long WebViewer_IWebBrowser2Quit(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long WebViewer_IWebBrowser2Refresh(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long WebViewer_IWebBrowser2Refresh2(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT level);"
+   "\n",
+   "long WebViewer_IWebBrowser2SetAddressBar(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short value);"
+   "\n",
+   "long WebViewer_IWebBrowser2SetFullScreen(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbFullScreen);"
+   "\n",
+   "long WebViewer_IWebBrowser2SetHeight(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long pl);"
+   "\n",
+   "long WebViewer_IWebBrowser2SetLeft(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long pl);"
+   "\n",
+   "long WebViewer_IWebBrowser2SetMenuBar(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short value);"
+   "\n",
+   "long WebViewer_IWebBrowser2SetOffline(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbOffline);"
+   "\n",
+   "long WebViewer_IWebBrowser2SetRegisterAsBrowser(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbRegister);"
+   "\n",
+   "long WebViewer_IWebBrowser2SetRegisterAsDropTarget(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbRegister);"
+   "\n",
+   "long WebViewer_IWebBrowser2SetResizable(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short value);"
+   "\n",
+   "long WebViewer_IWebBrowser2SetSilent(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbSilent);"
+   "\n",
+   "long WebViewer_IWebBrowser2SetStatusBar(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pBool);"
+   "\n",
+   "long WebViewer_IWebBrowser2SetStatusText(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *statusText);"
+   "\n",
+   "long WebViewer_IWebBrowser2SetTheaterMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbRegister);"
+   "\n",
+   "long WebViewer_IWebBrowser2SetToolBar(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long value);"
+   "\n",
+   "long WebViewer_IWebBrowser2SetTop(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long pl);"
+   "\n",
+   "long WebViewer_IWebBrowser2SetVisible(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pBool);"
+   "\n",
+   "long WebViewer_IWebBrowser2SetWidth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long pl);"
+   "\n",
+   "long WebViewer_IWebBrowser2ShowBrowserBar(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvaClsid, struct tagVARIANT pvarShow, struct tagVARIANT pvarSize);"
+   "\n",
+   "long WebViewer_IWebBrowser2Stop(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long WebViewer_IWebBrowserGetApplication(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppDisp);"
+   "\n",
+   "long WebViewer_IWebBrowserGetBusy(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pBool);"
+   "\n",
+   "long WebViewer_IWebBrowserGetContainer(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppDisp);"
+   "\n",
+   "long WebViewer_IWebBrowserGetDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppDisp);"
+   "\n",
+   "long WebViewer_IWebBrowserGetHeight(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pl);"
+   "\n",
+   "long WebViewer_IWebBrowserGetLeft(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pl);"
+   "\n",
+   "long WebViewer_IWebBrowserGetLocationName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **locationName);"
+   "\n",
+   "long WebViewer_IWebBrowserGetLocationURL(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **locationURL);"
+   "\n",
+   "long WebViewer_IWebBrowserGetParent(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppDisp);"
+   "\n",
+   "long WebViewer_IWebBrowserGetTop(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pl);"
+   "\n",
+   "long WebViewer_IWebBrowserGetTopLevelContainer(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pBool);"
+   "\n",
+   "long WebViewer_IWebBrowserGetType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **type);"
+   "\n",
+   "long WebViewer_IWebBrowserGetWidth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pl);"
+   "\n",
+   "long WebViewer_IWebBrowserGoBack(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long WebViewer_IWebBrowserGoForward(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long WebViewer_IWebBrowserGoHome(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long WebViewer_IWebBrowserGoSearch(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long WebViewer_IWebBrowserNavigate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *URL, struct tagVARIANT flags, struct tagVARIANT targetFrameName, struct tagVARIANT postData, struct tagVARIANT headers);"
+   "\n",
+   "long WebViewer_IWebBrowserRefresh(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long WebViewer_IWebBrowserRefresh2(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT level);"
+   "\n",
+   "long WebViewer_IWebBrowserSetHeight(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long pl);"
+   "\n",
+   "long WebViewer_IWebBrowserSetLeft(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long pl);"
+   "\n",
+   "long WebViewer_IWebBrowserSetTop(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long pl);"
+   "\n",
+   "long WebViewer_IWebBrowserSetWidth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long pl);"
+   "\n",
+   "long WebViewer_IWebBrowserStop(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long WebViewer_NewIShellNameSpace(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long WebViewer_NewIShellUIHelper(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long WebViewer_NewIShellWindows(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long WebViewer_NewIWebBrowser(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long WebViewer_NewInternetExplorerIWebBrowser2(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long WebViewer_NewWebBrowserIWebBrowser2(int panel, const char *label, int top, int left, int *controlID, int *UILError);"
+   "\n",
+   "long WebViewer_OpenIShellNameSpace(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long WebViewer_OpenIShellUIHelper(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long WebViewer_OpenIShellWindows(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long WebViewer_OpenIWebBrowser(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long WebViewer_OpenInternetExplorerIWebBrowser2(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "struct _SElException *eleventdata_delete(struct _SElEventData **pEventData);"
+   "\n",
+   "struct _SElException *eleventdata_new(struct _SElEventData **pEventData);"
+   "\n",
+   "void elexception_delete(struct _SElException **pException);"
+   "\n",
+   "void elexception_log_set(void (*fn_log)(struct _SElException *));"
+   "\n",
+   "struct _SElException *elexception_new(int errorCode, const char *messsage, const char *file, long line);"
+   "\n",
+   "struct _SElException *elstring_delete(struct _SELString **pString);"
+   "\n",
+   "struct _SElException *elstring_new(const char *pStr, struct _SELString **pString);"
+   "\n",
+   "void excdisplay(struct _SElException *pException);"
+   "\n",
+   "void excdispstr(struct _SElException *pException, char *str, int str_size);"
+   "\n",
+   "int iso8601_calculate_day_of_month(int month, int year);"
+   "\n",
+   "int iso8601_calculate_day_of_week(int day, int month, int year);"
+   "\n",
+   "int iso8601_calculate_day_of_year(int day, int month, int year);"
+   "\n",
+   "int iso8601_leap_year(int year);"
+   "\n",
+   "int iso8601_parse_day(const char *pDateStr, struct _SISO8601Date *pDate);"
+   "\n",
+   "struct _SElException *pluginGetAttribute(unsigned int attrID, unsigned int size, void *value) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *pluginGetInfo(struct _SPluginInfo **a_pInfo) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *pluginInitialize(struct _SPluginArgs *a_pPluginArgs) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *pluginLeave(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *pluginRun(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
+   "\n",
+   "\0"
+}

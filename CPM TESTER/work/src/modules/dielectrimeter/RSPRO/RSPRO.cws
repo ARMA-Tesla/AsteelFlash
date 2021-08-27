@@ -1,0 +1,219 @@
+[Workspace Header]
+Version = 2000
+Pathname = "/c/work/src/modules/dielectrimeter/RSPRO/RSPRO.cws"
+CVI Dir = "/c/program files (x86)/national instruments/cvi2020"
+CVI Shared Dir = "/C/Program Files (x86)/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2020"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files (x86)/IVI Foundation/IVI"
+IVI Standard Root 64-bit Dir = "/C/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files (x86)/IVI Foundation/VISA/winnt"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "RSPRO.prj"
+Drag Bar Left = 290
+Window Top = 31
+Window Left = 26
+Window Bottom = 96
+Window Right = 800
+Maximized = True
+Maximized Children = True
+Max32 Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win At Start = True
+Bring Up Err Win For Errors = False
+Save Changes Before Running = "Always"
+Save Changes Before Compiling = "Always"
+Hide Windows = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 2
+Window Confinement Region Enabled = True
+MainColumnWidth = 273
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+
+[Project Header 0001]
+Version = 2000
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Release"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+
+[File 0001]
+Path = "/c/work/src/modules/dielectrimeter/RSPRO/RSPRO.h"
+File Type = "Include"
+Disk Date = 3682416274
+In Projects = "1,"
+Source Window State = "1,14,14,14,42,49,42,0,3,0,0,21,0,21,0,0,0,0,14,49,310,715,1,0,"
+Window Top = 31
+
+[File 0002]
+Path = "/c/work/src/modules/dielectrimeter/RSPRO/RSPRO.c"
+File Type = "CSource"
+Disk Date = 3690962835
+In Projects = "1,"
+Source Window State = "1,36,36,36,0,0,0,0,0,0,0,0,0,0,0,0,8,0,36,0,349,715,1,0,"
+Breakpoint 0001 = "17,0,enabled,"
+Tracepoint 0001 = "0,0,18,1,"
+Breakpoint 0002 = "70,0,enabled,"
+Tracepoint 0002 = "0,0,71,1,"
+Breakpoint 0003 = "148,0,enabled,"
+Tracepoint 0003 = "0,0,149,1,"
+Breakpoint 0004 = "169,0,enabled,"
+Tracepoint 0004 = "0,0,167,1,"
+Breakpoint 0005 = "177,0,enabled,"
+Tracepoint 0005 = "0,0,178,1,"
+Window Top = 32
+Window Left = 10
+
+[File 0003]
+Path = "/c/Program Files (x86)/National Instruments/CVI2020/include/formatio.h"
+File Type = "Include"
+Disk Date = 3679674624
+In Projects = ""
+Source Window State = "1,82,82,82,24,33,24,0,3,0,0,0,0,0,0,0,61,0,82,33,401,630,1,0,"
+Window Top = 32
+Window Left = 10
+Window Z-Order = 2
+
+[File 0004]
+Path = "/c/Program Files (x86)/National Instruments/CVI2020/include/ansi/stdlib.h"
+File Type = "Include"
+Disk Date = 3679674621
+In Projects = ""
+Source Window State = "1,20,20,20,6,6,6,0,0,0,0,0,0,0,0,0,0,0,20,6,401,714,1,0,"
+Window Top = 64
+Window Left = 26
+Window Z-Order = 1
+
+[File 0005]
+Path = "/c/work/src/shared/exception/Exception.c"
+File Type = "CSource"
+Disk Date = 3652346447
+In Projects = "1,"
+Source Window State = "1,280,280,280,56,56,56,0,0,0,0,0,0,0,0,0,81,0,280,56,206,715,1,0,"
+Window Top = 62
+Window Left = 26
+
+[File 0006]
+Path = "/c/work/include/eltypes.h"
+File Type = "Include"
+Disk Date = 3680507941
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0007]
+Path = "/c/work/src/shared/exception/Exception.h"
+File Type = "Include"
+Disk Date = 3679615340
+In Projects = "1,"
+Source Window State = "1,118,118,118,8,19,19,0,3,0,0,0,0,0,0,0,103,0,118,8,400,600,1,0,"
+Window Top = 31
+
+[File 0008]
+Path = "/c/work/src/modules/printer/class/printers.h"
+File Type = "Include"
+Disk Date = 3624877348
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,401,714,1,0,"
+Window Top = 33
+Window Left = 10
+
+[Tab Order]
+Tab 0001 = "/c/Program Files (x86)/National Instruments/CVI2020/include/formatio.h"
+Tab 0002 = "/c/Program Files (x86)/National Instruments/CVI2020/include/ansi/stdlib.h"
+
+[Default Build Config 0001 Debug]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = "/c/application/application.exe"
+
+[Default Build Config 0001 Release]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Debug64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Build Dependencies 0001]
+Number of Dependencies = 0
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Profile = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[Execution Target 0001]
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[Command Line Args 0001]
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+

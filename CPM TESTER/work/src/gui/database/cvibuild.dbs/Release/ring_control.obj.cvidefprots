@@ -1,0 +1,25 @@
+[RingGroupIni]
+Class="Function"
+Prototype="struct _SElException *RingGroupIni();"
+SourceLocation="c:\work\src\gui\database\ring_control.c:34:1"
+
+[RingGroupProcessSet]
+Class="Function"
+Prototype="struct _SElException *RingGroupProcessSet(int control, int value);"
+SourceLocation="c:\work\src\gui\database\ring_control.c:162:1"
+
+[RingGroupStepSet]
+Class="Function"
+Prototype="struct _SElException *RingGroupStepSet(int control, int value);"
+SourceLocation="c:\work\src\gui\database\ring_control.c:178:1"
+
+[RingGroupProductSet]
+Class="Function"
+Prototype="struct _SElException *RingGroupProductSet(int control, int value);"
+SourceLocation="c:\work\src\gui\database\ring_control.c:194:1"
+
+[RingGroupAttribute]
+Class="Function"
+Prototype="struct _SElException *RingGroupAttribute(int mode);"
+SourceLocation="c:\work\src\gui\database\ring_control.c:269:1"
+

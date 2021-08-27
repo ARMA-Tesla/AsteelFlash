@@ -1,0 +1,35 @@
+[TreeParametersIni]
+Class="Function"
+Prototype="struct _SElException *TreeParametersIni();"
+SourceLocation="c:\work\src\gui\database\dbs_test_param.c:51:1"
+
+[TreeParametersSet]
+Class="Function"
+Prototype="struct _SElException *TreeParametersSet(int mode);"
+SourceLocation="c:\work\src\gui\database\dbs_test_param.c:79:1"
+
+[TreeParametersClose]
+Class="Function"
+Prototype="struct _SElException *TreeParametersClose();"
+SourceLocation="c:\work\src\gui\database\dbs_test_param.c:120:1"
+
+[BkTreeParametersNodeClick]
+Class="Function"
+Prototype="struct _SElException *BkTreeParametersNodeClick(char *keyNode);"
+SourceLocation="c:\work\src\gui\database\dbs_test_param.c:134:1"
+
+[BkTreeParametersPopupMenuCommand]
+Class="Function"
+Prototype="struct _SElException *BkTreeParametersPopupMenuCommand(char *keyNode, char *keyCol, long menuItem);"
+SourceLocation="c:\work\src\gui\database\dbs_test_param.c:168:1"
+
+[BkTreeParametersModify]
+Class="Function"
+Prototype="struct _SElException *BkTreeParametersModify(char *keyNode, char *keyCol, long modifyType);"
+SourceLocation="c:\work\src\gui\database\dbs_test_param.c:270:1"
+
+[compare_pid]
+Class="Function"
+Prototype="int compare_pid(const void *a, const void *b);"
+SourceLocation="c:\work\src\gui\database\dbs_test_param.c:348:1"
+

@@ -1,0 +1,10 @@
+-inrc c:\work\src\modules\sensors\cvibuild.sensors\Debug\resources.in.rc
+-outrc c:\work\src\modules\sensors\cvibuild.sensors\Debug\resources.out.rc
+-inhdef c:\work\src\modules\sensors\cvibuild.sensors\Debug\module.h.hdefs
+-outdef c:\work\src\modules\sensors\cvibuild.sensors\Debug\sensors.dll.defs
+-indefprot c:\work\src\modules\sensors\cvibuild.sensors\Debug\Exception.obj.cvidefprots
+-indefprot c:\work\src\modules\sensors\cvibuild.sensors\Debug\multithread.obj.cvidefprots
+-indefprot c:\work\src\modules\sensors\cvibuild.sensors\Debug\sensor.obj.cvidefprots
+-indefprot c:\work\src\modules\sensors\cvibuild.sensors\Debug\sensor_module.obj.cvidefprots
+-dllName sensors.dll
+-addNITypeInfo 

@@ -1,0 +1,19 @@
+Exception.obj
+tester_labels.obj
+tester_labels_module.obj
+cvistart.lib
+cvi.lib
+cviauto.lib
+cvinetv.lib
+kernel32.lib
+msxmldom.obj
+toolbox.obj
+advapi32.lib
+gdi32.lib
+user32.lib
+uuid.lib
+CVI_UP_Product_Dependencies_Private_Object
+CVI_PKG_Product_Dependencies_Private_Object
+EXE Symbol Module
+Exports Module
+Resource Module

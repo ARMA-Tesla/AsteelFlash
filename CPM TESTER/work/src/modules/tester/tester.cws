@@ -1,0 +1,424 @@
+[Workspace Header]
+Version = 1900
+Pathname = "/c/work/src/modules/tester/tester.cws"
+CVI Dir = "/c/program files (x86)/national instruments/cvi2019"
+CVI Shared Dir = "/C/Program Files (x86)/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2019"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files (x86)/IVI Foundation/IVI"
+IVI Standard Root 64-bit Dir = "/C/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files (x86)/IVI Foundation/VISA/winnt"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "tester.prj"
+Drag Bar Left = 290
+Window Top = 91
+Window Left = 376
+Window Bottom = 454
+Window Right = 1166
+Maximized = True
+Maximized Children = True
+Max32 Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win At Start = True
+Bring Up Err Win For Errors = False
+Save Changes Before Running = "Always"
+Save Changes Before Compiling = "Always"
+Hide Windows = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 3
+Window Confinement Region Enabled = True
+MainColumnWidth = 273
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+
+[Project Header 0001]
+Version = 1900
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Release"
+Warn User If Debugging Release = 0
+Batch Build Release = False
+Batch Build Debug = False
+
+[File 0001]
+Path = "/c/Program Files (x86)/National Instruments/CVI2019/toolslib/toolbox/asynctmr.fp"
+File Type = "Function Panel"
+Disk Date = 3635410458
+In Projects = "1,"
+
+[File 0002]
+Path = "/c/work/src/shared/bklib/bklib2.fp"
+File Type = "Function Panel"
+Disk Date = 3309320854
+In Projects = "1,"
+
+[File 0003]
+Path = "/c/work/src/shared/msxml/MSXML2.fp"
+File Type = "Function Panel"
+Disk Date = 3309320860
+In Projects = "1,"
+
+[File 0004]
+Path = "/c/program files (x86)/national instruments/cvi2019/toolslib/toolbox/msxmldom.fp"
+File Type = "Function Panel"
+Disk Date = 3635237814
+In Projects = "1,"
+
+[File 0005]
+Path = "/c/work/src/modules/automat/automat.c"
+File Type = "CSource"
+Disk Date = 3702030477
+In Projects = ""
+Source Window State = "1,813,813,813,19,19,19,0,0,0,0,0,0,0,0,0,823,0,813,19,221,490,1,0,"
+Window Top = 31
+Window Z-Order = 3
+
+[File 0006]
+Path = "/c/work/src/modules/tester/tester.c"
+File Type = "CSource"
+Disk Date = 3695366881
+In Projects = "1,"
+Source Window State = "1,1009,1009,1009,33,41,33,0,3,0,0,0,0,0,0,0,981,0,1009,41,401,630,1,0,"
+Line Tags = "1330,1656,"
+Window Top = 62
+Window Left = 26
+Window Z-Order = 2
+
+[File 0007]
+Path = "/c/work/src/modules/tester/station60.c"
+File Type = "CSource"
+Disk Date = 3692856838
+In Projects = "1,"
+Source Window State = "1,1081,1081,1081,33,59,33,0,3,0,0,0,0,0,0,0,1065,0,1081,59,296,630,1,0,"
+Breakpoint 0001 = "119,0,enabled,"
+Tracepoint 0001 = "0,0,120,1,"
+Breakpoint 0002 = "158,0,enabled,"
+Tracepoint 0002 = "0,0,159,1,"
+Breakpoint 0003 = "314,0,enabled,"
+Tracepoint 0003 = "0,0,301,1,"
+Breakpoint 0004 = "819,0,enabled,"
+Tracepoint 0004 = "0,0,840,1,"
+Breakpoint 0005 = "825,0,enabled,"
+Tracepoint 0005 = "0,0,826,1,"
+Breakpoint 0006 = "855,0,enabled,"
+Tracepoint 0006 = "0,0,876,1,"
+Breakpoint 0007 = "899,0,enabled,"
+Tracepoint 0007 = "0,0,922,1,"
+Breakpoint 0008 = "911,0,enabled,"
+Tracepoint 0008 = "0,0,934,1,"
+Breakpoint 0009 = "915,0,enabled,"
+Tracepoint 0009 = "0,0,938,1,"
+Breakpoint 0010 = "933,0,enabled,"
+Tracepoint 0010 = "0,0,956,1,"
+Breakpoint 0011 = "946,0,enabled,"
+Tracepoint 0011 = "0,0,969,1,"
+Breakpoint 0012 = "952,0,enabled,"
+Tracepoint 0012 = "0,0,974,1,"
+Breakpoint 0013 = "969,0,enabled,"
+Tracepoint 0013 = "0,0,990,1,"
+Breakpoint 0014 = "1000,0,enabled,"
+Tracepoint 0014 = "0,0,1021,1,"
+Breakpoint 0015 = "1003,0,enabled,"
+Tracepoint 0015 = "0,0,1024,1,"
+Breakpoint 0016 = "1052,0,enabled,"
+Tracepoint 0016 = "0,0,1073,1,"
+Line Tags = "477,"
+Window Top = 31
+
+[File 0008]
+Path = "/c/work/src/modules/axis/IAI/IaiAxis.c"
+File Type = "CSource"
+Disk Date = 3620618584
+In Projects = ""
+Source Window State = "1,106,106,106,16,26,26,0,0,0,0,0,0,0,0,0,94,0,129,16,349,715,1,0,"
+Breakpoint 0001 = "107,0,enabled,"
+Window Top = 152
+Window Left = 74
+
+[File 0009]
+Path = "/c/work/src/modules/tester/tester.h"
+File Type = "Include"
+Disk Date = 3685697206
+In Projects = "1,"
+Source Window State = "1,105,105,105,97,97,97,0,0,0,0,101,0,0,0,0,84,0,105,97,349,715,1,13,"
+Window Top = 92
+Window Left = 42
+
+[File 0010]
+Path = "/c/work/src/shared/exception/Exception.c"
+File Type = "CSource"
+Disk Date = 3652346447
+In Projects = "1,"
+Source Window State = "1,260,260,260,37,37,37,0,0,0,0,0,0,0,0,0,248,0,260,37,401,630,1,0,"
+Window Top = 62
+Window Left = 26
+
+[File 0011]
+Path = "/c/work/src/modules/tester/tester_module.c"
+File Type = "CSource"
+Disk Date = 3685432683
+In Projects = "1,"
+Source Window State = "1,9,9,9,0,0,0,0,0,0,0,0,0,0,0,0,1,0,9,0,349,715,1,0,"
+Window Top = 32
+Window Left = 10
+
+[File 0012]
+Path = "/c/work/src/modules/tester/station60.h"
+File Type = "Include"
+Disk Date = 3683655987
+In Projects = "1,"
+Source Window State = "1,14,14,14,16,28,16,0,3,0,0,0,0,0,0,0,1,0,14,28,236,630,1,0,"
+Window Top = 31
+
+[File 0013]
+Path = "/c/work/src/modules/tester/station10.c"
+File Type = "CSource"
+Disk Date = 3676388692
+In Projects = "1,"
+Source Window State = "1,29,29,29,5,5,5,0,0,0,0,0,0,0,0,0,4,0,29,5,296,630,1,0,"
+Window Top = 64
+Window Left = 26
+
+[File 0014]
+Path = "/c/work/src/shared/eventfactory/eleventdata.c"
+File Type = "CSource"
+Disk Date = 3309320854
+In Projects = "1,"
+Source Window State = "1,20,20,20,34,34,34,0,0,0,0,0,0,0,0,0,20,0,20,34,401,630,1,0,"
+Window Top = 32
+Window Left = 10
+
+[File 0015]
+Path = "/c/work/src/shared/string/elstring.c"
+File Type = "CSource"
+Disk Date = 3613571278
+In Projects = "1,"
+Source Window State = "1,531,531,531,41,41,41,0,0,0,0,0,0,0,0,0,531,0,531,41,349,715,1,0,"
+Window Top = 31
+
+[File 0016]
+Path = "/c/work/src/shared/multithread/multithread.c"
+File Type = "CSource"
+Disk Date = 3309320858
+In Projects = "1,"
+Source Window State = "1,76,76,76,72,72,72,0,0,0,0,0,0,0,0,0,51,0,76,72,349,715,1,0,"
+Window Top = 32
+Window Left = 10
+
+[File 0017]
+Path = "/c/work/include/eltypes.h"
+File Type = "Include"
+Disk Date = 3680507941
+In Projects = "1,"
+Source Window State = "1,21,21,21,8,13,8,0,3,0,0,0,0,0,0,0,0,0,21,13,349,715,1,0,"
+Window Top = 30
+
+[File 0018]
+Path = "/c/work/src/shared/exception/Exception.h"
+File Type = "Include"
+Disk Date = 3679615340
+In Projects = "1,"
+Source Window State = "1,84,84,84,8,8,8,0,0,0,0,138,0,0,0,0,77,0,84,8,297,683,1,0,"
+Window Top = 32
+Window Left = 10
+
+[File 0019]
+Path = "/c/work/src/shared/modules/module.h"
+File Type = "Include"
+Disk Date = 3309320850
+In Projects = "1,"
+Source Window State = "1,43,43,43,35,35,35,0,0,0,0,0,0,0,0,0,0,0,43,35,401,630,1,0,"
+Window Top = 62
+Window Left = 26
+
+[File 0020]
+Path = "/c/work/src/shared/multithread/multithread.h"
+File Type = "Include"
+Disk Date = 3666885792
+In Projects = "1,"
+Source Window State = "1,10,10,10,8,34,34,0,3,0,0,0,0,0,0,0,0,0,10,8,284,715,1,0,"
+
+[File 0021]
+Path = "/c/work/src/modules/tester/station10.h"
+File Type = "Include"
+Disk Date = 3676299320
+In Projects = "1,"
+Source Window State = "1,17,17,17,2,2,2,0,0,0,0,0,0,0,0,0,0,0,17,2,296,630,1,0,"
+Window Top = 64
+Window Left = 26
+
+[File 0022]
+Path = "/c/work/src/modules/tester/station20.c"
+File Type = "CSource"
+Disk Date = 3676354018
+In Projects = "1,"
+Source Window State = "1,37,37,37,9,9,9,0,0,0,0,0,0,0,0,0,34,0,37,9,400,600,1,0,"
+Window Top = 31
+
+[File 0023]
+Path = "/c/work/src/modules/tester/station20.h"
+File Type = "Include"
+Disk Date = 3676119259
+In Projects = "1,"
+Source Window State = "1,5,5,5,8,29,8,0,3,0,0,0,0,0,0,0,0,0,5,29,401,714,1,0,"
+Window Top = 64
+Window Left = 26
+
+[File 0024]
+Path = "/c/work/src/modules/tester/station30.c"
+File Type = "CSource"
+Disk Date = 3685427982
+In Projects = "1,"
+Source Window State = "1,122,122,122,0,0,0,0,0,0,0,0,0,0,0,0,119,0,122,0,401,714,1,0,"
+Window Top = 30
+
+[File 0025]
+Path = "/c/work/src/modules/tester/station30.h"
+File Type = "Include"
+Disk Date = 3680265517
+In Projects = "1,"
+Source Window State = "1,6,6,6,8,31,8,0,3,0,0,0,0,0,0,0,2,0,6,31,400,600,1,0,"
+Window Top = 30
+
+[File 0026]
+Path = "/c/work/src/modules/tester/station40.c"
+File Type = "CSource"
+Disk Date = 3676279314
+In Projects = "1,"
+Source Window State = "1,46,46,46,42,42,42,0,0,0,0,0,0,0,0,0,43,0,46,42,311,630,1,0,"
+Window Top = 95
+Window Left = 42
+
+[File 0027]
+Path = "/c/work/src/modules/tester/station40.h"
+File Type = "Include"
+Disk Date = 3676279062
+In Projects = "1,"
+Source Window State = "1,8,8,8,16,34,16,0,3,0,0,0,0,0,0,0,0,0,8,34,236,630,1,0,"
+Window Top = 64
+Window Left = 26
+
+[File 0028]
+Path = "/c/work/src/modules/tester/station50.c"
+File Type = "CSource"
+Disk Date = 3680593682
+In Projects = "1,"
+Source Window State = "1,40,40,40,4,4,4,0,0,0,0,0,0,0,0,0,37,0,40,4,311,630,1,0,"
+Window Top = 33
+Window Left = 10
+
+[File 0029]
+Path = "/c/work/src/modules/tester/station50.h"
+File Type = "Include"
+Disk Date = 3680593787
+In Projects = "1,"
+Source Window State = "1,6,6,6,8,29,8,0,3,0,0,0,0,0,0,0,0,0,6,29,311,630,1,0,"
+Window Top = 95
+Window Left = 42
+
+[File 0030]
+Path = "/c/work/src/modules/sensors/sensors.h"
+File Type = "Include"
+Disk Date = 3685696373
+In Projects = ""
+Source Window State = "1,21,21,21,22,30,22,0,3,0,0,0,0,0,0,0,0,0,21,30,400,600,0,0,"
+Window Z-Order = 1
+
+[Tab Order]
+Tab 0001 = "/c/work/src/modules/automat/automat.c"
+Tab 0002 = "/c/work/src/modules/tester/tester.c"
+Tab 0003 = "/c/work/src/modules/sensors/sensors.h"
+
+[Default Build Config 0001 Debug]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = "/c/application/application.exe"
+
+[Default Build Config 0001 Release]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Debug64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Build Dependencies 0001]
+Number of Dependencies = 0
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Profile = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[Execution Target 0001]
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[Command Line Args 0001]
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+

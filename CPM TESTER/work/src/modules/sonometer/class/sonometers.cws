@@ -1,0 +1,219 @@
+[Workspace Header]
+Version = 1900
+Pathname = "/c/work/src/modules/sonometer/class/sonometers.cws"
+CVI Dir = "/c/program files/national instruments/cvi2019"
+CVI Shared Dir = "/C/Program Files/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2019"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files/IVI Foundation/IVI"
+IVI Standard Root 64-bit Dir = "/C/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files/IVI Foundation/VISA/winnt"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "sonometers.prj"
+Drag Bar Left = 201
+Window Top = 75
+Window Left = 8
+Window Bottom = 1021
+Window Right = 857
+Maximized = True
+Maximized Children = True
+Max32 Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win At Start = True
+Bring Up Err Win For Errors = False
+Save Changes Before Running = "Always"
+Save Changes Before Compiling = "Always"
+Hide Windows = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 5
+Window Confinement Region Enabled = True
+MainColumnWidth = 184
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+
+[Project Header 0001]
+Version = 1900
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Release"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+
+[File 0001]
+Path = "/c/program files/national instruments/cvi2019/toolslib/toolbox/msxmldom.fp"
+File Type = "Function Panel"
+Disk Date = 3635270214
+In Projects = "1,"
+
+[File 0002]
+Path = "/c/work/src/modules/sonometer/ARW/ARW.c"
+File Type = "CSource"
+Disk Date = 3678268109
+In Projects = ""
+Source Window State = "1,336,336,336,0,0,0,0,0,0,0,0,0,0,0,0,305,0,336,0,401,714,1,0,"
+Breakpoint 0001 = "338,0,enabled,"
+Tracepoint 0001 = "0,0,338,1,"
+Window Top = 38
+
+[File 0003]
+Path = "/c/work/src/modules/sonometer/class/sonometers.c"
+File Type = "CSource"
+Disk Date = 3678109960
+In Projects = "1,"
+Source Window State = "1,538,538,538,5,5,5,0,0,0,0,0,0,0,0,0,518,0,538,5,193,555,1,0,"
+Breakpoint 0001 = "426,0,enabled,"
+Tracepoint 0001 = "0,0,427,1,"
+Window Top = 40
+Window Left = 11
+Window Z-Order = 1
+
+[File 0004]
+Path = "/c/work/src/modules/sonometer/class/sonometers.h"
+File Type = "Include"
+Disk Date = 3678105569
+In Projects = "1,"
+Source Window State = "1,41,41,41,22,32,22,0,3,0,0,0,0,0,0,0,9,0,41,32,349,715,1,0,"
+Window Top = 38
+Window Z-Order = 5
+
+[File 0005]
+Path = "/c/work/src/shared/exception/Exception.c"
+File Type = "CSource"
+Disk Date = 3652346447
+In Projects = "1,"
+Source Window State = "1,105,105,105,1,1,1,0,0,0,0,0,0,0,0,0,93,0,105,1,349,715,1,0,"
+Window Top = 38
+Window Left = 10
+Window Z-Order = 3
+
+[File 0006]
+Path = "/c/work/src/modules/sonometer/class/sonometers_module.c"
+File Type = "CSource"
+Disk Date = 3677659750
+In Projects = "1,"
+Source Window State = "1,34,34,34,47,47,47,0,0,0,0,0,0,0,0,0,0,0,34,47,349,715,1,0,"
+Window Top = 38
+Window Left = 10
+Window Z-Order = 4
+
+[File 0007]
+Path Line0001 = "/c/Program Files/National Instruments/Shared/MSDTRedistributables/SDKHeaderFiles"
+Path Line0002 = "/8.1/libloaderapi.h"
+File Type = "Include"
+Disk Date = 3636481734
+In Projects = ""
+Source Window State = "1,360,360,360,25,25,25,0,0,0,0,0,0,0,0,0,334,0,360,25,401,630,1,0,"
+Window Top = 32
+Window Left = 10
+Window Z-Order = 2
+
+[File 0008]
+Path = "/c/work/src/shared/modules/module.h"
+File Type = "Include"
+Disk Date = 3309320850
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,400,600,1,0,"
+Window Top = 31
+
+[Tab Order]
+Tab 0001 = "/c/work/src/modules/sonometer/class/sonometers.c"
+Tab 0002 = "/c/work/src/modules/sonometer/class/sonometers.h"
+Tab 0003 = "/c/work/src/modules/sonometer/class/sonometers_module.c"
+Tab 0004 = "/c/work/src/shared/exception/Exception.c"
+Tab 0005 Line0001 = "/c/Program Files/National Instruments/Shared/MSDTRedistributables/SDKHeaderFiles"
+Tab 0005 Line0002 = "/8.1/libloaderapi.h"
+
+[Default Build Config 0001 Debug]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = "/c/application/application.exe"
+
+[Default Build Config 0001 Release]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Debug64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Build Dependencies 0001]
+Number of Dependencies = 0
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Profile = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[Execution Target 0001]
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[Command Line Args 0001]
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+

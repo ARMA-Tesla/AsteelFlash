@@ -1,0 +1,16 @@
+[GetModuleAttribute]
+Class="Function"
+Prototype="struct _SElException *GetModuleAttribute(unsigned int attrID, unsigned int size, void *value) __declspec(dllexport);"
+
+[LoadElcomModule]
+Class="Function"
+Prototype="struct _SElException *LoadElcomModule(const char *configuration, void **pInstance, struct _SPluginArgs *pParam) __declspec(dllexport);"
+
+[InitializeElcomModule]
+Class="Function"
+Prototype="struct _SElException *InitializeElcomModule(void *pInstance, const char *configuration, struct _SPluginArgs *pParam) __declspec(dllexport);"
+
+[UnloadElcomModule]
+Class="Function"
+Prototype="struct _SElException *UnloadElcomModule(void *pInstance) __declspec(dllexport);"
+

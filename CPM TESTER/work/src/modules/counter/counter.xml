@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="windows-1250" ?> 
+<configuration>
+<modules>
+	<module id="{2643AA06-3936-45a6-860D-12E887CE5BAA}">
+		<name>Counter module</name> 
+		<parameters>
+			<tasks>
+				<task name="COUNTER1" physical="PXI1Slot4/ctr0" physical_line="PXI1Slot4/port2/line4"/>
+			</tasks>
+	  	</parameters>
+	</module>
+</modules>
+</configuration>

@@ -1,0 +1,187 @@
+#pragma code_page(65001)
+#include "C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\winver.h"
+
+
+2 24 "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\manifest.xml"
+
+
+STRINGTABLE DISCARDABLE
+BEGIN
+  65535  ""
+END
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+ FILEFLAGS 0L
+ FILEOS VOS__WINDOWS32
+ FILETYPE VFT_DLL
+ FILESUBTYPE VFT_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "dbs (Release x86)\0"
+            VALUE "FileVersion", "1.0\0"
+            VALUE "InternalName", "dbs\0"
+            VALUE "LegalCopyright", "Copyright ©  2021\0"
+            VALUE "OriginalFilename", "dbs.dll\0"
+            VALUE "ProductName", " dbs\0"
+            VALUE "ProductVersion", "1.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 0x4b0
+    END
+END
+
+CVIDLLexports CVIDLLprototypes
+{
+   "int DllMain(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+   "\n",
+   "struct _SElException *GetModuleAttribute(unsigned int attrID, unsigned int size, void *value) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *InitializeElcomModule(void *pInstance, const char *configuration, struct _SPluginArgs *pParam) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *InverseIntervals(unsigned int t1, unsigned int t2, struct _SIntervalResult *pIntervals, struct _SIntervalResult **pResult, unsigned int *interval_time);"
+   "\n",
+   "struct _SElException *LoadElcomModule(const char *configuration, void **pInstance, struct _SPluginArgs *pParam) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *MergeIntervals(struct _SIntervalResult *pIntervals1, struct _SIntervalResult *pIntervals2, struct _SIntervalResult **pResult, unsigned int *interval_time);"
+   "\n",
+   "struct _SElException *ThreadStart(unsigned long (*pThreadFnc)(void *) __attribute__((stdcall)), void *pData, HANDLE *hThread, HANDLE *hStopEvent);"
+   "\n",
+   "struct _SElException *ThreadStatus(HANDLE hThread, unsigned int timeout, int *pStatus);"
+   "\n",
+   "struct _SElException *ThreadStop(HANDLE *hThread, HANDLE *hStopEvent);"
+   "\n",
+   "struct _SElException *UnloadElcomModule(void *pInstance) __declspec(dllexport);"
+   "\n",
+   "int compare_LineParam(const void *a, const void *b);"
+   "\n",
+   "int compare_Process(const void *a, const void *b);"
+   "\n",
+   "int compare_Product(const void *a, const void *b);"
+   "\n",
+   "int compare_ProductMaster(const void *a, const void *b);"
+   "\n",
+   "int compare_ProductParameter(const void *a, const void *b);"
+   "\n",
+   "int compare_Step(const void *a, const void *b);"
+   "\n",
+   "int compare_Step2(const void *a, const void *b);"
+   "\n",
+   "int compare_Test(const void *a, const void *b);"
+   "\n",
+   "int compare_TestParameter(const void *a, const void *b);"
+   "\n",
+   "int compare_pid(const void *a, const void *b);"
+   "\n",
+   "struct _SElException *dbs_delete(struct _SDBS **pDBSPtr);"
+   "\n",
+   "struct _SElException *dbs_new(struct _SDBS **pDBSPtr);"
+   "\n",
+   "struct _SElException *dbsexport_delete(struct _SDBSExport **pDBSExportPtr);"
+   "\n",
+   "struct _SElException *dbsexport_new(struct _SDBSExport **pDBSExportPtr, void *pDBS);"
+   "\n",
+   "struct _SElException *dbskosu_delete(struct _SDBSKOSU **pKOSU);"
+   "\n",
+   "struct _SElException *dbskosu_new(struct _SDBSKOSU **pKOSU, void *pDBS);"
+   "\n",
+   "struct _SElException *dbslineexport_delete(struct _SDBSLineExport **pDBSLineExportPtr);"
+   "\n",
+   "struct _SElException *dbslineexport_new(struct _SDBSLineExport **pDBSLineExportPtr, void *pDBS);"
+   "\n",
+   "struct _SElException *dbslineparamlist_delete(struct _SDBSLineParamList **pDBSLineParamListPtr);"
+   "\n",
+   "struct _SElException *dbslineparamlist_new(struct _SDBSLineParamList **pDBSLineParamListPtr, void *pDBS);"
+   "\n",
+   "struct _SElException *dbslineprocesslist_delete(struct _SDBSLineProcessList **pDBSLineProcessListPtr);"
+   "\n",
+   "struct _SElException *dbslineprocesslist_new(struct _SDBSLineProcessList **pDBSLineProcessListPtr, void *pDBS);"
+   "\n",
+   "struct _SElException *dbslinesteplist_delete(struct _SDBSLineStepList **pDBSLineStepListPtr);"
+   "\n",
+   "struct _SElException *dbslinesteplist_new(struct _SDBSLineStepList **pDBSLineStepListPtr, void *pDBS);"
+   "\n",
+   "struct _SElException *dbsmasterlist_delete(struct _SDBSMasterList **pDBSMasterListPtr);"
+   "\n",
+   "struct _SElException *dbsmasterlist_new(struct _SDBSMasterList **pDBSMasterListPtr, void *pDBS);"
+   "\n",
+   "struct _SElException *dbsparamlist_delete(struct _SDBSParamList **pDBSParListPtr);"
+   "\n",
+   "struct _SElException *dbsparamlist_new(struct _SDBSParamList **pDBSParListPtr, void *pDBS);"
+   "\n",
+   "struct _SElException *dbsproductlist_delete(struct _SDBSProductList **pDBSProductListPtr);"
+   "\n",
+   "struct _SElException *dbsproductlist_new(struct _SDBSProductList **pDBSProductListPtr, void *pDBS);"
+   "\n",
+   "struct _SElException *dbsrights_delete(struct _SDBSUserRights **pDBSUserRightsPtr);"
+   "\n",
+   "struct _SElException *dbsrights_new(struct _SDBSUserRights **pDBSUserRightsPtr, int count, void *pDBS);"
+   "\n",
+   "struct _SElException *dbsstorage_delete(struct _SDBSStorage **pDBSStoragePtr);"
+   "\n",
+   "struct _SElException *dbsstorage_new(struct _SDBSStorage **pDBSStoragePtr, void *pDBS);"
+   "\n",
+   "struct _SElException *dbstesterlist_delete(struct _SDBSTesterList **pDBSTesterListPtr);"
+   "\n",
+   "struct _SElException *dbstesterlist_new(struct _SDBSTesterList **pDBSTesterListPtr, void *pDBS);"
+   "\n",
+   "struct _SElException *dbstestlist_delete(struct _SDBSTestList **pDBSTestListPtr);"
+   "\n",
+   "struct _SElException *dbstestlist_new(struct _SDBSTestList **pDBSTestListPtr, void *pDBS);"
+   "\n",
+   "struct _SElException *dbstestparamlist_delete(struct _SDBSTestParamList **pDBSTestParamListPtr);"
+   "\n",
+   "struct _SElException *dbstestparamlist_new(struct _SDBSTestParamList **pDBSTestParamListPtr, void *pDBS);"
+   "\n",
+   "struct _SElException *dbsuser_delete(struct _SDBSUser **pDBSUserPtr);"
+   "\n",
+   "struct _SElException *dbsuser_new(struct _SDBSUser **pDBSUserPtr, int count, void *pDBS);"
+   "\n",
+   "struct _SElException *dbsuserlist_delete(struct _SDBSUserList **pDBSUserListPtr);"
+   "\n",
+   "struct _SElException *dbsuserlist_new(struct _SDBSUserList **pDBSUserListPtr, void *pDBS);"
+   "\n",
+   "struct _SElException *eleventdata_delete(struct _SElEventData **pEventData);"
+   "\n",
+   "struct _SElException *eleventdata_new(struct _SElEventData **pEventData);"
+   "\n",
+   "void elexception_delete(struct _SElException **pException);"
+   "\n",
+   "void elexception_log_set(void (*fn_log)(struct _SElException *));"
+   "\n",
+   "struct _SElException *elexception_new(int errorCode, const char *messsage, const char *file, long line);"
+   "\n",
+   "struct _SElException *elstring_delete(struct _SELString **pString);"
+   "\n",
+   "struct _SElException *elstring_new(const char *pStr, struct _SELString **pString);"
+   "\n",
+   "void excdisplay(struct _SElException *pException);"
+   "\n",
+   "void excdispstr(struct _SElException *pException, char *str, int str_size);"
+   "\n",
+   "struct _SElException *intervalresult_delete(struct _SIntervalResult **pInterval);"
+   "\n",
+   "struct _SElException *intervalresult_new(struct _SIntervalResult **pInterval);"
+   "\n",
+   "struct _SElException *objlist_delete(struct _SObjList **pList);"
+   "\n",
+   "struct _SElException *objlist_new(struct _SObjList **pObjList);"
+   "\n",
+   "struct _SElException *odbc_delete(struct _SOdbc **pOdbc);"
+   "\n",
+   "struct _SElException *odbc_new(struct _SOdbc **pOdbc);"
+   "\n",
+   "struct _SElException *userintervals_delete(struct _SUserIntervals **pUserIntervals);"
+   "\n",
+   "struct _SElException *userintervals_new(struct _SUserIntervals **pUserIntervals);"
+   "\n",
+   "\0"
+}

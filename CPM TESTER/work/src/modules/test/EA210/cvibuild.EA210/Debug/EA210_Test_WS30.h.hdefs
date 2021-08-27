@@ -1,0 +1,756 @@
+[string2hexString]
+Class="Function"
+Prototype="void string2hexString(char *input, char *output);"
+
+[STATION_30_init]
+Class="Function"
+Prototype="struct _SElException *STATION_30_init(void *pTID, int mode) __declspec(dllexport);"
+
+[STATION_30_cleanup]
+Class="Function"
+Prototype="struct _SElException *STATION_30_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[STATION_30_wait]
+Class="Function"
+Prototype="struct _SElException *STATION_30_wait(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_0_0_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_0_0_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_0_0_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_0_0_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_0_0_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_0_0_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_0_0_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_0_0_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_0_0_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_0_0_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_0_1_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_0_1_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_0_1_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_0_1_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_0_1_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_0_1_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_0_1_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_0_1_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_0_1_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_0_1_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_0_2_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_0_2_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_0_2_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_0_2_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_0_2_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_0_2_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_0_2_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_0_2_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_0_2_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_0_2_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_1_1_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_1_1_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_1_1_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_1_1_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_1_1_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_1_1_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_1_1_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_1_1_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_1_1_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_1_1_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_1_2_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_1_2_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_1_2_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_1_2_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_1_2_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_1_2_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_1_2_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_1_2_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_1_2_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_1_2_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_0_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_0_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_0_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_0_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_0_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_0_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_0_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_0_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_0_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_0_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_1_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_1_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_1_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_1_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_1_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_1_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_1_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_1_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_1_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_1_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_2_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_2_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_2_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_2_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_2_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_2_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_2_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_2_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_2_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_2_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_3_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_3_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_3_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_3_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_3_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_3_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_3_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_3_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_3_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_3_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_4_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_4_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_4_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_4_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_4_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_4_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_4_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_4_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_4_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_4_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_5_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_5_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_5_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_5_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_5_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_5_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_5_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_5_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_2_5_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_2_5_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_3_1_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_3_1_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_3_1_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_3_1_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_3_1_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_3_1_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_3_1_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_3_1_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_3_1_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_3_1_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_3_2_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_3_2_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_3_2_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_3_2_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_3_2_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_3_2_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_3_2_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_3_2_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_3_2_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_3_2_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_3_3_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_3_3_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_3_3_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_3_3_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_3_3_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_3_3_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_3_3_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_3_3_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_3_3_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_3_3_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_3_4_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_3_4_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_3_4_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_3_4_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_3_4_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_3_4_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_3_4_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_3_4_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_3_4_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_3_4_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_1_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_1_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_1_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_1_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_1_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_1_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_1_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_1_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_1_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_1_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_2_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_2_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_2_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_2_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_2_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_2_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_2_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_2_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_2_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_2_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_3_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_3_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_3_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_3_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_3_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_3_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_3_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_3_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_3_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_3_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_4_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_4_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_4_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_4_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_4_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_4_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_4_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_4_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_4_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_4_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_5_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_5_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_5_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_5_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_5_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_5_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_5_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_5_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_5_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_5_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_6_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_6_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_6_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_6_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_6_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_6_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_6_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_6_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_6_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_6_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_7_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_7_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_7_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_7_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_7_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_7_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_7_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_7_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_7_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_7_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_8_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_8_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_8_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_8_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_8_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_8_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_8_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_8_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_8_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_8_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_9_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_9_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_9_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_9_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_9_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_9_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_9_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_9_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_9_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_9_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_10_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_10_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_10_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_10_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_10_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_10_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_10_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_10_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_10_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_10_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_11_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_11_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_11_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_11_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_11_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_11_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_11_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_11_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_11_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_11_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_12_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_12_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_12_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_12_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_12_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_12_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_12_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_12_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_12_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_12_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_13_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_13_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_13_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_13_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_13_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_13_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_13_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_13_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_13_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_13_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_14_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_14_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_14_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_14_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_14_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_14_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_14_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_14_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_4_14_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_4_14_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_5_1_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_5_1_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_5_1_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_5_1_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_5_1_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_5_1_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_5_1_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_5_1_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_5_1_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_5_1_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_1_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_1_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_1_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_1_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_1_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_1_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_1_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_1_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_1_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_1_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_2_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_2_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_2_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_2_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_2_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_2_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_2_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_2_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_2_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_2_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_3_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_3_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_3_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_3_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_3_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_3_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_3_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_3_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_3_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_3_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_4_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_4_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_4_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_4_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_4_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_4_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_4_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_4_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_4_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_4_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_5_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_5_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_5_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_5_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_5_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_5_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_5_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_5_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_5_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_5_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_6_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_6_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_6_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_6_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_6_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_6_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_6_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_6_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_6_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_6_cleanup(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_7_help]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_7_help(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_7_check]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_7_check(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_7_init]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_7_init(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_7_test]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_7_test(void *pTID, int mode) __declspec(dllexport);"
+
+[EA210_30_6_7_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_30_6_7_cleanup(void *pTID, int mode) __declspec(dllexport);"
+

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<configuration>
+    <plugins>
+        <plugin id="{E87E3CB8-8543-4F55-B847-12E4C6165E6E}">
+          <name>CAN Maintenance GUI</name>
+          <KWPCommands>
+          	<defaultWriteIdentifier>0x6F1</defaultWriteIdentifier>
+          	<defaultReadIdentifier>0x6F8</defaultReadIdentifier>
+          	<command id="1">
+          		<name>Read DTC</name>
+          		<size>4</size>
+          		<data>0x18 0x02 0xFF 0xFF</data>
+          	</command>
+          	<command id="2">
+          		<name>Clear DTC</name>
+          		<size>3</size>
+          		<data>0x14 0xFF 0xFF</data>
+          	</command>
+          	<command id="3">
+          		<name>Reset</name>
+          		<size>2</size>
+          		<data>0x11 0x01</data>
+          	</command>
+          	<command id="4">
+          		<name>BMW HW Number</name>
+          		<size>2</size>
+          		<data>0x1A 0x87</data>
+          	</command>
+          </KWPCommands>
+          <LowLevel>
+          	<defaultWriteIdentifier>0x6F1</defaultWriteIdentifier>
+          	<AsyncFrames>
+          		<Frame id="1">
+          			<channel>CAN1</channel>
+          			<identifier>0x130</identifier>
+          			<repeatTime>10</repeatTime>
+          			<size>8</size>
+          			<data>0x01 0x00 0x00 0x00 0x00 0x00 0x00 0x00</data>
+          		</Frame>
+          		<Frame id="2">
+          			<channel>CAN1</channel>
+          			<identifier>0x4c0</identifier>
+          			<repeatTime>10</repeatTime>
+          			<size>8</size>
+          			<data>0x60 0x42 0x00 0x00 0x00 0x00 0x00 0x00</data>
+          		</Frame>
+          		<Frame id="3">
+          			<channel>CAN1</channel>
+          			<identifier>0x4e0</identifier>
+          			<repeatTime>10</repeatTime>
+          			<size>8</size>
+          			<data>0x78 0x42 0x00 0x00 0x00 0x00 0x00 0x00</data>
+          		</Frame>
+          		<Frame id="4">
+          			<channel>CAN1</channel>
+          			<identifier>0x202</identifier>
+          			<repeatTime>10</repeatTime>
+          			<size>8</size>
+          			<data>0xfd 0x00 0x00 0x00 0x00 0x00 0x00 0x00</data>
+          		</Frame>
+          	</AsyncFrames>
+          	<Filters>
+          		<include enabled="1">0x6f1</include>
+          		<exclude enabled="0"></exclude>
+          	</Filters>
+          </LowLevel>
+        </plugin>
+    </plugins>
+</configuration>

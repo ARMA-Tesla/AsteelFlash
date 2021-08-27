@@ -1,0 +1,82 @@
+#include "C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\winver.h"
+
+
+2 24 "c:\\work\\src\\modules\\axis\\IAI\\cvibuild.IaiAxis\\Release\\manifest.xml"
+
+
+STRINGTABLE DISCARDABLE
+BEGIN
+  65535  ""
+END
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+ FILEFLAGS 0L
+ FILEOS VOS__WINDOWS32
+ FILETYPE VFT_DLL
+ FILESUBTYPE VFT_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "IaiAxis (Release x86)\0"
+            VALUE "FileVersion", "1.0\0"
+            VALUE "InternalName", "IaiAxis\0"
+            VALUE "LegalCopyright", "Copyright ©  2020\0"
+            VALUE "OriginalFilename", "IaiAxis.dll\0"
+            VALUE "ProductName", " IaiAxis\0"
+            VALUE "ProductVersion", "1.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 0x4b0
+    END
+END
+
+CVIDLLexports CVIDLLprototypes
+{
+   "struct _SElException *AlarmReset(struct _axis *me, int axis) __declspec(dllexport);"
+   "\n",
+   "int ChangeHexaToInt(unsigned char ucTab[9]);"
+   "\n",
+   "struct _SElException *ControllerStatus(struct _axis *me, int axis, int *status) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *CurrentPosition(struct _axis *me, int axis, double *position) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EnableAxis(struct _axis *me, int axis) __declspec(dllexport);"
+   "\n",
+   "void GetLRC(unsigned char *pbData, int iCount, char *LRC);"
+   "\n",
+   "struct _SElException *HomeReturn(struct _axis *me, int axis) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *Initialize(struct _axis *me, int axis) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *MoveAxisPosition(struct _axis *me, int axis, int position) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *PresentAlarm(struct _axis *me, int axis, int *status) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *ReadPosition(struct _axis *me, int axis, double *position) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *RequestPosition(struct _axis *me, int axis) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *SetPosition(struct _axis *me, int axis, double position, double speed) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *StopAxis(struct _axis *me, int axis) __declspec(dllexport);"
+   "\n",
+   "void elexception_delete(struct _SElException **pException);"
+   "\n",
+   "void elexception_log_set(void (*fn_log)(struct _SElException *));"
+   "\n",
+   "struct _SElException *elexception_new(int errorCode, const char *messsage, const char *file, long line);"
+   "\n",
+   "void excdisplay(struct _SElException *pException);"
+   "\n",
+   "void excdispstr(struct _SElException *pException, char *str, int str_size);"
+   "\n",
+   "\0"
+}

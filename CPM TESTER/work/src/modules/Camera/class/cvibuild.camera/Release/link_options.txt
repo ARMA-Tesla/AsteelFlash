@@ -1,0 +1,47 @@
+-nologo
+-out:c:\work\src\modules\Camera\class\cvibuild.camera\Release\camera.dll
+-def:c:\work\src\modules\Camera\class\cvibuild.camera\Release\camera.dll.defs
+-implib:c:\work\src\modules\Camera\class\cvibuild.camera\Release\camera.lib
+-ignoreexports
+-dependenciesMapFile:c:\work\src\modules\Camera\class\cvibuild.camera\Release\dependencies.lnk.in
+-arch:x86
+-timestamp
+-res:c:\work\src\modules\Camera\class\cvibuild.camera\Release\resources.res
+-entry:_CVIDllMainStartupCode@12
+-base:0x400000
+-linked:c:\work\src\modules\Camera\class\cvibuild.camera\Release\linkersummary.txt
+-dlldeps:c:\work\src\modules\Camera\class\cvibuild.camera\Release\dlldependencies.txt
+-licensing:c:\work\src\modules\Camera\class\cvibuild.camera\Release\linkerlicensing.txt
+-browsedeps:c:\work\src\modules\Camera\class\cvibuild.camera\Release\moduledependencies.txt
+-stackreserve:1048576
+-stackcommit:4096
+-in:c:\work\src\modules\Camera\class\cvibuild.camera\Release\cameras.obj
+-in:c:\work\src\modules\Camera\class\cvibuild.camera\Release\cameras_module.obj
+-in:c:\work\src\modules\Camera\class\cvibuild.camera\Release\Exception.obj
+-more:c:\program files (x86)\national instruments\cvi2019\bin\msvc\cvistart.lib
+-more:c:\program files (x86)\national instruments\cvi2019\bin\msvc\cvi.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\advanlys.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\advapi32.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\bufferoverflowu.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\bin\msvc\cvi_db.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\cviauto.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\cvidotnet.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\cvinetstreams.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\cvinetv.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\cvintwrk.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\cvitdms.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\gdi32.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\gpib.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\bin\msvc\ivi.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\kernel32.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\toolslib\toolbox\msvc\msxmldom.obj
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\bin\msvc\NIDAQmx.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\bin\msvc\nisyscfg.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\nivxi.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\omp.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\bin\msvc\pid.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\toolslib\toolbox\msvc\toolbox.obj
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\user32.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\uuid.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\bin\msvc\visa.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\winmm.lib

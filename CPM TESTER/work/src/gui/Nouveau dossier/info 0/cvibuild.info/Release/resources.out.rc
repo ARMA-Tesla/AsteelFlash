@@ -1,0 +1,92 @@
+#include "C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\winver.h"
+
+
+2 24 "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\manifest.xml"
+
+
+STRINGTABLE DISCARDABLE
+BEGIN
+  65535  ""
+END
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+ FILEFLAGS 0L
+ FILEOS VOS__WINDOWS32
+ FILETYPE VFT_DLL
+ FILESUBTYPE VFT_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "info (Release x86)\0"
+            VALUE "FileVersion", "1.0\0"
+            VALUE "InternalName", "info\0"
+            VALUE "LegalCopyright", "Copyright ©  2020\0"
+            VALUE "OriginalFilename", "info.dll\0"
+            VALUE "ProductName", " info\0"
+            VALUE "ProductVersion", "1.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 0x4b0
+    END
+END
+
+info.uir UIRFileType "c:\\work\\src\\gui\\info\\info.uir"
+
+CVIDLLexports CVIDLLprototypes
+{
+   "void DiscardUIObjectsForDLL();"
+   "\n",
+   "int DllEntryPoint(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+   "\n",
+   "int DllMain(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+   "\n",
+   "struct _SElException *EventFunctionCallback(const char *eventName, void *pData);"
+   "\n",
+   "struct _SElException *LoadPanelExWithLanguage(int parentPanel, const char *path, int panelResourceId, struct _SLanguageItem table[], int *pPanelHandle);"
+   "\n",
+   "struct _SElException *LoadPanelWithLanguage(int parentPanel, const char *path, int panelResourceId, struct _SLanguageItem table[], int *pPanelHandle);"
+   "\n",
+   "struct _SElException *PLUGIN_SHUTDOWN_NAME_CODE(struct _SPluginArgs *a_pPluginArgs) __declspec(dllexport);"
+   "\n",
+   "void PostDeferredDisplayPanel(void *callbackData);"
+   "\n",
+   "void PostDeferredHidePanel(void *callbackData);"
+   "\n",
+   "struct _SElException *eleventdata_delete(struct _SElEventData **pEventData);"
+   "\n",
+   "struct _SElException *eleventdata_new(struct _SElEventData **pEventData);"
+   "\n",
+   "void elexception_delete(struct _SElException **pException);"
+   "\n",
+   "void elexception_log_set(void (*fn_log)(struct _SElException *));"
+   "\n",
+   "struct _SElException *elexception_new(int errorCode, const char *messsage, const char *file, long line);"
+   "\n",
+   "struct _SElException *elstring_delete(struct _SELString **pString);"
+   "\n",
+   "struct _SElException *elstring_new(const char *pStr, struct _SELString **pString);"
+   "\n",
+   "void excdisplay(struct _SElException *pException);"
+   "\n",
+   "void excdispstr(struct _SElException *pException, char *str, int str_size);"
+   "\n",
+   "struct _SElException *pluginGetAttribute(unsigned int attrID, unsigned int size, void *value) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *pluginGetInfo(struct _SPluginInfo **a_pInfo) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *pluginInitialize(struct _SPluginArgs *a_pPluginArgs) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *pluginLeave(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *pluginRun(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
+   "\n",
+   "\0"
+}

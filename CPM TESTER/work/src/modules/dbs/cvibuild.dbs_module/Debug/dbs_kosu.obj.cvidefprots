@@ -1,0 +1,10 @@
+[dbskosu_new]
+Class="Function"
+Prototype="struct _SElException *dbskosu_new(struct _SDBSKOSU **pKOSU, void *pDBS);"
+SourceLocation="c:\work\src\modules\dbs\dbs_kosu.c:173:1"
+
+[dbskosu_delete]
+Class="Function"
+Prototype="struct _SElException *dbskosu_delete(struct _SDBSKOSU **pKOSU);"
+SourceLocation="c:\work\src\modules\dbs\dbs_kosu.c:219:1"
+

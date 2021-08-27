@@ -1,0 +1,205 @@
+[DllMain]
+Class="Function"
+Prototype="int DllMain(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:32:15"
+
+[DllEntryPoint]
+Class="Function"
+Prototype="int DllEntryPoint(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:53:15"
+
+[RunDllUI]
+Class="Function"
+Prototype="void RunDllUI() __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:62:16"
+
+[pluginInitialize]
+Class="Function"
+Prototype="struct _SElException *pluginInitialize(struct _SPluginArgs *a_pPluginArgs) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:74:28"
+
+[pluginRun]
+Class="Function"
+Prototype="struct _SElException *pluginRun(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:167:28"
+
+[pluginLeave]
+Class="Function"
+Prototype="struct _SElException *pluginLeave(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:177:28"
+
+[PLUGIN_SHUTDOWN_NAME_CODE]
+Class="Function"
+Prototype="struct _SElException *PLUGIN_SHUTDOWN_NAME_CODE(struct _SPluginArgs *a_pPluginArgs) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:187:28"
+
+[pluginGetInfo]
+Class="Function"
+Prototype="struct _SElException *pluginGetInfo(struct _SPluginInfo **a_pInfo) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:238:28"
+
+[pluginGetAttribute]
+Class="Function"
+Prototype="struct _SElException *pluginGetAttribute(unsigned int attrID, unsigned int size, void *value) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:250:28"
+
+[OnButton]
+Class="Function"
+Prototype="int OnButton(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:260:18"
+
+[GetStationNumber]
+Class="Function"
+Prototype="int GetStationNumber(int station);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:299:9"
+
+[GetTestSeqFunction]
+Class="Function"
+Prototype="struct _SElException *GetTestSeqFunction(int index, struct _STestSeq *pTestSeq, int *test_count) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:320:24"
+
+[GetTestFunction]
+Class="Function"
+Prototype="struct _SElException *GetTestFunction(int process, int index, struct _STestListItem **pTest, int *test_count) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:349:24"
+
+[PostDeferredDisplayPanel]
+Class="Function"
+Prototype="void PostDeferredDisplayPanel(void *callbackData);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:374:18"
+
+[PostDeferredHidePanel]
+Class="Function"
+Prototype="void PostDeferredHidePanel(void *callbackData);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:375:18"
+
+[PostDeferredDisplayPanelStation]
+Class="Function"
+Prototype="void PostDeferredDisplayPanelStation(void *callbackData);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:377:18"
+
+[PostDeferredHidePanelStation]
+Class="Function"
+Prototype="void PostDeferredHidePanelStation(void *callbackData);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:384:18"
+
+[GetTestSeqActive]
+Class="Function"
+Prototype="struct _SElException *GetTestSeqActive(int *SeqUsed) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:394:24"
+
+[GetTestSeqStopFail]
+Class="Function"
+Prototype="struct _SElException *GetTestSeqStopFail(int *SeqStopFail) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:415:24"
+
+[IniTestPanel]
+Class="Function"
+Prototype="struct _SElException *IniTestPanel(const char *picture_left, const char *picture_right, int reset) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:438:24"
+
+[CloseTestPanel]
+Class="Function"
+Prototype="struct _SElException *CloseTestPanel() __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:467:24"
+
+[SetAnnotationAttribute_ALL]
+Class="Function"
+Prototype="void SetAnnotationAttribute_ALL(int Panel_Handle, int Control_ID, int Annotation_Index);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:479:6"
+
+[SetTestPanelDescription]
+Class="Function"
+Prototype="struct _SElException *SetTestPanelDescription(int control, const char *description) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:494:24"
+
+[SetTestPanelTime]
+Class="Function"
+Prototype="struct _SElException *SetTestPanelTime(int station, int time) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:524:24"
+
+[SetTestPanelFault]
+Class="Function"
+Prototype="struct _SElException *SetTestPanelFault(int station, int station_origin, char *test_description, int status) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:546:24"
+
+[SetPanelWarning]
+Class="Function"
+Prototype="struct _SElException *SetPanelWarning(int control, int status) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:584:24"
+
+[SetPanelStationStatus]
+Class="Function"
+Prototype="struct _SElException *SetPanelStationStatus(int station, int status) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:602:24"
+
+[SetTestPanelMode]
+Class="Function"
+Prototype="struct _SElException *SetTestPanelMode(int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:620:24"
+
+[SetTestPanelReferences]
+Class="Function"
+Prototype="struct _SElException *SetTestPanelReferences(char *RefValeo, char *RefCustomer) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:660:24"
+
+[GetPalettStatus]
+Class="Function"
+Prototype="struct _SElException *GetPalettStatus(int palettID, int *status) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:683:24"
+
+[SaveXmlResultFile_Manual]
+Class="Function"
+Prototype="void SaveXmlResultFile_Manual(struct _STestParam *pTestParam, int station, int failed);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:705:6"
+
+[Thread_Test]
+Class="Function"
+Prototype="unsigned long Thread_Test(void *param);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:906:14"
+
+[OnDisplay]
+Class="Function"
+Prototype="int OnDisplay(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:1003:17"
+
+[OnHidePanel]
+Class="Function"
+Prototype="int OnHidePanel(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:1031:17"
+
+[OnTest]
+Class="Function"
+Prototype="int OnTest(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:1051:17"
+
+[OnFnc10]
+Class="Function"
+Prototype="int OnFnc10(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:1090:17"
+
+[OnFnc20]
+Class="Function"
+Prototype="int OnFnc20(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:1112:17"
+
+[OnFnc30]
+Class="Function"
+Prototype="int OnFnc30(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:1176:17"
+
+[OnFnc40]
+Class="Function"
+Prototype="int OnFnc40(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:1234:17"
+
+[OnFnc50]
+Class="Function"
+Prototype="int OnFnc50(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:1292:17"
+
+[OnFnc60]
+Class="Function"
+Prototype="int OnFnc60(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\modules\test\test_panel.c:1323:17"
+

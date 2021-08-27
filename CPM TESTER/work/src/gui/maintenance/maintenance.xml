@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<configuration>
+    <plugins>
+        <plugin id="{5954031C-CEA1-4c16-8128-38B661811261}">
+          <name>Product Plugin</name>
+       
+        </plugin>
+    </plugins>
+</configuration>

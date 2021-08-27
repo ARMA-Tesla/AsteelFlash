@@ -1,0 +1,4 @@
+[InitializeCal]
+Class="Function"
+Prototype="struct _SElException *InitializeCal(int panel, int labelCtrl, int calCtrl, int monthNext, int monthPrev, int sMonth, int sYear);"
+

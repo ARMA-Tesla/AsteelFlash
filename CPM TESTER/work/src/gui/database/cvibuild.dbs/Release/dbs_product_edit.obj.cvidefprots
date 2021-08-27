@@ -1,0 +1,30 @@
+[NewProductDialog]
+Class="Function"
+Prototype="struct _SElException *NewProductDialog(struct _SProductTypes product);"
+SourceLocation="c:\work\src\gui\database\dbs_product_edit.c:32:1"
+
+[CopyProductDialog]
+Class="Function"
+Prototype="struct _SElException *CopyProductDialog(struct _SProductTypes product);"
+SourceLocation="c:\work\src\gui\database\dbs_product_edit.c:73:1"
+
+[EditProductDialog]
+Class="Function"
+Prototype="struct _SElException *EditProductDialog(struct _SProductTypes product);"
+SourceLocation="c:\work\src\gui\database\dbs_product_edit.c:147:1"
+
+[DelProductDialog]
+Class="Function"
+Prototype="struct _SElException *DelProductDialog(struct _SProductTypes product);"
+SourceLocation="c:\work\src\gui\database\dbs_product_edit.c:180:1"
+
+[OnCopySourceSelect]
+Class="Function"
+Prototype="int OnCopySourceSelect(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\database\dbs_product_edit.c:333:1"
+
+[OnCP]
+Class="Function"
+Prototype="int OnCP(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\database\dbs_product_edit.c:380:1"
+

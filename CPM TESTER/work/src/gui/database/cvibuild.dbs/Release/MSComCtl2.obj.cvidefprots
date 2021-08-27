@@ -1,0 +1,1465 @@
+[MSComCtl2_IVBDataObjectClear]
+Class="Function"
+Prototype="long MSComCtl2_IVBDataObjectClear(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:1948:1"
+
+[MSComCtl2_IVBDataObjectGetData]
+Class="Function"
+Prototype="long MSComCtl2_IVBDataObjectGetData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short sFormat, struct tagVARIANT *pvData);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:1971:1"
+
+[MSComCtl2_IVBDataObjectGetFormat]
+Class="Function"
+Prototype="long MSComCtl2_IVBDataObjectGetFormat(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short sFormat, short *pbFormatSupported);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2013:1"
+
+[MSComCtl2_IVBDataObjectSetData]
+Class="Function"
+Prototype="long MSComCtl2_IVBDataObjectSetData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT vValue, struct tagVARIANT vFormat);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2045:1"
+
+[MSComCtl2_IVBDataObjectGetFiles]
+Class="Function"
+Prototype="long MSComCtl2_IVBDataObjectGetFiles(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *pFiles);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2070:1"
+
+[MSComCtl2_IVBDataObjectFilesGetItem]
+Class="Function"
+Prototype="long MSComCtl2_IVBDataObjectFilesGetItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long lIndex, char **bstrItem);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2125:1"
+
+[MSComCtl2_IVBDataObjectFilesGetCount]
+Class="Function"
+Prototype="long MSComCtl2_IVBDataObjectFilesGetCount(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *plCount);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2167:1"
+
+[MSComCtl2_IVBDataObjectFilesAdd]
+Class="Function"
+Prototype="long MSComCtl2_IVBDataObjectFilesAdd(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *bstrFilename, struct tagVARIANT vIndex);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2198:1"
+
+[MSComCtl2_IVBDataObjectFilesClear]
+Class="Function"
+Prototype="long MSComCtl2_IVBDataObjectFilesClear(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2228:1"
+
+[MSComCtl2_IVBDataObjectFilesRemove]
+Class="Function"
+Prototype="long MSComCtl2_IVBDataObjectFilesRemove(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT vIndex);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2251:1"
+
+[MSComCtl2_IVBDataObjectFiles_NewEnum]
+Class="Function"
+Prototype="long MSComCtl2_IVBDataObjectFiles_NewEnum(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct IUnknown **ppUnk);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2275:1"
+
+[MSComCtl2_NewIAnimation]
+Class="Function"
+Prototype="long MSComCtl2_NewIAnimation(int panel, const char *label, int top, int left, int *controlID, int *UILError);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2321:1"
+
+[MSComCtl2_IAnimationSetAutoPlay]
+Class="Function"
+Prototype="long MSComCtl2_IAnimationSetAutoPlay(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pfAutoPlay);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2338:1"
+
+[MSComCtl2_IAnimationGetAutoPlay]
+Class="Function"
+Prototype="long MSComCtl2_IAnimationGetAutoPlay(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pfAutoPlay);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2363:1"
+
+[MSComCtl2_IAnimationSetBackStyle]
+Class="Function"
+Prototype="long MSComCtl2_IAnimationSetBackStyle(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_BackStyleConstants penumBackStyle);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2394:1"
+
+[MSComCtl2_IAnimationGetBackStyle]
+Class="Function"
+Prototype="long MSComCtl2_IAnimationGetBackStyle(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_BackStyleConstants *penumBackStyle);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2419:1"
+
+[MSComCtl2_IAnimationSetCenter]
+Class="Function"
+Prototype="long MSComCtl2_IAnimationSetCenter(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pfCenter);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2450:1"
+
+[MSComCtl2_IAnimationGetCenter]
+Class="Function"
+Prototype="long MSComCtl2_IAnimationGetCenter(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pfCenter);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2474:1"
+
+[MSComCtl2_IAnimationSetEnabled]
+Class="Function"
+Prototype="long MSComCtl2_IAnimationSetEnabled(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pfEnable);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2505:1"
+
+[MSComCtl2_IAnimationGetEnabled]
+Class="Function"
+Prototype="long MSComCtl2_IAnimationGetEnabled(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pfEnable);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2529:1"
+
+[MSComCtl2_IAnimationGethWnd]
+Class="Function"
+Prototype="long MSComCtl2_IAnimationGethWnd(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *phWnd);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2560:1"
+
+[MSComCtl2_IAnimationSetBackColor]
+Class="Function"
+Prototype="long MSComCtl2_IAnimationSetBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long pocBackColor);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2590:1"
+
+[MSComCtl2_IAnimationGetBackColor]
+Class="Function"
+Prototype="long MSComCtl2_IAnimationGetBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *pocBackColor);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2615:1"
+
+[MSComCtl2_IAnimationGetOLEDropMode]
+Class="Function"
+Prototype="long MSComCtl2_IAnimationGetOLEDropMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_OLEDropConstants *psOLEDropMode);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2646:1"
+
+[MSComCtl2_IAnimationSetOLEDropMode]
+Class="Function"
+Prototype="long MSComCtl2_IAnimationSetOLEDropMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_OLEDropConstants psOLEDropMode);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2677:1"
+
+[MSComCtl2_IAnimationClose]
+Class="Function"
+Prototype="long MSComCtl2_IAnimationClose(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2702:1"
+
+[MSComCtl2_IAnimationOpen]
+Class="Function"
+Prototype="long MSComCtl2_IAnimationOpen(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *bstrFilename);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2725:1"
+
+[MSComCtl2_IAnimationPlay]
+Class="Function"
+Prototype="long MSComCtl2_IAnimationPlay(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT varRepeatCount, struct tagVARIANT varStartFrame, struct tagVARIANT varEndFrame);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2754:1"
+
+[MSComCtl2_IAnimationStop]
+Class="Function"
+Prototype="long MSComCtl2_IAnimationStop(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2781:1"
+
+[MSComCtl2_IAnimationAboutBox]
+Class="Function"
+Prototype="long MSComCtl2_IAnimationAboutBox(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2804:1"
+
+[MSComCtl2_IAnimationOLEDrag]
+Class="Function"
+Prototype="long MSComCtl2_IAnimationOLEDrag(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2827:1"
+
+[MSComCtl2_NewIUpDown]
+Class="Function"
+Prototype="long MSComCtl2_NewIUpDown(int panel, const char *label, int top, int left, int *controlID, int *UILError);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2850:1"
+
+[MSComCtl2_IUpDownSetValue]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownSetValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long plValue);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2867:1"
+
+[MSComCtl2_IUpDownGetValue]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownGetValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *plValue);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2890:1"
+
+[MSComCtl2_IUpDownSetAcceleration]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownSetAcceleration(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psAcceleration);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2920:1"
+
+[MSComCtl2_IUpDownGetAcceleration]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownGetAcceleration(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psAcceleration);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2945:1"
+
+[MSComCtl2_IUpDownSetAlignment]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownSetAlignment(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_AlignmentConstants penumAlignment);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:2976:1"
+
+[MSComCtl2_IUpDownGetAlignment]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownGetAlignment(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_AlignmentConstants *penumAlignment);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3001:1"
+
+[MSComCtl2_IUpDownSetAutoBuddy]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownSetAutoBuddy(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pfAutoBuddy);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3032:1"
+
+[MSComCtl2_IUpDownGetAutoBuddy]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownGetAutoBuddy(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pfAutoBuddy);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3057:1"
+
+[MSComCtl2_IUpDownSetBuddyControl]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownSetBuddyControl(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvarBuddyCtl);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3088:1"
+
+[MSComCtl2_IUpDownSetByRefBuddyControl]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownSetByRefBuddyControl(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvarBuddyCtl);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3113:1"
+
+[MSComCtl2_IUpDownGetBuddyControl]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownGetBuddyControl(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvarBuddyCtl);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3138:1"
+
+[MSComCtl2_IUpDownSetIncrement]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownSetIncrement(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long plIncrement);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3180:1"
+
+[MSComCtl2_IUpDownGetIncrement]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownGetIncrement(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *plIncrement);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3205:1"
+
+[MSComCtl2_IUpDownSetMax]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownSetMax(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long plMax);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3236:1"
+
+[MSComCtl2_IUpDownGetMax]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownGetMax(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *plMax);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3259:1"
+
+[MSComCtl2_IUpDownSetMin]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownSetMin(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long plMin);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3288:1"
+
+[MSComCtl2_IUpDownGetMin]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownGetMin(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *plMin);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3311:1"
+
+[MSComCtl2_IUpDownSetOrientation]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownSetOrientation(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_OrientationConstants penumOrientation);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3340:1"
+
+[MSComCtl2_IUpDownGetOrientation]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownGetOrientation(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_OrientationConstants *penumOrientation);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3365:1"
+
+[MSComCtl2_IUpDownSetSyncBuddy]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownSetSyncBuddy(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pfSyncBuddy);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3396:1"
+
+[MSComCtl2_IUpDownGetSyncBuddy]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownGetSyncBuddy(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pfSyncBuddy);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3421:1"
+
+[MSComCtl2_IUpDownSetWrap]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownSetWrap(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pfWrap);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3452:1"
+
+[MSComCtl2_IUpDownGetWrap]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownGetWrap(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pfWrap);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3475:1"
+
+[MSComCtl2_IUpDownSetBuddyProperty]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownSetBuddyProperty(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvarDispidBuddyProperty);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3505:1"
+
+[MSComCtl2_IUpDownGetBuddyProperty]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownGetBuddyProperty(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvarDispidBuddyProperty);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3530:1"
+
+[MSComCtl2_IUpDownSetEnabled]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownSetEnabled(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pfEnable);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3572:1"
+
+[MSComCtl2_IUpDownGetEnabled]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownGetEnabled(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pfEnable);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3596:1"
+
+[MSComCtl2_IUpDownGethWnd]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownGethWnd(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *phWnd);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3627:1"
+
+[MSComCtl2_IUpDownGetOLEDropMode]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownGetOLEDropMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_OLEDropConstants *psOLEDropMode);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3657:1"
+
+[MSComCtl2_IUpDownSetOLEDropMode]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownSetOLEDropMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_OLEDropConstants psOLEDropMode);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3688:1"
+
+[MSComCtl2_IUpDownAboutBox]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownAboutBox(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3713:1"
+
+[MSComCtl2_IUpDownOLEDrag]
+Class="Function"
+Prototype="long MSComCtl2_IUpDownOLEDrag(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3736:1"
+
+[MSComCtl2_NewIMonthView]
+Class="Function"
+Prototype="long MSComCtl2_NewIMonthView(int panel, const char *label, int top, int left, int *controlID, int *UILError);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3759:1"
+
+[MSComCtl2_IMonthViewGetAppearance]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetAppearance(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_AppearanceConstants *penumAppearances);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3776:1"
+
+[MSComCtl2_IMonthViewSetAppearance]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetAppearance(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_AppearanceConstants penumAppearances);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3807:1"
+
+[MSComCtl2_IMonthViewGetBackColor]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *pclrBackColor);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3832:1"
+
+[MSComCtl2_IMonthViewSetBackColor]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long pclrBackColor);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3863:1"
+
+[MSComCtl2_IMonthViewGetBorderStyle]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetBorderStyle(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_BorderStyleConstants *psBorderStyle);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3888:1"
+
+[MSComCtl2_IMonthViewSetBorderStyle]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetBorderStyle(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_BorderStyleConstants psBorderStyle);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3919:1"
+
+[MSComCtl2_IMonthViewGetDay]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetDay(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psDay);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3944:1"
+
+[MSComCtl2_IMonthViewSetDay]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetDay(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psDay);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3973:1"
+
+[MSComCtl2_IMonthViewGetDayBold]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetDayBold(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double dateIndex, short *pbDayBold);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:3996:1"
+
+[MSComCtl2_IMonthViewSetDayBold]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetDayBold(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double dateIndex, short pbDayBold);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4027:1"
+
+[MSComCtl2_IMonthViewGetDayOfWeek]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetDayOfWeek(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_DayConstants *penumDayOfWeek);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4052:1"
+
+[MSComCtl2_IMonthViewSetDayOfWeek]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetDayOfWeek(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_DayConstants penumDayOfWeek);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4083:1"
+
+[MSComCtl2_IMonthViewGetEnabled]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetEnabled(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbEnabled);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4108:1"
+
+[MSComCtl2_IMonthViewSetEnabled]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetEnabled(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbEnabled);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4139:1"
+
+[MSComCtl2_IMonthViewGetFont]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetFont(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppFont);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4163:1"
+
+[MSComCtl2_IMonthViewSetFont]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetFont(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle ppFont);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4218:1"
+
+[MSComCtl2_IMonthViewSetByRefFont]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetByRefFont(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle ppFont);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4252:1"
+
+[MSComCtl2_IMonthViewGetForeColor]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetForeColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *pclrForeColor);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4286:1"
+
+[MSComCtl2_IMonthViewSetForeColor]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetForeColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long pclrForeColor);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4317:1"
+
+[MSComCtl2_IMonthViewGethWnd]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGethWnd(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *phWnd);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4342:1"
+
+[MSComCtl2_IMonthViewSethWnd]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSethWnd(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long phWnd);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4372:1"
+
+[MSComCtl2_IMonthViewGetMaxDate]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetMaxDate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double *pdateMaxDate);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4396:1"
+
+[MSComCtl2_IMonthViewSetMaxDate]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetMaxDate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double pdateMaxDate);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4427:1"
+
+[MSComCtl2_IMonthViewGetMaxSelCount]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetMaxSelCount(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psMaxSelCount);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4452:1"
+
+[MSComCtl2_IMonthViewSetMaxSelCount]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetMaxSelCount(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psMaxSelCount);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4483:1"
+
+[MSComCtl2_IMonthViewGetMinDate]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetMinDate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double *pdateMinDate);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4508:1"
+
+[MSComCtl2_IMonthViewSetMinDate]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetMinDate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double pdateMinDate);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4539:1"
+
+[MSComCtl2_IMonthViewGetMonth]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetMonth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_MonthConstants *psMonth);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4564:1"
+
+[MSComCtl2_IMonthViewSetMonth]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetMonth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_MonthConstants psMonth);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4595:1"
+
+[MSComCtl2_IMonthViewGetMonthBackColor]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetMonthBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *pclrMonthBackColor);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4619:1"
+
+[MSComCtl2_IMonthViewSetMonthBackColor]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetMonthBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long pclrMonthBackColor);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4650:1"
+
+[MSComCtl2_IMonthViewGetMonthColumns]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetMonthColumns(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psMonthColumns);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4675:1"
+
+[MSComCtl2_IMonthViewSetMonthColumns]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetMonthColumns(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psMonthColumns);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4706:1"
+
+[MSComCtl2_IMonthViewGetMonthRows]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetMonthRows(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psMonthRows);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4731:1"
+
+[MSComCtl2_IMonthViewSetMonthRows]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetMonthRows(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psMonthRows);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4762:1"
+
+[MSComCtl2_IMonthViewGetMouseIcon]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetMouseIcon(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppMouseIcon);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4787:1"
+
+[MSComCtl2_IMonthViewSetMouseIcon]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetMouseIcon(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle ppMouseIcon);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4842:1"
+
+[MSComCtl2_IMonthViewSetByRefMouseIcon]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetByRefMouseIcon(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle ppMouseIcon);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4877:1"
+
+[MSComCtl2_IMonthViewGetMousePointer]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetMousePointer(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_MousePointerConstants *psMousePointer);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4912:1"
+
+[MSComCtl2_IMonthViewSetMousePointer]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetMousePointer(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_MousePointerConstants psMousePointer);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4943:1"
+
+[MSComCtl2_IMonthViewGetMultiSelect]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetMultiSelect(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbMultiSelect);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4968:1"
+
+[MSComCtl2_IMonthViewSetMultiSelect]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetMultiSelect(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbMultiSelect);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:4999:1"
+
+[MSComCtl2_IMonthViewGetOLEDropMode]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetOLEDropMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_OLEDropConstants *psOLEDropMode);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5024:1"
+
+[MSComCtl2_IMonthViewSetOLEDropMode]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetOLEDropMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_OLEDropConstants psOLEDropMode);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5055:1"
+
+[MSComCtl2_IMonthViewGetScrollRate]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetScrollRate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psScrollRate);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5080:1"
+
+[MSComCtl2_IMonthViewSetScrollRate]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetScrollRate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psScrollRate);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5111:1"
+
+[MSComCtl2_IMonthViewGetSelEnd]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetSelEnd(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double *pdateSelEnd);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5136:1"
+
+[MSComCtl2_IMonthViewSetSelEnd]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetSelEnd(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double pdateSelEnd);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5167:1"
+
+[MSComCtl2_IMonthViewGetSelStart]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetSelStart(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double *pdateSelStart);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5192:1"
+
+[MSComCtl2_IMonthViewSetSelStart]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetSelStart(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double pdateSelStart);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5223:1"
+
+[MSComCtl2_IMonthViewGetShowToday]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetShowToday(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbShowToday);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5248:1"
+
+[MSComCtl2_IMonthViewSetShowToday]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetShowToday(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbShowToday);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5279:1"
+
+[MSComCtl2_IMonthViewGetShowWeekNumbers]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetShowWeekNumbers(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbShowWeekNumbers);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5304:1"
+
+[MSComCtl2_IMonthViewSetShowWeekNumbers]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetShowWeekNumbers(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbShowWeekNumbers);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5335:1"
+
+[MSComCtl2_IMonthViewGetStartOfWeek]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetStartOfWeek(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_DayConstants *penumStartOfWeek);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5360:1"
+
+[MSComCtl2_IMonthViewSetStartOfWeek]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetStartOfWeek(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_DayConstants penumStartOfWeek);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5391:1"
+
+[MSComCtl2_IMonthViewGetTitleBackColor]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetTitleBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *pclrTitleBackColor);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5416:1"
+
+[MSComCtl2_IMonthViewSetTitleBackColor]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetTitleBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long pclrTitleBackColor);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5447:1"
+
+[MSComCtl2_IMonthViewGetTitleForeColor]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetTitleForeColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *pclrTitleForeColor);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5472:1"
+
+[MSComCtl2_IMonthViewSetTitleForeColor]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetTitleForeColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long pclrTitleForeColor);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5503:1"
+
+[MSComCtl2_IMonthViewGetTrailingForeColor]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetTrailingForeColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *pclrTrailingForeColor);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5528:1"
+
+[MSComCtl2_IMonthViewSetTrailingForeColor]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetTrailingForeColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long pclrTrailingForeColor);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5559:1"
+
+[MSComCtl2_IMonthViewGetValue]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double *pdateValue);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5584:1"
+
+[MSComCtl2_IMonthViewSetValue]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double pdateValue);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5615:1"
+
+[MSComCtl2_IMonthViewGet_Value]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGet_Value(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double *pdateValue);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5639:1"
+
+[MSComCtl2_IMonthViewSet_Value]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSet_Value(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double pdateValue);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5670:1"
+
+[MSComCtl2_IMonthViewGetVisibleDays]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetVisibleDays(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short sIndex, double *pdateVisibleDays);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5694:1"
+
+[MSComCtl2_IMonthViewSetVisibleDays]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetVisibleDays(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short sIndex, double pdateVisibleDays);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5727:1"
+
+[MSComCtl2_IMonthViewGetWeek]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetWeek(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psWeek);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5754:1"
+
+[MSComCtl2_IMonthViewSetWeek]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetWeek(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psWeek);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5784:1"
+
+[MSComCtl2_IMonthViewGetYear]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewGetYear(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psYear);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5807:1"
+
+[MSComCtl2_IMonthViewSetYear]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewSetYear(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psYear);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5837:1"
+
+[MSComCtl2_IMonthViewAboutBox]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewAboutBox(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5860:1"
+
+[MSComCtl2_IMonthViewComputeControlSize]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewComputeControlSize(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short rows, short columns, float *width, float *height);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5883:1"
+
+[MSComCtl2_IMonthViewHitTest]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewHitTest(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long x, long y, double *date, enum MSComCtl2Enum_MonthViewHitTestAreas *enumHitTestArea);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5924:1"
+
+[MSComCtl2_IMonthViewOLEDrag]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewOLEDrag(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5962:1"
+
+[MSComCtl2_IMonthViewRefresh]
+Class="Function"
+Prototype="long MSComCtl2_IMonthViewRefresh(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:5985:1"
+
+[MSComCtl2_NewIDTPicker]
+Class="Function"
+Prototype="long MSComCtl2_NewIDTPicker(int panel, const char *label, int top, int left, int *controlID, int *UILError);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6008:1"
+
+[MSComCtl2_IDTPickerGetFormat]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGetFormat(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_FormatConstants *penumFormat);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6025:1"
+
+[MSComCtl2_IDTPickerSetFormat]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetFormat(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_FormatConstants penumFormat);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6056:1"
+
+[MSComCtl2_IDTPickerGetCalendarBackColor]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGetCalendarBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *pclrCalendarBackColor);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6081:1"
+
+[MSComCtl2_IDTPickerSetCalendarBackColor]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetCalendarBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long pclrCalendarBackColor);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6112:1"
+
+[MSComCtl2_IDTPickerGetCalendarForeColor]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGetCalendarForeColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *pclrCalendarForeColor);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6137:1"
+
+[MSComCtl2_IDTPickerSetCalendarForeColor]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetCalendarForeColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long pclrCalendarForeColor);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6168:1"
+
+[MSComCtl2_IDTPickerGetCalendarTitleBackColor]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGetCalendarTitleBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *pclrTitleBackColor);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6193:1"
+
+[MSComCtl2_IDTPickerSetCalendarTitleBackColor]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetCalendarTitleBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long pclrTitleBackColor);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6224:1"
+
+[MSComCtl2_IDTPickerGetCalendarTitleForeColor]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGetCalendarTitleForeColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *pclrTitleForeColor);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6249:1"
+
+[MSComCtl2_IDTPickerSetCalendarTitleForeColor]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetCalendarTitleForeColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long pclrTitleForeColor);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6280:1"
+
+[MSComCtl2_IDTPickerGetCalendarTrailingForeColor]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGetCalendarTrailingForeColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *pclrTrailingForeColor);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6305:1"
+
+[MSComCtl2_IDTPickerSetCalendarTrailingForeColor]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetCalendarTrailingForeColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long pclrTrailingForeColor);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6336:1"
+
+[MSComCtl2_IDTPickerGetCheckBox]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGetCheckBox(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbEnabled);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6361:1"
+
+[MSComCtl2_IDTPickerSetCheckBox]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetCheckBox(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbEnabled);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6392:1"
+
+[MSComCtl2_IDTPickerGetCustomFormat]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGetCustomFormat(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **pbstrCustomFormat);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6417:1"
+
+[MSComCtl2_IDTPickerSetCustomFormat]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetCustomFormat(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *pbstrCustomFormat);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6459:1"
+
+[MSComCtl2_IDTPickerGetDay]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGetDay(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvDay);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6489:1"
+
+[MSComCtl2_IDTPickerSetDay]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetDay(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvDay);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6529:1"
+
+[MSComCtl2_IDTPickerGetDayOfWeek]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGetDayOfWeek(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvDayOfWeek);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6552:1"
+
+[MSComCtl2_IDTPickerSetDayOfWeek]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetDayOfWeek(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvDayOfWeek);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6594:1"
+
+[MSComCtl2_IDTPickerGetEnabled]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGetEnabled(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbEnabled);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6619:1"
+
+[MSComCtl2_IDTPickerSetEnabled]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetEnabled(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbEnabled);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6650:1"
+
+[MSComCtl2_IDTPickerGetFont]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGetFont(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppFont);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6674:1"
+
+[MSComCtl2_IDTPickerSetFont]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetFont(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle ppFont);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6729:1"
+
+[MSComCtl2_IDTPickerSetByRefFont]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetByRefFont(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle ppFont);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6763:1"
+
+[MSComCtl2_IDTPickerGetHour]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGetHour(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvHour);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6797:1"
+
+[MSComCtl2_IDTPickerSetHour]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetHour(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvHour);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6839:1"
+
+[MSComCtl2_IDTPickerGethWnd]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGethWnd(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *phWnd);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6862:1"
+
+[MSComCtl2_IDTPickerSethWnd]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSethWnd(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long phWnd);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6892:1"
+
+[MSComCtl2_IDTPickerGetMaxDate]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGetMaxDate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double *pdateMaxDate);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6916:1"
+
+[MSComCtl2_IDTPickerSetMaxDate]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetMaxDate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double pdateMaxDate);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6947:1"
+
+[MSComCtl2_IDTPickerGetMinDate]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGetMinDate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double *pdateMinDate);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:6972:1"
+
+[MSComCtl2_IDTPickerSetMinDate]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetMinDate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double pdateMinDate);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7003:1"
+
+[MSComCtl2_IDTPickerGetMinute]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGetMinute(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvMinute);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7028:1"
+
+[MSComCtl2_IDTPickerSetMinute]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetMinute(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvMinute);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7070:1"
+
+[MSComCtl2_IDTPickerGetMonth]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGetMonth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvMonth);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7094:1"
+
+[MSComCtl2_IDTPickerSetMonth]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetMonth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvMonth);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7136:1"
+
+[MSComCtl2_IDTPickerGetMouseIcon]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGetMouseIcon(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppMouseIcon);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7160:1"
+
+[MSComCtl2_IDTPickerSetMouseIcon]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetMouseIcon(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle ppMouseIcon);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7215:1"
+
+[MSComCtl2_IDTPickerSetByRefMouseIcon]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetByRefMouseIcon(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle ppMouseIcon);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7250:1"
+
+[MSComCtl2_IDTPickerGetMousePointer]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGetMousePointer(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_MousePointerConstants *psMousePointer);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7285:1"
+
+[MSComCtl2_IDTPickerSetMousePointer]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetMousePointer(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_MousePointerConstants psMousePointer);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7316:1"
+
+[MSComCtl2_IDTPickerGetOLEDropMode]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGetOLEDropMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_OLEDropConstants *psOLEDropMode);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7341:1"
+
+[MSComCtl2_IDTPickerSetOLEDropMode]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetOLEDropMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_OLEDropConstants psOLEDropMode);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7372:1"
+
+[MSComCtl2_IDTPickerGetSecond]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGetSecond(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvSecond);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7397:1"
+
+[MSComCtl2_IDTPickerSetSecond]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetSecond(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvSecond);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7439:1"
+
+[MSComCtl2_IDTPickerGetUpDown]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGetUpDown(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbUpDown);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7463:1"
+
+[MSComCtl2_IDTPickerSetUpDown]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetUpDown(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbUpDown);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7494:1"
+
+[MSComCtl2_IDTPickerGetValue]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGetValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvdateValue);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7518:1"
+
+[MSComCtl2_IDTPickerSetValue]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvdateValue);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7560:1"
+
+[MSComCtl2_IDTPickerGet_Value]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGet_Value(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvdateValue);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7584:1"
+
+[MSComCtl2_IDTPickerSet_Value]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSet_Value(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvdateValue);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7626:1"
+
+[MSComCtl2_IDTPickerGetYear]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerGetYear(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvYear);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7651:1"
+
+[MSComCtl2_IDTPickerSetYear]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerSetYear(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvYear);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7693:1"
+
+[MSComCtl2_IDTPickerAboutBox]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerAboutBox(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7716:1"
+
+[MSComCtl2_IDTPickerOLEDrag]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerOLEDrag(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7739:1"
+
+[MSComCtl2_IDTPickerRefresh]
+Class="Function"
+Prototype="long MSComCtl2_IDTPickerRefresh(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7762:1"
+
+[MSComCtl2_NewIFlatSB]
+Class="Function"
+Prototype="long MSComCtl2_NewIFlatSB(int panel, const char *label, int top, int left, int *controlID, int *UILError);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7785:1"
+
+[MSComCtl2_IFlatSBGetAppearance]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBGetAppearance(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_FlatScrollBarAppearanceConstants *penumAppearance);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7802:1"
+
+[MSComCtl2_IFlatSBSetAppearance]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBSetAppearance(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_FlatScrollBarAppearanceConstants penumAppearance);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7833:1"
+
+[MSComCtl2_IFlatSBGetArrows]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBGetArrows(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_ArrowsConstants *penumArrows);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7858:1"
+
+[MSComCtl2_IFlatSBSetArrows]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBSetArrows(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_ArrowsConstants penumArrows);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7889:1"
+
+[MSComCtl2_IFlatSBGetEnabled]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBGetEnabled(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbEnabled);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7914:1"
+
+[MSComCtl2_IFlatSBSetEnabled]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBSetEnabled(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbEnabled);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7945:1"
+
+[MSComCtl2_IFlatSBGethWnd]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBGethWnd(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *phWnd);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7969:1"
+
+[MSComCtl2_IFlatSBSethWnd]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBSethWnd(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long phWnd);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:7999:1"
+
+[MSComCtl2_IFlatSBGetLargeChange]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBGetLargeChange(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psLargeChange);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:8023:1"
+
+[MSComCtl2_IFlatSBSetLargeChange]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBSetLargeChange(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psLargeChange);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:8054:1"
+
+[MSComCtl2_IFlatSBGetMin]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBGetMin(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psMin);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:8079:1"
+
+[MSComCtl2_IFlatSBSetMin]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBSetMin(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psMin);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:8108:1"
+
+[MSComCtl2_IFlatSBGetMax]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBGetMax(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psMax);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:8131:1"
+
+[MSComCtl2_IFlatSBSetMax]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBSetMax(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psMax);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:8160:1"
+
+[MSComCtl2_IFlatSBGetMouseIcon]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBGetMouseIcon(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppMouseIcon);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:8183:1"
+
+[MSComCtl2_IFlatSBSetMouseIcon]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBSetMouseIcon(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle ppMouseIcon);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:8238:1"
+
+[MSComCtl2_IFlatSBSetByRefMouseIcon]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBSetByRefMouseIcon(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle ppMouseIcon);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:8273:1"
+
+[MSComCtl2_IFlatSBGetMousePointer]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBGetMousePointer(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_MousePointerConstants *psMousePointer);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:8308:1"
+
+[MSComCtl2_IFlatSBSetMousePointer]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBSetMousePointer(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_MousePointerConstants psMousePointer);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:8339:1"
+
+[MSComCtl2_IFlatSBGetOrientation]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBGetOrientation(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_OrientationConstants *penumOrientation);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:8364:1"
+
+[MSComCtl2_IFlatSBSetOrientation]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBSetOrientation(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum MSComCtl2Enum_OrientationConstants penumOrientation);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:8395:1"
+
+[MSComCtl2_IFlatSBGetSmallChange]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBGetSmallChange(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psSmallChange);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:8420:1"
+
+[MSComCtl2_IFlatSBSetSmallChange]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBSetSmallChange(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psSmallChange);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:8451:1"
+
+[MSComCtl2_IFlatSBGetValue]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBGetValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psValue);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:8476:1"
+
+[MSComCtl2_IFlatSBSetValue]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBSetValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psValue);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:8506:1"
+
+[MSComCtl2_IFlatSBGet_Value]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBGet_Value(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *psValue);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:8529:1"
+
+[MSComCtl2_IFlatSBSet_Value]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBSet_Value(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short psValue);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:8559:1"
+
+[MSComCtl2_IFlatSBAboutBox]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBAboutBox(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:8582:1"
+
+[MSComCtl2_IFlatSBRefresh]
+Class="Function"
+Prototype="long MSComCtl2_IFlatSBRefresh(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:8605:1"
+
+[MSComCtl2_DAnimationEventsRegOnClick]
+Class="Function"
+Prototype="long MSComCtl2_DAnimationEventsRegOnClick(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:10630:1"
+
+[MSComCtl2_DAnimationEventsRegOnDblClick]
+Class="Function"
+Prototype="long MSComCtl2_DAnimationEventsRegOnDblClick(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:10646:1"
+
+[MSComCtl2_DAnimationEventsRegOnMouseDown]
+Class="Function"
+Prototype="long MSComCtl2_DAnimationEventsRegOnMouseDown(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:10662:1"
+
+[MSComCtl2_DAnimationEventsRegOnMouseMove]
+Class="Function"
+Prototype="long MSComCtl2_DAnimationEventsRegOnMouseMove(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:10678:1"
+
+[MSComCtl2_DAnimationEventsRegOnMouseUp]
+Class="Function"
+Prototype="long MSComCtl2_DAnimationEventsRegOnMouseUp(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:10694:1"
+
+[MSComCtl2_DAnimationEventsRegOnOLEStartDrag]
+Class="Function"
+Prototype="long MSComCtl2_DAnimationEventsRegOnOLEStartDrag(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:10710:1"
+
+[MSComCtl2_DAnimationEventsRegOnOLEGiveFeedback]
+Class="Function"
+Prototype="long MSComCtl2_DAnimationEventsRegOnOLEGiveFeedback(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:10726:1"
+
+[MSComCtl2_DAnimationEventsRegOnOLESetData]
+Class="Function"
+Prototype="long MSComCtl2_DAnimationEventsRegOnOLESetData(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:10742:1"
+
+[MSComCtl2_DAnimationEventsRegOnOLECompleteDrag]
+Class="Function"
+Prototype="long MSComCtl2_DAnimationEventsRegOnOLECompleteDrag(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:10758:1"
+
+[MSComCtl2_DAnimationEventsRegOnOLEDragOver]
+Class="Function"
+Prototype="long MSComCtl2_DAnimationEventsRegOnOLEDragOver(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, long *, short *, short *, float *, float *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:10774:1"
+
+[MSComCtl2_DAnimationEventsRegOnOLEDragDrop]
+Class="Function"
+Prototype="long MSComCtl2_DAnimationEventsRegOnOLEDragDrop(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, long *, short *, short *, float *, float *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:10790:1"
+
+[MSComCtl2_DUpDownEventsRegOnChange]
+Class="Function"
+Prototype="long MSComCtl2_DUpDownEventsRegOnChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:10806:1"
+
+[MSComCtl2_DUpDownEventsRegOnDownClick]
+Class="Function"
+Prototype="long MSComCtl2_DUpDownEventsRegOnDownClick(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:10822:1"
+
+[MSComCtl2_DUpDownEventsRegOnUpClick]
+Class="Function"
+Prototype="long MSComCtl2_DUpDownEventsRegOnUpClick(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:10838:1"
+
+[MSComCtl2_DUpDownEventsRegOnMouseDown]
+Class="Function"
+Prototype="long MSComCtl2_DUpDownEventsRegOnMouseDown(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:10854:1"
+
+[MSComCtl2_DUpDownEventsRegOnMouseMove]
+Class="Function"
+Prototype="long MSComCtl2_DUpDownEventsRegOnMouseMove(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:10870:1"
+
+[MSComCtl2_DUpDownEventsRegOnMouseUp]
+Class="Function"
+Prototype="long MSComCtl2_DUpDownEventsRegOnMouseUp(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:10886:1"
+
+[MSComCtl2_DUpDownEventsRegOnOLEStartDrag]
+Class="Function"
+Prototype="long MSComCtl2_DUpDownEventsRegOnOLEStartDrag(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:10902:1"
+
+[MSComCtl2_DUpDownEventsRegOnOLEGiveFeedback]
+Class="Function"
+Prototype="long MSComCtl2_DUpDownEventsRegOnOLEGiveFeedback(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:10918:1"
+
+[MSComCtl2_DUpDownEventsRegOnOLESetData]
+Class="Function"
+Prototype="long MSComCtl2_DUpDownEventsRegOnOLESetData(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:10934:1"
+
+[MSComCtl2_DUpDownEventsRegOnOLECompleteDrag]
+Class="Function"
+Prototype="long MSComCtl2_DUpDownEventsRegOnOLECompleteDrag(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:10950:1"
+
+[MSComCtl2_DUpDownEventsRegOnOLEDragOver]
+Class="Function"
+Prototype="long MSComCtl2_DUpDownEventsRegOnOLEDragOver(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, long *, short *, short *, float *, float *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:10966:1"
+
+[MSComCtl2_DUpDownEventsRegOnOLEDragDrop]
+Class="Function"
+Prototype="long MSComCtl2_DUpDownEventsRegOnOLEDragDrop(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, long *, short *, short *, float *, float *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:10982:1"
+
+[MSComCtl2_DMonthViewEventsRegOnDateClick]
+Class="Function"
+Prototype="long MSComCtl2_DMonthViewEventsRegOnDateClick(CAObjHandle serverObject, long (*callbackFunction)(int, void *, double), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:10998:1"
+
+[MSComCtl2_DMonthViewEventsRegOnDateDblClick]
+Class="Function"
+Prototype="long MSComCtl2_DMonthViewEventsRegOnDateDblClick(CAObjHandle serverObject, long (*callbackFunction)(int, void *, double), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11014:1"
+
+[MSComCtl2_DMonthViewEventsRegOnGetDayBold]
+Class="Function"
+Prototype="long MSComCtl2_DMonthViewEventsRegOnGetDayBold(CAObjHandle serverObject, long (*callbackFunction)(int, void *, double, short, struct tagSAFEARRAY **), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11030:1"
+
+[MSComCtl2_DMonthViewEventsRegOnSelChange]
+Class="Function"
+Prototype="long MSComCtl2_DMonthViewEventsRegOnSelChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, double, double, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11046:1"
+
+[MSComCtl2_DMonthViewEventsRegOnClick]
+Class="Function"
+Prototype="long MSComCtl2_DMonthViewEventsRegOnClick(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11062:1"
+
+[MSComCtl2_DMonthViewEventsRegOnDblClick]
+Class="Function"
+Prototype="long MSComCtl2_DMonthViewEventsRegOnDblClick(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11078:1"
+
+[MSComCtl2_DMonthViewEventsRegOnKeyDown]
+Class="Function"
+Prototype="long MSComCtl2_DMonthViewEventsRegOnKeyDown(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11094:1"
+
+[MSComCtl2_DMonthViewEventsRegOnKeyUp]
+Class="Function"
+Prototype="long MSComCtl2_DMonthViewEventsRegOnKeyUp(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11110:1"
+
+[MSComCtl2_DMonthViewEventsRegOnKeyPress]
+Class="Function"
+Prototype="long MSComCtl2_DMonthViewEventsRegOnKeyPress(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11126:1"
+
+[MSComCtl2_DMonthViewEventsRegOnMouseDown]
+Class="Function"
+Prototype="long MSComCtl2_DMonthViewEventsRegOnMouseDown(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11142:1"
+
+[MSComCtl2_DMonthViewEventsRegOnMouseMove]
+Class="Function"
+Prototype="long MSComCtl2_DMonthViewEventsRegOnMouseMove(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11158:1"
+
+[MSComCtl2_DMonthViewEventsRegOnMouseUp]
+Class="Function"
+Prototype="long MSComCtl2_DMonthViewEventsRegOnMouseUp(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11174:1"
+
+[MSComCtl2_DMonthViewEventsRegOnOLEStartDrag]
+Class="Function"
+Prototype="long MSComCtl2_DMonthViewEventsRegOnOLEStartDrag(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11190:1"
+
+[MSComCtl2_DMonthViewEventsRegOnOLEGiveFeedback]
+Class="Function"
+Prototype="long MSComCtl2_DMonthViewEventsRegOnOLEGiveFeedback(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11206:1"
+
+[MSComCtl2_DMonthViewEventsRegOnOLESetData]
+Class="Function"
+Prototype="long MSComCtl2_DMonthViewEventsRegOnOLESetData(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11222:1"
+
+[MSComCtl2_DMonthViewEventsRegOnOLECompleteDrag]
+Class="Function"
+Prototype="long MSComCtl2_DMonthViewEventsRegOnOLECompleteDrag(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11238:1"
+
+[MSComCtl2_DMonthViewEventsRegOnOLEDragOver]
+Class="Function"
+Prototype="long MSComCtl2_DMonthViewEventsRegOnOLEDragOver(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, long *, short *, short *, float *, float *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11254:1"
+
+[MSComCtl2_DMonthViewEventsRegOnOLEDragDrop]
+Class="Function"
+Prototype="long MSComCtl2_DMonthViewEventsRegOnOLEDragDrop(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, long *, short *, short *, float *, float *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11270:1"
+
+[MSComCtl2_DDTPickerEventsRegOnCallbackKeyDown]
+Class="Function"
+Prototype="long MSComCtl2_DDTPickerEventsRegOnCallbackKeyDown(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, char *, double *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11286:1"
+
+[MSComCtl2_DDTPickerEventsRegOnChange]
+Class="Function"
+Prototype="long MSComCtl2_DDTPickerEventsRegOnChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11302:1"
+
+[MSComCtl2_DDTPickerEventsRegOnCloseUp]
+Class="Function"
+Prototype="long MSComCtl2_DDTPickerEventsRegOnCloseUp(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11318:1"
+
+[MSComCtl2_DDTPickerEventsRegOnDropDown]
+Class="Function"
+Prototype="long MSComCtl2_DDTPickerEventsRegOnDropDown(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11334:1"
+
+[MSComCtl2_DDTPickerEventsRegOnFormat]
+Class="Function"
+Prototype="long MSComCtl2_DDTPickerEventsRegOnFormat(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *, char **), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11350:1"
+
+[MSComCtl2_DDTPickerEventsRegOnFormatSize]
+Class="Function"
+Prototype="long MSComCtl2_DDTPickerEventsRegOnFormatSize(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11366:1"
+
+[MSComCtl2_DDTPickerEventsRegOnClick]
+Class="Function"
+Prototype="long MSComCtl2_DDTPickerEventsRegOnClick(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11382:1"
+
+[MSComCtl2_DDTPickerEventsRegOnDblClick]
+Class="Function"
+Prototype="long MSComCtl2_DDTPickerEventsRegOnDblClick(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11398:1"
+
+[MSComCtl2_DDTPickerEventsRegOnKeyDown]
+Class="Function"
+Prototype="long MSComCtl2_DDTPickerEventsRegOnKeyDown(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11414:1"
+
+[MSComCtl2_DDTPickerEventsRegOnKeyUp]
+Class="Function"
+Prototype="long MSComCtl2_DDTPickerEventsRegOnKeyUp(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11430:1"
+
+[MSComCtl2_DDTPickerEventsRegOnKeyPress]
+Class="Function"
+Prototype="long MSComCtl2_DDTPickerEventsRegOnKeyPress(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11446:1"
+
+[MSComCtl2_DDTPickerEventsRegOnMouseDown]
+Class="Function"
+Prototype="long MSComCtl2_DDTPickerEventsRegOnMouseDown(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11462:1"
+
+[MSComCtl2_DDTPickerEventsRegOnMouseMove]
+Class="Function"
+Prototype="long MSComCtl2_DDTPickerEventsRegOnMouseMove(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11478:1"
+
+[MSComCtl2_DDTPickerEventsRegOnMouseUp]
+Class="Function"
+Prototype="long MSComCtl2_DDTPickerEventsRegOnMouseUp(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11494:1"
+
+[MSComCtl2_DDTPickerEventsRegOnOLEStartDrag]
+Class="Function"
+Prototype="long MSComCtl2_DDTPickerEventsRegOnOLEStartDrag(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11510:1"
+
+[MSComCtl2_DDTPickerEventsRegOnOLEGiveFeedback]
+Class="Function"
+Prototype="long MSComCtl2_DDTPickerEventsRegOnOLEGiveFeedback(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11526:1"
+
+[MSComCtl2_DDTPickerEventsRegOnOLESetData]
+Class="Function"
+Prototype="long MSComCtl2_DDTPickerEventsRegOnOLESetData(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11542:1"
+
+[MSComCtl2_DDTPickerEventsRegOnOLECompleteDrag]
+Class="Function"
+Prototype="long MSComCtl2_DDTPickerEventsRegOnOLECompleteDrag(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11558:1"
+
+[MSComCtl2_DDTPickerEventsRegOnOLEDragOver]
+Class="Function"
+Prototype="long MSComCtl2_DDTPickerEventsRegOnOLEDragOver(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, long *, short *, short *, float *, float *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11574:1"
+
+[MSComCtl2_DDTPickerEventsRegOnOLEDragDrop]
+Class="Function"
+Prototype="long MSComCtl2_DDTPickerEventsRegOnOLEDragDrop(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, long *, short *, short *, float *, float *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11590:1"
+
+[MSComCtl2_DFlatSBEventsRegOnChange]
+Class="Function"
+Prototype="long MSComCtl2_DFlatSBEventsRegOnChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11606:1"
+
+[MSComCtl2_DFlatSBEventsRegOnScroll]
+Class="Function"
+Prototype="long MSComCtl2_DFlatSBEventsRegOnScroll(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\mscomctrl\MSComCtl2.c:11622:1"
+

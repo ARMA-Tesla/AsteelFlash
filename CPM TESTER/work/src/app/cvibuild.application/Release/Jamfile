@@ -1,0 +1,61 @@
+HDRS = 	"c:\\work\\elcom\\valeo\\UTSystem\\include"
+	"c:\\work\\src\\modules"
+	"c:\\work\\src\\shared"
+	"c:\\work\\include"
+	"C:\\Users\\Public\\Documents\\National Instruments\\TestStand 2016 (32-bit)\\AdapterSupport\\CVI"
+	"C:\\Program Files (x86)\\National Instruments\\TestStand 2016\\API\\DLLInterfaces"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\clang\\3.3"
+	"c:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\work\\src\\shared\\bklib"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2019\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+LOCATE on "application.c" = "c:\\work\\src\\app" ;
+LOCATE on "el_plugin.h" = "c:\\work\\src\\shared\\plugins" ;
+LOCATE on "el_pluginargs.c" = "c:\\work\\src\\shared\\plugins" ;
+LOCATE on "el_pluginargs.h" = "c:\\work\\src\\shared\\plugins" ;
+LOCATE on "el_plugininfo.c" = "c:\\work\\src\\shared\\plugins" ;
+LOCATE on "el_plugininfo.h" = "c:\\work\\src\\shared\\plugins" ;
+LOCATE on "el_pluginserver.h" = "c:\\work\\src\\shared\\plugins" ;
+LOCATE on "el_pluginserver_win32.c" = "c:\\work\\src\\shared\\plugins" ;
+LOCATE on "eleventdata.c" = "c:\\work\\src\\shared\\eventfactory" ;
+LOCATE on "eleventdata.h" = "c:\\work\\src\\shared\\eventfactory" ;
+LOCATE on "elmodule.c" = "c:\\work\\src\\shared\\modules" ;
+LOCATE on "elmodule.h" = "c:\\work\\src\\shared\\modules" ;
+LOCATE on "elstring.c" = "c:\\work\\src\\shared\\string" ;
+LOCATE on "eltypes.h" = "c:\\work\\include" ;
+LOCATE on "EventFactory.c" = "c:\\work\\src\\shared\\eventfactory" ;
+LOCATE on "EventFactory.h" = "c:\\work\\src\\shared\\eventfactory" ;
+LOCATE on "Exception.c" = "c:\\work\\src\\shared\\exception" ;
+LOCATE on "Exception.h" = "c:\\work\\src\\shared\\exception" ;
+LOCATE on "objlist.c" = "c:\\work\\src\\shared\\objlist" ;
+LOCATE on "objlist.h" = "c:\\work\\src\\shared\\objlist" ;
+Object "c:\\work\\src\\app\\cvibuild.application\\Release\\bklib2.obj" : "c:\\work\\src\\shared\\bklib\\bklib2.c" ;
+FILENUM on "c:\\work\\src\\app\\cvibuild.application\\Release\\bklib2.obj" = 1 ;
+DEFPROTS on "c:\\work\\src\\app\\cvibuild.application\\Release\\bklib2.obj" = "c:\\work\\src\\app\\cvibuild.application\\Release\\bklib2.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\app\\cvibuild.application\\Release\\bklib2.obj" = "c:\\work\\src\\app\\cvibuild.application\\Release\\bklib2.obj.out" ;
+PrjObjects += "c:\\work\\src\\app\\cvibuild.application\\Release\\bklib2.obj" ;
+Depends all : $(PrjObjects) ;

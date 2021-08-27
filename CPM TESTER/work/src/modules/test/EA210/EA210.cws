@@ -1,0 +1,602 @@
+[Workspace Header]
+Version = 1900
+Pathname = "/c/work/src/modules/test/EA210/EA210.cws"
+CVI Dir = "/c/program files (x86)/national instruments/cvi2019"
+CVI Shared Dir = "/C/Program Files (x86)/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2019"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files (x86)/IVI Foundation/IVI"
+IVI Standard Root 64-bit Dir = "/C/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files (x86)/IVI Foundation/VISA/winnt"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "EA210.prj"
+Drag Bar Left = 290
+Window Top = 145
+Window Left = 376
+Window Bottom = 508
+Window Right = 1166
+Maximized = True
+Maximized Children = True
+Max32 Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win At Start = True
+Bring Up Err Win For Errors = False
+Save Changes Before Running = "Always"
+Save Changes Before Compiling = "Always"
+Hide Windows = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 1
+Window Confinement Region Enabled = True
+MainColumnWidth = 273
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+
+[Project Header 0001]
+Version = 1900
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Debug"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+
+[File 0001]
+Path = "/C/Program Files/IVI Foundation/IVI/Drivers/Ag34450/Ag34450.fp"
+File Type = "Function Panel"
+Disk Date = 3698215712
+In Projects = "1,"
+
+[File 0002]
+Path = "/C/Program Files (x86)/IVI Foundation/IVI/Drivers/Ag34970/Ag34970.fp"
+File Type = "Function Panel"
+Disk Date = 3497449028
+In Projects = "1,"
+Window Top = 92
+Window Left = 42
+Window Height = 400
+Window Width = 400
+
+[File 0003]
+Path = "/C/Program Files/IVI Foundation/IVI/Drivers/BK 9801/bp98xx.fp"
+File Type = "Function Panel"
+Disk Date = 3538473752
+In Projects = "1,"
+
+[File 0004]
+Path = "/C/Program Files/IVI Foundation/IVI/Drivers/hpe364xa/hpe364xa.fp"
+File Type = "Function Panel"
+Disk Date = 3643665634
+In Projects = "1,"
+
+[File 0005]
+Path = "/c/work/src/shared/test/testseq.c"
+File Type = "CSource"
+Disk Date = 3696313315
+In Projects = "1,"
+Source Window State = "1,717,717,717,21,21,21,0,0,0,0,0,0,0,0,0,700,0,717,21,401,630,1,0,"
+Breakpoint 0001 = "673,0,disabled,"
+Line Tags = "749,"
+Window Top = 62
+Window Left = 26
+
+[File 0006]
+Path = "/c/work/src/modules/traca/BSH/BSH.c"
+File Type = "CSource"
+Disk Date = 3695368067
+In Projects = ""
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+Breakpoint 0001 = "154,0,disabled,"
+Tracepoint 0001 = "0,0,155,1,"
+Breakpoint 0002 = "227,0,disabled,"
+Tracepoint 0002 = "0,0,228,1,"
+
+[File 0007]
+Path = "/c/work/src/modules/test/EA210/process/EA210_Test_WS60.c"
+File Type = "CSource"
+Disk Date = 3696223586
+In Projects = "1,"
+Source Window State = "1,123,123,123,25,25,25,0,0,0,0,0,0,0,0,0,104,0,123,25,26,1276,1,0,"
+Breakpoint 0001 = "77,0,disabled,"
+Tracepoint 0001 = "0,0,72,1,"
+Breakpoint 0002 = "138,0,disabled,"
+Breakpoint 0003 = "271,0,disabled,"
+Breakpoint 0004 = "451,0,enabled,"
+Tracepoint 0004 = "0,0,376,1,"
+Breakpoint 0005 = "473,0,disabled,"
+Tracepoint 0005 = "0,0,399,1,"
+Breakpoint 0006 = "486,0,disabled,"
+Tracepoint 0006 = "0,0,412,1,"
+Breakpoint 0007 = "493,0,disabled,"
+Tracepoint 0007 = "0,0,419,1,"
+Window Top = 31
+
+[File 0008]
+Path = "/c/work/src/modules/test/EA210/process/EA210_Test_WS30.c"
+File Type = "CSource"
+Disk Date = 3689138722
+In Projects = "1,"
+Source Window State = "1,648,648,648,47,47,47,0,0,0,0,0,0,0,0,0,622,0,648,47,221,490,1,0,"
+Breakpoint 0001 = "1391,0,disabled,"
+Tracepoint 0001 = "0,0,1334,1,"
+Breakpoint 0002 = "1487,0,disabled,"
+Tracepoint 0002 = "0,0,1430,1,"
+Breakpoint 0003 = "1965,0,disabled,"
+Breakpoint 0004 = "2204,0,disabled,"
+Breakpoint 0005 = "2206,0,enabled,"
+Tracepoint 0005 = "0,0,2205,1,"
+Breakpoint 0006 = "2223,0,disabled,"
+Tracepoint 0006 = "0,0,2222,1,"
+Breakpoint 0007 = "2284,0,enabled,"
+Tracepoint 0007 = "0,0,2284,1,"
+Breakpoint 0008 = "2929,0,disabled,"
+Tracepoint 0008 = "0,0,2959,1,"
+Breakpoint 0009 = "2972,0,disabled,"
+Tracepoint 0009 = "0,0,3002,1,"
+Breakpoint 0010 = "3080,0,disabled,"
+Tracepoint 0010 = "0,0,3110,1,"
+Window Top = 32
+Window Left = 10
+
+[File 0009]
+Path = "/c/work/src/modules/tester/station60.c"
+File Type = "CSource"
+Disk Date = 3692856838
+In Projects = ""
+Source Window State = "1,848,848,848,55,55,55,0,0,0,0,0,0,0,0,0,837,0,848,55,296,630,1,0,"
+Breakpoint 0001 = "141,0,disabled,"
+Tracepoint 0001 = "0,0,140,1,"
+Breakpoint 0002 = "142,0,disabled,"
+Tracepoint 0002 = "0,0,141,1,"
+Breakpoint 0003 = "147,0,disabled,"
+Tracepoint 0003 = "0,0,145,1,"
+Breakpoint 0004 = "149,0,disabled,"
+Tracepoint 0004 = "0,0,147,1,"
+Breakpoint 0005 = "153,0,disabled,"
+Tracepoint 0005 = "0,0,151,1,"
+Breakpoint 0006 = "574,0,disabled,"
+Tracepoint 0006 = "0,0,572,1,"
+Breakpoint 0007 = "579,0,disabled,"
+Tracepoint 0007 = "0,0,577,1,"
+Breakpoint 0008 = "585,0,disabled,"
+Tracepoint 0008 = "0,0,583,1,"
+Breakpoint 0009 = "596,0,disabled,"
+Tracepoint 0009 = "0,0,594,1,"
+Breakpoint 0010 = "602,0,disabled,"
+Tracepoint 0010 = "0,0,600,1,"
+Breakpoint 0011 = "607,0,disabled,"
+Tracepoint 0011 = "0,0,605,1,"
+Breakpoint 0012 = "614,0,disabled,"
+Tracepoint 0012 = "0,0,612,1,"
+Breakpoint 0013 = "805,0,disabled,"
+Tracepoint 0013 = "0,0,806,1,"
+Breakpoint 0014 = "845,0,disabled,"
+Tracepoint 0014 = "0,0,840,1,"
+Breakpoint 0015 = "1078,0,disabled,"
+Tracepoint 0015 = "0,0,1073,1,"
+Breakpoint 0016 = "1140,0,disabled,"
+Tracepoint 0016 = "0,0,1135,1,"
+Breakpoint 0017 = "1159,0,disabled,"
+Tracepoint 0017 = "0,0,1154,1,"
+Breakpoint 0018 = "1175,0,disabled,"
+Tracepoint 0018 = "0,0,1170,1,"
+Breakpoint 0019 = "1180,0,disabled,"
+Tracepoint 0019 = "0,0,1175,1,"
+Breakpoint 0020 = "1189,0,disabled,"
+Tracepoint 0020 = "0,0,1184,1,"
+Breakpoint 0021 = "1193,0,disabled,"
+Tracepoint 0021 = "0,0,1188,1,"
+Breakpoint 0022 = "1210,0,disabled,"
+Tracepoint 0022 = "0,0,1205,1,"
+Breakpoint 0023 = "1212,0,disabled,"
+Tracepoint 0023 = "0,0,1110,1,"
+Breakpoint 0024 = "1243,0,disabled,"
+Tracepoint 0024 = "0,0,1238,1,"
+Window Top = 30
+
+[File 0010]
+Path = "/c/work/src/modules/test/EA210/process/EA210_Test_WS20.c"
+File Type = "CSource"
+Disk Date = 3691519869
+In Projects = "1,"
+Source Window State = "1,46,46,46,0,0,0,0,0,0,0,0,0,0,0,0,28,0,46,0,401,714,1,0,"
+Breakpoint 0001 = "309,0,disabled,"
+Breakpoint 0002 = "312,0,disabled,"
+Breakpoint 0003 = "467,0,disabled,"
+Line Tags = "172,"
+Window Top = 31
+
+[File 0011]
+Path = "/c/work/src/modules/test/EA210/process/EA210_Test_WS40.c"
+File Type = "CSource"
+Disk Date = 3689187113
+In Projects = "1,"
+Source Window State = "1,65,65,65,50,50,50,0,0,0,0,0,0,0,0,0,42,0,65,50,401,714,1,0,"
+Breakpoint 0001 = "1703,0,disabled,"
+Tracepoint 0001 = "0,0,1608,1,"
+Breakpoint 0002 = "3645,0,disabled,"
+Tracepoint 0002 = "0,0,3641,1,"
+Breakpoint 0003 = "3769,0,disabled,"
+Tracepoint 0003 = "0,0,3775,1,"
+Breakpoint 0004 = "3893,0,disabled,"
+Tracepoint 0004 = "0,0,3910,1,"
+Breakpoint 0005 = "3959,0,disabled,"
+Tracepoint 0005 = "0,0,3925,1,"
+Breakpoint 0006 = "4016,0,disabled,"
+Tracepoint 0006 = "0,0,3936,1,"
+Breakpoint 0007 = "4085,0,disabled,"
+Tracepoint 0007 = "0,0,3994,1,"
+Breakpoint 0008 = "4313,0,disabled,"
+Tracepoint 0008 = "0,0,4261,1,"
+Breakpoint 0009 = "4515,0,disabled,"
+Tracepoint 0009 = "0,0,4490,1,"
+Breakpoint 0010 = "4544,0,disabled,"
+Tracepoint 0010 = "0,0,4558,1,"
+Breakpoint 0011 = "4610,0,disabled,"
+Tracepoint 0011 = "0,0,4622,1,"
+Breakpoint 0012 = "4894,0,disabled,"
+Tracepoint 0012 = "0,0,4856,1,"
+Window Top = 31
+
+[File 0012]
+Path = "/c/work/src/modules/test/EA210/process/EA210_Test_WS50.c"
+File Type = "CSource"
+Disk Date = 3689138451
+In Projects = "1,"
+Source Window State = "1,412,412,412,0,0,0,0,0,0,0,0,0,0,0,0,640,0,412,0,26,1148,1,0,"
+Breakpoint 0001 = "114,0,disabled,"
+Tracepoint 0001 = "0,0,90,1,"
+Breakpoint 0002 = "196,0,disabled,"
+Tracepoint 0002 = "0,0,168,1,"
+Breakpoint 0003 = "216,0,disabled,"
+Tracepoint 0003 = "0,0,188,1,"
+Breakpoint 0004 = "465,0,disabled,"
+Tracepoint 0004 = "0,0,237,1,"
+Breakpoint 0005 = "542,0,disabled,"
+Tracepoint 0005 = "0,0,286,1,"
+Breakpoint 0006 = "699,0,disabled,"
+Tracepoint 0006 = "0,0,431,1,"
+Breakpoint 0007 = "991,0,disabled,"
+Tracepoint 0007 = "0,0,735,1,"
+Breakpoint 0008 = "1094,0,disabled,"
+Tracepoint 0008 = "0,0,835,1,"
+Breakpoint 0009 = "1415,0,disabled,"
+Tracepoint 0009 = "0,0,1174,1,"
+Breakpoint 0010 = "1655,0,disabled,"
+Tracepoint 0010 = "0,0,1410,1,"
+Breakpoint 0011 = "1776,0,disabled,"
+Tracepoint 0011 = "0,0,1529,1,"
+Breakpoint 0012 = "1899,0,disabled,"
+Tracepoint 0012 = "0,0,1651,1,"
+Window Top = 31
+Window Z-Order = 1
+
+[File 0013]
+Path = "/c/work/src/modules/test/test_panel.c"
+File Type = "CSource"
+Disk Date = 3685815109
+In Projects = "1,"
+Source Window State = "1,1332,1332,1332,5,5,5,0,0,0,0,0,0,0,0,0,1315,0,1332,5,349,715,1,0,"
+Line Tags = "108,394,1144,"
+Window Top = 32
+Window Left = 10
+
+[File 0014]
+Path = "/c/work/src/modules/test/EA210/EA210_utils.h"
+File Type = "Include"
+Disk Date = 3685102094
+In Projects = "1,"
+Source Window State = "1,22,22,22,28,28,28,0,0,0,0,0,0,0,0,0,10,0,22,28,349,715,1,0,"
+Line Tags = "56,"
+Window Top = 38
+
+[File 0015]
+Path = "/c/work/src/modules/test/EA210/process/EA210_Test_WS20.h"
+File Type = "Include"
+Disk Date = 3689139093
+In Projects = "1,"
+Source Window State = "1,12,12,12,37,37,37,0,0,0,0,0,0,0,0,0,0,0,12,37,401,714,1,0,"
+Window Top = 40
+Window Left = 11
+
+[File 0016]
+Path = "/c/work/src/shared/test/eltest.h"
+File Type = "Include"
+Disk Date = 3687262516
+In Projects = "1,"
+Source Window State = "1,466,466,466,44,44,44,0,0,0,0,0,0,0,0,0,447,0,466,44,401,630,1,0,"
+Window Top = 32
+Window Left = 10
+
+[File 0017]
+Path = "/c/work/src/modules/test/EA210/EA210.c"
+File Type = "CSource"
+Disk Date = 3677048209
+In Projects = "1,"
+Source Window State = "1,9,9,9,28,28,28,0,0,0,0,0,0,0,0,0,0,0,9,28,401,714,1,0,"
+Window Top = 40
+Window Left = 11
+
+[File 0018]
+Path = "/c/work/src/modules/test/EA210/EA210.h"
+File Type = "Include"
+Disk Date = 3677048209
+In Projects = "1,"
+Source Window State = "1,9,9,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,349,715,1,0,"
+Window Top = 38
+
+[File 0019]
+Path = "/c/work/src/modules/test/EA210/EA210_utils.c"
+File Type = "CSource"
+Disk Date = 3684401379
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,401,714,1,0,"
+Window Top = 38
+Window Left = 10
+
+[File 0020]
+Path = "/c/work/src/shared/eventfactory/eleventdata.c"
+File Type = "CSource"
+Disk Date = 3309320854
+In Projects = "1,"
+Source Window State = "1,16,16,16,41,41,41,0,0,0,0,0,0,0,0,0,0,0,16,41,349,715,1,0,"
+Window Top = 32
+Window Left = 10
+
+[File 0021]
+Path = "/c/work/src/shared/string/elstring.c"
+File Type = "CSource"
+Disk Date = 3613571278
+In Projects = "1,"
+Source Window State = "1,793,793,793,1,1,1,0,0,0,0,0,0,0,0,0,786,0,793,1,232,715,1,0,"
+Window Top = 31
+
+[File 0022]
+Path = "/c/work/src/shared/test/eltest.c"
+File Type = "CSource"
+Disk Date = 3683894453
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,19,19,0,3,0,0,0,0,0,0,0,0,0,0,0,401,714,1,0,"
+Window Top = 30
+
+[File 0023]
+Path = "/c/work/src/shared/exception/Exception.c"
+File Type = "CSource"
+Disk Date = 3652346447
+In Projects = "1,"
+Source Window State = "1,84,84,84,30,40,30,0,3,0,0,0,0,0,0,0,56,0,84,40,349,715,1,0,"
+Window Top = 62
+Window Left = 26
+
+[File 0024]
+Path = "/c/work/src/modules/automat/Log_Asteel.c"
+File Type = "CSource"
+Disk Date = 3695662851
+In Projects = "1,"
+Source Window State = "1,217,217,217,4,27,4,0,3,0,0,0,0,0,0,0,200,0,217,27,401,630,1,0,"
+Window Top = 32
+Window Left = 10
+
+[File 0025]
+Path = "/c/work/src/shared/cvitool/msxmldom.c"
+File Type = "CSource"
+Disk Date = 3309320850
+In Projects = "1,"
+Source Window State = "1,4849,4849,4849,4,4,4,0,0,0,0,0,0,0,0,0,4836,0,4849,4,400,600,1,0,"
+Window Top = 30
+
+[File 0026]
+Path = "/c/work/src/shared/multithread/multithread.c"
+File Type = "CSource"
+Disk Date = 3309320858
+In Projects = "1,"
+Source Window State = "1,10,10,10,1,1,1,0,0,0,0,0,0,0,0,0,1,0,10,1,349,715,1,0,"
+Window Top = 152
+Window Left = 74
+
+[File 0027]
+Path = "/c/work/src/modules/test/test_panel.h"
+File Type = "Include"
+Disk Date = 3695636833
+In Projects = "1,"
+Source Window State = "1,10,10,10,26,26,26,0,0,0,0,0,0,0,0,0,0,0,10,26,349,715,1,0,"
+Window Top = 38
+
+[File 0028]
+Path = "/c/work/src/shared/test/testseq.h"
+File Type = "Include"
+Disk Date = 3695636767
+In Projects = "1,"
+Source Window State = "1,25,25,25,29,29,29,0,0,0,0,0,0,0,0,0,6,0,25,29,349,715,1,0,"
+Window Top = 111
+Window Left = 106
+
+[File 0029]
+Path = "/C/Program Files (x86)/IVI Foundation/IVI/Include/Ag34970.h"
+File Type = "Include"
+Disk Date = 3497449028
+In Projects = "1,"
+Source Window State = "1,398,398,398,35,35,35,0,0,0,0,0,0,0,0,0,383,0,398,35,401,630,1,0,"
+Window Top = 32
+Window Left = 10
+
+[File 0030]
+Path = "/c/work/include/eltypes.h"
+File Type = "Include"
+Disk Date = 3680507941
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0031]
+Path = "/c/work/src/modules/test/EA210/test_plugin.h"
+File Type = "Include"
+Disk Date = 3677048208
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,349,715,1,0,"
+Window Top = 38
+
+[File 0032]
+Path = "/c/work/src/modules/test/test.uir"
+File Type = "User Interface Resource"
+Disk Date = 3687641168
+In Projects = "1,"
+Window Top = 62
+Window Left = 18
+Window Height = 401
+Window Width = 630
+
+[File 0033]
+Path = "/c/work/src/modules/test/EA210/process/EA210_Test_WS10.c"
+File Type = "CSource"
+Disk Date = 3677048209
+In Projects = "1,"
+Source Window State = "1,20,20,20,41,41,41,0,0,0,0,0,0,0,0,0,0,0,20,41,401,714,1,0,"
+Window Top = 38
+Window Left = 10
+
+[File 0034]
+Path = "/c/work/src/modules/test/EA210/process/EA210_Test_WS10.h"
+File Type = "Include"
+Disk Date = 3677048209
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,401,714,1,0,"
+Window Top = 116
+Window Left = 51
+
+[File 0035]
+Path = "/c/work/src/modules/test/EA210/process/EA210_Test_WS30.h"
+File Type = "Include"
+Disk Date = 3687634667
+In Projects = "1,"
+Source Window State = "1,15,15,15,37,37,37,0,0,0,0,0,0,0,0,0,0,0,15,37,401,630,1,0,"
+Window Top = 62
+Window Left = 26
+
+[File 0036]
+Path = "/c/work/src/modules/test/EA210/process/EA210_Test_WS40.h"
+File Type = "Include"
+Disk Date = 3687633956
+In Projects = "1,"
+Source Window State = "1,15,15,15,37,37,37,0,0,0,0,0,0,0,0,0,0,0,15,37,401,714,1,0,"
+Window Top = 116
+Window Left = 51
+
+[File 0037]
+Path = "/c/work/src/modules/test/EA210/process/EA210_Test_WS50.h"
+File Type = "Include"
+Disk Date = 3687636718
+In Projects = "1,"
+Source Window State = "1,7,7,7,6,6,6,0,0,0,0,0,0,11,35,0,0,0,7,6,386,630,1,0,"
+Window Top = 62
+Window Left = 26
+
+[File 0038]
+Path = "/c/work/src/modules/test/EA210/process/EA210_Test_WS60.h"
+File Type = "Include"
+Disk Date = 3687639492
+In Projects = "1,"
+Source Window State = "1,13,13,13,36,36,36,0,0,0,0,0,0,0,0,0,1,0,13,36,401,714,1,0,"
+Window Top = 192
+Window Left = 91
+
+[Tab Order]
+Tab 0001 = "/c/work/src/modules/test/EA210/process/EA210_Test_WS50.c"
+
+[Default Build Config 0001 Debug]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = False
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "No Run-time Checking"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = "/c/application/application.exe"
+
+[Default Build Config 0001 Release]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Debug64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Build Dependencies 0001]
+Number of Dependencies = 0
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Profile = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[Execution Target 0001]
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[Command Line Args 0001]
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+
+[Watch 1]
+Watch Expression = "voltage"
+
+[Watch 2]
+Watch Expression = "PANEL_CONVOYER_MSG"
+

@@ -1,0 +1,11 @@
+LIBRARY dbus_GUI
+
+EXPORTS
+gs_InfoData
+pluginGetAttribute
+pluginGetInfo
+pluginLeave
+pluginRun
+pluginInitialize
+language_delete
+language_new

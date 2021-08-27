@@ -1,0 +1,7 @@
+-inrc c:\work\src\modules\dielectrimeter\RSPRO\cvibuild.RSPRO\Release\resources.in.rc
+-outrc c:\work\src\modules\dielectrimeter\RSPRO\cvibuild.RSPRO\Release\resources.out.rc
+-inhdef c:\work\src\modules\dielectrimeter\RSPRO\cvibuild.RSPRO\Release\RSPRO.h.hdefs
+-outdef c:\work\src\modules\dielectrimeter\RSPRO\cvibuild.RSPRO\Release\RSPRO.dll.defs
+-indefprot c:\work\src\modules\dielectrimeter\RSPRO\cvibuild.RSPRO\Release\Exception.obj.cvidefprots
+-indefprot c:\work\src\modules\dielectrimeter\RSPRO\cvibuild.RSPRO\Release\RSPRO.obj.cvidefprots
+-dllName RSPRO.dll

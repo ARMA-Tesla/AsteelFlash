@@ -1,0 +1,95 @@
+CCFLAGS = -g ;
+HDRS = 	"c:\\work\\src\\shared"
+	"c:\\work\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\clang\\3.3"
+	"c:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2019\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "dbus.c" = "c:\\work\\src\\modules\\dbus" ;
+LOCATE on "dbus.h" = "c:\\work\\src\\modules\\dbus" ;
+LOCATE on "dbus_module.c" = "c:\\work\\src\\modules\\dbus" ;
+LOCATE on "elstring.c" = "c:\\work\\src\\shared\\string" ;
+LOCATE on "eltimer.c" = "c:\\work\\src\\shared\\timer" ;
+LOCATE on "eltypes.h" = "c:\\work\\include" ;
+LOCATE on "Exception.c" = "c:\\work\\src\\shared\\exception" ;
+LOCATE on "module.h" = "c:\\work\\src\\shared\\modules" ;
+LOCATE on "msxmldom.c" = "c:\\work\\src\\shared\\cvitool" ;
+LOCATE on "objlist.c" = "c:\\work\\src\\shared\\objlist" ;
+Object "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\dbus.obj" : "c:\\work\\src\\modules\\dbus\\dbus.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\dbus.obj" = 1 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\dbus.obj" = "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\dbus.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\dbus.obj" = "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\dbus.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\dbus.obj" ;
+Object "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\dbus_module.obj" : "c:\\work\\src\\modules\\dbus\\dbus_module.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\dbus_module.obj" = 2 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\dbus_module.obj" = "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\dbus_module.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\dbus_module.obj" = "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\dbus_module.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\dbus_module.obj" ;
+Object "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\elstring.obj" : "c:\\work\\src\\shared\\string\\elstring.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\elstring.obj" = 3 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\elstring.obj" = "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\elstring.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\elstring.obj" = "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\elstring.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\elstring.obj" ;
+Object "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\eltimer.obj" : "c:\\work\\src\\shared\\timer\\eltimer.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\eltimer.obj" = 4 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\eltimer.obj" = "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\eltimer.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\eltimer.obj" = "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\eltimer.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\eltimer.obj" ;
+Object "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\Exception.obj" : "c:\\work\\src\\shared\\exception\\Exception.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\Exception.obj" = 5 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\Exception.obj" = "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\Exception.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\Exception.obj" = "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\Exception.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\Exception.obj" ;
+Object "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\msxmldom.obj" : "c:\\work\\src\\shared\\cvitool\\msxmldom.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\msxmldom.obj" = 6 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\msxmldom.obj" = "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\msxmldom.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\msxmldom.obj" = "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\msxmldom.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\msxmldom.obj" ;
+Object "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\objlist.obj" : "c:\\work\\src\\shared\\objlist\\objlist.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\objlist.obj" = 7 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\objlist.obj" = "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\objlist.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\objlist.obj" = "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\objlist.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\objlist.obj" ;
+Object "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\module.h.hdefs" : "c:\\work\\src\\shared\\modules\\module.h" ;
+FILENUM on "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\module.h.hdefs" = 8 ;
+OUTFILE on "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\module.h.hdefs" = "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\module.h.hdefs.out" ;
+PreLinkInputs += "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\resources.in.rc" ;
+PreLinkInputs += $(PrjObjects) $(InstrObjects) ;
+PreLinkOutputs += "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\resources.out.rc" ;
+PreLinkOutputs += "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\dbus.dll.defs" ;
+PreLink $(PreLinkOutputs) : $(PreLinkInputs) ;
+Depends "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\dbus.dll" : "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\dbus.dll.defs" ;
+Object "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\resources.res" : "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\resources.out.rc" ;
+Depends "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\resources.res" : $(PreLinkOutputs) ;
+Depends "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\resources.res" "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\resources.out.rc" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\resources.res" : "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\manifest.xml" ;
+MainFromObjects "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\dbus.dll" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\dbus.dll" : "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\link_options.txt" ;
+Depends "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\dbus.dll" : "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\dependencies.lnk.in" ;
+Depends "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\dbus.dll" : "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\resources.res" ;
+Depends all : "c:\\work\\src\\modules\\dbus\\cvibuild.dbus\\Debug\\dbus.dll" ;

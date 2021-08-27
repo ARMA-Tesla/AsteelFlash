@@ -1,0 +1,11 @@
+-inrc c:\work\src\gui\sensors\cvibuild.sensors_gui\Release\resources.in.rc
+-outrc c:\work\src\gui\sensors\cvibuild.sensors_gui\Release\resources.out.rc
+-inhdef c:\work\src\gui\sensors\cvibuild.sensors_gui\Release\sensors_gui.h.hdefs
+-inhdef c:\work\src\gui\sensors\cvibuild.sensors_gui\Release\sensors_gui_plugin.h.hdefs
+-outdef c:\work\src\gui\sensors\cvibuild.sensors_gui\Release\sensors_gui.dll.defs
+-indefprot c:\work\src\gui\sensors\cvibuild.sensors_gui\Release\elstring.obj.cvidefprots
+-indefprot c:\work\src\gui\sensors\cvibuild.sensors_gui\Release\Exception.obj.cvidefprots
+-indefprot c:\work\src\gui\sensors\cvibuild.sensors_gui\Release\multithread.obj.cvidefprots
+-indefprot c:\work\src\gui\sensors\cvibuild.sensors_gui\Release\sensors_gui.obj.cvidefprots
+-indefprot c:\work\src\gui\sensors\cvibuild.sensors_gui\Release\bklib2.obj.cvidefprots
+-dllName sensors_gui.dll

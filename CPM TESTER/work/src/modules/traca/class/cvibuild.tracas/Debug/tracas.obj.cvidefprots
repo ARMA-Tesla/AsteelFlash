@@ -1,0 +1,20 @@
+[traca_new]
+Class="Function"
+Prototype="struct _SElException *traca_new(struct _Traca **traca, const char *name, const char *optionString);"
+SourceLocation="c:\work\src\modules\traca\class\tracas.c:87:1"
+
+[traca_delete]
+Class="Function"
+Prototype="struct _SElException *traca_delete(struct _Traca **traca);"
+SourceLocation="c:\work\src\modules\traca\class\tracas.c:132:1"
+
+[tracas_new]
+Class="Function"
+Prototype="struct _SElException *tracas_new(struct _Tracas **tracas);"
+SourceLocation="c:\work\src\modules\traca\class\tracas.c:160:1"
+
+[tracas_delete]
+Class="Function"
+Prototype="struct _SElException *tracas_delete(struct _Tracas **tracas);"
+SourceLocation="c:\work\src\modules\traca\class\tracas.c:193:1"
+

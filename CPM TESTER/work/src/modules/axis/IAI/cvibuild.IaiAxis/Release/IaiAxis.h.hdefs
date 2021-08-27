@@ -1,0 +1,48 @@
+[Initialize]
+Class="Function"
+Prototype="struct _SElException *Initialize(struct _axis *me, int axis) __declspec(dllexport);"
+
+[PresentAlarm]
+Class="Function"
+Prototype="struct _SElException *PresentAlarm(struct _axis *me, int axis, int *status) __declspec(dllexport);"
+
+[ControllerStatus]
+Class="Function"
+Prototype="struct _SElException *ControllerStatus(struct _axis *me, int axis, int *status) __declspec(dllexport);"
+
+[EnableAxis]
+Class="Function"
+Prototype="struct _SElException *EnableAxis(struct _axis *me, int axis) __declspec(dllexport);"
+
+[AlarmReset]
+Class="Function"
+Prototype="struct _SElException *AlarmReset(struct _axis *me, int axis) __declspec(dllexport);"
+
+[HomeReturn]
+Class="Function"
+Prototype="struct _SElException *HomeReturn(struct _axis *me, int axis) __declspec(dllexport);"
+
+[StopAxis]
+Class="Function"
+Prototype="struct _SElException *StopAxis(struct _axis *me, int axis) __declspec(dllexport);"
+
+[MoveAxisPosition]
+Class="Function"
+Prototype="struct _SElException *MoveAxisPosition(struct _axis *me, int axis, int position) __declspec(dllexport);"
+
+[CurrentPosition]
+Class="Function"
+Prototype="struct _SElException *CurrentPosition(struct _axis *me, int axis, double *position) __declspec(dllexport);"
+
+[SetPosition]
+Class="Function"
+Prototype="struct _SElException *SetPosition(struct _axis *me, int axis, double position, double speed) __declspec(dllexport);"
+
+[RequestPosition]
+Class="Function"
+Prototype="struct _SElException *RequestPosition(struct _axis *me, int axis) __declspec(dllexport);"
+
+[ReadPosition]
+Class="Function"
+Prototype="struct _SElException *ReadPosition(struct _axis *me, int axis, double *position) __declspec(dllexport);"
+

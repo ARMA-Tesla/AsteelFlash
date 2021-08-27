@@ -1,0 +1,8 @@
+-inrc c:\work\src\modules\printer\CAB\cvibuild.CABPrinter\Debug\resources.in.rc
+-outrc c:\work\src\modules\printer\CAB\cvibuild.CABPrinter\Debug\resources.out.rc
+-inhdef c:\work\src\modules\printer\CAB\cvibuild.CABPrinter\Debug\CABPrinter.h.hdefs
+-outdef c:\work\src\modules\printer\CAB\cvibuild.CABPrinter\Debug\CAB.dll.defs
+-indefprot c:\work\src\modules\printer\CAB\cvibuild.CABPrinter\Debug\CABPrinter.obj.cvidefprots
+-indefprot c:\work\src\modules\printer\CAB\cvibuild.CABPrinter\Debug\Exception.obj.cvidefprots
+-dllName CAB.dll
+-addNITypeInfo 

@@ -1,0 +1,8 @@
+-inrc c:\work\src\modules\traca\class\cvibuild.tracas\Release\resources.in.rc
+-outrc c:\work\src\modules\traca\class\cvibuild.tracas\Release\resources.out.rc
+-inhdef c:\work\src\modules\traca\class\cvibuild.tracas\Release\module.h.hdefs
+-outdef c:\work\src\modules\traca\class\cvibuild.tracas\Release\tracas.dll.defs
+-indefprot c:\work\src\modules\traca\class\cvibuild.tracas\Release\Exception.obj.cvidefprots
+-indefprot c:\work\src\modules\traca\class\cvibuild.tracas\Release\tracas.obj.cvidefprots
+-indefprot c:\work\src\modules\traca\class\cvibuild.tracas\Release\tracas_module.obj.cvidefprots
+-dllName tracas.dll

@@ -1,0 +1,7 @@
+LIBRARY dielectrimeters
+
+EXPORTS
+UnloadElcomModule
+InitializeElcomModule
+LoadElcomModule
+GetModuleAttribute

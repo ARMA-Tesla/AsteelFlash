@@ -1,0 +1,60 @@
+[Connect]
+Class="Function"
+Prototype="struct _SElException *Connect(struct _Traca *me) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\traca\BSH\BSH.c:17:1"
+
+[Disconnect]
+Class="Function"
+Prototype="struct _SElException *Disconnect(struct _Traca *me) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\traca\BSH\BSH.c:33:1"
+
+[Get_BoardVer_sFin_Valide]
+Class="Function"
+Prototype="struct _SElException *Get_BoardVer_sFin_Valide(struct _Traca *me, char *board_Ver_sFin, int *id_board_sFin, int *valide) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\traca\BSH\BSH.c:46:1"
+
+[Get_BoardVer_sFin_Active]
+Class="Function"
+Prototype="struct _SElException *Get_BoardVer_sFin_Active(struct _Traca *me, int id_board_sFin, int *valide, int *active) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\traca\BSH\BSH.c:73:1"
+
+[Get_Reference_Product]
+Class="Function"
+Prototype="struct _SElException *Get_Reference_Product(struct _Traca *me, int id_board_sFin, int *id_board_pFin, char *ProductRefernce) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\traca\BSH\BSH.c:110:1"
+
+[Get_BoardVer_pFin]
+Class="Function"
+Prototype="struct _SElException *Get_BoardVer_pFin(struct _Traca *me, int id_board_pFin, char *Board_Ver_pFin) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\traca\BSH\BSH.c:134:1"
+
+[Get_FieldLabel]
+Class="Function"
+Prototype="struct _SElException *Get_FieldLabel(struct _Traca *me, int id_board_pFin, int *count, char FieldName[20][128], char FieldData[20][128]) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\traca\BSH\BSH.c:154:1"
+
+[Get_Last_Mouvement]
+Class="Function"
+Prototype="struct _SElException *Get_Last_Mouvement(struct _Traca *me, char *Num_Serie, char *TypeTest, int *result) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\traca\BSH\BSH.c:197:1"
+
+[Set_Last_Mouvement]
+Class="Function"
+Prototype="struct _SElException *Set_Last_Mouvement(struct _Traca *me, char *Num_Serie, int id_board_pfin, char *DateDebut, char *DateFin, char *Id_Machine, char *TypeTest, int result) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\traca\BSH\BSH.c:227:1"
+
+[Set_Association]
+Class="Function"
+Prototype="struct _SElException *Set_Association(struct _Traca *me, char *Num_Serie_sFin, char *Num_Serie_pFin, char *Num_Serie_Client, char *date_association) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\traca\BSH\BSH.c:249:1"
+
+[Test_SMM]
+Class="Function"
+Prototype="struct _SElException *Test_SMM(struct _Traca *me, char *Board_Ver_pFin, int *Subassembly) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\traca\BSH\BSH.c:271:1"
+
+[Get_SMM_SN]
+Class="Function"
+Prototype="struct _SElException *Get_SMM_SN(struct _Traca *me, char *Num_Serie_sFin, char *Num_Serie_SMM) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\traca\BSH\BSH.c:314:1"
+

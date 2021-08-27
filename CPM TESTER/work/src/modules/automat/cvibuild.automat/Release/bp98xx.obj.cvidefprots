@@ -1,0 +1,155 @@
+[bp98xx_Initialize]
+Class="Function"
+Prototype="long bp98xx_Initialize(char *VisaResourceName, unsigned short IDQuery, unsigned short Reset, unsigned long SerialConfigurationBaudRate, unsigned long *InstrumentHandle) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:59:20"
+
+[bp98xx_Close]
+Class="Function"
+Prototype="long bp98xx_Close(unsigned long InstrumentHandle) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:131:20"
+
+[bp98xx_EnableOutput]
+Class="Function"
+Prototype="long bp98xx_EnableOutput(unsigned long InstrumentHandle, unsigned short EnableOutput) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:178:20"
+
+[bp98xx_EnableSweepMode]
+Class="Function"
+Prototype="long bp98xx_EnableSweepMode(unsigned long InstrumentHandle, unsigned short EnableSweepMode) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:225:20"
+
+[bp98xx_EnableListMode]
+Class="Function"
+Prototype="long bp98xx_EnableListMode(unsigned long InstrumentHandle, unsigned short EnableListMode) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:272:20"
+
+[bp98xx_SaveRecallSweepProfile]
+Class="Function"
+Prototype="long bp98xx_SaveRecallSweepProfile(unsigned long InstrumentHandle, unsigned short SaveRecallSweepProfile, long ProfileLocation) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:322:20"
+
+[bp98xx_SaveRecallListProgram]
+Class="Function"
+Prototype="long bp98xx_SaveRecallListProgram(unsigned long InstrumentHandle, unsigned short SaveRecallListFile, long ListNumber) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:377:20"
+
+[bp98xx_SaveRecallInstrumentSettings]
+Class="Function"
+Prototype="long bp98xx_SaveRecallInstrumentSettings(unsigned long InstrumentHandle, long SaveRecallSettings, double MemoryLocation) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:426:20"
+
+[bp98xx_ResetProtection]
+Class="Function"
+Prototype="long bp98xx_ResetProtection(unsigned long InstrumentHandle) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:478:20"
+
+[bp98xx_SendSoftwareTrigger]
+Class="Function"
+Prototype="long bp98xx_SendSoftwareTrigger(unsigned long InstrumentHandle) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:528:20"
+
+[bp98xx_ConfigureOutput]
+Class="Function"
+Prototype="long bp98xx_ConfigureOutput(unsigned long InstrumentHandle, double VoltageLevel, double Frequency) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:570:20"
+
+[bp98xx_ConfigureOutputPhase]
+Class="Function"
+Prototype="long bp98xx_ConfigureOutputPhase(unsigned long InstrumentHandle, double StartPhase, double StopPhase) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:619:20"
+
+[bp98xx_ConfigureVoltageRange]
+Class="Function"
+Prototype="long bp98xx_ConfigureVoltageRange(unsigned long InstrumentHandle, long VoltageRange) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:668:20"
+
+[bp98xx_ConfigureVoltageLimit]
+Class="Function"
+Prototype="long bp98xx_ConfigureVoltageLimit(unsigned long InstrumentHandle, double MaxVoltageLimit, double MinVoltageLimit) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:715:20"
+
+[bp98xx_ConfigureFrequencyLimit]
+Class="Function"
+Prototype="long bp98xx_ConfigureFrequencyLimit(unsigned long InstrumentHandle, double MaxFrequencyLimit, double MinFrequencyLimit) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:765:20"
+
+[bp98xx_ConfigureCurrentProtectionLimits]
+Class="Function"
+Prototype="long bp98xx_ConfigureCurrentProtectionLimits(unsigned long InstrumentHandle, double RMSCurrentLimit, double PeakCurrentLimit, unsigned short CurrentProtectionDelay, unsigned short PeakCurrentProtectionDelay) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:815:20"
+
+[bp98xx_ConfigureTrigger]
+Class="Function"
+Prototype="long bp98xx_ConfigureTrigger(unsigned long InstrumentHandle, long TriggerSource) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:872:20"
+
+[bp98xx_ConfigureListRepeat]
+Class="Function"
+Prototype="long bp98xx_ConfigureListRepeat(unsigned long InstrumentHandle, long TotalStepCount, long RepeatCount) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:923:20"
+
+[bp98xx_ConfigureListParameters]
+Class="Function"
+Prototype="long bp98xx_ConfigureListParameters(unsigned long InstrumentHandle, double StepFrequency, double StepSlope, double StepDwellTime, double StepVoltage, unsigned short StepDwellUnit, long StepNumber, unsigned short EnableSD) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:976:20"
+
+[bp98xx_ConfigureListStepSDParameters]
+Class="Function"
+Prototype="long bp98xx_ConfigureListStepSDParameters(unsigned long InstrumentHandle, unsigned short EnableContinuousSD, double StepSDVoltage, double StepSDSite, long StepNumber, double StepSDTime) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:1049:20"
+
+[bp98xx_ConfigureSweep]
+Class="Function"
+Prototype="long bp98xx_ConfigureSweep(unsigned long InstrumentHandle, double StepVoltage, unsigned short StepTimeUnit, double StartFrequency, double StopVoltage, double StopFrequency, double StartVoltage, double StepFrequency, double StepTime) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:1112:20"
+
+[bp98xx_ConfigureDimmerFunction]
+Class="Function"
+Prototype="long bp98xx_ConfigureDimmerFunction(unsigned long InstrumentHandle, unsigned short DimmerMode, double DimmerPhase) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:1183:20"
+
+[bp98xx_ConfigureBNCFunction]
+Class="Function"
+Prototype="long bp98xx_ConfigureBNCFunction(unsigned long InstrumentHandle, unsigned short BNCPortFunction) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:1233:20"
+
+[bp98xx_MeasureOutput]
+Class="Function"
+Prototype="long bp98xx_MeasureOutput(unsigned long InstrumentHandle, double *OutputFrequency, double *ActualVoltageLevel, double *ActualCurrentLevel, double *ActualPowerLevel) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:1280:20"
+
+[bp98xx_MeasurePower]
+Class="Function"
+Prototype="long bp98xx_MeasurePower(unsigned long InstrumentHandle, double *MaximumPeakACCurrent, double *ActualApparentPower, double *ActualPowerFactor, double *ActualPeakACCurrent) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:1337:20"
+
+[bp98xx_MeasureSweepMaximumPower]
+Class="Function"
+Prototype="long bp98xx_MeasureSweepMaximumPower(unsigned long InstrumentHandle, double *VoltageLevel, double *CurrentLevel, double *Frequency, double *PowerLevel, double *ApparentPower, double *PowerFactor) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:1400:20"
+
+[bp98xx_ErrorQuery]
+Class="Function"
+Prototype="long bp98xx_ErrorQuery(unsigned long InstrumentHandle, long ErrorCode_size, long ErrorCode[], long *ErrorCode_actualSize, long ErrorMessage_size, char ErrorMessage[], long *ErrorMessage_actualSize) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:1470:20"
+
+[bp98xx_Reset]
+Class="Function"
+Prototype="long bp98xx_Reset(unsigned long InstrumentHandle) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:1589:20"
+
+[bp98xx_RevisionQuery]
+Class="Function"
+Prototype="long bp98xx_RevisionQuery(unsigned long InstrumentHandle, long InstrumentDriverRevision_size, char InstrumentDriverRevision[], long *InstrumentDriverRevision_actualSize, long InstrumentFirmwareRevision_size, char InstrumentFirmwareRevision[], long *InstrumentFirmwareRevision_actualSize) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:1635:20"
+
+[bp98xx_SelfTest]
+Class="Function"
+Prototype="long bp98xx_SelfTest(unsigned long InstrumentHandle, long *SelfTestResultCode, long SelfTestResultMessage_size, char SelfTestResultMessage[], long *SelfTestResultMessage_actualSize) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:1762:20"
+
+[bp98xx_GetLastErrorMsg]
+Class="Function"
+Prototype="long bp98xx_GetLastErrorMsg(unsigned long InstrumentHandle, long LastErrMsg_size, char LastErrMsg[], long *LastErrMsg_actualSize) __declspec(dllexport);"
+SourceLocation="c:\Program Files\IVI Foundation\IVI\Drivers\bp98xx\bp98xx.c:1851:19"
+

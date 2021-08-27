@@ -1,0 +1,86 @@
+CCFLAGS = -g ;
+HDRS = 	"c:\\work\\include"
+	"c:\\work\\src\\modules"
+	"c:\\work\\src\\shared"
+	"c:\\work\\src\\modules\\gui\\pause"
+	"C:\\Users\\Public\\Documents\\National Instruments\\TestStand 2016 (32-bit)\\AdapterSupport\\CVI"
+	"C:\\Program Files (x86)\\National Instruments\\TestStand 2016\\API\\DLLInterfaces"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\clang\\3.3"
+	"c:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2019\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "appIO.h" = "c:\\work\\src\\shared\\Profibus" ;
+LOCATE on "ApplicomIO.h" = "c:\\work\\src\\shared\\Profibus" ;
+LOCATE on "Exception.c" = "c:\\work\\src\\shared\\exception" ;
+LOCATE on "Exception.h" = "c:\\work\\src\\shared\\exception" ;
+LOCATE on "module.h" = "c:\\work\\src\\shared\\modules" ;
+LOCATE on "multithread.c" = "c:\\work\\src\\shared\\multithread" ;
+LOCATE on "multithread.h" = "c:\\work\\src\\shared\\multithread" ;
+LOCATE on "sensor.c" = "c:\\work\\src\\modules\\sensors" ;
+LOCATE on "sensor_module.c" = "c:\\work\\src\\modules\\sensors" ;
+LOCATE on "sensors.h" = "c:\\work\\src\\modules\\sensors" ;
+LOCATE on "sensors_gui.h" = "c:\\work\\src\\modules\\sensors" ;
+Object "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\Exception.obj" : "c:\\work\\src\\shared\\exception\\Exception.c" ;
+FILENUM on "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\Exception.obj" = 1 ;
+DEFPROTS on "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\Exception.obj" = "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\Exception.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\Exception.obj" = "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\Exception.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\Exception.obj" ;
+Object "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\multithread.obj" : "c:\\work\\src\\shared\\multithread\\multithread.c" ;
+FILENUM on "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\multithread.obj" = 2 ;
+DEFPROTS on "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\multithread.obj" = "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\multithread.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\multithread.obj" = "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\multithread.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\multithread.obj" ;
+Object "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\sensor.obj" : "c:\\work\\src\\modules\\sensors\\sensor.c" ;
+FILENUM on "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\sensor.obj" = 3 ;
+DEFPROTS on "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\sensor.obj" = "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\sensor.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\sensor.obj" = "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\sensor.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\sensor.obj" ;
+Object "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\sensor_module.obj" : "c:\\work\\src\\modules\\sensors\\sensor_module.c" ;
+FILENUM on "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\sensor_module.obj" = 4 ;
+DEFPROTS on "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\sensor_module.obj" = "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\sensor_module.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\sensor_module.obj" = "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\sensor_module.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\sensor_module.obj" ;
+Object "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\module.h.hdefs" : "c:\\work\\src\\shared\\modules\\module.h" ;
+FILENUM on "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\module.h.hdefs" = 5 ;
+OUTFILE on "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\module.h.hdefs" = "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\module.h.hdefs.out" ;
+PreLinkInputs += "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\resources.in.rc" ;
+PreLinkInputs += $(PrjObjects) $(InstrObjects) ;
+PreLinkOutputs += "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\resources.out.rc" ;
+PreLinkOutputs += "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\sensors.dll.defs" ;
+PreLink $(PreLinkOutputs) : $(PreLinkInputs) ;
+Depends "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\sensors.dll" : "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\sensors.dll.defs" ;
+Object "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\resources.res" : "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\resources.out.rc" ;
+Depends "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\resources.res" : $(PreLinkOutputs) ;
+Depends "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\resources.res" "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\resources.out.rc" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\resources.res" : "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\manifest.xml" ;
+MainFromObjects "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\sensors.dll" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\sensors.dll" : "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\link_options.txt" ;
+Depends "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\sensors.dll" : "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\dependencies.lnk.in" ;
+Depends "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\sensors.dll" : "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\resources.res" ;
+Depends "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\resources.res" :  "c:\\work\\src\\modules\\sensors\\sensors_gui.uir" ;
+Depends all : "c:\\work\\src\\modules\\sensors\\cvibuild.sensors\\Debug\\sensors.dll" ;

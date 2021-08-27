@@ -1,0 +1,8 @@
+LIBRARY CAB
+
+EXPORTS
+Status
+Reset
+Write
+Disconnect
+Connect

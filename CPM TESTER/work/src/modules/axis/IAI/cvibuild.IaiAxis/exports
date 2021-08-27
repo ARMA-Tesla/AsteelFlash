@@ -1,0 +1,70 @@
+[_AlarmReset]
+callConv = 102
+name = AlarmReset
+paramSize = 8
+
+[_CallbackThread]
+callConv = 102
+name = CallbackThread
+paramSize = 4
+
+[_ControllerStatus]
+callConv = 102
+name = ControllerStatus
+paramSize = 12
+
+[_CurrentPosition]
+callConv = 102
+name = CurrentPosition
+paramSize = 12
+
+[_EnableAxis]
+callConv = 102
+name = EnableAxis
+paramSize = 8
+
+[_HomeReturn]
+callConv = 102
+name = HomeReturn
+paramSize = 8
+
+[_Initialize]
+callConv = 102
+name = Initialize
+paramSize = 8
+
+[_MoveAxisPosition]
+callConv = 102
+name = MoveAxisPosition
+paramSize = 12
+
+[_PresentAlarm]
+callConv = 102
+name = PresentAlarm
+paramSize = 12
+
+[_ReadPosition]
+callConv = 102
+name = ReadPosition
+paramSize = 12
+
+[_RequestPosition]
+callConv = 102
+name = RequestPosition
+paramSize = 8
+
+[_SetPosition]
+callConv = 102
+name = SetPosition
+paramSize = 24
+
+[_StopAxis]
+callConv = 102
+name = StopAxis
+paramSize = 8
+
+[_Write]
+callConv = 102
+name = Write
+paramSize = 8
+

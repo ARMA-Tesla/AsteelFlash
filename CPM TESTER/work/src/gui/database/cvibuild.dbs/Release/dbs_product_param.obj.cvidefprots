@@ -1,0 +1,30 @@
+[TreeProductParamIni]
+Class="Function"
+Prototype="struct _SElException *TreeProductParamIni();"
+SourceLocation="c:\work\src\gui\database\dbs_product_param.c:60:1"
+
+[TreeProductParamSet]
+Class="Function"
+Prototype="struct _SElException *TreeProductParamSet(int mode);"
+SourceLocation="c:\work\src\gui\database\dbs_product_param.c:90:1"
+
+[TreeProductParamClose]
+Class="Function"
+Prototype="struct _SElException *TreeProductParamClose();"
+SourceLocation="c:\work\src\gui\database\dbs_product_param.c:129:1"
+
+[BkTreeProductParamNodeClick]
+Class="Function"
+Prototype="struct _SElException *BkTreeProductParamNodeClick(char *keyNode);"
+SourceLocation="c:\work\src\gui\database\dbs_product_param.c:147:1"
+
+[BkTreeProductParamPopupMenuCommand]
+Class="Function"
+Prototype="struct _SElException *BkTreeProductParamPopupMenuCommand(char *keyNode, char *keyCol, long menuItem);"
+SourceLocation="c:\work\src\gui\database\dbs_product_param.c:206:1"
+
+[BkTreeProductParamModify]
+Class="Function"
+Prototype="struct _SElException *BkTreeProductParamModify(char *keyNode, char *keyCol, long modifyType);"
+SourceLocation="c:\work\src\gui\database\dbs_product_param.c:371:1"
+

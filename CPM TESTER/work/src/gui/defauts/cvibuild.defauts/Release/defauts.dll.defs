@@ -1,0 +1,9 @@
+LIBRARY defauts
+
+EXPORTS
+gs_InfoData
+pluginGetAttribute
+pluginGetInfo
+pluginLeave
+pluginRun
+pluginInitialize

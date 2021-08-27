@@ -1,0 +1,214 @@
+[Workspace Header]
+Version = 1000
+Pathname = "/c/work/elcom/valeo/UTSystem/src/shared/eldaq/ni6229/ni6229.cws"
+CVI Dir = "/c/program files/national instruments/cvi2010"
+CVI Shared Dir = "/C/Program Files/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2010"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files/IVI Foundation/IVI"
+IVI Standard Root 64-bit Dir = "/C/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files/IVI Foundation/VISA/winnt"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "ni6229.prj"
+Drag Bar Left = 323
+Window Top = 266
+Window Left = 637
+Window Bottom = 502
+Window Right = 1239
+Maximized = True
+Maximized Children = True
+Max32 Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win For Warnings = True
+Show Build Dialog = False
+Save Changes Before Running = "Always"
+Save Changes Before Compiling = "Always"
+Hide Windows = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 7
+Window Confinement Region Enabled = True
+MainColumnWidth = 306
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+StatusColumnWidth = 70
+
+[Project Header 0001]
+Version = 1000
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Release"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+Force Rebuild = False
+
+[File 0001]
+Path = "/c/program files/national instruments/cvi2010/toolslib/toolbox/msxmldom.fp"
+File Type = "Function Panel"
+Disk Date = 3372048000
+In Projects = "1,"
+
+[File 0002]
+Path = "/c/work/elcom/valeo/UTSystem/src/shared/eldaq/ni6229/ni6229.fp"
+File Type = "Function Panel"
+Disk Date = 3587361132
+In Projects = "1,"
+Window Top = 62
+Window Left = 26
+Window Height = 400
+Window Width = 400
+
+[File 0003]
+Path = "/c/work/elcom/valeo/UTSystem/src/shared/eldaq/ni6229/ni6229.c"
+File Type = "CSource"
+Disk Date = 3595712644
+In Projects = "1,"
+Window Top = 62
+Window Left = 26
+Window Z-Order = 1
+Source Window State = "1,873,873,873,42,56,56,1,3,121,0,0,0,0,0,45,850,0,873,42,323,715,1,0,"
+
+[File 0004]
+Path = "/c/work/elcom/valeo/UTSystem/src/shared/eldaq/ni6229/ni6229.h"
+File Type = "Include"
+Disk Date = 3587361098
+In Projects = "1,"
+Window Top = 30
+Window Z-Order = 6
+Source Window State = "1,116,116,116,17,32,32,0,0,80,0,0,0,0,0,25,104,0,113,25,349,715,1,0,"
+
+[File 0005]
+Path = "/c/Program Files/National Instruments/Shared/CVI/include/visatype.h"
+File Type = "Include"
+Disk Date = 3516824980
+In Projects = ""
+Window Top = 32
+Window Left = 10
+Window Z-Order = 7
+Source Window State = "1,138,138,138,28,36,36,0,0,80,0,0,0,0,0,14,131,0,142,42,206,715,1,0,"
+
+[File 0006]
+Path = "/c/Program Files/National Instruments/Shared/CVI/include/nidaqmx.h"
+File Type = "Include"
+Disk Date = 3521273262
+In Projects = ""
+Window Top = 62
+Window Left = 26
+Window Z-Order = 5
+Source Window State = "1,2652,2652,2652,18,36,36,0,0,80,0,0,0,0,0,14,2645,0,2664,36,206,715,1,0,"
+
+[File 0007]
+Path = "/c/work/elcom/valeo/UTSystem/src/shared/eldaq/class/eldaq.c"
+File Type = "CSource"
+Disk Date = 3597838404
+In Projects = ""
+Window Top = 62
+Window Left = 26
+Window Z-Order = 4
+Source Window State = "1,0,0,0,0,0,0,0,0,80,0,0,0,0,0,21,1719,0,1740,4,297,715,1,0,"
+
+[File 0008]
+Path = "/c/Program Files/National Instruments/CVI2010/sdk/include/WinGDI.h"
+File Type = "Include"
+Disk Date = 3372048000
+In Projects = ""
+Window Top = 62
+Window Left = 26
+Window Z-Order = 3
+Source Window State = "1,0,0,0,0,0,0,0,0,80,0,0,0,0,0,21,2952,0,2969,29,297,715,1,0,"
+
+[File 0009]
+Path = "/c/ProgramData/National Instruments/CVI2010/include/advanlys.h"
+File Type = "Include"
+Disk Date = 3372048000
+In Projects = ""
+Window Top = 92
+Window Left = 42
+Window Z-Order = 2
+Source Window State = "1,643,643,643,27,35,35,0,3,80,0,0,0,0,0,25,631,0,643,27,349,715,1,0,"
+
+[Default Build Config 0001 Debug]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+External Process Path = "/c/FlexiTester.OK/application.exe"
+
+[Default Build Config 0001 Release]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+External Process Path = ""
+
+[Default Build Config 0001 Debug64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+External Process Path = ""
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Profile = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[Execution Target 0001]
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[Command Line Args 0001]
+Command Line Args = ""
+Working Directory = ""
+

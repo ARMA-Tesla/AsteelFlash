@@ -1,0 +1,538 @@
+[Project Header]
+Version = 1000
+Pathname = "/c/work/src/gui/product/product.prj"
+Project Label = "gui_product"
+CVI Dir = "/c/program files/national instruments/cvi2010"
+CVI Shared Dir = "/C/Program Files/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2010"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/C/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files/IVI Foundation/VISA/winnt"
+IVI Standard Root 64-bit Dir = "/C/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Files = 11
+Target Type = "Dynamic Link Library"
+Flags = 16
+Copied From Locked InstrDrv Directory = False
+Copied from VXIPNP Directory = False
+Locked InstrDrv Name = ""
+Don't Display Deploy InstrDrv Dialog = False
+
+[File 0001]
+File Type = "CSource"
+Res Id = 1
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../../shared/eventfactory/eleventdata.c"
+Path = "/c/work/src/shared/eventfactory/eleventdata.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0002]
+File Type = "CSource"
+Res Id = 2
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../../shared/string/elstring.c"
+Path = "/c/work/src/shared/string/elstring.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0003]
+File Type = "Include"
+Res Id = 3
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../../../include/elstring.h"
+Path = "/c/work/include/elstring.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0004]
+File Type = "CSource"
+Res Id = 4
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../../shared/exception/Exception.c"
+Path = "/c/work/src/shared/exception/Exception.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0005]
+File Type = "Function Panel"
+Res Id = 5
+Path Is Rel = True
+Path Rel To = "CVI"
+Path Rel To Override = "CVI"
+Path Rel Path = "toolslib/toolbox/msxmldom.fp"
+Path = "/c/program files/national instruments/cvi2010/toolslib/toolbox/msxmldom.fp"
+Exclude = False
+Project Flags = 0
+Folder = "Instrument Files"
+
+[File 0006]
+File Type = "Include"
+Res Id = 6
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../../shared/cvitool/msxmldom2.h"
+Path = "/c/work/src/shared/cvitool/msxmldom2.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0007]
+File Type = "CSource"
+Res Id = 7
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "product.c"
+Path = "/c/work/src/gui/product/product.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0008]
+File Type = "Include"
+Res Id = 8
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "product.h"
+Path = "/c/work/src/gui/product/product.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0009]
+File Type = "User Interface Resource"
+Res Id = 9
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "product.uir"
+Path = "/c/work/src/gui/product/product.uir"
+Exclude = False
+Project Flags = 0
+Folder = "User Interface Files"
+
+[File 0010]
+File Type = "CSource"
+Res Id = 10
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "product_fnc.c"
+Path = "/c/work/src/gui/product/product_fnc.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0011]
+File Type = "Include"
+Res Id = 11
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "product_plugin.h"
+Path = "/c/work/src/gui/product/product_plugin.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[Folders]
+Folder 0 = "User Interface Files"
+Folder 1 = "Source Files"
+Folder 2 = "Instrument Files"
+Folder 3 = "Include Files"
+
+[Custom Build Configs]
+Num Custom Build Configs = 0
+
+[Default Build Config Debug]
+Config Name = "Debug"
+Is 64-Bit = False
+Is Release = False
+Default Calling Convention = "cdecl"
+Uninitialized Locals Compile Warning = "Conservative"
+Require Prototypes = True
+Require Return Values = True
+Enable Pointer Mismatch Warning = False
+Enable Unreachable Code Warning = False
+Enable Unreferenced Identifiers Warning = False
+Enable Assignment In Conditional Warning = False
+Enable C99 Extensions = False
+Stack Size = 100000
+Image Base Address = 4194304
+Image Base Address x64 = 4194304
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+Sign = False
+Sign Store = ""
+Sign Certificate = ""
+Sign Timestamp URL = ""
+Sign URL = ""
+Manifest Embed = False
+Icon File Is Rel = False
+Icon File = ""
+Application Title = ""
+DLL Import Library Choice = "Gen Libs For All Compilers"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Generate Source Documentation = "None"
+Runtime Support = "Full Runtime Support"
+Embed Project .UIRs = True
+Generate Map File = False
+Create Console Application = False
+Using LoadExternalModule = False
+DLL Exports = "Include File Symbols"
+Export File1 = "product_plugin.h"
+Register ActiveX Server = False
+Numeric File Version = "1,0,0,0"
+Numeric Prod Version = "1,0,0,0"
+Comments = ""
+Comments Ex = ""
+Company Name = ""
+Company Name Ex = "%company"
+File Description = "product (Debug x86)"
+File Description Ex = "%application (%rel_dbg %arch)"
+File Version = "1.0"
+File Version Ex = "%f1.%f2"
+Internal Name = "product"
+Internal Name Ex = "%basename"
+Legal Copyright = "Copyright ©  2019"
+Legal Copyright Ex = "Copyright © %company %Y"
+Legal Trademarks = ""
+Legal Trademarks Ex = ""
+Original Filename = "product.dll"
+Original Filename Ex = "%filename"
+Private Build = ""
+Private Build Ex = ""
+Product Name = " product"
+Product Name Ex = "%company %application"
+Product Version = "1.0"
+Product Version Ex = "%p1.%p2"
+Special Build = ""
+Special Build Ex = ""
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+TLB Help Style = "HLP"
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+
+[Default Build Config Release]
+Config Name = "Release"
+Is 64-Bit = False
+Is Release = True
+Default Calling Convention = "cdecl"
+Uninitialized Locals Compile Warning = "Conservative"
+Require Prototypes = True
+Require Return Values = True
+Enable Pointer Mismatch Warning = False
+Enable Unreachable Code Warning = False
+Enable Unreferenced Identifiers Warning = False
+Enable Assignment In Conditional Warning = False
+Enable C99 Extensions = False
+Stack Size = 100000
+Image Base Address = 4194304
+Image Base Address x64 = 4194304
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+Sign = False
+Sign Store = ""
+Sign Certificate = ""
+Sign Timestamp URL = ""
+Sign URL = ""
+Manifest Embed = False
+Icon File Is Rel = False
+Icon File = ""
+Application Title = ""
+DLL Import Library Choice = "Gen Libs For All Compilers"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Generate Source Documentation = "None"
+Runtime Support = "Full Runtime Support"
+Embed Project .UIRs = True
+Generate Map File = False
+Create Console Application = False
+Using LoadExternalModule = False
+DLL Exports = "Include File Symbols"
+Export File1 = "product_plugin.h"
+Register ActiveX Server = False
+Numeric File Version = "1,0,0,0"
+Numeric Prod Version = "1,0,0,0"
+Comments = ""
+Comments Ex = ""
+Company Name = ""
+Company Name Ex = "%company"
+File Description = "product (Release x86)"
+File Description Ex = "%application (%rel_dbg %arch)"
+File Version = "1.0"
+File Version Ex = "%f1.%f2"
+Internal Name = "product"
+Internal Name Ex = "%basename"
+Legal Copyright = "Copyright ©  2019"
+Legal Copyright Ex = "Copyright © %company %Y"
+Legal Trademarks = ""
+Legal Trademarks Ex = ""
+Original Filename = "product.dll"
+Original Filename Ex = "%filename"
+Private Build = ""
+Private Build Ex = ""
+Product Name = " product"
+Product Name Ex = "%company %application"
+Product Version = "1.0"
+Product Version Ex = "%p1.%p2"
+Special Build = ""
+Special Build Ex = ""
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+TLB Help Style = "HLP"
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+
+[Default Build Config Debug64]
+Config Name = "Debug64"
+Is 64-Bit = True
+Is Release = False
+Default Calling Convention = "cdecl"
+Uninitialized Locals Compile Warning = "Conservative"
+Require Prototypes = True
+Require Return Values = True
+Enable Pointer Mismatch Warning = False
+Enable Unreachable Code Warning = False
+Enable Unreferenced Identifiers Warning = False
+Enable Assignment In Conditional Warning = False
+Enable C99 Extensions = False
+Stack Size = 100000
+Image Base Address = 4194304
+Image Base Address x64 = 4194304
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+Sign = False
+Sign Store = ""
+Sign Certificate = ""
+Sign Timestamp URL = ""
+Sign URL = ""
+Manifest Embed = False
+Icon File Is Rel = False
+Icon File = ""
+Application Title = ""
+DLL Import Library Choice = "Gen Libs For All Compilers"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Generate Source Documentation = "None"
+Runtime Support = "Full Runtime Support"
+Embed Project .UIRs = True
+Generate Map File = False
+Create Console Application = False
+Using LoadExternalModule = False
+DLL Exports = "Include File Symbols"
+Export File1 = "product_plugin.h"
+Register ActiveX Server = False
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+TLB Help Style = "HLP"
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+
+[Default Build Config Release64]
+Config Name = "Release64"
+Is 64-Bit = True
+Is Release = True
+Default Calling Convention = "cdecl"
+Uninitialized Locals Compile Warning = "Conservative"
+Require Prototypes = True
+Require Return Values = True
+Enable Pointer Mismatch Warning = False
+Enable Unreachable Code Warning = False
+Enable Unreferenced Identifiers Warning = False
+Enable Assignment In Conditional Warning = False
+Enable C99 Extensions = False
+Stack Size = 100000
+Image Base Address = 4194304
+Image Base Address x64 = 4194304
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+Sign = False
+Sign Store = ""
+Sign Certificate = ""
+Sign Timestamp URL = ""
+Sign URL = ""
+Manifest Embed = False
+Icon File Is Rel = False
+Icon File = ""
+Application Title = ""
+DLL Import Library Choice = "Gen Libs For All Compilers"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Generate Source Documentation = "None"
+Runtime Support = "Full Runtime Support"
+Embed Project .UIRs = True
+Generate Map File = False
+Create Console Application = False
+Using LoadExternalModule = False
+DLL Exports = "Include File Symbols"
+Export File1 = "product_plugin.h"
+Register ActiveX Server = False
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+TLB Help Style = "HLP"
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+
+[Compiler Options]
+Default Calling Convention = "cdecl"
+Require Prototypes = True
+Require Return Values = True
+Enable Pointer Mismatch Warning = False
+Enable Unreachable Code Warning = False
+Enable Unreferenced Identifiers Warning = False
+Enable Assignment In Conditional Warning = False
+O Option Compatible With 5.0 = False
+Enable C99 Extensions = False
+Uninitialized Locals Compile Warning = "Conservative"
+Precompile Prefix Header = False
+Prefix Header File = ""
+
+[Run Options]
+Stack Size = 100000
+Image Base Address = 4194304
+Image Base Address x64 = 4194304
+
+[Compiler Defines]
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+
+[Include Paths]
+Include Path 1 Is Rel = False
+Include Path 1 = "/c/work/src/shared"
+Include Path 2 Is Rel = False
+Include Path 2 = "/c/work/src/modules"
+Include Path 3 Is Rel = False
+Include Path 3 = "/c/work/ELCOM/valeo/UTSystem/include"
+Include Path 4 Is Rel = False
+Include Path 4 = "/c/work/src/shared/cvitool"
+Include Path 5 Is Rel = False
+Include Path 5 = "/c/work/include"
+
+[Create Executable]
+Executable File_Debug Is Rel = False
+Executable File_Debug = "/c/application/plugins/product.dll"
+Executable File_Release Is Rel = False
+Executable File_Release = "/c/application/plugins/product.dll"
+Executable File_Debug64 Is Rel = True
+Executable File_Debug64 Rel To = "Project"
+Executable File_Debug64 Rel Path = "product.dll"
+Executable File_Debug64 = "/c/work/src/gui/product/product.dll"
+Executable File_Release64 Is Rel = True
+Executable File_Release64 Rel To = "Project"
+Executable File_Release64 Rel Path = "product.dll"
+Executable File_Release64 = "/c/work/src/gui/product/product.dll"
+Icon File Is Rel = False
+Icon File = ""
+Application Title = ""
+Numeric File Version = "1,0,0,0"
+Numeric Prod Version = "1,0,0,0"
+Comments = ""
+Comments Ex = ""
+Company Name = ""
+Company Name Ex = "%company"
+File Description = "product (Release x86)"
+File Description Ex = "%application (%rel_dbg %arch)"
+File Version = "1.0"
+File Version Ex = "%f1.%f2"
+Internal Name = "product"
+Internal Name Ex = "%basename"
+Legal Copyright = "Copyright ©  2019"
+Legal Copyright Ex = "Copyright © %company %Y"
+Legal Trademarks = ""
+Legal Trademarks Ex = ""
+Original Filename = "product.dll"
+Original Filename Ex = "%filename"
+Private Build = ""
+Private Build Ex = ""
+Product Name = " product"
+Product Name Ex = "%company %application"
+Product Version = "1.0"
+Product Version Ex = "%p1.%p2"
+Special Build = ""
+Special Build Ex = ""
+DLL Exports = "Include File Symbols"
+Export File1 = "product_plugin.h"
+DLL Import Library Choice = "Gen Libs For All Compilers"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Custom Directory to Copy DLL Is Rel = False
+Custom Directory to Copy DLL = ""
+Generate Source Documentation = "None"
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+TLB Help Style = "HLP"
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+Type Lib Guid = ""
+Runtime Support = "Full Runtime Support"
+Instrument Driver Support Only = False
+Embed Project .UIRs = True
+Generate Map File = False
+
+[External Compiler Support]
+UIR Callbacks File Option = 2
+Using LoadExternalModule = False
+Create Project Symbols File = True
+UIR Callbacks Obj File Is Rel = True
+UIR Callbacks Obj File Rel To = "Project"
+UIR Callbacks Obj File Rel Path = "ecs.c"
+UIR Callbacks Obj File = "/c/work/src/gui/product/ecs.c"
+Project Symbols H File Is Rel = False
+Project Symbols H File = ""
+Project Symbols Obj File Is Rel = False
+Project Symbols Obj File = ""
+
+[ActiveX Server Options]
+Specification File Is Rel = False
+Specification File = ""
+Source File Is Rel = False
+Source File = ""
+Include File Is Rel = False
+Include File = ""
+IDL File Is Rel = False
+IDL File = ""
+Register ActiveX Server = False
+
+[Signing Info]
+Sign = False
+Sign Debug Build = False
+Store = ""
+Certificate = ""
+Timestamp URL = ""
+URL = ""
+
+[Manifest Info]
+Embed = False
+
+[tpcSection]
+tpcEnabled = 0
+tpcOverrideEnvironment = 0
+tpcEnabled x64 = 0
+tpcOverrideEnvironment x64 = 0
+

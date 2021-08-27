@@ -1,0 +1,88 @@
+HDRS = 	"c:\\work\\src\\shared"
+	"c:\\work\\src\\modules"
+	"c:\\work\\ELCOM\\valeo\\UTSystem\\include"
+	"c:\\work\\include"
+	"C:\\Users\\Public\\Documents\\National Instruments\\TestStand 2016 (32-bit)\\AdapterSupport\\CVI"
+	"C:\\Program Files (x86)\\National Instruments\\TestStand 2016\\API\\DLLInterfaces"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\clang\\3.3"
+	"c:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2019\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "eleventdata.c" = "c:\\work\\src\\shared\\eventfactory" ;
+LOCATE on "elstring.c" = "c:\\work\\src\\shared\\string" ;
+LOCATE on "elstring.h" = "c:\\work\\include" ;
+LOCATE on "Exception.c" = "c:\\work\\src\\shared\\exception" ;
+LOCATE on "info.c" = "c:\\work\\src\\gui\\info" ;
+LOCATE on "info.h" = "c:\\work\\src\\gui\\info" ;
+LOCATE on "info_plugin.h" = "c:\\work\\src\\gui\\info" ;
+LOCATE on "language.c" = "c:\\work\\src\\shared\\language" ;
+LOCATE on "trans_language.h" = "c:\\work\\src\\gui\\info" ;
+Object "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\eleventdata.obj" : "c:\\work\\src\\shared\\eventfactory\\eleventdata.c" ;
+FILENUM on "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\eleventdata.obj" = 1 ;
+DEFPROTS on "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\eleventdata.obj" = "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\eleventdata.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\eleventdata.obj" = "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\eleventdata.obj.out" ;
+PrjObjects += "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\eleventdata.obj" ;
+Object "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\elstring.obj" : "c:\\work\\src\\shared\\string\\elstring.c" ;
+FILENUM on "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\elstring.obj" = 2 ;
+DEFPROTS on "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\elstring.obj" = "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\elstring.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\elstring.obj" = "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\elstring.obj.out" ;
+PrjObjects += "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\elstring.obj" ;
+Object "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\Exception.obj" : "c:\\work\\src\\shared\\exception\\Exception.c" ;
+FILENUM on "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\Exception.obj" = 3 ;
+DEFPROTS on "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\Exception.obj" = "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\Exception.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\Exception.obj" = "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\Exception.obj.out" ;
+PrjObjects += "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\Exception.obj" ;
+Object "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\info.obj" : "c:\\work\\src\\gui\\info\\info.c" ;
+FILENUM on "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\info.obj" = 4 ;
+DEFPROTS on "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\info.obj" = "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\info.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\info.obj" = "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\info.obj.out" ;
+PrjObjects += "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\info.obj" ;
+Object "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\language.obj" : "c:\\work\\src\\shared\\language\\language.c" ;
+FILENUM on "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\language.obj" = 5 ;
+DEFPROTS on "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\language.obj" = "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\language.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\language.obj" = "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\language.obj.out" ;
+PrjObjects += "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\language.obj" ;
+Object "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\info_plugin.h.hdefs" : "c:\\work\\src\\gui\\info\\info_plugin.h" ;
+FILENUM on "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\info_plugin.h.hdefs" = 6 ;
+OUTFILE on "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\info_plugin.h.hdefs" = "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\info_plugin.h.hdefs.out" ;
+PreLinkInputs += "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\resources.in.rc" ;
+PreLinkInputs += $(PrjObjects) $(InstrObjects) ;
+PreLinkOutputs += "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\resources.out.rc" ;
+PreLinkOutputs += "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\info.dll.defs" ;
+PreLink $(PreLinkOutputs) : $(PreLinkInputs) ;
+Depends "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\info.dll" : "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\info.dll.defs" ;
+Object "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\resources.res" : "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\resources.out.rc" ;
+Depends "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\resources.res" : $(PreLinkOutputs) ;
+Depends "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\resources.res" "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\resources.out.rc" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\resources.res" : "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\manifest.xml" ;
+MainFromObjects "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\info.dll" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\info.dll" : "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\link_options.txt" ;
+Depends "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\info.dll" : "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\dependencies.lnk.in" ;
+Depends "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\info.dll" : "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\resources.res" ;
+Depends "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\resources.res" :  "c:\\work\\src\\gui\\info\\info.uir" ;
+Depends all : "c:\\work\\src\\gui\\info\\cvibuild.info\\Release\\info.dll" ;

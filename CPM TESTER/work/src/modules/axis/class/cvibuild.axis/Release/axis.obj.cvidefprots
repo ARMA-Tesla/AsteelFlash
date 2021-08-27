@@ -1,0 +1,25 @@
+[axis_new]
+Class="Function"
+Prototype="struct _SElException *axis_new(struct _axis **axis, const char *name, const char *optionString);"
+SourceLocation="c:\work\src\modules\axis\class\axis.c:93:1"
+
+[axis_delete]
+Class="Function"
+Prototype="struct _SElException *axis_delete(struct _axis **axis);"
+SourceLocation="c:\work\src\modules\axis\class\axis.c:140:1"
+
+[axiss_new]
+Class="Function"
+Prototype="struct _SElException *axiss_new(struct _axiss **axiss);"
+SourceLocation="c:\work\src\modules\axis\class\axis.c:168:1"
+
+[axiss_delete]
+Class="Function"
+Prototype="struct _SElException *axiss_delete(struct _axiss **axiss);"
+SourceLocation="c:\work\src\modules\axis\class\axis.c:201:1"
+
+[Thread_axis]
+Class="Function"
+Prototype="unsigned long Thread_axis(void *lpParameter);"
+SourceLocation="c:\work\src\modules\axis\class\axis.c:738:1"
+

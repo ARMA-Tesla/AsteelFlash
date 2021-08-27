@@ -1,0 +1,9 @@
+-inrc c:\work\src\modules\traca\class\cvibuild.tracas\Debug\resources.in.rc
+-outrc c:\work\src\modules\traca\class\cvibuild.tracas\Debug\resources.out.rc
+-inhdef c:\work\src\modules\traca\class\cvibuild.tracas\Debug\module.h.hdefs
+-outdef c:\work\src\modules\traca\class\cvibuild.tracas\Debug\tracas.dll.defs
+-indefprot c:\work\src\modules\traca\class\cvibuild.tracas\Debug\Exception.obj.cvidefprots
+-indefprot c:\work\src\modules\traca\class\cvibuild.tracas\Debug\tracas.obj.cvidefprots
+-indefprot c:\work\src\modules\traca\class\cvibuild.tracas\Debug\tracas_module.obj.cvidefprots
+-dllName tracas.dll
+-addNITypeInfo 

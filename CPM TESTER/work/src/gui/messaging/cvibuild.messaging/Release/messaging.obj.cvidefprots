@@ -1,0 +1,95 @@
+[OnErrorExit]
+Class="Function"
+Prototype="int OnErrorExit(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\messaging\messaging.c:81:1"
+
+[OnError]
+Class="Function"
+Prototype="int OnError(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\messaging\messaging.c:102:1"
+
+[OnPrinter]
+Class="Function"
+Prototype="int OnPrinter(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\messaging\messaging.c:129:1"
+
+[OnBox]
+Class="Function"
+Prototype="int OnBox(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\messaging\messaging.c:153:1"
+
+[OnSAP]
+Class="Function"
+Prototype="int OnSAP(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\messaging\messaging.c:177:1"
+
+[OnTimer]
+Class="Function"
+Prototype="int OnTimer(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\messaging\messaging.c:202:1"
+
+[OnTimerPrinter]
+Class="Function"
+Prototype="int OnTimerPrinter(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\messaging\messaging.c:228:1"
+
+[OnSAPErrorTimer]
+Class="Function"
+Prototype="int OnSAPErrorTimer(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\messaging\messaging.c:252:1"
+
+[OnTimerBox]
+Class="Function"
+Prototype="int OnTimerBox(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\messaging\messaging.c:281:1"
+
+[OnTimerTick]
+Class="Function"
+Prototype="int OnTimerTick(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\messaging\messaging.c:307:1"
+
+[DiscardUIObjectsForDLL]
+Class="Function"
+Prototype="void DiscardUIObjectsForDLL();"
+SourceLocation="c:\work\src\gui\messaging\messaging.c:842:1"
+
+[DllMain]
+Class="Function"
+Prototype="int DllMain(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+SourceLocation="c:\work\src\gui\messaging\messaging.c:847:1"
+
+[DllEntryPoint]
+Class="Function"
+Prototype="int DllEntryPoint(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+SourceLocation="c:\work\src\gui\messaging\messaging.c:877:1"
+
+[pluginInitialize]
+Class="Function"
+Prototype="struct _SElException *pluginInitialize(struct _SPluginArgs *a_pPluginArgs) __declspec(dllexport);"
+SourceLocation="c:\work\src\gui\messaging\messaging.c:890:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+
+[pluginRun]
+Class="Function"
+Prototype="struct _SElException *pluginRun(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
+SourceLocation="c:\work\src\gui\messaging\messaging.c:990:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+
+[pluginLeave]
+Class="Function"
+Prototype="struct _SElException *pluginLeave(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
+SourceLocation="c:\work\src\gui\messaging\messaging.c:1003:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+
+[PLUGIN_SHUTDOWN_NAME_CODE]
+Class="Function"
+Prototype="struct _SElException *PLUGIN_SHUTDOWN_NAME_CODE(struct _SPluginArgs *a_pPluginArgs) __declspec(dllexport);"
+SourceLocation="c:\work\src\gui\messaging\messaging.c:1015:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+
+[pluginGetInfo]
+Class="Function"
+Prototype="struct _SElException *pluginGetInfo(struct _SPluginInfo **a_pInfo) __declspec(dllexport);"
+SourceLocation="c:\work\src\gui\messaging\messaging.c:1035:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+
+[pluginGetAttribute]
+Class="Function"
+Prototype="struct _SElException *pluginGetAttribute(unsigned int attrID, unsigned int size, void *value) __declspec(dllexport);"
+SourceLocation="c:\work\src\gui\messaging\messaging.c:1047:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+

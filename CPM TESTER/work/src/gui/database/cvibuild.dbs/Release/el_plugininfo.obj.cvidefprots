@@ -1,0 +1,105 @@
+[Clear]
+Class="Function"
+Prototype="struct _SElException *Clear(struct _SPluginInfo *me);"
+SourceLocation="c:\work\src\shared\plugins\el_plugininfo.c:8:1"
+
+[GetArgCount]
+Class="Function"
+Prototype="struct _SElException *GetArgCount(struct _SPluginInfo *me, int *a_enuFunc);"
+SourceLocation="c:\work\src\shared\plugins\el_plugininfo.c:14:1"
+
+[GetArgDescription]
+Class="Function"
+Prototype="struct _SElException *GetArgDescription(struct _SPluginInfo *me, int a_enuFunc, const long a_lIndex, char *buffer, int bufferSize);"
+SourceLocation="c:\work\src\shared\plugins\el_plugininfo.c:20:1"
+
+[GetArgName]
+Class="Function"
+Prototype="struct _SElException *GetArgName(struct _SPluginInfo *me, int a_enuFunc, const long a_lIndex, char *buffer, int bufferSize);"
+SourceLocation="c:\work\src\shared\plugins\el_plugininfo.c:26:1"
+
+[GetName]
+Class="Function"
+Prototype="struct _SElException *GetName(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+SourceLocation="c:\work\src\shared\plugins\el_plugininfo.c:32:1"
+
+[GetVendor]
+Class="Function"
+Prototype="struct _SElException *GetVendor(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+SourceLocation="c:\work\src\shared\plugins\el_plugininfo.c:47:1"
+
+[GetInfo]
+Class="Function"
+Prototype="struct _SElException *GetInfo(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+SourceLocation="c:\work\src\shared\plugins\el_plugininfo.c:62:1"
+
+[GetDescription]
+Class="Function"
+Prototype="struct _SElException *GetDescription(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+SourceLocation="c:\work\src\shared\plugins\el_plugininfo.c:77:1"
+
+[GetHomepage]
+Class="Function"
+Prototype="struct _SElException *GetHomepage(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+SourceLocation="c:\work\src\shared\plugins\el_plugininfo.c:92:1"
+
+[GetEmail]
+Class="Function"
+Prototype="struct _SElException *GetEmail(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+SourceLocation="c:\work\src\shared\plugins\el_plugininfo.c:107:1"
+
+[GetMajorVersion]
+Class="Function"
+Prototype="struct _SElException *GetMajorVersion(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+SourceLocation="c:\work\src\shared\plugins\el_plugininfo.c:122:1"
+
+[GetMinorVersion]
+Class="Function"
+Prototype="struct _SElException *GetMinorVersion(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+SourceLocation="c:\work\src\shared\plugins\el_plugininfo.c:136:1"
+
+[GetBuildVersion]
+Class="Function"
+Prototype="struct _SElException *GetBuildVersion(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+SourceLocation="c:\work\src\shared\plugins\el_plugininfo.c:150:1"
+
+[GetVersion]
+Class="Function"
+Prototype="struct _SElException *GetVersion(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+SourceLocation="c:\work\src\shared\plugins\el_plugininfo.c:164:1"
+
+[GetUUID]
+Class="Function"
+Prototype="struct _SElException *GetUUID(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+SourceLocation="c:\work\src\shared\plugins\el_plugininfo.c:180:1"
+
+[GetTarget]
+Class="Function"
+Prototype="struct _SElException *GetTarget(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+SourceLocation="c:\work\src\shared\plugins\el_plugininfo.c:195:1"
+
+[HasPublicArgs]
+Class="Function"
+Prototype="struct _SElException *HasPublicArgs(struct _SPluginInfo *me, int *hasArg);"
+SourceLocation="c:\work\src\shared\plugins\el_plugininfo.c:210:1"
+
+[GetBuildDateTime]
+Class="Function"
+Prototype="struct _SElException *GetBuildDateTime(struct _SPluginInfo *me, char *buffer, int bufferSize);"
+SourceLocation="c:\work\src\shared\plugins\el_plugininfo.c:224:1"
+
+[SetInfoData]
+Class="Function"
+Prototype="struct _SElException *SetInfoData(struct _SPluginInfo *me, struct _SPluginInfoData *pInfo);"
+SourceLocation="c:\work\src\shared\plugins\el_plugininfo.c:243:1"
+
+[PluginInfo_new]
+Class="Function"
+Prototype="struct _SElException *PluginInfo_new(struct _SPluginInfoData *pData, struct _SPluginInfo **pInfo);"
+SourceLocation="c:\work\src\shared\plugins\el_plugininfo.c:255:1"
+
+[PluginInfo_delete]
+Class="Function"
+Prototype="struct _SElException *PluginInfo_delete(struct _SPluginInfo **pPluginInfo);"
+SourceLocation="c:\work\src\shared\plugins\el_plugininfo.c:300:1"
+

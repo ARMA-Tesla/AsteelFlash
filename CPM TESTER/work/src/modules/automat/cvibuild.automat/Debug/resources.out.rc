@@ -1,0 +1,260 @@
+#include "C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\winver.h"
+
+
+2 24 "c:\\work\\src\\modules\\automat\\cvibuild.automat\\Debug\\manifest.xml"
+
+
+STRINGTABLE DISCARDABLE
+BEGIN
+  65535  ""
+END
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+ FILEFLAGS 0x1L
+ FILEOS VOS__WINDOWS32
+ FILETYPE VFT_DLL
+ FILESUBTYPE VFT_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "automat (Debug x86)\0"
+            VALUE "FileVersion", "1.0\0"
+            VALUE "InternalName", "automat\0"
+            VALUE "LegalCopyright", "Copyright ©  2021\0"
+            VALUE "OriginalFilename", "automat.dll\0"
+            VALUE "ProductName", " automat\0"
+            VALUE "ProductVersion", "1.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 0x4b0
+    END
+END
+
+automat.uir UIRFileType "c:\\work\\src\\modules\\automat\\automat.uir"
+
+CVIDLLexports CVIDLLprototypes
+{
+   "struct _SElException *CameraGetdata(struct _STester *ptester, struct _Cameras *pcameras, int step, int timeout, char *data);"
+   "\n",
+   "struct _SElException *CameraSetParam(struct _Cameras *pcameras, int step, int timeout);"
+   "\n",
+   "struct _SElException *CameraSetRef(struct _Cameras *pcameras, int step, int timeout);"
+   "\n",
+   "struct _SElException *CheckAxisPosition(struct _axis *paxis, int axis, double position, double timeout);"
+   "\n",
+   "struct _SElException *CheckLimitINT32(struct _STestParam *ppar, int process, int step, int index, int value);"
+   "\n",
+   "struct _SElException *CheckLimitREAL64(struct _STestParam *ppar, int process, int step, int index, double value);"
+   "\n",
+   "struct _SElException *CheckLimitSTRING(struct _STestParam *ppar, int process, int step, int index, char *value);"
+   "\n",
+   "struct _SElException *CheckLimitUINT32(struct _STestParam *ppar, int process, int step, int index, unsigned int value);"
+   "\n",
+   "struct _SElException *CompareXML(char *barcode_Master, CAObjHandle pxml, char *Error);"
+   "\n",
+   "struct _SElException *CreateNewLimit(struct _STestParam *ppar, int process, int step, int index, char *limit_str, const char *description);"
+   "\n",
+   "struct _SElException *CreateNewLimitEx(struct _STestParam *ppar, int process, int step, int index, char *min, char *max, const char *description);"
+   "\n",
+   "void Debug(char *message);"
+   "\n",
+   "void DiscardUIObjectsForDLL();"
+   "\n",
+   "struct _SElException *DisplayClignotant(char *message);"
+   "\n",
+   "struct _SElException *DisplayWait();"
+   "\n",
+   "int DllEntryPoint(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+   "\n",
+   "int DllMain(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+   "\n",
+   "int ExtractXMLInformations(const char *pfile_xml, char *Reference, char *Serial, char *Result, char *date_time);"
+   "\n",
+   "int Fct_Save_Result(char *Reference, char *Serial, char *Result, char *date_time, char *mesures);"
+   "\n",
+   "struct _SElException *Fill_CSV_Mesures_Label(CAObjHandle pxml, int pfile_csv, int Station);"
+   "\n",
+   "struct _SElException *Fill_CSV_Steps_Label(CAObjHandle pxml, int pfile_csv, int Station);"
+   "\n",
+   "int Fill_DBO_Asteel_Mesures(const char *pfile_xml, char *nom_mesure, char *mesure_value, char *mesure_min, char *mesure_max, char *mesure_result);"
+   "\n",
+   "int Fill_Log_Asteel_Mesures(const char *pfile_xml, char *mesures);"
+   "\n",
+   "void GetFieldDataFromName(int count, char FieldName[20][128], char FieldData[20][128], char *SerachedNameField, char *FoundDataField);"
+   "\n",
+   "struct _SElException *GetLimitConfiguration(struct _STestParam *ppar, int process, int step, int index, char buffer[], int bufferSize);"
+   "\n",
+   "struct _SElException *GetNewSerial(int *counter, int *pError);"
+   "\n",
+   "int GetPalettNumber();"
+   "\n",
+   "struct _SElException *GetResultREAL64formXMLString(struct _SELString *result, const char *path, double *value);"
+   "\n",
+   "struct _SElException *GetResultSTRINGformXMLString(struct _SELString *result, const char *path, char *buffer);"
+   "\n",
+   "struct _SElException *GetSubTest(struct _STestParam *ppar, int process, int step, char *subtest);"
+   "\n",
+   "struct _SElException *GetTestDescription(struct _STestParam *ppar, int process, int step, char *name, char *desc);"
+   "\n",
+   "struct _SElException *GetTestResult(struct _STestParam *ppar, int *result);"
+   "\n",
+   "struct _SElException *GetTestSequenceBarcode(struct _STestParam *ppar, char *barcode, unsigned int barcode_size);"
+   "\n",
+   "struct _SElException *Init_Alim_keysight();"
+   "\n",
+   "struct _SElException *Init_BK_PRECISION_WS40_WS50();"
+   "\n",
+   "struct _SElException *Init_PWM_Generator();"
+   "\n",
+   "void InsertionMesures_DB(struct _STestParam *pTestParam, int failed);"
+   "\n",
+   "struct _SElException *JigPanelLabel(struct _SSledge *me, int *pError);"
+   "\n",
+   "struct _SElException *JigPanelLabelFail(struct _SSledge *me, int *pError);"
+   "\n",
+   "struct _SElException *LED_Operator(int color);"
+   "\n",
+   "int LimitExist(struct _STestParam *ppar, int process, int step, int index);"
+   "\n",
+   "struct _SElException *LoadPanelExWithLanguage(int parentPanel, const char *path, int panelResourceId, struct _SLanguageItem table[], int *pPanelHandle);"
+   "\n",
+   "struct _SElException *LoadPanelWithLanguage(int parentPanel, const char *path, int panelResourceId, struct _SLanguageItem table[], int *pPanelHandle);"
+   "\n",
+   "struct _SElException *LoadTestSequence(const char *fileXml, struct _STestSequence *pTestSeq, struct _SObjList *pModules, int reset_panel, int *Error);"
+   "\n",
+   "void LogAsteelFile(struct _STestParam *pTestParam, int failed);"
+   "\n",
+   "int MoveExistingDataFiles(char *vp_char_PathName);"
+   "\n",
+   "struct _SElException *PLUGIN_SHUTDOWN_NAME_CODE(struct _SPluginArgs *a_pPluginArgs) __declspec(dllexport);"
+   "\n",
+   "int Pushed_Start_Skip_Palett(int timeout);"
+   "\n",
+   "int Pushed_Start_Without_Palett();"
+   "\n",
+   "struct _SElException *QueryParameterInt32(struct _STestParam *ppar, int process, int step, const char *name, int *pValue);"
+   "\n",
+   "struct _SElException *QueryParameterReal64(struct _STestParam *ppar, int process, int step, const char *name, double *pValue);"
+   "\n",
+   "struct _SElException *QueryParameterString(struct _STestParam *ppar, int process, int step, const char *name, char buffer[], int bufferSize);"
+   "\n",
+   "struct _SElException *QueryParameterUInt32(struct _STestParam *ppar, int process, int step, const char *name, unsigned int *pValue);"
+   "\n",
+   "struct _SElException *ReadMasterInformations(const char *pfile_xml, char *description, char *name, char *station);"
+   "\n",
+   "struct _SElException *ReadMasterResults(const char *pfile_xml);"
+   "\n",
+   "struct _SElException *ReadTestedResults(CAObjHandle pxml);"
+   "\n",
+   "struct _SElException *RunTestSequence(const char *fileFormXml, struct _SSledge *me, struct _SAutomat *pAutomat, struct _SElEventFactory *pEventFactory);"
+   "\n",
+   "void SaveXmlBarcode(struct _STestParam *pTestParam);"
+   "\n",
+   "void SaveXmlResultFile(struct _STestParam *pTestParam, int failed);"
+   "\n",
+   "void SaveXmlResultFileFail(struct _STestParam *pTestParam);"
+   "\n",
+   "struct _SElException *SetParameterInt32(struct _STestParam *ppar, int process, int step, const char *name, int value);"
+   "\n",
+   "struct _SElException *SetParameterReal64(struct _STestParam *ppar, int process, int step, const char *name, double value);"
+   "\n",
+   "struct _SElException *SetParameterString(struct _STestParam *ppar, int process, int step, const char *name, const char *buffer);"
+   "\n",
+   "struct _SElException *SetParameterUInt32(struct _STestParam *ppar, int process, int step, const char *name, unsigned int value);"
+   "\n",
+   "int SetPath(char *vp_char_PathName, int vp_int_Mode);"
+   "\n",
+   "struct _SElException *SetSubTestDuration(struct _STestParam *ppar, int process, int step, int index, double duration);"
+   "\n",
+   "struct _SElException *SetTestDuration(struct _STestParam *ppar, int process, int step, double duration);"
+   "\n",
+   "struct _SElException *SetTestResult(struct _STestParam *ppar, int process, int step, int index, struct _SElException *pException);"
+   "\n",
+   "struct _SElException *SetTestSequenceDuration(struct _STestParam *ppar, int mode, double duration);"
+   "\n",
+   "struct _SElException *SetTestSequenceResult(struct _STestParam *ppar, int mode, struct _SElException *pException);"
+   "\n",
+   "struct _SElException *SetTestSequenceTime(struct _STestParam *ppar, double duration);"
+   "\n",
+   "struct _SElException *SetTestSequenceValue(struct _STestParam *ppar, int mode, const char *name, const char *value);"
+   "\n",
+   "struct _SElException *SetTestUsed(struct _STestParam *ppar, int process, int step);"
+   "\n",
+   "struct _SElException *SetTestValue(struct _STestParam *ppar, int process, int step, const char *name, const char *value);"
+   "\n",
+   "struct _SElException *StepTestSequence(const char *fileXml, struct _SAutomat *pAutomat, struct _SElEventFactory *pEventFactory, int step_mode, int *is_active, int *last_step);"
+   "\n",
+   "struct _SElException *ThreadStart(unsigned long (*pThreadFnc)(void *) __attribute__((stdcall)), void *pData, HANDLE *hThread, HANDLE *hStopEvent);"
+   "\n",
+   "struct _SElException *ThreadStatus(HANDLE hThread, unsigned int timeout, int *pStatus);"
+   "\n",
+   "struct _SElException *ThreadStop(HANDLE *hThread, HANDLE *hStopEvent);"
+   "\n",
+   "int Timer_Wait(int reserved, int theTimerId, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int Wait_To_Empty_Convoyer();"
+   "\n",
+   "int compare(const void *a, const void *b);"
+   "\n",
+   "void copyFieldData(struct _SSledge *me);"
+   "\n",
+   "void copyTestOption(struct _SSledge *me);"
+   "\n",
+   "struct _SElException *eleventdata_delete(struct _SElEventData **pEventData);"
+   "\n",
+   "struct _SElException *eleventdata_new(struct _SElEventData **pEventData);"
+   "\n",
+   "void elexception_delete(struct _SElException **pException);"
+   "\n",
+   "void elexception_log_set(void (*fn_log)(struct _SElException *));"
+   "\n",
+   "struct _SElException *elexception_new(int errorCode, const char *messsage, const char *file, long line);"
+   "\n",
+   "struct _SElException *elstring_delete(struct _SELString **pString);"
+   "\n",
+   "struct _SElException *elstring_new(const char *pStr, struct _SELString **pString);"
+   "\n",
+   "void excdisplay(struct _SElException *pException);"
+   "\n",
+   "void excdispstr(struct _SElException *pException, char *str, int str_size);"
+   "\n",
+   "struct _SElException *pluginGetAttribute(unsigned int attrID, unsigned int size, void *value) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *pluginGetInfo(struct _SPluginInfo **a_pInfo) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *pluginInitialize(struct _SPluginArgs *a_pPluginArgs) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *pluginLeave(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *pluginRun(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *sledge_delete(struct _SSledge **pSledge);"
+   "\n",
+   "struct _SElException *sledge_new(struct _SSledge **pSledge);"
+   "\n",
+   "int spi_Fin_Fichier(int vp_PassFail, int *pp_FileHandle);"
+   "\n",
+   "int spi_OuverturePlusEnteteFichier(char tp_FileName[260], char *Reference, char *Serial, char *date_time, int *pp_FileHandle);"
+   "\n",
+   "struct _SElException *test_delete(struct _STest **pTest);"
+   "\n",
+   "struct _SElException *test_new(struct _STest **pTest);"
+   "\n",
+   "struct _SElException *testseq_delete(struct _STestSequence **pTestSeq);"
+   "\n",
+   "struct _SElException *testseq_new(struct _STestSequence **pTestSequence);"
+   "\n",
+   "\0"
+}
+
+CVIDLLexports2 CVIDLLprototypes
+{
+}

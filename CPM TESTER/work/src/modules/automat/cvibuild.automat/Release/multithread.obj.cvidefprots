@@ -1,0 +1,15 @@
+[ThreadStart]
+Class="Function"
+Prototype="struct _SElException *ThreadStart(unsigned long (*pThreadFnc)(void *) __attribute__((stdcall)), void *pData, HANDLE *hThread, HANDLE *hStopEvent);"
+SourceLocation="c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\shared\multithread\multithread.c:6:17"
+
+[ThreadStatus]
+Class="Function"
+Prototype="struct _SElException *ThreadStatus(HANDLE hThread, unsigned int timeout, int *pStatus);"
+SourceLocation="c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\shared\multithread\multithread.c:45:17"
+
+[ThreadStop]
+Class="Function"
+Prototype="struct _SElException *ThreadStop(HANDLE *hThread, HANDLE *hStopEvent);"
+SourceLocation="c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\shared\multithread\multithread.c:92:17"
+

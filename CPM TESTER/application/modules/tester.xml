@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<configuration>
+    <modules>
+        <module id="{F459741B-B526-4fb9-B65C-A4C983105321}">
+            <name>Tester Module</name>
+        <Sensors>
+		<Sensor name="INFRARED_BARRIER" 		type="DI" description="Infrared Barrier of test bench">PLC_DI_40</Sensor>
+		<Sensor name="SAFETY_STATUS"			type="DI" description="safety 24 V status            ">PLC_DI_41</Sensor>
+	    <Sensor name="BUTTON_TOTAL_STOP" 		type="DI" description="Button Total Stop             ">PLC_DI_42</Sensor> 
+		<Sensor name="MICRO_CAM" 				type="DI" description="Micro Cam of turntable        ">PLC_DI_66</Sensor>
+		<Sensor name="ERR_ION1" 				type="DI" description="ERR IONIZER 1				 ">PLC_DI_80</Sensor>
+		<Sensor name="ERR_ION2"  				type="DI" description="ERR IONIZER 2				 ">PLC_DI_81</Sensor>
+		<Sensor name="ERR_ION3"  				type="DI" description="ERR IONIZER 3				 ">PLC_DI_82</Sensor>
+		<Sensor name="ERR_ION4" 				type="DI" description="ERR IONIZER 4		         ">PLC_DI_83</Sensor>
+		<Sensor name="BUTTON_START"				type="DI" description="Button Start					 ">PLC_DI_70</Sensor> 
+		<Sensor name="PRESSURE"					type="DI" description="Pressure Sensor status		 ">PLC_DI_86</Sensor>	
+    	<Sensor name="Auto_Manu" 			    type="DI" description="Select Auto(false) Manu(true) ">PLC_DI_87</Sensor>
+		<!--ADDRESS NOT EXIST -->
+		<Sensor name="BUTTON_OK" 				type="DI" description="RESET         				 ">PLC_DI_85</Sensor>
+		<Sensor name="BUTTON_NOK" 				type="DI" description="Change variant				 ">PLC_DI_84</Sensor> 
+		<Sensor name="BUTTON_LABEL"				type="DI" description="  							 ">PLC_DI_74</Sensor> 
+		<Sensor name="BUTTON_MENU" 			    type="DI" description=" DOORS LOCKED  				 ">PLC_DI_67</Sensor> <!-- BUTTON_MENU -->
+		<!--ADDRESS NOT EXIST --> 
+		<Sensor name="INDICATOR_OK" 			type="DO" description="Indicator OK					 ">PLC_DO_00</Sensor>
+		<Sensor name="INDICATOR_NOK" 			type="DO" description="Indicator NOK				 ">PLC_DO_01</Sensor>
+		<Sensor name="START_ROTATION" 			type="DO" description="Start motor turntable rotation">PLC_DO_02</Sensor>
+		<Sensor name="FORCAGE_ROTATION"         type="DO" description="Force turntable rotation      ">PLC_DO_03</Sensor>
+		<Sensor name="VEROUILLAGE_ABIS_DROITE"  type="DO" description="unlock the right door           ">PLC_DO_17</Sensor>
+		<Sensor name="VEROUILLAGE_ABIS_GAUCHE"  type="DO" description="unlock the left door            ">PLC_DO_20</Sensor>
+		<Sensor name="VEROUILLAGE_ABIS_ARRIERE" type="DO" description="unlock the rear door            ">PLC_DO_21</Sensor>
+		<Sensor name="VERRINE_GREEN" 			type="DO" description=" VERRINE_GREEN     		       ">PLC_DO_22</Sensor>
+		<Sensor name="VERRINE_ORANGE" 			type="DO" description=" VERRINE_ORANGE     		       ">PLC_DO_23</Sensor>
+		<Sensor name="VERRINE_RED" 				type="DO" description=" VERRINE_RED     		       ">PLC_DO_27</Sensor>
+
+		
+	    </Sensors>
+		
+        <Station1>
+		<Sensor name="SENSOR_1_PRESENCE_PRODUCT_STATION_10" type="DI" description="Output Sensor laser Left   		 ">PLC_DI_63</Sensor>
+		<Sensor name="SENSOR_2_PRESENCE_PRODUCT_STATION_10" type="DI" description="Output Sensor laser Right  		 ">PLC_DI_64</Sensor>
+		<Sensor name="SENSOR_3_PRESENCE_PRODUCT_STATION_10" type="DI" description="Output Sensor laser central		 ">PLC_DI_65</Sensor>
+		<Sensor name="SENSOR_AI_1_PRODUCT_STATION_10" 		type="AI" description="Output analog Sensor laser Left   ">PLC_AI_120</Sensor>
+		<Sensor name="SENSOR_AI_2_PRODUCT_STATION_10" 		type="AI" description="Output analog Sensor laser central">PLC_AI_121</Sensor>
+		<Sensor name="SENSOR_AI_3_PRODUCT_STATION_10" 		type="AI" description="Output analog Sensor laser right  ">PLC_AI_122</Sensor>
+
+		<Sensor name="TRIG_LASER_RIGHT"   					type="DO" description="TRIG Laser RIGHT           ">PLC_DO_26</Sensor>
+		<Sensor name="TRIG_LASER_LEFT"    					type="DO" description="TRIG Laser LEFT            ">PLC_DO_24</Sensor>
+		<Sensor name="TRIG_LASER_CENTRAL" 					type="DO" description="TRIG Laser CENTRAL         ">PLC_DO_25</Sensor>
+		</Station1>
+		
+		<Station2>
+		<Sensor name="IS_PANEL_PLUGGED_STATION_20"   type="DI" description="cylinder plugged Sensor        ">PLC_DI_43</Sensor>
+		<Sensor name="IS_PANEL_UNPLUGGED_STATION_20" type="DI" description="cylinder unplugged Sensor      ">PLC_DI_44</Sensor>
+        <Sensor name="CYLINDER_PLUG_STATION_20"      type="DO" description="Solenoid valve Plug station 2  ">PV1_00</Sensor>
+		<Sensor name="CYLINDER_UNPLUG_STATION_20"    type="DO" description="Solenoid valve unplug station 2">PV1_01</Sensor>
+		<Sensor name="CMD_Relay_2B"					 type="DO" description="dielectric test RELAY station 2">PLC_DO_40</Sensor>
+		<Sensor name="CMD_Relay_2C" 				 type="DO" description="dielectric test RELAY station 2">PLC_DO_41</Sensor>
+		<Sensor name="CMD_Relay_2D" 			     type="DO" description="dielectric test RELAY station 2">PLC_DO_42</Sensor>
+		<Sensor name="CMD_Relay_2E" 				 type="DO" description="dielectric test RELAY station 2">PLC_DO_43</Sensor>
+		</Station2>
+		
+		<Station3>	
+		<Sensor name="IS_PANEL_PLUGGED_STATION_30"     type="DI" description="cylinder plugged Sensor         ">PLC_DI_45</Sensor>
+		<Sensor name="IS_PANEL_UNPLUGGED_STATION_30"   type="DI" description="cylinder unplugged Sensor       ">PLC_DI_46</Sensor>
+		<Sensor name="IS_PANEL_PLUGGED_V_STATION_30"   type="DI" description="Magnet plugged Sensor           ">PLC_DI_50</Sensor>
+		<Sensor name="IS_PANEL_UNPLUGGED_V_STATION_30" type="DI" description="Magnet unplugged Sensor         ">PLC_DI_47</Sensor>
+		<Sensor name="CYLINDER_PLUG_STATION_30"   	   type="DO" description="Solenoid valve Plug             ">PV1_02</Sensor>
+		<Sensor name="CYLINDER_UNPLUG_STATION_30"      type="DO" description="Solenoid valve unplug           ">PV1_03</Sensor>
+		<Sensor name="CYLINDER_PLUG_V_STATION_30"	   type="DO" description="Solenoid valve TASTATORE_ON     ">PV1_04</Sensor>
+		<Sensor name="CYLINDER_UNPLUG_V_STATION_30"	   type="DO" description="Solenoid valve TASTATORE_OFF    ">PV1_05</Sensor>
+		<Sensor name="CMD_Relay_FTA1"			       type="DO" description="Test digital Input RELAY        ">PLC_DO_10</Sensor>
+		<Sensor name="CMD_Relay_FTA2" 			       type="DO" description="Test digital Input RELAY        ">PLC_DO_11</Sensor>
+		<Sensor name="CMD_Relay_FTA3"			       type="DO" description="Test digital Input RELAY        ">PLC_DO_12</Sensor>
+		<Sensor name="CMD_Relay_FTA4" 			       type="DO" description="Test digital Input RELAY        ">PLC_DO_13</Sensor>
+		<Sensor name="CMD_DBUS_Relay_3F"		       type="DO" description=" DBUS communication RELAY       ">PLC_DO_44</Sensor>
+		<Sensor name="CMD_Relay_3G"                    type="DO" description=" 12 VDC measurement RELAY       ">PLC_DO_45</Sensor>
+		<Sensor name="CMD_Relay_3H"                    type="DO" description=" 12 VDC measurement RELAY		  ">PLC_DO_46</Sensor>
+		<Sensor name="CMD_Relay_3I"                    type="DO" description=" 12 VDC measurement RELAY       ">PLC_DO_47</Sensor>
+		<Sensor name="CMD_Relay_3L"                    type="DO" description=" PWM Feedback Input X8.7 RELAY  ">PLC_DO_50</Sensor>
+		<Sensor name="CMD_Relay_3M" 			       type="DO" description=" PWM Feedback Input X8.4 RELAY  ">PLC_DO_51</Sensor>
+		<Sensor name="CMD_Relay_3N"                    type="DO" description=" PWM Feedback Input X9.4 RELAY  ">PLC_DO_52</Sensor>
+		<Sensor name="CMD_Relay_3O" 			       type="DO" description=" 5 VDC measurement RELAY        ">PLC_DO_53</Sensor>
+		<Sensor name="CMD_Relay_3P"				       type="DO" description=" 5 VDC measurement RELAY        ">PLC_DO_54</Sensor>
+		<Sensor name="CMD_Relay_3Q_3Q2" 		       type="DO" description=" Check externaltemperature sensor">PLC_DO_55</Sensor>
+		<Sensor name="CMD_AC_PowerSupply_Relay_3R"     type="DO" description=" Power supply RELAY STATION 3   ">PLC_DO_56</Sensor>
+		</Station3>
+		
+		<Station4>	
+ 		<Sensor name="IS_PANEL_PLUGGED_STATION_40" 	    type="DI" description="cylinder plugged Sensor      ">PLC_DI_51</Sensor>
+		<Sensor name="IS_PANEL_UNPLUGGED_STATION_40"    type="DI" description="cylinder unplugged Sensor    ">PLC_DI_52</Sensor>
+		<Sensor name="CYLINDER_PLUG_STATION_40" 		type="DO" description="Solenoid valve Plug station 4">PV1_06</Sensor>
+		<Sensor name="CYLINDER_UNPLUG_STATION_40" 		type="DO" description="Solenoid valve Plug station 4">PV1_07</Sensor>
+		<Sensor name="CMD_PowerSupply_Relay_4H" 		type="DO" description="Power supply RELAY  station 4">PLC_DO_61</Sensor>
+		<Sensor name="CMD_Relay_4V_4V2"					type="DO" description="measurement RELAY   station 4">PLC_DO_65</Sensor>
+		<Sensor name="CMD_DBUS_Relay_4R" 				type="DO" description="DBUS RELAY	       station 4">PLC_DO_74</Sensor>
+		<Sensor name="CMD_Relay_4A" 					type="DO" description="measurement RELAY   station 4">PLC_DO_57</Sensor>
+		<Sensor name="CMD_Relay_4B" 					type="DO" description="measurement RELAY   station 4">PLC_DO_60</Sensor>
+		<Sensor name="CMD_Relay_4S" 					type="DO" description="measurement RELAY   station 4">PLC_DO_62</Sensor>
+		<!-- <Sensor name="CMD_Relay_4T" 					type="DO" description="measurement RELAY   station 4">PLC_DO_63</Sensor> -->
+		<Sensor name="CMD_Relay_4U" 					type="DO" description="measurement RELAY   station 4">PLC_DO_64</Sensor>
+		<Sensor name="CMD_Relay_4Z" 					type="DO" description="measurement RELAY   station 4">PLC_DO_66</Sensor>
+		<Sensor name="CMD_Relay_4W" 					type="DO" description="measurement RELAY   station 4">PLC_DO_67</Sensor>
+		</Station4>
+		
+		<Station5>	
+		<Sensor name="IS_PANEL_PLUGGED_STATION_50"      type="DI" description="cylinder plugged Sensor              ">PLC_DI_53</Sensor>
+		<Sensor name="IS_PANEL_UNPLUGGED_STATION_50"    type="DI" description="cylinder unplugged Sensor            ">PLC_DI_54</Sensor>
+		<Sensor name="CYLINDER_PLUG_STATION_50"   		type="DO" description="Solenoid valve Plug Test station 5   ">PV1_10</Sensor>
+		<Sensor name="CYLINDER_UNPLUG_STATION_50" 		type="DO" description="Solenoid valve Plug Test station 5   ">PV1_11</Sensor>
+		<Sensor name="CMD_Relay_5C"  					type="DO" description="VDC power supply RELAY station 5     ">PLC_DO_70</Sensor>
+		<Sensor name="CMD_Relay_5D"						type="DO" description="VDC power supply RELAY station 5     ">PLC_DO_71</Sensor>
+		<Sensor name="CMD_Relay_5E"					    type="DO" description="measurement RELAY station 5          ">PLC_DO_72</Sensor>
+		<Sensor name="CMD_Relay_5F" 					type="DO" description="residual voltage meas RELAY station 5">PLC_DO_73</Sensor>
+		<Sensor name="CMD_Relay_5I"						type="DO" description="Measurement Relay TRIAC X3_2         ">PLC_DO_05</Sensor>
+		<Sensor name="CMD_Relay_5L" 					type="DO" description="Measurement Relay TRIAC X3_3         ">PLC_DO_06</Sensor>
+		<Sensor name="CMD_Relay_5M" 					type="DO" description="Measurement Relay TRIAC X3_4         ">PLC_DO_07</Sensor>
+		<Sensor name="CMD_Relay_5N" 					type="DO" description="Measurement Relay TRIAC X3_5         ">PLC_DO_14</Sensor>
+		<Sensor name="CMD_DBUS_Relay_5H" 		        type="DO" description="DBUS RELAY STATION 5                 ">PLC_DO_16</Sensor> 
+		<Sensor name="CMD_PowerSupply_Relay_5G"         type="DO" description="Power supply RELAY station 5         ">PLC_DO_15</Sensor>
+		<Sensor name="CMD_Relay_4T" 					type="DO" description="Measurement RELAY for TRIAC station 5">PLC_DO_63</Sensor>
+		</Station5>
+		
+		<Station6>	
+		<Sensor name="SENSOR_APPLICATOR_BACKWARD" 	  			type="DI" description="Applicator printer is Forward 		     ">PLC_DI_90</Sensor>
+		<Sensor name="PRINTER_INPUT1" 				  			type="DI" description="Printer input 1 : Print Job Ready 	     ">PLC_DI_71</Sensor>
+		<Sensor name="PRINTER_INPUT2"				  			type="DI" description="Printer input 2 : Printer Ready 		     ">PLC_DI_74</Sensor>
+		<Sensor name="PRINTER_INPUT3"				  			type="DI" description="Printer input 3 : End Of Ribbon 		     ">PLC_DI_75</Sensor>
+		<Sensor name="PRINTER_INPUT4" 				  			type="DI" description="Printer input 4 : Error Message 			 ">PLC_DI_76</Sensor>
+		<Sensor name="PRINTER_INPUT5"				  			type="DI" description="Printer input 5 : Error Message 			 ">PLC_DI_77</Sensor>
+		<Sensor name="SENSOR_CONV_IN"				  			type="DI" description="Product in CONVOYER start position		 ">PLC_DI_61</Sensor>
+		<Sensor name="SENSOR_CONV_OUT"				   			type="DI" description="Product in CONVOYER End position          ">PLC_DI_62</Sensor>
+		<Sensor name="SENSOR_CYLINDER_Z_UP_STATION_60" 			type="DI" description="sensor cylinder Z UP station 6			 ">PLC_DI_56</Sensor>
+		<Sensor name="SENSOR_CYLINDER_Z_DOWN_STATION_60" 		type="DI" description="sensor cylinder Z down station 6			 ">PLC_DI_55</Sensor>
+		<Sensor name="SENSOR_CYLINDER_X_REAR_STATION_60" 		type="DI" description="sensor cylinder X rear station 6          ">PLC_DI_60</Sensor>
+		<Sensor name="SENSOR_CYLINDER_X_FRONT_STATION_60" 		type="DI" description="sensor cylinder X front station 6		 ">PLC_DI_73</Sensor>
+		<Sensor name="SENSOR_GRIPPER_OPENED_STATION_60" 		type="DI" description="sensor GRIPPER Opened station 6			 ">PLC_DI_57</Sensor>
+		<Sensor name="SENSOR_GRIPPER_CLOSED_STATION_60" 		type="DI" description="sensor GRIPPER Closed station 6			 ">PLC_DI_72</Sensor>
+		<Sensor name="SENSOR_GRIPPER_CLOSED_PRODUCT_STATION_60" type="DI" description="sensor GRIPPER Closed on the product      ">PLC_DI_91</Sensor>
+		<Sensor name="CYLINDER_Z_UP_STATION_60" 				type="DO" description="Solenoid valve cylinder Z up station 60   ">PV1_15</Sensor>
+		<Sensor name="CYLINDER_Z_DOWN_STATION_60" 				type="DO" description="Solenoid valve cylinder Z down station 60 ">PV1_14</Sensor>
+		<Sensor name="CYLINDER_X_FRONT_STATION_60" 				type="DO" description="Solenoid valve cylinder X front station 60">PV1_12</Sensor>
+		<Sensor name="CYLINDER_X_REAR_STATION_60" 				type="DO" description="Solenoid valvecylinder X rear station 60  ">PV1_13</Sensor>
+		<Sensor name="OPEN_GRIPPER_STATION_60" 					type="DO" description="Solenoid valve Open GRIPPER station 60    ">PV1_17</Sensor>
+		<Sensor name="CLOSE_GRIPPER_STATION_60"					type="DO" description="Solenoid valve close GRIPPER station 60   ">PV1_16</Sensor>
+		<Sensor name="PRINTER_START" 							type="DO" description="Printer Start print">PLC_DO_30</Sensor>					
+		<Sensor name="PRINTER_RESET" 							type="DO" description="Printer out2">PLC_DO_31</Sensor>	
+		<Sensor name="PRINTER_STOP" 							type="DO" description="Printer STOP print">PLC_DO_32</Sensor>
+	    <Sensor name="CMD_CONVEYOR" 							type="DO" description="START CONVOYER">PLC_DO_04</Sensor>
+		<Sensor name="PRINTER_AIR_VALVE_ACTIVATE" 				type="DO" description="valve Printer ON">PV1_20</Sensor>
+		<Sensor name="PRINTER_AIR_VALVE_DESACTIVATE" 			type="DO" description="valve Printer OFF">PV1_21</Sensor>
+		</Station6>
+
+		
+	    <Errors>
+		<Error sensor="PRESSURE" ok="1" description="Pressure error" />
+		<Error sensor="BUTTON_TOTAL_STOP" ok="1" description="Total stop pressed" />
+		<Error sensor="SENSOR_CONV_OUT" ok="0" description="Convoyer is full" />
+ 	    </Errors>
+
+  
+
+
+
+
+		</module>
+    </modules>
+</configuration>

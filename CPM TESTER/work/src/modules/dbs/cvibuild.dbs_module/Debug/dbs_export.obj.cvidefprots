@@ -1,0 +1,10 @@
+[dbsexport_new]
+Class="Function"
+Prototype="struct _SElException *dbsexport_new(struct _SDBSExport **pDBSExportPtr, void *pDBS);"
+SourceLocation="c:\work\src\modules\dbs\dbs_export.c:110:1"
+
+[dbsexport_delete]
+Class="Function"
+Prototype="struct _SElException *dbsexport_delete(struct _SDBSExport **pDBSExportPtr);"
+SourceLocation="c:\work\src\modules\dbs\dbs_export.c:140:1"
+

@@ -1,0 +1,11 @@
+-inrc c:\work\src\gui\info\cvibuild.info\Debug\resources.in.rc
+-outrc c:\work\src\gui\info\cvibuild.info\Debug\resources.out.rc
+-inhdef c:\work\src\gui\info\cvibuild.info\Debug\info_plugin.h.hdefs
+-outdef c:\work\src\gui\info\cvibuild.info\Debug\info.dll.defs
+-indefprot c:\work\src\gui\info\cvibuild.info\Debug\eleventdata.obj.cvidefprots
+-indefprot c:\work\src\gui\info\cvibuild.info\Debug\elstring.obj.cvidefprots
+-indefprot c:\work\src\gui\info\cvibuild.info\Debug\Exception.obj.cvidefprots
+-indefprot c:\work\src\gui\info\cvibuild.info\Debug\info.obj.cvidefprots
+-indefprot c:\work\src\gui\info\cvibuild.info\Debug\language.obj.cvidefprots
+-dllName info.dll
+-addNITypeInfo 

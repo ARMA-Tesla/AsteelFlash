@@ -1,0 +1,7 @@
+LIBRARY powers
+
+EXPORTS
+UnloadElcomModule
+InitializeElcomModule
+LoadElcomModule
+GetModuleAttribute

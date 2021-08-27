@@ -1,0 +1,15 @@
+[dbslineprocesslist_new]
+Class="Function"
+Prototype="struct _SElException *dbslineprocesslist_new(struct _SDBSLineProcessList **pDBSLineProcessListPtr, void *pDBS);"
+SourceLocation="c:\work\src\modules\dbs\dbs_lineprocess.c:24:1"
+
+[dbslineprocesslist_delete]
+Class="Function"
+Prototype="struct _SElException *dbslineprocesslist_delete(struct _SDBSLineProcessList **pDBSLineProcessListPtr);"
+SourceLocation="c:\work\src\modules\dbs\dbs_lineprocess.c:52:1"
+
+[compare_Process]
+Class="Function"
+Prototype="int compare_Process(const void *a, const void *b);"
+SourceLocation="c:\work\src\modules\dbs\dbs_lineprocess.c:225:1"
+

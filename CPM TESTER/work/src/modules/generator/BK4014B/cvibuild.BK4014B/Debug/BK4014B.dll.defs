@@ -1,0 +1,12 @@
+LIBRARY BK4014B
+
+EXPORTS
+ClearError
+SystemError
+SetFonction
+SetOutput
+SetModeContinuous
+Read
+Write
+Disconnect
+Connect

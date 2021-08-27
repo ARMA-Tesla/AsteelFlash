@@ -1,0 +1,54 @@
+HDRS = 	"c:\\work\\elcom\\valeo\\UTSystem\\src\\modules"
+	"c:\\work\\ELCOM\\valeo\\UTSystem\\include"
+	"c:\\work\\ELCOM\\Valeo\\UTSystem\\src\\shared"
+	"c:\\work\\include"
+	"c:\\work\\src\\shared"
+	"c:\\work\\src\\modules"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\clang\\3.3"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\work\\src\\gui\\kosu"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2019\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\bin"
+	;
+LOCATE on "dbs.h" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "eleventdata.c" = "c:\\work\\src\\shared\\eventfactory" ;
+LOCATE on "elstring.c" = "c:\\work\\src\\shared\\string" ;
+LOCATE on "elstring.h" = "c:\\work\\include" ;
+LOCATE on "Exception.c" = "c:\\work\\src\\shared\\exception" ;
+LOCATE on "Exception.h" = "c:\\work\\src\\shared\\exception" ;
+LOCATE on "kosu.c" = "c:\\work\\src\\gui\\kosu" ;
+LOCATE on "kosu.h" = "c:\\work\\src\\gui\\kosu" ;
+LOCATE on "kosu_plugin.h" = "c:\\work\\src\\gui\\kosu" ;
+LOCATE on "language.c" = "c:\\work\\src\\shared\\language" ;
+LOCATE on "piechart.c" = "c:\\work\\src\\gui\\kosu" ;
+LOCATE on "piechart.h" = "c:\\work\\src\\gui\\kosu" ;
+LOCATE on "trans_language.h" = "c:\\work\\src\\gui\\kosu" ;
+Object "c:\\work\\src\\gui\\kosu\\cvibuild.kosu\\Release\\piechart.obj" : "c:\\work\\src\\gui\\kosu\\piechart.c" ;
+FILENUM on "c:\\work\\src\\gui\\kosu\\cvibuild.kosu\\Release\\piechart.obj" = 1 ;
+DEFPROTS on "c:\\work\\src\\gui\\kosu\\cvibuild.kosu\\Release\\piechart.obj" = "c:\\work\\src\\gui\\kosu\\cvibuild.kosu\\Release\\piechart.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\gui\\kosu\\cvibuild.kosu\\Release\\piechart.obj" = "c:\\work\\src\\gui\\kosu\\cvibuild.kosu\\Release\\piechart.obj.out" ;
+PrjObjects += "c:\\work\\src\\gui\\kosu\\cvibuild.kosu\\Release\\piechart.obj" ;
+Depends all : $(PrjObjects) ;

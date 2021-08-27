@@ -1,0 +1,31 @@
+[StatusStations]
+Class="Var"
+
+[PickAndPlace]
+Class="Var"
+
+
+
+
+
+
+[testseq_new]
+Class="Function"
+Prototype="struct _SElException *testseq_new(struct _STestSequence **pTestSequence);"
+
+[testseq_delete]
+Class="Function"
+Prototype="struct _SElException *testseq_delete(struct _STestSequence **pTestSeq);"
+
+[SaveXmlResultFile]
+Class="Function"
+Prototype="void SaveXmlResultFile(struct _STestParam *pTestParam, int failed);"
+
+[LogAsteelFile]
+Class="Function"
+Prototype="void LogAsteelFile(struct _STestParam *pTestParam, int failed);"
+
+[InsertionMesures_DB]
+Class="Function"
+Prototype="void InsertionMesures_DB(struct _STestParam *pTestParam, int failed);"
+

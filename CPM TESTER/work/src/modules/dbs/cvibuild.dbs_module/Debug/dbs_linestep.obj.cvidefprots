@@ -1,0 +1,20 @@
+[dbslinesteplist_new]
+Class="Function"
+Prototype="struct _SElException *dbslinesteplist_new(struct _SDBSLineStepList **pDBSLineStepListPtr, void *pDBS);"
+SourceLocation="c:\work\src\modules\dbs\dbs_linestep.c:27:1"
+
+[dbslinesteplist_delete]
+Class="Function"
+Prototype="struct _SElException *dbslinesteplist_delete(struct _SDBSLineStepList **pDBSLineStepListPtr);"
+SourceLocation="c:\work\src\modules\dbs\dbs_linestep.c:57:1"
+
+[compare_Step]
+Class="Function"
+Prototype="int compare_Step(const void *a, const void *b);"
+SourceLocation="c:\work\src\modules\dbs\dbs_linestep.c:234:1"
+
+[compare_Step2]
+Class="Function"
+Prototype="int compare_Step2(const void *a, const void *b);"
+SourceLocation="c:\work\src\modules\dbs\dbs_linestep.c:269:1"
+

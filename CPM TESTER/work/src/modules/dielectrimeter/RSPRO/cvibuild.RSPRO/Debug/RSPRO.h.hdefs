@@ -1,0 +1,40 @@
+[Connect]
+Class="Function"
+Prototype="struct _SElException *Connect(struct _Dielectrimeter *me) __declspec(dllexport);"
+
+[Disconnect]
+Class="Function"
+Prototype="struct _SElException *Disconnect(struct _Dielectrimeter *me) __declspec(dllexport);"
+
+[Write]
+Class="Function"
+Prototype="struct _SElException *Write(struct _Dielectrimeter *me, const char *command) __declspec(dllexport);"
+
+[Read]
+Class="Function"
+Prototype="struct _SElException *Read(struct _Dielectrimeter *me, const char *read) __declspec(dllexport);"
+
+[SetModeManual]
+Class="Function"
+Prototype="struct _SElException *SetModeManual(struct _Dielectrimeter *me) __declspec(dllexport);"
+
+[SetStep]
+Class="Function"
+Prototype="struct _SElException *SetStep(struct _Dielectrimeter *me, int step) __declspec(dllexport);"
+
+[SetOutput]
+Class="Function"
+Prototype="struct _SElException *SetOutput(struct _Dielectrimeter *me, int output) __declspec(dllexport);"
+
+[TestResult]
+Class="Function"
+Prototype="struct _SElException *TestResult(struct _Dielectrimeter *me, int *result, double *voltage_kv, double *current_mA) __declspec(dllexport);"
+
+[SystemError]
+Class="Function"
+Prototype="struct _SElException *SystemError(struct _Dielectrimeter *me, char *error) __declspec(dllexport);"
+
+[ClearError]
+Class="Function"
+Prototype="struct _SElException *ClearError(struct _Dielectrimeter *me) __declspec(dllexport);"
+

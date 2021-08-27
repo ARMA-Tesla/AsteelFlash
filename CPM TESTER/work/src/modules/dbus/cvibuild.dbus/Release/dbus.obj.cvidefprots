@@ -1,0 +1,30 @@
+[GetVDBusPortFlags]
+Class="Function"
+Prototype="enum VDBusPortFlags GetVDBusPortFlags(char *VDBusPortFlags);"
+SourceLocation="c:\work\src\modules\dbus\dbus.c:133:1"
+
+[LoadLibrary_DBUS]
+Class="Function"
+Prototype="struct _SElException *LoadLibrary_DBUS(const char *libary_name);"
+SourceLocation="c:\work\src\modules\dbus\dbus.c:164:1"
+
+[dbus_new]
+Class="Function"
+Prototype="struct _SElException *dbus_new(struct _SDBUS **pDBUS);"
+SourceLocation="c:\work\src\modules\dbus\dbus.c:203:1"
+
+[dbus_delete]
+Class="Function"
+Prototype="struct _SElException *dbus_delete(struct _SDBUS **pDBUS);"
+SourceLocation="c:\work\src\modules\dbus\dbus.c:277:1"
+
+[dbuslist_new]
+Class="Function"
+Prototype="struct _SElException *dbuslist_new(struct _SDBUSList **pDBUS);"
+SourceLocation="c:\work\src\modules\dbus\dbus.c:847:1"
+
+[dbuslist_delete]
+Class="Function"
+Prototype="struct _SElException *dbuslist_delete(struct _SDBUSList **pDBUS);"
+SourceLocation="c:\work\src\modules\dbus\dbus.c:910:1"
+

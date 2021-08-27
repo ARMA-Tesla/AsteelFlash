@@ -1,0 +1,1 @@
+-force-include-file "elstring.c";"c:\work\src\shared\string\elstring.c" -force-include-file "Exception.c";"c:\work\src\shared\exception\Exception.c" -force-include-file "Exception.h";"c:\work\src\shared\exception\Exception.h" -force-include-file "power_gui.c";"c:\work\src\gui\power\power_gui.c" -force-include-file "power_gui_plugin.h";"c:\work\src\gui\power\power_gui_plugin.h" 

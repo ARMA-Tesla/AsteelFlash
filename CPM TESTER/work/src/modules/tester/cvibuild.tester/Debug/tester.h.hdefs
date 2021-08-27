@@ -1,0 +1,22 @@
+
+
+
+
+
+
+[tester_new]
+Class="Function"
+Prototype="struct _SElException *tester_new(struct _STester **pTester);"
+
+[tester_delete]
+Class="Function"
+Prototype="struct _SElException *tester_delete(struct _STester **pTester);"
+
+[JigThread]
+Class="Function"
+Prototype="struct _SElException *JigThread(struct _STester *me);"
+
+[TableThread]
+Class="Function"
+Prototype="struct _SElException *TableThread(struct _STester *me);"
+

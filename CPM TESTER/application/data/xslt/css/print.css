@@ -1,0 +1,75 @@
+/*
+  * Base Style Sheet for XSLT ELCOM DVI
+  * version: screen.css, 2006/08
+  * (c) 2005, Ales Skotnica
+  * Frenstat pod Rahostem, Czech Republic
+  * tel.: +420 775 565 850, http://www.skotnica.eu
+*/
+
+
+
+/***************** Body */
+
+    body {margin:0px;padding:5px;background:#fff;font-family:'Arial CE', 'Helvetica CE', Arial, Helvetica, sans-serif;font-size:95%;font-style:normal;font-weight:normal;line-height:1;text-align:left;color:#000;}
+
+/***************** Main HTML */
+    q           {font-style:italic;quotes:"„" "“" "‚" "‘";}
+    q:before    {content:open-quote;}
+    q:after     {content:close-quote;}
+    form        {margin:0;}
+    img         {border:0;}
+    p               {margin:7px 0;padding: 0;}
+    * html td, * html th, * html caption { font-size: 70%;}
+
+/***************** Links */
+	a, a:link, a:visited                {color:#000000;text-decoration:none;}
+	a:hover, a:focus                    {color:#000000;text-decoration:none;}
+	a:active                            {color:#000000;text-decoration:none;}
+    a img, a:link img, a:visited img    {border-style:none;background-color:transparent;}
+
+/***************** Def. tags */
+    .nscr, .txt     {display:none;}
+    hr, .clr        {clear:both;display:none;}
+	.error, .irow_error {
+            color: #000000;
+			font-weight: bold;
+            text-decoration: underline;
+        }
+
+	.nok, .irow_error {
+            color: #000000;
+			font-weight: bold;
+            text-decoration: none;
+        }
+/***************** Titles */
+    h2 {font-size:145%; font-weight: normal; color: #000000;  }
+    h3 {font-size:130%; font-weight: bold; color: #000000;  }
+    h4 {font-size:120%; font-weight: bold; color: #000000;  }
+    h5 {font-size:110%; font-weight: bold; color: #000000;}
+    h6 {font-size: 100%; font-weight: bold; color: #000;}
+
+/***************** Table Head */
+
+    #THead {width:100%;margin-bottom:15px;border:none;background:transparent;}
+    #THead .label {font-weight:normal;}
+    #THead .value {font-weight:bold;}
+
+
+/***************** Table Table */
+
+    #TTable    {width:100%;}
+    #TTable thead th   {border-bottom:double #000000;border-top:solid 1px #000000;border-left:solid 1px #000000;text-align:center;}
+    #TTable thead th.e {border-right:solid 1px #000000;}
+
+    #TTable tbody td {border-bottom:solid 1px #000000;border-left:solid 1px #000000;}
+    #TTable tbody td.e {border-right:solid 1px #000000;}
+    #TTable tbody  {border-left:solid 1px #000000;border-right:solid 1px #000000;}
+    #TTable tbody td pre {font-size:110%; padding: 5px 5px 5px 100px;}
+
+    #TTable tfoot td {padding-top:15px; color:#000000;}
+    #TTable tbody tr td.tdInfo { display: none; }
+
+
+
+
+

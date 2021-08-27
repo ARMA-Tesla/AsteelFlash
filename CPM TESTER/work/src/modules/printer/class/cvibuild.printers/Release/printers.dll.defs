@@ -1,0 +1,7 @@
+LIBRARY printers
+
+EXPORTS
+UnloadElcomModule
+InitializeElcomModule
+LoadElcomModule
+GetModuleAttribute

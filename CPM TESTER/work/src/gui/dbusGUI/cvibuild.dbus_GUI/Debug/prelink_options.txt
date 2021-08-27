@@ -1,0 +1,10 @@
+-inrc c:\work\src\gui\dbusGUI\cvibuild.dbus_GUI\Debug\resources.in.rc
+-outrc c:\work\src\gui\dbusGUI\cvibuild.dbus_GUI\Debug\resources.out.rc
+-inhdef c:\work\src\gui\dbusGUI\cvibuild.dbus_GUI\Debug\dbusGUI_plugin.h.hdefs
+-inhdef c:\work\src\gui\dbusGUI\cvibuild.dbus_GUI\Debug\lang_support.h.hdefs
+-outdef c:\work\src\gui\dbusGUI\cvibuild.dbus_GUI\Debug\dbus_GUI.dll.defs
+-indefprot c:\work\src\gui\dbusGUI\cvibuild.dbus_GUI\Debug\dbusGUI.obj.cvidefprots
+-indefprot c:\work\src\gui\dbusGUI\cvibuild.dbus_GUI\Debug\Exception.obj.cvidefprots
+-indefprot c:\work\src\gui\dbusGUI\cvibuild.dbus_GUI\Debug\language.obj.cvidefprots
+-dllName dbus_GUI.dll
+-addNITypeInfo 

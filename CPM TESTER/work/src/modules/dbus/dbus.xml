@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<configuration>
+	<modules>
+		<module id="{0209bd7a-473a-11dc-8314-0800200c9a66}">
+			<name>CAN Module</name>
+		    	<settings>
+				<configure channel="CAN1">
+					<cardOption>CPU;PL3</cardOption>
+	                		<openOption>CAN:0x8000FAC3</openOption>
+	                		<!-- device type:baud rate ( Common baud rates are supported,
+					 including 33333, 83333, 100000, 125000, 250000, 500000,
+					  and 1000000
+					  or
+					  0x8000zzyy, where yy is the desired value for register 0 (BTR0),
+					  and zz is the desired value for register 1 (BTR1) of the CAN controller.) -->
+				</configure>
+			</settings>
+		</module>
+	</modules>
+</configuration>

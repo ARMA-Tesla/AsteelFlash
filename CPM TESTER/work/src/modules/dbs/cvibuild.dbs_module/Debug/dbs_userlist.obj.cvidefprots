@@ -1,0 +1,30 @@
+[dbsrights_new]
+Class="Function"
+Prototype="struct _SElException *dbsrights_new(struct _SDBSUserRights **pDBSUserRightsPtr, int count, void *pDBS);"
+SourceLocation="c:\work\src\modules\dbs\dbs_userlist.c:31:1"
+
+[dbsrights_delete]
+Class="Function"
+Prototype="struct _SElException *dbsrights_delete(struct _SDBSUserRights **pDBSUserRightsPtr);"
+SourceLocation="c:\work\src\modules\dbs\dbs_userlist.c:49:1"
+
+[dbsuser_new]
+Class="Function"
+Prototype="struct _SElException *dbsuser_new(struct _SDBSUser **pDBSUserPtr, int count, void *pDBS);"
+SourceLocation="c:\work\src\modules\dbs\dbs_userlist.c:64:1"
+
+[dbsuser_delete]
+Class="Function"
+Prototype="struct _SElException *dbsuser_delete(struct _SDBSUser **pDBSUserPtr);"
+SourceLocation="c:\work\src\modules\dbs\dbs_userlist.c:91:1"
+
+[dbsuserlist_new]
+Class="Function"
+Prototype="struct _SElException *dbsuserlist_new(struct _SDBSUserList **pDBSUserListPtr, void *pDBS);"
+SourceLocation="c:\work\src\modules\dbs\dbs_userlist.c:106:1"
+
+[dbsuserlist_delete]
+Class="Function"
+Prototype="struct _SElException *dbsuserlist_delete(struct _SDBSUserList **pDBSUserListPtr);"
+SourceLocation="c:\work\src\modules\dbs\dbs_userlist.c:136:1"
+

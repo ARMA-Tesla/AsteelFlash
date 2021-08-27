@@ -1,0 +1,30 @@
+[LoadAllModules]
+Class="Function"
+Prototype="struct _SElException *LoadAllModules(const char *modulePath, struct _SObjList **pModuleList, struct _SPluginArgs *pParam);"
+SourceLocation="c:\work\src\shared\modules\elmodule.c:122:1"
+
+[UnLoadAllModules]
+Class="Function"
+Prototype="struct _SElException *UnLoadAllModules(struct _SObjList **pModuleList);"
+SourceLocation="c:\work\src\shared\modules\elmodule.c:201:1"
+
+[GetModulesCount]
+Class="Function"
+Prototype="int GetModulesCount();"
+SourceLocation="c:\work\src\shared\modules\elmodule.c:219:1"
+
+[GetModuleInfo]
+Class="Function"
+Prototype="struct _SElException *GetModuleInfo(int index, unsigned int attribute, unsigned int size, void *value);"
+SourceLocation="c:\work\src\shared\modules\elmodule.c:228:1"
+
+[SetLogFnc]
+Class="Function"
+Prototype="struct _SElException *SetLogFnc(struct _SElException *(*_ImportedLogFnc)(const char *));"
+SourceLocation="c:\work\src\shared\modules\elmodule.c:279:1"
+
+[CompareVersionOfModules]
+Class="Function"
+Prototype="int CompareVersionOfModules(const void *element1, const void *element2);"
+SourceLocation="c:\work\src\shared\modules\elmodule.c:926:1"
+

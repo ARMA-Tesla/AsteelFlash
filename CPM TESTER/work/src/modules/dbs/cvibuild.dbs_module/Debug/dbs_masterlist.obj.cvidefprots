@@ -1,0 +1,15 @@
+[dbsmasterlist_new]
+Class="Function"
+Prototype="struct _SElException *dbsmasterlist_new(struct _SDBSMasterList **pDBSMasterListPtr, void *pDBS);"
+SourceLocation="c:\work\src\modules\dbs\dbs_masterlist.c:32:1"
+
+[dbsmasterlist_delete]
+Class="Function"
+Prototype="struct _SElException *dbsmasterlist_delete(struct _SDBSMasterList **pDBSMasterListPtr);"
+SourceLocation="c:\work\src\modules\dbs\dbs_masterlist.c:66:1"
+
+[compare_ProductMaster]
+Class="Function"
+Prototype="int compare_ProductMaster(const void *a, const void *b);"
+SourceLocation="c:\work\src\modules\dbs\dbs_masterlist.c:261:1"
+

@@ -1,0 +1,750 @@
+[BKLib2_New_DBKTree]
+Class="Function"
+Prototype="long BKLib2_New_DBKTree(int panel, const char *label, int top, int left, int *controlID, int *UILError);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:187:17"
+
+[BKLib2_Open_DBKTree]
+Class="Function"
+Prototype="long BKLib2_Open_DBKTree(const char *fileName, int panel, const char *label, int top, int left, int *controlID, int *UILError);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:204:17"
+
+[BKLib2__DBKTreeAddColumn]
+Class="Function"
+Prototype="long BKLib2__DBKTreeAddColumn(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyCol, const char *name, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:219:17"
+
+[BKLib2__DBKTreeGetColumnName]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetColumnName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyCol, char **returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:234:17"
+
+[BKLib2__DBKTreeGetColumnCount]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetColumnCount(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:249:17"
+
+[BKLib2__DBKTreeRemoveColumn]
+Class="Function"
+Prototype="long BKLib2__DBKTreeRemoveColumn(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyCol, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:262:17"
+
+[BKLib2__DBKTreeResetContent]
+Class="Function"
+Prototype="long BKLib2__DBKTreeResetContent(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:277:17"
+
+[BKLib2__DBKTreeSetColumnName]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetColumnName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyCol, const char *name, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:290:17"
+
+[BKLib2__DBKTreeAddNode]
+Class="Function"
+Prototype="long BKLib2__DBKTreeAddNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyParent, const char *keyNode, const char *text, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:306:17"
+
+[BKLib2__DBKTreeRemoveNode]
+Class="Function"
+Prototype="long BKLib2__DBKTreeRemoveNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:323:17"
+
+[BKLib2__DBKTreeSetNodeItemText]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetNodeItemText(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, const char *text, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:338:17"
+
+[BKLib2__DBKTreeGetNodeItemText]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetNodeItemText(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, char **returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:356:17"
+
+[BKLib2__DBKTreeGetNodeItemTextEx]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetNodeItemTextEx(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, char **returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:373:17"
+
+[BKLib2__DBKTreeSetColumnWidth]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetColumnWidth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyCol, long nWidth, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:390:17"
+
+[BKLib2__DBKTreeSetNodeItemImage]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetNodeItemImage(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, short nImage);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:405:17"
+
+[BKLib2__DBKTreeSetRedraw]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetRedraw(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short bRedraw, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:421:17"
+
+[BKLib2__DBKTreeExpand]
+Class="Function"
+Prototype="long BKLib2__DBKTreeExpand(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:435:17"
+
+[BKLib2__DBKTreeCollapse]
+Class="Function"
+Prototype="long BKLib2__DBKTreeCollapse(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:449:17"
+
+[BKLib2__DBKTreeExpandLevel]
+Class="Function"
+Prototype="long BKLib2__DBKTreeExpandLevel(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long nLevel, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:463:17"
+
+[BKLib2__DBKTreeSetNodeItemFormat]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetNodeItemFormat(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, short nodeFormat);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:477:17"
+
+[BKLib2__DBKTreeGetNodeItemFormat]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetNodeItemFormat(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:493:17"
+
+[BKLib2__DBKTreeSetNodeFontStyle]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetNodeFontStyle(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, short nodeStyle);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:510:17"
+
+[BKLib2__DBKTreeGetNodeFontStyle]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetNodeFontStyle(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:525:17"
+
+[BKLib2__DBKTreeGetParentNode]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetParentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, char **returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:540:17"
+
+[BKLib2__DBKTreeSetScrollBarVisible]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetScrollBarVisible(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short nBar, short nNewValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:555:17"
+
+[BKLib2__DBKTreeGetScrollBarVisible]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetScrollBarVisible(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short nBar, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:569:17"
+
+[BKLib2__DBKTreeSetNodeItemFontStyle]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetNodeItemFontStyle(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, short nodeStyle);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:584:17"
+
+[BKLib2__DBKTreeGetNodeItemFontStyle]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetNodeItemFontStyle(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:600:17"
+
+[BKLib2__DBKTreeSetNodeItemTextColor]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetNodeItemTextColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, unsigned long nNewValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:617:17"
+
+[BKLib2__DBKTreeGetNodeItemTextColor]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetNodeItemTextColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, unsigned long *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:633:17"
+
+[BKLib2__DBKTreeSetNodeItemBackColor]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetNodeItemBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, unsigned long nNewValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:650:17"
+
+[BKLib2__DBKTreeGetNodeItemBackColor]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetNodeItemBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, unsigned long *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:666:17"
+
+[BKLib2__DBKTreeIsExpanded]
+Class="Function"
+Prototype="long BKLib2__DBKTreeIsExpanded(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:683:17"
+
+[BKLib2__DBKTreeMoveNode]
+Class="Function"
+Prototype="long BKLib2__DBKTreeMoveNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyTargetNode, short nPosition, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:698:17"
+
+[BKLib2__DBKTreeSetPopupMenu]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetPopupMenu(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *menuItems, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:715:17"
+
+[BKLib2__DBKTreeSetNodeItemEditable]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetNodeItemEditable(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, short bEditable);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:730:17"
+
+[BKLib2__DBKTreeGetNodeItemEditable]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetNodeItemEditable(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:746:17"
+
+[BKLib2__DBKTreeFromArray]
+Class="Function"
+Prototype="long BKLib2__DBKTreeFromArray(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *vArray, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:763:17"
+
+[BKLib2__DBKTreeToArray]
+Class="Function"
+Prototype="long BKLib2__DBKTreeToArray(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:777:17"
+
+[BKLib2__DBKTreeFromString]
+Class="Function"
+Prototype="long BKLib2__DBKTreeFromString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *strString, const char *chSeparator, const char *chLine, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:790:17"
+
+[BKLib2__DBKTreeToString]
+Class="Function"
+Prototype="long BKLib2__DBKTreeToString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *chSeparator, const char *chLine, char **returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:808:17"
+
+[BKLib2__DBKTreeToString2]
+Class="Function"
+Prototype="long BKLib2__DBKTreeToString2(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *chSeparator, const char *chLine, char **returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:824:17"
+
+[BKLib2__DBKTreeGetColumnNext]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetColumnNext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyCol, char **returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:840:17"
+
+[BKLib2__DBKTreeGetNodeNext]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetNodeNext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, short position, char **returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:855:17"
+
+[BKLib2__DBKTreeGetNodeHasChildren]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetNodeHasChildren(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:871:17"
+
+[BKLib2__DBKTreeGetNodeItemImage]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetNodeItemImage(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:886:17"
+
+[BKLib2__DBKTreeSetNodeItemTextEx]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetNodeItemTextEx(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, const char *text, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:903:17"
+
+[BKLib2__DBKTreeEnsureVisible]
+Class="Function"
+Prototype="long BKLib2__DBKTreeEnsureVisible(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:921:17"
+
+[BKLib2__DBKTreeRenameNodeKey]
+Class="Function"
+Prototype="long BKLib2__DBKTreeRenameNodeKey(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyNew, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:935:17"
+
+[BKLib2__DBKTreeIsNodeExist]
+Class="Function"
+Prototype="long BKLib2__DBKTreeIsNodeExist(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:952:17"
+
+[BKLib2__DBKTreeSetColumnHeadFontStyle]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetColumnHeadFontStyle(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyCol, short headStyle);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:967:17"
+
+[BKLib2__DBKTreeGetColumnHeadFontStyle]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetColumnHeadFontStyle(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyCol, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:982:17"
+
+[BKLib2__DBKTreeSetColumnHeadFormat]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetColumnHeadFormat(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyCol, short headFormat);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:997:17"
+
+[BKLib2__DBKTreeGetColumnHeadFormat]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetColumnHeadFormat(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyCol, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1012:17"
+
+[BKLib2__DBKTreeGetVersion]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetVersion(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1027:17"
+
+[BKLib2__DBKTreeSetFrameBorder]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetFrameBorder(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long nNewStyle, long nNewStyleEx);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1040:17"
+
+[BKLib2__DBKTreeGetFrameBorder]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetFrameBorder(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pStyle, long *pStyleEx);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1054:17"
+
+[BKLib2__DBKTreeFromXML]
+Class="Function"
+Prototype="long BKLib2__DBKTreeFromXML(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *strXML, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1069:17"
+
+[BKLib2__DBKTreeToXML]
+Class="Function"
+Prototype="long BKLib2__DBKTreeToXML(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1083:17"
+
+[BKLib2__DBKTreeSetNodeData]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetNodeData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, long lData);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1095:17"
+
+[BKLib2__DBKTreeGetNodeData]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetNodeData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, long *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1109:17"
+
+[BKLib2__DBKTreeSetNodeItemData]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetNodeItemData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, long lData);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1124:17"
+
+[BKLib2__DBKTreeGetNodeItemData]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetNodeItemData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, long *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1139:17"
+
+[BKLib2__DBKTreeGetColumnWidth]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetColumnWidth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyCol, long *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1156:17"
+
+[BKLib2__DBKTreeSetNodeItemTipTextEnable]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetNodeItemTipTextEnable(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, short bEnable);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1171:17"
+
+[BKLib2__DBKTreeGetNodeItemTipTextEnable]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetNodeItemTipTextEnable(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *keyNode, const char *keyCol, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1187:17"
+
+[BKLib2__DBKTreeRefresh]
+Class="Function"
+Prototype="long BKLib2__DBKTreeRefresh(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1204:17"
+
+[BKLib2__DBKTreeAboutBox]
+Class="Function"
+Prototype="long BKLib2__DBKTreeAboutBox(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1216:17"
+
+[BKLib2__DBKTreeGetSelectedItem]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetSelectedItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1228:17"
+
+[BKLib2__DBKTreeSetSelectedItem]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetSelectedItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1242:17"
+
+[BKLib2__DBKTreeSetByRefSelectedItem]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetByRefSelectedItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1257:17"
+
+[BKLib2__DBKTreeGetBackColor]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1272:17"
+
+[BKLib2__DBKTreeSetBackColor]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1286:17"
+
+[BKLib2__DBKTreeSetByRefBackColor]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetByRefBackColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1301:17"
+
+[BKLib2__DBKTreeGetBackTextColor]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetBackTextColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1316:17"
+
+[BKLib2__DBKTreeSetBackTextColor]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetBackTextColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1330:17"
+
+[BKLib2__DBKTreeSetByRefBackTextColor]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetByRefBackTextColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1345:17"
+
+[BKLib2__DBKTreeGetForeTextColor]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetForeTextColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1360:17"
+
+[BKLib2__DBKTreeSetForeTextColor]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetForeTextColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1374:17"
+
+[BKLib2__DBKTreeSetByRefForeTextColor]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetByRefForeTextColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1389:17"
+
+[BKLib2__DBKTreeGetColumnHeadingVisible]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetColumnHeadingVisible(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1404:17"
+
+[BKLib2__DBKTreeSetColumnHeadingVisible]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetColumnHeadingVisible(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1418:17"
+
+[BKLib2__DBKTreeSetByRefColumnHeadingVisible]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetByRefColumnHeadingVisible(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1433:17"
+
+[BKLib2__DBKTreeGetGridLines]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetGridLines(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1448:17"
+
+[BKLib2__DBKTreeSetGridLines]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetGridLines(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1462:17"
+
+[BKLib2__DBKTreeSetByRefGridLines]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetByRefGridLines(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1477:17"
+
+[BKLib2__DBKTreeGetGridLineColor]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetGridLineColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1492:17"
+
+[BKLib2__DBKTreeSetGridLineColor]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetGridLineColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1506:17"
+
+[BKLib2__DBKTreeSetByRefGridLineColor]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetByRefGridLineColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1521:17"
+
+[BKLib2__DBKTreeGetImageList]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetImageList(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1536:17"
+
+[BKLib2__DBKTreeSetImageList]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetImageList(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1550:17"
+
+[BKLib2__DBKTreeSetByRefImageList]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetByRefImageList(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1565:17"
+
+[BKLib2__DBKTreeGetFont]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetFont(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1580:17"
+
+[BKLib2__DBKTreeSetFont]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetFont(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1594:17"
+
+[BKLib2__DBKTreeSetByRefFont]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetByRefFont(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1609:17"
+
+[BKLib2__DBKTreeGetColumnResizing]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetColumnResizing(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1624:17"
+
+[BKLib2__DBKTreeSetColumnResizing]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetColumnResizing(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1638:17"
+
+[BKLib2__DBKTreeSetByRefColumnResizing]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetByRefColumnResizing(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1653:17"
+
+[BKLib2__DBKTreeGetAutoImages]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetAutoImages(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1668:17"
+
+[BKLib2__DBKTreeSetAutoImages]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetAutoImages(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1682:17"
+
+[BKLib2__DBKTreeSetByRefAutoImages]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetByRefAutoImages(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1697:17"
+
+[BKLib2__DBKTreeGetTreeLineColor]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetTreeLineColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1712:17"
+
+[BKLib2__DBKTreeSetTreeLineColor]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetTreeLineColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1726:17"
+
+[BKLib2__DBKTreeSetByRefTreeLineColor]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetByRefTreeLineColor(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, unsigned long *newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1741:17"
+
+[BKLib2__DBKTreeGetTreeLines]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetTreeLines(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1756:17"
+
+[BKLib2__DBKTreeSetTreeLines]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetTreeLines(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1770:17"
+
+[BKLib2__DBKTreeSetByRefTreeLines]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetByRefTreeLines(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1785:17"
+
+[BKLib2__DBKTreeGetEnableEventMouseOverCell]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetEnableEventMouseOverCell(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1800:17"
+
+[BKLib2__DBKTreeSetEnableEventMouseOverCell]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetEnableEventMouseOverCell(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1814:17"
+
+[BKLib2__DBKTreeSetByRefEnableEventMouseOverCell]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetByRefEnableEventMouseOverCell(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1829:17"
+
+[BKLib2__DBKTreeGetEnableEventModify]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetEnableEventModify(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1844:17"
+
+[BKLib2__DBKTreeSetEnableEventModify]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetEnableEventModify(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1858:17"
+
+[BKLib2__DBKTreeSetByRefEnableEventModify]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetByRefEnableEventModify(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1873:17"
+
+[BKLib2__DBKTreeGetEditable]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetEditable(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1888:17"
+
+[BKLib2__DBKTreeSetEditable]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetEditable(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1902:17"
+
+[BKLib2__DBKTreeSetByRefEditable]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetByRefEditable(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1916:17"
+
+[BKLib2__DBKTreeGetEnableDragAndDrop]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetEnableDragAndDrop(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1931:17"
+
+[BKLib2__DBKTreeSetEnableDragAndDrop]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetEnableDragAndDrop(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1945:17"
+
+[BKLib2__DBKTreeSetByRefEnableDragAndDrop]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetByRefEnableDragAndDrop(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1960:17"
+
+[BKLib2__DBKTreeGetDragMode]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetDragMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1975:17"
+
+[BKLib2__DBKTreeSetDragMode]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetDragMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:1989:17"
+
+[BKLib2__DBKTreeSetByRefDragMode]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetByRefDragMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2003:17"
+
+[BKLib2__DBKTreeGetDragIcon]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetDragIcon(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2018:17"
+
+[BKLib2__DBKTreeSetDragIcon]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetDragIcon(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2032:17"
+
+[BKLib2__DBKTreeSetByRefDragIcon]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetByRefDragIcon(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2046:17"
+
+[BKLib2__DBKTreeGetEnableSelection]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetEnableSelection(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2061:17"
+
+[BKLib2__DBKTreeSetEnableSelection]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetEnableSelection(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2075:17"
+
+[BKLib2__DBKTreeSetByRefEnableSelection]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetByRefEnableSelection(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2090:17"
+
+[BKLib2__DBKTreeGetEnableFocusCell]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetEnableFocusCell(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2105:17"
+
+[BKLib2__DBKTreeSetEnableFocusCell]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetEnableFocusCell(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2119:17"
+
+[BKLib2__DBKTreeSetByRefEnableFocusCell]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetByRefEnableFocusCell(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2134:17"
+
+[BKLib2__DBKTreeGetEnableTreeKeyDirection]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetEnableTreeKeyDirection(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2149:17"
+
+[BKLib2__DBKTreeSetEnableTreeKeyDirection]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetEnableTreeKeyDirection(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2163:17"
+
+[BKLib2__DBKTreeSetByRefEnableTreeKeyDirection]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetByRefEnableTreeKeyDirection(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2178:17"
+
+[BKLib2__DBKTreeGetListMode]
+Class="Function"
+Prototype="long BKLib2__DBKTreeGetListMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *returnValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2193:17"
+
+[BKLib2__DBKTreeSetListMode]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetListMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2207:17"
+
+[BKLib2__DBKTreeSetByRefListMode]
+Class="Function"
+Prototype="long BKLib2__DBKTreeSetByRefListMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *newValue);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2221:17"
+
+[BKLib2_New_DBKGrid]
+Class="Function"
+Prototype="long BKLib2_New_DBKGrid(int panel, const char *label, int top, int left, int *controlID, int *UILError);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2236:17"
+
+[BKLib2_Open_DBKGrid]
+Class="Function"
+Prototype="long BKLib2_Open_DBKGrid(const char *fileName, int panel, const char *label, int top, int left, int *controlID, int *UILError);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2253:17"
+
+[BKLib2__DBKGridRefresh]
+Class="Function"
+Prototype="long BKLib2__DBKGridRefresh(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2268:17"
+
+[BKLib2__DBKGridAboutBox]
+Class="Function"
+Prototype="long BKLib2__DBKGridAboutBox(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2280:17"
+
+[BKLib2__DBKTreeEventsRegOnNodeClick]
+Class="Function"
+Prototype="long BKLib2__DBKTreeEventsRegOnNodeClick(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2591:17"
+
+[BKLib2__DBKTreeEventsRegOnExpand]
+Class="Function"
+Prototype="long BKLib2__DBKTreeEventsRegOnExpand(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2607:17"
+
+[BKLib2__DBKTreeEventsRegOnCollapse]
+Class="Function"
+Prototype="long BKLib2__DBKTreeEventsRegOnCollapse(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2623:17"
+
+[BKLib2__DBKTreeEventsRegOnPopupMenuCommand]
+Class="Function"
+Prototype="long BKLib2__DBKTreeEventsRegOnPopupMenuCommand(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *, char *, long), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2639:17"
+
+[BKLib2__DBKTreeEventsRegOnMouseOverCell]
+Class="Function"
+Prototype="long BKLib2__DBKTreeEventsRegOnMouseOverCell(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2655:17"
+
+[BKLib2__DBKTreeEventsRegOnModify]
+Class="Function"
+Prototype="long BKLib2__DBKTreeEventsRegOnModify(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *, char *, long), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2671:17"
+
+[BKLib2__DBKTreeEventsRegOnPrePopupMenuCallback]
+Class="Function"
+Prototype="long BKLib2__DBKTreeEventsRegOnPrePopupMenuCallback(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *, char *, char **), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2687:17"
+
+[BKLib2__DBKTreeEventsRegOnDragOver]
+Class="Function"
+Prototype="long BKLib2__DBKTreeEventsRegOnDragOver(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *, short, short), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2703:17"
+
+[BKLib2__DBKTreeEventsRegOnDragDrop]
+Class="Function"
+Prototype="long BKLib2__DBKTreeEventsRegOnDragDrop(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\bklib\bklib2.c:2719:17"
+

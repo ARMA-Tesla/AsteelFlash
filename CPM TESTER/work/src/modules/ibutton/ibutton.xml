@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<configuration>
+    <modules>
+        <module id="{1C996062-04CD-11DC-845C-8FC855D89593}">
+            <name>iButton Module</name>
+            <command>
+				<read>I</read>
+				<reset>r</reset>
+			</command>
+			<resource>
+				<name>com8</name>
+			</resource>
+        </module>
+    </modules>
+</configuration>

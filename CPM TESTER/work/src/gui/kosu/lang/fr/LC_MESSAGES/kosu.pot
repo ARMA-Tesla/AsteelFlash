@@ -1,0 +1,12 @@
+
+msgid "Good"
+msgstr "Bon"
+
+msgid "Bad"
+msgstr "Défectueux"
+
+msgid "Pause"
+msgstr "Pause"
+
+msgid ""
+msgstr ""

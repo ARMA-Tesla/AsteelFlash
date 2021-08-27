@@ -1,0 +1,9 @@
+-inrc c:\work\src\gui\dielectrimeter\cvibuild.dielectrimeter_gui\Debug\resources.in.rc
+-outrc c:\work\src\gui\dielectrimeter\cvibuild.dielectrimeter_gui\Debug\resources.out.rc
+-inhdef c:\work\src\gui\dielectrimeter\cvibuild.dielectrimeter_gui\Debug\dielectrimeter_gui_plugin.h.hdefs
+-outdef c:\work\src\gui\dielectrimeter\cvibuild.dielectrimeter_gui\Debug\dielectrimeter_gui.dll.defs
+-indefprot c:\work\src\gui\dielectrimeter\cvibuild.dielectrimeter_gui\Debug\dielectrimeter_gui.obj.cvidefprots
+-indefprot c:\work\src\gui\dielectrimeter\cvibuild.dielectrimeter_gui\Debug\elstring.obj.cvidefprots
+-indefprot c:\work\src\gui\dielectrimeter\cvibuild.dielectrimeter_gui\Debug\Exception.obj.cvidefprots
+-dllName dielectrimeter_gui.dll
+-addNITypeInfo 

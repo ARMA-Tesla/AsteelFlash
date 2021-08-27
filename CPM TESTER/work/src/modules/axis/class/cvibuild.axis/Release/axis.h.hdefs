@@ -1,0 +1,22 @@
+
+
+
+
+
+
+[axiss_new]
+Class="Function"
+Prototype="struct _SElException *axiss_new(struct _axiss **axiss);"
+
+[axiss_delete]
+Class="Function"
+Prototype="struct _SElException *axiss_delete(struct _axiss **axiss);"
+
+[axis_new]
+Class="Function"
+Prototype="struct _SElException *axis_new(struct _axis **axis, const char *name, const char *optionString);"
+
+[axis_delete]
+Class="Function"
+Prototype="struct _SElException *axis_delete(struct _axis **axis);"
+

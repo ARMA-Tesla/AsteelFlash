@@ -1,0 +1,12 @@
+<Generators>
+	<Generator name="BK4014B_01">
+		<Configuration type="Serial" specificDll="modules/BK4014B.dll">
+			<port>9</port>
+			<BaudRate>9600</BaudRate>
+			<DataBits>8</DataBits>
+			<StopBits>10</StopBits>
+			<Parity>none</Parity>	<!-- none, odd, even, mark, space -->
+			<Handshake>none</Handshake>
+		</Configuration>
+	</Generator>
+</Generators>

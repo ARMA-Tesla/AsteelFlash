@@ -1,0 +1,17 @@
+msgid "Operators Pause"
+msgstr "Pause Opérateurs"
+
+msgid "Lack of Components"
+msgstr "Composants en Rupture de Stock"
+
+msgid "Servis"
+msgstr "Maintenance"
+
+msgid "Tester Fault"
+msgstr "Problème sur le Testeur"
+
+msgid "Product Line Fault"
+msgstr "Problème sur la Ligne de Production"
+
+msgid ""
+msgstr ""

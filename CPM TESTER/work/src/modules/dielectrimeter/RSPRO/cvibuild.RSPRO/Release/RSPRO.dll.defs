@@ -1,0 +1,13 @@
+LIBRARY RSPRO
+
+EXPORTS
+ClearError
+SystemError
+TestResult
+SetOutput
+SetStep
+SetModeManual
+Read
+Write
+Disconnect
+Connect

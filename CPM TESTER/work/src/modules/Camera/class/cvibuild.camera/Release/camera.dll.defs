@@ -1,0 +1,7 @@
+LIBRARY camera
+
+EXPORTS
+UnloadElcomModule
+InitializeElcomModule
+LoadElcomModule
+GetModuleAttribute

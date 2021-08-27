@@ -1,0 +1,42 @@
+#pragma code_page(65001)
+#include "C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\winver.h"
+
+
+2 24 "c:\\Users\\Anwar\\Desktop\\FCT12 BACKUP\\17 02 2021\\17 02 2021\\work\\src\\modules\\automat\\cvibuild.automat\\Release\\manifest.xml"
+
+
+STRINGTABLE DISCARDABLE
+BEGIN
+  65535  ""
+END
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+ FILEFLAGS 0L
+ FILEOS VOS__WINDOWS32
+ FILETYPE VFT_DLL
+ FILESUBTYPE VFT_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "automat (Release x86)\0"
+            VALUE "FileVersion", "1.0\0"
+            VALUE "InternalName", "automat\0"
+            VALUE "LegalCopyright", "Copyright ©  2021\0"
+            VALUE "OriginalFilename", "automat.dll\0"
+            VALUE "ProductName", " automat\0"
+            VALUE "ProductVersion", "1.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 0x4b0
+    END
+END
+
+automat.uir UIRFileType "c:\\Users\\Anwar\\Desktop\\FCT12 BACKUP\\17 02 2021\\17 02 2021\\work\\src\\modules\\automat\\automat.uir"

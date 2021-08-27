@@ -1,0 +1,21 @@
+
+msgid "Good"
+msgstr "Dobrý"
+
+msgid "Bad"
+msgstr "Špatný"
+
+msgid "Pause"
+msgstr "Pauza"
+
+msgid "Operators"
+msgstr "Operátoøi"
+
+msgid "Panels"
+msgstr "Panely"
+
+msgid "End"
+msgstr "Konec"
+
+msgid ""
+msgstr ""

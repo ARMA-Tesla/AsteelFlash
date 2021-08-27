@@ -1,0 +1,100 @@
+CCFLAGS = -g ;
+HDRS = 	"c:\\work\\src\\include"
+	"c:\\work\\src\\modules"
+	"c:\\work\\src\\shared"
+	"c:\\work\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\clang\\3.3"
+	"c:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2019\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "BarCodeReader.h" = "c:\\work\\src\\modules\\tester\\barCodeReader" ;
+LOCATE on "dataman.c" = "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman" ;
+LOCATE on "eleventdata.c" = "c:\\work\\src\\shared\\eventfactory" ;
+LOCATE on "eleventdata.h" = "c:\\work\\src\\shared\\eventfactory" ;
+LOCATE on "elstring.c" = "c:\\work\\src\\shared\\string" ;
+LOCATE on "elstring.h" = "c:\\work\\include" ;
+LOCATE on "EventFactory.c" = "c:\\work\\src\\shared\\eventfactory" ;
+LOCATE on "EventFactory.h" = "c:\\work\\src\\shared\\eventfactory" ;
+LOCATE on "Exception.c" = "c:\\work\\src\\shared\\exception" ;
+LOCATE on "Exception.h" = "c:\\work\\src\\shared\\exception" ;
+LOCATE on "multithread.c" = "c:\\work\\src\\shared\\multithread" ;
+LOCATE on "multithread.h" = "c:\\work\\src\\shared\\multithread" ;
+LOCATE on "objlist.c" = "c:\\work\\src\\shared\\objlist" ;
+Object "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\dataman.obj" : "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\dataman.c" ;
+FILENUM on "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\dataman.obj" = 1 ;
+DEFPROTS on "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\dataman.obj" = "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\dataman.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\dataman.obj" = "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\dataman.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\dataman.obj" ;
+Object "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\eleventdata.obj" : "c:\\work\\src\\shared\\eventfactory\\eleventdata.c" ;
+FILENUM on "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\eleventdata.obj" = 2 ;
+DEFPROTS on "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\eleventdata.obj" = "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\eleventdata.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\eleventdata.obj" = "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\eleventdata.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\eleventdata.obj" ;
+Object "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\elstring.obj" : "c:\\work\\src\\shared\\string\\elstring.c" ;
+FILENUM on "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\elstring.obj" = 3 ;
+DEFPROTS on "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\elstring.obj" = "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\elstring.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\elstring.obj" = "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\elstring.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\elstring.obj" ;
+Object "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\EventFactory.obj" : "c:\\work\\src\\shared\\eventfactory\\EventFactory.c" ;
+FILENUM on "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\EventFactory.obj" = 4 ;
+DEFPROTS on "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\EventFactory.obj" = "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\EventFactory.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\EventFactory.obj" = "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\EventFactory.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\EventFactory.obj" ;
+Object "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\Exception.obj" : "c:\\work\\src\\shared\\exception\\Exception.c" ;
+FILENUM on "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\Exception.obj" = 5 ;
+DEFPROTS on "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\Exception.obj" = "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\Exception.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\Exception.obj" = "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\Exception.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\Exception.obj" ;
+Object "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\multithread.obj" : "c:\\work\\src\\shared\\multithread\\multithread.c" ;
+FILENUM on "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\multithread.obj" = 6 ;
+DEFPROTS on "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\multithread.obj" = "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\multithread.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\multithread.obj" = "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\multithread.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\multithread.obj" ;
+Object "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\objlist.obj" : "c:\\work\\src\\shared\\objlist\\objlist.c" ;
+FILENUM on "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\objlist.obj" = 7 ;
+DEFPROTS on "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\objlist.obj" = "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\objlist.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\objlist.obj" = "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\objlist.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\objlist.obj" ;
+Object "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\BarCodeReader.h.hdefs" : "c:\\work\\src\\modules\\tester\\barCodeReader\\BarCodeReader.h" ;
+FILENUM on "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\BarCodeReader.h.hdefs" = 8 ;
+OUTFILE on "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\BarCodeReader.h.hdefs" = "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\BarCodeReader.h.hdefs.out" ;
+PreLinkInputs += "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\resources.in.rc" ;
+PreLinkInputs += $(PrjObjects) $(InstrObjects) ;
+PreLinkOutputs += "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\resources.out.rc" ;
+PreLinkOutputs += "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\dataman.dll.defs" ;
+PreLink $(PreLinkOutputs) : $(PreLinkInputs) ;
+Depends "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\dataman.dll" : "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\dataman.dll.defs" ;
+Object "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\resources.res" : "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\resources.out.rc" ;
+Depends "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\resources.res" : $(PreLinkOutputs) ;
+Depends "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\resources.res" "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\resources.out.rc" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\resources.res" : "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\manifest.xml" ;
+MainFromObjects "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\dataman.dll" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\dataman.dll" : "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\link_options.txt" ;
+Depends "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\dataman.dll" : "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\dependencies.lnk.in" ;
+Depends "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\dataman.dll" : "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\resources.res" ;
+Depends all : "c:\\work\\src\\modules\\tester\\barCodeReader\\Dataman\\cvibuild.dataman\\Debug\\dataman.dll" ;

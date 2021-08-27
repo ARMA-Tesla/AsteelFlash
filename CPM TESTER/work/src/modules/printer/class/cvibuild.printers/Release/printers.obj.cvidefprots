@@ -1,0 +1,20 @@
+[printer_new]
+Class="Function"
+Prototype="struct _SElException *printer_new(struct _Printer **printer, const char *name, const char *optionString);"
+SourceLocation="c:\work\src\modules\printer\class\printers.c:80:1"
+
+[printer_delete]
+Class="Function"
+Prototype="struct _SElException *printer_delete(struct _Printer **printer);"
+SourceLocation="c:\work\src\modules\printer\class\printers.c:117:1"
+
+[printers_new]
+Class="Function"
+Prototype="struct _SElException *printers_new(struct _Printers **printers);"
+SourceLocation="c:\work\src\modules\printer\class\printers.c:145:1"
+
+[printers_delete]
+Class="Function"
+Prototype="struct _SElException *printers_delete(struct _Printers **printers);"
+SourceLocation="c:\work\src\modules\printer\class\printers.c:178:1"
+

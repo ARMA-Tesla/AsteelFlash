@@ -1,0 +1,15 @@
+[dbsparamlist_new]
+Class="Function"
+Prototype="struct _SElException *dbsparamlist_new(struct _SDBSParamList **pDBSParListPtr, void *pDBS);"
+SourceLocation="c:\work\src\modules\dbs\dbs_paramlist.c:32:17"
+
+[dbsparamlist_delete]
+Class="Function"
+Prototype="struct _SElException *dbsparamlist_delete(struct _SDBSParamList **pDBSParListPtr);"
+SourceLocation="c:\work\src\modules\dbs\dbs_paramlist.c:64:17"
+
+[compare_ProductParameter]
+Class="Function"
+Prototype="int compare_ProductParameter(const void *a, const void *b);"
+SourceLocation="c:\work\src\modules\dbs\dbs_paramlist.c:321:5"
+

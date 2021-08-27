@@ -1,0 +1,20 @@
+[Connect]
+Class="Function"
+Prototype="struct _SElException *Connect(struct _Printer *me) __declspec(dllexport);"
+
+[Disconnect]
+Class="Function"
+Prototype="struct _SElException *Disconnect(struct _Printer *me) __declspec(dllexport);"
+
+[Write]
+Class="Function"
+Prototype="struct _SElException *Write(struct _Printer *me, const char *command) __declspec(dllexport);"
+
+[Reset]
+Class="Function"
+Prototype="struct _SElException *Reset(struct _Printer *me) __declspec(dllexport);"
+
+[Status]
+Class="Function"
+Prototype="struct _SElException *Status(struct _Printer *me, int *StatusOnline, char *Error, int *iAmmountLabels, int *StatusInterpreter) __declspec(dllexport);"
+

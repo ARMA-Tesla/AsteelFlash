@@ -1,0 +1,15 @@
+[dbstestlist_new]
+Class="Function"
+Prototype="struct _SElException *dbstestlist_new(struct _SDBSTestList **pDBSTestListPtr, void *pDBS);"
+SourceLocation="c:\work\src\modules\dbs\dbs_testlist.c:33:17"
+
+[dbstestlist_delete]
+Class="Function"
+Prototype="struct _SElException *dbstestlist_delete(struct _SDBSTestList **pDBSTestListPtr);"
+SourceLocation="c:\work\src\modules\dbs\dbs_testlist.c:68:17"
+
+[compare_Test]
+Class="Function"
+Prototype="int compare_Test(const void *a, const void *b);"
+SourceLocation="c:\work\src\modules\dbs\dbs_testlist.c:295:5"
+

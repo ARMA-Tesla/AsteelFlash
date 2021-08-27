@@ -1,0 +1,16 @@
+-inrc c:\work\src\gui\defauts\cvibuild.defauts\Debug\resources.in.rc
+-outrc c:\work\src\gui\defauts\cvibuild.defauts\Debug\resources.out.rc
+-inhdef c:\work\src\gui\defauts\cvibuild.defauts\Debug\calendar.h.hdefs
+-inhdef c:\work\src\gui\defauts\cvibuild.defauts\Debug\report.h.hdefs
+-inhdef c:\work\src\gui\defauts\cvibuild.defauts\Debug\report_plugin.h.hdefs
+-outdef c:\work\src\gui\defauts\cvibuild.defauts\Debug\defauts.dll.defs
+-indefprot c:\work\src\gui\defauts\cvibuild.defauts\Debug\calendar.obj.cvidefprots
+-indefprot c:\work\src\gui\defauts\cvibuild.defauts\Debug\Exception.obj.cvidefprots
+-indefprot c:\work\src\gui\defauts\cvibuild.defauts\Debug\iso8601.obj.cvidefprots
+-indefprot c:\work\src\gui\defauts\cvibuild.defauts\Debug\lang_support.obj.cvidefprots
+-indefprot c:\work\src\gui\defauts\cvibuild.defauts\Debug\language.obj.cvidefprots
+-indefprot c:\work\src\gui\defauts\cvibuild.defauts\Debug\msxmldom.obj.cvidefprots
+-indefprot c:\work\src\gui\defauts\cvibuild.defauts\Debug\report.obj.cvidefprots
+-indefprot c:\work\src\gui\defauts\cvibuild.defauts\Debug\report_measurement.obj.cvidefprots
+-dllName defauts.dll
+-addNITypeInfo 

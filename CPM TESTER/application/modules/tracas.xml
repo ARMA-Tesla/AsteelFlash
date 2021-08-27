@@ -1,0 +1,7 @@
+<Tracas>
+	<Traca name="Database BSH">
+		<Configuration specificDll="modules/BSH.dll">
+			<ConnectionString>Provider=SQLNCLI11;Password=hp3070;Persist Security Info=True;User ID=testict;Initial Catalog=BSH;Data Source='10.200.0.145'</ConnectionString>
+		</Configuration>
+	</Traca>
+</Tracas>

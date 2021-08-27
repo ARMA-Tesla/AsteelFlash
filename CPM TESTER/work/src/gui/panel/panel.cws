@@ -1,0 +1,238 @@
+[Workspace Header]
+Version = 1900
+Pathname = "/c/work/src/gui/panel/panel.cws"
+CVI Dir = "/c/program files (x86)/national instruments/cvi2019"
+CVI Shared Dir = "/C/Program Files (x86)/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2019"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/c/Program Files (x86)/IVI Foundation/IVI"
+IVI Standard Root 64-bit Dir = "/c/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files (x86)/IVI Foundation/VISA/winnt"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "panel.prj"
+Project 0001 Folder Source Files Collapsed = True
+Project 0001 FolderId 1 Collapsed = True
+Project 0001 Folder Include Files Collapsed = True
+Project 0001 FolderId 3 Collapsed = True
+Drag Bar Left = 241
+Window Top = 108
+Window Left = 18
+Window Bottom = 496
+Window Right = 760
+Maximized = True
+Maximized Children = True
+Max32 Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win At Start = True
+Bring Up Err Win For Errors = False
+Save Changes Before Running = "Always"
+Save Changes Before Compiling = "Always"
+Hide Windows = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 1
+Window Confinement Region Enabled = True
+MainColumnWidth = 224
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+
+[Project Header 0001]
+Version = 1900
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Release"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+
+[File 0001]
+Path = "/c/program files (x86)/national instruments/cvi2019/toolslib/toolbox/msxmldom.fp"
+File Type = "Function Panel"
+Disk Date = 3635234214
+In Projects = "1,"
+
+[File 0002]
+Path = "/c/work/src/gui/panel/panel.c"
+File Type = "CSource"
+Disk Date = 3676357128
+In Projects = "1,"
+Source Window State = "1,1024,1024,1024,38,38,38,0,0,0,0,0,0,0,0,0,1011,0,1024,38,349,715,1,0,"
+Breakpoint 0001 = "827,0,enabled,"
+Line Tags = "435,"
+Window Top = 62
+Window Left = 26
+Window Z-Order = 1
+
+[File 0003]
+Path = "/c/work/src/shared/eventfactory/eleventdata.c"
+File Type = "CSource"
+Disk Date = 3309320854
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0004]
+Path = "/c/work/src/shared/string/elstring.c"
+File Type = "CSource"
+Disk Date = 3613571278
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0005]
+Path = "/c/work/include/elstring.h"
+File Type = "Include"
+Disk Date = 3678686161
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0006]
+Path = "/c/work/src/shared/exception/Exception.c"
+File Type = "CSource"
+Disk Date = 3652346447
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,427,804,1,0,"
+Window Top = 40
+Window Left = 11
+
+[File 0007]
+Path = "/c/work/src/gui/panel/panel.h"
+File Type = "Include"
+Disk Date = 3669410817
+In Projects = "1,"
+Source Window State = "1,74,74,74,17,32,32,0,0,0,0,0,0,0,0,0,44,0,64,10,349,715,1,0,"
+
+[File 0008]
+Path = "/c/work/src/gui/panel/panel.uir"
+File Type = "User Interface Resource"
+Disk Date = 3676357177
+In Projects = "1,"
+Window Top = 103
+Window Left = 163
+Window Height = 991
+Window Width = 1052
+Window Released = True
+
+[File 0009]
+Path = "/c/work/src/gui/panel/panel_fnc.c"
+File Type = "CSource"
+Disk Date = 3688982427
+In Projects = "1,"
+Source Window State = "1,15,15,15,18,35,35,0,3,0,0,0,0,0,0,0,0,0,15,18,284,715,1,0,"
+Window Top = 38
+Window Left = 10
+
+[File 0010]
+Path = "/c/work/src/gui/panel/panel_fnc.h"
+File Type = "Include"
+Disk Date = 3645960323
+In Projects = "1,"
+Source Window State = "1,19,39,19,0,49,0,0,0,0,0,0,0,0,0,0,0,0,4,127,349,723,1,0,"
+
+[File 0011]
+Path = "/c/work/src/gui/panel/panel_plugin.h"
+File Type = "Include"
+Disk Date = 3634149114
+In Projects = "1,"
+Source Window State = "1,19,19,19,21,43,43,0,0,0,0,0,0,0,0,0,0,0,21,52,349,715,1,0,"
+
+[File 0012]
+Path = "/c/work/src/shared/zzip/zzip.h"
+File Type = "Include"
+Disk Date = 3309320852
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[Tab Order]
+Tab 0001 = "/c/work/src/gui/panel/panel.c"
+
+[Default Build Config 0001 Debug]
+Generate Browse Info = False
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = "/c/application/application.exe"
+
+[Default Build Config 0001 Release]
+Generate Browse Info = False
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Debug64]
+Generate Browse Info = False
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release64]
+Generate Browse Info = False
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Build Dependencies 0001]
+Number of Dependencies = 0
+
+[Build Options 0001]
+Generate Browse Info = False
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Profile = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[Execution Target 0001]
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[Command Line Args 0001]
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+

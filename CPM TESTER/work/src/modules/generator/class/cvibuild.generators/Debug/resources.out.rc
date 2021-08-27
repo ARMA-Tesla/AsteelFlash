@@ -1,0 +1,76 @@
+#include "C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\winver.h"
+
+
+2 24 "c:\\work\\src\\modules\\generator\\class\\cvibuild.generators\\Debug\\manifest.xml"
+
+
+STRINGTABLE DISCARDABLE
+BEGIN
+  65535  ""
+END
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+ FILEFLAGS 0x1L
+ FILEOS VOS__WINDOWS32
+ FILETYPE VFT_DLL
+ FILESUBTYPE VFT_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "ELCOM, a.s.\0"
+            VALUE "FileDescription", "Printers Module\0"
+            VALUE "FileVersion", "1.0\0"
+            VALUE "InternalName", "generators\0"
+            VALUE "LegalCopyright", "Copyright © ELCOM, a.s., 2007\0"
+            VALUE "OriginalFilename", "generators.dll\0"
+            VALUE "ProductName", "ELCOM, a.s. Printers Module\0"
+            VALUE "ProductVersion", "1.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 0x4b0
+    END
+END
+
+CVIDLLexports CVIDLLprototypes
+{
+   "int DllMain(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+   "\n",
+   "struct _SElException *GetModuleAttribute(unsigned int attrID, unsigned int size, void *value) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *InitializeElcomModule(void *pInstance, const char *configuration, struct _SPluginArgs *pParam) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *LoadElcomModule(const char *configuration, void **pInstance, struct _SPluginArgs *pParam) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *UnloadElcomModule(void *pInstance) __declspec(dllexport);"
+   "\n",
+   "void elexception_delete(struct _SElException **pException);"
+   "\n",
+   "void elexception_log_set(void (*fn_log)(struct _SElException *));"
+   "\n",
+   "struct _SElException *elexception_new(int errorCode, const char *messsage, const char *file, long line);"
+   "\n",
+   "void excdisplay(struct _SElException *pException);"
+   "\n",
+   "void excdispstr(struct _SElException *pException, char *str, int str_size);"
+   "\n",
+   "struct _SElException *generator_delete(struct _Generator **generator);"
+   "\n",
+   "struct _SElException *generator_new(struct _Generator **generator, const char *name, const char *optionString);"
+   "\n",
+   "struct _SElException *generators_delete(struct _Generators **generators);"
+   "\n",
+   "struct _SElException *generators_new(struct _Generators **generators);"
+   "\n",
+   "\0"
+}
+
+CVIDLLexports2 CVIDLLprototypes
+{
+}

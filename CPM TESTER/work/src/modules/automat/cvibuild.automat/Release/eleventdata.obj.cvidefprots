@@ -1,0 +1,10 @@
+[eleventdata_new]
+Class="Function"
+Prototype="struct _SElException *eleventdata_new(struct _SElEventData **pEventData);"
+SourceLocation="c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\shared\eventfactory\eleventdata.c:22:17"
+
+[eleventdata_delete]
+Class="Function"
+Prototype="struct _SElException *eleventdata_delete(struct _SElEventData **pEventData);"
+SourceLocation="c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\shared\eventfactory\eleventdata.c:45:17"
+

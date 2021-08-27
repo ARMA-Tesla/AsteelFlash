@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<configuration>
+	<modules>
+		<module id="{0209bd7a-473a-11dc-8314-0800200FA02B}">
+			<name>DBUS Module</name>
+ 			<settings>
+ 				<configure UDA="UDA (USB-SN: UDA-03)"> 
+					<portCommPartner>0xC</portCommPartner> 
+					<PortFlags>VDBUS_FLAG_CLEAR_RX_QUEUE_BEFORE_SEND</PortFlags>
+				</configure> 
+ 				<configure UDA="UDA (USB-SN: UDA-04)"> 
+					<portCommPartner>0xC</portCommPartner> 
+					<PortFlags>VDBUS_FLAG_CLEAR_RX_QUEUE_BEFORE_SEND</PortFlags>
+				</configure> 
+                <configure UDA="UDA (USB-SN: UDA-05)"> 
+					<portCommPartner>0xC</portCommPartner> 
+					<PortFlags>VDBUS_FLAG_CLEAR_RX_QUEUE_BEFORE_SEND</PortFlags>
+				</configure> 				
+			</settings>   
+		</module>
+	</modules>
+</configuration>

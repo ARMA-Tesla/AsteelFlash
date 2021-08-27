@@ -1,0 +1,32 @@
+msgid "Panel"
+msgstr "Panel"
+
+msgid "Error Panel"
+msgstr "Chybový Panel"
+
+msgid "SAP Link Configuration"
+msgstr "Konfigurce SAP Link"
+
+msgid "SAP Barcode Error"
+msgstr "Chyba èárového kódu pro SAP"
+
+msgid "Tester On Battery"
+msgstr "Tester On Battery"
+
+msgid "Panel has not tested !!!\n%s"
+msgstr "Panel nebyl testován !!!\n%s"
+
+msgid "Last test of panel failed !!!\n%s"
+msgstr "Poslední test panelu nebyl úspìšný !!!\n%s"
+
+msgid "Unknown barcode !!!\n%s"
+msgstr "Neznámý èárkový kód !!!\n%s"
+
+msgid "Errors:"
+msgstr "Chyby:"
+
+msgid "Read Barcode"
+msgstr "Pøeètený èárkový kód"
+
+msgid "Translated Barcode"
+msgstr "Pøeložený èárkový kód"

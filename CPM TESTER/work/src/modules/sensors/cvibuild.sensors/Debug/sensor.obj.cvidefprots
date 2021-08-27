@@ -1,0 +1,25 @@
+[diosenosrs_new]
+Class="Function"
+Prototype="struct _SElException *diosenosrs_new(struct _SDIOSensors **pSensors);"
+SourceLocation="c:\work\src\modules\sensors\sensor.c:367:1"
+
+[diosenosrs_delete]
+Class="Function"
+Prototype="struct _SElException *diosenosrs_delete(struct _SDIOSensors **pSensors);"
+SourceLocation="c:\work\src\modules\sensors\sensor.c:403:1"
+
+[CompareTasks]
+Class="Function"
+Prototype="int CompareTasks(const void *element1, const void *element2);"
+SourceLocation="c:\work\src\modules\sensors\sensor.c:1074:1"
+
+[CompareLogicalNames]
+Class="Function"
+Prototype="int CompareLogicalNames(const void *element1, const void *element2);"
+SourceLocation="c:\work\src\modules\sensors\sensor.c:1084:1"
+
+[EventThreadFunc]
+Class="Function"
+Prototype="int EventThreadFunc(void *pArguments);"
+SourceLocation="c:\work\src\modules\sensors\sensor.c:1699:2"
+

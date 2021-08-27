@@ -1,0 +1,3570 @@
+[MSXML_NewDOMDocumentIXMLDOMDocument]
+Class="Function"
+Prototype="long MSXML_NewDOMDocumentIXMLDOMDocument(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:3428:1"
+
+[MSXML_OpenDOMDocumentIXMLDOMDocument]
+Class="Function"
+Prototype="long MSXML_OpenDOMDocumentIXMLDOMDocument(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:3445:1"
+
+[MSXML_ActiveDOMDocumentIXMLDOMDocument]
+Class="Function"
+Prototype="long MSXML_ActiveDOMDocumentIXMLDOMDocument(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:3463:1"
+
+[MSXML_NewDOMFreeThreadedDocumentIXMLDOMDocument]
+Class="Function"
+Prototype="long MSXML_NewDOMFreeThreadedDocumentIXMLDOMDocument(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:3481:1"
+
+[MSXML_OpenDOMFreeThreadedDocumentIXMLDOMDocument]
+Class="Function"
+Prototype="long MSXML_OpenDOMFreeThreadedDocumentIXMLDOMDocument(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:3499:1"
+
+[MSXML_ActiveDOMFreeThreadedDocumentIXMLDOMDocument]
+Class="Function"
+Prototype="long MSXML_ActiveDOMFreeThreadedDocumentIXMLDOMDocument(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:3518:1"
+
+[MSXML_IXMLDOMDocumentGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:3536:1"
+
+[MSXML_IXMLDOMDocumentGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:3573:1"
+
+[MSXML_IXMLDOMDocumentSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:3604:1"
+
+[MSXML_IXMLDOMDocumentGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:3628:1"
+
+[MSXML_IXMLDOMDocumentGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:3652:1"
+
+[MSXML_IXMLDOMDocumentGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:3703:1"
+
+[MSXML_IXMLDOMDocumentGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:3754:1"
+
+[MSXML_IXMLDOMDocumentGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:3805:1"
+
+[MSXML_IXMLDOMDocumentGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:3856:1"
+
+[MSXML_IXMLDOMDocumentGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:3908:1"
+
+[MSXML_IXMLDOMDocumentGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:3959:1"
+
+[MSXML_IXMLDOMDocumentinsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:4010:1"
+
+[MSXML_IXMLDOMDocumentreplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:4073:1"
+
+[MSXML_IXMLDOMDocumentremoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:4144:1"
+
+[MSXML_IXMLDOMDocumentappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:4206:1"
+
+[MSXML_IXMLDOMDocumenthasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumenthasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:4267:1"
+
+[MSXML_IXMLDOMDocumentGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:4292:1"
+
+[MSXML_IXMLDOMDocumentcloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentcloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:4343:1"
+
+[MSXML_IXMLDOMDocumentGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:4394:1"
+
+[MSXML_IXMLDOMDocumentGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:4431:1"
+
+[MSXML_IXMLDOMDocumentSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:4467:1"
+
+[MSXML_IXMLDOMDocumentGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:4496:1"
+
+[MSXML_IXMLDOMDocumentGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:4521:1"
+
+[MSXML_IXMLDOMDocumentGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:4573:1"
+
+[MSXML_IXMLDOMDocumentSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:4605:1"
+
+[MSXML_IXMLDOMDocumentGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:4630:1"
+
+[MSXML_IXMLDOMDocumentSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:4662:1"
+
+[MSXML_IXMLDOMDocumentGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:4691:1"
+
+[MSXML_IXMLDOMDocumenttransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumenttransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:4728:1"
+
+[MSXML_IXMLDOMDocumentselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:4777:1"
+
+[MSXML_IXMLDOMDocumentselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:4833:1"
+
+[MSXML_IXMLDOMDocumentGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:4889:1"
+
+[MSXML_IXMLDOMDocumentGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:4913:1"
+
+[MSXML_IXMLDOMDocumentGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:4950:1"
+
+[MSXML_IXMLDOMDocumentGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:4987:1"
+
+[MSXML_IXMLDOMDocumenttransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumenttransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:5024:1"
+
+[MSXML_IXMLDOMDocumentGetdoctype]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetdoctype(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *documentType);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:5061:1"
+
+[MSXML_IXMLDOMDocumentGetimplementation]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetimplementation(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *impl);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:5112:1"
+
+[MSXML_IXMLDOMDocumentGetdocumentElement]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetdocumentElement(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMElement);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:5163:1"
+
+[MSXML_IXMLDOMDocumentSetByRefdocumentElement]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentSetByRefdocumentElement(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle DOMElement);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:5214:1"
+
+[MSXML_IXMLDOMDocumentcreateElement]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentcreateElement(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *tagName, CAObjHandle *element);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:5249:1"
+
+[MSXML_IXMLDOMDocumentcreateDocumentFragment]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentcreateDocumentFragment(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *docFrag);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:5305:1"
+
+[MSXML_IXMLDOMDocumentcreateTextNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentcreateTextNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data, CAObjHandle *text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:5356:1"
+
+[MSXML_IXMLDOMDocumentcreateComment]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentcreateComment(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data, CAObjHandle *comment);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:5412:1"
+
+[MSXML_IXMLDOMDocumentcreateCDATASection]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentcreateCDATASection(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data, CAObjHandle *cdata);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:5468:1"
+
+[MSXML_IXMLDOMDocumentcreateProcessingInstruction]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentcreateProcessingInstruction(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *target, const char *data, CAObjHandle *pi);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:5524:1"
+
+[MSXML_IXMLDOMDocumentcreateAttribute]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentcreateAttribute(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *name, CAObjHandle *attribute);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:5585:1"
+
+[MSXML_IXMLDOMDocumentcreateEntityReference]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentcreateEntityReference(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *name, CAObjHandle *entityRef);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:5641:1"
+
+[MSXML_IXMLDOMDocumentgetElementsByTagName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentgetElementsByTagName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *tagName, CAObjHandle *resultList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:5697:1"
+
+[MSXML_IXMLDOMDocumentcreateNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentcreateNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT type, const char *name, const char *namespaceURI, CAObjHandle *node);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:5753:1"
+
+[MSXML_IXMLDOMDocumentnodeFromID]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentnodeFromID(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *idString, CAObjHandle *node);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:5814:1"
+
+[MSXML_IXMLDOMDocumentload]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentload(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT xmlSource, short *isSuccessful);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:5870:1"
+
+[MSXML_IXMLDOMDocumentGetreadyState]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetreadyState(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:5896:1"
+
+[MSXML_IXMLDOMDocumentGetparseError]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetparseError(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *errorObj);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:5920:1"
+
+[MSXML_IXMLDOMDocumentGeturl]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGeturl(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **urlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:5971:1"
+
+[MSXML_IXMLDOMDocumentGetasync]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetasync(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isAsync);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6008:1"
+
+[MSXML_IXMLDOMDocumentSetasync]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentSetasync(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short isAsync);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6032:1"
+
+[MSXML_IXMLDOMDocumentabort]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentabort(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6056:1"
+
+[MSXML_IXMLDOMDocumentloadXML]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentloadXML(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *bstrXML, short *isSuccessful);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6079:1"
+
+[MSXML_IXMLDOMDocumentsave]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentsave(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT destination);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6110:1"
+
+[MSXML_IXMLDOMDocumentGetvalidateOnParse]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetvalidateOnParse(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isValidating);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6134:1"
+
+[MSXML_IXMLDOMDocumentSetvalidateOnParse]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentSetvalidateOnParse(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short isValidating);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6159:1"
+
+[MSXML_IXMLDOMDocumentGetresolveExternals]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetresolveExternals(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isResolving);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6184:1"
+
+[MSXML_IXMLDOMDocumentSetresolveExternals]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentSetresolveExternals(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short isResolving);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6209:1"
+
+[MSXML_IXMLDOMDocumentGetpreserveWhiteSpace]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentGetpreserveWhiteSpace(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isPreserving);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6234:1"
+
+[MSXML_IXMLDOMDocumentSetpreserveWhiteSpace]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentSetpreserveWhiteSpace(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short isPreserving);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6259:1"
+
+[MSXML_IXMLDOMDocumentSetonreadystatechange]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentSetonreadystatechange(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT newValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6284:1"
+
+[MSXML_IXMLDOMDocumentSetondataavailable]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentSetondataavailable(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT newValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6309:1"
+
+[MSXML_IXMLDOMDocumentSetontransformnode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentSetontransformnode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT newValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6334:1"
+
+[MSXML_NewIXMLHttpRequest]
+Class="Function"
+Prototype="long MSXML_NewIXMLHttpRequest(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6359:1"
+
+[MSXML_OpenIXMLHttpRequest]
+Class="Function"
+Prototype="long MSXML_OpenIXMLHttpRequest(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6376:1"
+
+[MSXML_ActiveIXMLHttpRequest]
+Class="Function"
+Prototype="long MSXML_ActiveIXMLHttpRequest(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6394:1"
+
+[MSXML_IXMLHttpRequestopen]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestopen(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *bstrMethod, const char *bstrUrl, struct tagVARIANT varAsync, struct tagVARIANT bstrUser, struct tagVARIANT bstrPassword);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6411:1"
+
+[MSXML_IXMLHttpRequestsetRequestHeader]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestsetRequestHeader(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *bstrHeader, const char *bstrValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6448:1"
+
+[MSXML_IXMLHttpRequestgetResponseHeader]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestgetResponseHeader(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *bstrHeader, char **pbstrValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6482:1"
+
+[MSXML_IXMLHttpRequestgetAllResponseHeaders]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestgetAllResponseHeaders(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **pbstrHeaders);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6525:1"
+
+[MSXML_IXMLHttpRequestsend]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestsend(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT varBody);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6562:1"
+
+[MSXML_IXMLHttpRequestabort]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestabort(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6585:1"
+
+[MSXML_IXMLHttpRequestGetstatus]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestGetstatus(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *plStatus);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6608:1"
+
+[MSXML_IXMLHttpRequestGetstatusText]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestGetstatusText(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **pbstrStatus);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6632:1"
+
+[MSXML_IXMLHttpRequestGetresponseXML]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestGetresponseXML(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppBody);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6669:1"
+
+[MSXML_IXMLHttpRequestGetresponseText]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestGetresponseText(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **pbstrBody);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6720:1"
+
+[MSXML_IXMLHttpRequestGetresponseBody]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestGetresponseBody(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvarBody);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6757:1"
+
+[MSXML_IXMLHttpRequestGetresponseStream]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestGetresponseStream(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvarBody);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6789:1"
+
+[MSXML_IXMLHttpRequestGetreadyState]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestGetreadyState(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *plState);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6821:1"
+
+[MSXML_IXMLHttpRequestSetonreadystatechange]
+Class="Function"
+Prototype="long MSXML_IXMLHttpRequestSetonreadystatechange(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6846:1"
+
+[MSXML_NewIXMLDSOControl]
+Class="Function"
+Prototype="long MSXML_NewIXMLDSOControl(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6880:1"
+
+[MSXML_OpenIXMLDSOControl]
+Class="Function"
+Prototype="long MSXML_OpenIXMLDSOControl(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6896:1"
+
+[MSXML_ActiveIXMLDSOControl]
+Class="Function"
+Prototype="long MSXML_ActiveIXMLDSOControl(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6914:1"
+
+[MSXML_IXMLDSOControlGetXMLDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDSOControlGetXMLDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppDoc);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6931:1"
+
+[MSXML_IXMLDSOControlSetXMLDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDSOControlSetXMLDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle ppDoc);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:6982:1"
+
+[MSXML_IXMLDSOControlGetJavaDSOCompatible]
+Class="Function"
+Prototype="long MSXML_IXMLDSOControlGetJavaDSOCompatible(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *fJavaDSOCompatible);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7017:1"
+
+[MSXML_IXMLDSOControlSetJavaDSOCompatible]
+Class="Function"
+Prototype="long MSXML_IXMLDSOControlSetJavaDSOCompatible(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long fJavaDSOCompatible);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7042:1"
+
+[MSXML_IXMLDSOControlGetreadyState]
+Class="Function"
+Prototype="long MSXML_IXMLDSOControlGetreadyState(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *state);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7067:1"
+
+[MSXML_NewIXMLDocument2]
+Class="Function"
+Prototype="long MSXML_NewIXMLDocument2(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7091:1"
+
+[MSXML_OpenIXMLDocument2]
+Class="Function"
+Prototype="long MSXML_OpenIXMLDocument2(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7107:1"
+
+[MSXML_ActiveIXMLDocument2]
+Class="Function"
+Prototype="long MSXML_ActiveIXMLDocument2(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7124:1"
+
+[MSXML_IXMLDocument2Getroot]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2Getroot(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *p);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7141:1"
+
+[MSXML_IXMLDocument2GetfileSize]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2GetfileSize(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7190:1"
+
+[MSXML_IXMLDocument2GetfileModifiedDate]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2GetfileModifiedDate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7226:1"
+
+[MSXML_IXMLDocument2GetfileUpdatedDate]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2GetfileUpdatedDate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7263:1"
+
+[MSXML_IXMLDocument2Geturl]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2Geturl(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7300:1"
+
+[MSXML_IXMLDocument2Seturl]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2Seturl(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *p);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7335:1"
+
+[MSXML_IXMLDocument2GetmimeType]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2GetmimeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7362:1"
+
+[MSXML_IXMLDocument2GetreadyState]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2GetreadyState(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pl);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7398:1"
+
+[MSXML_IXMLDocument2Getcharset]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2Getcharset(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7421:1"
+
+[MSXML_IXMLDocument2Setcharset]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2Setcharset(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *p);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7457:1"
+
+[MSXML_IXMLDocument2Getversion]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2Getversion(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7486:1"
+
+[MSXML_IXMLDocument2Getdoctype]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2Getdoctype(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7522:1"
+
+[MSXML_IXMLDocument2GetdtdURL]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2GetdtdURL(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7558:1"
+
+[MSXML_IXMLDocument2createElement]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2createElement(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT vType, struct tagVARIANT var1, CAObjHandle *ppElem);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7594:1"
+
+[MSXML_IXMLDocument2Getasync]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2Getasync(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pf);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7647:1"
+
+[MSXML_IXMLDocument2Setasync]
+Class="Function"
+Prototype="long MSXML_IXMLDocument2Setasync(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pf);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7670:1"
+
+[MSXML_IXMLDOMImplementationhasFeature]
+Class="Function"
+Prototype="long MSXML_IXMLDOMImplementationhasFeature(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *feature, const char *version, short *hasFeature);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7693:1"
+
+[MSXML_IXMLDOMNodeGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7729:1"
+
+[MSXML_IXMLDOMNodeGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7765:1"
+
+[MSXML_IXMLDOMNodeSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7796:1"
+
+[MSXML_IXMLDOMNodeGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7820:1"
+
+[MSXML_IXMLDOMNodeGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7844:1"
+
+[MSXML_IXMLDOMNodeGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7895:1"
+
+[MSXML_IXMLDOMNodeGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7946:1"
+
+[MSXML_IXMLDOMNodeGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:7997:1"
+
+[MSXML_IXMLDOMNodeGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:8048:1"
+
+[MSXML_IXMLDOMNodeGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:8100:1"
+
+[MSXML_IXMLDOMNodeGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:8151:1"
+
+[MSXML_IXMLDOMNodeinsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:8202:1"
+
+[MSXML_IXMLDOMNodereplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodereplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:8265:1"
+
+[MSXML_IXMLDOMNoderemoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNoderemoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:8336:1"
+
+[MSXML_IXMLDOMNodeappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:8398:1"
+
+[MSXML_IXMLDOMNodehasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodehasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:8459:1"
+
+[MSXML_IXMLDOMNodeGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:8484:1"
+
+[MSXML_IXMLDOMNodecloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodecloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:8535:1"
+
+[MSXML_IXMLDOMNodeGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:8586:1"
+
+[MSXML_IXMLDOMNodeGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:8623:1"
+
+[MSXML_IXMLDOMNodeSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:8659:1"
+
+[MSXML_IXMLDOMNodeGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:8687:1"
+
+[MSXML_IXMLDOMNodeGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:8712:1"
+
+[MSXML_IXMLDOMNodeGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:8764:1"
+
+[MSXML_IXMLDOMNodeSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:8796:1"
+
+[MSXML_IXMLDOMNodeGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:8821:1"
+
+[MSXML_IXMLDOMNodeSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:8853:1"
+
+[MSXML_IXMLDOMNodeGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:8882:1"
+
+[MSXML_IXMLDOMNodetransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodetransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:8918:1"
+
+[MSXML_IXMLDOMNodeselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:8967:1"
+
+[MSXML_IXMLDOMNodeselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:9023:1"
+
+[MSXML_IXMLDOMNodeGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:9079:1"
+
+[MSXML_IXMLDOMNodeGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:9103:1"
+
+[MSXML_IXMLDOMNodeGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:9140:1"
+
+[MSXML_IXMLDOMNodeGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:9177:1"
+
+[MSXML_IXMLDOMNodetransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodetransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:9214:1"
+
+[MSXML_IXMLDOMNodeListGetitem]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeListGetitem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long index, CAObjHandle *listItem);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:9251:1"
+
+[MSXML_IXMLDOMNodeListGetlength]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeListGetlength(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *listLength);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:9302:1"
+
+[MSXML_IXMLDOMNodeListnextNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeListnextNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextItem);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:9326:1"
+
+[MSXML_IXMLDOMNodeListreset]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeListreset(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:9377:1"
+
+[MSXML_IXMLDOMNodeListGet_newEnum]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNodeListGet_newEnum(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct IUnknown **ppUnk);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:9400:1"
+
+[MSXML_IXMLDOMNamedNodeMapgetNamedItem]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNamedNodeMapgetNamedItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *name, CAObjHandle *namedItem);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:9432:1"
+
+[MSXML_IXMLDOMNamedNodeMapsetNamedItem]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNamedNodeMapsetNamedItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newItem, CAObjHandle *nameItem);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:9488:1"
+
+[MSXML_IXMLDOMNamedNodeMapremoveNamedItem]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNamedNodeMapremoveNamedItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *name, CAObjHandle *namedItem);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:9549:1"
+
+[MSXML_IXMLDOMNamedNodeMapGetitem]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNamedNodeMapGetitem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long index, CAObjHandle *listItem);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:9605:1"
+
+[MSXML_IXMLDOMNamedNodeMapGetlength]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNamedNodeMapGetlength(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *listLength);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:9657:1"
+
+[MSXML_IXMLDOMNamedNodeMapgetQualifiedItem]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNamedNodeMapgetQualifiedItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *baseName, const char *namespaceURI, CAObjHandle *qualifiedItem);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:9681:1"
+
+[MSXML_IXMLDOMNamedNodeMapremoveQualifiedItem]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNamedNodeMapremoveQualifiedItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *baseName, const char *namespaceURI, CAObjHandle *qualifiedItem);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:9742:1"
+
+[MSXML_IXMLDOMNamedNodeMapnextNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNamedNodeMapnextNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextItem);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:9803:1"
+
+[MSXML_IXMLDOMNamedNodeMapreset]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNamedNodeMapreset(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:9854:1"
+
+[MSXML_IXMLDOMNamedNodeMapGet_newEnum]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNamedNodeMapGet_newEnum(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct IUnknown **ppUnk);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:9877:1"
+
+[MSXML_IXMLDOMDocumentTypeGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:9909:1"
+
+[MSXML_IXMLDOMDocumentTypeGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:9946:1"
+
+[MSXML_IXMLDOMDocumentTypeSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:9977:1"
+
+[MSXML_IXMLDOMDocumentTypeGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:10001:1"
+
+[MSXML_IXMLDOMDocumentTypeGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:10025:1"
+
+[MSXML_IXMLDOMDocumentTypeGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:10076:1"
+
+[MSXML_IXMLDOMDocumentTypeGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:10127:1"
+
+[MSXML_IXMLDOMDocumentTypeGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:10178:1"
+
+[MSXML_IXMLDOMDocumentTypeGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:10229:1"
+
+[MSXML_IXMLDOMDocumentTypeGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:10281:1"
+
+[MSXML_IXMLDOMDocumentTypeGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:10332:1"
+
+[MSXML_IXMLDOMDocumentTypeinsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:10383:1"
+
+[MSXML_IXMLDOMDocumentTypereplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypereplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:10446:1"
+
+[MSXML_IXMLDOMDocumentTyperemoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTyperemoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:10517:1"
+
+[MSXML_IXMLDOMDocumentTypeappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:10579:1"
+
+[MSXML_IXMLDOMDocumentTypehasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypehasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:10640:1"
+
+[MSXML_IXMLDOMDocumentTypeGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:10665:1"
+
+[MSXML_IXMLDOMDocumentTypecloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypecloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:10716:1"
+
+[MSXML_IXMLDOMDocumentTypeGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:10768:1"
+
+[MSXML_IXMLDOMDocumentTypeGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:10805:1"
+
+[MSXML_IXMLDOMDocumentTypeSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:10842:1"
+
+[MSXML_IXMLDOMDocumentTypeGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:10871:1"
+
+[MSXML_IXMLDOMDocumentTypeGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:10896:1"
+
+[MSXML_IXMLDOMDocumentTypeGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:10948:1"
+
+[MSXML_IXMLDOMDocumentTypeSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:10980:1"
+
+[MSXML_IXMLDOMDocumentTypeGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:11005:1"
+
+[MSXML_IXMLDOMDocumentTypeSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:11037:1"
+
+[MSXML_IXMLDOMDocumentTypeGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:11066:1"
+
+[MSXML_IXMLDOMDocumentTypetransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypetransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:11103:1"
+
+[MSXML_IXMLDOMDocumentTypeselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:11152:1"
+
+[MSXML_IXMLDOMDocumentTypeselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:11208:1"
+
+[MSXML_IXMLDOMDocumentTypeGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:11264:1"
+
+[MSXML_IXMLDOMDocumentTypeGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:11288:1"
+
+[MSXML_IXMLDOMDocumentTypeGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:11325:1"
+
+[MSXML_IXMLDOMDocumentTypeGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:11362:1"
+
+[MSXML_IXMLDOMDocumentTypetransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypetransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:11399:1"
+
+[MSXML_IXMLDOMDocumentTypeGetname]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetname(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **rootName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:11436:1"
+
+[MSXML_IXMLDOMDocumentTypeGetentities]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetentities(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *entityMap);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:11473:1"
+
+[MSXML_IXMLDOMDocumentTypeGetnotations]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentTypeGetnotations(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *notationMap);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:11524:1"
+
+[MSXML_IXMLDOMElementGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:11575:1"
+
+[MSXML_IXMLDOMElementGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:11612:1"
+
+[MSXML_IXMLDOMElementSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:11643:1"
+
+[MSXML_IXMLDOMElementGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:11667:1"
+
+[MSXML_IXMLDOMElementGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:11691:1"
+
+[MSXML_IXMLDOMElementGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:11742:1"
+
+[MSXML_IXMLDOMElementGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:11793:1"
+
+[MSXML_IXMLDOMElementGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:11844:1"
+
+[MSXML_IXMLDOMElementGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:11895:1"
+
+[MSXML_IXMLDOMElementGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:11947:1"
+
+[MSXML_IXMLDOMElementGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:11998:1"
+
+[MSXML_IXMLDOMElementinsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:12049:1"
+
+[MSXML_IXMLDOMElementreplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:12112:1"
+
+[MSXML_IXMLDOMElementremoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:12183:1"
+
+[MSXML_IXMLDOMElementappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:12245:1"
+
+[MSXML_IXMLDOMElementhasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementhasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:12306:1"
+
+[MSXML_IXMLDOMElementGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:12331:1"
+
+[MSXML_IXMLDOMElementcloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementcloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:12382:1"
+
+[MSXML_IXMLDOMElementGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:12433:1"
+
+[MSXML_IXMLDOMElementGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:12470:1"
+
+[MSXML_IXMLDOMElementSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:12506:1"
+
+[MSXML_IXMLDOMElementGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:12535:1"
+
+[MSXML_IXMLDOMElementGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:12560:1"
+
+[MSXML_IXMLDOMElementGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:12612:1"
+
+[MSXML_IXMLDOMElementSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:12644:1"
+
+[MSXML_IXMLDOMElementGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:12669:1"
+
+[MSXML_IXMLDOMElementSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:12701:1"
+
+[MSXML_IXMLDOMElementGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:12730:1"
+
+[MSXML_IXMLDOMElementtransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementtransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:12767:1"
+
+[MSXML_IXMLDOMElementselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:12816:1"
+
+[MSXML_IXMLDOMElementselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:12872:1"
+
+[MSXML_IXMLDOMElementGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:12928:1"
+
+[MSXML_IXMLDOMElementGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:12952:1"
+
+[MSXML_IXMLDOMElementGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:12989:1"
+
+[MSXML_IXMLDOMElementGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:13026:1"
+
+[MSXML_IXMLDOMElementtransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementtransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:13063:1"
+
+[MSXML_IXMLDOMElementGettagName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementGettagName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **tagName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:13100:1"
+
+[MSXML_IXMLDOMElementgetAttribute]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementgetAttribute(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *name, struct tagVARIANT *value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:13137:1"
+
+[MSXML_IXMLDOMElementsetAttribute]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementsetAttribute(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *name, struct tagVARIANT value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:13174:1"
+
+[MSXML_IXMLDOMElementremoveAttribute]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementremoveAttribute(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *name);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:13204:1"
+
+[MSXML_IXMLDOMElementgetAttributeNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementgetAttributeNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *name, CAObjHandle *attributeNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:13233:1"
+
+[MSXML_IXMLDOMElementsetAttributeNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementsetAttributeNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle DOMAttribute, CAObjHandle *attributeNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:13289:1"
+
+[MSXML_IXMLDOMElementremoveAttributeNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementremoveAttributeNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle DOMAttribute, CAObjHandle *attributeNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:13351:1"
+
+[MSXML_IXMLDOMElementgetElementsByTagName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementgetElementsByTagName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *tagName, CAObjHandle *resultList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:13413:1"
+
+[MSXML_IXMLDOMElementnormalize]
+Class="Function"
+Prototype="long MSXML_IXMLDOMElementnormalize(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:13469:1"
+
+[MSXML_IXMLDOMAttributeGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:13492:1"
+
+[MSXML_IXMLDOMAttributeGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:13529:1"
+
+[MSXML_IXMLDOMAttributeSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:13560:1"
+
+[MSXML_IXMLDOMAttributeGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:13584:1"
+
+[MSXML_IXMLDOMAttributeGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:13608:1"
+
+[MSXML_IXMLDOMAttributeGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:13659:1"
+
+[MSXML_IXMLDOMAttributeGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:13710:1"
+
+[MSXML_IXMLDOMAttributeGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:13761:1"
+
+[MSXML_IXMLDOMAttributeGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:13812:1"
+
+[MSXML_IXMLDOMAttributeGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:13864:1"
+
+[MSXML_IXMLDOMAttributeGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:13915:1"
+
+[MSXML_IXMLDOMAttributeinsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:13966:1"
+
+[MSXML_IXMLDOMAttributereplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributereplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:14029:1"
+
+[MSXML_IXMLDOMAttributeremoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:14100:1"
+
+[MSXML_IXMLDOMAttributeappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:14162:1"
+
+[MSXML_IXMLDOMAttributehasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributehasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:14223:1"
+
+[MSXML_IXMLDOMAttributeGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:14248:1"
+
+[MSXML_IXMLDOMAttributecloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributecloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:14299:1"
+
+[MSXML_IXMLDOMAttributeGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:14351:1"
+
+[MSXML_IXMLDOMAttributeGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:14388:1"
+
+[MSXML_IXMLDOMAttributeSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:14424:1"
+
+[MSXML_IXMLDOMAttributeGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:14453:1"
+
+[MSXML_IXMLDOMAttributeGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:14478:1"
+
+[MSXML_IXMLDOMAttributeGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:14530:1"
+
+[MSXML_IXMLDOMAttributeSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:14562:1"
+
+[MSXML_IXMLDOMAttributeGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:14587:1"
+
+[MSXML_IXMLDOMAttributeSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:14619:1"
+
+[MSXML_IXMLDOMAttributeGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:14648:1"
+
+[MSXML_IXMLDOMAttributetransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributetransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:14685:1"
+
+[MSXML_IXMLDOMAttributeselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:14734:1"
+
+[MSXML_IXMLDOMAttributeselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:14790:1"
+
+[MSXML_IXMLDOMAttributeGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:14846:1"
+
+[MSXML_IXMLDOMAttributeGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:14870:1"
+
+[MSXML_IXMLDOMAttributeGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:14907:1"
+
+[MSXML_IXMLDOMAttributeGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:14944:1"
+
+[MSXML_IXMLDOMAttributetransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributetransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:14981:1"
+
+[MSXML_IXMLDOMAttributeGetname]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetname(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **attributeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:15018:1"
+
+[MSXML_IXMLDOMAttributeGetvalue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeGetvalue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *attributeValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:15055:1"
+
+[MSXML_IXMLDOMAttributeSetvalue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMAttributeSetvalue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT attributeValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:15087:1"
+
+[MSXML_IXMLDOMDocumentFragmentGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:15112:1"
+
+[MSXML_IXMLDOMDocumentFragmentGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:15149:1"
+
+[MSXML_IXMLDOMDocumentFragmentSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:15180:1"
+
+[MSXML_IXMLDOMDocumentFragmentGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:15204:1"
+
+[MSXML_IXMLDOMDocumentFragmentGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:15228:1"
+
+[MSXML_IXMLDOMDocumentFragmentGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:15279:1"
+
+[MSXML_IXMLDOMDocumentFragmentGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:15330:1"
+
+[MSXML_IXMLDOMDocumentFragmentGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:15381:1"
+
+[MSXML_IXMLDOMDocumentFragmentGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:15432:1"
+
+[MSXML_IXMLDOMDocumentFragmentGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:15484:1"
+
+[MSXML_IXMLDOMDocumentFragmentGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:15535:1"
+
+[MSXML_IXMLDOMDocumentFragmentinsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:15586:1"
+
+[MSXML_IXMLDOMDocumentFragmentreplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:15649:1"
+
+[MSXML_IXMLDOMDocumentFragmentremoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:15720:1"
+
+[MSXML_IXMLDOMDocumentFragmentappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:15782:1"
+
+[MSXML_IXMLDOMDocumentFragmenthasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmenthasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:15843:1"
+
+[MSXML_IXMLDOMDocumentFragmentGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:15868:1"
+
+[MSXML_IXMLDOMDocumentFragmentcloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentcloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:15919:1"
+
+[MSXML_IXMLDOMDocumentFragmentGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:15971:1"
+
+[MSXML_IXMLDOMDocumentFragmentGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16008:1"
+
+[MSXML_IXMLDOMDocumentFragmentSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16045:1"
+
+[MSXML_IXMLDOMDocumentFragmentGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16074:1"
+
+[MSXML_IXMLDOMDocumentFragmentGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16099:1"
+
+[MSXML_IXMLDOMDocumentFragmentGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16151:1"
+
+[MSXML_IXMLDOMDocumentFragmentSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16183:1"
+
+[MSXML_IXMLDOMDocumentFragmentGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16208:1"
+
+[MSXML_IXMLDOMDocumentFragmentSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16240:1"
+
+[MSXML_IXMLDOMDocumentFragmentGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16269:1"
+
+[MSXML_IXMLDOMDocumentFragmenttransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmenttransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16306:1"
+
+[MSXML_IXMLDOMDocumentFragmentselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16355:1"
+
+[MSXML_IXMLDOMDocumentFragmentselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16411:1"
+
+[MSXML_IXMLDOMDocumentFragmentGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16467:1"
+
+[MSXML_IXMLDOMDocumentFragmentGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16491:1"
+
+[MSXML_IXMLDOMDocumentFragmentGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16528:1"
+
+[MSXML_IXMLDOMDocumentFragmentGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmentGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16565:1"
+
+[MSXML_IXMLDOMDocumentFragmenttransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMDocumentFragmenttransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16602:1"
+
+[MSXML_IXMLDOMTextGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16639:1"
+
+[MSXML_IXMLDOMTextGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16675:1"
+
+[MSXML_IXMLDOMTextSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16706:1"
+
+[MSXML_IXMLDOMTextGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16730:1"
+
+[MSXML_IXMLDOMTextGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16754:1"
+
+[MSXML_IXMLDOMTextGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16805:1"
+
+[MSXML_IXMLDOMTextGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16856:1"
+
+[MSXML_IXMLDOMTextGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16907:1"
+
+[MSXML_IXMLDOMTextGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:16958:1"
+
+[MSXML_IXMLDOMTextGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:17010:1"
+
+[MSXML_IXMLDOMTextGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:17061:1"
+
+[MSXML_IXMLDOMTextinsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:17112:1"
+
+[MSXML_IXMLDOMTextreplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:17175:1"
+
+[MSXML_IXMLDOMTextremoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:17246:1"
+
+[MSXML_IXMLDOMTextappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:17308:1"
+
+[MSXML_IXMLDOMTexthasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTexthasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:17369:1"
+
+[MSXML_IXMLDOMTextGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:17394:1"
+
+[MSXML_IXMLDOMTextcloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextcloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:17445:1"
+
+[MSXML_IXMLDOMTextGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:17496:1"
+
+[MSXML_IXMLDOMTextGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:17533:1"
+
+[MSXML_IXMLDOMTextSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:17569:1"
+
+[MSXML_IXMLDOMTextGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:17597:1"
+
+[MSXML_IXMLDOMTextGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:17622:1"
+
+[MSXML_IXMLDOMTextGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:17674:1"
+
+[MSXML_IXMLDOMTextSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:17706:1"
+
+[MSXML_IXMLDOMTextGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:17731:1"
+
+[MSXML_IXMLDOMTextSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:17763:1"
+
+[MSXML_IXMLDOMTextGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:17792:1"
+
+[MSXML_IXMLDOMTexttransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTexttransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:17828:1"
+
+[MSXML_IXMLDOMTextselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:17877:1"
+
+[MSXML_IXMLDOMTextselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:17933:1"
+
+[MSXML_IXMLDOMTextGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:17989:1"
+
+[MSXML_IXMLDOMTextGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18013:1"
+
+[MSXML_IXMLDOMTextGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18050:1"
+
+[MSXML_IXMLDOMTextGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18087:1"
+
+[MSXML_IXMLDOMTexttransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTexttransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18124:1"
+
+[MSXML_IXMLDOMTextGetdata]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **data);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18161:1"
+
+[MSXML_IXMLDOMTextSetdata]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextSetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18197:1"
+
+[MSXML_IXMLDOMTextGetlength]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextGetlength(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *dataLength);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18225:1"
+
+[MSXML_IXMLDOMTextsubstringData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextsubstringData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count, char **data);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18249:1"
+
+[MSXML_IXMLDOMTextappendData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextappendData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18287:1"
+
+[MSXML_IXMLDOMTextinsertData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextinsertData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, const char *data);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18316:1"
+
+[MSXML_IXMLDOMTextdeleteData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextdeleteData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18345:1"
+
+[MSXML_IXMLDOMTextreplaceData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextreplaceData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count, const char *data);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18370:1"
+
+[MSXML_IXMLDOMTextsplitText]
+Class="Function"
+Prototype="long MSXML_IXMLDOMTextsplitText(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, CAObjHandle *rightHandTextNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18399:1"
+
+[MSXML_IXMLDOMCharacterDataGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18451:1"
+
+[MSXML_IXMLDOMCharacterDataGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18488:1"
+
+[MSXML_IXMLDOMCharacterDataSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18519:1"
+
+[MSXML_IXMLDOMCharacterDataGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18543:1"
+
+[MSXML_IXMLDOMCharacterDataGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18567:1"
+
+[MSXML_IXMLDOMCharacterDataGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18618:1"
+
+[MSXML_IXMLDOMCharacterDataGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18669:1"
+
+[MSXML_IXMLDOMCharacterDataGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18720:1"
+
+[MSXML_IXMLDOMCharacterDataGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18771:1"
+
+[MSXML_IXMLDOMCharacterDataGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18823:1"
+
+[MSXML_IXMLDOMCharacterDataGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18874:1"
+
+[MSXML_IXMLDOMCharacterDatainsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDatainsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18925:1"
+
+[MSXML_IXMLDOMCharacterDatareplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDatareplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:18988:1"
+
+[MSXML_IXMLDOMCharacterDataremoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:19059:1"
+
+[MSXML_IXMLDOMCharacterDataappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:19121:1"
+
+[MSXML_IXMLDOMCharacterDatahasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDatahasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:19182:1"
+
+[MSXML_IXMLDOMCharacterDataGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:19207:1"
+
+[MSXML_IXMLDOMCharacterDatacloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDatacloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:19258:1"
+
+[MSXML_IXMLDOMCharacterDataGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:19310:1"
+
+[MSXML_IXMLDOMCharacterDataGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:19347:1"
+
+[MSXML_IXMLDOMCharacterDataSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:19384:1"
+
+[MSXML_IXMLDOMCharacterDataGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:19413:1"
+
+[MSXML_IXMLDOMCharacterDataGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:19438:1"
+
+[MSXML_IXMLDOMCharacterDataGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:19490:1"
+
+[MSXML_IXMLDOMCharacterDataSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:19522:1"
+
+[MSXML_IXMLDOMCharacterDataGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:19547:1"
+
+[MSXML_IXMLDOMCharacterDataSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:19579:1"
+
+[MSXML_IXMLDOMCharacterDataGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:19608:1"
+
+[MSXML_IXMLDOMCharacterDatatransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDatatransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:19645:1"
+
+[MSXML_IXMLDOMCharacterDataselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:19694:1"
+
+[MSXML_IXMLDOMCharacterDataselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:19750:1"
+
+[MSXML_IXMLDOMCharacterDataGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:19806:1"
+
+[MSXML_IXMLDOMCharacterDataGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:19830:1"
+
+[MSXML_IXMLDOMCharacterDataGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:19867:1"
+
+[MSXML_IXMLDOMCharacterDataGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:19904:1"
+
+[MSXML_IXMLDOMCharacterDatatransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDatatransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:19941:1"
+
+[MSXML_IXMLDOMCharacterDataGetdata]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **data);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:19978:1"
+
+[MSXML_IXMLDOMCharacterDataSetdata]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataSetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:20015:1"
+
+[MSXML_IXMLDOMCharacterDataGetlength]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataGetlength(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *dataLength);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:20044:1"
+
+[MSXML_IXMLDOMCharacterDatasubstringData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDatasubstringData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count, char **data);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:20068:1"
+
+[MSXML_IXMLDOMCharacterDataappendData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDataappendData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:20106:1"
+
+[MSXML_IXMLDOMCharacterDatainsertData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDatainsertData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, const char *data);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:20135:1"
+
+[MSXML_IXMLDOMCharacterDatadeleteData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDatadeleteData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:20165:1"
+
+[MSXML_IXMLDOMCharacterDatareplaceData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCharacterDatareplaceData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count, const char *data);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:20190:1"
+
+[MSXML_IXMLDOMCommentGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:20220:1"
+
+[MSXML_IXMLDOMCommentGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:20257:1"
+
+[MSXML_IXMLDOMCommentSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:20288:1"
+
+[MSXML_IXMLDOMCommentGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:20312:1"
+
+[MSXML_IXMLDOMCommentGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:20336:1"
+
+[MSXML_IXMLDOMCommentGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:20387:1"
+
+[MSXML_IXMLDOMCommentGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:20438:1"
+
+[MSXML_IXMLDOMCommentGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:20489:1"
+
+[MSXML_IXMLDOMCommentGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:20540:1"
+
+[MSXML_IXMLDOMCommentGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:20592:1"
+
+[MSXML_IXMLDOMCommentGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:20643:1"
+
+[MSXML_IXMLDOMCommentinsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:20694:1"
+
+[MSXML_IXMLDOMCommentreplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:20757:1"
+
+[MSXML_IXMLDOMCommentremoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:20828:1"
+
+[MSXML_IXMLDOMCommentappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:20890:1"
+
+[MSXML_IXMLDOMCommenthasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommenthasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:20951:1"
+
+[MSXML_IXMLDOMCommentGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:20976:1"
+
+[MSXML_IXMLDOMCommentcloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentcloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21027:1"
+
+[MSXML_IXMLDOMCommentGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21078:1"
+
+[MSXML_IXMLDOMCommentGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21115:1"
+
+[MSXML_IXMLDOMCommentSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21151:1"
+
+[MSXML_IXMLDOMCommentGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21180:1"
+
+[MSXML_IXMLDOMCommentGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21205:1"
+
+[MSXML_IXMLDOMCommentGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21257:1"
+
+[MSXML_IXMLDOMCommentSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21289:1"
+
+[MSXML_IXMLDOMCommentGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21314:1"
+
+[MSXML_IXMLDOMCommentSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21346:1"
+
+[MSXML_IXMLDOMCommentGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21375:1"
+
+[MSXML_IXMLDOMCommenttransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommenttransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21412:1"
+
+[MSXML_IXMLDOMCommentselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21461:1"
+
+[MSXML_IXMLDOMCommentselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21517:1"
+
+[MSXML_IXMLDOMCommentGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21573:1"
+
+[MSXML_IXMLDOMCommentGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21597:1"
+
+[MSXML_IXMLDOMCommentGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21634:1"
+
+[MSXML_IXMLDOMCommentGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21671:1"
+
+[MSXML_IXMLDOMCommenttransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommenttransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21708:1"
+
+[MSXML_IXMLDOMCommentGetdata]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **data);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21745:1"
+
+[MSXML_IXMLDOMCommentSetdata]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentSetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21781:1"
+
+[MSXML_IXMLDOMCommentGetlength]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentGetlength(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *dataLength);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21810:1"
+
+[MSXML_IXMLDOMCommentsubstringData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentsubstringData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count, char **data);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21834:1"
+
+[MSXML_IXMLDOMCommentappendData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentappendData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21872:1"
+
+[MSXML_IXMLDOMCommentinsertData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentinsertData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, const char *data);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21901:1"
+
+[MSXML_IXMLDOMCommentdeleteData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentdeleteData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21930:1"
+
+[MSXML_IXMLDOMCommentreplaceData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCommentreplaceData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count, const char *data);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21955:1"
+
+[MSXML_IXMLDOMCDATASectionGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:21985:1"
+
+[MSXML_IXMLDOMCDATASectionGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:22022:1"
+
+[MSXML_IXMLDOMCDATASectionSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:22053:1"
+
+[MSXML_IXMLDOMCDATASectionGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:22077:1"
+
+[MSXML_IXMLDOMCDATASectionGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:22101:1"
+
+[MSXML_IXMLDOMCDATASectionGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:22152:1"
+
+[MSXML_IXMLDOMCDATASectionGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:22203:1"
+
+[MSXML_IXMLDOMCDATASectionGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:22254:1"
+
+[MSXML_IXMLDOMCDATASectionGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:22305:1"
+
+[MSXML_IXMLDOMCDATASectionGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:22357:1"
+
+[MSXML_IXMLDOMCDATASectionGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:22408:1"
+
+[MSXML_IXMLDOMCDATASectioninsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectioninsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:22459:1"
+
+[MSXML_IXMLDOMCDATASectionreplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:22522:1"
+
+[MSXML_IXMLDOMCDATASectionremoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:22593:1"
+
+[MSXML_IXMLDOMCDATASectionappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:22655:1"
+
+[MSXML_IXMLDOMCDATASectionhasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionhasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:22716:1"
+
+[MSXML_IXMLDOMCDATASectionGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:22741:1"
+
+[MSXML_IXMLDOMCDATASectioncloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectioncloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:22792:1"
+
+[MSXML_IXMLDOMCDATASectionGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:22844:1"
+
+[MSXML_IXMLDOMCDATASectionGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:22881:1"
+
+[MSXML_IXMLDOMCDATASectionSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:22918:1"
+
+[MSXML_IXMLDOMCDATASectionGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:22947:1"
+
+[MSXML_IXMLDOMCDATASectionGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:22972:1"
+
+[MSXML_IXMLDOMCDATASectionGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23024:1"
+
+[MSXML_IXMLDOMCDATASectionSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23056:1"
+
+[MSXML_IXMLDOMCDATASectionGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23081:1"
+
+[MSXML_IXMLDOMCDATASectionSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23113:1"
+
+[MSXML_IXMLDOMCDATASectionGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23142:1"
+
+[MSXML_IXMLDOMCDATASectiontransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectiontransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23179:1"
+
+[MSXML_IXMLDOMCDATASectionselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23228:1"
+
+[MSXML_IXMLDOMCDATASectionselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23284:1"
+
+[MSXML_IXMLDOMCDATASectionGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23340:1"
+
+[MSXML_IXMLDOMCDATASectionGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23364:1"
+
+[MSXML_IXMLDOMCDATASectionGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23401:1"
+
+[MSXML_IXMLDOMCDATASectionGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23438:1"
+
+[MSXML_IXMLDOMCDATASectiontransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectiontransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23475:1"
+
+[MSXML_IXMLDOMCDATASectionGetdata]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **data);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23512:1"
+
+[MSXML_IXMLDOMCDATASectionSetdata]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionSetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23549:1"
+
+[MSXML_IXMLDOMCDATASectionGetlength]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionGetlength(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *dataLength);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23578:1"
+
+[MSXML_IXMLDOMCDATASectionsubstringData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionsubstringData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count, char **data);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23602:1"
+
+[MSXML_IXMLDOMCDATASectionappendData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionappendData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23640:1"
+
+[MSXML_IXMLDOMCDATASectioninsertData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectioninsertData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, const char *data);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23669:1"
+
+[MSXML_IXMLDOMCDATASectiondeleteData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectiondeleteData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23699:1"
+
+[MSXML_IXMLDOMCDATASectionreplaceData]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionreplaceData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count, const char *data);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23724:1"
+
+[MSXML_IXMLDOMCDATASectionsplitText]
+Class="Function"
+Prototype="long MSXML_IXMLDOMCDATASectionsplitText(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, CAObjHandle *rightHandTextNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23754:1"
+
+[MSXML_IXMLDOMProcessingInstructionGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23807:1"
+
+[MSXML_IXMLDOMProcessingInstructionGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23844:1"
+
+[MSXML_IXMLDOMProcessingInstructionSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23875:1"
+
+[MSXML_IXMLDOMProcessingInstructionGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23899:1"
+
+[MSXML_IXMLDOMProcessingInstructionGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23923:1"
+
+[MSXML_IXMLDOMProcessingInstructionGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:23974:1"
+
+[MSXML_IXMLDOMProcessingInstructionGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:24025:1"
+
+[MSXML_IXMLDOMProcessingInstructionGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:24076:1"
+
+[MSXML_IXMLDOMProcessingInstructionGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:24127:1"
+
+[MSXML_IXMLDOMProcessingInstructionGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:24179:1"
+
+[MSXML_IXMLDOMProcessingInstructionGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:24230:1"
+
+[MSXML_IXMLDOMProcessingInstructioninsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructioninsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:24281:1"
+
+[MSXML_IXMLDOMProcessingInstructionreplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:24344:1"
+
+[MSXML_IXMLDOMProcessingInstructionremoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:24415:1"
+
+[MSXML_IXMLDOMProcessingInstructionappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:24477:1"
+
+[MSXML_IXMLDOMProcessingInstructionhasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionhasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:24538:1"
+
+[MSXML_IXMLDOMProcessingInstructionGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:24563:1"
+
+[MSXML_IXMLDOMProcessingInstructioncloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructioncloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:24614:1"
+
+[MSXML_IXMLDOMProcessingInstructionGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:24666:1"
+
+[MSXML_IXMLDOMProcessingInstructionGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:24703:1"
+
+[MSXML_IXMLDOMProcessingInstructionSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:24740:1"
+
+[MSXML_IXMLDOMProcessingInstructionGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:24769:1"
+
+[MSXML_IXMLDOMProcessingInstructionGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:24794:1"
+
+[MSXML_IXMLDOMProcessingInstructionGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:24846:1"
+
+[MSXML_IXMLDOMProcessingInstructionSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:24878:1"
+
+[MSXML_IXMLDOMProcessingInstructionGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:24903:1"
+
+[MSXML_IXMLDOMProcessingInstructionSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:24935:1"
+
+[MSXML_IXMLDOMProcessingInstructionGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:24964:1"
+
+[MSXML_IXMLDOMProcessingInstructiontransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructiontransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:25001:1"
+
+[MSXML_IXMLDOMProcessingInstructionselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:25050:1"
+
+[MSXML_IXMLDOMProcessingInstructionselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:25106:1"
+
+[MSXML_IXMLDOMProcessingInstructionGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:25162:1"
+
+[MSXML_IXMLDOMProcessingInstructionGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:25186:1"
+
+[MSXML_IXMLDOMProcessingInstructionGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:25223:1"
+
+[MSXML_IXMLDOMProcessingInstructionGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:25260:1"
+
+[MSXML_IXMLDOMProcessingInstructiontransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructiontransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:25297:1"
+
+[MSXML_IXMLDOMProcessingInstructionGettarget]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGettarget(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:25334:1"
+
+[MSXML_IXMLDOMProcessingInstructionGetdata]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionGetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:25371:1"
+
+[MSXML_IXMLDOMProcessingInstructionSetdata]
+Class="Function"
+Prototype="long MSXML_IXMLDOMProcessingInstructionSetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:25408:1"
+
+[MSXML_IXMLDOMEntityReferenceGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:25437:1"
+
+[MSXML_IXMLDOMEntityReferenceGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:25474:1"
+
+[MSXML_IXMLDOMEntityReferenceSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:25505:1"
+
+[MSXML_IXMLDOMEntityReferenceGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:25529:1"
+
+[MSXML_IXMLDOMEntityReferenceGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:25553:1"
+
+[MSXML_IXMLDOMEntityReferenceGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:25604:1"
+
+[MSXML_IXMLDOMEntityReferenceGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:25655:1"
+
+[MSXML_IXMLDOMEntityReferenceGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:25706:1"
+
+[MSXML_IXMLDOMEntityReferenceGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:25757:1"
+
+[MSXML_IXMLDOMEntityReferenceGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:25809:1"
+
+[MSXML_IXMLDOMEntityReferenceGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:25860:1"
+
+[MSXML_IXMLDOMEntityReferenceinsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:25911:1"
+
+[MSXML_IXMLDOMEntityReferencereplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferencereplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:25974:1"
+
+[MSXML_IXMLDOMEntityReferenceremoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:26045:1"
+
+[MSXML_IXMLDOMEntityReferenceappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:26107:1"
+
+[MSXML_IXMLDOMEntityReferencehasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferencehasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:26168:1"
+
+[MSXML_IXMLDOMEntityReferenceGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:26193:1"
+
+[MSXML_IXMLDOMEntityReferencecloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferencecloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:26244:1"
+
+[MSXML_IXMLDOMEntityReferenceGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:26296:1"
+
+[MSXML_IXMLDOMEntityReferenceGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:26333:1"
+
+[MSXML_IXMLDOMEntityReferenceSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:26370:1"
+
+[MSXML_IXMLDOMEntityReferenceGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:26399:1"
+
+[MSXML_IXMLDOMEntityReferenceGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:26424:1"
+
+[MSXML_IXMLDOMEntityReferenceGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:26476:1"
+
+[MSXML_IXMLDOMEntityReferenceSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:26508:1"
+
+[MSXML_IXMLDOMEntityReferenceGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:26533:1"
+
+[MSXML_IXMLDOMEntityReferenceSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:26565:1"
+
+[MSXML_IXMLDOMEntityReferenceGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:26594:1"
+
+[MSXML_IXMLDOMEntityReferencetransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferencetransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:26631:1"
+
+[MSXML_IXMLDOMEntityReferenceselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:26680:1"
+
+[MSXML_IXMLDOMEntityReferenceselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:26736:1"
+
+[MSXML_IXMLDOMEntityReferenceGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:26792:1"
+
+[MSXML_IXMLDOMEntityReferenceGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:26816:1"
+
+[MSXML_IXMLDOMEntityReferenceGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:26853:1"
+
+[MSXML_IXMLDOMEntityReferenceGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferenceGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:26890:1"
+
+[MSXML_IXMLDOMEntityReferencetransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityReferencetransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:26927:1"
+
+[MSXML_IXMLDOMParseErrorGeterrorCode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMParseErrorGeterrorCode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *errorCode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:26964:1"
+
+[MSXML_IXMLDOMParseErrorGeturl]
+Class="Function"
+Prototype="long MSXML_IXMLDOMParseErrorGeturl(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **urlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:26989:1"
+
+[MSXML_IXMLDOMParseErrorGetreason]
+Class="Function"
+Prototype="long MSXML_IXMLDOMParseErrorGetreason(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **reasonString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:27026:1"
+
+[MSXML_IXMLDOMParseErrorGetsrcText]
+Class="Function"
+Prototype="long MSXML_IXMLDOMParseErrorGetsrcText(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **sourceString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:27063:1"
+
+[MSXML_IXMLDOMParseErrorGetline]
+Class="Function"
+Prototype="long MSXML_IXMLDOMParseErrorGetline(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *lineNumber);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:27100:1"
+
+[MSXML_IXMLDOMParseErrorGetlinepos]
+Class="Function"
+Prototype="long MSXML_IXMLDOMParseErrorGetlinepos(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *linePosition);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:27124:1"
+
+[MSXML_IXMLDOMParseErrorGetfilepos]
+Class="Function"
+Prototype="long MSXML_IXMLDOMParseErrorGetfilepos(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *filePosition);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:27149:1"
+
+[MSXML_IXMLDOMNotationGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:27174:1"
+
+[MSXML_IXMLDOMNotationGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:27211:1"
+
+[MSXML_IXMLDOMNotationSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:27242:1"
+
+[MSXML_IXMLDOMNotationGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:27266:1"
+
+[MSXML_IXMLDOMNotationGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:27290:1"
+
+[MSXML_IXMLDOMNotationGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:27341:1"
+
+[MSXML_IXMLDOMNotationGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:27392:1"
+
+[MSXML_IXMLDOMNotationGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:27443:1"
+
+[MSXML_IXMLDOMNotationGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:27494:1"
+
+[MSXML_IXMLDOMNotationGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:27546:1"
+
+[MSXML_IXMLDOMNotationGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:27597:1"
+
+[MSXML_IXMLDOMNotationinsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:27648:1"
+
+[MSXML_IXMLDOMNotationreplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:27711:1"
+
+[MSXML_IXMLDOMNotationremoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:27782:1"
+
+[MSXML_IXMLDOMNotationappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:27844:1"
+
+[MSXML_IXMLDOMNotationhasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationhasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:27905:1"
+
+[MSXML_IXMLDOMNotationGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:27930:1"
+
+[MSXML_IXMLDOMNotationcloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationcloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:27981:1"
+
+[MSXML_IXMLDOMNotationGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28032:1"
+
+[MSXML_IXMLDOMNotationGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28069:1"
+
+[MSXML_IXMLDOMNotationSettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28105:1"
+
+[MSXML_IXMLDOMNotationGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28134:1"
+
+[MSXML_IXMLDOMNotationGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28159:1"
+
+[MSXML_IXMLDOMNotationGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28211:1"
+
+[MSXML_IXMLDOMNotationSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28243:1"
+
+[MSXML_IXMLDOMNotationGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28268:1"
+
+[MSXML_IXMLDOMNotationSetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28300:1"
+
+[MSXML_IXMLDOMNotationGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28329:1"
+
+[MSXML_IXMLDOMNotationtransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationtransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28366:1"
+
+[MSXML_IXMLDOMNotationselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28415:1"
+
+[MSXML_IXMLDOMNotationselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28471:1"
+
+[MSXML_IXMLDOMNotationGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28527:1"
+
+[MSXML_IXMLDOMNotationGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28551:1"
+
+[MSXML_IXMLDOMNotationGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28588:1"
+
+[MSXML_IXMLDOMNotationGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28625:1"
+
+[MSXML_IXMLDOMNotationtransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationtransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28662:1"
+
+[MSXML_IXMLDOMNotationGetpublicId]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetpublicId(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *publicId);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28699:1"
+
+[MSXML_IXMLDOMNotationGetsystemId]
+Class="Function"
+Prototype="long MSXML_IXMLDOMNotationGetsystemId(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *systemId);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28730:1"
+
+[MSXML_IXMLDOMEntityGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28761:1"
+
+[MSXML_IXMLDOMEntityGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28798:1"
+
+[MSXML_IXMLDOMEntitySetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntitySetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28829:1"
+
+[MSXML_IXMLDOMEntityGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28853:1"
+
+[MSXML_IXMLDOMEntityGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28877:1"
+
+[MSXML_IXMLDOMEntityGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28928:1"
+
+[MSXML_IXMLDOMEntityGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:28979:1"
+
+[MSXML_IXMLDOMEntityGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:29030:1"
+
+[MSXML_IXMLDOMEntityGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:29081:1"
+
+[MSXML_IXMLDOMEntityGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:29133:1"
+
+[MSXML_IXMLDOMEntityGetattributes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:29184:1"
+
+[MSXML_IXMLDOMEntityinsertBefore]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:29235:1"
+
+[MSXML_IXMLDOMEntityreplaceChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:29298:1"
+
+[MSXML_IXMLDOMEntityremoveChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:29369:1"
+
+[MSXML_IXMLDOMEntityappendChild]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:29431:1"
+
+[MSXML_IXMLDOMEntityhasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityhasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:29492:1"
+
+[MSXML_IXMLDOMEntityGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:29517:1"
+
+[MSXML_IXMLDOMEntitycloneNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntitycloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:29568:1"
+
+[MSXML_IXMLDOMEntityGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:29619:1"
+
+[MSXML_IXMLDOMEntityGettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:29656:1"
+
+[MSXML_IXMLDOMEntitySettext]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntitySettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:29692:1"
+
+[MSXML_IXMLDOMEntityGetspecified]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:29721:1"
+
+[MSXML_IXMLDOMEntityGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:29746:1"
+
+[MSXML_IXMLDOMEntityGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:29798:1"
+
+[MSXML_IXMLDOMEntitySetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntitySetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:29830:1"
+
+[MSXML_IXMLDOMEntityGetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:29855:1"
+
+[MSXML_IXMLDOMEntitySetdataType]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntitySetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:29887:1"
+
+[MSXML_IXMLDOMEntityGetxml]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:29916:1"
+
+[MSXML_IXMLDOMEntitytransformNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntitytransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:29953:1"
+
+[MSXML_IXMLDOMEntityselectNodes]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:30002:1"
+
+[MSXML_IXMLDOMEntityselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:30058:1"
+
+[MSXML_IXMLDOMEntityGetparsed]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:30114:1"
+
+[MSXML_IXMLDOMEntityGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:30138:1"
+
+[MSXML_IXMLDOMEntityGetprefix]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:30175:1"
+
+[MSXML_IXMLDOMEntityGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:30212:1"
+
+[MSXML_IXMLDOMEntitytransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntitytransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:30249:1"
+
+[MSXML_IXMLDOMEntityGetpublicId]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetpublicId(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *publicId);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:30286:1"
+
+[MSXML_IXMLDOMEntityGetsystemId]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetsystemId(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *systemId);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:30317:1"
+
+[MSXML_IXMLDOMEntityGetnotationName]
+Class="Function"
+Prototype="long MSXML_IXMLDOMEntityGetnotationName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:30348:1"
+
+[MSXML_IXTLRuntimeGetnodeName]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:30385:1"
+
+[MSXML_IXTLRuntimeGetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:30421:1"
+
+[MSXML_IXTLRuntimeSetnodeValue]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:30452:1"
+
+[MSXML_IXTLRuntimeGetnodeType]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:30476:1"
+
+[MSXML_IXTLRuntimeGetparentNode]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:30500:1"
+
+[MSXML_IXTLRuntimeGetchildNodes]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:30551:1"
+
+[MSXML_IXTLRuntimeGetfirstChild]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:30602:1"
+
+[MSXML_IXTLRuntimeGetlastChild]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:30653:1"
+
+[MSXML_IXTLRuntimeGetpreviousSibling]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:30704:1"
+
+[MSXML_IXTLRuntimeGetnextSibling]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:30756:1"
+
+[MSXML_IXTLRuntimeGetattributes]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:30807:1"
+
+[MSXML_IXTLRuntimeinsertBefore]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:30858:1"
+
+[MSXML_IXTLRuntimereplaceChild]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimereplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:30921:1"
+
+[MSXML_IXTLRuntimeremoveChild]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:30992:1"
+
+[MSXML_IXTLRuntimeappendChild]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:31054:1"
+
+[MSXML_IXTLRuntimehasChildNodes]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimehasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:31115:1"
+
+[MSXML_IXTLRuntimeGetownerDocument]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:31140:1"
+
+[MSXML_IXTLRuntimecloneNode]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimecloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:31191:1"
+
+[MSXML_IXTLRuntimeGetnodeTypeString]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:31242:1"
+
+[MSXML_IXTLRuntimeGettext]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:31279:1"
+
+[MSXML_IXTLRuntimeSettext]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:31315:1"
+
+[MSXML_IXTLRuntimeGetspecified]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:31343:1"
+
+[MSXML_IXTLRuntimeGetdefinition]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:31368:1"
+
+[MSXML_IXTLRuntimeGetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:31420:1"
+
+[MSXML_IXTLRuntimeSetnodeTypedValue]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:31452:1"
+
+[MSXML_IXTLRuntimeGetdataType]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:31477:1"
+
+[MSXML_IXTLRuntimeSetdataType]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:31509:1"
+
+[MSXML_IXTLRuntimeGetxml]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:31538:1"
+
+[MSXML_IXTLRuntimetransformNode]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimetransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:31574:1"
+
+[MSXML_IXTLRuntimeselectNodes]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:31623:1"
+
+[MSXML_IXTLRuntimeselectSingleNode]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:31679:1"
+
+[MSXML_IXTLRuntimeGetparsed]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:31735:1"
+
+[MSXML_IXTLRuntimeGetnamespaceURI]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:31759:1"
+
+[MSXML_IXTLRuntimeGetprefix]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:31796:1"
+
+[MSXML_IXTLRuntimeGetbaseName]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:31833:1"
+
+[MSXML_IXTLRuntimetransformNodeToObject]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimetransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:31870:1"
+
+[MSXML_IXTLRuntimeuniqueID]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeuniqueID(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle pNode, long *pID);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:31907:1"
+
+[MSXML_IXTLRuntimedepth]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimedepth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle pNode, long *pDepth);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:31941:1"
+
+[MSXML_IXTLRuntimechildNumber]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimechildNumber(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle pNode, long *pNumber);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:31975:1"
+
+[MSXML_IXTLRuntimeancestorChildNumber]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeancestorChildNumber(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *bstrNodeName, CAObjHandle pNode, long *pNumber);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:32010:1"
+
+[MSXML_IXTLRuntimeabsoluteChildNumber]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeabsoluteChildNumber(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle pNode, long *pNumber);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:32051:1"
+
+[MSXML_IXTLRuntimeformatIndex]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeformatIndex(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long lIndex, const char *bstrFormat, char **pbstrFormattedString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:32087:1"
+
+[MSXML_IXTLRuntimeformatNumber]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeformatNumber(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double dblNumber, const char *bstrFormat, char **pbstrFormattedString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:32131:1"
+
+[MSXML_IXTLRuntimeformatDate]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeformatDate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT varDate, const char *bstrFormat, struct tagVARIANT varDestLocale, char **pbstrFormattedString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:32177:1"
+
+[MSXML_IXTLRuntimeformatTime]
+Class="Function"
+Prototype="long MSXML_IXTLRuntimeformatTime(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT varTime, const char *bstrFormat, struct tagVARIANT varDestLocale, char **pbstrFormattedString);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:32224:1"
+
+[MSXML_XMLDOMDocumentEventsRegOnondataavailable]
+Class="Function"
+Prototype="long MSXML_XMLDOMDocumentEventsRegOnondataavailable(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:32323:1"
+
+[MSXML_XMLDOMDocumentEventsRegOnonreadystatechange]
+Class="Function"
+Prototype="long MSXML_XMLDOMDocumentEventsRegOnonreadystatechange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\cvitool\msxmldom.c:32339:1"
+

@@ -1,0 +1,9 @@
+-inrc c:\work\src\modules\axis\class\cvibuild.axis\Release\resources.in.rc
+-outrc c:\work\src\modules\axis\class\cvibuild.axis\Release\resources.out.rc
+-inhdef c:\work\src\modules\axis\class\cvibuild.axis\Release\axis.h.hdefs
+-inhdef c:\work\src\modules\axis\class\cvibuild.axis\Release\module.h.hdefs
+-outdef c:\work\src\modules\axis\class\cvibuild.axis\Release\axis.dll.defs
+-indefprot c:\work\src\modules\axis\class\cvibuild.axis\Release\axis.obj.cvidefprots
+-indefprot c:\work\src\modules\axis\class\cvibuild.axis\Release\axis_module.obj.cvidefprots
+-indefprot c:\work\src\modules\axis\class\cvibuild.axis\Release\Exception.obj.cvidefprots
+-dllName axis.dll

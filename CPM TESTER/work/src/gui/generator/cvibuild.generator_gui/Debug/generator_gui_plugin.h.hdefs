@@ -1,0 +1,23 @@
+[pluginInitialize]
+Class="Function"
+Prototype="struct _SElException *pluginInitialize(struct _SPluginArgs *a_pPluginArgs) __declspec(dllexport);"
+
+[pluginRun]
+Class="Function"
+Prototype="struct _SElException *pluginRun(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
+
+[pluginLeave]
+Class="Function"
+Prototype="struct _SElException *pluginLeave(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
+
+[pluginGetInfo]
+Class="Function"
+Prototype="struct _SElException *pluginGetInfo(struct _SPluginInfo **pInfo) __declspec(dllexport);"
+
+[pluginGetAttribute]
+Class="Function"
+Prototype="struct _SElException *pluginGetAttribute(unsigned int attrID, unsigned int size, void *value) __declspec(dllexport);"
+
+[gs_InfoData]
+Class="Var"
+

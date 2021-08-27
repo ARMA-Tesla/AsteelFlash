@@ -1,0 +1,20 @@
+[dielectrimeter_new]
+Class="Function"
+Prototype="struct _SElException *dielectrimeter_new(struct _Dielectrimeter **dielectrimeter, const char *name, const char *optionString);"
+SourceLocation="c:\work\src\modules\dielectrimeter\class\dielectrimeters.c:85:17"
+
+[dielectrimeter_delete]
+Class="Function"
+Prototype="struct _SElException *dielectrimeter_delete(struct _Dielectrimeter **dielectrimeter);"
+SourceLocation="c:\work\src\modules\dielectrimeter\class\dielectrimeters.c:127:17"
+
+[dielectrimeters_new]
+Class="Function"
+Prototype="struct _SElException *dielectrimeters_new(struct _Dielectrimeters **dielectrimeters);"
+SourceLocation="c:\work\src\modules\dielectrimeter\class\dielectrimeters.c:155:17"
+
+[dielectrimeters_delete]
+Class="Function"
+Prototype="struct _SElException *dielectrimeters_delete(struct _Dielectrimeters **dielectrimeters);"
+SourceLocation="c:\work\src\modules\dielectrimeter\class\dielectrimeters.c:188:17"
+

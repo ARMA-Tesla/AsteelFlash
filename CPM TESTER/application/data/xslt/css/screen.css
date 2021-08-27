@@ -1,0 +1,96 @@
+/*
+  * Base Style Sheet for XSLT ELCOM DVI
+  * version: screen.css, 2006/08
+  * (c) 2005, Ales Skotnica
+  * Frenstat pod Rahostem, Czech Republic
+  * tel.: +420 775 565 850, http://www.skotnica.eu
+*/
+
+
+
+/***************** Body */
+
+    body {margin:0px;padding:5px;background:#fff;font-family:'Arial CE', 'Helvetica CE', Arial, Helvetica, sans-serif;font-size:95%;font-style:normal;font-weight:normal;line-height:1;text-align:left;color:#000;}
+
+/***************** Main HTML */
+    q           {font-style:italic;quotes:"„" "“" "‚" "‘";}
+    q:before    {content:open-quote;}
+    q:after     {content:close-quote;}
+    form        {margin:0;}
+    img         {border:0;}
+    p               {margin:7px 0;padding: 0;}
+    * html td, * html th, * html caption { font-size: 70%;}
+
+/***************** Links */
+	a, a:link, a:visited                {color:#0071E1;text-decoration:underline;}
+	a:hover, a:focus                    {color:#f00;text-decoration:underline;}
+	a:active                            {color:#090;text-decoration:underline;}
+    a img, a:link img, a:visited img    {border-style:none;background-color:transparent;}
+
+/***************** Def. tags */
+    .nscr, .txt     {display:none;}
+    hr, .clr        {clear:both;display:none;}
+    .error, .irow_error {
+            background-color: #FFB6C1;
+            font-weight: bold;
+	        color: red;
+        }
+    .nok, .irow_error {
+            background-color: #29aecc;
+            font-weight: bold;
+	        color: white;
+        }
+
+/***************** Titles */
+    h2 {font-size:145%; font-weight: normal; color: #B35839;  }
+    h3 {font-size:130%; font-weight: bold; color: #B35839;  }
+    h4 {font-size:120%; font-weight: bold; color: #B35839;  }
+    h5 {font-size:110%; font-weight: bold; color: #666;}
+    h6 {font-size: 100%; font-weight: bold; color: #000;}
+
+/***************** Table Head */
+
+    #THead {width:790px;margin-bottom:15px;border:none;background:transparent;}
+    #THead .label {font-weight:normal;}
+    #THead .value {font-weight:bold;}
+
+
+/***************** Table Table */
+
+    #TTable    {width:790px;}
+
+    #TTable thead th   {border-bottom:double #B8DC00;border-top:solid 1px #B8DC00;border-left:solid 1px #B8DC00;text-align:center;background:#a9fc03 url(../img/bg-thead.png) repeat-x;}
+    #TTable thead th.e {border-right:solid 1px #B8DC00;}
+
+    #TTable tbody td {border-bottom:solid 1px #ccc;border-left:solid 1px #ccc;}
+    #TTable tbody td.e {border-right:solid 1px #ccc;}
+    #TTable tbody  {border-left:solid 1px #ccc;border-right:solid 1px #ccc;}
+    #TTable tbody td pre {font-size:110%; padding: 5px 5px 5px 100px;}
+
+    #TTable col.col-a { width: 90px; }
+    #TTable col.col-b { width: 344px; }
+    #TTable col.col-c { width: 70px; }
+    #TTable col.col-d { width: 70px; }
+    #TTable col.col-e { width: 70px; }
+    #TTable col.col-f { width: 70px; }
+    #TTable col.col-g { width: 70px; }
+
+    #TTable tfoot td {padding-top:15px; color:#666;}
+    #TTable tbody tr td .TInfo  { margin-top: 6px; }
+    #TTable tbody tr td .TInfo tr td { font-size: 100%; border-bottom:none;border-left:none; }
+    .photoInfo { background:#0071E1; text-align: center; width: 790px; height: 20px;  color: #fff; font-size: 110%; font-weight: bold; padding: 10px 0 0 0; }
+
+    .photoInfoBig { position: absolute; width: 780px; padding: 10px; z-index: 90; left: 5px; color: #fff; font-size: 130%; font-weight: bold; background:#fff; padding: 10px; text-align: center; }
+    .photoInfoBigInfo { text-align: center; display: block; width: 750px; margin: 0 auto;  padding: 5px 0; background:#0071E1;    }
+    .tdInfo { background:  url(../img/tdInfo.gif) no-repeat top left;border-right:solid 1px #ccc; }
+
+    .fotoClose { display: block; float: right; width: 14px; height: 14px; margin: 2px 2px 0 0; }
+    .fotoClose a,.fotoClose a:link, .fotoClose a:visited, .fotoClose a:active
+     { display: block; float: right; width: 14px; height: 14px; background: transparent url(../img/ic-close.gif) no-repeat 0px 0px; text-decoration: none;  }
+    .fotoClose a:hover
+     { background-position: -14px 0px; text-decoration: none; }
+    .fotoClose a span { display: none; }
+
+
+
+

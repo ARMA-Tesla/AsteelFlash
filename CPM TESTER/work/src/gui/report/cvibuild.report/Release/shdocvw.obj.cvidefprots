@@ -1,0 +1,1095 @@
+[WebViewer_NewIWebBrowser]
+Class="Function"
+Prototype="long WebViewer_NewIWebBrowser(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:1450:1"
+
+[WebViewer_OpenIWebBrowser]
+Class="Function"
+Prototype="long WebViewer_OpenIWebBrowser(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:1467:1"
+
+[WebViewer_ActiveIWebBrowser]
+Class="Function"
+Prototype="long WebViewer_ActiveIWebBrowser(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:1485:1"
+
+[WebViewer_IWebBrowserGoBack]
+Class="Function"
+Prototype="long WebViewer_IWebBrowserGoBack(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:1502:1"
+
+[WebViewer_IWebBrowserGoForward]
+Class="Function"
+Prototype="long WebViewer_IWebBrowserGoForward(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:1525:1"
+
+[WebViewer_IWebBrowserGoHome]
+Class="Function"
+Prototype="long WebViewer_IWebBrowserGoHome(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:1548:1"
+
+[WebViewer_IWebBrowserGoSearch]
+Class="Function"
+Prototype="long WebViewer_IWebBrowserGoSearch(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:1571:1"
+
+[WebViewer_IWebBrowserNavigate]
+Class="Function"
+Prototype="long WebViewer_IWebBrowserNavigate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *URL, struct tagVARIANT flags, struct tagVARIANT targetFrameName, struct tagVARIANT postData, struct tagVARIANT headers);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:1594:1"
+
+[WebViewer_IWebBrowserRefresh]
+Class="Function"
+Prototype="long WebViewer_IWebBrowserRefresh(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:1627:1"
+
+[WebViewer_IWebBrowserRefresh2]
+Class="Function"
+Prototype="long WebViewer_IWebBrowserRefresh2(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT level);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:1650:1"
+
+[WebViewer_IWebBrowserStop]
+Class="Function"
+Prototype="long WebViewer_IWebBrowserStop(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:1674:1"
+
+[WebViewer_IWebBrowserGetApplication]
+Class="Function"
+Prototype="long WebViewer_IWebBrowserGetApplication(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppDisp);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:1697:1"
+
+[WebViewer_IWebBrowserGetParent]
+Class="Function"
+Prototype="long WebViewer_IWebBrowserGetParent(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppDisp);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:1752:1"
+
+[WebViewer_IWebBrowserGetContainer]
+Class="Function"
+Prototype="long WebViewer_IWebBrowserGetContainer(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppDisp);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:1807:1"
+
+[WebViewer_IWebBrowserGetDocument]
+Class="Function"
+Prototype="long WebViewer_IWebBrowserGetDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppDisp);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:1862:1"
+
+[WebViewer_IWebBrowserGetTopLevelContainer]
+Class="Function"
+Prototype="long WebViewer_IWebBrowserGetTopLevelContainer(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pBool);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:1917:1"
+
+[WebViewer_IWebBrowserGetType]
+Class="Function"
+Prototype="long WebViewer_IWebBrowserGetType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **type);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:1948:1"
+
+[WebViewer_IWebBrowserGetLeft]
+Class="Function"
+Prototype="long WebViewer_IWebBrowserGetLeft(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pl);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:1988:1"
+
+[WebViewer_IWebBrowserSetLeft]
+Class="Function"
+Prototype="long WebViewer_IWebBrowserSetLeft(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long pl);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2017:1"
+
+[WebViewer_IWebBrowserGetTop]
+Class="Function"
+Prototype="long WebViewer_IWebBrowserGetTop(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pl);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2040:1"
+
+[WebViewer_IWebBrowserSetTop]
+Class="Function"
+Prototype="long WebViewer_IWebBrowserSetTop(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long pl);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2069:1"
+
+[WebViewer_IWebBrowserGetWidth]
+Class="Function"
+Prototype="long WebViewer_IWebBrowserGetWidth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pl);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2092:1"
+
+[WebViewer_IWebBrowserSetWidth]
+Class="Function"
+Prototype="long WebViewer_IWebBrowserSetWidth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long pl);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2121:1"
+
+[WebViewer_IWebBrowserGetHeight]
+Class="Function"
+Prototype="long WebViewer_IWebBrowserGetHeight(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pl);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2144:1"
+
+[WebViewer_IWebBrowserSetHeight]
+Class="Function"
+Prototype="long WebViewer_IWebBrowserSetHeight(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long pl);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2173:1"
+
+[WebViewer_IWebBrowserGetLocationName]
+Class="Function"
+Prototype="long WebViewer_IWebBrowserGetLocationName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **locationName);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2196:1"
+
+[WebViewer_IWebBrowserGetLocationURL]
+Class="Function"
+Prototype="long WebViewer_IWebBrowserGetLocationURL(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **locationURL);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2237:1"
+
+[WebViewer_IWebBrowserGetBusy]
+Class="Function"
+Prototype="long WebViewer_IWebBrowserGetBusy(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pBool);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2278:1"
+
+[WebViewer_NewWebBrowserIWebBrowser2]
+Class="Function"
+Prototype="long WebViewer_NewWebBrowserIWebBrowser2(int panel, const char *label, int top, int left, int *controlID, int *UILError);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2307:1"
+
+[WebViewer_NewInternetExplorerIWebBrowser2]
+Class="Function"
+Prototype="long WebViewer_NewInternetExplorerIWebBrowser2(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2326:1"
+
+[WebViewer_OpenInternetExplorerIWebBrowser2]
+Class="Function"
+Prototype="long WebViewer_OpenInternetExplorerIWebBrowser2(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2343:1"
+
+[WebViewer_ActiveInternetExplorerIWebBrowser2]
+Class="Function"
+Prototype="long WebViewer_ActiveInternetExplorerIWebBrowser2(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2361:1"
+
+[WebViewer_IWebBrowser2GoBack]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GoBack(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2378:1"
+
+[WebViewer_IWebBrowser2GoForward]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GoForward(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2401:1"
+
+[WebViewer_IWebBrowser2GoHome]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GoHome(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2424:1"
+
+[WebViewer_IWebBrowser2GoSearch]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GoSearch(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2447:1"
+
+[WebViewer_IWebBrowser2Navigate]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2Navigate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *URL, struct tagVARIANT flags, struct tagVARIANT targetFrameName, struct tagVARIANT postData, struct tagVARIANT headers);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2470:1"
+
+[WebViewer_IWebBrowser2Refresh]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2Refresh(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2504:1"
+
+[WebViewer_IWebBrowser2Refresh2]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2Refresh2(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT level);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2527:1"
+
+[WebViewer_IWebBrowser2Stop]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2Stop(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2551:1"
+
+[WebViewer_IWebBrowser2GetApplication]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetApplication(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppDisp);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2574:1"
+
+[WebViewer_IWebBrowser2GetParent]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetParent(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppDisp);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2629:1"
+
+[WebViewer_IWebBrowser2GetContainer]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetContainer(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppDisp);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2684:1"
+
+[WebViewer_IWebBrowser2GetDocument]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppDisp);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2739:1"
+
+[WebViewer_IWebBrowser2GetTopLevelContainer]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetTopLevelContainer(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pBool);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2794:1"
+
+[WebViewer_IWebBrowser2GetType]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **type);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2825:1"
+
+[WebViewer_IWebBrowser2GetLeft]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetLeft(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pl);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2865:1"
+
+[WebViewer_IWebBrowser2SetLeft]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2SetLeft(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long pl);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2894:1"
+
+[WebViewer_IWebBrowser2GetTop]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetTop(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pl);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2917:1"
+
+[WebViewer_IWebBrowser2SetTop]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2SetTop(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long pl);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2946:1"
+
+[WebViewer_IWebBrowser2GetWidth]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetWidth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pl);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2969:1"
+
+[WebViewer_IWebBrowser2SetWidth]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2SetWidth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long pl);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:2998:1"
+
+[WebViewer_IWebBrowser2GetHeight]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetHeight(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pl);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3021:1"
+
+[WebViewer_IWebBrowser2SetHeight]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2SetHeight(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long pl);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3050:1"
+
+[WebViewer_IWebBrowser2GetLocationName]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetLocationName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **locationName);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3073:1"
+
+[WebViewer_IWebBrowser2GetLocationURL]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetLocationURL(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **locationURL);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3114:1"
+
+[WebViewer_IWebBrowser2GetBusy]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetBusy(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pBool);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3155:1"
+
+[WebViewer_IWebBrowser2Quit]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2Quit(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3185:1"
+
+[WebViewer_IWebBrowser2ClientToWindow]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2ClientToWindow(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pcx, long *pcy);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3208:1"
+
+[WebViewer_IWebBrowser2PutProperty]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2PutProperty(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *property, struct tagVARIANT vtValue);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3233:1"
+
+[WebViewer_IWebBrowser2GetProperty]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetProperty(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *property, struct tagVARIANT *pvtValue);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3264:1"
+
+[WebViewer_IWebBrowser2GetName]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3312:1"
+
+[WebViewer_IWebBrowser2GetHWND]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetHWND(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pHWND);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3352:1"
+
+[WebViewer_IWebBrowser2GetFullName]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetFullName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **fullName);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3381:1"
+
+[WebViewer_IWebBrowser2GetPath]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetPath(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **path);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3422:1"
+
+[WebViewer_IWebBrowser2GetVisible]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetVisible(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pBool);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3462:1"
+
+[WebViewer_IWebBrowser2SetVisible]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2SetVisible(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pBool);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3493:1"
+
+[WebViewer_IWebBrowser2GetStatusBar]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetStatusBar(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pBool);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3517:1"
+
+[WebViewer_IWebBrowser2SetStatusBar]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2SetStatusBar(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pBool);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3548:1"
+
+[WebViewer_IWebBrowser2GetStatusText]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetStatusText(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **statusText);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3572:1"
+
+[WebViewer_IWebBrowser2SetStatusText]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2SetStatusText(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *statusText);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3613:1"
+
+[WebViewer_IWebBrowser2GetToolBar]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetToolBar(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *value);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3642:1"
+
+[WebViewer_IWebBrowser2SetToolBar]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2SetToolBar(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long value);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3673:1"
+
+[WebViewer_IWebBrowser2GetMenuBar]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetMenuBar(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *value);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3697:1"
+
+[WebViewer_IWebBrowser2SetMenuBar]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2SetMenuBar(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short value);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3728:1"
+
+[WebViewer_IWebBrowser2GetFullScreen]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetFullScreen(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbFullScreen);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3752:1"
+
+[WebViewer_IWebBrowser2SetFullScreen]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2SetFullScreen(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbFullScreen);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3783:1"
+
+[WebViewer_IWebBrowser2Navigate2]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2Navigate2(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT URL, struct tagVARIANT flags, struct tagVARIANT targetFrameName, struct tagVARIANT postData, struct tagVARIANT headers);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3808:1"
+
+[WebViewer_IWebBrowser2QueryStatusWB]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2QueryStatusWB(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum WebViewerEnum_OLECMDID cmdID, enum WebViewerEnum_OLECMDF *pcmdf);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3837:1"
+
+[WebViewer_IWebBrowser2ExecWB]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2ExecWB(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum WebViewerEnum_OLECMDID cmdID, enum WebViewerEnum_OLECMDEXECOPT cmdexecopt, struct tagVARIANT pvaIn, struct tagVARIANT *pvaOut);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3869:1"
+
+[WebViewer_IWebBrowser2ShowBrowserBar]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2ShowBrowserBar(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvaClsid, struct tagVARIANT pvarShow, struct tagVARIANT pvarSize);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3901:1"
+
+[WebViewer_IWebBrowser2GetReadyState]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetReadyState(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, enum WebViewerEnum_tagREADYSTATE *plReadyState);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3929:1"
+
+[WebViewer_IWebBrowser2GetOffline]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetOffline(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbOffline);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3960:1"
+
+[WebViewer_IWebBrowser2SetOffline]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2SetOffline(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbOffline);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:3991:1"
+
+[WebViewer_IWebBrowser2GetSilent]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetSilent(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbSilent);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4015:1"
+
+[WebViewer_IWebBrowser2SetSilent]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2SetSilent(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbSilent);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4046:1"
+
+[WebViewer_IWebBrowser2GetRegisterAsBrowser]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetRegisterAsBrowser(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbRegister);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4070:1"
+
+[WebViewer_IWebBrowser2SetRegisterAsBrowser]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2SetRegisterAsBrowser(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbRegister);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4101:1"
+
+[WebViewer_IWebBrowser2GetRegisterAsDropTarget]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetRegisterAsDropTarget(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbRegister);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4126:1"
+
+[WebViewer_IWebBrowser2SetRegisterAsDropTarget]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2SetRegisterAsDropTarget(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbRegister);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4157:1"
+
+[WebViewer_IWebBrowser2GetTheaterMode]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetTheaterMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pbRegister);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4182:1"
+
+[WebViewer_IWebBrowser2SetTheaterMode]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2SetTheaterMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pbRegister);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4213:1"
+
+[WebViewer_IWebBrowser2GetAddressBar]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetAddressBar(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *value);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4238:1"
+
+[WebViewer_IWebBrowser2SetAddressBar]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2SetAddressBar(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short value);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4269:1"
+
+[WebViewer_IWebBrowser2GetResizable]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2GetResizable(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *value);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4293:1"
+
+[WebViewer_IWebBrowser2SetResizable]
+Class="Function"
+Prototype="long WebViewer_IWebBrowser2SetResizable(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short value);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4324:1"
+
+[WebViewer_NewIShellWindows]
+Class="Function"
+Prototype="long WebViewer_NewIShellWindows(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4348:1"
+
+[WebViewer_OpenIShellWindows]
+Class="Function"
+Prototype="long WebViewer_OpenIShellWindows(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4365:1"
+
+[WebViewer_ActiveIShellWindows]
+Class="Function"
+Prototype="long WebViewer_ActiveIShellWindows(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4383:1"
+
+[WebViewer_IShellWindowsGetCount]
+Class="Function"
+Prototype="long WebViewer_IShellWindowsGetCount(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *count);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4400:1"
+
+[WebViewer_IShellWindowsItem]
+Class="Function"
+Prototype="long WebViewer_IShellWindowsItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT index, CAObjHandle *folder);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4431:1"
+
+[WebViewer_IShellWindows_NewEnum]
+Class="Function"
+Prototype="long WebViewer_IShellWindows_NewEnum(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct IUnknown **ppunk);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4486:1"
+
+[WebViewer_IShellWindowsRegister]
+Class="Function"
+Prototype="long WebViewer_IShellWindowsRegister(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle pid, long HWND, long swClass, long *plCookie);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4532:1"
+
+[WebViewer_IShellWindowsRegisterPending]
+Class="Function"
+Prototype="long WebViewer_IShellWindowsRegisterPending(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long lThreadId, struct tagVARIANT pvarloc, struct tagVARIANT pvarlocRoot, long swClass, long *plCookie);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4574:1"
+
+[WebViewer_IShellWindowsRevoke]
+Class="Function"
+Prototype="long WebViewer_IShellWindowsRevoke(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long lCookie);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4612:1"
+
+[WebViewer_IShellWindowsOnNavigate]
+Class="Function"
+Prototype="long WebViewer_IShellWindowsOnNavigate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long lCookie, struct tagVARIANT pvarloc);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4636:1"
+
+[WebViewer_IShellWindowsOnActivated]
+Class="Function"
+Prototype="long WebViewer_IShellWindowsOnActivated(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long lCookie, short fActive);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4661:1"
+
+[WebViewer_IShellWindowsFindWindowSW]
+Class="Function"
+Prototype="long WebViewer_IShellWindowsFindWindowSW(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvarloc, struct tagVARIANT pvarlocRoot, long swClass, long *pHWND, long swfwOptions, CAObjHandle *ppdispOut);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4686:1"
+
+[WebViewer_IShellWindowsOnCreated]
+Class="Function"
+Prototype="long WebViewer_IShellWindowsOnCreated(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long lCookie, struct IUnknown *punk);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4753:1"
+
+[WebViewer_IShellWindowsProcessAttachDetch]
+Class="Function"
+Prototype="long WebViewer_IShellWindowsProcessAttachDetch(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short fAttach);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4778:1"
+
+[WebViewer_NewIShellUIHelper]
+Class="Function"
+Prototype="long WebViewer_NewIShellUIHelper(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4803:1"
+
+[WebViewer_OpenIShellUIHelper]
+Class="Function"
+Prototype="long WebViewer_OpenIShellUIHelper(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4820:1"
+
+[WebViewer_ActiveIShellUIHelper]
+Class="Function"
+Prototype="long WebViewer_ActiveIShellUIHelper(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4838:1"
+
+[WebViewer_IShellUIHelperResetFrstBootMode]
+Class="Function"
+Prototype="long WebViewer_IShellUIHelperResetFrstBootMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4855:1"
+
+[WebViewer_IShellUIHelperResetSafeMode]
+Class="Function"
+Prototype="long WebViewer_IShellUIHelperResetSafeMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4878:1"
+
+[WebViewer_IShellUIHelperRefreshOfflnDsktp]
+Class="Function"
+Prototype="long WebViewer_IShellUIHelperRefreshOfflnDsktp(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4901:1"
+
+[WebViewer_IShellUIHelperAddFavorite]
+Class="Function"
+Prototype="long WebViewer_IShellUIHelperAddFavorite(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *URL, struct tagVARIANT title);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4924:1"
+
+[WebViewer_IShellUIHelperAddChannel]
+Class="Function"
+Prototype="long WebViewer_IShellUIHelperAddChannel(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *URL);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4954:1"
+
+[WebViewer_IShellUIHelperAddDsktpComponent]
+Class="Function"
+Prototype="long WebViewer_IShellUIHelperAddDsktpComponent(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *URL, const char *type, struct tagVARIANT left, struct tagVARIANT top, struct tagVARIANT width, struct tagVARIANT height);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:4983:1"
+
+[WebViewer_IShellUIHelperIsSubscribed]
+Class="Function"
+Prototype="long WebViewer_IShellUIHelperIsSubscribed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *URL, short *pBool);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5023:1"
+
+[WebViewer_IShellUIHelperNavigateAndFind]
+Class="Function"
+Prototype="long WebViewer_IShellUIHelperNavigateAndFind(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *URL, const char *strQuery, struct tagVARIANT varTargetFrame);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5060:1"
+
+[WebViewer_IShellUIHelperImportExportFavorites]
+Class="Function"
+Prototype="long WebViewer_IShellUIHelperImportExportFavorites(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short fImport, const char *strImpExpPath);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5096:1"
+
+[WebViewer_IShellUIHelperAutoCompleteSaveForm]
+Class="Function"
+Prototype="long WebViewer_IShellUIHelperAutoCompleteSaveForm(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT form);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5127:1"
+
+[WebViewer_IShellUIHelperAutoScan]
+Class="Function"
+Prototype="long WebViewer_IShellUIHelperAutoScan(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *strSearch, const char *strFailureUrl, struct tagVARIANT pvarTargetFrame);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5152:1"
+
+[WebViewer_IShellUIHelperAutoCompleteAttach]
+Class="Function"
+Prototype="long WebViewer_IShellUIHelperAutoCompleteAttach(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT reserved);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5188:1"
+
+[WebViewer_IShellUIHelperShowBrowserUI]
+Class="Function"
+Prototype="long WebViewer_IShellUIHelperShowBrowserUI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *bstrName, struct tagVARIANT pvarIn, struct tagVARIANT *pvarOut);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5213:1"
+
+[WebViewer_NewIShellNameSpace]
+Class="Function"
+Prototype="long WebViewer_NewIShellNameSpace(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5263:1"
+
+[WebViewer_OpenIShellNameSpace]
+Class="Function"
+Prototype="long WebViewer_OpenIShellNameSpace(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5280:1"
+
+[WebViewer_ActiveIShellNameSpace]
+Class="Function"
+Prototype="long WebViewer_ActiveIShellNameSpace(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5298:1"
+
+[WebViewer_IShellNameSpaceMoveSelectionUp]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceMoveSelectionUp(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5315:1"
+
+[WebViewer_IShellNameSpaceMoveSelectionDown]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceMoveSelectionDown(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5338:1"
+
+[WebViewer_IShellNameSpaceResetSort]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceResetSort(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5361:1"
+
+[WebViewer_IShellNameSpaceNewFolder]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceNewFolder(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5384:1"
+
+[WebViewer_IShellNameSpaceSynchronize]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceSynchronize(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5407:1"
+
+[WebViewer_IShellNameSpaceImport]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceImport(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5430:1"
+
+[WebViewer_IShellNameSpaceExport]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceExport(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5453:1"
+
+[WebViewer_IShellNameSpaceInvokeContextMenuCommand]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceInvokeContextMenuCommand(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *strCommand);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5476:1"
+
+[WebViewer_IShellNameSpaceMoveSelectionTo]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceMoveSelectionTo(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5505:1"
+
+[WebViewer_IShellNameSpaceGetSubscriptionsEnabled]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceGetSubscriptionsEnabled(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pBool);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5528:1"
+
+[WebViewer_IShellNameSpaceCreateSubscriptionForSelection]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceCreateSubscriptionForSelection(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pBool);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5559:1"
+
+[WebViewer_IShellNameSpaceDeleteSubscriptionForSelection]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceDeleteSubscriptionForSelection(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pBool);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5590:1"
+
+[WebViewer_IShellNameSpaceSetRoot]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceSetRoot(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *bstrFullPath);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5621:1"
+
+[WebViewer_IShellNameSpaceGetEnumOptions]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceGetEnumOptions(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pgrfEnumFlags);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5650:1"
+
+[WebViewer_IShellNameSpaceSetEnumOptions]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceSetEnumOptions(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long pgrfEnumFlags);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5681:1"
+
+[WebViewer_IShellNameSpaceGetSelectedItem]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceGetSelectedItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *pItem);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5706:1"
+
+[WebViewer_IShellNameSpaceSetSelectedItem]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceSetSelectedItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle pItem);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5761:1"
+
+[WebViewer_IShellNameSpaceGetRoot]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceGetRoot(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvar);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5795:1"
+
+[WebViewer_IShellNameSpaceSetRootProp]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceSetRootProp(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT pvar);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5836:1"
+
+[WebViewer_IShellNameSpaceGetDepth]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceGetDepth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *piDepth);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5860:1"
+
+[WebViewer_IShellNameSpaceSetDepth]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceSetDepth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long piDepth);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5891:1"
+
+[WebViewer_IShellNameSpaceGetMode]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceGetMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *puMode);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5915:1"
+
+[WebViewer_IShellNameSpaceSetMode]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceSetMode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long puMode);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5946:1"
+
+[WebViewer_IShellNameSpaceGetFlags]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceGetFlags(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pdwFlags);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:5970:1"
+
+[WebViewer_IShellNameSpaceSetFlags]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceSetFlags(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long pdwFlags);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:6001:1"
+
+[WebViewer_IShellNameSpaceSetTVFlags]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceSetTVFlags(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long dwFlags);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:6025:1"
+
+[WebViewer_IShellNameSpaceGetTVFlags]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceGetTVFlags(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *dwFlags);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:6049:1"
+
+[WebViewer_IShellNameSpaceGetColumns]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceGetColumns(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **bstrColumns);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:6080:1"
+
+[WebViewer_IShellNameSpaceSetColumns]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceSetColumns(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *bstrColumns);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:6121:1"
+
+[WebViewer_IShellNameSpaceGetCountViewTypes]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceGetCountViewTypes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *piTypes);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:6150:1"
+
+[WebViewer_IShellNameSpaceSetViewType]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceSetViewType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long iType);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:6181:1"
+
+[WebViewer_IShellNameSpaceSelectedItems]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceSelectedItems(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppid);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:6205:1"
+
+[WebViewer_IShellNameSpaceExpand]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceExpand(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT var, long iDepth);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:6260:1"
+
+[WebViewer_IShellNameSpaceUnselectAll]
+Class="Function"
+Prototype="long WebViewer_IShellNameSpaceUnselectAll(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:6284:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnStatusTextChange]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnStatusTextChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:7967:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnProgressChange]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnProgressChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:7983:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnCommandStateChange]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnCommandStateChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long, short), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:7999:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnDownloadBegin]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnDownloadBegin(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8015:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnDownloadComplete]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnDownloadComplete(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8031:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnTitleChange]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnTitleChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8047:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnPropertyChange]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnPropertyChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8063:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnBeforeNavigate2]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnBeforeNavigate2(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int, struct tagVARIANT *, struct tagVARIANT *, struct tagVARIANT *, struct tagVARIANT *, struct tagVARIANT *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8079:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnNewWindow2]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnNewWindow2(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8095:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnNavigateComplete2]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnNavigateComplete2(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int, struct tagVARIANT *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8111:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnDocumentComplete]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnDocumentComplete(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int, struct tagVARIANT *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8127:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnOnQuit]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnOnQuit(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8143:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnOnVisible]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnOnVisible(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8159:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnOnToolBar]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnOnToolBar(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8175:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnOnMenuBar]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnOnMenuBar(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8191:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnOnStatusBar]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnOnStatusBar(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8207:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnOnFullScreen]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnOnFullScreen(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8223:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnOnTheaterMode]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnOnTheaterMode(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8239:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnWindowSetResizable]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnWindowSetResizable(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8255:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnWindowSetLeft]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnWindowSetLeft(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8271:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnWindowSetTop]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnWindowSetTop(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8287:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnWindowSetWidth]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnWindowSetWidth(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8303:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnWindowSetHeight]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnWindowSetHeight(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8319:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnWindowClosing]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnWindowClosing(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8335:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnClientToHostWindow]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnClientToHostWindow(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8351:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnSetSecureLockIcon]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnSetSecureLockIcon(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8367:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnFileDownload]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnFileDownload(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8383:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnNavigateError]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnNavigateError(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int, struct tagVARIANT *, struct tagVARIANT *, struct tagVARIANT *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8399:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnPrintTemplateInstantiation]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnPrintTemplateInstantiation(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8415:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnPrintTemplateTeardown]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnPrintTemplateTeardown(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8431:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnUpdatePageStatus]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnUpdatePageStatus(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int, struct tagVARIANT *, struct tagVARIANT *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8447:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnPrivacyImpactedStateChange]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnPrivacyImpactedStateChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8463:1"
+
+[WebViewer_DWebBrwsrEvnts2RegOnNewWindow3]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvnts2RegOnNewWindow3(CAObjHandle serverObject, long (*callbackFunction)(int, void *, int *, short *, long, char *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8479:1"
+
+[WebViewer_DWebBrwsrEvntsRegOnBeforeNavigate]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvntsRegOnBeforeNavigate(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *, long, char *, struct tagVARIANT *, char *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8495:1"
+
+[WebViewer_DWebBrwsrEvntsRegOnNavigateComplete]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvntsRegOnNavigateComplete(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8511:1"
+
+[WebViewer_DWebBrwsrEvntsRegOnStatusTextChange]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvntsRegOnStatusTextChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8527:1"
+
+[WebViewer_DWebBrwsrEvntsRegOnProgressChange]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvntsRegOnProgressChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long, long), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8543:1"
+
+[WebViewer_DWebBrwsrEvntsRegOnDownloadComplete]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvntsRegOnDownloadComplete(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8559:1"
+
+[WebViewer_DWebBrwsrEvntsRegOnCommandStateChange]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvntsRegOnCommandStateChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long, short), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8575:1"
+
+[WebViewer_DWebBrwsrEvntsRegOnDownloadBegin]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvntsRegOnDownloadBegin(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8591:1"
+
+[WebViewer_DWebBrwsrEvntsRegOnNewWindow]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvntsRegOnNewWindow(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *, long, char *, struct tagVARIANT *, char *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8607:1"
+
+[WebViewer_DWebBrwsrEvntsRegOnTitleChange]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvntsRegOnTitleChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8623:1"
+
+[WebViewer_DWebBrwsrEvntsRegOnFrameBeforeNavigate]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvntsRegOnFrameBeforeNavigate(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *, long, char *, struct tagVARIANT *, char *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8639:1"
+
+[WebViewer_DWebBrwsrEvntsRegOnFrameNavigateComplete]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvntsRegOnFrameNavigateComplete(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8655:1"
+
+[WebViewer_DWebBrwsrEvntsRegOnFrameNewWindow]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvntsRegOnFrameNewWindow(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *, long, char *, struct tagVARIANT *, char *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8671:1"
+
+[WebViewer_DWebBrwsrEvntsRegOnQuit]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvntsRegOnQuit(CAObjHandle serverObject, long (*callbackFunction)(int, void *, short *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8687:1"
+
+[WebViewer_DWebBrwsrEvntsRegOnWindowMove]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvntsRegOnWindowMove(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8703:1"
+
+[WebViewer_DWebBrwsrEvntsRegOnWindowResize]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvntsRegOnWindowResize(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8719:1"
+
+[WebViewer_DWebBrwsrEvntsRegOnWindowActivate]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvntsRegOnWindowActivate(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8735:1"
+
+[WebViewer_DWebBrwsrEvntsRegOnPropertyChange]
+Class="Function"
+Prototype="long WebViewer_DWebBrwsrEvntsRegOnPropertyChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, char *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8751:1"
+
+[WebViewer_DShellWindowsEvntsRegOnWindowRegistered]
+Class="Function"
+Prototype="long WebViewer_DShellWindowsEvntsRegOnWindowRegistered(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8767:1"
+
+[WebViewer_DShellWindowsEvntsRegOnWindowRevoked]
+Class="Function"
+Prototype="long WebViewer_DShellWindowsEvntsRegOnWindowRevoked(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8783:1"
+
+[WebViewer_DShellNameSpaceEventsRegOnFavoritesSelectionChange]
+Class="Function"
+Prototype="long WebViewer_DShellNameSpaceEventsRegOnFavoritesSelectionChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long, long, char *, char *, long, char *, long), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8799:1"
+
+[WebViewer_DShellNameSpaceEventsRegOnSelectionChange]
+Class="Function"
+Prototype="long WebViewer_DShellNameSpaceEventsRegOnSelectionChange(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8815:1"
+
+[WebViewer_DShellNameSpaceEventsRegOnDoubleClick]
+Class="Function"
+Prototype="long WebViewer_DShellNameSpaceEventsRegOnDoubleClick(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8831:1"
+
+[WebViewer_DShellNameSpaceEventsRegOnInitialized]
+Class="Function"
+Prototype="long WebViewer_DShellNameSpaceEventsRegOnInitialized(CAObjHandle serverObject, long (*callbackFunction)(int, void *), void *callbackData, int enableCallbacks, int *callbackId);"
+SourceLocation="c:\work\src\shared\webviewer\shdocvw.c:8847:1"
+

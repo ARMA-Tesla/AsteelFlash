@@ -1,0 +1,7 @@
+LIBRARY sonometers
+
+EXPORTS
+UnloadElcomModule
+InitializeElcomModule
+LoadElcomModule
+GetModuleAttribute

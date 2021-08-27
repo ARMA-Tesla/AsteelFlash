@@ -1,0 +1,32 @@
+[Cb_ChangeTab]
+Class="Function"
+Prototype="int Cb_ChangeTab(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[OnFncStation1]
+Class="Function"
+Prototype="int OnFncStation1(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[OnFncStation2]
+Class="Function"
+Prototype="int OnFncStation2(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[OnFncStation3]
+Class="Function"
+Prototype="int OnFncStation3(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[OnFncStation4]
+Class="Function"
+Prototype="int OnFncStation4(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[OnFncStation5]
+Class="Function"
+Prototype="int OnFncStation5(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[OnFncStation6]
+Class="Function"
+Prototype="int OnFncStation6(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[OnFncTester]
+Class="Function"
+Prototype="int OnFncTester(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

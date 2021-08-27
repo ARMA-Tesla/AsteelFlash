@@ -1,0 +1,11 @@
+-inrc c:\work\src\gui\kosu\cvibuild.kosu\Release\resources.in.rc
+-outrc c:\work\src\gui\kosu\cvibuild.kosu\Release\resources.out.rc
+-inhdef c:\work\src\gui\kosu\cvibuild.kosu\Release\kosu_plugin.h.hdefs
+-outdef c:\work\src\gui\kosu\cvibuild.kosu\Release\kosu.dll.defs
+-indefprot c:\work\src\gui\kosu\cvibuild.kosu\Release\eleventdata.obj.cvidefprots
+-indefprot c:\work\src\gui\kosu\cvibuild.kosu\Release\elstring.obj.cvidefprots
+-indefprot c:\work\src\gui\kosu\cvibuild.kosu\Release\Exception.obj.cvidefprots
+-indefprot c:\work\src\gui\kosu\cvibuild.kosu\Release\kosu.obj.cvidefprots
+-indefprot c:\work\src\gui\kosu\cvibuild.kosu\Release\language.obj.cvidefprots
+-indefprot c:\work\src\gui\kosu\cvibuild.kosu\Release\piechart.obj.cvidefprots
+-dllName kosu.dll

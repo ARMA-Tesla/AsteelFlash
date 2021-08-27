@@ -1,0 +1,10 @@
+-inrc c:\work\src\gui\panel\cvibuild.panel\Release\resources.in.rc
+-outrc c:\work\src\gui\panel\cvibuild.panel\Release\resources.out.rc
+-inhdef c:\work\src\gui\panel\cvibuild.panel\Release\panel_plugin.h.hdefs
+-outdef c:\work\src\gui\panel\cvibuild.panel\Release\panel.dll.defs
+-indefprot c:\work\src\gui\panel\cvibuild.panel\Release\eleventdata.obj.cvidefprots
+-indefprot c:\work\src\gui\panel\cvibuild.panel\Release\elstring.obj.cvidefprots
+-indefprot c:\work\src\gui\panel\cvibuild.panel\Release\Exception.obj.cvidefprots
+-indefprot c:\work\src\gui\panel\cvibuild.panel\Release\panel.obj.cvidefprots
+-indefprot c:\work\src\gui\panel\cvibuild.panel\Release\panel_fnc.obj.cvidefprots
+-dllName panel.dll

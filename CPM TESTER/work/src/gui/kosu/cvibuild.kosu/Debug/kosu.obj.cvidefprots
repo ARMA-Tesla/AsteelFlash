@@ -1,0 +1,70 @@
+[OnResetCounter]
+Class="Function"
+Prototype="int OnResetCounter(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\kosu\kosu.c:29:1"
+
+[OnTimerTick]
+Class="Function"
+Prototype="int OnTimerTick(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\kosu\kosu.c:58:1"
+
+[PieChartUpdate]
+Class="Function"
+Prototype="void PieChartUpdate(int Poucent_PASS, int Poucent_FAIL);"
+SourceLocation="c:\work\src\gui\kosu\kosu.c:110:1"
+
+[KosuUpdate]
+Class="Function"
+Prototype="struct _SElException *KosuUpdate();"
+SourceLocation="c:\work\src\gui\kosu\kosu.c:168:1"
+
+[EventFunctionCallback]
+Class="Function"
+Prototype="struct _SElException *EventFunctionCallback(const char *eventName, void *pData);"
+SourceLocation="c:\work\src\gui\kosu\kosu.c:281:1"
+
+[DiscardUIObjectsForDLL]
+Class="Function"
+Prototype="void DiscardUIObjectsForDLL();"
+SourceLocation="c:\work\src\gui\kosu\kosu.c:349:1"
+
+[DllMain]
+Class="Function"
+Prototype="int DllMain(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+SourceLocation="c:\work\src\gui\kosu\kosu.c:354:1"
+
+[DllEntryPoint]
+Class="Function"
+Prototype="int DllEntryPoint(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+SourceLocation="c:\work\src\gui\kosu\kosu.c:381:1"
+
+[pluginInitialize]
+Class="Function"
+Prototype="struct _SElException *pluginInitialize(struct _SPluginArgs *a_pPluginArgs) __declspec(dllexport);"
+SourceLocation="c:\work\src\gui\kosu\kosu.c:394:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+
+[pluginRun]
+Class="Function"
+Prototype="struct _SElException *pluginRun(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
+SourceLocation="c:\work\src\gui\kosu\kosu.c:466:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+
+[pluginLeave]
+Class="Function"
+Prototype="struct _SElException *pluginLeave(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
+SourceLocation="c:\work\src\gui\kosu\kosu.c:481:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+
+[PLUGIN_SHUTDOWN_NAME_CODE]
+Class="Function"
+Prototype="struct _SElException *PLUGIN_SHUTDOWN_NAME_CODE(struct _SPluginArgs *a_pPluginArgs) __declspec(dllexport);"
+SourceLocation="c:\work\src\gui\kosu\kosu.c:493:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+
+[pluginGetInfo]
+Class="Function"
+Prototype="struct _SElException *pluginGetInfo(struct _SPluginInfo **a_pInfo) __declspec(dllexport);"
+SourceLocation="c:\work\src\gui\kosu\kosu.c:508:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+
+[pluginGetAttribute]
+Class="Function"
+Prototype="struct _SElException *pluginGetAttribute(unsigned int attrID, unsigned int size, void *value) __declspec(dllexport);"
+SourceLocation="c:\work\src\gui\kosu\kosu.c:520:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+

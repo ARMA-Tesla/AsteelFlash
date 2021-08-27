@@ -1,0 +1,40 @@
+[InsertTestDialog]
+Class="Function"
+Prototype="struct _SElException *InsertTestDialog(struct _STestStep test, char *sname);"
+SourceLocation="c:\work\src\gui\database\dbs_test_edit.c:27:1"
+
+[EditTestDialog]
+Class="Function"
+Prototype="struct _SElException *EditTestDialog(struct _STestStep test, char *sname);"
+SourceLocation="c:\work\src\gui\database\dbs_test_edit.c:59:1"
+
+[EditParameterDialog]
+Class="Function"
+Prototype="struct _SElException *EditParameterDialog(struct _STestParameter parameter, char *pname, int editable);"
+SourceLocation="c:\work\src\gui\database\dbs_test_edit.c:91:1"
+
+[NewParameterDialog]
+Class="Function"
+Prototype="struct _SElException *NewParameterDialog(struct _STestStep test, char *sname);"
+SourceLocation="c:\work\src\gui\database\dbs_test_edit.c:132:1"
+
+[SkipTestDialog]
+Class="Function"
+Prototype="struct _SElException *SkipTestDialog(struct _STestStep test, int editable);"
+SourceLocation="c:\work\src\gui\database\dbs_test_edit.c:172:1"
+
+[DelTestDialog]
+Class="Function"
+Prototype="struct _SElException *DelTestDialog(struct _STestStep test, int editable);"
+SourceLocation="c:\work\src\gui\database\dbs_test_edit.c:194:1"
+
+[RemoveSkipTestDialog]
+Class="Function"
+Prototype="struct _SElException *RemoveSkipTestDialog(struct _STestStep test, int editable);"
+SourceLocation="c:\work\src\gui\database\dbs_test_edit.c:222:1"
+
+[DelParameterDialog]
+Class="Function"
+Prototype="struct _SElException *DelParameterDialog(struct _STestParameter parameter, int editable);"
+SourceLocation="c:\work\src\gui\database\dbs_test_edit.c:241:1"
+

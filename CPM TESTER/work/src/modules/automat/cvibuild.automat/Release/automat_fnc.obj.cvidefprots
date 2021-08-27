@@ -1,0 +1,50 @@
+[ReadMasterResults]
+Class="Function"
+Prototype="struct _SElException *ReadMasterResults(const char *pfile_xml);"
+SourceLocation="c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\automat_fnc.c:68:17"
+
+[ReadTestedResults]
+Class="Function"
+Prototype="struct _SElException *ReadTestedResults(CAObjHandle pxml);"
+SourceLocation="c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\automat_fnc.c:230:17"
+
+[CompareXML]
+Class="Function"
+Prototype="struct _SElException *CompareXML(char *barcode_Master, CAObjHandle pxml, char *Error);"
+SourceLocation="c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\automat_fnc.c:379:17"
+
+[Fill_CSV_Steps_Label]
+Class="Function"
+Prototype="struct _SElException *Fill_CSV_Steps_Label(CAObjHandle pxml, int pfile_csv, int Station);"
+SourceLocation="c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\automat_fnc.c:469:17"
+
+[Fill_CSV_Mesures_Label]
+Class="Function"
+Prototype="struct _SElException *Fill_CSV_Mesures_Label(CAObjHandle pxml, int pfile_csv, int Station);"
+SourceLocation="c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\automat_fnc.c:591:17"
+
+[LoadTestSequence]
+Class="Function"
+Prototype="struct _SElException *LoadTestSequence(const char *fileXml, struct _STestSequence *pTestSeq, struct _SObjList *pModules, int reset_panel, int *Error);"
+SourceLocation="c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\automat_fnc.c:732:17"
+
+[copyTestOption]
+Class="Function"
+Prototype="void copyTestOption(struct _SSledge *me);"
+SourceLocation="c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\automat_fnc.c:1024:6"
+
+[copyFieldData]
+Class="Function"
+Prototype="void copyFieldData(struct _SSledge *me);"
+SourceLocation="c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\automat_fnc.c:1033:6"
+
+[RunTestSequence]
+Class="Function"
+Prototype="struct _SElException *RunTestSequence(const char *fileFormXml, struct _SSledge *me, struct _SAutomat *pAutomat, struct _SElEventFactory *pEventFactory);"
+SourceLocation="c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\automat_fnc.c:1046:17"
+
+[StepTestSequence]
+Class="Function"
+Prototype="struct _SElException *StepTestSequence(const char *fileXml, struct _SAutomat *pAutomat, struct _SElEventFactory *pEventFactory, int step_mode, int *is_active, int *last_step);"
+SourceLocation="c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\automat\automat_fnc.c:1437:17"
+

@@ -1,0 +1,20 @@
+[OnVtype]
+Class="Function"
+Prototype="int OnVtype(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\database\dbs_product_param_edit.c:22:1"
+
+[EditProductParamDialog]
+Class="Function"
+Prototype="struct _SElException *EditProductParamDialog(struct _SProductParameter parameter);"
+SourceLocation="c:\work\src\gui\database\dbs_product_param_edit.c:45:1"
+
+[InsertProductParamDialog]
+Class="Function"
+Prototype="struct _SElException *InsertProductParamDialog(struct _SProductParameter parameter);"
+SourceLocation="c:\work\src\gui\database\dbs_product_param_edit.c:106:1"
+
+[DelProductParamDialog]
+Class="Function"
+Prototype="struct _SElException *DelProductParamDialog(struct _SProductParameter parameter, const char *keyNode, const char *keyCol);"
+SourceLocation="c:\work\src\gui\database\dbs_product_param_edit.c:148:1"
+

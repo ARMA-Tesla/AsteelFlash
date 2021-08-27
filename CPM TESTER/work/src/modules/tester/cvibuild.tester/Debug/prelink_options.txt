@@ -1,0 +1,21 @@
+-inrc c:\work\src\modules\tester\cvibuild.tester\Debug\resources.in.rc
+-outrc c:\work\src\modules\tester\cvibuild.tester\Debug\resources.out.rc
+-inhdef c:\work\src\modules\tester\cvibuild.tester\Debug\eltypes.h.hdefs
+-inhdef c:\work\src\modules\tester\cvibuild.tester\Debug\module.h.hdefs
+-inhdef c:\work\src\modules\tester\cvibuild.tester\Debug\tester.h.hdefs
+-outdef c:\work\src\modules\tester\cvibuild.tester\Debug\tester.dll.defs
+-indefprot c:\work\src\modules\tester\cvibuild.tester\Debug\eleventdata.obj.cvidefprots
+-indefprot c:\work\src\modules\tester\cvibuild.tester\Debug\elstring.obj.cvidefprots
+-indefprot c:\work\src\modules\tester\cvibuild.tester\Debug\Exception.obj.cvidefprots
+-indefprot c:\work\src\modules\tester\cvibuild.tester\Debug\multithread.obj.cvidefprots
+-indefprot c:\work\src\modules\tester\cvibuild.tester\Debug\station10.obj.cvidefprots
+-indefprot c:\work\src\modules\tester\cvibuild.tester\Debug\station20.obj.cvidefprots
+-indefprot c:\work\src\modules\tester\cvibuild.tester\Debug\station30.obj.cvidefprots
+-indefprot c:\work\src\modules\tester\cvibuild.tester\Debug\station40.obj.cvidefprots
+-indefprot c:\work\src\modules\tester\cvibuild.tester\Debug\station50.obj.cvidefprots
+-indefprot c:\work\src\modules\tester\cvibuild.tester\Debug\station60.obj.cvidefprots
+-indefprot c:\work\src\modules\tester\cvibuild.tester\Debug\tester.obj.cvidefprots
+-indefprot c:\work\src\modules\tester\cvibuild.tester\Debug\tester_module.obj.cvidefprots
+-indefprot c:\work\src\modules\tester\cvibuild.tester\Debug\bklib2.obj.cvidefprots
+-dllName tester.dll
+-addNITypeInfo 

@@ -1,0 +1,14 @@
+<Cameras>
+	<Camera name="IS-1403C">
+		<Configuration type="Ethernet" specificDll="modules/cognex.dll">
+			<IP>169.254.9.178</IP>
+			<port>2500</port>
+		</Configuration>
+	</Camera>
+	<Camera name="IS-1100">
+		<Configuration type="Ethernet" specificDll="modules/cognex.dll">
+			<IP>169.254.9.100</IP>
+			<port>2500</port>
+		</Configuration>
+	</Camera>
+</Cameras>

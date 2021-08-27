@@ -1,0 +1,70 @@
+[ChangeHexaToInt]
+Class="Function"
+Prototype="int ChangeHexaToInt(unsigned char ucTab[9]);"
+SourceLocation="c:\work\src\modules\axis\IAI\IaiAxis.c:31:1"
+
+[GetLRC]
+Class="Function"
+Prototype="void GetLRC(unsigned char *pbData, int iCount, char *LRC);"
+SourceLocation="c:\work\src\modules\axis\IAI\IaiAxis.c:84:1"
+
+[Initialize]
+Class="Function"
+Prototype="struct _SElException *Initialize(struct _axis *me, int axis) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\axis\IAI\IaiAxis.c:107:1"
+
+[PresentAlarm]
+Class="Function"
+Prototype="struct _SElException *PresentAlarm(struct _axis *me, int axis, int *status) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\axis\IAI\IaiAxis.c:166:1"
+
+[ControllerStatus]
+Class="Function"
+Prototype="struct _SElException *ControllerStatus(struct _axis *me, int axis, int *status) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\axis\IAI\IaiAxis.c:247:1"
+
+[CurrentPosition]
+Class="Function"
+Prototype="struct _SElException *CurrentPosition(struct _axis *me, int axis, double *position) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\axis\IAI\IaiAxis.c:340:1"
+
+[RequestPosition]
+Class="Function"
+Prototype="struct _SElException *RequestPosition(struct _axis *me, int axis) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\axis\IAI\IaiAxis.c:434:1"
+
+[ReadPosition]
+Class="Function"
+Prototype="struct _SElException *ReadPosition(struct _axis *me, int axis, double *position) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\axis\IAI\IaiAxis.c:506:1"
+
+[EnableAxis]
+Class="Function"
+Prototype="struct _SElException *EnableAxis(struct _axis *me, int axis) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\axis\IAI\IaiAxis.c:559:1"
+
+[AlarmReset]
+Class="Function"
+Prototype="struct _SElException *AlarmReset(struct _axis *me, int axis) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\axis\IAI\IaiAxis.c:618:1"
+
+[HomeReturn]
+Class="Function"
+Prototype="struct _SElException *HomeReturn(struct _axis *me, int axis) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\axis\IAI\IaiAxis.c:723:1"
+
+[StopAxis]
+Class="Function"
+Prototype="struct _SElException *StopAxis(struct _axis *me, int axis) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\axis\IAI\IaiAxis.c:829:1"
+
+[MoveAxisPosition]
+Class="Function"
+Prototype="struct _SElException *MoveAxisPosition(struct _axis *me, int axis, int position) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\axis\IAI\IaiAxis.c:889:1"
+
+[SetPosition]
+Class="Function"
+Prototype="struct _SElException *SetPosition(struct _axis *me, int axis, double position, double speed) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\axis\IAI\IaiAxis.c:1126:1"
+

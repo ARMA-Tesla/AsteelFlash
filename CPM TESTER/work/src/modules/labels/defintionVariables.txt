@@ -1,0 +1,41 @@
+Variable definition
+-------------------
+
+@[<name>] - replace string with value from tester application, where <name>:
+	LowLimit		- Low Limit in failed test
+	HighLimit		- High Limit in failed test
+	Unit			- Unit in failed test
+	FunctionName	- Name of failed test
+	MeasuredValue	- Measured value of failed test
+	TestResultString- Test result string ( 'OK' or 'NOK' )
+	TestDescription	- Description of failed test
+	ShiftId			- Active shift ID
+	HH				- Actual hours
+	NN				- Actual minutes
+	SS				- Actual seconds
+	TIME			- Actual time of test ( HH:NN:SS )
+	Y[:parameters]	- Year in 4 digits representation in default
+					  optional parameters:
+					    SIZE=x - change format of year representation, where x:
+							4 - full four digits format
+							2 - last two digits format
+							1 - last one digit format
+						CODE36 - last two digits formated in Base 36 coding
+						CODE=yyyy-c - codding year representation to 1 byte
+						  where character 'c' represent 'yyyy', 'c' + 1 = 'yyyy' + 1, atc.
+					eg. for year 2007 @[Y:SIZE=2] will be replaced by '07'
+					    for year 2007 @[Y:CODE=2006-A] will be replaced by 'B'
+	MM				- Month of year
+	DD				- Day of month
+	DY36			- Day of year in Base 36 coding
+	SERIAL[:params]	- Serial number of panel (default format '0000' )
+					  optional parameters:
+						FMT=x - change format of serial number, where x mean
+						        format string same as ANSI-C format without
+								leading '%' character and last 'd' character 
+					eg.	for serial number 45 @[SERIAL:FMT=04] will be replaced by '0045'
+						for serial number 4 @[SERIAL:FMT=02] will be replaced by '04'
+						CODE36[=x] - coding serial nubmer, where x set number of bytes
+						             for coding (default 3 Bytes) 
+					eg. serial number 38 @[SERIAL:CODE36=2] will be replaced by '12'
+					    serial number 38 @[SERIAL:CODE36] will be replaced by '12'

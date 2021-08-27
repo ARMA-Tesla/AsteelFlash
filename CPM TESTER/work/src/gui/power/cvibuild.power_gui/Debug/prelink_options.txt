@@ -1,0 +1,9 @@
+-inrc c:\work\src\gui\power\cvibuild.power_gui\Debug\resources.in.rc
+-outrc c:\work\src\gui\power\cvibuild.power_gui\Debug\resources.out.rc
+-inhdef c:\work\src\gui\power\cvibuild.power_gui\Debug\power_gui_plugin.h.hdefs
+-outdef c:\work\src\gui\power\cvibuild.power_gui\Debug\power_gui.dll.defs
+-indefprot c:\work\src\gui\power\cvibuild.power_gui\Debug\elstring.obj.cvidefprots
+-indefprot c:\work\src\gui\power\cvibuild.power_gui\Debug\Exception.obj.cvidefprots
+-indefprot c:\work\src\gui\power\cvibuild.power_gui\Debug\power_gui.obj.cvidefprots
+-dllName power_gui.dll
+-addNITypeInfo 

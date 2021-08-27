@@ -1,0 +1,20 @@
+[sonometer_new]
+Class="Function"
+Prototype="struct _SElException *sonometer_new(struct _Sonometer **sonometer, const char *name, const char *optionString);"
+SourceLocation="c:\work\src\modules\sonometer\class\sonometers.c:80:1"
+
+[sonometer_delete]
+Class="Function"
+Prototype="struct _SElException *sonometer_delete(struct _Sonometer **sonometer);"
+SourceLocation="c:\work\src\modules\sonometer\class\sonometers.c:117:1"
+
+[sonometers_new]
+Class="Function"
+Prototype="struct _SElException *sonometers_new(struct _Sonometers **sonometers);"
+SourceLocation="c:\work\src\modules\sonometer\class\sonometers.c:145:1"
+
+[sonometers_delete]
+Class="Function"
+Prototype="struct _SElException *sonometers_delete(struct _Sonometers **sonometers);"
+SourceLocation="c:\work\src\modules\sonometer\class\sonometers.c:178:1"
+

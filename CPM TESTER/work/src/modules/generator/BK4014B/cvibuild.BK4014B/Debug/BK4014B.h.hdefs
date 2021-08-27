@@ -1,0 +1,36 @@
+[Connect]
+Class="Function"
+Prototype="struct _SElException *Connect(struct _Generator *me) __declspec(dllexport);"
+
+[Disconnect]
+Class="Function"
+Prototype="struct _SElException *Disconnect(struct _Generator *me) __declspec(dllexport);"
+
+[Write]
+Class="Function"
+Prototype="struct _SElException *Write(struct _Generator *me, const char *command) __declspec(dllexport);"
+
+[Read]
+Class="Function"
+Prototype="struct _SElException *Read(struct _Generator *me, const char *read) __declspec(dllexport);"
+
+[SetModeContinuous]
+Class="Function"
+Prototype="struct _SElException *SetModeContinuous(struct _Generator *me) __declspec(dllexport);"
+
+[SetOutput]
+Class="Function"
+Prototype="struct _SElException *SetOutput(struct _Generator *me, int output) __declspec(dllexport);"
+
+[SetFonction]
+Class="Function"
+Prototype="struct _SElException *SetFonction(struct _Generator *me, double frequency, double amplitude, double offset, double duty) __declspec(dllexport);"
+
+[SystemError]
+Class="Function"
+Prototype="struct _SElException *SystemError(struct _Generator *me, char *error) __declspec(dllexport);"
+
+[ClearError]
+Class="Function"
+Prototype="struct _SElException *ClearError(struct _Generator *me) __declspec(dllexport);"
+

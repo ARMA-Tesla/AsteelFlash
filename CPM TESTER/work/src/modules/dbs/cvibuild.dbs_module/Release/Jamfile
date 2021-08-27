@@ -1,0 +1,216 @@
+HDRS = 	"c:\\work\\src\\modules"
+	"c:\\work\\src\\shared"
+	"c:\\work\\include"
+	"c:\\work\\src\\shared\\cvitool"
+	"C:\\Users\\Public\\Documents\\National Instruments\\TestStand 2016 (32-bit)\\AdapterSupport\\CVI"
+	"C:\\Program Files (x86)\\National Instruments\\TestStand 2016\\API\\DLLInterfaces"
+	"C:\\Program Files (x86)\\National Instruments\\TestStand 2020\\API\\DLLInterfaces"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr\\TestStand\\API"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2020\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2020\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2020\\include\\clang\\3.3"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2020\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "dbs.c" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs.h" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_define.h" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_define_local.h" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_export.c" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_export.h" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_kosu.c" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_kosu.h" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_lineexport.c" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_lineparam.c" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_lineprocess.c" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_linestep.c" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_masterlist.c" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_masterlist.h" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_module.c" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_paramlist.c" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_paramlist.h" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_productlist.c" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_productlist.h" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_schema.h" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_storage.c" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_storage.h" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_testerlist.c" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_testerlist.h" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_testlist.c" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_testlist.h" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_testparamlist.c" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_testparamlist.h" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_userlist.c" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "dbs_userlist.h" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "eleventdata.c" = "c:\\work\\src\\shared\\eventfactory" ;
+LOCATE on "elodbc.c" = "c:\\work\\src\\shared\\odbc" ;
+LOCATE on "elstring.c" = "c:\\work\\src\\shared\\string" ;
+LOCATE on "Exception.c" = "c:\\work\\src\\shared\\exception" ;
+LOCATE on "Exception.h" = "c:\\work\\src\\shared\\exception" ;
+LOCATE on "guid.h" = "c:\\work\\src\\shared" ;
+LOCATE on "interval.c" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "interval.h" = "c:\\work\\src\\modules\\dbs" ;
+LOCATE on "module.h" = "c:\\work\\src\\shared\\modules" ;
+LOCATE on "MSXML2.h" = "c:\\work\\src\\shared\\msxml" ;
+LOCATE on "msxmldom2.h" = "c:\\work\\src\\shared\\cvitool" ;
+LOCATE on "multithread.c" = "c:\\work\\src\\shared\\multithread" ;
+LOCATE on "objlist.c" = "c:\\work\\src\\shared\\objlist" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs.obj" : "c:\\work\\src\\modules\\dbs\\dbs.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs.obj" = 1 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs.obj" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_export.obj" : "c:\\work\\src\\modules\\dbs\\dbs_export.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_export.obj" = 2 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_export.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_export.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_export.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_export.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_export.obj" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_kosu.obj" : "c:\\work\\src\\modules\\dbs\\dbs_kosu.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_kosu.obj" = 3 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_kosu.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_kosu.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_kosu.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_kosu.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_kosu.obj" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_lineexport.obj" : "c:\\work\\src\\modules\\dbs\\dbs_lineexport.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_lineexport.obj" = 4 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_lineexport.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_lineexport.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_lineexport.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_lineexport.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_lineexport.obj" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_lineparam.obj" : "c:\\work\\src\\modules\\dbs\\dbs_lineparam.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_lineparam.obj" = 5 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_lineparam.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_lineparam.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_lineparam.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_lineparam.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_lineparam.obj" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_lineprocess.obj" : "c:\\work\\src\\modules\\dbs\\dbs_lineprocess.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_lineprocess.obj" = 6 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_lineprocess.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_lineprocess.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_lineprocess.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_lineprocess.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_lineprocess.obj" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_linestep.obj" : "c:\\work\\src\\modules\\dbs\\dbs_linestep.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_linestep.obj" = 7 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_linestep.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_linestep.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_linestep.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_linestep.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_linestep.obj" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_masterlist.obj" : "c:\\work\\src\\modules\\dbs\\dbs_masterlist.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_masterlist.obj" = 8 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_masterlist.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_masterlist.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_masterlist.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_masterlist.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_masterlist.obj" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_module.obj" : "c:\\work\\src\\modules\\dbs\\dbs_module.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_module.obj" = 9 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_module.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_module.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_module.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_module.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_module.obj" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_paramlist.obj" : "c:\\work\\src\\modules\\dbs\\dbs_paramlist.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_paramlist.obj" = 10 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_paramlist.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_paramlist.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_paramlist.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_paramlist.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_paramlist.obj" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_productlist.obj" : "c:\\work\\src\\modules\\dbs\\dbs_productlist.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_productlist.obj" = 11 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_productlist.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_productlist.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_productlist.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_productlist.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_productlist.obj" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_storage.obj" : "c:\\work\\src\\modules\\dbs\\dbs_storage.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_storage.obj" = 12 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_storage.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_storage.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_storage.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_storage.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_storage.obj" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_testerlist.obj" : "c:\\work\\src\\modules\\dbs\\dbs_testerlist.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_testerlist.obj" = 13 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_testerlist.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_testerlist.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_testerlist.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_testerlist.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_testerlist.obj" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_testlist.obj" : "c:\\work\\src\\modules\\dbs\\dbs_testlist.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_testlist.obj" = 14 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_testlist.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_testlist.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_testlist.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_testlist.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_testlist.obj" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_testparamlist.obj" : "c:\\work\\src\\modules\\dbs\\dbs_testparamlist.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_testparamlist.obj" = 15 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_testparamlist.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_testparamlist.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_testparamlist.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_testparamlist.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_testparamlist.obj" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_userlist.obj" : "c:\\work\\src\\modules\\dbs\\dbs_userlist.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_userlist.obj" = 16 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_userlist.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_userlist.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_userlist.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_userlist.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs_userlist.obj" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\eleventdata.obj" : "c:\\work\\src\\shared\\eventfactory\\eleventdata.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\eleventdata.obj" = 17 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\eleventdata.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\eleventdata.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\eleventdata.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\eleventdata.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\eleventdata.obj" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\elodbc.obj" : "c:\\work\\src\\shared\\odbc\\elodbc.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\elodbc.obj" = 18 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\elodbc.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\elodbc.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\elodbc.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\elodbc.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\elodbc.obj" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\elstring.obj" : "c:\\work\\src\\shared\\string\\elstring.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\elstring.obj" = 19 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\elstring.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\elstring.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\elstring.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\elstring.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\elstring.obj" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\Exception.obj" : "c:\\work\\src\\shared\\exception\\Exception.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\Exception.obj" = 20 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\Exception.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\Exception.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\Exception.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\Exception.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\Exception.obj" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\interval.obj" : "c:\\work\\src\\modules\\dbs\\interval.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\interval.obj" = 21 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\interval.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\interval.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\interval.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\interval.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\interval.obj" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\multithread.obj" : "c:\\work\\src\\shared\\multithread\\multithread.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\multithread.obj" = 22 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\multithread.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\multithread.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\multithread.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\multithread.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\multithread.obj" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\objlist.obj" : "c:\\work\\src\\shared\\objlist\\objlist.c" ;
+FILENUM on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\objlist.obj" = 23 ;
+DEFPROTS on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\objlist.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\objlist.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\objlist.obj" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\objlist.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\objlist.obj" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\guid.h.hdefs" : "c:\\work\\src\\shared\\guid.h" ;
+FILENUM on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\guid.h.hdefs" = 24 ;
+OUTFILE on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\guid.h.hdefs" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\guid.h.hdefs.out" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\module.h.hdefs" : "c:\\work\\src\\shared\\modules\\module.h" ;
+FILENUM on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\module.h.hdefs" = 25 ;
+OUTFILE on "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\module.h.hdefs" = "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\module.h.hdefs.out" ;
+PreLinkInputs += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\resources.in.rc" ;
+PreLinkInputs += $(PrjObjects) $(InstrObjects) ;
+PreLinkOutputs += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\resources.out.rc" ;
+PreLinkOutputs += "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs.dll.defs" ;
+PreLink $(PreLinkOutputs) : $(PreLinkInputs) ;
+Depends "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs.dll" : "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs.dll.defs" ;
+Object "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\resources.res" : "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\resources.out.rc" ;
+Depends "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\resources.res" : $(PreLinkOutputs) ;
+Depends "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\resources.res" "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\resources.out.rc" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\resources.res" : "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\manifest.xml" ;
+MainFromObjects "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs.dll" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs.dll" : "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\link_options.txt" ;
+Depends "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs.dll" : "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dependencies.lnk.in" ;
+Depends "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs.dll" : "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\resources.res" ;
+Depends all : "c:\\work\\src\\modules\\dbs\\cvibuild.dbs_module\\Release\\dbs.dll" ;

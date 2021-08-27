@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<configuration>
+	<plugins>
+		<plugin id="{32A783CF-D82C-4734-9112-2F61E92FC17B}">
+			<name>Panel Plugin</name>
+			
+			<panel>
+				<item position="1">
+					<name>Utilisateurs</name>
+					<pict>7</pict>
+					<event id="EVNT_PLUGIN_RUN" data="{AE2FAC8A-ABAC-4b1c-AA84-669809AB76EB}"/>
+					<event id="EVNT_GUI_PANEL" data="panel;2"/>
+				</item>
+				<item position="2">
+					<name>produits</name>
+					<pict>4</pict>
+					<event id="EVNT_GUI_CHANGE_VERSION"/>
+					<event id="EVNT_GUI_PANEL" data="panel;2"/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+				</item>
+				<item position="3">
+					<name>Paramétrage</name>
+					<pict>3</pict>
+				    <rights id="RIGHTS_MAINTENANCE"/> 
+					<event id="EVNT_PLUGIN_RUN" data="{4FDAB846-56F7-405d-BF13-EEB8EF8D96FA}"/>
+					<event id="EVNT_PLUGIN_RUN" data="{0CBEF382-AEDE-40a3-92EF-2B24D432A4CD}"/>
+					<event id="EVNT_GUI_PANEL" data="database;1"/>
+				</item>
+				<item position="4">
+					<name>maintenance</name>
+					<pict>5</pict>
+					<rights id="RIGHTS_MAINTENANCE"/>
+					<event id="EVNT_PLUGIN_RUN" data="{4FDAB846-56F7-405d-BF13-EEB8EF8D96FA}"/>
+					<event id="EVNT_GUI_PANEL" data="maintenance"/>
+					<event id="EVNT_GUI_MENU_DISPLAY"/>
+				</item>
+				<item position="5">
+					<name>Rapports</name>
+					<pict>9</pict>
+					<event id="EVNT_PLUGIN_RUN" data="{3399A11A-2A03-4170-B69C-356F4F49C568}"/>
+					<event id="EVNT_GUI_PANEL" data="report"/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+				</item>
+				<item position="6">
+					<name>Analyse</name>
+					<pict>6</pict>
+					<event id="EVNT_PLUGIN_RUN" data="{3399A11A-2A03-4170-B69C-356F4F49C569}"/>
+					<event id="EVNT_GUI_PANEL" data="report"/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+				</item>
+				<item position="7">
+					<name>Vidage</name>
+					<pict>17</pict>
+					<event id="EVNT_GUI_END_VERSION"/>
+					<event id="EVNT_GUI_PANEL" data="panel;2"/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+				</item>
+				<item position="8">
+					<name>Reset</name>
+					<pict>9</pict>
+					<event id="EVNT_RESET"/>
+					<event id="EVNT_GUI_PANEL" data="panel"/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+				</item>
+				<item position="12">
+					<name>Quitter</name>
+					<pict>16</pict>
+					<event id="EVNT_GUI_QUIT"/>
+					<event id="EVNT_GUI_PANEL" data="panel"/>
+				</item>
+			</panel>
+			
+			<product>
+				<item position="8">
+					<name>Retour</name>
+					<event id="EVNT_PLUGIN_LEAVE" data="{5954031C-CEA1-4c16-8128-38B661811261}"/>
+					<event id="EVNT_GUI_PANEL" data="panel;2"/>
+					<event id="EVNT_GUI_PRODUCTION"/>
+				</item>
+			</product>
+			<!-- Maintenance section -->
+			<maintenance>
+				<item position="1">
+					<name>Tester</name>
+					<pict>18</pict>
+					<save_position/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_RUN" data="{44941DAC-D5D1-4a7d-9825-5EF6EDC5921B}"/>
+				</item>
+				<item position="2">
+					<name>drivers</name>
+					<pict>19</pict>
+					<save_position/>
+					<event id="EVNT_PLUGIN_RUN" data="{28E36F9B-656B-4acd-97EF-9010E3898EC1}"/>
+					<event id="EVNT_GUI_PANEL" data="card"/>
+					<event id="EVNT_GUI_MENU_DISPLAY"/>
+				</item>
+				<item position="12">
+					<name>Back</name>
+					<pict>8</pict>
+					<event id="EVNT_PLUGIN_LEAVE" data="{4FDAB846-56F7-405d-BF13-EEB8EF8D96FA}"/>
+					<event id="EVNT_GUI_PANEL" data="panel;2"/>
+					<event id="EVNT_GUI_PRODUCTION"/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+				</item>
+			</maintenance>
+			<database>
+				<item position="1">
+					<name>Prrduits</name>
+					<pict>1</pict>
+					<save_position/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_GUI_DATABASE_PRODUCT"/>
+				</item>
+				<item position="4">
+					<name>Retour</name>
+					<pict>8</pict>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_LEAVE" data="{4FDAB846-56F7-405d-BF13-EEB8EF8D96FA}"/>
+					<event id="EVNT_GUI_PANEL" data="panel;2"/>
+					<event id="EVNT_GUI_PRODUCTION"/>
+				</item>
+			</database>
+			<card>	
+				<item position="1">
+					<name>PLC</name>
+					<pict>19</pict>
+					<save_position/>
+					<event id="EVNT_PLUGIN_RUN" data="{374B887B-7EF6-4593-B83E-0E07DDB38C99}"/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+				</item>
+				<item position="2">
+					<name>DBUS</name>
+					<pict>20</pict>
+					<save_position/>
+					<event id="EVNT_PLUGIN_RUN" data="{E87E3CB8-8543-4F55-B847-12E4C61FACE2}"/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+				</item>
+				<item position="3">
+					<name>Dielectrimeter</name>
+					<pict>88</pict>
+					<save_position/>
+					<event id="EVNT_PLUGIN_RUN" data="{FFAA1236-f5d2-2076-104c-c0a0e8dea64f}"/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+				</item>	
+				<item position="4">
+					<name>Generator</name>
+					<pict>99</pict>
+					<save_position/>
+					<event id="EVNT_PLUGIN_RUN" data="{FFAA1236-f5d2-2076-104c-c0a0e8dcf001}"/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+				</item>	
+				<item position="5">
+					<name>DC Power</name>
+					<pict>95</pict>
+					<save_position/>
+					<event id="EVNT_PLUGIN_RUN" data="{FFAA1236-f5d2-2076-104c-c0a0e8dFCFA0}"/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+				</item>	
+				<item position="6">
+					<name>Imprimate</name>
+					<pict>23</pict>
+					<save_position/>
+					<event id="EVNT_PLUGIN_RUN" data="{bc86c222-d5d2-4276-894c-c0a0e8d258d4}"/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+				</item>	
+				<item position="7">
+					<name>Traca</name>
+					<pict>70</pict>
+					<save_position/>
+					<event id="EVNT_PLUGIN_RUN" data="{E87E3CB8-8543-4F55-B847-12E4C61CF234}"/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+				</item>	
+				<item position="8">
+					<name>Retour</name>
+					<save_position/>
+					<event id="EVNT_GUI_PANEL" data="maintenance;1"/>
+					<event id="EVNT_PLUGIN_RUN" data="{4FDAB846-56F7-405d-BF13-EEB8EF8D96FA}"/>
+					<event id="EVNT_GUI_MENU_DISPLAY"/>
+				</item>
+			</card>
+			<quality>
+				<item position="1">
+					<name>Rework</name>
+					<save_position/>
+					<event id="EVNT_GUI_QUALITY_MASTER"/>
+				</item>
+				<item position="8">
+					<name>Retour</name>
+					<event id="EVNT_GUI_PANEL" data="panel;2"/>
+					<event id="EVNT_GUI_PRODUCTION"/>
+				</item>
+			</quality>
+			<report>
+				<item position="1">
+					<name>Report</name>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_RUN" data="{3399A11A-2A03-4170-B69C-356F4F49C568}"/>
+				</item>
+				<item position="2">
+					<name>Defauts</name>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+					<event id="EVNT_PLUGIN_RUN" data="{3399A11A-2A03-4170-B69C-356F4F49C569}"/>
+				</item>
+				<item position="8">
+					<name>Back</name>
+					<event id="EVNT_PLUGIN_LEAVE" data="{3399A11A-2A03-4170-B69C-356F4F49C568}"/>
+					<event id="EVNT_PLUGIN_LEAVE" data="{3399A11A-2A03-4170-B69C-356F4F49C569}"/>
+					<event id="EVNT_GUI_PANEL" data="panel;2"/>
+					<event id="EVNT_GUI_PRODUCTION"/>
+				</item>
+			</report>
+			<shift>
+				<item position="1">
+					<name>Equipe 1</name>
+					<save_position/>
+					<event id="EVNT_GUI_SHIFT" data="1"/>
+					<event id="EVNT_GUI_PANEL" data="panel;2"/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+				</item>
+				<item position="2">
+					<name>Equipe 2</name>
+					<save_position/>
+					<event id="EVNT_GUI_SHIFT" data="2"/>
+					<event id="EVNT_GUI_PANEL" data="panel;2"/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+				</item>
+				<item position="3">
+					<name>Equipe 3</name>
+					<save_position/>
+					<event id="EVNT_GUI_SHIFT" data="3"/>
+					<event id="EVNT_GUI_PANEL" data="panel;2"/>
+					<event id="EVNT_GUI_MENU_HIDE"/>
+				</item>
+			</shift>
+		</plugin>
+	</plugins>
+</configuration>

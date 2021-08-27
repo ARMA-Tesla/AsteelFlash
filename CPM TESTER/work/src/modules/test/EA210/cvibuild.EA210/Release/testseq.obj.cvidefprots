@@ -1,0 +1,30 @@
+[compare]
+Class="Function"
+Prototype="int compare(const void *a, const void *b);"
+SourceLocation="c:\work\src\shared\test\testseq.c:186:1"
+
+[testseq_new]
+Class="Function"
+Prototype="struct _SElException *testseq_new(struct _STestSequence **pTestSequence);"
+SourceLocation="c:\work\src\shared\test\testseq.c:196:1"
+
+[testseq_delete]
+Class="Function"
+Prototype="struct _SElException *testseq_delete(struct _STestSequence **pTestSeq);"
+SourceLocation="c:\work\src\shared\test\testseq.c:245:1"
+
+[SaveXmlResultFile]
+Class="Function"
+Prototype="void SaveXmlResultFile(struct _STestParam *pTestParam, int failed);"
+SourceLocation="c:\work\src\shared\test\testseq.c:1510:1"
+
+[LogAsteelFile]
+Class="Function"
+Prototype="void LogAsteelFile(struct _STestParam *pTestParam, int failed);"
+SourceLocation="c:\work\src\shared\test\testseq.c:1540:1"
+
+[InsertionMesures_DB]
+Class="Function"
+Prototype="void InsertionMesures_DB(struct _STestParam *pTestParam, int failed);"
+SourceLocation="c:\work\src\shared\test\testseq.c:1579:1"
+

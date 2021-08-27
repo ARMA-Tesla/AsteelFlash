@@ -1,0 +1,30 @@
+[TreeProductIni]
+Class="Function"
+Prototype="struct _SElException *TreeProductIni();"
+SourceLocation="c:\work\src\gui\database\dbs_product.c:46:1"
+
+[TreeProductClose]
+Class="Function"
+Prototype="struct _SElException *TreeProductClose();"
+SourceLocation="c:\work\src\gui\database\dbs_product.c:99:1"
+
+[BkTreeProductNodeClick]
+Class="Function"
+Prototype="struct _SElException *BkTreeProductNodeClick(char *keyNode);"
+SourceLocation="c:\work\src\gui\database\dbs_product.c:110:1"
+
+[BkTreeProductPopupMenuCommand]
+Class="Function"
+Prototype="struct _SElException *BkTreeProductPopupMenuCommand(char *keyNode, char *keyCol, long menuItem);"
+SourceLocation="c:\work\src\gui\database\dbs_product.c:169:1"
+
+[OnOpenCsvFile]
+Class="Function"
+Prototype="int OnOpenCsvFile(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\database\dbs_product.c:330:1"
+
+[OnImportCsvFile]
+Class="Function"
+Prototype="int OnImportCsvFile(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\database\dbs_product.c:365:1"
+

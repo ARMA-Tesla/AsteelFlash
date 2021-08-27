@@ -1,0 +1,145 @@
+[OnTimerWS20]
+Class="Function"
+Prototype="int OnTimerWS20(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:62:17"
+
+[STATION_20_init]
+Class="Function"
+Prototype="struct _SElException *STATION_20_init(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:83:1"
+
+[STATION_20_cleanup]
+Class="Function"
+Prototype="struct _SElException *STATION_20_cleanup(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:106:1"
+
+[STATION_20_wait]
+Class="Function"
+Prototype="struct _SElException *STATION_20_wait(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:122:1"
+
+[EA210_20_0_0_help]
+Class="Function"
+Prototype="struct _SElException *EA210_20_0_0_help(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:137:1"
+
+[EA210_20_0_0_check]
+Class="Function"
+Prototype="struct _SElException *EA210_20_0_0_check(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:146:1"
+
+[EA210_20_0_0_init]
+Class="Function"
+Prototype="struct _SElException *EA210_20_0_0_init(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:157:1"
+
+[EA210_20_0_0_test]
+Class="Function"
+Prototype="struct _SElException *EA210_20_0_0_test(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:165:1"
+
+[EA210_20_0_0_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_20_0_0_cleanup(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:179:1"
+
+[EA210_20_0_1_help]
+Class="Function"
+Prototype="struct _SElException *EA210_20_0_1_help(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:192:1"
+
+[EA210_20_0_1_check]
+Class="Function"
+Prototype="struct _SElException *EA210_20_0_1_check(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:200:1"
+
+[EA210_20_0_1_init]
+Class="Function"
+Prototype="struct _SElException *EA210_20_0_1_init(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:211:1"
+
+[EA210_20_0_1_test]
+Class="Function"
+Prototype="struct _SElException *EA210_20_0_1_test(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:219:1"
+
+[EA210_20_0_1_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_20_0_1_cleanup(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:231:1"
+
+[EA210_20_1_1_help]
+Class="Function"
+Prototype="struct _SElException *EA210_20_1_1_help(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:243:1"
+
+[EA210_20_1_1_check]
+Class="Function"
+Prototype="struct _SElException *EA210_20_1_1_check(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:251:1"
+
+[EA210_20_1_1_init]
+Class="Function"
+Prototype="struct _SElException *EA210_20_1_1_init(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:262:1"
+
+[EA210_20_1_1_test]
+Class="Function"
+Prototype="struct _SElException *EA210_20_1_1_test(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:273:1"
+
+[EA210_20_1_1_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_20_1_1_cleanup(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:322:1"
+
+[EA210_20_1_2_help]
+Class="Function"
+Prototype="struct _SElException *EA210_20_1_2_help(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:335:1"
+
+[EA210_20_1_2_check]
+Class="Function"
+Prototype="struct _SElException *EA210_20_1_2_check(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:343:1"
+
+[EA210_20_1_2_init]
+Class="Function"
+Prototype="struct _SElException *EA210_20_1_2_init(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:354:1"
+
+[EA210_20_1_2_test]
+Class="Function"
+Prototype="struct _SElException *EA210_20_1_2_test(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:366:1"
+
+[EA210_20_1_2_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_20_1_2_cleanup(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:410:1"
+
+[EA210_20_1_3_help]
+Class="Function"
+Prototype="struct _SElException *EA210_20_1_3_help(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:423:1"
+
+[EA210_20_1_3_check]
+Class="Function"
+Prototype="struct _SElException *EA210_20_1_3_check(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:431:1"
+
+[EA210_20_1_3_init]
+Class="Function"
+Prototype="struct _SElException *EA210_20_1_3_init(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:442:1"
+
+[EA210_20_1_3_test]
+Class="Function"
+Prototype="struct _SElException *EA210_20_1_3_test(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:453:1"
+
+[EA210_20_1_3_cleanup]
+Class="Function"
+Prototype="struct _SElException *EA210_20_1_3_cleanup(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS20.c:498:1"
+

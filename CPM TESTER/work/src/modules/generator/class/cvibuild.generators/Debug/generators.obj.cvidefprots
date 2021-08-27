@@ -1,0 +1,20 @@
+[generator_new]
+Class="Function"
+Prototype="struct _SElException *generator_new(struct _Generator **generator, const char *name, const char *optionString);"
+SourceLocation="c:\work\src\modules\generator\class\generators.c:84:1"
+
+[generator_delete]
+Class="Function"
+Prototype="struct _SElException *generator_delete(struct _Generator **generator);"
+SourceLocation="c:\work\src\modules\generator\class\generators.c:125:1"
+
+[generators_new]
+Class="Function"
+Prototype="struct _SElException *generators_new(struct _Generators **generators);"
+SourceLocation="c:\work\src\modules\generator\class\generators.c:153:1"
+
+[generators_delete]
+Class="Function"
+Prototype="struct _SElException *generators_delete(struct _Generators **generators);"
+SourceLocation="c:\work\src\modules\generator\class\generators.c:186:1"
+

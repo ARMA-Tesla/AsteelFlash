@@ -1,0 +1,610 @@
+[Workspace Header]
+Version = 1900
+Pathname = "/c/work/src/gui/database/dbs.cws"
+CVI Dir = "/c/program files (x86)/national instruments/cvi2019"
+CVI Shared Dir = "/C/Program Files (x86)/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2019"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/c/Program Files (x86)/IVI Foundation/IVI"
+IVI Standard Root 64-bit Dir = "/c/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files (x86)/IVI Foundation/VISA/winnt"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "dbs.prj"
+Drag Bar Left = 241
+Window Top = 66
+Window Left = 23
+Window Bottom = 454
+Window Right = 765
+Maximized = True
+Maximized Children = True
+Max32 Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win At Start = True
+Bring Up Err Win For Errors = False
+Save Changes Before Running = "Always"
+Save Changes Before Compiling = "Always"
+Hide Windows = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 1
+Window Confinement Region Enabled = True
+MainColumnWidth = 224
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+
+[Project Header 0001]
+Version = 1900
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Release"
+Warn User If Debugging Release = 0
+Batch Build Release = False
+Batch Build Debug = False
+
+[File 0001]
+Path = "/c/work/src/shared/bklib/bklib2.fp"
+File Type = "Function Panel"
+Disk Date = 3309320854
+In Projects = "1,"
+
+[File 0002]
+Path = "/c/work/src/shared/mscomctrl/MSComCtl2.fp"
+File Type = "Function Panel"
+Disk Date = 3309320862
+In Projects = "1,"
+
+[File 0003]
+Path = "/c/work/src/shared/msxml/MSXML2.fp"
+File Type = "Function Panel"
+Disk Date = 3309320860
+In Projects = "1,"
+
+[File 0004]
+Path = "/c/program files (x86)/national instruments/cvi2019/toolslib/custctrl/pwctrl.fp"
+File Type = "Function Panel"
+Disk Date = 3635406858
+In Projects = "1,"
+
+[File 0005]
+Path = "/c/work/src/gui/database/dbs_process.c"
+File Type = "CSource"
+Disk Date = 3651492328
+In Projects = "1,"
+Source Window State = "1,400,401,400,0,0,0,0,0,0,0,123,0,0,0,0,343,0,375,170,258,715,1,54,"
+Breakpoint 0001 = "360,0,enabled,"
+Line Tags = "302,388,615,665,"
+Window Top = 38
+
+[File 0006]
+Path = "/c/work/src/gui/database/dbs_gui.c"
+File Type = "CSource"
+Disk Date = 3651491609
+In Projects = "1,"
+Source Window State = "1,718,718,718,45,45,45,0,0,0,0,40,0,0,0,0,797,0,718,45,310,715,1,0,"
+Breakpoint 0001 = "200,0,enabled,"
+Breakpoint 0002 = "876,0,enabled,"
+Window Top = 38
+
+[File 0007]
+Path = "/c/work/src/gui/database/dbs_product.c"
+File Type = "CSource"
+Disk Date = 3650824372
+In Projects = "1,"
+Source Window State = "1,4,8,4,164,172,164,0,0,0,0,0,0,0,0,0,237,0,3,164,284,715,1,0,"
+Breakpoint 0001 = "205,0,enabled,"
+Window Top = 38
+
+[File 0008]
+Path = "/c/work/src/modules/dbs/dbs_lineprocess.c"
+File Type = "CSource"
+Disk Date = 3669322499
+In Projects = ""
+Source Window State = "1,101,121,101,39,76,39,0,0,0,0,0,0,0,0,0,461,0,486,56,427,804,1,0,"
+Breakpoint 0001 = "206,0,enabled,"
+Window Top = 116
+Window Left = 51
+
+[File 0009]
+Path = "/c/work/src/gui/database/dbs_test.c"
+File Type = "CSource"
+Disk Date = 3650913757
+In Projects = "1,"
+Source Window State = "1,19,19,19,0,0,0,0,0,0,0,0,0,0,0,0,443,0,19,0,258,715,1,22,"
+Breakpoint 0001 = "194,0,enabled,"
+Breakpoint 0002 = "568,0,enabled,"
+Breakpoint 0003 = "1026,0,enabled,"
+Breakpoint 0004 = "1063,0,enabled,"
+Line Tags = "194,"
+Window Top = 62
+Window Left = 26
+
+[File 0010]
+Path = "/c/work/src/gui/database/dbs_product_param_edit.c"
+File Type = "CSource"
+Disk Date = 3638777176
+In Projects = "1,"
+Source Window State = "1,147,147,147,16,37,37,0,0,0,0,0,0,0,0,0,140,0,147,16,336,715,1,0,"
+Breakpoint 0001 = "214,0,enabled,"
+Breakpoint 0002 = "264,0,enabled,"
+Breakpoint 0003 = "314,0,enabled,"
+Line Tags = "287,"
+Window Top = 122
+Window Left = 58
+
+[File 0011]
+Path = "/c/work/src/gui/database/dbs_user_edit.c"
+File Type = "CSource"
+Disk Date = 3309320896
+In Projects = "1,"
+Source Window State = "1,177,202,177,66,73,66,0,0,0,0,0,0,0,0,0,174,0,203,41,310,715,1,0,"
+Breakpoint 0001 = "191,0,enabled,"
+Window Top = 92
+Window Left = 42
+
+[File 0012]
+Path = "/c/work/src/gui/database/dbs_test_param_edit.c"
+File Type = "CSource"
+Disk Date = 3647328152
+In Projects = "1,"
+Source Window State = "1,104,104,104,65,86,86,0,3,0,0,0,0,0,0,0,0,0,104,65,336,715,1,0,"
+Breakpoint 0001 = "84,0,enabled,"
+Window Top = 38
+Window Left = 10
+
+[File 0013]
+Path = "/c/work/src/gui/database/dbs_test_edit.c"
+File Type = "CSource"
+Disk Date = 3650883243
+In Projects = "1,"
+Source Window State = "1,35,35,35,36,36,36,0,0,0,0,186,0,0,0,0,222,0,35,36,258,715,1,0,"
+Line Tags = "27,"
+Window Top = 92
+Window Left = 42
+
+[File 0014]
+Path = "/c/work/src/shared/bklib/bklib2.h"
+File Type = "Include"
+Disk Date = 3309320854
+In Projects = "1,"
+Source Window State = "1,16,16,16,20,34,34,0,0,0,0,0,0,0,0,0,183,0,189,16,245,715,1,0,"
+Window Top = 38
+
+[File 0015]
+Path = "/c/work/src/gui/database/database.h"
+File Type = "Include"
+Disk Date = 3647923496
+In Projects = "1,"
+Source Window State = "1,122,122,122,9,27,27,0,0,0,0,0,0,0,0,0,128,0,134,20,193,715,1,0,"
+Window Top = 38
+
+[File 0016]
+Path = "/c/work/src/gui/database/database.uir"
+File Type = "User Interface Resource"
+Disk Date = 3650879848
+In Projects = "1,"
+Window Top = 38
+Window Left = 90
+Window Height = 991
+Window Width = 715
+Window Released = True
+
+[File 0017]
+Path = "/c/work/src/gui/database/database_plugin.h"
+File Type = "Include"
+Disk Date = 3645509238
+In Projects = "1,"
+Source Window State = "1,13,14,13,0,0,0,0,0,0,0,0,0,0,0,0,0,0,22,149,336,715,1,0,"
+Window Top = 30
+
+[File 0018]
+Path = "/c/work/src/modules/dbs/dbs.h"
+File Type = "Include"
+Disk Date = 3309320942
+In Projects = "1,"
+Source Window State = "1,68,68,68,4,26,26,0,0,0,0,0,0,0,0,0,58,0,86,53,349,731,1,0,"
+Window Top = 38
+
+[File 0019]
+Path = "/c/work/src/gui/database/dbs_global.h"
+File Type = "Include"
+Disk Date = 3650892600
+In Projects = "1,"
+Source Window State = "1,166,166,166,33,35,35,0,0,0,0,0,0,0,0,0,153,0,168,40,258,715,1,0,"
+Window Top = 38
+
+[File 0020]
+Path = "/c/work/src/gui/database/dbs_history.c"
+File Type = "CSource"
+Disk Date = 3646250994
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39,0,0,0,371,630,1,0,"
+Window Top = 32
+Window Left = 10
+
+[File 0021]
+Path = "/c/work/src/gui/database/dbs_history.h"
+File Type = "Include"
+Disk Date = 3309320896
+In Projects = "1,"
+Source Window State = "1,0,7,7,0,19,19,0,0,0,0,0,0,0,0,0,0,0,18,25,336,715,1,0,"
+
+[File 0022]
+Path = "/c/work/src/gui/database/dbs_info.c"
+File Type = "CSource"
+Disk Date = 3647327904
+In Projects = "1,"
+Source Window State = "1,18,18,18,0,0,0,0,0,0,0,0,0,0,0,0,200,0,18,0,310,715,1,0,"
+Window Top = 62
+Window Left = 26
+Window Z-Order = 1
+
+[File 0023]
+Path = "/c/work/src/gui/database/dbs_info.h"
+File Type = "Include"
+Disk Date = 3309320896
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,349,731,1,0,"
+
+[File 0024]
+Path = "/c/work/src/gui/database/dbs_product.h"
+File Type = "Include"
+Disk Date = 3646944092
+In Projects = "1,"
+Source Window State = "1,16,17,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,0,349,715,1,0,"
+Window Top = 38
+
+[File 0025]
+Path = "/c/work/src/gui/database/dbs_product_edit.c"
+File Type = "CSource"
+Disk Date = 3634639758
+In Projects = "1,"
+Source Window State = "1,202,232,232,8,52,52,0,0,0,0,0,0,0,0,0,0,0,215,12,336,715,1,0,"
+Window Top = 182
+Window Left = 90
+
+[File 0026]
+Path = "/c/work/src/gui/database/dbs_product_edit.h"
+File Type = "Include"
+Disk Date = 3309320896
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,13,29,349,715,1,0,"
+Window Top = 38
+
+[File 0027]
+Path = "/c/work/src/gui/database/dbs_product_master_edit.c"
+File Type = "CSource"
+Disk Date = 3309320896
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,349,715,1,0,"
+Window Top = 92
+Window Left = 42
+
+[File 0028]
+Path = "/c/work/src/gui/database/dbs_product_master_edit.h"
+File Type = "Include"
+Disk Date = 3309320896
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,336,715,1,0,"
+
+[File 0029]
+Path = "/c/work/src/gui/database/dbs_product_param.c"
+File Type = "CSource"
+Disk Date = 3646545434
+In Projects = "1,"
+Source Window State = "1,264,264,264,88,94,94,0,3,0,0,0,0,0,0,0,249,0,264,88,258,715,1,0,"
+Window Top = 62
+Window Left = 26
+
+[File 0030]
+Path = "/c/work/src/gui/database/dbs_product_param.h"
+File Type = "Include"
+Disk Date = 3309320896
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,349,715,1,0,"
+
+[File 0031]
+Path = "/c/work/src/gui/database/dbs_product_param_edit.h"
+File Type = "Include"
+Disk Date = 3309320896
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,349,715,1,11,"
+
+[File 0032]
+Path = "/c/work/src/gui/database/dbs_test.h"
+File Type = "Include"
+Disk Date = 3650885952
+In Projects = "1,"
+Source Window State = "1,6,24,24,9,28,28,0,0,0,0,0,0,0,0,0,6,0,28,89,271,715,1,0,"
+Window Top = 38
+
+[File 0033]
+Path = "/c/work/src/gui/database/dbs_test_edit.h"
+File Type = "Include"
+Disk Date = 3309320896
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,371,630,1,0,"
+Window Top = 62
+Window Left = 26
+
+[File 0034]
+Path = "/c/work/src/gui/database/dbs_test_param.c"
+File Type = "CSource"
+Disk Date = 3647328214
+In Projects = "1,"
+Source Window State = "1,68,68,68,14,31,31,0,3,0,0,0,0,0,0,0,48,0,68,14,349,715,1,0,"
+Window Top = 38
+Window Left = 10
+
+[File 0035]
+Path = "/c/work/src/gui/database/dbs_test_param.h"
+File Type = "Include"
+Disk Date = 3309320896
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,336,715,1,0,"
+
+[File 0036]
+Path = "/c/work/src/gui/database/dbs_test_param_edit.h"
+File Type = "Include"
+Disk Date = 3309320896
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,336,715,1,0,"
+
+[File 0037]
+Path = "/c/work/src/gui/database/dbs_user.c"
+File Type = "CSource"
+Disk Date = 3647924690
+In Projects = "1,"
+Source Window State = "1,45,45,45,14,22,22,0,0,0,0,0,0,0,0,0,22,0,39,37,310,715,1,0,"
+Window Top = 62
+Window Left = 26
+
+[File 0038]
+Path = "/c/work/src/gui/database/dbs_user.h"
+File Type = "Include"
+Disk Date = 3309320896
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,245,715,1,0,"
+
+[File 0039]
+Path = "/c/work/src/gui/database/dbs_user_edit.h"
+File Type = "Include"
+Disk Date = 3558436770
+In Projects = "1,"
+Source Window State = "1,14,15,14,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,0,310,715,1,0,"
+
+[File 0040]
+Path = "/c/work/src/shared/plugins/el_plugininfo.c"
+File Type = "CSource"
+Disk Date = 3309320850
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,272,0,0,0,349,715,1,0,"
+
+[File 0041]
+Path = "/c/work/src/shared/string/elstring.c"
+File Type = "CSource"
+Disk Date = 3613571278
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0042]
+Path = "/c/work/include/elstring.h"
+File Type = "Include"
+Disk Date = 3678686161
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0043]
+Path = "/c/work/src/shared/timer/eltimer.c"
+File Type = "CSource"
+Disk Date = 3309320858
+In Projects = "1,"
+Source Window State = "1,185,185,185,4,9,9,0,0,0,0,0,0,0,0,0,166,53,185,102,400,600,1,0,"
+Window Top = 38
+
+[File 0044]
+Path = "/c/work/src/shared/timer/eltimer.h"
+File Type = "Include"
+Disk Date = 3309320858
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0045]
+Path = "/c/work/include/eltypes.h"
+File Type = "Include"
+Disk Date = 3680507941
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0046]
+Path = "/c/work/src/shared/exception/Exception.c"
+File Type = "CSource"
+Disk Date = 3652346447
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+Window Top = 122
+Window Left = 58
+
+[File 0047]
+Path = "/c/work/src/modules/ibutton/ibutton.h"
+File Type = "Include"
+Disk Date = 3309324486
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0048]
+Path = "/c/work/src/gui/database/lang_translation.h"
+File Type = "Include"
+Disk Date = 3646192926
+In Projects = "1,"
+Source Window State = "1,42,53,53,0,3,3,0,0,0,0,0,0,0,0,0,24,0,40,2,258,715,1,0,"
+
+[File 0049]
+Path = "/c/work/src/shared/language/language.c"
+File Type = "CSource"
+Disk Date = 3464156986
+In Projects = "1,"
+Source Window State = "1,86,86,86,16,39,39,0,0,0,0,0,0,0,0,0,86,0,100,40,349,723,1,0,"
+Window Top = 38
+Window Left = 10
+
+[File 0050]
+Path = "/c/work/src/shared/language/language.h"
+File Type = "Include"
+Disk Date = 3464156802
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,35,66,349,715,1,0,"
+
+[File 0051]
+Path = "/c/work/src/shared/mscomctrl/MSComCtl2.h"
+File Type = "Include"
+Disk Date = 3309320862
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0052]
+Path = "/c/work/src/shared/msxml/MSXML2.h"
+File Type = "Include"
+Disk Date = 3309320860
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2198,0,2214,47,427,804,1,0,"
+Window Top = 78
+Window Left = 31
+
+[File 0053]
+Path = "/c/work/src/shared/msxml/MSXML2.obj"
+File Type = "Object"
+Disk Date = 3309320860
+In Projects = "1,"
+
+[File 0054]
+Path = "/c/work/src/shared/cvitool/msxmldom.c"
+File Type = "CSource"
+Disk Date = 3309320850
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0055]
+Path = "/c/work/src/shared/cvitool/msxmldom.h"
+File Type = "Include"
+Disk Date = 3309320850
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0056]
+Path = "/c/work/src/shared/cvitool/msxmldom2.h"
+File Type = "Include"
+Disk Date = 3309320850
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,11,55,245,715,1,0,"
+
+[File 0057]
+Path = "/c/work/src/gui/database/ring_control.c"
+File Type = "CSource"
+Disk Date = 3634163734
+In Projects = "1,"
+Source Window State = "1,23,23,23,7,14,14,0,3,0,0,0,0,0,0,0,0,0,23,7,310,715,1,0,"
+Window Top = 152
+Window Left = 74
+
+[File 0058]
+Path = "/c/work/src/gui/database/ring_control.h"
+File Type = "Include"
+Disk Date = 3309320896
+In Projects = "1,"
+Source Window State = "1,16,16,16,16,28,28,0,3,0,0,0,0,0,0,0,0,0,16,16,258,715,1,0,"
+
+[Tab Order]
+Tab 0001 = "/c/work/src/gui/database/dbs_info.c"
+
+[Default Build Config 0001 Debug]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = False
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Extended"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = "/c/application/application.exe"
+
+[Default Build Config 0001 Release]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = "/c/application/application.exe"
+
+[Default Build Config 0001 Debug64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Build Dependencies 0001]
+Number of Dependencies = 0
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Profile = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[Execution Target 0001]
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = "/c/application/application.exe"
+
+[Command Line Args 0001]
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+

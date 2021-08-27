@@ -1,0 +1,71 @@
+CCFLAGS = -g ;
+HDRS = 	"c:\\work\\src\\shared\\exception"
+	"c:\\work\\include"
+	"c:\\work\\src\\shared"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\clang\\3.3"
+	"c:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2019\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "Exception.c" = "c:\\work\\src\\shared\\exception" ;
+LOCATE on "module.h" = "c:\\work\\src\\shared\\modules" ;
+LOCATE on "tracas.c" = "c:\\work\\src\\modules\\traca\\class" ;
+LOCATE on "tracas.h" = "c:\\work\\src\\modules\\traca\\class" ;
+LOCATE on "tracas_module.c" = "c:\\work\\src\\modules\\traca\\class" ;
+Object "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\Exception.obj" : "c:\\work\\src\\shared\\exception\\Exception.c" ;
+FILENUM on "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\Exception.obj" = 1 ;
+DEFPROTS on "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\Exception.obj" = "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\Exception.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\Exception.obj" = "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\Exception.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\Exception.obj" ;
+Object "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\tracas.obj" : "c:\\work\\src\\modules\\traca\\class\\tracas.c" ;
+FILENUM on "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\tracas.obj" = 2 ;
+DEFPROTS on "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\tracas.obj" = "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\tracas.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\tracas.obj" = "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\tracas.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\tracas.obj" ;
+Object "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\tracas_module.obj" : "c:\\work\\src\\modules\\traca\\class\\tracas_module.c" ;
+FILENUM on "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\tracas_module.obj" = 3 ;
+DEFPROTS on "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\tracas_module.obj" = "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\tracas_module.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\tracas_module.obj" = "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\tracas_module.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\tracas_module.obj" ;
+Object "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\module.h.hdefs" : "c:\\work\\src\\shared\\modules\\module.h" ;
+FILENUM on "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\module.h.hdefs" = 4 ;
+OUTFILE on "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\module.h.hdefs" = "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\module.h.hdefs.out" ;
+PreLinkInputs += "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\resources.in.rc" ;
+PreLinkInputs += $(PrjObjects) $(InstrObjects) ;
+PreLinkOutputs += "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\resources.out.rc" ;
+PreLinkOutputs += "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\tracas.dll.defs" ;
+PreLink $(PreLinkOutputs) : $(PreLinkInputs) ;
+Depends "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\tracas.dll" : "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\tracas.dll.defs" ;
+Object "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\resources.res" : "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\resources.out.rc" ;
+Depends "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\resources.res" : $(PreLinkOutputs) ;
+Depends "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\resources.res" "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\resources.out.rc" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\resources.res" : "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\manifest.xml" ;
+MainFromObjects "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\tracas.dll" : $(PrjObjects) $(InstrObjects) ;
+Depends "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\tracas.dll" : "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\link_options.txt" ;
+Depends "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\tracas.dll" : "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\dependencies.lnk.in" ;
+Depends "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\tracas.dll" : "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\resources.res" ;
+Depends all : "c:\\work\\src\\modules\\traca\\class\\cvibuild.tracas\\Debug\\tracas.dll" ;

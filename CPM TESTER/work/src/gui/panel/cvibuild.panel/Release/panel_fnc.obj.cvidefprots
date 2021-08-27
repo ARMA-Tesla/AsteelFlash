@@ -1,0 +1,5 @@
+[LoadConfiguration]
+Class="Function"
+Prototype="struct _SElException *LoadConfiguration(const char *fileName, const char *spec, struct _SPanelItem *spanel, int item_number);"
+SourceLocation="c:\work\src\gui\panel\panel_fnc.c:17:1"
+

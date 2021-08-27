@@ -1,0 +1,20 @@
+[camera_new]
+Class="Function"
+Prototype="struct _SElException *camera_new(struct _Camera **camera, const char *name, const char *optionString);"
+SourceLocation="c:\work\src\modules\Camera\class\cameras.c:90:1"
+
+[camera_delete]
+Class="Function"
+Prototype="struct _SElException *camera_delete(struct _Camera **camera);"
+SourceLocation="c:\work\src\modules\Camera\class\cameras.c:135:1"
+
+[cameras_new]
+Class="Function"
+Prototype="struct _SElException *cameras_new(struct _Cameras **cameras);"
+SourceLocation="c:\work\src\modules\Camera\class\cameras.c:163:1"
+
+[cameras_delete]
+Class="Function"
+Prototype="struct _SElException *cameras_delete(struct _Cameras **cameras);"
+SourceLocation="c:\work\src\modules\Camera\class\cameras.c:196:1"
+

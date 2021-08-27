@@ -1,0 +1,10 @@
+[LoadPanelWithLanguage]
+Class="Function"
+Prototype="struct _SElException *LoadPanelWithLanguage(int parentPanel, const char *path, int panelResourceId, struct _SLanguageItem table[], int *pPanelHandle);"
+SourceLocation="c:\work\src\shared\language\language.c:23:1"
+
+[LoadPanelExWithLanguage]
+Class="Function"
+Prototype="struct _SElException *LoadPanelExWithLanguage(int parentPanel, const char *path, int panelResourceId, struct _SLanguageItem table[], int *pPanelHandle);"
+SourceLocation="c:\work\src\shared\language\language.c:87:1"
+

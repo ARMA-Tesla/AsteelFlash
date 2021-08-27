@@ -1,0 +1,40 @@
+[DllMain]
+Class="Function"
+Prototype="int DllMain(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+SourceLocation="c:\work\src\modules\tester\tester_module.c:30:1"
+
+[GetModuleAttribute]
+Class="Function"
+Prototype="struct _SElException *GetModuleAttribute(unsigned int attrID, unsigned int size, void *value) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\tester\tester_module.c:52:1"
+
+[LoadElcomModule]
+Class="Function"
+Prototype="struct _SElException *LoadElcomModule(const char *configuration, void **pInstance, struct _SPluginArgs *pParam) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\tester\tester_module.c:80:1"
+
+[InitializeElcomModule]
+Class="Function"
+Prototype="struct _SElException *InitializeElcomModule(void *pInstance, const char *configuration, struct _SPluginArgs *pParam) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\tester\tester_module.c:132:1"
+
+[UnloadElcomModule]
+Class="Function"
+Prototype="struct _SElException *UnloadElcomModule(void *pInstance) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\tester\tester_module.c:205:1"
+
+[FunctionCallback]
+Class="Function"
+Prototype="struct _SElException *FunctionCallback(const char *eventName, void *pData);"
+SourceLocation="c:\work\src\modules\tester\tester_module.c:222:1"
+
+[Timer_Jig]
+Class="Function"
+Prototype="int Timer_Jig(int reserved, int theTimerId, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\modules\tester\tester_module.c:271:1"
+
+[Timer_Table]
+Class="Function"
+Prototype="int Timer_Table(int reserved, int theTimerId, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\modules\tester\tester_module.c:292:1"
+

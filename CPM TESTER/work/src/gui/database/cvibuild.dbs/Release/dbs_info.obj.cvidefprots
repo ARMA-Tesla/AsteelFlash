@@ -1,0 +1,25 @@
+[PostDeferredDisplayInfo]
+Class="Function"
+Prototype="void PostDeferredDisplayInfo(void *callbackData);"
+SourceLocation="c:\work\src\gui\database\dbs_info.c:23:1"
+
+[PostDeferredHideInfo]
+Class="Function"
+Prototype="void PostDeferredHideInfo(void *callbackData);"
+SourceLocation="c:\work\src\gui\database\dbs_info.c:47:1"
+
+[InfoShow]
+Class="Function"
+Prototype="struct _SElException *InfoShow();"
+SourceLocation="c:\work\src\gui\database\dbs_info.c:64:1"
+
+[InfoHide]
+Class="Function"
+Prototype="struct _SElException *InfoHide();"
+SourceLocation="c:\work\src\gui\database\dbs_info.c:80:1"
+
+[OnIniLimits]
+Class="Function"
+Prototype="int OnIniLimits(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\database\dbs_info.c:96:1"
+

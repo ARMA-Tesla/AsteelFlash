@@ -1,0 +1,12 @@
+<Sonometers>
+	<Sonometer name="ARW01">
+		<Configuration type="Serial" specificDll="modules/ARW.dll">
+			<ResourceString>COM1</ResourceString>
+			<BaudRate>9600</BaudRate>
+			<DataBits>8</DataBits>
+			<StopBits>10</StopBits>
+			<Parity>none</Parity>	<!-- none, odd, even, mark, space -->
+			<Handshake>none</Handshake>
+		</Configuration>
+	</Sonometer>
+</Sonometers>

@@ -1,0 +1,20 @@
+[Connect]
+Class="Function"
+Prototype="struct _SElException *Connect(struct _Sonometer *me) __declspec(dllexport);"
+
+[Disconnect]
+Class="Function"
+Prototype="struct _SElException *Disconnect(struct _Sonometer *me) __declspec(dllexport);"
+
+[Write]
+Class="Function"
+Prototype="struct _SElException *Write(struct _Sonometer *me, const char *command) __declspec(dllexport);"
+
+[Read]
+Class="Function"
+Prototype="struct _SElException *Read(struct _Sonometer *me, const char *data) __declspec(dllexport);"
+
+[SoundLevelMeter]
+Class="Function"
+Prototype="struct _SElException *SoundLevelMeter(struct _Sonometer *me, int group, float *data, int *count_data, char *log) __declspec(dllexport);"
+

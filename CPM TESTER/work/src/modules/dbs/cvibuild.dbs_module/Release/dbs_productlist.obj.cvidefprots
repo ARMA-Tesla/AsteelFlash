@@ -1,0 +1,20 @@
+[dbsproductlist_new]
+Class="Function"
+Prototype="struct _SElException *dbsproductlist_new(struct _SDBSProductList **pDBSProductListPtr, void *pDBS);"
+SourceLocation="c:\work\src\modules\dbs\dbs_productlist.c:39:17"
+
+[dbsproductlist_delete]
+Class="Function"
+Prototype="struct _SElException *dbsproductlist_delete(struct _SDBSProductList **pDBSProductListPtr);"
+SourceLocation="c:\work\src\modules\dbs\dbs_productlist.c:80:17"
+
+[compare_Product]
+Class="Function"
+Prototype="int compare_Product(const void *a, const void *b);"
+SourceLocation="c:\work\src\modules\dbs\dbs_productlist.c:276:5"
+
+[compare_pid]
+Class="Function"
+Prototype="int compare_pid(const void *a, const void *b);"
+SourceLocation="c:\work\src\modules\dbs\dbs_productlist.c:542:5"
+

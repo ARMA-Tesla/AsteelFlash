@@ -1,0 +1,8 @@
+LIBRARY CAB
+
+EXPORTS
+SoundLevelMeter
+Read
+Write
+Disconnect
+Connect

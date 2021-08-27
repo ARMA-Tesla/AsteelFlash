@@ -1,0 +1,20 @@
+[gs_alarm_over_torque_60]
+Class="Var"
+
+
+[Write_Traca_MMS_NOK]
+Class="Function"
+Prototype="int Write_Traca_MMS_NOK(int Station, struct _STestParam *pTestParam);"
+
+[SaveGraphPNG]
+Class="Function"
+Prototype="void SaveGraphPNG(int PanelHandle, int ControleHandle, char *PathNamePNG);"
+
+[MoveAxis]
+Class="Function"
+Prototype="struct _SElException *MoveAxis(struct _axis *paxis, int axis, double target_position, double speed);"
+
+[CheckAxisPosition]
+Class="Function"
+Prototype="struct _SElException *CheckAxisPosition(struct _axis *paxis, int axis, double position, double timeout);"
+

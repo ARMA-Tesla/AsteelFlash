@@ -1,0 +1,20 @@
+[_GetModuleAttribute]
+callConv = 102
+name = GetModuleAttribute
+paramSize = 12
+
+[_InitializeElcomModule]
+callConv = 102
+name = InitializeElcomModule
+paramSize = 12
+
+[_LoadElcomModule]
+callConv = 102
+name = LoadElcomModule
+paramSize = 12
+
+[_UnloadElcomModule]
+callConv = 102
+name = UnloadElcomModule
+paramSize = 4
+

@@ -1,0 +1,25 @@
+[CalendarCallback]
+Class="Function"
+Prototype="struct _SElException *CalendarCallback(int panel, int day, int month, int year);"
+SourceLocation="c:\work\src\gui\report\report_measurement.c:50:1"
+
+[IniReportPanel]
+Class="Function"
+Prototype="struct _SElException *IniReportPanel(int panelHandle);"
+SourceLocation="c:\work\src\gui\report\report_measurement.c:70:1"
+
+[OnMode]
+Class="Function"
+Prototype="int OnMode(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\report\report_measurement.c:93:1"
+
+[OnFileList]
+Class="Function"
+Prototype="int OnFileList(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\report\report_measurement.c:116:1"
+
+[OnLMBack]
+Class="Function"
+Prototype="int OnLMBack(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\report\report_measurement.c:141:1"
+

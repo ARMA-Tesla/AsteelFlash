@@ -1,0 +1,310 @@
+[Workspace Header]
+Version = 1900
+Pathname = "/c/work/src/gui/defauts/defauts.cws"
+CVI Dir = "/c/program files (x86)/national instruments/cvi2019"
+CVI Shared Dir = "/C/Program Files (x86)/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2019"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/c/Program Files (x86)/IVI Foundation/IVI"
+IVI Standard Root 64-bit Dir = "/c/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files (x86)/IVI Foundation/VISA/winnt"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "defauts.prj"
+Drag Bar Left = 241
+Window Top = 75
+Window Left = 21
+Window Bottom = 463
+Window Right = 763
+Maximized = True
+Maximized Children = True
+Max32 Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win At Start = True
+Bring Up Err Win For Errors = False
+Save Changes Before Running = "Always"
+Save Changes Before Compiling = "Always"
+Hide Windows = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 8
+Window Confinement Region Enabled = True
+MainColumnWidth = 224
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+
+[Project Header 0001]
+Version = 1900
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Release"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+
+[File 0001]
+Path = "/c/Program Files (x86)/National Instruments/CVI2019/toolslib/toolbox/toolbox.fp"
+File Type = "Function Panel"
+Disk Date = 3635396578
+In Projects = "1,"
+
+[File 0002]
+Path = "/c/program files (x86)/national instruments/cvi2019/toolslib/toolbox/msxmldom.fp"
+File Type = "Function Panel"
+Disk Date = 3635234214
+In Projects = "1,"
+
+[File 0003]
+Path = "/c/work/src/gui/report/report.uir"
+File Type = "User Interface Resource"
+Disk Date = 3683804267
+In Projects = ""
+Window Top = 32
+Window Left = 10
+Window Height = 266
+Window Width = 490
+Window Z-Order = 3
+
+[File 0004]
+Path = "/c/work/src/gui/defauts/report_measurement.c"
+File Type = "CSource"
+Disk Date = 3669813541
+In Projects = "1,"
+Source Window State = "1,160,160,160,31,36,31,0,3,0,0,0,0,0,0,0,198,0,160,36,349,715,1,0,"
+Line Tags = "312,"
+Window Top = 62
+Window Left = 26
+Window Z-Order = 1
+
+[File 0005]
+Path = "/c/work/src/gui/defauts/calendar.c"
+File Type = "CSource"
+Disk Date = 3669804120
+In Projects = "1,"
+Source Window State = "1,234,234,234,0,0,0,0,0,0,0,310,0,300,4,0,200,0,234,0,219,555,1,26,"
+Window Top = 38
+Window Left = 10
+Window Z-Order = 6
+
+[File 0006]
+Path = "/c/work/src/gui/defauts/report.c"
+File Type = "CSource"
+Disk Date = 3641982560
+In Projects = "1,"
+Source Window State = "1,19,19,19,60,60,60,0,0,0,0,0,0,0,0,0,194,0,19,60,401,714,1,0,"
+Window Top = 78
+Window Left = 31
+Window Z-Order = 2
+
+[File 0007]
+Path = "/c/work/src/shared/language/language.c"
+File Type = "CSource"
+Disk Date = 3464156986
+In Projects = "1,"
+Source Window State = "1,107,107,107,107,107,107,0,0,0,0,0,0,0,0,0,82,0,107,107,401,714,1,0,"
+Window Top = 40
+Window Left = 11
+Window Z-Order = 7
+
+[File 0008]
+Path = "/c/work/src/modules/language/lang_support.h"
+File Type = "Include"
+Disk Date = 3309317284
+In Projects = ""
+Source Window State = "1,9,9,9,91,91,91,0,0,0,0,0,0,0,0,0,0,0,9,91,236,714,1,0,"
+Window Top = 40
+Window Left = 11
+Window Z-Order = 8
+
+[File 0009]
+Path = "/c/work/src/modules/language/lang_support.c"
+File Type = "CSource"
+Disk Date = 3309317284
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,401,714,1,0,"
+Window Top = 40
+Window Left = 11
+Window Z-Order = 5
+
+[File 0010]
+Path = "/c/work/src/shared/cvitool/msxmldom.c"
+File Type = "CSource"
+Disk Date = 3309320850
+In Projects = "1,"
+Source Window State = "1,9045,9045,9045,77,77,77,0,0,0,0,0,0,0,0,0,9024,0,9045,77,400,600,1,0,"
+Window Top = 38
+Window Z-Order = 4
+
+[File 0011]
+Path = "/c/work/src/gui/defauts/calendar.h"
+File Type = "Include"
+Disk Date = 3309320904
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,349,715,1,0,"
+Window Top = 62
+Window Left = 26
+
+[File 0012]
+Path = "/c/work/src/shared/exception/Exception.c"
+File Type = "CSource"
+Disk Date = 3652346447
+In Projects = "1,"
+Source Window State = "1,5,5,5,16,16,16,0,0,0,0,0,0,0,0,0,0,0,5,16,400,600,0,0,"
+
+[File 0013]
+Path = "/c/work/src/shared/iso/iso8601.c"
+File Type = "CSource"
+Disk Date = 3309320858
+In Projects = "1,"
+Source Window State = "1,108,108,108,8,38,8,0,3,0,0,0,0,0,0,0,99,0,108,38,236,714,1,0,"
+Window Top = 40
+Window Left = 11
+
+[File 0014]
+Path = "/c/work/src/gui/defauts/report.h"
+File Type = "Include"
+Disk Date = 3669802568
+In Projects = "1,"
+Source Window State = "1,5,5,5,10,10,10,0,0,0,0,0,0,0,0,0,0,0,5,10,219,555,1,0,"
+Window Top = 38
+Window Left = 10
+
+[File 0015]
+Path = "/c/work/src/gui/defauts/report.uir"
+File Type = "User Interface Resource"
+Disk Date = 3688916279
+In Projects = "1,"
+Window Top = 92
+Window Left = 34
+Window Height = 446
+Window Width = 630
+Window Released = True
+
+[File 0016]
+Path = "/c/work/src/gui/defauts/report_measurement.h"
+File Type = "Include"
+Disk Date = 3623330961
+In Projects = "1,"
+Source Window State = "1,37,37,37,16,20,20,0,0,0,0,12,0,0,0,0,23,0,37,22,219,555,1,26,"
+Window Top = 32
+Window Left = 10
+
+[File 0017]
+Path = "/c/work/src/gui/defauts/report_plugin.h"
+File Type = "Include"
+Disk Date = 3623404478
+In Projects = "1,"
+Source Window State = "1,5,5,5,6,6,6,0,0,0,0,0,0,0,0,0,0,0,5,6,245,683,1,0,"
+Window Top = 62
+Window Left = 26
+
+[File 0018]
+Path = "/c/work/src/gui/defauts/trans_language.h"
+File Type = "Include"
+Disk Date = 3623404866
+In Projects = "1,"
+Source Window State = "1,7,7,7,7,20,20,0,0,0,0,0,0,0,0,0,0,0,12,20,349,715,1,18,"
+Window Top = 62
+Window Left = 26
+
+[Tab Order]
+Tab 0001 = "/c/work/src/modules/language/lang_support.h"
+Tab 0002 = "/c/work/src/shared/language/language.c"
+Tab 0003 = "/c/work/src/gui/defauts/calendar.c"
+Tab 0004 = "/c/work/src/modules/language/lang_support.c"
+Tab 0005 = "/c/work/src/gui/defauts/report.c"
+Tab 0006 = "/c/work/src/shared/cvitool/msxmldom.c"
+Tab 0007 = "/c/work/src/gui/defauts/report_measurement.c"
+Tab 0008 = "/c/work/src/gui/report/report.uir"
+
+[Default Build Config 0001 Debug]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = "/c/application/application.exe"
+
+[Default Build Config 0001 Release]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Debug64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Build Dependencies 0001]
+Number of Dependencies = 0
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Profile = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[Execution Target 0001]
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[Command Line Args 0001]
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+

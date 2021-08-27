@@ -1,0 +1,9 @@
+LIBRARY power_gui
+
+EXPORTS
+gs_InfoData
+pluginGetAttribute
+pluginGetInfo
+pluginLeave
+pluginRun
+pluginInitialize

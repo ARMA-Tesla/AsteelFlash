@@ -1,0 +1,25 @@
+[Connect]
+Class="Function"
+Prototype="struct _SElException *Connect(struct _Sonometer *me) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\sonometer\ARW\ARW.c:18:1"
+
+[Disconnect]
+Class="Function"
+Prototype="struct _SElException *Disconnect(struct _Sonometer *me) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\sonometer\ARW\ARW.c:33:1"
+
+[Write]
+Class="Function"
+Prototype="struct _SElException *Write(struct _Sonometer *me, const char *Query) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\sonometer\ARW\ARW.c:45:1"
+
+[Read]
+Class="Function"
+Prototype="struct _SElException *Read(struct _Sonometer *me, const char *data) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\sonometer\ARW\ARW.c:100:1"
+
+[SoundLevelMeter]
+Class="Function"
+Prototype="struct _SElException *SoundLevelMeter(struct _Sonometer *me, int group, float *data, int *count_data, char *log) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\sonometer\ARW\ARW.c:123:1"
+

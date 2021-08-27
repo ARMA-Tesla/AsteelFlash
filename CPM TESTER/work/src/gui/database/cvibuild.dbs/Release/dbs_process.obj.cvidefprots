@@ -1,0 +1,25 @@
+[BkTreeProcessNodeClick]
+Class="Function"
+Prototype="struct _SElException *BkTreeProcessNodeClick(char *keyNode);"
+SourceLocation="c:\work\src\gui\database\dbs_process.c:153:1"
+
+[BkTreeProcessPopupMenuCommand]
+Class="Function"
+Prototype="struct _SElException *BkTreeProcessPopupMenuCommand(char *keyNode, char *keyCol, long menuItem);"
+SourceLocation="c:\work\src\gui\database\dbs_process.c:196:1"
+
+[BkTreeProcessModify]
+Class="Function"
+Prototype="struct _SElException *BkTreeProcessModify(char *keyNode, char *keyCol, long modifyType);"
+SourceLocation="c:\work\src\gui\database\dbs_process.c:347:1"
+
+[TreeProcessIni]
+Class="Function"
+Prototype="struct _SElException *TreeProcessIni();"
+SourceLocation="c:\work\src\gui\database\dbs_process.c:436:1"
+
+[TreeProcessClose]
+Class="Function"
+Prototype="struct _SElException *TreeProcessClose();"
+SourceLocation="c:\work\src\gui\database\dbs_process.c:526:1"
+

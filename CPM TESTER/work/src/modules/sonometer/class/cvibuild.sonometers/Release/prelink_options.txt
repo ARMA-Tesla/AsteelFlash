@@ -1,0 +1,8 @@
+-inrc c:\work\src\modules\sonometer\class\cvibuild.sonometers\Release\resources.in.rc
+-outrc c:\work\src\modules\sonometer\class\cvibuild.sonometers\Release\resources.out.rc
+-inhdef c:\work\src\modules\sonometer\class\cvibuild.sonometers\Release\module.h.hdefs
+-outdef c:\work\src\modules\sonometer\class\cvibuild.sonometers\Release\sonometers.dll.defs
+-indefprot c:\work\src\modules\sonometer\class\cvibuild.sonometers\Release\Exception.obj.cvidefprots
+-indefprot c:\work\src\modules\sonometer\class\cvibuild.sonometers\Release\sonometers.obj.cvidefprots
+-indefprot c:\work\src\modules\sonometer\class\cvibuild.sonometers\Release\sonometers_module.obj.cvidefprots
+-dllName sonometers.dll

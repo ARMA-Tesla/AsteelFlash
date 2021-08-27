@@ -1,0 +1,9 @@
+-inrc c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\power\class\cvibuild.powers\Debug\resources.in.rc
+-outrc c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\power\class\cvibuild.powers\Debug\resources.out.rc
+-inhdef c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\power\class\cvibuild.powers\Debug\module.h.hdefs
+-outdef c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\power\class\cvibuild.powers\Debug\powers.dll.defs
+-indefprot c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\power\class\cvibuild.powers\Debug\Exception.obj.cvidefprots
+-indefprot c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\power\class\cvibuild.powers\Debug\powers.obj.cvidefprots
+-indefprot c:\Users\Anwar\Desktop\FCT12 BACKUP\17 02 2021\17 02 2021\work\src\modules\power\class\cvibuild.powers\Debug\powers_module.obj.cvidefprots
+-dllName powers.dll
+-addNITypeInfo 

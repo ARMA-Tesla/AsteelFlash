@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<configuration>
+    <modules>
+        <module id="{913C9769-8D32-496f-9900-546814DDC355}">
+            <name>Database Module</name>
+            <odbc>tester</odbc>
+            <user>root</user>
+            <password>root</password>
+            <tester_id>4</tester_id>
+             
+            <kosu>
+                <pauses>
+                    <pause time="9:00" length="5"/> 
+                    <pause time="10:00" length="10"/>      
+                    <pause time="11:30" length="30"/>      
+                    <pause time="16:00" length="5"/>      
+                    <pause time="17:30" length="30"/>           
+                    <pause time="19:00" length="10"/>
+                </pauses>
+                <shifts>
+                    <end time="14:00" />
+                    <end time="22:00" />
+                    <end time="06:00" />
+                </shifts>
+                <operators>
+                   <operator count="1">
+                       <kosu time="200"/>
+                       <alarm1 time="220"/>
+                       <alarm2 time="240"/>
+                       <alarm3 time="260"/>
+                       <alarm4 time="280"/>
+                   </operator>
+                   <operator count="2">
+                       <kosu time="100"/>
+                       <alarm1 time="110"/>
+                       <alarm2 time="120"/>
+                       <alarm3 time="130"/>
+                       <alarm4 time="140"/>
+                   </operator>
+                   <operator count="3">
+                       <kosu time="70"/>
+                       <alarm1 time="77"/>
+                       <alarm2 time="85"/>
+                       <alarm3 time="95"/>
+                       <alarm4 time="100"/>
+                   </operator>
+		   <operator count="4">
+                       <kosu time="70"/>
+                       <alarm1 time="77"/>
+                       <alarm2 time="85"/>
+                       <alarm3 time="95"/>
+                       <alarm4 time="100"/>
+                   </operator>
+                </operators>
+            </kosu>
+              
+        </module>
+    </modules>
+</configuration>

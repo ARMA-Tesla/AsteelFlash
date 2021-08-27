@@ -1,0 +1,87 @@
+
+msgid "Production"
+msgstr "Výroba"
+
+msgid "Insert Panel"
+msgstr "Vložte panel"
+
+msgid "Insert Master Panel"
+msgstr "Vložte Master panel"
+
+msgid "Quality Retest"
+msgstr "Kvalita, Retest"
+
+msgid "Quality Master"
+msgstr "Kvalita, Master panel"
+
+msgid "Expertise, Step Mode"
+msgstr "Expertíza, Krokování"
+
+msgid "Expertise Sequence, Step Mode"
+msgstr "Sekvence Expertíza, Krokování"
+
+msgid "Expertise, Go Mode"
+msgstr "Expertíza, Go Mód"
+
+msgid "Expertise Sequence, Go Mode"
+msgstr "Sekvence Expertíza, Go Mód"
+
+msgid "Expertise Sequence"
+msgstr "Sekvence Expertíza"
+
+msgid "Expertise RnR Study"
+msgstr "Expertíza, RnR Studie"
+
+msgid "Load xml testsequence failed: \"%s\""
+msgstr "Chyba pøi nahrávání testovací sekvence: \"%s\""
+
+msgid "Jig code does not specified in xml file!"
+msgstr "Kód JIG není specifikován v xml souboru!"
+
+msgid "Insert JIG"
+msgstr "Vložte JIG"
+
+msgid "Change product"
+msgstr "Zmìòte produkt"
+
+msgid "Library name does not specified in xml file!"
+msgstr "Jméno knihovny není specifikováno v xml souboru!"
+
+msgid "Load test sequence fault!"
+msgstr "Chyba pøi nahrávání testovací sequence!"
+
+msgid "Invalid BarCode"
+msgstr "Neplatný èárkový kód"
+
+msgid "Invalid Master BarCode"
+msgstr "Neplatný Master panel"
+
+msgid "Select Shift"
+msgstr "Vyber smìnu"
+
+msgid "BarCode was tested"
+msgstr "Panel byl již testován"
+
+msgid "BarCode has not been tested"
+msgstr "Panel nebyl ještì testován"
+
+msgid "BarCode last result not failed"
+msgstr "Panel pøi posledním testování OK"
+
+msgid "Insert Empty Box"
+msgstr "Vložte prázdný box"
+
+msgid "Take Label from Printer"
+msgstr "Odeberte štítek z tiskárny"
+
+msgid "Press NOK Button"
+msgstr "Stisknìte tlaèítko NOK"
+
+msgid "Take Control Panel"
+msgstr "Odeberte panel"
+
+msgid "BarCode Reading Failed!"
+msgstr "Chyba ètení èárkového kódu"
+
+msgid ""
+msgstr ""

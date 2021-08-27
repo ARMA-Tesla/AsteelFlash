@@ -1,0 +1,8 @@
+-inrc c:\work\src\modules\generator\BK4014B\cvibuild.BK4014B\Debug\resources.in.rc
+-outrc c:\work\src\modules\generator\BK4014B\cvibuild.BK4014B\Debug\resources.out.rc
+-inhdef c:\work\src\modules\generator\BK4014B\cvibuild.BK4014B\Debug\BK4014B.h.hdefs
+-outdef c:\work\src\modules\generator\BK4014B\cvibuild.BK4014B\Debug\BK4014B.dll.defs
+-indefprot c:\work\src\modules\generator\BK4014B\cvibuild.BK4014B\Debug\BK4014B.obj.cvidefprots
+-indefprot c:\work\src\modules\generator\BK4014B\cvibuild.BK4014B\Debug\Exception.obj.cvidefprots
+-dllName BK4014B.dll
+-addNITypeInfo 

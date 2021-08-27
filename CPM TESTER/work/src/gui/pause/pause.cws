@@ -1,0 +1,213 @@
+[Workspace Header]
+Version = 1900
+Pathname = "/c/work/src/gui/pause/pause.cws"
+CVI Dir = "/c/program files (x86)/national instruments/cvi2019"
+CVI Shared Dir = "/C/Program Files (x86)/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2019"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/c/Program Files (x86)/IVI Foundation/IVI"
+IVI Standard Root 64-bit Dir = "/c/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files (x86)/IVI Foundation/VISA/winnt"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "pause.prj"
+Drag Bar Left = 241
+Window Top = 132
+Window Left = 160
+Window Bottom = 520
+Window Right = 902
+Maximized = False
+Maximized Children = True
+Max32 Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win At Start = True
+Bring Up Err Win For Errors = False
+Save Changes Before Running = "Always"
+Save Changes Before Compiling = "Always"
+Hide Windows = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 0
+Window Confinement Region Enabled = True
+MainColumnWidth = 224
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+
+[Project Header 0001]
+Version = 1900
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Debug"
+Warn User If Debugging Release = 1
+Batch Build Release = False
+Batch Build Debug = False
+
+[File 0001]
+Path = "/c/work/src/gui/pause/pause.c"
+File Type = "CSource"
+Disk Date = 3562132486
+In Projects = "1,"
+Source Window State = "1,278,278,278,18,27,27,0,0,0,0,0,0,0,0,0,309,0,351,43,219,715,1,0,"
+Breakpoint 0001 = "272,0,enabled,"
+Breakpoint 0002 = "277,0,enabled,"
+Breakpoint 0003 = "279,0,enabled,"
+Breakpoint 0004 = "283,0,enabled,"
+Breakpoint 0005 = "288,0,enabled,"
+Breakpoint 0006 = "296,0,enabled,"
+Breakpoint 0007 = "300,0,enabled,"
+Breakpoint 0008 = "305,0,enabled,"
+Line Tags = "449,473,"
+Window Top = 62
+Window Left = 26
+
+[File 0002]
+Path = "/c/work/shared/eventfactory/eleventdata.c"
+File Type = "CSource"
+Disk Date = 0
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0003]
+Path = "/c/work/shared/string/elstring.c"
+File Type = "CSource"
+Disk Date = 0
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0004]
+Path = "/c/work/shared/exception/Exception.c"
+File Type = "CSource"
+Disk Date = 0
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0005]
+Path = "/c/work/shared/language/language.c"
+File Type = "CSource"
+Disk Date = 0
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0006]
+Path = "/c/work/src/gui/pause/pause.h"
+File Type = "Include"
+Disk Date = 3562129728
+In Projects = "1,"
+Source Window State = "1,26,26,26,9,20,20,0,0,0,0,0,0,0,0,0,14,0,26,9,349,715,1,0,"
+
+[File 0007]
+Path = "/c/work/src/gui/pause/pause.uir"
+File Type = "User Interface Resource"
+Disk Date = 3562132154
+In Projects = "1,"
+Window Top = 92
+Window Left = 34
+Window Height = 734
+Window Width = 1278
+Window Released = True
+
+[File 0008]
+Path = "/c/work/src/gui/pause/pause_plugin.h"
+File Type = "Include"
+Disk Date = 3309324506
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,349,715,1,0,"
+
+[File 0009]
+Path = "/c/work/src/gui/pause/trans_language.h"
+File Type = "Include"
+Disk Date = 3309324506
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,349,715,1,0,"
+
+[Default Build Config 0001 Debug]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = "/c/FlexiTester.OK/application.exe"
+
+[Default Build Config 0001 Release]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Debug64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Build Dependencies 0001]
+Number of Dependencies = 0
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Profile = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[Execution Target 0001]
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = False
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[Command Line Args 0001]
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+

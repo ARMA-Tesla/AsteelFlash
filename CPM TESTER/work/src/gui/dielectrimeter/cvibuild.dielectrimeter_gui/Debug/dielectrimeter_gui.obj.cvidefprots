@@ -1,0 +1,60 @@
+[Activate_Controls]
+Class="Function"
+Prototype="void Activate_Controls(int handle);"
+SourceLocation="c:\work\src\gui\dielectrimeter\dielectrimeter_gui.c:22:1"
+
+[Desactivate_Controls]
+Class="Function"
+Prototype="void Desactivate_Controls(int handle);"
+SourceLocation="c:\work\src\gui\dielectrimeter\dielectrimeter_gui.c:54:1"
+
+[DiscardUIObjectsForDLL]
+Class="Function"
+Prototype="void DiscardUIObjectsForDLL();"
+SourceLocation="c:\work\src\gui\dielectrimeter\dielectrimeter_gui.c:90:1"
+
+[DllMain]
+Class="Function"
+Prototype="int DllMain(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+SourceLocation="c:\work\src\gui\dielectrimeter\dielectrimeter_gui.c:95:1"
+
+[DllEntryPoint]
+Class="Function"
+Prototype="int DllEntryPoint(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+SourceLocation="c:\work\src\gui\dielectrimeter\dielectrimeter_gui.c:125:1"
+
+[pluginInitialize]
+Class="Function"
+Prototype="struct _SElException *pluginInitialize(struct _SPluginArgs *a_pPluginArgs) __declspec(dllexport);"
+SourceLocation="c:\work\src\gui\dielectrimeter\dielectrimeter_gui.c:138:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+
+[pluginRun]
+Class="Function"
+Prototype="struct _SElException *pluginRun(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
+SourceLocation="c:\work\src\gui\dielectrimeter\dielectrimeter_gui.c:165:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+
+[pluginLeave]
+Class="Function"
+Prototype="struct _SElException *pluginLeave(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
+SourceLocation="c:\work\src\gui\dielectrimeter\dielectrimeter_gui.c:187:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+
+[PLUGIN_SHUTDOWN_NAME_CODE]
+Class="Function"
+Prototype="struct _SElException *PLUGIN_SHUTDOWN_NAME_CODE(struct _SPluginArgs *a_pPluginArgs) __declspec(dllexport);"
+SourceLocation="c:\work\src\gui\dielectrimeter\dielectrimeter_gui.c:201:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+
+[pluginGetInfo]
+Class="Function"
+Prototype="struct _SElException *pluginGetInfo(struct _SPluginInfo **a_pInfo) __declspec(dllexport);"
+SourceLocation="c:\work\src\gui\dielectrimeter\dielectrimeter_gui.c:215:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+
+[pluginGetAttribute]
+Class="Function"
+Prototype="struct _SElException *pluginGetAttribute(unsigned int attrID, unsigned int size, void *value) __declspec(dllexport);"
+SourceLocation="c:\work\src\gui\dielectrimeter\dielectrimeter_gui.c:227:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+
+[OnDielectric]
+Class="Function"
+Prototype="int OnDielectric(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\dielectrimeter\dielectrimeter_gui.c:236:1"
+

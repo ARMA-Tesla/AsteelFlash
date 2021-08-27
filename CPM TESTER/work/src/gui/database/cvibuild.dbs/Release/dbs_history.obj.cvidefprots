@@ -1,0 +1,55 @@
+[OnHistList]
+Class="Function"
+Prototype="int OnHistList(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\database\dbs_history.c:70:1"
+
+[PostDeferredDisplayHistory]
+Class="Function"
+Prototype="void PostDeferredDisplayHistory(void *callbackData);"
+SourceLocation="c:\work\src\gui\database\dbs_history.c:120:1"
+
+[PostDeferredHideHistory]
+Class="Function"
+Prototype="void PostDeferredHideHistory(void *callbackData);"
+SourceLocation="c:\work\src\gui\database\dbs_history.c:141:1"
+
+[TreeHistoryIni]
+Class="Function"
+Prototype="struct _SElException *TreeHistoryIni();"
+SourceLocation="c:\work\src\gui\database\dbs_history.c:155:1"
+
+[TreeHistoryClose]
+Class="Function"
+Prototype="struct _SElException *TreeHistoryClose();"
+SourceLocation="c:\work\src\gui\database\dbs_history.c:182:1"
+
+[DDTPickerChangeCallback]
+Class="Function"
+Prototype="long DDTPickerChangeCallback(CAObjHandle caServerObjHandle, void *caCallbackData);"
+SourceLocation="c:\work\src\gui\database\dbs_history.c:225:1"
+
+[HistoryClear]
+Class="Function"
+Prototype="struct _SElException *HistoryClear();"
+SourceLocation="c:\work\src\gui\database\dbs_history.c:241:1"
+
+[OnHisFillter]
+Class="Function"
+Prototype="int OnHisFillter(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\database\dbs_history.c:259:1"
+
+[OnHisMerge]
+Class="Function"
+Prototype="int OnHisMerge(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\database\dbs_history.c:313:1"
+
+[HistoryFilterSetCurrentTime]
+Class="Function"
+Prototype="struct _SElException *HistoryFilterSetCurrentTime();"
+SourceLocation="c:\work\src\gui\database\dbs_history.c:336:1"
+
+[compare_history]
+Class="Function"
+Prototype="int compare_history(const void *a, const void *b);"
+SourceLocation="c:\work\src\gui\database\dbs_history.c:409:1"
+

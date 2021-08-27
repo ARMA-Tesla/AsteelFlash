@@ -1,0 +1,55 @@
+[OnFncSend]
+Class="Function"
+Prototype="int OnFncSend(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\dbusGUI\dbusGUI.c:41:1"
+
+[OnFncReceive]
+Class="Function"
+Prototype="int OnFncReceive(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="c:\work\src\gui\dbusGUI\dbusGUI.c:70:1"
+
+[DiscardUIObjectsForDLL]
+Class="Function"
+Prototype="void DiscardUIObjectsForDLL();"
+SourceLocation="c:\work\src\gui\dbusGUI\dbusGUI.c:104:1"
+
+[DllMain]
+Class="Function"
+Prototype="int DllMain(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+SourceLocation="c:\work\src\gui\dbusGUI\dbusGUI.c:109:1"
+
+[DllEntryPoint]
+Class="Function"
+Prototype="int DllEntryPoint(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+SourceLocation="c:\work\src\gui\dbusGUI\dbusGUI.c:139:1"
+
+[pluginInitialize]
+Class="Function"
+Prototype="struct _SElException *pluginInitialize(struct _SPluginArgs *a_pPluginArgs) __declspec(dllexport);"
+SourceLocation="c:\work\src\gui\dbusGUI\dbusGUI.c:152:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+
+[pluginRun]
+Class="Function"
+Prototype="struct _SElException *pluginRun(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
+SourceLocation="c:\work\src\gui\dbusGUI\dbusGUI.c:224:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+
+[pluginLeave]
+Class="Function"
+Prototype="struct _SElException *pluginLeave(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
+SourceLocation="c:\work\src\gui\dbusGUI\dbusGUI.c:241:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+
+[PLUGIN_SHUTDOWN_NAME_CODE]
+Class="Function"
+Prototype="struct _SElException *PLUGIN_SHUTDOWN_NAME_CODE(struct _SPluginArgs *a_pPluginArgs) __declspec(dllexport);"
+SourceLocation="c:\work\src\gui\dbusGUI\dbusGUI.c:255:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+
+[pluginGetInfo]
+Class="Function"
+Prototype="struct _SElException *pluginGetInfo(struct _SPluginInfo **a_pInfo) __declspec(dllexport);"
+SourceLocation="c:\work\src\gui\dbusGUI\dbusGUI.c:270:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+
+[pluginGetAttribute]
+Class="Function"
+Prototype="struct _SElException *pluginGetAttribute(unsigned int attrID, unsigned int size, void *value) __declspec(dllexport);"
+SourceLocation="c:\work\src\gui\dbusGUI\dbusGUI.c:282:1 <Spelling=c:\work\src\shared\plugins/el_plugin.h:15:22>"
+

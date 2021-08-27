@@ -1,0 +1,45 @@
+[LoadConfiguration]
+Class="Function"
+Prototype="struct _SElException *LoadConfiguration(const char *fileName);"
+SourceLocation="c:\work\src\gui\product\product_fnc.c:24:1"
+
+[SetProductPath]
+Class="Function"
+Prototype="struct _SElException *SetProductPath(struct _SDBSProductList *pProductList, int product_id);"
+SourceLocation="c:\work\src\gui\product\product_fnc.c:57:1"
+
+[SetProductPicture]
+Class="Function"
+Prototype="struct _SElException *SetProductPicture(struct _SDBSProductList *pProductList, int product_id);"
+SourceLocation="c:\work\src\gui\product\product_fnc.c:89:1"
+
+[GetPartDescription]
+Class="Function"
+Prototype="struct _SElException *GetPartDescription(struct _SDBSProductList *pProductList, int product_id, char *PartDescription, char *ProductPartNumber);"
+SourceLocation="c:\work\src\gui\product\product_fnc.c:160:1"
+
+[CleanPartDescription]
+Class="Function"
+Prototype="struct _SElException *CleanPartDescription(struct _SDBSProductList *pProductList);"
+SourceLocation="c:\work\src\gui\product\product_fnc.c:206:1"
+
+[SetProductList]
+Class="Function"
+Prototype="struct _SElException *SetProductList(struct _SDBSProductList *pProductList, int product_id);"
+SourceLocation="c:\work\src\gui\product\product_fnc.c:222:1"
+
+[ChildExist]
+Class="Function"
+Prototype="struct _SElException *ChildExist(struct _SDBSProductList *pProductList, int product_id, int *child, int *parent_id);"
+SourceLocation="c:\work\src\gui\product\product_fnc.c:289:1"
+
+[SetProductLevelBackward]
+Class="Function"
+Prototype="struct _SElException *SetProductLevelBackward(struct _SDBSProductList *pProductList, int product_id);"
+SourceLocation="c:\work\src\gui\product\product_fnc.c:327:1"
+
+[SetProductLevelForward]
+Class="Function"
+Prototype="struct _SElException *SetProductLevelForward(struct _SDBSProductList *pProductList, int product_id);"
+SourceLocation="c:\work\src\gui\product\product_fnc.c:399:1"
+

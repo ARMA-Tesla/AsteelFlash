@@ -1,0 +1,11 @@
+-inrc c:\work\src\gui\messaging\cvibuild.messaging\Release\resources.in.rc
+-outrc c:\work\src\gui\messaging\cvibuild.messaging\Release\resources.out.rc
+-inhdef c:\work\src\gui\messaging\cvibuild.messaging\Release\messaging_plugin.h.hdefs
+-outdef c:\work\src\gui\messaging\cvibuild.messaging\Release\messaging.dll.defs
+-indefprot c:\work\src\gui\messaging\cvibuild.messaging\Release\eleventdata.obj.cvidefprots
+-indefprot c:\work\src\gui\messaging\cvibuild.messaging\Release\elstring.obj.cvidefprots
+-indefprot c:\work\src\gui\messaging\cvibuild.messaging\Release\Exception.obj.cvidefprots
+-indefprot c:\work\src\gui\messaging\cvibuild.messaging\Release\language.obj.cvidefprots
+-indefprot c:\work\src\gui\messaging\cvibuild.messaging\Release\messaging.obj.cvidefprots
+-indefprot c:\work\src\gui\messaging\cvibuild.messaging\Release\msxmldom.obj.cvidefprots
+-dllName messaging.dll

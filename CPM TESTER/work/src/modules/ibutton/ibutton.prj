@@ -1,0 +1,199 @@
+[Project Header]
+Version = 801
+Pathname = "/c/work/elcom/valeo/UTSystem/src/modules/ibutton/ibutton.prj"
+CVI Dir = "/c/program files/national instruments/cvi80"
+IVI Standard Root Dir = "/C/Program Files/IVI"
+VXIplug&play Framework Dir = "/C/VXIPNP/winnt"
+Number of Files = 9
+Target Type = "Dynamic Link Library"
+Flags = 16
+
+[File 0001]
+File Type = "CSource"
+Res Id = 1
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../../shared/eventfactory/eleventdata.c"
+Path = "/c/work/elcom/valeo/UTSystem/src/shared/eventfactory/eleventdata.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0002]
+File Type = "CSource"
+Res Id = 2
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../../shared/string/elstring.c"
+Path = "/c/work/elcom/valeo/UTSystem/src/shared/string/elstring.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0003]
+File Type = "Include"
+Res Id = 3
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../../../include/elstring.h"
+Path = "/c/work/elcom/valeo/UTSystem/include/elstring.h"
+Exclude = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0004]
+File Type = "CSource"
+Res Id = 4
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../../shared/exception/Exception.c"
+Path = "/c/work/elcom/valeo/UTSystem/src/shared/exception/Exception.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0005]
+File Type = "CSource"
+Res Id = 5
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "ibutton.c"
+Path = "/c/work/elcom/valeo/UTSystem/src/modules/ibutton/ibutton.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0006]
+File Type = "Include"
+Res Id = 6
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "ibutton.h"
+Path = "/c/work/elcom/valeo/UTSystem/src/modules/ibutton/ibutton.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0007]
+File Type = "CSource"
+Res Id = 7
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "ibutton_module.c"
+Path = "/c/work/elcom/valeo/UTSystem/src/modules/ibutton/ibutton_module.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0008]
+File Type = "Include"
+Res Id = 8
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../../shared/modules/module.h"
+Path = "/c/work/elcom/valeo/UTSystem/src/shared/modules/module.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0009]
+File Type = "Function Panel"
+Res Id = 9
+Path Is Rel = True
+Path Rel To = "CVI"
+Path Rel Path = "toolslib/toolbox/msxmldom.fp"
+Path = "/c/Program Files/National Instruments/CVI80/toolslib/toolbox/msxmldom.fp"
+Exclude = False
+Project Flags = 0
+Folder = "Instrument Files"
+
+[Folders]
+User Interface Files Folder Not Added Yet = True
+Folder 0 = "Source Files"
+Folder 1 = "Include Files"
+Folder 2 = "Instrument Files"
+
+[Compiler Options]
+Default Calling Convention = "cdecl"
+Require Prototypes = True
+Require Return Values = True
+Enable Pointer Mismatch Warning = False
+Enable Unreachable Code Warning = False
+Enable Unreferenced Identifiers Warning = False
+Enable Assignment In Conditional Warning = False
+O Option Compatible With 5.0 = False
+Uninitialized Locals Compile Warning = "Conservative"
+
+[Run Options]
+Stack Size = 250000
+Image Base Address = 4194304
+
+[Compiler Defines]
+Compiler Defines = "/DWIN32_LEAN_AND_MEAN"
+
+[Include Paths]
+Include Path 1 Is Rel = False
+Include Path 1 = "/C/work/ELCOM/valeo/UTSystem/include"
+Include Path 2 Is Rel = False
+Include Path 2 = "/c/work/ELCOM/valeo/UTSystem/src/shared/exception"
+Include Path 3 Is Rel = False
+Include Path 3 = "/c/work/ELCOM/valeo/UTSystem/src/shared"
+
+[Create Executable]
+Executable File_Debug Is Rel = False
+Executable File_Debug = "/c/work/elcom/valeo/UTSystem/src/app/modules/ibutton.dll"
+Executable File_Release Is Rel = True
+Executable File_Release Rel To = "Project"
+Executable File_Release Rel Path = "ibutton.dll"
+Executable File_Release = "/c/work/elcom/valeo/UTSystem/src/modules/ibutton/ibutton.dll"
+Icon File Is Rel = False
+Icon File = ""
+Application Title = ""
+DLL Exports = "Include File Symbols"
+Export File1 = "module.h"
+DLL Import Library Choice = "Gen Lib For Current Mode"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+Type Lib Guid = ""
+Runtime Support = "Full Runtime Support"
+Instrument Driver Support Only = False
+Embed Project .UIRs = False
+Generate Map File = False
+
+[External Compiler Support]
+UIR Callbacks File Option = 0
+Using LoadExternalModule = False
+Create Project Symbols File = True
+UIR Callbacks Obj File Is Rel = False
+UIR Callbacks Obj File = ""
+Project Symbols H File Is Rel = False
+Project Symbols H File = ""
+Project Symbols Obj File Is Rel = False
+Project Symbols Obj File = ""
+
+[ActiveX Server Options]
+Specification File Is Rel = False
+Specification File = ""
+Source File Is Rel = False
+Source File = ""
+Include File Is Rel = False
+Include File = ""
+IDL File Is Rel = False
+IDL File = ""
+Register ActiveX Server = False
+
+[tpcSection]
+tpcEnabled = 0
+tpcOverrideEnvironment = 0
+

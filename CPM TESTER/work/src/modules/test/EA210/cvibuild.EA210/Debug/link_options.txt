@@ -1,0 +1,97 @@
+-nologo
+-out:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\EA210.dll
+-def:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\EA210.dll.defs
+-implib:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\EA210.lib
+-ignoreexports
+-dependenciesMapFile:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\dependencies.lnk.in
+-embedSourceInfo
+-indefprot:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\EA210.obj.cvidefprots
+-indefprot:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\EA210_Test_WS10.obj.cvidefprots
+-indefprot:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\EA210_Test_WS20.obj.cvidefprots
+-indefprot:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\EA210_Test_WS30.obj.cvidefprots
+-indefprot:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\EA210_Test_WS40.obj.cvidefprots
+-indefprot:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\EA210_Test_WS50.obj.cvidefprots
+-indefprot:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\EA210_Test_WS60.obj.cvidefprots
+-indefprot:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\EA210_utils.obj.cvidefprots
+-indefprot:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\eleventdata.obj.cvidefprots
+-indefprot:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\elstring.obj.cvidefprots
+-indefprot:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\eltest.obj.cvidefprots
+-indefprot:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\Exception.obj.cvidefprots
+-indefprot:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\Log_Asteel.obj.cvidefprots
+-indefprot:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\msxmldom.obj.cvidefprots
+-indefprot:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\multithread.obj.cvidefprots
+-indefprot:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\test_panel.obj.cvidefprots
+-indefprot:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\testseq.obj.cvidefprots
+-arch:x86
+-timestamp
+-debug:1
+-project:c:\work\src\modules\test\EA210\EA210.prj
+-res:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\resources.res
+-entry:_CVIDllMainStartupCodeForDebugging@12
+-base:0x400000
+-linked:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\linkersummary.txt
+-dlldeps:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\dlldependencies.txt
+-licensing:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\linkerlicensing.txt
+-browsedeps:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\moduledependencies.txt
+-stackreserve:3145728
+-stackcommit:4096000
+-in:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\EA210.obj
+-in:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\EA210_Test_WS10.obj
+-in:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\EA210_Test_WS20.obj
+-in:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\EA210_Test_WS30.obj
+-in:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\EA210_Test_WS40.obj
+-in:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\EA210_Test_WS50.obj
+-in:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\EA210_Test_WS60.obj
+-in:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\EA210_utils.obj
+-in:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\eleventdata.obj
+-in:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\elstring.obj
+-in:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\eltest.obj
+-in:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\Exception.obj
+-in:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\Log_Asteel.obj
+-in:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\msxmldom.obj
+-in:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\multithread.obj
+-in:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\test_panel.obj
+-in:c:\work\src\modules\test\EA210\cvibuild.EA210\Debug\testseq.obj
+-more:c:\program files (x86)\national instruments\cvi2020\bin\msvc\cvistart.lib
+-more:c:\program files (x86)\national instruments\cvi2020\bin\msvc\cvi.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2020\bin\msvc\advanlys.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\advapi32.lib
+-more:c:\Program Files (x86)\IVI Foundation\IVI\Lib\msc\Ag34450.lib
+-more:c:\Program Files (x86)\IVI Foundation\IVI\Lib\msc\Ag34970.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2020\toolslib\toolbox\msvc\asynctmr.obj
+-more:c:\Program Files\IVI Foundation\IVI\Drivers\BK 9801\msvc\bp98xx.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\bufferoverflowu.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\cvi_db.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2020\bin\msvc\cviauto.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2020\bin\msvc\cvidotnet.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2020\bin\msvc\cvinetstreams.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2020\bin\msvc\cvinetv.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2020\bin\msvc\cvintwrk.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2020\bin\msvc\cvitdms.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\FlexMotn.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\gdi32.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2020\bin\msvc\gpib.lib
+-more:c:\Program Files (x86)\IVI Foundation\IVI\Lib\msc\hpe364xa.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\toolslib\custctrl\msvc\ImageControl.obj
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\imaqio.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\ivi.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\kernel32.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\Modt.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nican.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\NIDAQmx.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\NIDiagCS.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\niimaq.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\niimaqdx.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nisyscfg.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nivision.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2020\bin\msvc\nivxi.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nixnet.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2020\bin\msvc\omp.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\pid.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\smt.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\SPT.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2020\toolslib\toolbox\msvc\toolbox.obj
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\user32.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\uuid.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\visa.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\winmm.lib

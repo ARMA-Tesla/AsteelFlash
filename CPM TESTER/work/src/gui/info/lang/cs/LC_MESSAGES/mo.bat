@@ -1,0 +1,1 @@
+msgfmt.exe -o info.mo info.pot

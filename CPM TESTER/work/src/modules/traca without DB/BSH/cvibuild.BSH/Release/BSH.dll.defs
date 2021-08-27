@@ -1,0 +1,15 @@
+LIBRARY BSH
+
+EXPORTS
+Get_SMM_SN
+Test_SMM
+Set_Association
+Set_Last_Mouvement
+Get_Last_Mouvement
+Get_FieldLabel
+Get_BoardVer_pFin
+Get_Reference_Product
+Get_BoardVer_sFin_Active
+Get_BoardVer_sFin_Valide
+Disconnect
+Connect

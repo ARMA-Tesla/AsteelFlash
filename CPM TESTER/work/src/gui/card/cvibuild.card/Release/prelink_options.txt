@@ -1,0 +1,9 @@
+-inrc c:\work\src\gui\card\cvibuild.card\Release\resources.in.rc
+-outrc c:\work\src\gui\card\cvibuild.card\Release\resources.out.rc
+-inhdef c:\work\src\gui\card\cvibuild.card\Release\card_plugin.h.hdefs
+-outdef c:\work\src\gui\card\cvibuild.card\Release\card.dll.defs
+-indefprot c:\work\src\gui\card\cvibuild.card\Release\card.obj.cvidefprots
+-indefprot c:\work\src\gui\card\cvibuild.card\Release\eleventdata.obj.cvidefprots
+-indefprot c:\work\src\gui\card\cvibuild.card\Release\elstring.obj.cvidefprots
+-indefprot c:\work\src\gui\card\cvibuild.card\Release\Exception.obj.cvidefprots
+-dllName card.dll

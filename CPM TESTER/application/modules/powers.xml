@@ -1,0 +1,8 @@
+<Powers>
+	<Power name="BKPrecision_PVS_01">
+		<Configuration type="Serial" specificDll="modules/Precision_PVS.dll">
+			<ResourceName>COM6</ResourceName>
+			<BaudRate>1</BaudRate>
+		</Configuration>
+	</Power>
+</Powers>

@@ -1,0 +1,38 @@
+msgid "Version:"
+msgstr "Verze:"
+
+msgid "Administrator:"
+msgstr "Administrator:"
+
+msgid "Time:"
+msgstr "Èas:"
+
+msgid "Shift:"
+msgstr "Smìna:"
+
+msgid "Shift 1"
+msgstr "Smìna 1"
+
+msgid "Shift 2"
+msgstr "Smìna 2"
+
+msgid "Shift 3"
+msgstr "Smìna 3"
+
+msgid "Shift 4"
+msgstr "Smìna 4"
+
+msgid "Shift 5"
+msgstr "Smìna 5"
+
+msgid "Shift 6"
+msgstr "Smìna 6"
+
+msgid "none"
+msgstr "žádná"
+
+msgid "log out"
+msgstr "nepøihlášen"
+
+msgid ""
+msgstr ""

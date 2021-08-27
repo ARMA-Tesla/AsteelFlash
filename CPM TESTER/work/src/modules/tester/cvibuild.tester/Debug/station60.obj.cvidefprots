@@ -1,0 +1,60 @@
+[OPEN_GRIPPER]
+Class="Function"
+Prototype="struct _SElException *OPEN_GRIPPER(struct _STester *me, int timeout);"
+SourceLocation="c:\work\src\modules\tester\station60.c:43:1"
+
+[CLOSE_GRIPPER]
+Class="Function"
+Prototype="struct _SElException *CLOSE_GRIPPER(struct _STester *me, int timeout);"
+SourceLocation="c:\work\src\modules\tester\station60.c:81:1"
+
+[ACTUATOR_X_REAR]
+Class="Function"
+Prototype="struct _SElException *ACTUATOR_X_REAR(struct _STester *me, int timeout);"
+SourceLocation="c:\work\src\modules\tester\station60.c:119:1"
+
+[ACTUATOR_X_FRONT]
+Class="Function"
+Prototype="struct _SElException *ACTUATOR_X_FRONT(struct _STester *me, int timeout);"
+SourceLocation="c:\work\src\modules\tester\station60.c:168:1"
+
+[ACTUATOR_Z_UP]
+Class="Function"
+Prototype="struct _SElException *ACTUATOR_Z_UP(struct _STester *me, int timeout);"
+SourceLocation="c:\work\src\modules\tester\station60.c:209:1"
+
+[ACTUATOR_Z_DOWN]
+Class="Function"
+Prototype="struct _SElException *ACTUATOR_Z_DOWN(struct _STester *me, int timeout);"
+SourceLocation="c:\work\src\modules\tester\station60.c:248:1"
+
+[PickPlacePanelStation60]
+Class="Function"
+Prototype="struct _SElException *PickPlacePanelStation60(struct _STester *me, int timeout);"
+SourceLocation="c:\work\src\modules\tester\station60.c:286:1"
+
+[HomePickPlacePanelStation60]
+Class="Function"
+Prototype="struct _SElException *HomePickPlacePanelStation60(struct _STester *me, int timeout);"
+SourceLocation="c:\work\src\modules\tester\station60.c:498:1"
+
+[ReadyPrint]
+Class="Function"
+Prototype="struct _SElException *ReadyPrint(struct _STester *me, int timeout);"
+SourceLocation="c:\work\src\modules\tester\station60.c:666:1"
+
+[CyclePrint]
+Class="Function"
+Prototype="struct _SElException *CyclePrint(struct _STester *me, int timeout);"
+SourceLocation="c:\work\src\modules\tester\station60.c:730:1"
+
+[PickPrintPanelStation60]
+Class="Function"
+Prototype="struct _SElException *PickPrintPanelStation60(struct _STester *me, int timeout);"
+SourceLocation="c:\work\src\modules\tester\station60.c:825:1"
+
+[ResetPickPrintPanelStation60]
+Class="Function"
+Prototype="struct _SElException *ResetPickPrintPanelStation60(struct _STester *me, int timeout);"
+SourceLocation="c:\work\src\modules\tester\station60.c:1058:1"
+

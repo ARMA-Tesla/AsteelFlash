@@ -1,0 +1,15 @@
+[STATION_10_init]
+Class="Function"
+Prototype="struct _SElException *STATION_10_init(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS10.c:38:1 <Spelling=c:\work\src\shared\test/eltest.h:36:20>"
+
+[STATION_10_cleanup]
+Class="Function"
+Prototype="struct _SElException *STATION_10_cleanup(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS10.c:51:1 <Spelling=c:\work\src\shared\test/eltest.h:36:20>"
+
+[STATION_10_wait]
+Class="Function"
+Prototype="struct _SElException *STATION_10_wait(void *pTID, int mode) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\test\EA210\process\EA210_Test_WS10.c:64:1 <Spelling=c:\work\src\shared\test/eltest.h:36:20>"
+

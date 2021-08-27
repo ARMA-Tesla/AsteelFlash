@@ -1,0 +1,14 @@
+-inrc c:\work\src\gui\report\cvibuild.report\Release\resources.in.rc
+-outrc c:\work\src\gui\report\cvibuild.report\Release\resources.out.rc
+-inhdef c:\work\src\gui\report\cvibuild.report\Release\report_plugin.h.hdefs
+-outdef c:\work\src\gui\report\cvibuild.report\Release\report.dll.defs
+-indefprot c:\work\src\gui\report\cvibuild.report\Release\calendar.obj.cvidefprots
+-indefprot c:\work\src\gui\report\cvibuild.report\Release\eleventdata.obj.cvidefprots
+-indefprot c:\work\src\gui\report\cvibuild.report\Release\elstring.obj.cvidefprots
+-indefprot c:\work\src\gui\report\cvibuild.report\Release\Exception.obj.cvidefprots
+-indefprot c:\work\src\gui\report\cvibuild.report\Release\iso8601.obj.cvidefprots
+-indefprot c:\work\src\gui\report\cvibuild.report\Release\language.obj.cvidefprots
+-indefprot c:\work\src\gui\report\cvibuild.report\Release\report.obj.cvidefprots
+-indefprot c:\work\src\gui\report\cvibuild.report\Release\report_measurement.obj.cvidefprots
+-indefprot c:\work\src\gui\report\cvibuild.report\Release\shdocvw.obj.cvidefprots
+-dllName report.dll

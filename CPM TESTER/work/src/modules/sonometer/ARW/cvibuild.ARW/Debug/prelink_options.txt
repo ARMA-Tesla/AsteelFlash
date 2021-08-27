@@ -1,0 +1,8 @@
+-inrc c:\work\src\modules\sonometer\ARW\cvibuild.ARW\Debug\resources.in.rc
+-outrc c:\work\src\modules\sonometer\ARW\cvibuild.ARW\Debug\resources.out.rc
+-inhdef c:\work\src\modules\sonometer\ARW\cvibuild.ARW\Debug\ARW.h.hdefs
+-outdef c:\work\src\modules\sonometer\ARW\cvibuild.ARW\Debug\ARW.dll.defs
+-indefprot c:\work\src\modules\sonometer\ARW\cvibuild.ARW\Debug\ARW.obj.cvidefprots
+-indefprot c:\work\src\modules\sonometer\ARW\cvibuild.ARW\Debug\Exception.obj.cvidefprots
+-dllName ARW.dll
+-addNITypeInfo 

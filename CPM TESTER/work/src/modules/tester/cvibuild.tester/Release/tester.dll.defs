@@ -1,0 +1,11 @@
+LIBRARY tester
+
+EXPORTS
+UnloadElcomModule
+InitializeElcomModule
+LoadElcomModule
+GetModuleAttribute
+TableThread
+JigThread
+tester_delete
+tester_new

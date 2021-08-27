@@ -1,0 +1,76 @@
+/**************************************************************************/
+/* LabWindows/CVI User Interface Resource (UIR) Include File              */
+/* Copyright (c) National Instruments 2008. All Rights Reserved.          */
+/*                                                                        */
+/* WARNING: Do not add to, delete from, or otherwise modify the contents  */
+/*          of this include file.                                         */
+/**************************************************************************/
+
+#include <userint.h>
+
+#ifdef __cplusplus
+    extern "C" {
+#endif
+
+     /* Panels and Controls: */
+
+#define  CANGUI                          1
+#define  CANGUI_START                    2       /* callback function: OnRecChanged */
+#define  CANGUI_STOP                     3       /* callback function: OnRecChanged */
+#define  CANGUI_CLEAR                    4       /* callback function: OnClear */
+#define  CANGUI_PICTURE                  5
+#define  CANGUI_TAB                      6
+#define  CANGUI_COMM_LIST                7
+
+#define  FILTER_EXCLUDE                  2
+#define  FILTER_INCLUDE                  3
+#define  FILTER_EXC_ENABLE               4
+#define  FILTER_INC_ENABLE               5
+#define  FILTER_APPLY                    6       /* callback function: OnApply */
+#define  FILTER_TEXTMSG                  7
+#define  FILTER_PICTURE                  8
+#define  FILTER_TEXTMSG_2                9
+
+#define  KWPPANEL_CHANNEL                2
+#define  KWPPANEL_WRITE_ID               3
+#define  KWPPANEL_READ_ID                4
+#define  KWPPANEL_CMD                    5       /* callback function: OnCmdChanged */
+#define  KWPPANEL_SIZE                   6       /* callback function: OnSizeChange */
+#define  KWPPANEL_TABLE                  7
+#define  KWPPANEL_SEND                   8       /* callback function: OnSend1 */
+#define  KWPPANEL_PICTURE                9
+
+#define  LOWPANEL_CHANNEL                2       /* callback function: OnChannelChanged */
+#define  LOWPANEL_WRITE_ID               3
+#define  LOWPANEL_TABLE                  4
+#define  LOWPANEL_PACKET_TYPE            5
+#define  LOWPANEL_SEND                   6       /* callback function: OnSend2 */
+#define  LOWPANEL_LIST                   7
+#define  LOWPANEL_ASYNC                  8       /* callback function: OnLoopEnabled */
+#define  LOWPANEL_ADD                    9       /* callback function: OnLoopList */
+#define  LOWPANEL_REMOVE                 10      /* callback function: OnLoopList */
+#define  LOWPANEL_PICTURE                11
+
+
+     /* Menu Bars, Menus, and Menu Items: */
+
+          /* (no menu bars in the resource file) */
+
+
+     /* Callback Prototypes: */ 
+
+int  CVICALLBACK OnApply(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK OnChannelChanged(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK OnClear(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK OnCmdChanged(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK OnLoopEnabled(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK OnLoopList(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK OnRecChanged(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK OnSend1(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK OnSend2(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+int  CVICALLBACK OnSizeChange(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);
+
+
+#ifdef __cplusplus
+    }
+#endif

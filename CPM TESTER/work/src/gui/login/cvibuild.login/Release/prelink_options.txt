@@ -1,0 +1,10 @@
+-inrc c:\work\src\gui\login\cvibuild.login\Release\resources.in.rc
+-outrc c:\work\src\gui\login\cvibuild.login\Release\resources.out.rc
+-inhdef c:\work\src\gui\login\cvibuild.login\Release\login_plugin.h.hdefs
+-outdef c:\work\src\gui\login\cvibuild.login\Release\login.dll.defs
+-indefprot c:\work\src\gui\login\cvibuild.login\Release\eleventdata.obj.cvidefprots
+-indefprot c:\work\src\gui\login\cvibuild.login\Release\elstring.obj.cvidefprots
+-indefprot c:\work\src\gui\login\cvibuild.login\Release\Exception.obj.cvidefprots
+-indefprot c:\work\src\gui\login\cvibuild.login\Release\language.obj.cvidefprots
+-indefprot c:\work\src\gui\login\cvibuild.login\Release\login.obj.cvidefprots
+-dllName login.dll

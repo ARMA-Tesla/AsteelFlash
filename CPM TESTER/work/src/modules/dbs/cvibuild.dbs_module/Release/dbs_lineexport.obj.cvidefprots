@@ -1,0 +1,10 @@
+[dbslineexport_new]
+Class="Function"
+Prototype="struct _SElException *dbslineexport_new(struct _SDBSLineExport **pDBSLineExportPtr, void *pDBS);"
+SourceLocation="c:\work\src\modules\dbs\dbs_lineexport.c:36:17"
+
+[dbslineexport_delete]
+Class="Function"
+Prototype="struct _SElException *dbslineexport_delete(struct _SDBSLineExport **pDBSLineExportPtr);"
+SourceLocation="c:\work\src\modules\dbs\dbs_lineexport.c:60:17"
+

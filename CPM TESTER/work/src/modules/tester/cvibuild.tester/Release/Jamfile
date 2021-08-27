@@ -1,0 +1,66 @@
+HDRS = 	"c:\\work\\include"
+	"c:\\work\\src\\shared"
+	"c:\\work\\src\\modules"
+	"C:\\Users\\Public\\Documents\\National Instruments\\TestStand 2016 (32-bit)\\AdapterSupport\\CVI"
+	"C:\\Program Files (x86)\\National Instruments\\TestStand 2016\\API\\DLLInterfaces"
+	"C:\\Program Files (x86)\\National Instruments\\TestStand 2020\\API\\DLLInterfaces"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr\\TestStand\\API"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\clang\\3.3"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\work\\src\\shared\\bklib"
+	"c:\\work\\src\\shared\\msxml"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2019\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+LOCATE on "eleventdata.c" = "c:\\work\\src\\shared\\eventfactory" ;
+LOCATE on "elstring.c" = "c:\\work\\src\\shared\\string" ;
+LOCATE on "eltypes.h" = "c:\\work\\include" ;
+LOCATE on "Exception.c" = "c:\\work\\src\\shared\\exception" ;
+LOCATE on "Exception.h" = "c:\\work\\src\\shared\\exception" ;
+LOCATE on "module.h" = "c:\\work\\src\\shared\\modules" ;
+LOCATE on "multithread.c" = "c:\\work\\src\\shared\\multithread" ;
+LOCATE on "multithread.h" = "c:\\work\\src\\shared\\multithread" ;
+LOCATE on "station10.c" = "c:\\work\\src\\modules\\tester" ;
+LOCATE on "station10.h" = "c:\\work\\src\\modules\\tester" ;
+LOCATE on "station20.c" = "c:\\work\\src\\modules\\tester" ;
+LOCATE on "station20.h" = "c:\\work\\src\\modules\\tester" ;
+LOCATE on "station30.c" = "c:\\work\\src\\modules\\tester" ;
+LOCATE on "station30.h" = "c:\\work\\src\\modules\\tester" ;
+LOCATE on "station40.c" = "c:\\work\\src\\modules\\tester" ;
+LOCATE on "station40.h" = "c:\\work\\src\\modules\\tester" ;
+LOCATE on "station50.c" = "c:\\work\\src\\modules\\tester" ;
+LOCATE on "station50.h" = "c:\\work\\src\\modules\\tester" ;
+LOCATE on "station60.c" = "c:\\work\\src\\modules\\tester" ;
+LOCATE on "station60.h" = "c:\\work\\src\\modules\\tester" ;
+LOCATE on "tester.c" = "c:\\work\\src\\modules\\tester" ;
+LOCATE on "tester.h" = "c:\\work\\src\\modules\\tester" ;
+LOCATE on "tester_module.c" = "c:\\work\\src\\modules\\tester" ;
+Object "c:\\work\\src\\modules\\tester\\cvibuild.tester\\Release\\bklib2.obj" : "c:\\work\\src\\shared\\bklib\\bklib2.c" ;
+FILENUM on "c:\\work\\src\\modules\\tester\\cvibuild.tester\\Release\\bklib2.obj" = 1 ;
+DEFPROTS on "c:\\work\\src\\modules\\tester\\cvibuild.tester\\Release\\bklib2.obj" = "c:\\work\\src\\modules\\tester\\cvibuild.tester\\Release\\bklib2.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\modules\\tester\\cvibuild.tester\\Release\\bklib2.obj" = "c:\\work\\src\\modules\\tester\\cvibuild.tester\\Release\\bklib2.obj.out" ;
+PrjObjects += "c:\\work\\src\\modules\\tester\\cvibuild.tester\\Release\\bklib2.obj" ;
+Depends all : $(PrjObjects) ;

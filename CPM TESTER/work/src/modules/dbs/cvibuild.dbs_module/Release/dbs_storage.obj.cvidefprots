@@ -1,0 +1,10 @@
+[dbsstorage_new]
+Class="Function"
+Prototype="struct _SElException *dbsstorage_new(struct _SDBSStorage **pDBSStoragePtr, void *pDBS);"
+SourceLocation="c:\work\src\modules\dbs\dbs_storage.c:67:17"
+
+[dbsstorage_delete]
+Class="Function"
+Prototype="struct _SElException *dbsstorage_delete(struct _SDBSStorage **pDBSStoragePtr);"
+SourceLocation="c:\work\src\modules\dbs\dbs_storage.c:127:17"
+

@@ -1,0 +1,44 @@
+HDRS = 	"c:\\work\\src\\shared"
+	"c:\\work\\elcom\\valeo\\UTSystem\\src\\modules"
+	"c:\\work\\elcom\\valeo\\UTSystem\\include"
+	"c:\\work\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\word"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\activex\\excel"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\custctrl\\custsupp"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\cvirtsup"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\datasock"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\daqUtil"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\printing"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\toolbox"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\reportgen"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\toolslib\\localui"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\instr"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\instr"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2019\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\ansi"
+	"c:\\program files (x86)\\national instruments\\cvi2019\\include\\clang\\3.3"
+	"c:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"C:\\Program Files (x86)\\National Instruments\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"c:\\Program Files (x86)\\National Instruments\\CVI2019\\bin"
+	"c:\\Program Files (x86)\\National Instruments\\Shared\\CVI\\Bin"
+	;
+LOCATE on "eltypes.h" = "c:\\work\\include" ;
+LOCATE on "Exception.c" = "c:\\work\\src\\shared\\exception" ;
+LOCATE on "maintenance.c" = "c:\\work\\src\\gui\\maintenance" ;
+LOCATE on "maintenance.h" = "c:\\work\\src\\gui\\maintenance" ;
+LOCATE on "maintenance_plugin.h" = "c:\\work\\src\\gui\\maintenance" ;
+Object "c:\\work\\src\\gui\\maintenance\\cvibuild.maintenance\\Release\\maintenance.obj" : "c:\\work\\src\\gui\\maintenance\\maintenance.c" ;
+FILENUM on "c:\\work\\src\\gui\\maintenance\\cvibuild.maintenance\\Release\\maintenance.obj" = 1 ;
+DEFPROTS on "c:\\work\\src\\gui\\maintenance\\cvibuild.maintenance\\Release\\maintenance.obj" = "c:\\work\\src\\gui\\maintenance\\cvibuild.maintenance\\Release\\maintenance.obj.cvidefprots" ;
+OUTFILE on "c:\\work\\src\\gui\\maintenance\\cvibuild.maintenance\\Release\\maintenance.obj" = "c:\\work\\src\\gui\\maintenance\\cvibuild.maintenance\\Release\\maintenance.obj.out" ;
+PrjObjects += "c:\\work\\src\\gui\\maintenance\\cvibuild.maintenance\\Release\\maintenance.obj" ;
+Always $(PrjObjects) ;
+Depends all : $(PrjObjects) ;

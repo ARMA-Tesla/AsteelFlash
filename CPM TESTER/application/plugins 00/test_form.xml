@@ -1,0 +1,367 @@
+<testseq>
+	<product>
+		<id>3</id>
+		<branch_id>1</branch_id>
+		<name>9831301980</name>
+		<description></description>
+		<mode></mode>
+		<date_time></date_time>
+		<PalettID></PalettID>
+		<barcode></barcode>
+		<duration></duration>
+		<failed>0</failed>
+	</product>
+	<global>
+		<parameter>
+			<id>0</id>
+			<name>COFOR_fix</name>
+			<description></description>
+			<value type="string">22661F01</value>
+		</parameter>
+		<parameter>
+			<id>0</id>
+			<name>HW Version</name>
+			<description></description>
+			<value type="string">2222_02a</value>
+		</parameter>
+		<parameter>
+			<id>0</id>
+			<name>Index PSA</name>
+			<description></description>
+			<value type="string">00</value>
+		</parameter>
+		<parameter>
+			<id>0</id>
+			<name>JobCamera : Eclairage</name>
+			<description></description>
+			<value type="string">02</value>
+		</parameter>
+		<parameter>
+			<id>0</id>
+			<name>JobCamera : Essuiage</name>
+			<description></description>
+			<value type="string">11</value>
+		</parameter>
+		<parameter>
+			<id>0</id>
+			<name>Label:NOK</name>
+			<description></description>
+			<value type="string">C:/application/Labels/NOK.txt</value>
+		</parameter>
+		<parameter>
+			<id>0</id>
+			<name>Label:OK</name>
+			<description></description>
+			<value type="string">C:/application/Labels/OK.txt</value>
+		</parameter>
+		<parameter>
+			<id>0</id>
+			<name>Option_ESS_LAV_AR</name>
+			<description></description>
+			<value type="string">1</value>
+		</parameter>
+		<parameter>
+			<id>0</id>
+			<name>PSA_FPN</name>
+			<description></description>
+			<value type="string">9831301980</value>
+		</parameter>
+		<parameter>
+			<id>0</id>
+			<name>PSA_FPRN</name>
+			<description></description>
+			<value type="string">98313019ZD</value>
+		</parameter>
+		<parameter>
+			<id>0</id>
+			<name>ProductName</name>
+			<description></description>
+			<value type="string">HS/ Sans chrome / Sans chauff</value>
+		</parameter>
+		<parameter>
+			<id>0</id>
+			<name>ProductPartNumber</name>
+			<description></description>
+			<value type="string">E198233</value>
+		</parameter>
+		<parameter>
+			<id>0</id>
+			<name>ProductPictureLighting</name>
+			<description></description>
+			<value type="string">E144349.JPG</value>
+		</parameter>
+		<parameter>
+			<id>0</id>
+			<name>ProductPictureWiper</name>
+			<description></description>
+			<value type="string">E144349.JPG</value>
+		</parameter>
+		<parameter>
+			<id>0</id>
+			<name>ProductTestFile</name>
+			<description></description>
+			<value type="string">COM2020.dll</value>
+		</parameter>
+		<parameter>
+			<id>0</id>
+			<name>SW Version</name>
+			<description></description>
+			<value type="string">C5.1.2</value>
+		</parameter>
+		<parameter>
+			<id>0</id>
+			<name>Traceability index</name>
+			<description></description>
+			<value type="string">26</value>
+		</parameter>
+		<parameter>
+			<id>0</id>
+			<name>Type_CAN</name>
+			<description></description>
+			<value type="string">HS</value>
+		</parameter>
+	</global>
+	<process stage="1">
+		<name>WS20</name>
+		<description>Test Camera</description>
+		<init>
+			<failed>0</failed>
+			<duration></duration>
+		</init>
+		<test step="1">
+			<id>537</id>
+			<name>20.00</name>
+			<description>TESTER: Connexion Produit</description>
+			<failed>0</failed>
+			<duration></duration>
+			<used>0</used>
+		</test>
+		<cleanup>
+			<failed>0</failed>
+			<duration></duration>
+		</cleanup>
+	</process>
+	<process stage="2">
+		<name>WS30</name>
+		<description>Test Couple et Resistances airbag</description>
+		<init>
+			<failed>0</failed>
+			<duration></duration>
+		</init>
+		<cleanup>
+			<failed>0</failed>
+			<duration></duration>
+		</cleanup>
+	</process>
+	<process stage="3">
+		<name>WS40</name>
+		<description>Test Courant VCI et Horn</description>
+		<init>
+			<failed>0</failed>
+			<duration></duration>
+		</init>
+		<cleanup>
+			<failed>0</failed>
+			<duration></duration>
+		</cleanup>
+	</process>
+	<process stage="4">
+		<name>WS50</name>
+		<description>Test Retour Clignotant et Position 0</description>
+		<init>
+			<failed>0</failed>
+			<duration></duration>
+		</init>
+		<cleanup>
+			<failed>0</failed>
+			<duration></duration>
+		</cleanup>
+	</process>
+	<process stage="5">
+		<name>WS60</name>
+		<description>Impression etiquette</description>
+		<init>
+			<failed>0</failed>
+			<duration></duration>
+		</init>
+		<cleanup>
+			<failed>0</failed>
+			<duration></duration>
+		</cleanup>
+	</process>
+	<process stage="6">
+		<name>WS10</name>
+		<description>Test Fonctionnel des manettes</description>
+		<init>
+			<failed>0</failed>
+			<duration></duration>
+		</init>
+		<cleanup>
+			<failed>0</failed>
+			<duration></duration>
+		</cleanup>
+	</process>
+	<version>
+		<item type="plugin">
+			<name>Automat</name>
+			<version>0.0.2</version>
+			<datetime>Aug  6 2020 19:32:59</datetime>
+			<uuid>{E73BFBD5-77AF-40c8-9ED6-25C1F6EFA259}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Messaging panel</name>
+			<version>1.10.1</version>
+			<datetime>Aug 17 2020 16:37:51</datetime>
+			<uuid>{15CCD00D-3983-41b3-BC6A-A10F684A1F61}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Panel</name>
+			<version>0.0.1</version>
+			<datetime>Jul 22 2020 14:12:39</datetime>
+			<uuid>{32A783CF-D82C-4734-9112-2F61E92FC17B}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Report</name>
+			<version>1.10.1</version>
+			<datetime>Jul  9 2020 18:43:44</datetime>
+			<uuid>{3399A11A-2A03-4170-B69C-356F4F49C568}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Maintenance</name>
+			<version>0.0.2</version>
+			<datetime>Aug 10 2020 15:39:34</datetime>
+			<uuid>{4FDAB846-56F7-405d-BF13-EEB8EF8D96FA}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Product</name>
+			<version>1.0.1</version>
+			<datetime>Jul  8 2020 19:57:20</datetime>
+			<uuid>{5954031C-CEA1-4c16-8128-38B661811261}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Kosu</name>
+			<version>1.0.1</version>
+			<datetime>Jul 22 2020 14:12:05</datetime>
+			<uuid>{B9DD83C0-F8CE-44a0-A0AF-9AD7F170871D}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Info</name>
+			<version>1.0.1</version>
+			<datetime>Jul 22 2020 14:11:49</datetime>
+			<uuid>{71F5C8CB-0C94-429e-8A6C-98AF5E58B248}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Report</name>
+			<version>1.10.1</version>
+			<datetime>Jul 22 2020 14:11:29</datetime>
+			<uuid>{3399A11A-2A03-4170-B69C-356F4F49C569}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Login dialog</name>
+			<version>0.0.2</version>
+			<datetime>Apr 22 2020 11:49:00</datetime>
+			<uuid>{AE2FAC8A-ABAC-4b1c-AA84-669809AB76EB}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Cards</name>
+			<version>1.0.1</version>
+			<datetime>Jul 22 2020 14:10:19</datetime>
+			<uuid>{28E36F9B-656B-4acd-97EF-9010E3898EC1}</uuid>
+		</item>
+		<item type="plugin">
+			<name>DbusGUI</name>
+			<version>0.0.1</version>
+			<datetime>Jul 22 2020 14:11:05</datetime>
+			<uuid>{E87E3CB8-8543-4F55-B847-12E4C61FACE2}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Sensors</name>
+			<version>1.0.1</version>
+			<datetime>Jan  1 2003 00:39:33</datetime>
+			<uuid>{374B887B-7EF6-4593-B83E-0E07DDB38C99}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Printer</name>
+			<version>1.0.1</version>
+			<datetime>Jul 23 2020 20:51:10</datetime>
+			<uuid>{bc86c222-d5d2-4276-894c-c0a0e8d258d4}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Camera</name>
+			<version>1.0.1</version>
+			<datetime>Jul 21 2020 20:14:41</datetime>
+			<uuid>{FFAA1236-f5d2-2076-104c-c0a0e8dFA100}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Axis</name>
+			<version>1.0.1</version>
+			<datetime>Jul 22 2020 14:09:45</datetime>
+			<uuid>{bc86c222-d5d2-4276-894c-c0a0e8d34FAC}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Test Sequence</name>
+			<version>1.20.1</version>
+			<datetime>Jul 28 2020 19:38:28</datetime>
+			<uuid>{E66FADE5-021C-4335-886C-FCA567AFADC2}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Sonometer</name>
+			<version>1.0.1</version>
+			<datetime>Jul 22 2020 14:12:57</datetime>
+			<uuid>{FFAA1236-f5d2-2076-104c-c0a0e8de8fc5}</uuid>
+		</item>
+		<item type="plugin">
+			<name>Tester</name>
+			<version>1.0.1</version>
+			<datetime>Aug 17 2020 16:40:17</datetime>
+			<uuid>{44941DAC-D5D1-4a7d-9825-5EF6EDC5921B}</uuid>
+		</item>
+		<item type="module">
+			<name>Log Module</name>
+			<version>1.0</version>
+			<datetime>Jan 30 2009 12:06:11</datetime>
+			<uuid>{DA88E676-2589-4fa2-A31B-2875D6F2CB8D}</uuid>
+		</item>
+		<item type="module">
+			<name>Sensor Module</name>
+			<version>1.0</version>
+			<datetime>Aug 14 2020 11:13:54</datetime>
+			<uuid>{A65AEFCA-1600-4be0-AD11-7CA998CE5584}</uuid>
+		</item>
+		<item type="module">
+			<name>Printers Module</name>
+			<version>1.0</version>
+			<datetime>Jul 23 2020 11:22:32</datetime>
+			<uuid>{28040E54-784A-4f00-8CDF-A986AB747298}</uuid>
+		</item>
+		<item type="module">
+			<name>User login module</name>
+			<version>1.0</version>
+			<datetime>Jan 30 2009 12:07:17</datetime>
+			<uuid>{BFEA696D-4372-4c08-AFFA-A269369BA40E}</uuid>
+		</item>
+		<item type="module">
+			<name>DBUS Module</name>
+			<version>1.0</version>
+			<datetime>Jul 27 2020 13:30:26</datetime>
+			<uuid>{0209bd7a-473a-11dc-8314-0800200FA02B}</uuid>
+		</item>
+		<item type="module">
+			<name>Database module</name>
+			<version>2.1</version>
+			<datetime>Aug 10 2020 15:33:35</datetime>
+			<uuid>{913C9769-8D32-496f-9900-546814DDC355}</uuid>
+		</item>
+		<item type="module">
+			<name>Tester Module</name>
+			<version>1.0</version>
+			<datetime>Aug 17 2020 16:31:18</datetime>
+			<uuid>{F459741B-B526-4fb9-B65C-A4C983105321}</uuid>
+		</item>
+		<item type="module">
+			<name>Labels Module</name>
+			<version>1.3</version>
+			<datetime>Jul 28 2020 20:09:50</datetime>
+			<uuid>{626BFA10-D068-45ff-B497-E8F27B940EE9}</uuid>
+		</item>
+	</version></testseq>

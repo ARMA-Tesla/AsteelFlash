@@ -1,0 +1,5 @@
+LIBRARY dataman
+
+EXPORTS
+bcr_delete
+bcr_new

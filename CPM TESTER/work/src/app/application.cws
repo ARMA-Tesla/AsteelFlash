@@ -1,0 +1,349 @@
+[Workspace Header]
+Version = 1900
+Pathname = "/c/work/src/app/application.cws"
+CVI Dir = "/c/program files (x86)/national instruments/cvi2019"
+CVI Shared Dir = "/C/Program Files (x86)/National Instruments/Shared/CVI"
+CVI Pub Local Dir = "/C/ProgramData/National Instruments/CVI2019"
+CVI Pub Global Dir = "/C/ProgramData/National Instruments/CVI"
+IVI Standard Root Dir = "/c/Program Files (x86)/IVI Foundation/IVI"
+IVI Standard Root 64-bit Dir = "/c/Program Files/IVI Foundation/IVI"
+VXIplug&play Framework Dir = "/C/Program Files (x86)/IVI Foundation/VISA/winnt"
+VXIplug&play Framework 64-bit Dir = "/C/Program Files/IVI Foundation/VISA/win64"
+Number of Projects = 1
+Active Project = 1
+Project 0001 = "application.prj"
+Drag Bar Left = 241
+Window Top = 269
+Window Left = 254
+Window Bottom = 977
+Window Right = 1212
+Maximized = True
+Maximized Children = True
+Max32 Number Of Errors = 20
+Track Include File Dependencies = True
+Prompt For Missing Includes = True
+Stop On First Error File = False
+Bring Up Err Win At Start = True
+Bring Up Err Win For Errors = False
+Save Changes Before Running = "Always"
+Save Changes Before Compiling = "Always"
+Hide Windows = False
+Break At First Statement = False
+Sort Type = "File Name"
+Number of Opened Files = 6
+Window Confinement Region Enabled = True
+MainColumnWidth = 224
+FileDateColumnWidth = 70
+FileSizeColumnWidth = 70
+
+[Project Header 0001]
+Version = 1900
+Don't Update DistKit = False
+Platform Code = 4
+Build Configuration = "Release"
+Warn User If Debugging Release = 0
+Batch Build Release = False
+Batch Build Debug = True
+
+[File 0001]
+Path = "/c/work/src/shared/bklib/bklib2.fp"
+File Type = "Function Panel"
+Disk Date = 3309320854
+In Projects = "1,"
+
+[File 0002]
+Path = "/c/program files (x86)/national instruments/cvi2019/toolslib/toolbox/msxmldom.fp"
+File Type = "Function Panel"
+Disk Date = 3635234214
+In Projects = "1,"
+
+[File 0003]
+Path = "/c/work/src/shared/eventfactory/eleventdata.c"
+File Type = "CSource"
+Disk Date = 3309320854
+In Projects = "1,"
+Source Window State = "1,15,15,15,0,0,0,0,0,0,0,0,0,0,0,0,15,0,15,0,401,630,1,0,"
+Window Top = 32
+Window Left = 10
+
+[File 0004]
+Path = "/c/work/src/app/application.c"
+File Type = "CSource"
+Disk Date = 3681311129
+In Projects = "1,"
+Source Window State = "1,100,100,100,31,51,31,0,3,0,0,329,0,0,0,0,87,0,100,51,349,676,1,11,"
+Breakpoint 0001 = "37,0,enabled,"
+Tracepoint 0001 = "0,0,38,1,"
+Breakpoint 0002 = "58,0,enabled,"
+Tracepoint 0002 = "0,0,59,1,"
+Breakpoint 0003 = "76,0,enabled,"
+Tracepoint 0003 = "0,0,77,1,"
+Breakpoint 0004 = "92,0,enabled,"
+Tracepoint 0004 = "0,0,93,1,"
+Breakpoint 0005 = "168,0,enabled,"
+Line Tags = "653,"
+Window Top = 31
+Window Z-Order = 2
+
+[File 0005]
+Path = "/c/work/src/shared/plugins/el_pluginargs.c"
+File Type = "CSource"
+Disk Date = 3309320850
+In Projects = "1,"
+Source Window State = "1,232,232,232,2,2,2,0,0,0,0,0,0,0,0,0,208,0,232,2,401,714,1,0,"
+Breakpoint 0001 = "181,0,enabled,"
+Window Top = 95
+Window Left = 51
+Window Z-Order = 6
+
+[File 0006]
+Path = "/c/work/src/shared/modules/elmodule.c"
+File Type = "CSource"
+Disk Date = 3467971192
+In Projects = "1,"
+Source Window State = "1,195,195,195,0,0,0,0,0,0,0,0,0,0,0,0,177,0,195,0,349,715,1,0,"
+Breakpoint 0001 = "166,0,enabled,"
+Tracepoint 0001 = "0,0,167,1,"
+Breakpoint 0002 = "323,0,enabled,"
+Tracepoint 0002 = "0,0,324,1,"
+Window Top = 122
+Window Left = 58
+Window Z-Order = 5
+
+[File 0007]
+Path = "/c/work/src/shared/plugins/el_pluginserver_win32.c"
+File Type = "CSource"
+Disk Date = 3564573572
+In Projects = "1,"
+Source Window State = "1,524,524,524,8,8,8,0,0,0,0,0,0,0,0,0,507,0,524,8,26,1276,1,0,"
+Breakpoint 0001 = "252,0,enabled,"
+Tracepoint 0001 = "0,0,253,1,"
+Window Top = 30
+Window Z-Order = 4
+
+[File 0008]
+Path = "/c/work/src/app/application.uir"
+File Type = "User Interface Resource"
+Disk Date = 3688725394
+In Projects = "1,"
+Window Top = 62
+Window Left = 18
+Window Height = 401
+Window Width = 630
+Window Z-Order = 3
+
+[File 0009]
+Path = "/c/work/src/shared/string/elstring.c"
+File Type = "CSource"
+Disk Date = 3613571278
+In Projects = "1,"
+Source Window State = "1,104,104,104,0,0,0,0,0,0,0,0,0,0,0,0,77,0,104,0,400,676,1,0,"
+Window Top = 299
+Window Left = 230
+
+[File 0010]
+Path = "/c/work/src/shared/eventfactory/EventFactory.c"
+File Type = "CSource"
+Disk Date = 3581602296
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,349,715,0,0,"
+Window Top = 182
+Window Left = 90
+
+[File 0011]
+Path = "/c/work/src/shared/exception/Exception.c"
+File Type = "CSource"
+Disk Date = 3652346447
+In Projects = "1,"
+Source Window State = "1,86,86,86,0,0,0,0,0,0,0,0,0,0,0,0,65,0,86,0,266,630,1,0,"
+Window Top = 32
+Window Left = 10
+
+[File 0012]
+Path = "/c/work/src/shared/objlist/objlist.c"
+File Type = "CSource"
+Disk Date = 3309320848
+In Projects = "1,"
+Source Window State = "1,247,247,247,30,30,30,0,0,0,0,0,0,0,0,0,235,0,247,30,193,676,1,0,"
+Window Top = 32
+Window Left = 6
+
+[File 0013]
+Path = "/c/work/src/shared/eventfactory/eleventdata.h"
+File Type = "Include"
+Disk Date = 3309320854
+In Projects = "1,"
+Source Window State = "1,12,12,12,18,30,30,0,3,0,0,0,0,0,0,0,0,0,12,18,284,676,1,0,"
+
+[File 0014]
+Path = "/c/work/src/shared/modules/elmodule.h"
+File Type = "Include"
+Disk Date = 3309320850
+In Projects = "1,"
+Source Window State = "1,40,40,40,16,25,25,0,3,0,0,0,0,0,0,0,3,0,40,16,349,676,1,0,"
+
+[File 0015]
+Path = "/c/work/include/eltypes.h"
+File Type = "Include"
+Disk Date = 3680507941
+In Projects = "1,"
+Source Window State = "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"
+
+[File 0016]
+Path = "/c/work/src/shared/eventfactory/EventFactory.h"
+File Type = "Include"
+Disk Date = 3309320854
+In Projects = "1,"
+Source Window State = "1,57,57,57,35,56,35,0,3,0,0,0,0,0,0,0,36,0,57,56,349,676,1,0,"
+
+[File 0017]
+Path = "/c/work/src/shared/exception/Exception.h"
+File Type = "Include"
+Disk Date = 3679615340
+In Projects = "1,"
+Source Window State = "1,45,45,45,17,32,17,0,3,0,0,0,0,0,0,0,31,0,45,32,349,676,1,0,"
+Window Top = 30
+
+[File 0018]
+Path = "/c/work/src/shared/objlist/objlist.h"
+File Type = "Include"
+Disk Date = 3309320848
+In Projects = "1,"
+Source Window State = "1,14,14,14,18,34,34,0,0,0,0,0,0,0,0,0,0,0,5,20,349,676,1,0,"
+
+[File 0019]
+Path = "/c/work/src/shared/plugins/el_plugin.h"
+File Type = "Include"
+Disk Date = 3564555640
+In Projects = "1,"
+Source Window State = "1,30,30,30,12,33,33,0,0,0,0,0,0,0,0,0,100,0,4,11,349,676,1,0,"
+
+[File 0020]
+Path = "/c/work/src/shared/plugins/el_pluginargs.h"
+File Type = "Include"
+Disk Date = 3309320850
+In Projects = "1,"
+Source Window State = "1,45,45,45,12,12,12,0,0,0,0,0,0,0,0,0,42,0,45,12,349,676,1,0,"
+Window Top = 38
+
+[File 0021]
+Path = "/c/work/src/shared/plugins/el_plugininfo.c"
+File Type = "CSource"
+Disk Date = 3309320850
+In Projects = "1,"
+Source Window State = "1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,401,714,1,0,"
+Window Top = 40
+Window Left = 11
+
+[File 0022]
+Path = "/c/work/src/shared/plugins/el_plugininfo.h"
+File Type = "Include"
+Disk Date = 3309320850
+In Projects = "1,"
+Source Window State = "1,36,36,36,22,33,33,0,3,0,0,0,0,0,0,0,36,0,36,22,349,676,1,0,"
+Window Top = 38
+
+[File 0023]
+Path = "/c/work/src/shared/plugins/el_pluginserver.h"
+File Type = "Include"
+Disk Date = 3564555640
+In Projects = "1,"
+Source Window State = "1,97,97,97,49,49,49,0,0,0,0,0,0,0,0,0,87,0,97,49,349,676,1,0,"
+Window Z-Order = 1
+
+[Tab Order]
+Tab 0001 = "/c/work/src/app/application.c"
+Tab 0002 = "/c/work/src/app/application.uir"
+Tab 0003 = "/c/work/src/shared/plugins/el_pluginserver_win32.c"
+Tab 0004 = "/c/work/src/shared/modules/elmodule.c"
+Tab 0005 = "/c/work/src/shared/plugins/el_pluginargs.c"
+Tab 0006 = "/c/work/src/shared/plugins/el_pluginserver.h"
+
+[Default Build Config 0001 Debug]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = True
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Debug64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Default Build Config 0001 Release64]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Batch Build = False
+Profile = "Disabled"
+Debugging Level = "Standard"
+Execution Trace = "Disabled"
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+External Process Path = ""
+
+[Build Dependencies 0001]
+Number of Dependencies = 0
+
+[Build Options 0001]
+Generate Browse Info = True
+Enable Uninitialized Locals Runtime Warning = True
+Execution Trace = "Disabled"
+Profile = "Disabled"
+Debugging Level = "Standard"
+Break On Library Errors = True
+Break On First Chance Exceptions = False
+
+[Execution Target 0001]
+Execution Target Address = "Local desktop computer"
+Execution Target Port = 0
+Execution Target Type = 0
+
+[SCC Options 0001]
+Use global settings = True
+SCC Provider = ""
+SCC Project = ""
+Local Path = ""
+Auxiliary Path = ""
+Perform Same Action For .h File As For .uir File = "Ask"
+Perform Same Action For .cds File As For .prj File = "Ask"
+Username = ""
+Comment = ""
+Use Default Username = False
+Use Default Comment = True
+Suppress CVI Error Messages = False
+Always show confirmation dialog = True
+
+[DLL Debugging Support 0001]
+External Process Path = ""
+
+[Command Line Args 0001]
+Command Line Args = ""
+Working Directory = ""
+Environment Options = ""
+

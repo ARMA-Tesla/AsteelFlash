@@ -1,0 +1,113 @@
+msgid "Menu"
+msgstr "Menu"
+
+msgid "Production"
+msgstr "Výroba"
+
+msgid "Quality"
+msgstr "Kvalita"
+
+msgid "Expertise"
+msgstr "Expertíza"
+
+msgid "Maintenance"
+msgstr "Údržba"
+
+msgid "Documentation"
+msgstr "Dokumentace"
+
+msgid "Statistic"
+msgstr "Statistika"
+
+msgid "Shift Change"
+msgstr "Zmìna smìny"
+
+msgid "Product Selection"
+msgstr "Verze výrobku"
+
+msgid "Test Report"
+msgstr "Reporty"
+
+msgid "Quit"
+msgstr "Konec"
+
+msgid "Shift 1"
+msgstr "Smìna 1"
+
+msgid "Shift 2"
+msgstr "Smìna 2"
+
+msgid "Shift 3"
+msgstr "Smìna 3"
+
+msgid "Shift 4"
+msgstr "Smìna 4"
+
+msgid "Shift 5"
+msgstr "Smìna 5"
+
+msgid "Shift 6"
+msgstr "Smìna 6"
+
+msgid "Shift Close"
+msgstr "Smìnu ukonèit"
+
+msgid "Back"
+msgstr "Zpìt"
+
+msgid "Release"
+msgstr "Uvolnit"
+
+msgid "Retest"
+msgstr "Retest"
+
+msgid "Master"
+msgstr "Master"
+
+msgid "Sequence"
+msgstr "Sekvence"
+
+msgid "Step"
+msgstr "Krokovat"
+
+msgid "Go Mode"
+msgstr "Go Mode"
+
+msgid "RnR Study"
+msgstr "RnR Studie"
+
+msgid "Create"
+msgstr "Vytvoøit"
+
+msgid "Database"
+msgstr "Databáze"
+
+msgid "Products"
+msgstr "Produkty"
+
+msgid "Users"
+msgstr "Uživatelé"
+
+msgid "History"
+msgstr "Historie"
+
+msgid "Login User"
+msgstr "Pøihlášení uživatele"
+
+msgid "Cards"
+msgstr "Karty"
+
+msgid "Sensors"
+msgstr "Senzory"
+
+msgid "Switch"
+msgstr "Spínání"
+
+msgid "Version"
+msgstr "Verze"
+
+msgid "Process"
+msgstr "Proces"
+
+msgid "Tools"
+msgstr "Nástroje"

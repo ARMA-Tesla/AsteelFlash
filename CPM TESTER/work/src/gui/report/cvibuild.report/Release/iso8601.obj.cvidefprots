@@ -1,0 +1,25 @@
+[iso8601_calculate_day_of_week]
+Class="Function"
+Prototype="int iso8601_calculate_day_of_week(int day, int month, int year);"
+SourceLocation="c:\work\src\shared\iso\iso8601.c:75:1"
+
+[iso8601_calculate_day_of_month]
+Class="Function"
+Prototype="int iso8601_calculate_day_of_month(int month, int year);"
+SourceLocation="c:\work\src\shared\iso\iso8601.c:109:1"
+
+[iso8601_leap_year]
+Class="Function"
+Prototype="int iso8601_leap_year(int year);"
+SourceLocation="c:\work\src\shared\iso\iso8601.c:136:1"
+
+[iso8601_calculate_day_of_year]
+Class="Function"
+Prototype="int iso8601_calculate_day_of_year(int day, int month, int year);"
+SourceLocation="c:\work\src\shared\iso\iso8601.c:154:1"
+
+[iso8601_parse_day]
+Class="Function"
+Prototype="int iso8601_parse_day(const char *pDateStr, struct _SISO8601Date *pDate);"
+SourceLocation="c:\work\src\shared\iso\iso8601.c:186:1"
+

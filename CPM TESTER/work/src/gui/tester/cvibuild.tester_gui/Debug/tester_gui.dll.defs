@@ -1,0 +1,17 @@
+LIBRARY tester_gui
+
+EXPORTS
+OnFncTester
+OnFncStation6
+OnFncStation5
+OnFncStation4
+OnFncStation3
+OnFncStation2
+OnFncStation1
+Cb_ChangeTab
+gs_InfoData
+pluginGetAttribute
+pluginGetInfo
+pluginLeave
+pluginRun
+pluginInitialize

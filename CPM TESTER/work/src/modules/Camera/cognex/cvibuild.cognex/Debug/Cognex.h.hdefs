@@ -1,0 +1,48 @@
+[openTCPserver]
+Class="Function"
+Prototype="struct _SElException *openTCPserver(struct _Camera *me) __declspec(dllexport);"
+
+[Cognex_login]
+Class="Function"
+Prototype="struct _SElException *Cognex_login(struct _Camera *me) __declspec(dllexport);"
+
+[Cognex_disconnect]
+Class="Function"
+Prototype="struct _SElException *Cognex_disconnect(struct _Camera *me) __declspec(dllexport);"
+
+[Cognex_Trigger]
+Class="Function"
+Prototype="struct _SElException *Cognex_Trigger(struct _Camera *me) __declspec(dllexport);"
+
+[Cognex_Read]
+Class="Function"
+Prototype="struct _SElException *Cognex_Read(struct _Camera *me, char *data) __declspec(dllexport);"
+
+[Cognex_Online]
+Class="Function"
+Prototype="struct _SElException *Cognex_Online(struct _Camera *me) __declspec(dllexport);"
+
+[Cognex_Offline]
+Class="Function"
+Prototype="struct _SElException *Cognex_Offline(struct _Camera *me) __declspec(dllexport);"
+
+[Cognex_act_job]
+Class="Function"
+Prototype="struct _SElException *Cognex_act_job(struct _Camera *me, int *actual_job) __declspec(dllexport);"
+
+[Cognex_Job]
+Class="Function"
+Prototype="struct _SElException *Cognex_Job(struct _Camera *me, const char *JobID) __declspec(dllexport);"
+
+[Cognex_set_param]
+Class="Function"
+Prototype="struct _SElException *Cognex_set_param(struct _Camera *me, int phase) __declspec(dllexport);"
+
+[Cognex_set_number_boutton]
+Class="Function"
+Prototype="struct _SElException *Cognex_set_number_boutton(struct _Camera *me, int phase) __declspec(dllexport);"
+
+[Cognex_set_parameters]
+Class="Function"
+Prototype="struct _SElException *Cognex_set_parameters(struct _Camera *me, char *colonne, int phase) __declspec(dllexport);"
+

@@ -1,0 +1,2890 @@
+#include "C:\Program Files (x86)\National Instruments\Shared\MSDTRedistributables\SDKHeaderFiles\8.1\winver.h"
+
+
+2 24 "c:\\work\\src\\modules\\test\\EA210\\cvibuild.EA210\\Release\\manifest.xml"
+
+
+STRINGTABLE DISCARDABLE
+BEGIN
+  65535  ""
+END
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+ FILEFLAGS 0L
+ FILEOS VOS__WINDOWS32
+ FILETYPE VFT_DLL
+ FILESUBTYPE VFT_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "EA210 (Release x86)\0"
+            VALUE "FileVersion", "1.0\0"
+            VALUE "InternalName", "EA210\0"
+            VALUE "LegalCopyright", "Copyright ©  2021\0"
+            VALUE "OriginalFilename", "EA210.dll\0"
+            VALUE "ProductName", " EA210\0"
+            VALUE "ProductVersion", "1.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 0x4b0
+    END
+END
+
+test.uir UIRFileType "c:\\work\\src\\modules\\test\\test.uir"
+
+CVIDLLexports CVIDLLprototypes
+{
+   "struct _SElException *CameraGetdata(struct _STester *ptester, struct _Cameras *pcameras, int step, int timeout, char *data);"
+   "\n",
+   "struct _SElException *CameraSetParam(struct _Cameras *pcameras, int step, int timeout);"
+   "\n",
+   "struct _SElException *CameraSetRef(struct _Cameras *pcameras, int step, int timeout);"
+   "\n",
+   "struct _SElException *CheckAxisPosition(struct _axis *paxis, int axis, double position, double timeout);"
+   "\n",
+   "struct _SElException *CheckDirectory(const char *directory);"
+   "\n",
+   "struct _SElException *CheckLimitINT32(struct _STestParam *ppar, int process, int step, int index, int value);"
+   "\n",
+   "struct _SElException *CheckLimitREAL64(struct _STestParam *ppar, int process, int step, int index, double value);"
+   "\n",
+   "struct _SElException *CheckLimitSTRING(struct _STestParam *ppar, int process, int step, int index, char *value);"
+   "\n",
+   "struct _SElException *CheckLimitUINT32(struct _STestParam *ppar, int process, int step, int index, unsigned int value);"
+   "\n",
+   "struct _SElException *CloseTestPanel() __declspec(dllexport);"
+   "\n",
+   "struct _SElException *Close_Alim_keysight();"
+   "\n",
+   "struct _SElException *CreateNewLimit(struct _STestParam *ppar, int process, int step, int index, char *limit_str, const char *description);"
+   "\n",
+   "struct _SElException *CreateNewLimitEx(struct _STestParam *ppar, int process, int step, int index, char *min, char *max, const char *description);"
+   "\n",
+   "void Debug(char *message);"
+   "\n",
+   "int DllEntryPoint(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+   "\n",
+   "int DllMain(struct HINSTANCE__ *hinstDLL, unsigned long fdwReason, void *lpvReserved);"
+   "\n",
+   "struct _SElException *EA210_20_0_0_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_20_0_0_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_20_0_0_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_20_0_0_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_20_0_0_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_20_0_1_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_20_0_1_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_20_0_1_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_20_0_1_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_20_0_1_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_20_1_1_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_20_1_1_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_20_1_1_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_20_1_1_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_20_1_1_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_20_1_2_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_20_1_2_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_20_1_2_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_20_1_2_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_20_1_2_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_20_1_3_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_20_1_3_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_20_1_3_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_20_1_3_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_20_1_3_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_0_0_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_0_0_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_0_0_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_0_0_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_0_0_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_0_1_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_0_1_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_0_1_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_0_1_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_0_1_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_0_2_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_0_2_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_0_2_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_0_2_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_0_2_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_1_1_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_1_1_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_1_1_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_1_1_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_1_1_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_1_2_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_1_2_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_1_2_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_1_2_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_1_2_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_0_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_0_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_0_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_0_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_0_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_1_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_1_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_1_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_1_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_1_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_2_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_2_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_2_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_2_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_2_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_3_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_3_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_3_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_3_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_3_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_4_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_4_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_4_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_4_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_4_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_5_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_5_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_5_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_5_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_2_5_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_3_1_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_3_1_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_3_1_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_3_1_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_3_1_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_3_2_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_3_2_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_3_2_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_3_2_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_3_2_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_3_3_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_3_3_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_3_3_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_3_3_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_3_3_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_3_4_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_3_4_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_3_4_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_3_4_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_3_4_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_10_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_10_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_10_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_10_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_10_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_11_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_11_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_11_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_11_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_11_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_12_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_12_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_12_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_12_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_12_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_13_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_13_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_13_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_13_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_13_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_14_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_14_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_14_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_14_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_14_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_1_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_1_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_1_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_1_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_1_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_2_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_2_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_2_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_2_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_2_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_3_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_3_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_3_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_3_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_3_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_4_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_4_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_4_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_4_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_4_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_5_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_5_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_5_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_5_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_5_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_6_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_6_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_6_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_6_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_6_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_7_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_7_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_7_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_7_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_7_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_8_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_8_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_8_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_8_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_8_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_9_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_9_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_9_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_9_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_4_9_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_5_1_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_5_1_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_5_1_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_5_1_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_5_1_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_1_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_1_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_1_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_1_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_1_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_2_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_2_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_2_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_2_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_2_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_3_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_3_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_3_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_3_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_3_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_4_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_4_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_4_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_4_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_4_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_5_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_5_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_5_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_5_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_5_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_6_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_6_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_6_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_6_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_6_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_7_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_7_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_7_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_7_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_30_6_7_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_0_0_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_0_0_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_0_0_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_0_0_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_0_0_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_0_1_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_0_1_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_0_1_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_0_1_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_0_1_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_0_2_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_0_2_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_0_2_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_0_2_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_0_2_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_3_2_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_3_2_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_3_2_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_3_2_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_3_2_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_3_3_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_3_3_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_3_3_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_3_3_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_3_3_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_3_4_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_3_4_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_3_4_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_3_4_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_3_4_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_10_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_10_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_10_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_10_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_10_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_11_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_11_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_11_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_11_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_11_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_12_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_12_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_12_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_12_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_12_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_13_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_13_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_13_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_13_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_13_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_14_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_14_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_14_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_14_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_14_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_15_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_15_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_15_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_15_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_15_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_16_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_16_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_16_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_16_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_16_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_17_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_17_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_17_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_17_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_17_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_18_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_18_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_18_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_18_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_18_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_19_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_19_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_19_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_19_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_19_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_1_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_1_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_1_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_1_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_1_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_20_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_20_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_20_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_20_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_20_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_21_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_21_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_21_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_21_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_21_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_22_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_22_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_22_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_22_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_22_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_23_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_23_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_23_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_23_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_23_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_24_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_24_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_24_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_24_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_24_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_25_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_25_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_25_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_25_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_25_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_26_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_26_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_26_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_26_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_26_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_27_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_27_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_27_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_27_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_27_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_28_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_28_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_28_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_28_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_28_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_2_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_2_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_2_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_2_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_2_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_3_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_3_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_3_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_3_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_3_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_4_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_4_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_4_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_4_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_4_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_5_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_5_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_5_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_5_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_5_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_6_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_6_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_6_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_6_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_6_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_7_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_7_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_7_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_7_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_7_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_8_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_8_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_8_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_8_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_8_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_9_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_9_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_9_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_9_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_7_9_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_10_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_10_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_10_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_10_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_10_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_11_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_11_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_11_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_11_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_11_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_12_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_12_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_12_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_12_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_12_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_13_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_13_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_13_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_13_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_13_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_14_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_14_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_14_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_14_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_14_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_1_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_1_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_1_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_1_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_1_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_2_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_2_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_2_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_2_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_2_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_3_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_3_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_3_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_3_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_3_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_4_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_4_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_4_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_4_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_4_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_5_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_5_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_5_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_5_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_5_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_6_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_6_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_6_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_6_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_6_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_7_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_7_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_7_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_7_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_7_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_8_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_8_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_8_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_8_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_8_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_9_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_9_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_9_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_9_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_40_8_9_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_0_0_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_0_0_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_0_0_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_0_0_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_0_0_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_0_1_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_0_1_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_0_1_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_0_1_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_0_1_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_0_2_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_0_2_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_0_2_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_0_2_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_0_2_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_10_1_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_10_1_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_10_1_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_10_1_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_10_1_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_10_2_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_10_2_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_10_2_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_10_2_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_10_2_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_10_3_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_10_3_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_10_3_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_10_3_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_10_3_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_10_4_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_10_4_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_10_4_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_10_4_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_10_4_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_11_1_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_11_1_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_11_1_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_11_1_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_11_1_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_10_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_10_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_10_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_10_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_10_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_11_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_11_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_11_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_11_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_11_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_12_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_12_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_12_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_12_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_12_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_13_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_13_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_13_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_13_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_13_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_14_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_14_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_14_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_14_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_14_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_7_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_7_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_7_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_7_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_7_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_8_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_8_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_8_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_8_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_8_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_9_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_9_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_9_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_9_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_50_8_9_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_00_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_00_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_00_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_00_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_00_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_10_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_10_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_10_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_10_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_10_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_20_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_20_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_20_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_20_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_20_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_30_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_30_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_30_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_30_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_30_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_40_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_40_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_40_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_40_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_40_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_50_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_50_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_50_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_50_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_50_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_60_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_60_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_60_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_60_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_60_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_70_check(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_70_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_70_help(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_70_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *EA210_60_70_test(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "int ExtractXMLInformations(const char *pfile_xml, char *Reference, char *Serial, char *Result, char *date_time);"
+   "\n",
+   "int Fct_Save_Result(char *Reference, char *Serial, char *Result, char *date_time, char *mesures);"
+   "\n",
+   "int Fill_DBO_Asteel_Mesures(const char *pfile_xml, char *nom_mesure, char *mesure_value, char *mesure_min, char *mesure_max, char *mesure_result);"
+   "\n",
+   "int Fill_Log_Asteel_Mesures(const char *pfile_xml, char *mesures);"
+   "\n",
+   "struct _SElException *GetLimitConfiguration(struct _STestParam *ppar, int process, int step, int index, char buffer[], int bufferSize);"
+   "\n",
+   "struct _SElException *GetNewSerial(struct _SDBS *pdbs, int *counter);"
+   "\n",
+   "struct _SElException *GetPalettStatus(int palettID, int *status) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *GetResultREAL64formXMLString(struct _SELString *result, const char *path, double *value);"
+   "\n",
+   "struct _SElException *GetResultSTRINGformXMLString(struct _SELString *result, const char *path, char *buffer);"
+   "\n",
+   "int GetStationNumber(int station);"
+   "\n",
+   "struct _SElException *GetSubTest(struct _STestParam *ppar, int process, int step, char *subtest);"
+   "\n",
+   "struct _SElException *GetTestDescription(struct _STestParam *ppar, int process, int step, char *name, char *desc);"
+   "\n",
+   "struct _SElException *GetTestFunction(int process, int index, struct _STestListItem **pTest, int *test_count) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *GetTestResult(struct _STestParam *ppar, int *result);"
+   "\n",
+   "struct _SElException *GetTestSeqActive(int *SeqUsed) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *GetTestSeqFunction(int index, struct _STestSeq *pTestSeq, int *test_count) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *GetTestSeqStopFail(int *SeqStopFail) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *GetTestSequenceBarcode(struct _STestParam *ppar, char *barcode, unsigned int barcode_size);"
+   "\n",
+   "struct _SElException *IniTestPanel(const char *picture_left, const char *picture_right, int reset) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *Init_Alim_keysight();"
+   "\n",
+   "void InsertionMesures_DB(struct _STestParam *pTestParam, int failed);"
+   "\n",
+   "int LimitExist(struct _STestParam *ppar, int process, int step, int index);"
+   "\n",
+   "void LogAsteelFile(struct _STestParam *pTestParam, int failed);"
+   "\n",
+   "long MSXML_ActiveDOMDocumentIXMLDOMDocument(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_ActiveDOMFreeThreadedDocumentIXMLDOMDocument(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_ActiveIXMLDSOControl(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_ActiveIXMLDocument2(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_ActiveIXMLHttpRequest(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetname(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **attributeName);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetvalue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *attributeValue);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeSetvalue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT attributeValue);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMAttributecloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMAttributehasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMAttributereplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMAttributeselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMAttributetransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMAttributetransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **data);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetlength(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *dataLength);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionSetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionappendData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectioncloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectiondeleteData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionhasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectioninsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectioninsertData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionreplaceData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionsplitText(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, CAObjHandle *rightHandTextNode);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectionsubstringData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count, char **data);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectiontransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMCDATASectiontransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **data);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetlength(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *dataLength);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataSetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataappendData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDatacloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDatadeleteData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDatahasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDatainsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDatainsertData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDatareplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDatareplaceData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDataselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDatasubstringData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count, char **data);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDatatransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMCharacterDatatransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **data);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetlength(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *dataLength);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMCommentGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMCommentSetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMCommentSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMCommentSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMCommentSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMCommentSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMCommentappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMCommentappendData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMCommentcloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMCommentdeleteData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count);"
+   "\n",
+   "long MSXML_IXMLDOMCommenthasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMCommentinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMCommentinsertData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMCommentremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMCommentreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMCommentreplaceData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMCommentselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMCommentselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMCommentsubstringData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count, char **data);"
+   "\n",
+   "long MSXML_IXMLDOMCommenttransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMCommenttransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentcloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmenthasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmentselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmenttransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentFragmenttransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetasync(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isAsync);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetdoctype(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *documentType);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetdocumentElement(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMElement);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetimplementation(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *impl);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetparseError(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *errorObj);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetpreserveWhiteSpace(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isPreserving);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetreadyState(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *value);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetresolveExternals(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isResolving);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGeturl(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **urlString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetvalidateOnParse(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isValidating);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentSetByRefdocumentElement(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle DOMElement);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentSetasync(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short isAsync);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentSetondataavailable(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT newValue);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentSetonreadystatechange(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT newValue);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentSetontransformnode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT newValue);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentSetpreserveWhiteSpace(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short isPreserving);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentSetresolveExternals(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short isResolving);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentSetvalidateOnParse(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short isValidating);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetentities(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *entityMap);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetname(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **rootName);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetnotations(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *notationMap);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypecloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypehasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTyperemoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypereplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypeselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypetransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentTypetransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentabort(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentcloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentcreateAttribute(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *name, CAObjHandle *attribute);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentcreateCDATASection(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data, CAObjHandle *cdata);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentcreateComment(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data, CAObjHandle *comment);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentcreateDocumentFragment(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *docFrag);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentcreateElement(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *tagName, CAObjHandle *element);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentcreateEntityReference(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *name, CAObjHandle *entityRef);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentcreateNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT type, const char *name, const char *namespaceURI, CAObjHandle *node);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentcreateProcessingInstruction(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *target, const char *data, CAObjHandle *pi);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentcreateTextNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data, CAObjHandle *text);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentgetElementsByTagName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *tagName, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMDocumenthasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentload(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT xmlSource, short *isSuccessful);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentloadXML(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *bstrXML, short *isSuccessful);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentnodeFromID(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *idString, CAObjHandle *node);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentsave(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT destination);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMDocumentselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMDocumenttransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMDocumenttransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMElementGettagName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **tagName);"
+   "\n",
+   "long MSXML_IXMLDOMElementGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMElementGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMElementSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMElementSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMElementSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMElementSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMElementappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMElementcloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMElementgetAttribute(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *name, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMElementgetAttributeNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *name, CAObjHandle *attributeNode);"
+   "\n",
+   "long MSXML_IXMLDOMElementgetElementsByTagName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *tagName, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMElementhasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMElementinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMElementnormalize(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSXML_IXMLDOMElementremoveAttribute(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *name);"
+   "\n",
+   "long MSXML_IXMLDOMElementremoveAttributeNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle DOMAttribute, CAObjHandle *attributeNode);"
+   "\n",
+   "long MSXML_IXMLDOMElementremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMElementreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMElementselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMElementselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMElementsetAttribute(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *name, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMElementsetAttributeNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle DOMAttribute, CAObjHandle *attributeNode);"
+   "\n",
+   "long MSXML_IXMLDOMElementtransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMElementtransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetnotationName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetpublicId(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *publicId);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetsystemId(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *systemId);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMEntityGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferencecloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferencehasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferencereplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferenceselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferencetransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMEntityReferencetransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMEntitySetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMEntitySetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMEntitySetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMEntitySettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMEntityappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntitycloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMEntityhasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMEntityselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMEntityselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMEntitytransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMEntitytransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMImplementationhasFeature(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *feature, const char *version, short *hasFeature);"
+   "\n",
+   "long MSXML_IXMLDOMNamedNodeMapGet_newEnum(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct IUnknown **ppUnk);"
+   "\n",
+   "long MSXML_IXMLDOMNamedNodeMapGetitem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long index, CAObjHandle *listItem);"
+   "\n",
+   "long MSXML_IXMLDOMNamedNodeMapGetlength(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *listLength);"
+   "\n",
+   "long MSXML_IXMLDOMNamedNodeMapgetNamedItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *name, CAObjHandle *namedItem);"
+   "\n",
+   "long MSXML_IXMLDOMNamedNodeMapgetQualifiedItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *baseName, const char *namespaceURI, CAObjHandle *qualifiedItem);"
+   "\n",
+   "long MSXML_IXMLDOMNamedNodeMapnextNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextItem);"
+   "\n",
+   "long MSXML_IXMLDOMNamedNodeMapremoveNamedItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *name, CAObjHandle *namedItem);"
+   "\n",
+   "long MSXML_IXMLDOMNamedNodeMapremoveQualifiedItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *baseName, const char *namespaceURI, CAObjHandle *qualifiedItem);"
+   "\n",
+   "long MSXML_IXMLDOMNamedNodeMapreset(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSXML_IXMLDOMNamedNodeMapsetNamedItem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newItem, CAObjHandle *nameItem);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMNodeGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMNodeListGet_newEnum(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct IUnknown **ppUnk);"
+   "\n",
+   "long MSXML_IXMLDOMNodeListGetitem(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long index, CAObjHandle *listItem);"
+   "\n",
+   "long MSXML_IXMLDOMNodeListGetlength(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *listLength);"
+   "\n",
+   "long MSXML_IXMLDOMNodeListnextNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextItem);"
+   "\n",
+   "long MSXML_IXMLDOMNodeListreset(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSXML_IXMLDOMNodeSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMNodeSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMNodeSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMNodeSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMNodeappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMNodecloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMNodehasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMNodeinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMNoderemoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMNodereplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMNodeselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMNodeselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMNodetransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMNodetransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetpublicId(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *publicId);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetsystemId(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *systemId);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMNotationGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMNotationSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMNotationSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMNotationSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMNotationSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMNotationappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMNotationcloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMNotationhasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMNotationinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMNotationremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMNotationreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMNotationselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMNotationselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMNotationtransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMNotationtransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMParseErrorGeterrorCode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *errorCode);"
+   "\n",
+   "long MSXML_IXMLDOMParseErrorGetfilepos(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *filePosition);"
+   "\n",
+   "long MSXML_IXMLDOMParseErrorGetline(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *lineNumber);"
+   "\n",
+   "long MSXML_IXMLDOMParseErrorGetlinepos(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *linePosition);"
+   "\n",
+   "long MSXML_IXMLDOMParseErrorGetreason(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **reasonString);"
+   "\n",
+   "long MSXML_IXMLDOMParseErrorGetsrcText(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **sourceString);"
+   "\n",
+   "long MSXML_IXMLDOMParseErrorGeturl(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **urlString);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **value);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGettarget(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionSetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *value);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructioncloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionhasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructioninsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructionselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructiontransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMProcessingInstructiontransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **data);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetlength(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *dataLength);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXMLDOMTextGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXMLDOMTextGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMTextSetdata(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMTextSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXMLDOMTextSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXMLDOMTextSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXMLDOMTextSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXMLDOMTextappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMTextappendData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMTextcloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXMLDOMTextdeleteData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count);"
+   "\n",
+   "long MSXML_IXMLDOMTexthasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXMLDOMTextinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXMLDOMTextinsertData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMTextremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXMLDOMTextreplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXMLDOMTextreplaceData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count, const char *data);"
+   "\n",
+   "long MSXML_IXMLDOMTextselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXMLDOMTextselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXMLDOMTextsplitText(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, CAObjHandle *rightHandTextNode);"
+   "\n",
+   "long MSXML_IXMLDOMTextsubstringData(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long offset, long count, char **data);"
+   "\n",
+   "long MSXML_IXMLDOMTexttransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXMLDOMTexttransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXMLDSOControlGetJavaDSOCompatible(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *fJavaDSOCompatible);"
+   "\n",
+   "long MSXML_IXMLDSOControlGetXMLDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppDoc);"
+   "\n",
+   "long MSXML_IXMLDSOControlGetreadyState(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *state);"
+   "\n",
+   "long MSXML_IXMLDSOControlSetJavaDSOCompatible(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long fJavaDSOCompatible);"
+   "\n",
+   "long MSXML_IXMLDSOControlSetXMLDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle ppDoc);"
+   "\n",
+   "long MSXML_IXMLDocument2Getasync(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *pf);"
+   "\n",
+   "long MSXML_IXMLDocument2Getcharset(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+   "\n",
+   "long MSXML_IXMLDocument2Getdoctype(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+   "\n",
+   "long MSXML_IXMLDocument2GetdtdURL(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+   "\n",
+   "long MSXML_IXMLDocument2GetfileModifiedDate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+   "\n",
+   "long MSXML_IXMLDocument2GetfileSize(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+   "\n",
+   "long MSXML_IXMLDocument2GetfileUpdatedDate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+   "\n",
+   "long MSXML_IXMLDocument2GetmimeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+   "\n",
+   "long MSXML_IXMLDocument2GetreadyState(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *pl);"
+   "\n",
+   "long MSXML_IXMLDocument2Getroot(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *p);"
+   "\n",
+   "long MSXML_IXMLDocument2Geturl(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+   "\n",
+   "long MSXML_IXMLDocument2Getversion(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **p);"
+   "\n",
+   "long MSXML_IXMLDocument2Setasync(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short pf);"
+   "\n",
+   "long MSXML_IXMLDocument2Setcharset(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *p);"
+   "\n",
+   "long MSXML_IXMLDocument2Seturl(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *p);"
+   "\n",
+   "long MSXML_IXMLDocument2createElement(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT vType, struct tagVARIANT var1, CAObjHandle *ppElem);"
+   "\n",
+   "long MSXML_IXMLHttpRequestGetreadyState(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *plState);"
+   "\n",
+   "long MSXML_IXMLHttpRequestGetresponseBody(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvarBody);"
+   "\n",
+   "long MSXML_IXMLHttpRequestGetresponseStream(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *pvarBody);"
+   "\n",
+   "long MSXML_IXMLHttpRequestGetresponseText(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **pbstrBody);"
+   "\n",
+   "long MSXML_IXMLHttpRequestGetresponseXML(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *ppBody);"
+   "\n",
+   "long MSXML_IXMLHttpRequestGetstatus(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *plStatus);"
+   "\n",
+   "long MSXML_IXMLHttpRequestGetstatusText(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **pbstrStatus);"
+   "\n",
+   "long MSXML_IXMLHttpRequestSetonreadystatechange(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newValue);"
+   "\n",
+   "long MSXML_IXMLHttpRequestabort(CAObjHandle objectHandle, struct ERRORINFO *errorInfo);"
+   "\n",
+   "long MSXML_IXMLHttpRequestgetAllResponseHeaders(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **pbstrHeaders);"
+   "\n",
+   "long MSXML_IXMLHttpRequestgetResponseHeader(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *bstrHeader, char **pbstrValue);"
+   "\n",
+   "long MSXML_IXMLHttpRequestopen(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *bstrMethod, const char *bstrUrl, struct tagVARIANT varAsync, struct tagVARIANT bstrUser, struct tagVARIANT bstrPassword);"
+   "\n",
+   "long MSXML_IXMLHttpRequestsend(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT varBody);"
+   "\n",
+   "long MSXML_IXMLHttpRequestsetRequestHeader(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *bstrHeader, const char *bstrValue);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetattributes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *attributeMap);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetbaseName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nameString);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetchildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *childList);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *dataTypeName);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetdefinition(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *definitionNode);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetfirstChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *firstChild);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetlastChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *lastChild);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetnamespaceURI(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **namespaceURI);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetnextSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *nextSibling);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetnodeName(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **name);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetnodeType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long *type);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetnodeTypeString(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **nodeType);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *typedValue);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT *value);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetownerDocument(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *DOMDocument);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetparentNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *parent);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetparsed(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isParsed);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetprefix(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **prefixString);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetpreviousSibling(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle *previousSibling);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetspecified(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *isSpecified);"
+   "\n",
+   "long MSXML_IXTLRuntimeGettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **text);"
+   "\n",
+   "long MSXML_IXTLRuntimeGetxml(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, char **xmlString);"
+   "\n",
+   "long MSXML_IXTLRuntimeSetdataType(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *dataTypeName);"
+   "\n",
+   "long MSXML_IXTLRuntimeSetnodeTypedValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT typedValue);"
+   "\n",
+   "long MSXML_IXTLRuntimeSetnodeValue(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT value);"
+   "\n",
+   "long MSXML_IXTLRuntimeSettext(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *text);"
+   "\n",
+   "long MSXML_IXTLRuntimeabsoluteChildNumber(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle pNode, long *pNumber);"
+   "\n",
+   "long MSXML_IXTLRuntimeancestorChildNumber(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *bstrNodeName, CAObjHandle pNode, long *pNumber);"
+   "\n",
+   "long MSXML_IXTLRuntimeappendChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXTLRuntimechildNumber(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle pNode, long *pNumber);"
+   "\n",
+   "long MSXML_IXTLRuntimecloneNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short deep, CAObjHandle *cloneRoot);"
+   "\n",
+   "long MSXML_IXTLRuntimedepth(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle pNode, long *pDepth);"
+   "\n",
+   "long MSXML_IXTLRuntimeformatDate(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT varDate, const char *bstrFormat, struct tagVARIANT varDestLocale, char **pbstrFormattedString);"
+   "\n",
+   "long MSXML_IXTLRuntimeformatIndex(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, long lIndex, const char *bstrFormat, char **pbstrFormattedString);"
+   "\n",
+   "long MSXML_IXTLRuntimeformatNumber(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, double dblNumber, const char *bstrFormat, char **pbstrFormattedString);"
+   "\n",
+   "long MSXML_IXTLRuntimeformatTime(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, struct tagVARIANT varTime, const char *bstrFormat, struct tagVARIANT varDestLocale, char **pbstrFormattedString);"
+   "\n",
+   "long MSXML_IXTLRuntimehasChildNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, short *hasChild);"
+   "\n",
+   "long MSXML_IXTLRuntimeinsertBefore(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, struct tagVARIANT refChild, CAObjHandle *outNewChild);"
+   "\n",
+   "long MSXML_IXTLRuntimeremoveChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle childNode, CAObjHandle *oldChild);"
+   "\n",
+   "long MSXML_IXTLRuntimereplaceChild(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle newChild, CAObjHandle oldChild, CAObjHandle *outOldChild);"
+   "\n",
+   "long MSXML_IXTLRuntimeselectNodes(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultList);"
+   "\n",
+   "long MSXML_IXTLRuntimeselectSingleNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, const char *queryString, CAObjHandle *resultNode);"
+   "\n",
+   "long MSXML_IXTLRuntimetransformNode(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, char **xmlString);"
+   "\n",
+   "long MSXML_IXTLRuntimetransformNodeToObject(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle stylesheet, struct tagVARIANT outputObject);"
+   "\n",
+   "long MSXML_IXTLRuntimeuniqueID(CAObjHandle objectHandle, struct ERRORINFO *errorInfo, CAObjHandle pNode, long *pID);"
+   "\n",
+   "long MSXML_NewDOMDocumentIXMLDOMDocument(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_NewDOMFreeThreadedDocumentIXMLDOMDocument(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_NewIXMLDSOControl(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_NewIXMLDocument2(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_NewIXMLHttpRequest(const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_OpenDOMDocumentIXMLDOMDocument(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_OpenDOMFreeThreadedDocumentIXMLDOMDocument(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_OpenIXMLDSOControl(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_OpenIXMLDocument2(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_OpenIXMLHttpRequest(const char *fileName, const char *server, int supportMultithreading, unsigned long locale, int reserved, CAObjHandle *objectHandle);"
+   "\n",
+   "long MSXML_XMLDOMDocumentEventsRegOnondataavailable(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "long MSXML_XMLDOMDocumentEventsRegOnonreadystatechange(CAObjHandle serverObject, long (*callbackFunction)(int, void *, long *), void *callbackData, int enableCallbacks, int *callbackId);"
+   "\n",
+   "struct _SElException *MoveAxis(struct _axis *paxis, int axis, double target_position, double speed);"
+   "\n",
+   "int MoveExistingDataFiles(char *vp_char_PathName);"
+   "\n",
+   "int OnButton(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnDisplay(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnFnc10(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnFnc20(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnFnc30(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnFnc40(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnFnc50(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnFnc60(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnHidePanel(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnTest(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnTimerWS20(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnTimerWS30(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnTimerWS40(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnTimerWS50(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "int OnTimerWS60(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+   "\n",
+   "struct _SElException *PLUGIN_SHUTDOWN_NAME_CODE(struct _SPluginArgs *a_pPluginArgs) __declspec(dllexport);"
+   "\n",
+   "void PostDeferredDisplayPanel(void *callbackData);"
+   "\n",
+   "void PostDeferredDisplayPanelStation(void *callbackData);"
+   "\n",
+   "void PostDeferredHidePanel(void *callbackData);"
+   "\n",
+   "void PostDeferredHidePanelStation(void *callbackData);"
+   "\n",
+   "struct _SElException *QueryParameterInt32(struct _STestParam *ppar, int process, int step, const char *name, int *pValue);"
+   "\n",
+   "struct _SElException *QueryParameterReal64(struct _STestParam *ppar, int process, int step, const char *name, double *pValue);"
+   "\n",
+   "struct _SElException *QueryParameterString(struct _STestParam *ppar, int process, int step, const char *name, char buffer[], int bufferSize);"
+   "\n",
+   "struct _SElException *QueryParameterUInt32(struct _STestParam *ppar, int process, int step, const char *name, unsigned int *pValue);"
+   "\n",
+   "void RunDllUI() __declspec(dllexport);"
+   "\n",
+   "struct _SElException *STATION_10_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *STATION_10_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *STATION_10_wait(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *STATION_20_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *STATION_20_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *STATION_20_wait(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *STATION_30_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *STATION_30_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *STATION_30_wait(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *STATION_40_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *STATION_40_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *STATION_40_wait(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *STATION_50_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *STATION_50_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *STATION_50_wait(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *STATION_60_cleanup(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *STATION_60_init(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *STATION_60_wait(void *pTID, int mode) __declspec(dllexport);"
+   "\n",
+   "void SaveGraphPNG(int PanelHandle, int ControleHandle, char *PathNamePNG);"
+   "\n",
+   "void SaveXmlBarcode(struct _STestParam *pTestParam);"
+   "\n",
+   "void SaveXmlResultFile(struct _STestParam *pTestParam, int failed);"
+   "\n",
+   "void SaveXmlResultFileFail(struct _STestParam *pTestParam);"
+   "\n",
+   "void SaveXmlResultFile_Manual(struct _STestParam *pTestParam, int station, int failed);"
+   "\n",
+   "void SetAnnotationAttribute_ALL(int Panel_Handle, int Control_ID, int Annotation_Index);"
+   "\n",
+   "struct _SElException *SetPanelStationStatus(int station, int status) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *SetPanelWarning(int control, int status) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *SetParameterInt32(struct _STestParam *ppar, int process, int step, const char *name, int value);"
+   "\n",
+   "struct _SElException *SetParameterReal64(struct _STestParam *ppar, int process, int step, const char *name, double value);"
+   "\n",
+   "struct _SElException *SetParameterString(struct _STestParam *ppar, int process, int step, const char *name, const char *buffer);"
+   "\n",
+   "struct _SElException *SetParameterUInt32(struct _STestParam *ppar, int process, int step, const char *name, unsigned int value);"
+   "\n",
+   "int SetPath(char *vp_char_PathName, int vp_int_Mode);"
+   "\n",
+   "struct _SElException *SetSubTestDuration(struct _STestParam *ppar, int process, int step, int index, double duration);"
+   "\n",
+   "struct _SElException *SetTestDuration(struct _STestParam *ppar, int process, int step, double duration);"
+   "\n",
+   "struct _SElException *SetTestPanelDescription(int control, const char *description) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *SetTestPanelFault(int station, int station_origin, char *test_description, int status) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *SetTestPanelMode(int mode) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *SetTestPanelReferences(char *RefValeo, char *RefCustomer) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *SetTestPanelTime(int station, int time) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *SetTestResult(struct _STestParam *ppar, int process, int step, int index, struct _SElException *pException);"
+   "\n",
+   "struct _SElException *SetTestSequenceDuration(struct _STestParam *ppar, int mode, double duration);"
+   "\n",
+   "struct _SElException *SetTestSequenceResult(struct _STestParam *ppar, int mode, struct _SElException *pException);"
+   "\n",
+   "struct _SElException *SetTestSequenceTime(struct _STestParam *ppar, double duration);"
+   "\n",
+   "struct _SElException *SetTestSequenceValue(struct _STestParam *ppar, int mode, const char *name, const char *value);"
+   "\n",
+   "struct _SElException *SetTestUsed(struct _STestParam *ppar, int process, int step);"
+   "\n",
+   "struct _SElException *SetTestValue(struct _STestParam *ppar, int process, int step, const char *name, const char *value);"
+   "\n",
+   "struct _SElException *ThreadStart(unsigned long (*pThreadFnc)(void *) __attribute__((stdcall)), void *pData, HANDLE *hThread, HANDLE *hStopEvent);"
+   "\n",
+   "struct _SElException *ThreadStatus(HANDLE hThread, unsigned int timeout, int *pStatus);"
+   "\n",
+   "struct _SElException *ThreadStop(HANDLE *hThread, HANDLE *hStopEvent);"
+   "\n",
+   "unsigned long Thread_Test(void *param);"
+   "\n",
+   "int Write_Traca_MMS_NOK(int Station, struct _STestParam *pTestParam);"
+   "\n",
+   "int compare(const void *a, const void *b);"
+   "\n",
+   "struct _SElException *eleventdata_delete(struct _SElEventData **pEventData);"
+   "\n",
+   "struct _SElException *eleventdata_new(struct _SElEventData **pEventData);"
+   "\n",
+   "void elexception_delete(struct _SElException **pException);"
+   "\n",
+   "void elexception_log_set(void (*fn_log)(struct _SElException *));"
+   "\n",
+   "struct _SElException *elexception_new(int errorCode, const char *messsage, const char *file, long line);"
+   "\n",
+   "struct _SElException *elstring_delete(struct _SELString **pString);"
+   "\n",
+   "struct _SElException *elstring_new(const char *pStr, struct _SELString **pString);"
+   "\n",
+   "void excdisplay(struct _SElException *pException);"
+   "\n",
+   "void excdispstr(struct _SElException *pException, char *str, int str_size);"
+   "\n",
+   "struct _SElException *pluginGetAttribute(unsigned int attrID, unsigned int size, void *value) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *pluginGetInfo(struct _SPluginInfo **a_pInfo) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *pluginInitialize(struct _SPluginArgs *a_pPluginArgs) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *pluginLeave(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
+   "\n",
+   "struct _SElException *pluginRun(struct _SPluginArgs *a_pPluginArgs, const char *uuid) __declspec(dllexport);"
+   "\n",
+   "int spi_Fin_Fichier(int vp_PassFail, int *pp_FileHandle);"
+   "\n",
+   "int spi_OuverturePlusEnteteFichier(char tp_FileName[260], char *Reference, char *Serial, char *date_time, int *pp_FileHandle);"
+   "\n",
+   "void string2hexString(char *input, char *output);"
+   "\n",
+   "struct _SElException *test_delete(struct _STest **pTest);"
+   "\n",
+   "struct _SElException *test_new(struct _STest **pTest);"
+   "\n",
+   "struct _SElException *testseq_delete(struct _STestSequence **pTestSeq);"
+   "\n",
+   "struct _SElException *testseq_new(struct _STestSequence **pTestSequence);"
+   "\n",
+   "\0"
+}

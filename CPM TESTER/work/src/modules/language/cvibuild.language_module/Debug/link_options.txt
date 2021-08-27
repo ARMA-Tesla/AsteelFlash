@@ -1,0 +1,64 @@
+-nologo
+-out:c:\work\src\modules\language\cvibuild.language_module\Debug\language.dll
+-def:c:\work\src\modules\language\cvibuild.language_module\Debug\language.dll.defs
+-implib:c:\work\src\modules\language\cvibuild.language_module\Debug\language.lib
+-ignoreexports
+-dependenciesMapFile:c:\work\src\modules\language\cvibuild.language_module\Debug\dependencies.lnk.in
+-embedSourceInfo
+-indefprot:c:\work\src\modules\language\cvibuild.language_module\Debug\Exception.obj.cvidefprots
+-indefprot:c:\work\src\modules\language\cvibuild.language_module\Debug\lang_support.obj.cvidefprots
+-indefprot:c:\work\src\modules\language\cvibuild.language_module\Debug\language_module.obj.cvidefprots
+-arch:x86
+-timestamp
+-debug:2
+-loadextmod
+-project:c:\work\src\modules\language\language_module.prj
+-res:c:\work\src\modules\language\cvibuild.language_module\Debug\resources.res
+-entry:_CVIDllMainStartupCodeForDebugging@12
+-base:0x400000
+-linked:c:\work\src\modules\language\cvibuild.language_module\Debug\linkersummary.txt
+-dlldeps:c:\work\src\modules\language\cvibuild.language_module\Debug\dlldependencies.txt
+-licensing:c:\work\src\modules\language\cvibuild.language_module\Debug\linkerlicensing.txt
+-browsedeps:c:\work\src\modules\language\cvibuild.language_module\Debug\moduledependencies.txt
+-stackreserve:131072
+-stackcommit:4096
+-in:c:\work\src\modules\language\cvibuild.language_module\Debug\Exception.obj
+-in:c:\work\src\modules\language\cvibuild.language_module\Debug\lang_support.obj
+-in:c:\work\src\modules\language\cvibuild.language_module\Debug\language_module.obj
+-more:c:\program files\national instruments\cvi2019\bin\msvc\cvistart.lib
+-more:c:\program files\national instruments\cvi2019\bin\msvc\cvi.lib
+-more:c:\Program Files\National Instruments\CVI2019\bin\msvc\advanlys.lib
+-more:C:\Program Files\Windows Kits\8.1\Lib\winv6.3\um\x86\advapi32.lib
+-more:c:\Program Files\National Instruments\CVI2019\toolslib\toolbox\msvc\asynctmr.obj
+-more:C:\Program Files\Windows Kits\8.1\Lib\winv6.3\um\x86\bufferoverflowu.lib
+-more:c:\Program Files\National Instruments\Shared\CVI\Bin\msvc\cvi_db.lib
+-more:c:\Program Files\National Instruments\CVI2019\bin\msvc\cviauto.lib
+-more:c:\Program Files\National Instruments\CVI2019\bin\msvc\cvidotnet.lib
+-more:c:\Program Files\National Instruments\CVI2019\bin\msvc\cvinetstreams.lib
+-more:c:\Program Files\National Instruments\CVI2019\bin\msvc\cvinetv.lib
+-more:c:\Program Files\National Instruments\CVI2019\bin\msvc\cvintwrk.lib
+-more:c:\Program Files\National Instruments\CVI2019\bin\msvc\cvitdms.lib
+-more:c:\Program Files\National Instruments\Shared\CVI\Bin\FlexMotn.lib
+-more:C:\Program Files\Windows Kits\8.1\Lib\winv6.3\um\x86\gdi32.lib
+-more:c:\Program Files\National Instruments\CVI2019\bin\msvc\gpib.lib
+-more:c:\Program Files\National Instruments\Shared\CVI\toolslib\custctrl\msvc\ImageControl.obj
+-more:c:\Program Files\National Instruments\Shared\CVI\Bin\msvc\imaqio.lib
+-more:C:\Program Files\Windows Kits\8.1\Lib\winv6.3\um\x86\kernel32.lib
+-more:c:\Program Files\National Instruments\Shared\CVI\Bin\msvc\Modt.lib
+-more:c:\Program Files\National Instruments\Shared\CVI\Bin\msvc\nican.lib
+-more:c:\Program Files\National Instruments\Shared\CVI\Bin\msvc\NIDAQmx.lib
+-more:c:\Program Files\National Instruments\Shared\CVI\Bin\msvc\niimaq.lib
+-more:c:\Program Files\National Instruments\Shared\CVI\Bin\msvc\niimaqdx.lib
+-more:c:\Program Files\National Instruments\Shared\CVI\Bin\msvc\nisyscfg.lib
+-more:c:\Program Files\National Instruments\Shared\CVI\Bin\msvc\nivision.lib
+-more:c:\Program Files\National Instruments\CVI2019\bin\msvc\nivxi.lib
+-more:c:\Program Files\National Instruments\Shared\CVI\Bin\msvc\nixnet.lib
+-more:c:\Program Files\National Instruments\CVI2019\bin\msvc\omp.lib
+-more:c:\Program Files\National Instruments\Shared\CVI\Bin\msvc\pid.lib
+-more:c:\Program Files\National Instruments\Shared\CVI\Bin\msvc\smt.lib
+-more:c:\Program Files\National Instruments\Shared\CVI\Bin\msvc\SPT.lib
+-more:c:\Program Files\National Instruments\CVI2019\toolslib\toolbox\msvc\toolbox.obj
+-more:C:\Program Files\Windows Kits\8.1\Lib\winv6.3\um\x86\user32.lib
+-more:C:\Program Files\Windows Kits\8.1\Lib\winv6.3\um\x86\uuid.lib
+-more:c:\Program Files\National Instruments\Shared\CVI\Bin\msvc\visa.lib
+-more:C:\Program Files\Windows Kits\8.1\Lib\winv6.3\um\x86\winmm.lib

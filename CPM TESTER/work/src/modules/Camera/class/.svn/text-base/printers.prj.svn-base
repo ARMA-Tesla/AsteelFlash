@@ -1,0 +1,179 @@
+[Project Header]
+Version = 810
+Pathname = "/c/Work/ELCOM/Valeo/UTSystem/src/modules/printer/printers.prj"
+CVI Dir = "/c/program files/national instruments/cvi81"
+IVI Standard Root Dir = "/C/Program Files/IVI"
+VXIplug&play Framework Dir = "/C/VXIPNP/winnt"
+Number of Files = 6
+Target Type = "Dynamic Link Library"
+Flags = 16
+
+[File 0001]
+File Type = "CSource"
+Res Id = 1
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../../shared/exception/Exception.c"
+Path = "/c/Work/ELCOM/Valeo/UTSystem/src/shared/exception/Exception.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0002]
+File Type = "Include"
+Res Id = 2
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "../../shared/modules/module.h"
+Path = "/c/Work/ELCOM/Valeo/UTSystem/src/shared/modules/module.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0003]
+File Type = "Function Panel"
+Res Id = 3
+Path Is Rel = True
+Path Rel To = "CVI"
+Path Rel Path = "toolslib/toolbox/msxmldom.fp"
+Path = "/c/program files/national instruments/cvi81/toolslib/toolbox/msxmldom.fp"
+Exclude = False
+Project Flags = 0
+Folder = "Instrument Files"
+
+[File 0004]
+File Type = "CSource"
+Res Id = 4
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "printers.c"
+Path = "/c/Work/ELCOM/Valeo/UTSystem/src/modules/printer/printers.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[File 0005]
+File Type = "Include"
+Res Id = 5
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "printers.h"
+Path = "/c/Work/ELCOM/Valeo/UTSystem/src/modules/printer/printers.h"
+Exclude = False
+Project Flags = 0
+Folder = "Include Files"
+
+[File 0006]
+File Type = "CSource"
+Res Id = 6
+Path Is Rel = True
+Path Rel To = "Project"
+Path Rel Path = "printers_labels_module.c"
+Path = "/c/Work/ELCOM/Valeo/UTSystem/src/modules/printer/printers_labels_module.c"
+Exclude = False
+Compile Into Object File = False
+Project Flags = 0
+Folder = "Source Files"
+
+[Folders]
+User Interface Files Folder Not Added Yet = True
+Folder 0 = "Include Files"
+Folder 1 = "Source Files"
+Folder 2 = "Instrument Files"
+
+[Compiler Options]
+Default Calling Convention = "cdecl"
+Require Prototypes = True
+Require Return Values = True
+Enable Pointer Mismatch Warning = False
+Enable Unreachable Code Warning = False
+Enable Unreferenced Identifiers Warning = False
+Enable Assignment In Conditional Warning = False
+O Option Compatible With 5.0 = False
+Uninitialized Locals Compile Warning = "Conservative"
+
+[Run Options]
+Stack Size = 250000
+Image Base Address = 268435456
+
+[Compiler Defines]
+Compiler Defines Line0001 = "/DWIN32_LEAN_AND_MEAN /D__NO_VAN__ /D__NO_CAN__ /D__NO_VLINE__ /D__TESTER_FIAT__"
+Compiler Defines Line0002 = " /DPACKAGE=\\\"FIATMecaGUI\\\""
+
+[Include Paths]
+Include Path 1 Is Rel = False
+Include Path 1 = "/c/Work/ELCOM/Valeo/UTSystem/src/shared/exception"
+Include Path 2 Is Rel = False
+Include Path 2 = "/c/Work/ELCOM/Valeo/UTSystem/include"
+Include Path 3 Is Rel = False
+Include Path 3 = "/c/Work/ELCOM/Valeo/UTSystem/src/shared"
+
+[Create Executable]
+Executable File_Debug Is Rel = True
+Executable File_Debug Rel To = "Project"
+Executable File_Debug Rel Path = "printers.dll"
+Executable File_Debug = "/c/Work/ELCOM/Valeo/UTSystem/src/modules/printer/printers.dll"
+Executable File_Release Is Rel = True
+Executable File_Release Rel To = "Project"
+Executable File_Release Rel Path = "printers.dll"
+Executable File_Release = "/c/Work/ELCOM/Valeo/UTSystem/src/modules/printer/printers.dll"
+Icon File Is Rel = False
+Icon File = ""
+Application Title = ""
+Numeric File Version = "1,0,0,0"
+Numeric Prod Version = "1,0,0,0"
+Comments = ""
+Company Name = "ELCOM, a.s."
+File Description = "Printers Module"
+File Version = "1.0"
+Legal Copyright = "Copyright © ELCOM, a.s., 2007"
+Legal Trademarks = ""
+Private Build = ""
+Product Name = "ELCOM, a.s. Printers Module"
+Product Version = "1.0"
+Special Build = ""
+DLL Exports = "Include File Symbols"
+Export File1 = "module.h"
+DLL Import Library Choice = "Gen Lib For Current Mode"
+Use IVI Subdirectories for Import Libraries = False
+Use VXIPNP Subdirectories for Import Libraries = False
+Use Dflt Import Lib Base Name = True
+Where to Copy DLL = "Do not copy"
+Add Type Lib To DLL = False
+Include Type Lib Help Links = False
+Type Lib FP File Is Rel = False
+Type Lib FP File = ""
+Type Lib Guid = ""
+Runtime Support = "Full Runtime Support"
+Instrument Driver Support Only = False
+Embed Project .UIRs = False
+Generate Map File = False
+
+[External Compiler Support]
+UIR Callbacks File Option = 0
+Using LoadExternalModule = False
+Create Project Symbols File = True
+UIR Callbacks Obj File Is Rel = False
+UIR Callbacks Obj File = ""
+Project Symbols H File Is Rel = False
+Project Symbols H File = ""
+Project Symbols Obj File Is Rel = False
+Project Symbols Obj File = ""
+
+[ActiveX Server Options]
+Specification File Is Rel = False
+Specification File = ""
+Source File Is Rel = False
+Source File = ""
+Include File Is Rel = False
+Include File = ""
+IDL File Is Rel = False
+IDL File = ""
+Register ActiveX Server = False
+
+[tpcSection]
+tpcEnabled = 0
+tpcOverrideEnvironment = 0
+

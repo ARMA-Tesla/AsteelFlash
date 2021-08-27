@@ -1,0 +1,50 @@
+[Connect]
+Class="Function"
+Prototype="struct _SElException *Connect(struct _Dielectrimeter *me) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\dielectrimeter\RSPRO\RSPRO.c:17:1"
+
+[Disconnect]
+Class="Function"
+Prototype="struct _SElException *Disconnect(struct _Dielectrimeter *me) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\dielectrimeter\RSPRO\RSPRO.c:32:1"
+
+[Write]
+Class="Function"
+Prototype="struct _SElException *Write(struct _Dielectrimeter *me, const char *command) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\dielectrimeter\RSPRO\RSPRO.c:44:1"
+
+[Read]
+Class="Function"
+Prototype="struct _SElException *Read(struct _Dielectrimeter *me, const char *read) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\dielectrimeter\RSPRO\RSPRO.c:56:1"
+
+[SetModeManual]
+Class="Function"
+Prototype="struct _SElException *SetModeManual(struct _Dielectrimeter *me) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\dielectrimeter\RSPRO\RSPRO.c:70:1"
+
+[SetStep]
+Class="Function"
+Prototype="struct _SElException *SetStep(struct _Dielectrimeter *me, int step) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\dielectrimeter\RSPRO\RSPRO.c:98:1"
+
+[SetOutput]
+Class="Function"
+Prototype="struct _SElException *SetOutput(struct _Dielectrimeter *me, int output) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\dielectrimeter\RSPRO\RSPRO.c:126:1"
+
+[TestResult]
+Class="Function"
+Prototype="struct _SElException *TestResult(struct _Dielectrimeter *me, int *result, double *voltage_kv, double *current_mA) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\dielectrimeter\RSPRO\RSPRO.c:148:1"
+
+[SystemError]
+Class="Function"
+Prototype="struct _SElException *SystemError(struct _Dielectrimeter *me, char *error) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\dielectrimeter\RSPRO\RSPRO.c:190:1"
+
+[ClearError]
+Class="Function"
+Prototype="struct _SElException *ClearError(struct _Dielectrimeter *me) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\dielectrimeter\RSPRO\RSPRO.c:211:1"
+

@@ -1,0 +1,8 @@
+[OnCalDisplay]
+Class="Function"
+Prototype="int OnCalDisplay(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+
+[OnMonthChange]
+Class="Function"
+Prototype="int OnMonthChange(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+

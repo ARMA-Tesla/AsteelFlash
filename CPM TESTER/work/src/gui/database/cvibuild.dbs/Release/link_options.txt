@@ -1,0 +1,78 @@
+-nologo
+-out:c:\work\src\gui\database\cvibuild.dbs\Release\database.dll
+-def:c:\work\src\gui\database\cvibuild.dbs\Release\database.dll.defs
+-implib:c:\work\src\gui\database\cvibuild.dbs\Release\database.lib
+-ignoreexports
+-dependenciesMapFile:c:\work\src\gui\database\cvibuild.dbs\Release\dependencies.lnk.in
+-arch:x86
+-timestamp
+-loadextmod
+-res:c:\work\src\gui\database\cvibuild.dbs\Release\resources.res
+-entry:_CVIDllMainStartupCode@12
+-base:0x10000000
+-linked:c:\work\src\gui\database\cvibuild.dbs\Release\linkersummary.txt
+-dlldeps:c:\work\src\gui\database\cvibuild.dbs\Release\dlldependencies.txt
+-licensing:c:\work\src\gui\database\cvibuild.dbs\Release\linkerlicensing.txt
+-browsedeps:c:\work\src\gui\database\cvibuild.dbs\Release\moduledependencies.txt
+-stackreserve:1048576
+-stackcommit:4096
+-in:c:\work\src\gui\database\cvibuild.dbs\Release\dbs_gui.obj
+-in:c:\work\src\gui\database\cvibuild.dbs\Release\dbs_history.obj
+-in:c:\work\src\gui\database\cvibuild.dbs\Release\dbs_info.obj
+-in:c:\work\src\gui\database\cvibuild.dbs\Release\dbs_process.obj
+-in:c:\work\src\gui\database\cvibuild.dbs\Release\dbs_product.obj
+-in:c:\work\src\gui\database\cvibuild.dbs\Release\dbs_product_edit.obj
+-in:c:\work\src\gui\database\cvibuild.dbs\Release\dbs_product_master_edit.obj
+-in:c:\work\src\gui\database\cvibuild.dbs\Release\dbs_product_param.obj
+-in:c:\work\src\gui\database\cvibuild.dbs\Release\dbs_product_param_edit.obj
+-in:c:\work\src\gui\database\cvibuild.dbs\Release\dbs_test.obj
+-in:c:\work\src\gui\database\cvibuild.dbs\Release\dbs_test_edit.obj
+-in:c:\work\src\gui\database\cvibuild.dbs\Release\dbs_test_param.obj
+-in:c:\work\src\gui\database\cvibuild.dbs\Release\dbs_test_param_edit.obj
+-in:c:\work\src\gui\database\cvibuild.dbs\Release\dbs_user.obj
+-in:c:\work\src\gui\database\cvibuild.dbs\Release\dbs_user_edit.obj
+-in:c:\work\src\gui\database\cvibuild.dbs\Release\el_plugininfo.obj
+-in:c:\work\src\gui\database\cvibuild.dbs\Release\elstring.obj
+-in:c:\work\src\gui\database\cvibuild.dbs\Release\eltimer.obj
+-in:c:\work\src\gui\database\cvibuild.dbs\Release\Exception.obj
+-in:c:\work\src\gui\database\cvibuild.dbs\Release\language.obj
+-in:c:\work\src\shared\msxml\MSXML2.obj
+-in:c:\work\src\gui\database\cvibuild.dbs\Release\msxmldom.obj
+-in:c:\work\src\gui\database\cvibuild.dbs\Release\ring_control.obj
+-more:c:\program files (x86)\national instruments\cvi2019\bin\msvc\cvistart.lib
+-more:c:\program files (x86)\national instruments\cvi2019\bin\msvc\cvi.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\advanlys.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\advapi32.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\toolslib\toolbox\msvc\asynctmr.obj
+-more:c:\work\src\gui\database\cvibuild.dbs\Release\bklib2.obj
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\bufferoverflowu.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\cvi_db.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\cviauto.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\cvidotnet.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\cvinetstreams.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\cvinetv.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\cvintwrk.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\cvitdms.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\gdi32.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\gpib.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\toolslib\custctrl\msvc\ImageControl.obj
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\ivi.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\kernel32.lib
+-more:c:\work\src\gui\database\cvibuild.dbs\Release\MSComCtl2.obj
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\NIDAQmx.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\niimaq.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\niimaqdx.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nise.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\niseCfg.obj
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nisyscfg.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nivision.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\nivxi.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\nixnet.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\bin\msvc\omp.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\pid.lib
+-more:c:\Program Files (x86)\National Instruments\CVI2019\toolslib\custctrl\msvc\pwctrl.obj
+-more:c:\Program Files (x86)\National Instruments\CVI2019\toolslib\toolbox\msvc\toolbox.obj
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\user32.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\uuid.lib
+-more:c:\Program Files (x86)\National Instruments\Shared\CVI\Bin\msvc\visa.lib
+-more:C:\Program Files (x86)\Windows Kits\8.1\Lib\winv6.3\um\x86\winmm.lib

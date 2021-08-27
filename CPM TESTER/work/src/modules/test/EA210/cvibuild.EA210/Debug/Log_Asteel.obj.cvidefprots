@@ -1,0 +1,40 @@
+[Fill_Log_Asteel_Mesures]
+Class="Function"
+Prototype="int Fill_Log_Asteel_Mesures(const char *pfile_xml, char *mesures);"
+SourceLocation="c:\work\src\modules\automat\Log_Asteel.c:19:5"
+
+[Fill_DBO_Asteel_Mesures]
+Class="Function"
+Prototype="int Fill_DBO_Asteel_Mesures(const char *pfile_xml, char *nom_mesure, char *mesure_value, char *mesure_min, char *mesure_max, char *mesure_result);"
+SourceLocation="c:\work\src\modules\automat\Log_Asteel.c:218:5"
+
+[ExtractXMLInformations]
+Class="Function"
+Prototype="int ExtractXMLInformations(const char *pfile_xml, char *Reference, char *Serial, char *Result, char *date_time);"
+SourceLocation="c:\work\src\modules\automat\Log_Asteel.c:457:5"
+
+[SetPath]
+Class="Function"
+Prototype="int SetPath(char *vp_char_PathName, int vp_int_Mode);"
+SourceLocation="c:\work\src\modules\automat\Log_Asteel.c:550:5"
+
+[MoveExistingDataFiles]
+Class="Function"
+Prototype="int MoveExistingDataFiles(char *vp_char_PathName);"
+SourceLocation="c:\work\src\modules\automat\Log_Asteel.c:603:5"
+
+[spi_OuverturePlusEnteteFichier]
+Class="Function"
+Prototype="int spi_OuverturePlusEnteteFichier(char tp_FileName[260], char *Reference, char *Serial, char *date_time, int *pp_FileHandle);"
+SourceLocation="c:\work\src\modules\automat\Log_Asteel.c:737:6"
+
+[spi_Fin_Fichier]
+Class="Function"
+Prototype="int spi_Fin_Fichier(int vp_PassFail, int *pp_FileHandle);"
+SourceLocation="c:\work\src\modules\automat\Log_Asteel.c:835:5"
+
+[Fct_Save_Result]
+Class="Function"
+Prototype="int Fct_Save_Result(char *Reference, char *Serial, char *Result, char *date_time, char *mesures);"
+SourceLocation="c:\work\src\modules\automat\Log_Asteel.c:868:6"
+

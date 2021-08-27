@@ -1,0 +1,80 @@
+[Cognex_Set_Value_Integer]
+Class="Function"
+Prototype="int Cognex_Set_Value_Integer(char *Colonne, int Ligne, int Value);"
+SourceLocation="c:\work\src\modules\Camera\cognex\Cognex.c:79:1"
+
+[Cognex_Get_Value_Integer]
+Class="Function"
+Prototype="int Cognex_Get_Value_Integer(char *Colonne, int Ligne);"
+SourceLocation="c:\work\src\modules\Camera\cognex\Cognex.c:95:1"
+
+[ReadResponseTelnet]
+Class="Function"
+Prototype="int ReadResponseTelnet(int Length, char *String_To_Read);"
+SourceLocation="c:\work\src\modules\Camera\cognex\Cognex.c:110:1"
+
+[ServerTCPCB]
+Class="Function"
+Prototype="int ServerTCPCB(unsigned int handle, int event, int error, void *callbackData);"
+SourceLocation="c:\work\src\modules\Camera\cognex\Cognex.c:130:1"
+
+[openTCPserver]
+Class="Function"
+Prototype="struct _SElException *openTCPserver(struct _Camera *me) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\Camera\cognex\Cognex.c:190:1"
+
+[Cognex_login]
+Class="Function"
+Prototype="struct _SElException *Cognex_login(struct _Camera *me) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\Camera\cognex\Cognex.c:208:1"
+
+[Cognex_disconnect]
+Class="Function"
+Prototype="struct _SElException *Cognex_disconnect(struct _Camera *me) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\Camera\cognex\Cognex.c:234:1"
+
+[Cognex_Trigger]
+Class="Function"
+Prototype="struct _SElException *Cognex_Trigger(struct _Camera *me) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\Camera\cognex\Cognex.c:248:1"
+
+[Cognex_Read]
+Class="Function"
+Prototype="struct _SElException *Cognex_Read(struct _Camera *me, char *data) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\Camera\cognex\Cognex.c:261:1"
+
+[Cognex_Online]
+Class="Function"
+Prototype="struct _SElException *Cognex_Online(struct _Camera *me) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\Camera\cognex\Cognex.c:288:1"
+
+[Cognex_Offline]
+Class="Function"
+Prototype="struct _SElException *Cognex_Offline(struct _Camera *me) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\Camera\cognex\Cognex.c:301:1"
+
+[Cognex_act_job]
+Class="Function"
+Prototype="struct _SElException *Cognex_act_job(struct _Camera *me, int *actual_job) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\Camera\cognex\Cognex.c:314:1"
+
+[Cognex_Job]
+Class="Function"
+Prototype="struct _SElException *Cognex_Job(struct _Camera *me, const char *JobID) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\Camera\cognex\Cognex.c:349:1"
+
+[Cognex_set_param]
+Class="Function"
+Prototype="struct _SElException *Cognex_set_param(struct _Camera *me, int phase) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\Camera\cognex\Cognex.c:366:1"
+
+[Cognex_set_number_boutton]
+Class="Function"
+Prototype="struct _SElException *Cognex_set_number_boutton(struct _Camera *me, int phase) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\Camera\cognex\Cognex.c:381:1"
+
+[Cognex_set_parameters]
+Class="Function"
+Prototype="struct _SElException *Cognex_set_parameters(struct _Camera *me, char *Colonne, int index_pico) __declspec(dllexport);"
+SourceLocation="c:\work\src\modules\Camera\cognex\Cognex.c:394:1"
+

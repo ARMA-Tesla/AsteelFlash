@@ -1,0 +1,9 @@
+-inrc c:\work\src\gui\generator\cvibuild.generator_gui\Debug\resources.in.rc
+-outrc c:\work\src\gui\generator\cvibuild.generator_gui\Debug\resources.out.rc
+-inhdef c:\work\src\gui\generator\cvibuild.generator_gui\Debug\generator_gui_plugin.h.hdefs
+-outdef c:\work\src\gui\generator\cvibuild.generator_gui\Debug\generator_gui.dll.defs
+-indefprot c:\work\src\gui\generator\cvibuild.generator_gui\Debug\elstring.obj.cvidefprots
+-indefprot c:\work\src\gui\generator\cvibuild.generator_gui\Debug\Exception.obj.cvidefprots
+-indefprot c:\work\src\gui\generator\cvibuild.generator_gui\Debug\generator_gui.obj.cvidefprots
+-dllName generator_gui.dll
+-addNITypeInfo 
